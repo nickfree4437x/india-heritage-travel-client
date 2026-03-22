@@ -1,0 +1,46 @@
+.destination-menu {
+  top: calc(100% + 12px);
+}
+
+.region-item {
+  padding: 14px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.region-active {
+  background: #c6a16e;
+  color: white;
+}
+
+.state-item {
+  padding: 12px 14px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.state-item:hover {
+  background: #c6a16e;
+  color: white;
+}
+
+.city-popup {
+  position: absolute;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  padding: 10px 0;
+  min-width: 200px;
+}
+
+.city-link {
+  display: block;
+  padding: 10px 16px;
+}
+
+.city-link:hover {
+  background: #f3f4f6;
+}

@@ -1,13 +1,46 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import "@/styles/megaMenu.css";
 
 export default function JourneysMegaMenu({ scrolled }: { scrolled: boolean }) {
 
-  return (
-    <div className="relative group">
+  const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("curated");
 
-      {/* Journeys Button */}
+  const data: any = {
+    curated: [
+      { name: "The Royal Rajasthan", link: "/journeys/curated-tours/royal-rajasthan-tour" },
+      { name: "Golden Triangle Splendor", link: "/journeys/curated-tours/golden-triangle-tour" },
+      { name: "South India Getaways", link: "/journeys/curated-tours/south-indian-gateways" },
+      { name: "East India Adventure", link: "/journeys/curated-tours/east-india-adventure" },
+      { name: "West India Escapes", link: "/journeys/curated-tours/west-india-escapes" }
+    ],
+
+    festivals: [
+      { name: "Holi Festival Tour", link: "/journeys/festivals/holi-festival-tour" },
+      { name: "Diwali Festival Tour", link: "/journeys/festivals/diwali-festival-tour" },
+      { name: "Pushkar Fair Tour", link: "/journeys/festivals/pushkar-fair-tour" },
+      { name: "Kumbh Mela Tour", link: "/journeys/festivals/kumbh-mela-tour" }
+    ],
+
+    health: [
+      { name: "Yoga Escapes", link: "/journeys/health-based/yoga-escapes" },
+      { name: "Ayurveda Journey", link: "/journeys/health-based/ayurveda-journey" }
+    ]
+  };
+
+  return (
+
+    <div
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+
+      {/* Button */}
 
       <button
         className={`font-medium transition ${
@@ -20,126 +53,111 @@ export default function JourneysMegaMenu({ scrolled }: { scrolled: boolean }) {
       </button>
 
 
-      {/* Mega Menu */}
+      {/* Dropdown */}
 
-      <div className="absolute left-0 top-10 w-[650px] bg-white shadow-xl rounded-xl p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+      <AnimatePresence>
 
-        {/* Top Horizontal Links */}
+        {open && (
 
-        <div className="flex gap-6 border-b pb-4 mb-4 text-sm">
-
-          <Link
-            href="/journeys/holiday-tour-packages-india"
-            className="hover:text-orange-500"
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ duration: 0.25 }}
+            className="mega-menu absolute left-0 w-[760px] bg-white shadow-2xl rounded-xl border border-gray-100"
           >
-            Holiday Tour Package in India
-          </Link>
 
-          <Link href="/journeys/luxury-tour-packages-india">
-            Luxury Tour Package in India
-          </Link>
+            {/* Top Links */}
 
-          <Link href="/journeys/top-tourist-places-india">
-            Top Tourist Places in India
-          </Link>
+            <div className="flex gap-6 border-b px-6 py-4 text-sm font-medium text-gray-700">
 
-        </div>
-
-
-        {/* Bottom Section */}
-
-        <div className="grid grid-cols-3 gap-8 text-sm">
-
-          {/* Curated Tours */}
-
-          <div>
-
-            <h4 className="font-semibold mb-3 text-orange-500">
-              Curated Tours
-            </h4>
-
-            <div className="flex flex-col gap-2">
-
-              <Link href="/journeys/curated-tours/royal-rajasthan-tour" className="hover:text-orange-500">
-                Royal Rajasthan
+              <Link href="/journeys/holiday-tour-packages-india" className="top-link">
+                Holiday Tour Packages in India
               </Link>
 
-              <Link href="/journeys/curated-tours/golden-triangle-tour" className="hover:text-orange-500">
-                Golden Triangle
+              <Link href="/journeys/luxury-tour-packages-india" className="top-link">
+                Luxury Tour Operator in India
               </Link>
 
-              <Link href="/journeys/curated-tours/south-indian-gateways" className="hover:text-orange-500">
-                The South Indian Gateways
-              </Link>
-
-              <Link href="/journeys/curated-tours/east-india-adventure" className="hover:text-orange-500">
-                East India advanture
-              </Link>
-              <Link href="/journeys/curated-tours/west-india-escapes" className="hover:text-orange-500">
-                West India Escapes
+              <Link href="/journeys/top-tourist-places-india" className="top-link">
+                Top Tourist Places in India
               </Link>
 
             </div>
 
-          </div>
+
+            {/* Layout */}
+
+            <div className="grid grid-cols-2">
+
+              {/* Sidebar */}
+
+              <div className="border-r bg-gray-50">
+
+                {[
+                  { id: "curated", title: "Curated Tours" },
+                  { id: "festivals", title: "Festivals" },
+                  { id: "health", title: "Health Based" }
+                ].map((item) => (
+
+                  <div
+                    key={item.id}
+                    onMouseEnter={() => setActive(item.id)}
+                    className={`sidebar-item ${
+                      active === item.id ? "sidebar-active" : ""
+                    }`}
+                  >
+                    <h4 className="font-semibold">{item.title}</h4>
+                    <p className="text-xs opacity-70">Explore journeys</p>
+                  </div>
+
+                ))}
+
+              </div>
 
 
-          {/* Festivals */}
+              {/* Right Content */}
 
-          <div>
+              <div className="p-6 space-y-2">
 
-            <h4 className="font-semibold mb-3 text-orange-500">
-              Festivals
-            </h4>
+                <AnimatePresence mode="wait">
 
-            <div className="flex flex-col gap-2">
+                  <motion.div
+                    key={active}
+                    initial={{ opacity: 0, x: 10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -10 }}
+                    transition={{ duration: 0.25 }}
+                    className="space-y-1"
+                  >
 
-              <Link href="/journeys/festivals/holi-festival-tour" className="hover:text-orange-500">
-                Holi Festival Tour
-              </Link>
+                    {data[active].map((item: any, i: number) => (
 
-              <Link href="/journeys/festivals/diwali-festival-tour" className="hover:text-orange-500">
-                Diwali Festival Tour
-              </Link>
+                      <Link
+                        key={i}
+                        href={item.link}
+                        className="mega-link"
+                      >
+                        {item.name}
+                      </Link>
 
-              <Link href="/journeys/festivals/pushkar-fair-tour" className="hover:text-orange-500">
-                Pushkar Fair Tour
-              </Link>
+                    ))}
 
-              <Link href="/journeys/festivals/kumbh-mela-tour" className="hover:text-orange-500">
-                Pushkar Fair Tour
-              </Link>
+                  </motion.div>
+
+                </AnimatePresence>
+
+              </div>
 
             </div>
 
-          </div>
+          </motion.div>
 
+        )}
 
-          {/* Health Based */}
-
-          <div>
-
-            <h4 className="font-semibold mb-3 text-orange-500">
-              Health Based
-            </h4>
-
-            <div className="flex flex-col gap-2">
-              <Link href="/journeys/health-based/yoga-escapes" className="hover:text-orange-500">
-                Yoga escapes
-              </Link>
-
-              <Link href="/journeys/health-based/ayurveda-journey" className="hover:text-orange-500">
-                Ayurveda journey
-              </Link>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
+      </AnimatePresence>
 
     </div>
+
   );
 }

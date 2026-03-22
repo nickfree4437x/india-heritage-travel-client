@@ -1,0 +1,36 @@
+.mega-menu {
+  top: calc(100% + 12px);   /* navbar se thoda gap */
+}
+
+.mega-link {
+  padding: 10px 14px;
+  border-radius: 6px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.mega-link:hover {
+  background: #f97316;      /* orange */
+  color: white;
+}
+
+.sidebar-item {
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-active {
+  background: #f97316;
+  color: white;
+}
+
+.top-link {
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.top-link:hover {
+  color: #f97316;
+}

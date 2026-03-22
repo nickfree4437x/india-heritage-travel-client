@@ -15,16 +15,13 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-
     const handleScroll = () => {
-      if (window.scrollY > 50) setScrolled(true);
+      if (window.scrollY > 60) setScrolled(true);
       else setScrolled(false);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
-
   }, []);
 
   const navLinks = [
@@ -35,32 +32,38 @@ export default function Navbar() {
   ];
 
   return (
+
     <header
-      className={`w-full fixed top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white shadow-md backdrop-blur-md"
+          : "bg-transparent"
       }`}
     >
 
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-[75px] leading-none">
 
           {/* Logo */}
 
-          <Link href="/">
+          <Link href="/" className="flex items-center">
+
             <Image
-              src="/logo.png"
+              src={scrolled ? "/logo-dark.png" : "/logos/logo-white.png"}
               alt="India Heritage"
-              width={150}
-              height={40}
+              width={170}
+              height={45}
               priority
+              className="transition-all duration-300 object-contain"
             />
+
           </Link>
 
 
           {/* Desktop Navigation */}
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-10">
 
             <JourneysMegaMenu scrolled={scrolled} />
 
@@ -72,8 +75,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`font-medium transition ${
                   scrolled
-                    ? "text-gray-700 hover:text-orange-500"
-                    : "text-white hover:text-orange-400"
+                    ? "text-gray-800 hover:text-orange-500"
+                    : "text-white hover:text-orange-300"
                 }`}
               >
                 {link.name}
@@ -87,8 +90,8 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-4">
 
-            <button className="bg-orange-500 text-white px-6 py-2.5 rounded-full hover:bg-orange-600 transition">
-              Customize Your Journey
+            <button className="bg-orange-500 text-white px-6 py-2.5 rounded-full hover:bg-orange-600 transition shadow-md hover:scale-105">
+              Customize Journey
             </button>
 
             <LanguageSwitcher />
@@ -104,7 +107,7 @@ export default function Navbar() {
             }`}
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
 
         </div>
@@ -120,17 +123,26 @@ export default function Navbar() {
 
           <div className="flex flex-col items-center gap-6 py-8">
 
-            <Link href="/journeys">Journeys</Link>
-            <Link href="/destinations">Destinations</Link>
+            <Link href="/journeys" onClick={() => setIsOpen(false)}>
+              Journeys
+            </Link>
+
+            <Link href="/destinations" onClick={() => setIsOpen(false)}>
+              Destinations
+            </Link>
 
             {navLinks.map((link) => (
-              <Link key={link.name} href={link.href}>
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+              >
                 {link.name}
               </Link>
             ))}
 
-            <button className="bg-orange-500 text-white px-6 py-2 rounded-full">
-              Customize Your Journey
+            <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">
+              Customize Journey
             </button>
 
           </div>
@@ -140,5 +152,6 @@ export default function Navbar() {
       )}
 
     </header>
+
   );
 }
