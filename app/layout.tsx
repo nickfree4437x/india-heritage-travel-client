@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
 import Navbar from "@/src/components/layout/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// ✅ Body Font (clean UI)
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// ✅ Heading Font (luxury feel)
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-playfair",
 });
 
 export const metadata: Metadata = {
@@ -28,15 +30,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${playfair.variable} antialiased`}
       >
-        
-        {/* Reusable Navbar */}
+
+        {/* Navbar */}
         <Navbar />
 
         {/* Page Content */}
         <main>{children}</main>
-
 
         {/* Google Translate Init */}
         <Script id="google-translate-init" strategy="afterInteractive">
@@ -50,13 +51,11 @@ export default function RootLayout({
           `}
         </Script>
 
-
         {/* Google Translate Library */}
         <Script
           src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
         />
-
 
         {/* Fix Google Translate Banner */}
         <Script id="google-translate-fix" strategy="afterInteractive">

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 
 type MenuItem = {
   name: string;
@@ -15,8 +16,7 @@ type MenuData = {
   health: MenuItem[];
 };
 
-export default function JourneysMegaMenu({ scrolled }: { scrolled: boolean }) {
-
+export default function JourneysMegaMenu() {
   const [open, setOpen] = useState<boolean>(false);
   const [active, setActive] = useState<keyof MenuData>("curated");
 
@@ -42,30 +42,34 @@ export default function JourneysMegaMenu({ scrolled }: { scrolled: boolean }) {
 
   return (
     <div
-      className="relative"
+      className="relative group"
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
 
-      {/* Button */}
-      <button
-        className={`relative font-medium transition ${
-          scrolled
-            ? "text-gray-700 hover:text-[#A07008]"
-            : "text-white hover:text-[#e6c27a]"
-        }`}
-      >
-        Journeys
+      {/* ✅ CLEAN BUTTON */}
+      <button className="flex items-center text-[0.8rem] hover:underline font-light tracking-wide text-white opacity-90 hover:opacity-100 transition">
+
+        <span>Journeys</span>
+
+        {/* ✅ BEST ICON (STATIC + MICRO ANIMATION) */}
+        <span className="ml-1 w-[16px] h-[16px] flex items-center justify-center">
+          <ChevronDown
+            size={14}
+            className="transition-all duration-200 ease-in-out opacity-80 group-hover:opacity-100 group-hover:translate-y-[1px]"
+          />
+        </span>
+
       </button>
 
       {/* Dropdown */}
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.96 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 15, scale: 0.96 }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ duration: 0.2 }}
             className="absolute left-0 mt-6 w-[780px] rounded-2xl bg-white shadow-2xl border border-gray-100 overflow-hidden"
           >
 
@@ -107,10 +111,10 @@ export default function JourneysMegaMenu({ scrolled }: { scrolled: boolean }) {
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={active}
-                    initial={{ opacity: 0, x: 15 }}
+                    initial={{ opacity: 0, x: 10 }}
                     animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -15 }}
-                    transition={{ duration: 0.2 }}
+                    exit={{ opacity: 0, x: -10 }}
+                    transition={{ duration: 0.15 }}
                     className="space-y-2"
                   >
 

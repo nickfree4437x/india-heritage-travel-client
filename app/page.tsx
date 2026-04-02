@@ -1,6 +1,6 @@
 import Navbar from "@/src/components/layout/Navbar";
 import Hero from "@/src/components/sections/hero/Hero";
-import Difference from "@/src/components/sections/Difference";
+import Difference from "@/src/components/sections/how-make-difference/Difference";
 import About from "@/src/components/sections/welcome-section/About";
 import Destinations from "@/src/components/sections/Destinations";
 import ReviewsSection from "@/src/components/sections/Reviews";
