@@ -62,11 +62,10 @@ export default function Hero() {
           transition={{ duration: 0.9 }}
           className="text-4xl md:text-5xl font-bold tracking-tight leading-[1.15] max-w-4xl"
         >
-          Experience the{" "}
+          Explore India Beyond Landmarks:{" "}
           <span className="bg-[#A38664] bg-clip-text text-transparent">
-            True Beauty
-          </span>{" "}
-          of India
+            Curated Heritage Journeys
+          </span>
         </motion.h1>
 
         {/* Description */}
@@ -76,9 +75,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.9 }}
           className="mt-6 max-w-2xl text-base md:text-lg text-gray-300 leading-relaxed"
         >
-          From majestic palaces and vibrant cultures to serene landscapes and
-          spiritual journeys, discover India through thoughtfully curated travel
-          experiences designed to inspire and elevate every moment.
+          Discover India’s hidden cultures, ancient traditions, and untouched landscapes, personalised just for you.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -91,10 +88,8 @@ export default function Hero() {
           {/* Primary */}
           <button className="group relative text-[0.9rem] overflow-hidden bg-[#A38664] text-white px-7 py-2.5 rounded-full transition-all duration-300 shadow-md hover:shadow-2xl hover:scale-105 active:scale-95">
             
-            {/* Gradient hover */}
-          <span className="absolute inset-0 bg-[#CBB299] opacity-0 group-hover:opacity-100 transition duration-500"></span>
+            <span className="absolute inset-0 bg-[#CBB299] opacity-0 group-hover:opacity-100 transition duration-500"></span>
             
-            {/* Shine */}
             <span className="absolute left-[-100%] text-[0.9rem] top-0 h-full w-[50%] bg-white/20 skew-x-12 group-hover:left-[120%] transition-all duration-700"></span>
 
             <span className="relative z-10 tracking-wide">
@@ -105,10 +100,8 @@ export default function Hero() {
           {/* Secondary */}
           <button className="group relative text-[0.9rem] overflow-hidden border border-white/30 text-white px-7 py-2.5 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-md">
             
-            {/* Glow bg */}
             <span className="absolute inset-0 bg-[#c9a45c]/15 opacity-0 group-hover:opacity-100 transition duration-500"></span>
 
-            {/* Ring */}
             <span className="absolute inset-0 rounded-full ring-1 ring-transparent group-hover:ring-[#c9a45c]/40 transition duration-300"></span>
 
             <span className="relative z-10 tracking-wide group-hover:text-white transition">

@@ -17,8 +17,8 @@ type MenuData = {
 };
 
 export default function JourneysMegaMenu() {
-  const [open, setOpen] = useState<boolean>(false);
-  const [active, setActive] = useState<keyof MenuData>("curated");
+  const [open, setOpen] = useState(false);
+  const [active, setActive] = useState<keyof MenuData | null>(null);
 
   const data: MenuData = {
     curated: [
@@ -40,111 +40,84 @@ export default function JourneysMegaMenu() {
     ]
   };
 
+  const categories = [
+    { id: "curated", title: "Curated Journeys" },
+    { id: "festivals", title: "Festivals" },
+    { id: "health", title: "Health Based" }
+  ];
+
   return (
     <div
-      className="relative group"
+      className="relative"
       onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onMouseLeave={() => {
+        setOpen(false);
+        setActive(null);
+      }}
     >
-
-      {/* ✅ CLEAN BUTTON */}
-      <button className="flex items-center text-[0.8rem] hover:underline font-light tracking-wide text-white opacity-90 hover:opacity-100 transition">
-
-        <span>Journeys</span>
-
-        {/* ✅ BEST ICON (STATIC + MICRO ANIMATION) */}
-        <span className="ml-1 w-[16px] h-[16px] flex items-center justify-center">
-          <ChevronDown
-            size={14}
-            className="transition-all duration-200 ease-in-out opacity-80 group-hover:opacity-100 group-hover:translate-y-[1px]"
-          />
-        </span>
-
+      {/* Button */}
+      <button className="flex items-center text-[0.8rem] text-white/90 hover:text-white transition">
+        Journeys
+        <ChevronDown size={14} className="ml-1 opacity-60" />
       </button>
 
       {/* Dropdown */}
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 10 }}
-            transition={{ duration: 0.2 }}
-            className="absolute left-0 mt-6 w-[780px] rounded-2xl bg-white shadow-2xl border border-gray-100 overflow-hidden"
+            exit={{ opacity: 0, y: 6 }}
+            transition={{ duration: 0.25 }}
+            className="absolute left-0 mt-3 bg-[#A38664]/80 backdrop-blur-sm rounded-md"
           >
+            <div className="flex text-[0.8rem] text-white">
 
-            <div className="grid grid-cols-2">
-
-              {/* Sidebar */}
-              <div className="p-6 border-r bg-gray-50">
-
-                {[
-                  { id: "curated", title: "Curated Tours" },
-                  { id: "festivals", title: "Festivals" },
-                  { id: "health", title: "Health Based" }
-                ].map((item) => (
-
+              {/* LEFT - Categories */}
+              <div className="flex flex-col py-5 px-6 space-y-2 min-w-[180px]">
+                {categories.map((item) => (
                   <div
                     key={item.id}
                     onMouseEnter={() => setActive(item.id as keyof MenuData)}
-                    className={`mb-3 px-4 py-3 rounded-lg cursor-pointer transition-all duration-200 ${
+                    className={`cursor-pointer transition ${
                       active === item.id
-                        ? "bg-[#A07008] text-white shadow-md"
-                        : "text-gray-600 hover:bg-[#A07008]/10 hover:text-[#A07008]"
+                        ? "opacity-100"
+                        : "opacity-80 hover:opacity-100"
                     }`}
                   >
-                    <h4 className="text-sm font-medium tracking-wide">
-                      {item.title}
-                    </h4>
-                    <p className="text-xs opacity-70">
-                      Explore journeys
-                    </p>
+                    {item.title}
                   </div>
-
                 ))}
-
               </div>
 
-              {/* Content */}
-              <div className="p-6">
-
-                <AnimatePresence mode="wait">
+              {/* RIGHT - ONLY WHEN ACTIVE */}
+              <AnimatePresence>
+                {active && (
                   <motion.div
                     key={active}
                     initial={{ opacity: 0, x: 10 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -10 }}
-                    transition={{ duration: 0.15 }}
-                    className="space-y-2"
+                    transition={{ duration: 0.2 }}
+                    className="py-5 pr-6 pl-2 space-y-2 min-w-[220px]"
                   >
-
                     {data[active].map((item, i) => (
                       <Link
                         key={i}
                         href={item.link}
-                        className="group flex items-center justify-between px-3 py-2 rounded-md text-sm text-gray-700 transition-all duration-200 hover:bg-[#A07008] hover:text-white"
+                        className="block transition hover:opacity-80"
                       >
-                        <span className="transition group-hover:translate-x-1">
-                          {item.name}
-                        </span>
-
-                        <span className="opacity-0 group-hover:opacity-100 transition">
-                          →
-                        </span>
+                        {item.name}
                       </Link>
                     ))}
-
                   </motion.div>
-                </AnimatePresence>
-
-              </div>
+                )}
+              </AnimatePresence>
 
             </div>
-
           </motion.div>
         )}
       </AnimatePresence>
-
     </div>
   );
 }
