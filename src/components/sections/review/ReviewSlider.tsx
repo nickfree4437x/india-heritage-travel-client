@@ -4,11 +4,25 @@ import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { Quote, ArrowLeft, ArrowRight } from "lucide-react";
 
-export default function ReviewSlider({ reviews }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
-  const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
+// ✅ TYPE DEFINE
+type Review = {
+  name: string;
+  type: string;
+  description: string;
+  image: string;
+  gallery: string;
+};
+
+type ReviewSliderProps = {
+  reviews: Review[];
+};
+
+export default function ReviewSlider({ reviews }: ReviewSliderProps) {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
+
+  const touchStartX = useRef<number>(0);
+  const touchEndX = useRef<number>(0);
 
   // Next / Prev
   const next = () => {
@@ -39,11 +53,11 @@ export default function ReviewSlider({ reviews }) {
   }, [currentIndex]);
 
   // Swipe Support
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     touchStartX.current = e.changedTouches[0].screenX;
   };
 
-  const handleTouchEnd = (e) => {
+  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
     touchEndX.current = e.changedTouches[0].screenX;
 
     if (touchStartX.current - touchEndX.current > 50) next();

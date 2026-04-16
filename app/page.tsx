@@ -5,12 +5,11 @@ import About from "@/src/components/sections/welcome-section/About";
 import Destinations from "@/src/components/sections/destinations/Destinations";
 import ReviewsSection from "@/src/components/sections/review/Reviews";
 import Adventure from "@/src/components/sections/adventure/Adventure";
-import Festival from "@/src/components/sections/Festivals";
-import Blog from "@/src/components/sections/Blog";
-import HealthJourneySection from "@/src/components/sections/Health";
-import GallerySection from "@/src/components/sections/Gallery";
-import CotactSection from "@/src/components/sections/Contact";
-import Footer from "@/src/components/sections/Footer";
+import Festival from "@/src/components/sections/festivals/Festivals";
+import Blog from "@/src/components/sections/Blog/Blog";
+import GallerySection from "@/src/components/sections/gallery/Gallery";
+import CotactSection from "@/src/components/sections/contact/Contact";
+import Footer from "@/src/components/sections/footer/Footer";
 
 
 export default function Home() {
@@ -25,7 +24,6 @@ export default function Home() {
       <Adventure />
       <Festival />
       <Blog />
-      <HealthJourneySection />
       <GallerySection/>
       <CotactSection/>
       <Footer />

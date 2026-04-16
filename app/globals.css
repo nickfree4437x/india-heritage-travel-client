@@ -37,12 +37,16 @@ body {
   animation: fadeUp 1s ease forwards;
 }
 
-/* Body default font */
+/* ✅ Default body font */
 body {
   font-family: var(--font-inter), sans-serif;
 }
 
-/* Headings luxury font */
-h1, h2, h3, h4, h5, h6 {
+/* ✅ Heading font utility */
+.font-heading {
   font-family: var(--font-playfair), serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }

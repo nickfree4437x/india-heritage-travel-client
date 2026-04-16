@@ -1,52 +1,60 @@
-import Image from "next/image";
+import Hero from "./components/Hero";
+import Suitable from "./components/Suitable";
+import DelhiSection from "./components/DelhiSection";
+import BookingCard from "./components/BookingCard";
+import MandawaSection from "./components/MandawaSection";
+import BikanerSection from "./components/BikanerSection";
+import JaisalmerSection from "./components/JaisalmerSection";
+import JodhpurSection from "./components/JodhpurSection";
+import UdaipurSection from "./components/UdaipurSection";
+import PushkarSection from "./components/PushkarSection";
+import JaipurSection from "./components/JaipurSection";
+import AgraSection from "./components/AgraSection";
+import HighlightsSection from "./components/HighlightsSection";
+import ItinerarySection from "./components/ItinerarySection";
+import ExcludedServices from "./components/ExcludeServices";
+import Recommended from "./components/RecommendTous";
 
 export default function Page() {
   return (
     <div className="bg-[#f4f0ea] min-h-screen">
 
-      {/* HERO */}
-      <div className="relative h-[400px]">
-        <Image
-          src="/rajasthan.jpg"
-          alt=""
-          fill
-          className="object-cover"
-        />
-      </div>
+      {/* 🔹 HERO */}
+      <Hero />
 
-      <div className="max-w-5xl mx-auto p-6">
+      {/* 🔹 NAV + SUITABLE */}
+      <Suitable />
 
-        <h1 className="text-3xl font-bold mb-4">
-          Rajasthani Heritage Retreat Tour
-        </h1>
+      {/* 🔥 MAIN GRID LAYOUT */}
+      <div className="max-w-[1400px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[2.5fr_1fr] gap-12">
 
-        <p className="mb-6">
-          Discover the royal charm of Rajasthan with grand forts, palaces, and vibrant traditions.
-        </p>
-
-        {/* GALLERY */}
-        <div className="grid grid-cols-3 gap-4 mb-6">
-          <Image src="/raj1.jpg" alt="" width={300} height={200} />
-          <Image src="/raj2.jpg" alt="" width={300} height={200} />
-          <Image src="/raj3.jpg" alt="" width={300} height={200} />
+        {/* LEFT SIDE */}
+        <div className="space-y-16">
+          <DelhiSection />
+          <MandawaSection />
+          <BikanerSection />
+          <JaisalmerSection />
+          <JodhpurSection />
+          <UdaipurSection />
+          <PushkarSection />
+          <JaipurSection />
+          <AgraSection />
+          <HighlightsSection />
+          <ItinerarySection />
+          <ExcludedServices />
+          {/* Next sections */}
         </div>
 
-        {/* HIGHLIGHTS */}
-        <ul className="list-disc pl-5 mb-6">
-          <li>Explore Jaipur & Udaipur palaces</li>
-          <li>Desert camel safari experience</li>
-          <li>Traditional folk music & dance</li>
-        </ul>
-
-        {/* ITINERARY */}
-        <div>
-          <p>Day 1: Jaipur arrival</p>
-          <p>Day 2: City tour</p>
-          <p>Day 3: Udaipur travel</p>
-          <p>Day 4: Udaipur exploration</p>
+        {/* RIGHT SIDE */}
+        <div className="flex justify-end">
+          <div className="w-full max-w-[320px]">
+            <BookingCard />
+          </div>
         </div>
-
       </div>
+
+      <Recommended />
+
     </div>
   );
 }

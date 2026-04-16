@@ -1,0 +1,97 @@
+"use client";
+
+import CitySection from "./CitySection";
+import HighlightsSection from "./HighlightsSection";
+import ItinerarySection from "./ItinerarySection";
+
+const citiesData = [
+  {
+    title: "Delhi- A blend Of History & Royalty",
+    description:
+      "Discover Delhi, which is the mixture of history and modernity with Vibrant, contemporary, and bursting colours. In Old Delhi, you’ll experience the rich colours of humanity in all its shades and sensations.",
+    image: "/adventure/ganga-tour/delhi.jpg",
+  },
+  {
+    title: "Mandawa – A Town Of Timeless Heritage And Beauty",
+    description:
+      "Mandawa is a town where walls speak tales of artistry. This Rajasthani gem have its streets decorated with beautiful frescoes and havelis, each a live canvas of history and beauty. This is a living gallery of Rajasthan’s architectural magnificence and the stories echoes on its walls.",
+    image: "/adventure/ganga-tour/mandawa.jpg",
+  },
+  {
+    title: "Bikaner – A Desert Oasis Of History And Camels",
+    description:
+      "Bikaner is a desert gem with history twisted into its castles and palaces, promises a captivating journey through Rajasthan’s northeast. It is known as Camel Country, it’s a place where camels gracefully pass over the landscape, making the city more attractive.",
+    image: "/adventure/ganga-tour/bikaner.jpg",
+  },
+  {
+    title: "Jaisalmer – Where Desert Stories Come Alive",
+    description:
+      "Jaisalmer, where humans and animals have acquired the desert together for centuries. A camel ride takes you to a bygone era, showcasing the strength and productivity of its people who flourish in the middle of challenging conditions, turning nature’s offerings into treasures.",
+    image: "/adventure/ganga-tour/jaisalmer.jpg",
+  },
+  {
+    title: "Jodhpur – Where History Meets The Blue Skyline",
+    description:
+      "The city where the grand Mehrangarh Fort looms over the Blue City which is a 15th-century marvel of indigo-washed buildings. It is a famous tourist spot with a palace, fort, and temples, set in the stark landscape of the Thar Desert. It’s also known as the Blue City due to the dominant color scheme of its buildings in old town.",
+    image: "/adventure/ganga-tour/jodhpur.jpg",
+  },
+  {
+    title: "Udaipur – Where Romance And Royalty Reign",
+    description:
+      "Udaipur lies in the heart of India, a city that combines love and richness. Explore majestic palaces, ancient temples, and graceful Havelis. Discover bustling markets, and breathtaking sunsets views on Lake Pichola. Join us in exploring the magic of Udaipur old town.",
+    image: "/adventure/ganga-tour/udaipur.jpg",
+  },
+  {
+    title: "Pushkar – Where Desert Charm Meets Holy Peace",
+    description:
+      "The city of Pushkar is home to the only temple dedicated to Lord Brahma in the whole world. Hindus consider a journey to Pushkar to be the ultimate pilgrimage that must be undertaken to attain salvation. Pushkar Camel Fair, held each November at the time of Kartik Purnima, is one of India’s most highly-rated travel experiences attracting thousands of camels, horses and cattle.",
+    image: "/adventure/ganga-tour/pushkar.jpg",
+  },
+  {
+    title: "Jaipur – The Pink City Of Magnificent Grandeur",
+    description:
+      "Jaipur is the heart of Rajasthan & a UNESCO world heritage city. It is one of the most visited tourist destinations in Rajasthan. Jaipur is famous for its magnificent forts and palaces, local cuisines, wildlife and adventure tourism, pilgrimage sites and local shopping.",
+    image: "/adventure/ganga-tour/jaipur.jpg",
+  },
+  {
+    title: "Agra – Where History Rules Supreme",
+    description:
+      "A world where the echoes of the Mughal empire still linger, and uncover a marvel born from a timeless love tale: The Taj Mahal. Explore beautiful tombs, stately forts, and vibrant marketplaces that eagerly await your presence.",
+    image: "/adventure/ganga-tour/agra.jpg",
+  },
+    {
+    title: "Orchha – Echoes Of History In Its Architecture",
+    description:
+        "Attractive temples, monuments lost in history and an abundance of folklore make Orchha a jewel in the crown of the state of Madhya Pradesh. This small, priestly town is popularly known as Raja Ram’s kingdom, maybe the only place in the country where Lord Rama is revered as a beloved king and not just a god.",
+    image: "/adventure/ganga-tour/orchha.jpg",
+    },
+    {
+    title: "Khajuraho – Sculpted Wonders In Stone",
+    description:
+        "A captivating town renowned for its intricate and sensual stone sculptures adorning World Heritage Temples. The Khajuraho Group of Monuments is a group of Hindu temples and Jain temples. They are a UNESCO World Heritage Site, famous for their nagara-style architecture symbolism.",
+    image: "/adventure/ganga-tour/khajuraho.jpg",
+    },
+    {
+    title: "Varanasi – The Spiritual Heart Of India By The Ganges",
+    description:
+        "The land of Varanasi (Kashi) has been the ultimate pilgrimage spot for Hindus for ages. They believe that one who is graced to die on the land of Varanasi would attain salvation and freedom from the cycle of birth and re-birth. Here the sacred Ganges River holds the promise of spiritual liberation.",
+    image: "/adventure/ganga-tour/varanasi.jpg",
+    },
+];
+
+export default function CitiesSection() {
+  return (
+    <>
+      {citiesData.map((city, index) => (
+        <CitySection
+          key={index}
+          title={city.title}
+          description={city.description}
+          image={city.image}
+        />
+      ))}
+       <HighlightsSection/>
+       <ItinerarySection/>
+    </>
+  );
+}
