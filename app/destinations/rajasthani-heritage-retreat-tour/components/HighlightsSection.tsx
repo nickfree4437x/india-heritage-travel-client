@@ -1,50 +1,93 @@
 "use client";
 
-import { Check } from "lucide-react";
+import {
+  Check,
+  Hotel,
+  Car,
+  Utensils,
+  CreditCard,
+  Wifi,
+  ChefHat,
+  Plane,
+  Bus,
+} from "lucide-react";
 
 export default function HighlightsSection() {
   return (
-    <section className="grid md:grid-cols-2 gap-8">
+    <section className="py-6">
 
-      {/* LEFT - Highlights */}
-      <div className="bg-white p-6 rounded-xl shadow-md">
-        <h2 className="text-2xl font-semibold text-center mb-4">
-          Highlights
-        </h2>
+      {/* SAME WIDTH */}
+      <div className="max-w-5xl mx-auto">
 
-        <ul className="space-y-3 text-gray-700">
-          {[
-            "Witness the Taj Mahal at sunrise in Agra",
-            "Explore Delhi's bustling markets",
-            "Experience Jaipur's royal history",
-            "Open art gallery of Mandawa",
-          ].map((item, i) => (
-            <li key={i} className="flex items-start gap-2">
-              <Check className="text-[#9b7a50]" size={18} />
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
+        <div className="grid md:grid-cols-2 gap-10">
 
-      {/* RIGHT - Inclusions */}
-      <div className="bg-white p-6 rounded-xl shadow-md">
-        <h2 className="text-2xl font-semibold text-center mb-4">
-          Inclusions
-        </h2>
+          {/* 🔹 Highlights */}
+          <div className="bg-white rounded-md
+                          shadow-sm 
+                          border border-[#eee7dd] 
+                          p-6">
 
-        <div className="grid grid-cols-2 gap-4 text-center text-sm text-gray-700">
+            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center">
+              Highlights
+            </h2>
 
-          <div>🏨 15 nights, chosen hotels</div>
-          <div>🚗 Local driver, guide</div>
-          <div>🍽 Daily breakfast</div>
-          <div>💳 All costs covered</div>
-          <div>📶 In Car Wi-fi</div>
-          <div>🍳 Cooking classes, dinner</div>
-          <div>✈ Airport transfer</div>
-          <div>🛺 Delhi rickshaw</div>
+            <ul className="space-y-3 text-gray-700 text-sm">
+
+              {[
+                "Witness the Taj Mahal at sunrise in Agra",
+                "Explore Delhi's bustling markets",
+                "Experience Jaipur's royal history",
+                "Open art gallery of Mandawa",
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <Check className="text-[#AF956C]" size={16} />
+                  {item}
+                </li>
+              ))}
+
+            </ul>
+
+          </div>
+
+          {/* 🔹 Inclusions */}
+          <div className="bg-white rounded-md
+                          shadow-sm 
+                          border border-[#eee7dd] 
+                          p-6">
+
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+              Inclusions
+            </h2>
+
+            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
+
+              {[
+                { icon: Hotel, text: "15 nights, chosen hotels" },
+                { icon: Car, text: "Local driver, guide" },
+                { icon: Utensils, text: "Daily breakfast" },
+                { icon: CreditCard, text: "All costs covered" },
+                { icon: Wifi, text: "In Car Wi-fi" },
+                { icon: ChefHat, text: "Cooking classes, dinner" },
+                { icon: Plane, text: "Airport transfer" },
+                { icon: Bus, text: "Delhi rickshaw" },
+              ].map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div key={i} className="flex flex-col items-center gap-1.5">
+                    <Icon size={18} className="text-[#AF956C]" />
+                    <p className="text-[12px] leading-tight">
+                      {item.text}
+                    </p>
+                  </div>
+                );
+              })}
+
+            </div>
+
+          </div>
 
         </div>
+
       </div>
 
     </section>

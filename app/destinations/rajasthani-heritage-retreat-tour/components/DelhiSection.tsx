@@ -4,18 +4,20 @@ import Image from "next/image";
 
 export default function DelhiSection() {
   return (
-    <section id="delhi" className="space-y-6">
+    <div id="delhi" className="max-w-5xl">
 
-      <h2 className="text-3xl md:text-4xl font-semibold">
+      {/* Heading */}
+      <h2 className="text-3xl md:text-4xl font-semibold mb-4">
         Delhi - A Blend Of History & Royalty
       </h2>
 
-      <p className="text-gray-700 leading-relaxed">
-        <span className="font-semibold">Discover Delhi</span>, which is the mixture
-        of history and modernity with vibrant, contemporary, and bursting colours.
+      {/* Description */}
+      <p className="text-gray-700 mb-6 leading-relaxed text-[15px]">
+        Discover Delhi, which is the mixture of history and modernity with Vibrant, contemporary, and bursting colours. In Old Delhi, you’ll experience the rich colours of humanity in all its shades and sensations.
       </p>
 
-      <div className="relative w-full h-[380px] rounded-xl overflow-hidden shadow-lg">
+      {/* Image */}
+      <div className="relative w-full h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
           src="/destination/heritage-tour/delhi.jpg"
           alt="Delhi"
@@ -24,6 +26,6 @@ export default function DelhiSection() {
         />
       </div>
 
-    </section>
+    </div>
   );
 }

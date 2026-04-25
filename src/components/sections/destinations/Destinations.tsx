@@ -10,11 +10,11 @@ export default function PopularDestinations() {
 
         {/* Heading */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#8b6a3d] mb-4">
+          <h2 className="text-3xl md:text-3xl font-semibold text-[#8b6a3d] mb-4">
             Begin Your Journey With Popular Destinations
           </h2>
 
-          <p className="text-base md:text-lg text-[#8b6a3d] tracking-wide">
+          <p className="text-base md:text-md text-[#8b6a3d] tracking-wide">
             Our Best-Loved Routes Across India’s Cultural Landscape.
           </p>
         </div>

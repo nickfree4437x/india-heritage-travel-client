@@ -8,20 +8,27 @@ export default function TourLayout({
   sidebar: React.ReactNode;
 }) {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
-      
-      {/* Left Content */}
-      <div className="lg:col-span-2">
-        {children}
-      </div>
+    <div className="bg-[#f4f0ea] w-full">
 
-      {/* Right Sidebar */}
-      <div className="relative">
-        <div className="lg:sticky lg:top-24">
-          {sidebar}
+      <section
+        className="max-w-[1400px] mx-auto px-6 py-4
+        grid grid-cols-1 lg:grid-cols-[2.4fr_1fr] gap-8"
+      >
+
+        {/* LEFT CONTENT */}
+        <div>
+          {children}
         </div>
-      </div>
 
-    </section>
+        {/* RIGHT SIDEBAR */}
+        <div className="lg:pl-4">
+          <div className="sticky top-24">
+            {sidebar}
+          </div>
+        </div>
+
+      </section>
+
+    </div>
   );
 }

@@ -13,22 +13,22 @@ export default function SuitableFor() {
 
   const items = [
     {
-      icon: <Briefcase size={40} />,
+      icon: <Briefcase size={42} />,
       text: "Corporate Travel",
       id: "corporate",
     },
     {
-      icon: <Leaf size={40} />,
-      text: "Spiritual, Cultural, Artistic & Gastronomic",
+      icon: <Leaf size={42} />,
+      text: "Spiritual, Cultural, Artistic & Gastronomic Interests",
       id: "spiritual",
     },
     {
-      icon: <Users size={40} />,
+      icon: <Users size={42} />,
       text: "Friends & Family Travel",
       id: "family",
     },
     {
-      icon: <User size={40} />,
+      icon: <User size={42} />,
       text: "Solo Travel",
       id: "solo",
     },
@@ -43,46 +43,68 @@ export default function SuitableFor() {
 
   return (
     <>
-      {/* 🔥 TOP NAV LINKS */}
-      <div className="bg-[#9b7a50] text-white py-3">
-        <div className="max-w-6xl mx-auto flex justify-center items-center gap-4 text-sm md:text-base">
+      {/* 🔥 STICKY NAV (SAME AS GT) */}
+      <div className="sticky top-0 z-30 bg-[#9A7A58] text-white">
+
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-center items-center gap-6 text-[15px] md:text-lg font-medium">
+
           {navLinks.map((link, i) => (
-            <div key={i} className="flex items-center gap-4">
+            <div key={i} className="flex items-center gap-6">
+
               <span
                 onClick={() => handleScroll(link.id)}
                 className="cursor-pointer hover:underline"
               >
                 {link.name}
               </span>
-              {i !== navLinks.length - 1 && <span>|</span>}
+
+              {i !== navLinks.length - 1 && (
+                <span className="opacity-60">|</span>
+              )}
+
             </div>
           ))}
+
         </div>
       </div>
 
-      {/* ✅ SUITABLE FOR SECTION */}
-      <section className="bg-white py-12 border-b">
-        <h2 className="text-center text-3xl font-semibold mb-10">
+      {/* 🎯 MAIN SECTION (SAME BG + SPACING) */}
+      <section className="bg-[#f4f0ea] pt-20 pb-10">
+
+        {/* 🏷 Heading */}
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-[#2c2c2c] tracking-wide">
           Suitable For
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
+        {/* 🎯 CARDS GRID */}
+        <div className="grid grid-cols-2 md:grid-cols-4 
+                        gap-x-12 gap-y-10 
+                        max-w-6xl mx-auto px-6 text-center">
+
           {items.map((item, i) => (
             <div
               key={i}
               onClick={() => handleScroll(item.id)}
-              className="flex flex-col items-center text-center cursor-pointer group"
+              className="group flex flex-col items-center gap-4 
+                         px-6 py-8 rounded-md
+                         transition-all duration-500 cursor-pointer"
             >
-              <div className="text-[#9b7a50] mb-3 group-hover:scale-110 transition">
+
+              {/* ICON */}
+              <div className="text-[#9A7A58] transition-all duration-500 group-hover:scale-110">
                 {item.icon}
               </div>
 
-              <p className="text-sm font-medium group-hover:text-[#9b7a50] transition">
+              {/* TEXT */}
+              <p className="font-medium text-[#3a3a3a] leading-snug">
                 {item.text}
               </p>
+
             </div>
           ))}
+
         </div>
+
       </section>
     </>
   );

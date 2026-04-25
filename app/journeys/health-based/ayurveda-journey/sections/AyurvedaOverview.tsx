@@ -9,7 +9,7 @@ export default function AyurvedaOverview() {
         </h2>
 
         {/* Content */}
-        <div className="space-y-6 text-gray-700 text-sm md:text-base leading-relaxed text-left">
+        <div className="space-y-6 text-gray-700 leading-relaxed text-[15px] md:text-base text-justify">
           
           <p>
             Ayurveda, a natural health system, originated more than 3,000 years ago in India. 

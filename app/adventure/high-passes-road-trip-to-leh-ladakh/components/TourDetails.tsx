@@ -1,64 +1,92 @@
+"use client";
+
+import Image from "next/image";
 import HighlightsInclusions from "./HighlightsInclusions";
 import Itinerary from "./Itinerary";
 
 export default function TourDetails() {
   const cities = [
     {
-      title: "Delhi - A Blend Of History & Royalty",
-      desc: "Discover Delhi, a mix of history and modernity with vibrant culture and heritage landmarks.",
+      id: "delhi",
+      title: "Delhi- A Blend Of History & Royalty",
+      desc: "Discover Delhi, which is the mixture of history and modernity with Vibrant, contemporary, and bursting colours. In Old Delhi, you’ll experience the rich colours of humanity in all its shades and sensations.",
       img: "/adventure/ladakh/delhi.jpg",
     },
     {
-      title: "Chandigarh - Urban & Modern City",
-      desc: "Chandigarh is known for its modern architecture and well-planned infrastructure.",
+      id: "chandigarh",
+      title: "Chandigarh- Urban & Modern City",
+      desc: "Chandigarh is located on the foothills of Shivaliks & is famous as one of the best in urban planning & modern architecture. It is the dream city of India’s 1st prime Minister, Sh. Jawahar Lal Nehru & is planned by famous French architect Le Cobuiser.",
       img: "/adventure/ladakh/chandigarh.jpg",
     },
     {
-      title: "Manali - A Picturesque Hill Station",
-      desc: "Manali offers scenic mountains, rivers, and beautiful valleys.",
+      id: "manali",
+      title: "Manali- A Picturesque Hill Station",
+      desc: "It is a popular tourist destination which serves a gateway to Lahaul & spiti district as well as Leh Ladakh. This has beautiful place which has amazing views, greenery, snow0kissed peaks, lush valleys.",
       img: "/adventure/ladakh/manali.jpg",
     },
     {
-      title: "Jispa - A Picturesque Village",
-      desc: "Jispa is a peaceful village surrounded by mountains and rivers.",
+      id: "jispa",
+      title: "Jispa- A Picturesque Village",
+      desc: "Located in Lahaul region of Himachal Pradesh, Jispa is nestled along the banks of Bhaga River. It is famous stop over for travelers travelling to Leh-Ladakh which stunning views of the surrounding mountains, peaceful environment, serene landscapes. It is famous for its trekking routes, campsites & base for exploring nearby Baralacha la Pass.",
       img: "/adventure/ladakh/jispa.jpg",
     },
     {
-      title: "Leh - A Historic High-Altitude Town",
-      desc: "Leh is famous for monasteries, culture and breathtaking landscapes.",
+      id: "leh",
+      title: "Leh - A Historic Town",
+      desc: "Situated on an altitude of 3,500 meters (11,500 ft) above sea level, Leh is famous for its stunning landscapes, vibrant monasteries & rich cultural heritage. Leh is also a gateway to the breathtaking beauty of Himalayas which offers attraction such as Leh Palace, Leh market & Shanti Stupa. It is also a hub for adventure activities like river rafting , mountain biking & trekking.",
       img: "/adventure/ladakh/leh.jpg",
     },
     {
+      id: "nubra",
       title: "Nubra Valley - A Cold Desert In High Altitude",
-      desc: "Nubra Valley is known for sand dunes, camels and scenic beauty.",
+      desc: "Nubra valley is famous for its sand dunes, vibrant monasteries & stunning landscapes. It is located 10,000ft above sea level & is accessible via the Khardung La Pass which is one of the highest motorable roads in the world. This valley is famous for its double-humped Bacrian camels, confluence of the Shyok & picturesque village & Nubra rivers.",
       img: "/adventure/ladakh/nubra.jpg",
     },
     {
+      id: "pangong",
       title: "Pangong Lake - Blue Water Lake",
-      desc: "Pangong Lake is famous for its crystal blue water and changing colors.",
+      desc: "Pangong Lake is a stunning high-altitude lake in Ladakh. It is stretched over 134 kilometers & extends from India to Tibet. It is famous for its mesmerizing blue waters that change shades throughout the day. It has breathtaking scenaries & serene atmosphere.",
       img: "/adventure/ladakh/pangong.jpg",
     },
   ];
 
   return (
-    <div className="space-y-16">
-      {cities.map((city, index) => (
-        <div key={index} className="space-y-4">
-          <h2 className="text-2xl md:text-3xl font-semibold">
+    <div className="space-y-20">
+
+      {cities.map((city) => (
+        <div
+          key={city.id}
+          id={city.id}
+          className="w-full scroll-mt-28"
+        >
+
+          {/* TITLE */}
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-[#2c2c2c]">
             {city.title}
           </h2>
 
-          <p className="text-gray-600">{city.desc}</p>
+          {/* DESCRIPTION */}
+          <p className="text-gray-700 mb-8 leading-relaxed text-[15px] text-justify">
+            {city.desc}
+          </p>
 
-          <img
-            src={city.img}
-            className="w-full rounded-xl shadow-lg"
-          />
+          {/* IMAGE */}
+          <div className="relative w-full h-[420px] rounded-md overflow-hidden shadow-md group">
+            <Image
+              src={city.img}
+              alt={city.title}
+              fill
+              className="object-cover transition-transform duration-700"
+            />
+          </div>
+
         </div>
       ))}
 
+      {/* EXTRA SECTIONS */}
       <HighlightsInclusions />
       <Itinerary />
+
     </div>
   );
 }

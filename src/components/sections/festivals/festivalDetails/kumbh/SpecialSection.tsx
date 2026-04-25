@@ -2,48 +2,51 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    img: "/festivals/kumbh/1.jpg",
+    image: "/festivals/kumbh/1.jpg",
     title: "Sacred Rituals",
     desc: "Witness ancient rituals performed on the banks of holy rivers.",
   },
   {
-    img: "/festivals/kumbh/2.jpg",
+    image: "/festivals/kumbh/2.jpg",
     title: "Sadhus & Saints",
     desc: "Meet spiritual seekers living a life beyond material world.",
   },
   {
-    img: "/festivals/kumbh/3.jpg",
+    image: "/festivals/kumbh/3.jpg",
     title: "Holy River Experience",
     desc: "Take a sacred dip believed to cleanse lifetimes of sins.",
   },
   {
-    img: "/festivals/kumbh/4.jpg",
+    image: "/festivals/kumbh/4.jpg",
     title: "Mass Pilgrimage",
     desc: "Be part of the world’s largest spiritual gathering.",
   },
   {
-    img: "/festivals/kumbh/5.jpg",
+    image: "/festivals/kumbh/5.jpg",
     title: "Spiritual Energy",
     desc: "Feel the chants, devotion, and vibrations around you.",
   },
   {
-    img: "/festivals/kumbh/6.jpg",
+    image: "/festivals/kumbh/6.jpg",
     title: "Cultural Exploration",
     desc: "Explore temples, traditions, and spiritual heritage.",
   },
 ];
 
 export default function SpecialSection() {
-  const [active, setActive] = useState(0);
+  const [index, setIndex] = useState(0);
 
-  // Auto slide
+  const next = () => setIndex((prev) => (prev + 1) % slides.length);
+  const prev = () =>
+    setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+
+  // 🔥 Auto Slide
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActive((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    const interval = setInterval(next, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -52,45 +55,68 @@ export default function SpecialSection() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-center text-[#9b7a50] mb-10">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-[#2c2c2c] tracking-wide">
           What makes this trip Special?
         </h2>
 
-        {/* Slider */}
-        <div className="flex h-[400px] overflow-hidden rounded-xl">
+        {/* Carousel */}
+        <div className="relative h-[450px] overflow-hidden rounded-2xl shadow-md">
 
-          {slides.map((slide, index) => (
+          {slides.map((item, i) => (
             <div
-              key={index}
-              onMouseEnter={() => setActive(index)}
-              className={`relative transition-all duration-500 cursor-pointer ${
-                active === index ? "flex-[3]" : "flex-[1]"
+              key={i}
+              className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                i === index
+                  ? "opacity-100 scale-100 z-10"
+                  : "opacity-0 scale-105 z-0"
               }`}
             >
               {/* Image */}
               <Image
-                src={slide.img}
-                alt={slide.title}
+                src={item.image}
+                alt={item.title}
                 fill
-                className="object-cover"
+                className="object-cover object-center"
+                priority={i === 0}
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/40"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
               {/* Content */}
-              <div
-                className={`absolute bottom-0 p-4 text-white transition-all duration-500 ${
-                  active === index
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10"
-                }`}
-              >
-                <h3 className="text-lg font-semibold">{slide.title}</h3>
-                <p className="text-sm">{slide.desc}</p>
+              <div className="absolute bottom-10 left-10 text-white max-w-lg">
+
+                <h3 className="text-2xl md:text-3xl font-bold mb-2">
+                  {item.title}
+                </h3>
+
+                <p className="text-sm md:text-base text-gray-200">
+                  {item.desc}
+                </p>
+
               </div>
             </div>
           ))}
+
+          {/* Left Button */}
+          <button
+            onClick={prev}
+            className="absolute left-4 top-1/2 -translate-y-1/2 
+                       bg-white/80 hover:bg-white 
+                       p-3 rounded-full shadow transition"
+          >
+            <ChevronLeft size={20} />
+          </button>
+
+          {/* Right Button */}
+          <button
+            onClick={next}
+            className="absolute right-4 top-1/2 -translate-y-1/2 
+                       bg-white/80 hover:bg-white 
+                       p-3 rounded-full shadow transition"
+          >
+            <ChevronRight size={20} />
+          </button>
 
         </div>
 

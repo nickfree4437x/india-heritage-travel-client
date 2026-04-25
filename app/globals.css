@@ -43,10 +43,26 @@ body {
 }
 
 /* ✅ Heading font utility */
-.font-heading {
+.font-heading .h1  {
   font-family: var(--font-playfair), serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes zoomHero {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

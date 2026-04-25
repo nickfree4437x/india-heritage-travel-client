@@ -1,58 +1,85 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+
+const tours = [
+  {
+    title: "Rajasthani Heritage Retreat",
+    desc: "Explore the beautiful landscapes and rich culture of this region.",
+    image: "/adventure/kashmir/recom/tour1.jpg",
+    slug: "/destinations/rajasthani-heritage-retreat-tour",
+  },
+  {
+    title: "Divine Kashmir and Exciting Ladakh",
+    desc: "Famous as the summer capital of Jammu & Kashmir, Srinagar lies in the Kashmir Valley",
+    image: "/adventure/kashmir/hero.jpg",
+    slug: "/adventure/divine-kashmir-and-exciting-ladakh",
+  },
+  {
+    title: "Southern Delights: A Journey Through Time",
+    desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour.",
+    image: "/adventure/kashmir/recom/tour3.jpg",
+    slug: "/adventure/southern-delights-tour",
+  },
+];
+
 export default function RecommendedTours() {
-  const tours = [
-    {
-      title: "Rajasthani Heritage Retreat",
-      desc: "Explore the beautiful landscapes and rich culture of this region.",
-      img: "/adventure/rajasthan/rajasthan.jpg",
-    },
-    {
-      title: "Divine Kashmir And Exciting Ladakh",
-      desc: "Famous as the summer capital of Jammu & Kashmir, Srinagar lies in the Kashmir Valley.",
-      img: "/adventure/kashmir/ladakh.jpg",
-    },
-    {
-      title: "Southern Delights: A Journey Through Time",
-      desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour.",
-      img: "/adventure/south/kerala.jpg",
-    },
-  ];
-
   return (
-    <section className="py-20 bg-[#f5f5f5]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="max-w-[1400px] mx-auto px-6 py-20">
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          Recommended Tours
-        </h2>
+      {/* 🔹 Heading */}
+      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-14 tracking-wide">
+        Recommended Tours
+      </h2>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {tours.map((tour, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden"
-            >
-              <img
-                src={tour.img}
-                alt={tour.title}
-                className="w-full h-56 object-cover"
-              />
+      {/* 🔹 Cards */}
+      <div className="grid md:grid-cols-3 gap-10">
 
-              <div className="p-5">
-                <h3 className="text-lg font-semibold text-red-500 mb-2">
+        {tours.map((tour, index) => (
+          <Link key={index} href={tour.slug} className="block group">
+
+            <div className="bg-white rounded-sm
+                            shadow-sm
+                            border border-[#eee7dd]
+                            overflow-hidden 
+                            transition-all duration-500
+                            hover:shadow-md
+                            hover:-translate-y-2">
+
+              {/* 🔥 Image */}
+              <div className="relative h-[240px] w-full overflow-hidden">
+                <Image
+                  src={tour.image}
+                  alt={tour.title}
+                  fill
+                  className="object-cover transition-transform duration-700"
+                />
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition" />
+              </div>
+
+              {/* 🔥 Content */}
+              <div className="p-6 space-y-3">
+
+                <h3 className="text-[17px] font-semibold text-red-500 leading-snug group-hover:underline">
                   {tour.title}
                 </h3>
 
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-700 text-[14px] leading-relaxed line-clamp-4">
                   {tour.desc}
                 </p>
+
               </div>
+
             </div>
-          ))}
-        </div>
+
+          </Link>
+        ))}
 
       </div>
+
     </section>
   );
 }

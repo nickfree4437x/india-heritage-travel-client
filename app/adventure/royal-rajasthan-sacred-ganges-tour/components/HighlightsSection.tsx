@@ -13,84 +13,97 @@ import {
 
 export default function HighlightsSection() {
   return (
-    <div className="grid md:grid-cols-2 gap-8">
+    <section>
 
-      {/* Highlights */}
-      <div className="bg-white rounded-xl shadow-md p-6">
-        <h3 className="text-xl font-semibold mb-4 text-center">
-          Highlights
-        </h3>
+      <div className="max-w-5xl mx-auto">
 
-        <ul className="space-y-3 text-gray-700">
-          <li className="flex items-center gap-2">
-            <Check className="text-[#9b7a50]" /> Witness the Taj Mahal at sunrise in Agra
-          </li>
-          <li className="flex items-center gap-2">
-            <Check className="text-[#9b7a50]" /> Explore Delhi's bustling markets
-          </li>
-          <li className="flex items-center gap-2">
-            <Check className="text-[#9b7a50]" /> Jaipur's royal history
-          </li>
-          <li className="flex items-center gap-2">
-            <Check className="text-[#9b7a50]" /> Discover Udaipur's serene lakes and palaces
-          </li>
-          <li className="flex items-center gap-2">
-            <Check className="text-[#9b7a50]" /> Marvel at Jodhpur's Mehrangarh Fort
-          </li>
-        </ul>
-      </div>
+        <div className="grid md:grid-cols-2 gap-10">
 
-      {/* Inclusions */}
-      <div className="bg-white rounded-xl shadow-md p-6">
-        <h3 className="text-xl font-semibold mb-6 text-center">
-          Inclusions
-        </h3>
+          {/* 🔹 Highlights */}
+          <div
+            className="bg-white rounded-md 
+                       border border-[#eee7dd] 
+                       shadow-sm p-6
+                       transition"
+          >
+            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center text-[#2c2c2c]">
+              Highlights
+            </h2>
 
-        <div className="grid grid-cols-2 gap-6 text-center text-sm">
+            <ul className="space-y-3 text-gray-700 text-sm">
 
-          <div>
-            <Hotel className="mx-auto text-[#9b7a50]" />
-            <p>20 nights, chosen hotels</p>
+              {[
+                "Witness the Taj Mahal at sunrise in Agra",
+                "Explore Delhi's bustling markets",
+                "Jaipur's royal history",
+                "Discover Udaipur's serene lakes and palaces",
+                "Marvel at Jodhpur's Mehrangarh Fort",
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-2">
+
+                  <Check
+                    size={16}
+                    className="text-[#AF956C] mt-[2px]"
+                  />
+
+                  <span>{item}</span>
+
+                </li>
+              ))}
+
+            </ul>
           </div>
 
-          <div>
-            <Car className="mx-auto text-[#9b7a50]" />
-            <p>Local driver, guide</p>
-          </div>
+          {/* 🔹 Inclusions */}
+          <div
+            className="bg-white rounded-md 
+                       border border-[#eee7dd] 
+                       shadow-sm p-6
+                       transition"
+          >
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center text-[#2c2c2c]">
+              Inclusions
+            </h2>
 
-          <div>
-            <Utensils className="mx-auto text-[#9b7a50]" />
-            <p>Daily breakfast</p>
-          </div>
+            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
 
-          <div>
-            <Key className="mx-auto text-[#9b7a50]" />
-            <p>All costs covered</p>
-          </div>
+              {[
+                { icon: Hotel, text: "20 nights,\nchosen hotels" },
+                { icon: Car, text: "Local driver,\nguide" },
+                { icon: Utensils, text: "Daily breakfast" },
+                { icon: Key, text: "All costs covered" },
+                { icon: Wifi, text: "In Car Wi-fi" },
+                { icon: Utensils, text: "Cooking classes,\ndinner" },
+                { icon: Plane, text: "Airport transfer" },
+                { icon: Bus, text: "Delhi rickshaw" },
+              ].map((item, index) => {
+                const Icon = item.icon;
 
-          <div>
-            <Wifi className="mx-auto text-[#9b7a50]" />
-            <p>In Car Wi-fi</p>
-          </div>
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center gap-1.5 group"
+                  >
+                    <Icon
+                      size={18}
+                      className="text-[#AF956C] transition group-hover:scale-110"
+                    />
 
-          <div>
-            <Utensils className="mx-auto text-[#9b7a50]" />
-            <p>Cooking classes, dinner</p>
-          </div>
+                    <p className="text-[12px] leading-tight whitespace-pre-line">
+                      {item.text}
+                    </p>
+                  </div>
+                );
+              })}
 
-          <div>
-            <Plane className="mx-auto text-[#9b7a50]" />
-            <p>Airport transfer</p>
-          </div>
+            </div>
 
-          <div>
-            <Bus className="mx-auto text-[#9b7a50]" />
-            <p>Delhi rickshaw</p>
           </div>
 
         </div>
+
       </div>
 
-    </div>
+    </section>
   );
 }

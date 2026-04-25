@@ -4,7 +4,6 @@ import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { Quote, ArrowLeft, ArrowRight } from "lucide-react";
 
-// ✅ TYPE DEFINE
 type Review = {
   name: string;
   type: string;
@@ -18,41 +17,34 @@ type ReviewSliderProps = {
 };
 
 export default function ReviewSlider({ reviews }: ReviewSliderProps) {
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [isAnimating, setIsAnimating] = useState<boolean>(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
 
-  const touchStartX = useRef<number>(0);
-  const touchEndX = useRef<number>(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
-  // Next / Prev
   const next = () => {
     if (isAnimating) return;
     setIsAnimating(true);
-    setCurrentIndex((prev) => (prev + 1) % reviews.length);
+    setCurrentIndex((p) => (p + 1) % reviews.length);
   };
 
   const prev = () => {
     if (isAnimating) return;
     setIsAnimating(true);
-    setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+    setCurrentIndex((p) => (p - 1 + reviews.length) % reviews.length);
   };
 
-  // Auto Slide
   useEffect(() => {
-    const interval = setInterval(() => {
-      next();
-    }, 4000);
-
+    const interval = setInterval(next, 4000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
-  // Animation reset
   useEffect(() => {
-    const timeout = setTimeout(() => setIsAnimating(false), 400);
-    return () => clearTimeout(timeout);
+    const t = setTimeout(() => setIsAnimating(false), 400);
+    return () => clearTimeout(t);
   }, [currentIndex]);
 
-  // Swipe Support
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     touchStartX.current = e.changedTouches[0].screenX;
   };
@@ -64,20 +56,21 @@ export default function ReviewSlider({ reviews }: ReviewSliderProps) {
     if (touchStartX.current - touchEndX.current < -50) prev();
   };
 
-  const currentReview = reviews[currentIndex];
+  const current = reviews[currentIndex];
 
   return (
-    <>
-      {/* Top Images */}
-      <div className="grid md:grid-cols-3 gap-8 mb-16">
+    <div className="space-y-20">
+
+      {/* 🔥 TOP GALLERY */}
+      <div className="grid md:grid-cols-3 gap-8">
         {reviews.map((item, index) => (
           <div
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`relative overflow-hidden rounded-3xl cursor-pointer transition duration-500 ${
+            className={`group relative rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 ${
               index === currentIndex
-                ? "ring-4 ring-[#8b6a3d] scale-105"
-                : "opacity-60"
+                ? "scale-105 ring-2 ring-[#8b6a3d]"
+                : "opacity-60 hover:opacity-100"
             }`}
           >
             <Image
@@ -85,11 +78,15 @@ export default function ReviewSlider({ reviews }: ReviewSliderProps) {
               alt="review"
               width={500}
               height={350}
-              className="object-cover w-full h-[260px] hover:scale-110 transition duration-500"
+              className="w-full h-[260px] object-cover group-hover:scale-110 transition duration-700"
             />
 
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition" />
+
+            {/* Name Tag */}
             {index === currentIndex && (
-              <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-full text-sm shadow">
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-full text-sm shadow">
                 {item.name}
               </div>
             )}
@@ -97,75 +94,91 @@ export default function ReviewSlider({ reviews }: ReviewSliderProps) {
         ))}
       </div>
 
-      {/* Bottom Section */}
+      {/* 💎 MAIN CONTENT */}
       <div
-        className="grid md:grid-cols-2 gap-12 items-center"
+        className="relative bg-white/70 backdrop-blur-xl border border-white/30 rounded-[36px] shadow-xl p-8 md:p-14 grid md:grid-cols-2 gap-12 items-center"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        {/* Left */}
-        <div
-          key={currentIndex}
-          className="transition-all duration-500 ease-in-out opacity-100"
-        >
-          <Quote size={70} className="text-green-600 mb-6 opacity-80" />
 
-          <p className="text-gray-600 leading-relaxed mb-8 max-w-lg">
-            {currentReview.description}
+        {/* Glow */}
+        <div className="absolute -top-20 -left-20 w-[300px] h-[300px] bg-[#8b6a3d]/10 blur-[120px] rounded-full" />
+
+        {/* LEFT */}
+        <div key={currentIndex} className="space-y-6 z-10">
+
+          <Quote className="text-[#8b6a3d]/20 w-16 h-16" />
+
+          <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-lg">
+            “{current.description}”
           </p>
 
-          {/* Buttons */}
-          <div className="flex gap-6">
+          {/* Controls */}
+          <div className="flex items-center gap-4 pt-4">
+
             <button
               onClick={prev}
-              className="w-12 h-12 border rounded-full flex items-center justify-center hover:bg-gray-200"
+              className="group w-12 h-12 rounded-full bg-white/70 backdrop-blur border border-gray-200 flex items-center justify-center hover:bg-[#8b6a3d] hover:text-white transition"
             >
-              <ArrowLeft />
+              <ArrowLeft className="group-hover:-translate-x-1 transition" />
             </button>
 
             <button
               onClick={next}
-              className="w-12 h-12 border rounded-full flex items-center justify-center hover:bg-gray-200"
+              className="group w-12 h-12 rounded-full bg-white/70 backdrop-blur border border-gray-200 flex items-center justify-center hover:bg-[#8b6a3d] hover:text-white transition"
             >
-              <ArrowRight />
+              <ArrowRight className="group-hover:translate-x-1 transition" />
             </button>
+
           </div>
 
-          {/* Dots */}
-          <div className="flex gap-3 mt-6">
-            {reviews.map((_, index) => (
+          {/* Progress */}
+          <div className="flex gap-2 pt-4 max-w-[200px]">
+            {reviews.map((_, i) => (
               <div
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full cursor-pointer ${
-                  index === currentIndex
-                    ? "bg-[#8b6a3d]"
-                    : "bg-gray-300"
-                }`}
-              ></div>
+                key={i}
+                onClick={() => setCurrentIndex(i)}
+                className="flex-1 cursor-pointer"
+              >
+                <div className="h-[4px] bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    className={`h-full transition-all duration-500 ${
+                      i === currentIndex
+                        ? "w-full bg-[#8b6a3d]"
+                        : "w-0"
+                    }`}
+                  />
+                </div>
+              </div>
             ))}
           </div>
+
         </div>
 
-        {/* Right */}
-        <div className="relative flex justify-center">
-          <div className="absolute bottom-0 w-[260px] h-[260px] bg-yellow-400 rounded-full blur-2xl opacity-60 -z-10"></div>
+        {/* RIGHT IMAGE */}
+        <div className="relative flex justify-center items-center">
+
+          <div className="absolute w-[260px] h-[260px] bg-[#8b6a3d]/20 blur-3xl rounded-full" />
 
           <Image
             key={currentIndex}
-            src={currentReview.image}
+            src={current.image}
             alt="traveller"
-            width={260}
-            height={380}
-            className="rounded-xl object-cover shadow-lg transition-all duration-500"
+            width={280}
+            height={400}
+            className="rounded-3xl object-cover shadow-lg hover:scale-105 transition duration-500"
           />
 
-          <div className="absolute bottom-10 -left-10 bg-[#8b6a3d] text-white px-6 py-3 rounded-xl shadow-lg">
-            <p className="font-semibold">{currentReview.name}</p>
-            <p className="text-sm opacity-80">{currentReview.type}</p>
+          {/* Info Card */}
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur px-6 py-3 rounded-xl shadow text-center">
+            <p className="font-semibold">{current.name}</p>
+            <p className="text-sm text-gray-500">{current.type}</p>
           </div>
+
         </div>
+
       </div>
-    </>
+
+    </div>
   );
 }

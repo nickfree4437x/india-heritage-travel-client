@@ -12,8 +12,10 @@ import JaipurSection from "./components/JaipurSection";
 import AgraSection from "./components/AgraSection";
 import HighlightsSection from "./components/HighlightsSection";
 import ItinerarySection from "./components/ItinerarySection";
-import ExcludedServices from "./components/ExcludeServices";
 import Recommended from "./components/RecommendTous";
+import ExcludedServices from "../majestic-golden-triangle-tour/components/ExcludedServices";
+import RecommendedTours from "../majestic-golden-triangle-tour/components/RecommendedTours";
+import Footer from "@/src/components/sections/footer/Footer";
 
 export default function Page() {
   return (
@@ -41,7 +43,7 @@ export default function Page() {
           <AgraSection />
           <HighlightsSection />
           <ItinerarySection />
-          <ExcludedServices />
+          <ExcludedServices/>
           {/* Next sections */}
         </div>
 
@@ -53,7 +55,8 @@ export default function Page() {
         </div>
       </div>
 
-      <Recommended />
+      <RecommendedTours/>\
+      <Footer/>
 
     </div>
   );

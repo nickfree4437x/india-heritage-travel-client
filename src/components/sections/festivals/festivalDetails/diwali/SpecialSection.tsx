@@ -60,12 +60,12 @@ export default function SpecialSection() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-semibold text-center text-[#9b7a50] mb-12">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-[#2c2c2c] tracking-wide">
           What makes this trip Special?
         </h2>
 
         {/* Carousel */}
-        <div className="relative h-[450px] overflow-hidden rounded-xl">
+        <div className="relative h-[450px] overflow-hidden rounded-2xl shadow-md">
 
           {data.map((item, i) => (
             <div
@@ -81,20 +81,24 @@ export default function SpecialSection() {
                 src={item.image}
                 alt={item.title}
                 fill
-                className="object-cover"
+                className="object-cover object-center"
+                priority={i === 0}
               />
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/40"></div>
+              {/* Overlay (improved gradient) */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
               {/* Content */}
               <div className="absolute bottom-10 left-10 text-white max-w-lg">
+
                 <h3 className="text-2xl md:text-3xl font-bold mb-2">
                   {item.title}
                 </h3>
-                <p className="text-sm md:text-base opacity-90">
+
+                <p className="text-sm md:text-base text-gray-200">
                   {item.desc}
                 </p>
+
               </div>
             </div>
           ))}
@@ -102,17 +106,21 @@ export default function SpecialSection() {
           {/* Left Button */}
           <button
             onClick={prev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full"
+            className="absolute left-4 top-1/2 -translate-y-1/2 
+                       bg-white/80 hover:bg-white 
+                       p-3 rounded-full shadow transition"
           >
-            <ChevronLeft />
+            <ChevronLeft size={20} />
           </button>
 
           {/* Right Button */}
           <button
             onClick={next}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full"
+            className="absolute right-4 top-1/2 -translate-y-1/2 
+                       bg-white/80 hover:bg-white 
+                       p-3 rounded-full shadow transition"
           >
-            <ChevronRight />
+            <ChevronRight size={20} />
           </button>
 
         </div>

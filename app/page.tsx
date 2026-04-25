@@ -20,9 +20,9 @@ export default function Home() {
       <About />
       <Difference />
       <Destinations />
-      <ReviewsSection/>
       <Adventure />
       <Festival />
+      <ReviewsSection/>
       <Blog />
       <GallerySection/>
       <CotactSection/>

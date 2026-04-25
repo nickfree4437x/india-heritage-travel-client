@@ -29,19 +29,22 @@ export default function DestinationCard({
           src={image}
           alt={title}
           fill
-          className="object-cover transition-all duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)]
-                     group-hover:blur-[1px]"
+          className="object-cover will-change-transform
+                     transition-all duration-[2000ms] ease-[cubic-bezier(0.22,1,0.36,1)]
+                     group-hover:blur-[1.5px]"
         />
 
         {/* OVERLAY */}
-        <div className="absolute inset-0 bg-black/40 opacity-0 
+        <div className="absolute inset-0 bg-black/20 opacity-0 
+                        will-change-opacity
                         group-hover:opacity-100 
-                        transition-opacity duration-700 ease-in-out"></div>
+                        transition-opacity duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)]" />
 
         {/* DEFAULT CONTENT */}
         <div className="absolute bottom-0 left-0 right-0 p-5 flex flex-col items-center text-white
-                        transition-all duration-500
-                        group-hover:opacity-0 group-hover:translate-y-10">
+                        will-change-transform
+                        transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)]
+                        group-hover:opacity-0 group-hover:translate-y-14">
 
           <Icon size={28} className="mb-2" />
           <h3 className="text-lg font-semibold text-center">{title}</h3>
@@ -49,22 +52,25 @@ export default function DestinationCard({
 
         {/* HOVER CONTENT */}
         <div className="absolute inset-0 flex flex-col justify-between p-6 text-white text-center
-                        translate-y-[120%] group-hover:translate-y-0
-                        transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)]">
+                        will-change-transform
+                        translate-y-[105%] group-hover:translate-y-0
+                        transition-transform duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)]">
 
           {/* TOP */}
-          <div className="opacity-0 translate-y-6 
+          <div className="opacity-0 translate-y-10 
+                          will-change-transform
                           group-hover:opacity-100 group-hover:translate-y-0
-                          transition-all duration-700 delay-200">
+                          transition-all duration-[1000ms] delay-200 ease-[cubic-bezier(0.22,1,0.36,1)]">
 
-            <Icon size={32} className="mx-auto mb-2" />
+            <Icon size={34} className="mx-auto mb-2" />
             <h3 className="text-xl font-semibold">{title}</h3>
           </div>
 
           {/* MIDDLE */}
-          <div className="opacity-0 translate-y-6 
+          <div className="opacity-0 translate-y-10 
+                          will-change-transform
                           group-hover:opacity-100 group-hover:translate-y-0
-                          transition-all duration-700 delay-300">
+                          transition-all duration-[1000ms] delay-400 ease-[cubic-bezier(0.22,1,0.36,1)]">
 
             <p className="text-sm text-gray-200 leading-relaxed">
               {desc}
@@ -76,19 +82,19 @@ export default function DestinationCard({
           </div>
 
           {/* BUTTON */}
-          <div className="opacity-0 translate-y-6 
-                          group-hover:opacity-100 group-hover:translate-y-0
-                          transition-all duration-700 delay-500">
+          <div className="opacity-0 translate-y-10 
+                          will-change-transform
+                          group-hover:opacity-80 group-hover:translate-y-0
+                          transition-all duration-[1000ms] delay-600 ease-[cubic-bezier(0.22,1,0.36,1)]">
 
             <button
               onClick={(e) => e.stopPropagation()}
-              className="mt-4 px-5 py-2 border border-white rounded-full 
+              className="mt-4 text-xs px-5 py-2 border border-white rounded-full 
                          hover:bg-white hover:text-black 
-                         transition duration-300 backdrop-blur-sm"
+                         transition-all duration-500 ease-in-out backdrop-blur-md"
             >
               Know More
             </button>
-
           </div>
 
         </div>

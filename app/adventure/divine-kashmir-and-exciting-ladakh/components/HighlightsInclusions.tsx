@@ -1,4 +1,7 @@
+"use client";
+
 import {
+  Check,
   Hotel,
   Car,
   Utensils,
@@ -21,51 +24,85 @@ export default function HighlightsInclusions() {
   ];
 
   const inclusions = [
-    { icon: <Hotel size={28} />, text: "14 nights, chosen hotels" },
-    { icon: <Car size={28} />, text: "Local driver, guide" },
-    { icon: <Utensils size={28} />, text: "Daily breakfast" },
-    { icon: <CreditCard size={28} />, text: "All costs covered" },
-    { icon: <Wifi size={28} />, text: "In Car Wi-fi" },
-    { icon: <CookingPot size={28} />, text: "Cooking classes, dinner" },
-    { icon: <Plane size={28} />, text: "Airport transfer" },
-    { icon: <Bus size={28} />, text: "Delhi rickshaw" },
+    { icon: Hotel, text: "14 nights, chosen hotels" },
+    { icon: Car, text: "Local driver, guide" },
+    { icon: Utensils, text: "Daily breakfast" },
+    { icon: CreditCard, text: "All costs covered" },
+    { icon: Wifi, text: "In Car Wi-fi" },
+    { icon: CookingPot, text: "Cooking classes, dinner" },
+    { icon: Plane, text: "Airport transfer" },
+    { icon: Bus, text: "Delhi rickshaw" },
   ];
 
   return (
-    <section className="grid md:grid-cols-2 gap-8 mt-16">
+    <section>
+      <div className="max-w-5xl mx-auto">
 
-      {/* Highlights */}
-      <div className="bg-[#f8f8f8] rounded-xl shadow p-6">
-        <h2 className="text-2xl font-semibold mb-6 text-center">
-          Highlights
-        </h2>
+        <div className="grid md:grid-cols-2 gap-10">
 
-        <ul className="space-y-3 text-gray-700">
-          {highlights.map((item, index) => (
-            <li key={index} className="flex gap-3">
-              <span className="text-[#9b7a50] font-bold">✔</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+          {/* 🔹 Highlights */}
+          <div className="bg-white rounded-md
+                          shadow-sm 
+                          border border-[#eee7dd] 
+                          p-6">
 
-      {/* Inclusions */}
-      <div className="bg-[#f8f8f8] rounded-xl shadow p-6">
-        <h2 className="text-2xl font-semibold mb-6 text-center">
-          Inclusions
-        </h2>
+            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center">
+              Highlights
+            </h2>
 
-        <div className="grid grid-cols-2 gap-6 text-center">
-          {inclusions.map((item, index) => (
-            <div key={index} className="flex flex-col items-center gap-2">
-              <div className="text-[#9b7a50]">{item.icon}</div>
-              <p className="text-sm text-gray-700">{item.text}</p>
+            <ul className="space-y-3 text-gray-700 text-sm">
+
+              {highlights.map((item, index) => (
+                <li key={index} className="flex items-start gap-2">
+
+                  <Check
+                    size={16}
+                    className="text-[#AF956C] mt-[2px]"
+                  />
+
+                  <span>{item}</span>
+                </li>
+              ))}
+
+            </ul>
+
+          </div>
+
+          {/* 🔹 Inclusions */}
+          <div className="bg-white rounded-md
+                          shadow-sm 
+                          border border-[#eee7dd] 
+                          p-6">
+
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+              Inclusions
+            </h2>
+
+            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
+
+              {inclusions.map((item, index) => {
+                const Icon = item.icon;
+
+                return (
+                  <div key={index} className="flex flex-col items-center gap-1.5">
+
+                    <Icon size={18} className="text-[#AF956C]" />
+
+                    <p className="text-[12px] leading-tight">
+                      {item.text}
+                    </p>
+
+                  </div>
+                );
+              })}
+
             </div>
-          ))}
-        </div>
-      </div>
 
+          </div>
+
+        </div>
+
+      </div>
     </section>
   );
 }

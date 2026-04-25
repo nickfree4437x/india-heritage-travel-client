@@ -1,60 +1,106 @@
-import { Check, Wifi, Car, Utensils, CreditCard, Plane, Bus, Home } from "lucide-react";
+"use client";
+
+import {
+  Check,
+  Hotel,
+  Car,
+  Utensils,
+  CreditCard,
+  Wifi,
+  CookingPot,
+  Plane,
+  Bus,
+} from "lucide-react";
 
 export default function HighlightsInclusions() {
   const highlights = [
     "Mumbai landmarks and the cinematic charm",
-    "Personalized wellness in Kumarakom for body and soul",
-    "Cruise through Alleppey's enchanting Backwaters",
-    "Thekkady's sanctuary and spice-rich exploration",
-    "Munnar's tea gardens and serene landscapes",
+    "Personalized wellness in Kumarakom for body and soul.",
+    "Cruise through Alleppey's enchanting Backwaters.",
+    "Thekkady's sanctuary and spice-rich exploration.",
+    "Munnar's tea gardens and serene landscapes."
   ];
 
   const inclusions = [
-    { icon: <Home size={28} />, text: "18 nights, chosen hotels" },
-    { icon: <Car size={28} />, text: "Local driver, guide" },
-    { icon: <Utensils size={28} />, text: "Daily breakfast" },
-    { icon: <CreditCard size={28} />, text: "All costs covered" },
-    { icon: <Wifi size={28} />, text: "In Car Wi-fi" },
-    { icon: <Utensils size={28} />, text: "Cooking classes, dinner" },
-    { icon: <Plane size={28} />, text: "Airport transfer" },
-    { icon: <Bus size={28} />, text: "Delhi rickshaw" },
+    { icon: Hotel, text: "14 nights, chosen hotels" },
+    { icon: Car, text: "Local driver, guide" },
+    { icon: Utensils, text: "Daily breakfast" },
+    { icon: CreditCard, text: "All costs covered" },
+    { icon: Wifi, text: "In Car Wi-fi" },
+    { icon: CookingPot, text: "Cooking classes, dinner" },
+    { icon: Plane, text: "Airport transfer" },
+    { icon: Bus, text: "Delhi rickshaw" },
   ];
 
   return (
-    <div className="grid md:grid-cols-2 gap-8">
+    <section>
+      <div className="max-w-5xl mx-auto">
 
-      {/* Highlights */}
-      <div className="bg-white rounded-xl shadow-md p-6">
-        <h3 className="text-xl font-semibold mb-4 text-center">
-          Highlights
-        </h3>
+        <div className="grid md:grid-cols-2 gap-10">
 
-        <ul className="space-y-3 text-gray-700">
-          {highlights.map((item, i) => (
-            <li key={i} className="flex items-start gap-3">
-              <Check className="text-[#9b7a50] mt-1" size={18} />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+          {/* 🔹 Highlights */}
+          <div className="bg-white rounded-md
+                          shadow-sm 
+                          border border-[#eee7dd] 
+                          p-6">
 
-      {/* Inclusions */}
-      <div className="bg-white rounded-xl shadow-md p-6">
-        <h3 className="text-xl font-semibold mb-6 text-center">
-          Inclusions
-        </h3>
+            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center">
+              Highlights
+            </h2>
 
-        <div className="grid grid-cols-2 gap-6 text-center text-sm">
-          {inclusions.map((item, i) => (
-            <div key={i} className="flex flex-col items-center gap-2">
-              <div className="text-[#9b7a50]">{item.icon}</div>
-              <p>{item.text}</p>
+            <ul className="space-y-3 text-gray-700 text-sm">
+
+              {highlights.map((item, index) => (
+                <li key={index} className="flex items-start gap-2">
+
+                  <Check
+                    size={16}
+                    className="text-[#AF956C] mt-[2px]"
+                  />
+
+                  <span>{item}</span>
+                </li>
+              ))}
+
+            </ul>
+
+          </div>
+
+          {/* 🔹 Inclusions */}
+          <div className="bg-white rounded-md
+                          shadow-sm 
+                          border border-[#eee7dd] 
+                          p-6">
+
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+              Inclusions
+            </h2>
+
+            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
+
+              {inclusions.map((item, index) => {
+                const Icon = item.icon;
+
+                return (
+                  <div key={index} className="flex flex-col items-center gap-1.5">
+
+                    <Icon size={18} className="text-[#AF956C]" />
+
+                    <p className="text-[12px] leading-tight">
+                      {item.text}
+                    </p>
+
+                  </div>
+                );
+              })}
+
             </div>
-          ))}
-        </div>
-      </div>
 
-    </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
   );
 }

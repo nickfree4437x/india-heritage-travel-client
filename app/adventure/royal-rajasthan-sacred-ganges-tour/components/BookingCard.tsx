@@ -4,38 +4,70 @@ import Image from "next/image";
 
 export default function BookingCard() {
   return (
-    <div className="bg-[#f8f6f2] rounded-xl shadow-md p-5">
+    <div
+      className="sticky top-24 bg-white 
+                 rounded-md shadow-md p-2
+                 border border-[#eee7dd] 
+                 max-w-[350px] w-full ml-auto"
+    >
 
       {/* Map Image */}
-      <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4">
+      <div className="relative w-full h-56 rounded-md overflow-hidden mb-4 group">
         <Image
           src="/adventure/ganga-tour/map.jpg"
           alt="Tour Map"
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>
 
-      {/* Title */}
-      <h3 className="text-lg font-semibold text-[#3d2f1c] mb-3">
-        Royal Rajasthan & Sacred Ganges Tour
-      </h3>
+      {/* Content */}
+      <div className="px-3 pb-3">
 
-      {/* Pricing */}
-      <p className="font-semibold mb-2">
-        Price-Per Person Starting From:
-      </p>
+        {/* Title */}
+        <h3 className="text-[16.5px] font-semibold text-[#AF956C] mb-2 leading-snug">
+          Royal Rajasthan & Sacred Ganges Tour
+        </h3>
 
-      <ul className="text-sm text-gray-700 space-y-1 mb-4">
-        <li>• Pocket Friendly: $1821USD</li>
-        <li>• Semi Luxury: $2480USD</li>
-        <li>• Luxury: $4279USD</li>
-      </ul>
+        {/* Pricing Label */}
+        <p className="text-[13.5px] text-gray-800 font-medium mb-3">
+          Price-Per Person Starting From:
+        </p>
 
-      {/* Button */}
-      <button className="w-full bg-[#9b7a50] text-white py-3 rounded-full hover:bg-[#7c623f] transition">
-        Book This Journey
-      </button>
+        {/* Pricing List */}
+        <ul className="text-[13.5px] text-gray-600 space-y-2 mb-5">
+
+          <li className="flex justify-between items-center">
+            <span>Pocket Friendly</span>
+            <span className="font-semibold text-gray-800">$1821USD</span>
+          </li>
+
+          <li className="flex justify-between items-center">
+            <span>Semi Luxury</span>
+            <span className="font-semibold text-gray-800">$2480USD</span>
+          </li>
+
+          <li className="flex justify-between items-center">
+            <span>Luxury</span>
+            <span className="font-semibold text-gray-800">$4279USD</span>
+          </li>
+
+        </ul>
+
+        {/* Divider */}
+        <div className="h-px bg-[#eee7dd] mb-4"></div>
+
+        {/* CTA Button */}
+        <button
+          className="w-full bg-[#AF956C] text-white py-2.5 rounded-full 
+                     text-sm tracking-wide
+                     transition-all duration-300
+                     hover:bg-[#8f7654] hover:shadow-sm hover:-translate-y-[1px]"
+        >
+          Book This Journey
+        </button>
+
+      </div>
     </div>
   );
 }

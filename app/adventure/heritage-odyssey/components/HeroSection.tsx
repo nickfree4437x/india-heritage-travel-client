@@ -4,32 +4,35 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
+    <section className="relative h-[92vh] w-full overflow-hidden">
 
-      {/* Background Image */}
-      <Image
-        src="/adventure/heritage-odyssey/banner.jpg"
-        alt="Heritage Odyssey"
-        fill
-        priority
-        className="object-cover"
-      />
+      {/* Background Image with Zoom */}
+      <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
+        <Image
+          src="/adventure/heritage-odyssey/banner.jpg"
+          alt="Heritage Odyssey"
+          fill
+          priority
+          className="object-cover object-center will-change-transform"
+        />
+      </div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
-        <h1 className="text-white text-3xl sm:text-5xl md:text-6xl font-bold mb-6">
-          Heritage Odyssey
+        <h1
+          className="text-4xl md:text-4xl font-bold mb-4
+                     opacity-0 translate-y-10
+                     animate-[fadeUp_1.2s_ease-out_0.3s_forwards]"
+        >
+          Heritage Odyssey: North to South India Tour
         </h1>
 
-        <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
-          Book This Journey
-        </button>
-
       </div>
+
     </section>
   );
 }

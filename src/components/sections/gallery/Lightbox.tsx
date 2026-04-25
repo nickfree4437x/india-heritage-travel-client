@@ -1,9 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X } from "lucide-react";
 
 export default function Lightbox({
   images,
@@ -12,15 +10,15 @@ export default function Lightbox({
   onClose,
 }: any) {
 
-  const next = () => setIndex((prev: number) => (prev + 1) % images.length);
-  const prev = () =>
-    setIndex((prev: number) => (prev - 1 + images.length) % images.length);
-
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
-      if (e.key === "ArrowRight") next();
-      if (e.key === "ArrowLeft") prev();
+      if (e.key === "ArrowRight")
+        setIndex((prev: number) => (prev + 1) % images.length);
+      if (e.key === "ArrowLeft")
+        setIndex((prev: number) =>
+          prev === 0 ? images.length - 1 : prev - 1
+        );
     };
 
     window.addEventListener("keydown", handleKey);
@@ -28,112 +26,69 @@ export default function Lightbox({
   }, []);
 
   return (
-    <AnimatePresence>
-      <motion.div
-        className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-lg flex flex-col items-center justify-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+    <div
+      className="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex flex-col items-center justify-center"
+      onClick={onClose}
+    >
+      <img
+        src={images[index]}
+        alt="preview"
+        className="max-h-[70vh] sm:max-h-[75vh] rounded-sm shadow-lg object-contain"
+        onClick={(e) => e.stopPropagation()}
+      />
+
+      {/* close */}
+      <button
         onClick={onClose}
+        className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white"
       >
+        <X size={28} />
+      </button>
 
-        {/* 🔥 Top Bar */}
-        <div
-          onClick={(e) => e.stopPropagation()}
-          className="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-[10000]"
-        >
-          <p className="text-white text-sm tracking-wide">
-            {index + 1} / {images.length}
-          </p>
+      {/* counter */}
+      <p className="text-white mt-3 text-xs sm:text-sm">
+        {index + 1} / {images.length}
+      </p>
 
-          <button
-            onClick={onClose}
-            className="text-white bg-white/10 hover:bg-white/20 p-2 rounded-full transition backdrop-blur"
-          >
-            <X size={26} />
-          </button>
-        </div>
-
-        {/* 🔥 Left Arrow */}
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            prev();
-          }}
-          className="absolute left-6 z-[10000] text-white bg-white/10 hover:bg-white/20 p-2 rounded-full transition backdrop-blur"
-        >
-          <ChevronLeft size={36} />
-        </button>
-
-        {/* 🔥 Right Arrow */}
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            next();
-          }}
-          className="absolute right-6 z-[10000] text-white bg-white/10 hover:bg-white/20 p-2 rounded-full transition backdrop-blur"
-        >
-          <ChevronRight size={36} />
-        </button>
-
-        {/* 🔥 Main Image Animation */}
-        <motion.div
-          key={index}
-          onClick={(e) => e.stopPropagation()}
-          initial={{ scale: 0.85, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          exit={{ scale: 0.85, opacity: 0 }}
-          transition={{ duration: 0.4 }}
-          className="flex items-center justify-center max-h-[80vh] px-4"
-        >
-          <Image
-            src={images[index]}
-            alt="lightbox"
-            width={900}
-            height={1000}
-            className="rounded-md object-contain max-h-[75vh] shadow-sm"
+      {/* thumbnails */}
+      <div className="flex gap-2 mt-4 sm:mt-6 overflow-x-auto px-3 sm:px-4">
+        {images.map((img: string, i: number) => (
+          <img
+            key={i}
+            src={img}
+            onClick={(e) => {
+              e.stopPropagation();
+              setIndex(i);
+            }}
+            className={`w-14 h-14 sm:w-16 sm:h-16 object-cover rounded cursor-pointer border-2 ${
+              i === index
+                ? "border-[#A07008]"
+                : "border-transparent"
+            }`}
           />
-        </motion.div>
+        ))}
+      </div>
 
-        {/* 🔥 Thumbnails */}
-        <div
-          onClick={(e) => e.stopPropagation()}
-          className="absolute bottom-6 w-full max-w-5xl overflow-x-auto px-6"
-        >
-          <div className="flex gap-2 justify-center">
+      {/* nav */}
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          setIndex(index === 0 ? images.length - 1 : index - 1);
+        }}
+        className="absolute left-3 sm:left-6 text-white text-2xl sm:text-3xl"
+      >
+        ‹
+      </button>
 
-            {images.map((img: string, i: number) => (
-              <img
-                key={i}
-                src={img}
-                onClick={() => setIndex(i)}
-                className={`w-16 h-16 object-cover rounded cursor-pointer border-2 transition
-                  ${
-                    i === index
-                      ? "border-[#A07008]"
-                      : "border-transparent opacity-60 hover:opacity-100"
-                  }
-                `}
-              />
-            ))}
-
-          </div>
-        </div>
-
-        {/* 🔥 Floating Glow Effect */}
-        <motion.div
-          animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 6, repeat: Infinity }}
-          className="absolute top-10 left-10 w-40 h-40 bg-[#A07008]/10 blur-3xl rounded-full"
-        />
-
-        <motion.div
-          animate={{ y: [0, 20, 0] }}
-          transition={{ duration: 8, repeat: Infinity }}
-          className="absolute bottom-10 right-10 w-52 h-52 bg-[#A07008]/10 blur-3xl rounded-full"
-        />
-
-      </motion.div>
-    </AnimatePresence>
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          setIndex((index + 1) % images.length);
+        }}
+        className="absolute right-3 sm:right-6 text-white text-2xl sm:text-3xl"
+      >
+        ›
+      </button>
+    </div>
   );
 }

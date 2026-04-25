@@ -5,41 +5,36 @@ import { goldenTriangleDetails } from "../data/tourData";
 
 export default function Hero() {
   return (
-    <section className="relative h-[80vh] w-full">
+    <section className="relative h-[92vh] w-full overflow-hidden">
 
       {/* Background Image */}
-      <Image
-        src="/golden-triangle.jpg"
-        alt="Golden Triangle Tour"
-        fill
-        priority
-        className="object-cover"
-      />
+      <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
+        <Image
+          src="/destination/golden-triangle/golden-triangle.jpg"
+          alt="Golden Triangle Tour"
+          fill
+          priority
+          className="object-cover object-center will-change-transform"
+        />
+      </div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4
+                       opacity-0 translate-y-10
+                       animate-[fadeUp_1.2s_ease-out_0.3s_forwards]">
           {goldenTriangleDetails.title}
         </h1>
 
-        <p className="max-w-2xl text-lg md:text-xl mb-6 text-gray-200">
+        <p className="max-w-2xl text-md md:text-md text-gray-200
+                      opacity-0 translate-y-10
+                      animate-[fadeUp_1.4s_ease-out_0.6s_forwards]">
           {goldenTriangleDetails.content}
         </p>
-
-        {/* CTA Buttons */}
-        <div className="flex gap-4">
-          <button className="bg-[#c29d59] hover:bg-[#a88445] px-6 py-3 rounded-full text-white font-medium transition">
-            Book Now
-          </button>
-
-          <button className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
-            Explore
-          </button>
-        </div>
 
       </div>
 

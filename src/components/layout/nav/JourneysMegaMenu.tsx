@@ -4,47 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { journeysData, journeyCategories } from "./data/journeysData";
 
-type MenuItem = {
-  name: string;
-  link: string;
-};
-
-type MenuData = {
-  curated: MenuItem[];
-  festivals: MenuItem[];
-  health: MenuItem[];
-};
+type MenuData = typeof journeysData;
 
 export default function JourneysMegaMenu() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<keyof MenuData | null>(null);
-
-  const data: MenuData = {
-    curated: [
-      { name: "The Royal Rajasthan", link: "/journeys/curated-tours/royal-rajasthan-tour" },
-      { name: "Golden Triangle Splendor", link: "/journeys/curated-tours/golden-triangle-tour" },
-      { name: "South India Getaways", link: "/journeys/curated-tours/south-indian-gateways" },
-      { name: "East India Adventure", link: "/journeys/curated-tours/east-india-adventure" },
-      { name: "West India Escapes", link: "/journeys/curated-tours/west-india-escapes" }
-    ],
-    festivals: [
-      { name: "Holi Festival Tour", link: "/journeys/festivals/holi-festival-tour" },
-      { name: "Diwali Festival Tour", link: "/journeys/festivals/diwali-festival-tour" },
-      { name: "Pushkar Fair Tour", link: "/journeys/festivals/pushkar-fair-tour" },
-      { name: "Kumbh Mela Tour", link: "/journeys/festivals/kumbh-mela-tour" }
-    ],
-    health: [
-      { name: "Yoga Escapes", link: "/journeys/health-based/yoga-escapes" },
-      { name: "Ayurveda Journey", link: "/journeys/health-based/ayurveda-journey" }
-    ]
-  };
-
-  const categories = [
-    { id: "curated", title: "Curated Journeys" },
-    { id: "festivals", title: "Festivals" },
-    { id: "health", title: "Health Based" }
-  ];
 
   return (
     <div
@@ -69,13 +35,13 @@ export default function JourneysMegaMenu() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 6 }}
             transition={{ duration: 0.25 }}
-            className="absolute left-0 mt-3 bg-[#A38664]/80 backdrop-blur-sm rounded-md"
+            className="absolute left-0 mt-3 bg-[#A38664]/90 backdrop-blur-md rounded-md shadow-lg"
           >
             <div className="flex text-[0.8rem] text-white">
 
-              {/* LEFT - Categories */}
+              {/* LEFT */}
               <div className="flex flex-col py-5 px-6 space-y-2 min-w-[180px]">
-                {categories.map((item) => (
+                {journeyCategories.map((item) => (
                   <div
                     key={item.id}
                     onMouseEnter={() => setActive(item.id as keyof MenuData)}
@@ -90,7 +56,7 @@ export default function JourneysMegaMenu() {
                 ))}
               </div>
 
-              {/* RIGHT - ONLY WHEN ACTIVE */}
+              {/* RIGHT */}
               <AnimatePresence>
                 {active && (
                   <motion.div
@@ -98,15 +64,10 @@ export default function JourneysMegaMenu() {
                     initial={{ opacity: 0, x: 10 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -10 }}
-                    transition={{ duration: 0.2 }}
                     className="py-5 pr-6 pl-2 space-y-2 min-w-[220px]"
                   >
-                    {data[active].map((item, i) => (
-                      <Link
-                        key={i}
-                        href={item.link}
-                        className="block transition hover:opacity-80"
-                      >
+                    {journeysData[active].map((item, i) => (
+                      <Link key={i} href={item.link} className="block hover:opacity-80">
                         {item.name}
                       </Link>
                     ))}

@@ -2,108 +2,421 @@
 
 import Image from "next/image";
 
-const itineraryData = [
-  {
-    title: "Day 1-3: Cochin",
-    desc: "Arrival at Cochin Airport. Explore Fort Kochi, St. Francis Church, Synagogue and Mattancherry Palace.",
-    img: "/adventure/delights/cochin2.jpg",
-    next: "Alleppey – 1 hr 20 min drive",
-  },
-  {
-    title: "Day 3-4: Alleppey",
-    desc: "Enjoy backwaters and houseboat experience with serene views.",
-    img: "/adventure/delights/alleppey2.jpg",
-    next: "Thekkady",
-  },
-  {
-    title: "Day 4-6: Thekkady",
-    desc: "Visit Periyar National Park and spice plantations.",
-    img: "/adventure/delights/thekkady2.jpg",
-    next: "Munnar",
-  },
-  {
-    title: "Day 6-8: Munnar",
-    desc: "Explore tea gardens, valleys and scenic viewpoints.",
-    img: "/adventure/delights/munnar2.jpg",
-    next: "Madurai",
-  },
-  {
-    title: "Day 8-10: Madurai",
-    desc: "Visit Meenakshi Temple and cultural markets.",
-    img: "/adventure/delights/madurai2.jpg",
-    next: "Thanjavur",
-  },
-  {
-    title: "Day 10-11: Thanjavur",
-    desc: "Explore Brihadeeswarar Temple and heritage.",
-    img: "/adventure/delights/thanjavur2.jpg",
-    next: "Pondicherry",
-  },
-  {
-    title: "Day 11-13: Pondicherry",
-    desc: "Enjoy French streets, beaches and Auroville.",
-    img: "/adventure/delights/pondicherry2.jpg",
-    next: "Mahabalipuram",
-  },
-  {
-    title: "Day 13-15: Mahabalipuram",
-    desc: "Visit UNESCO temples and coastal views.",
-    img: "/adventure/delights/mahabalipuram2.jpg",
-    next: "Mumbai",
-  },
-  {
-    title: "Day 15-16: Mumbai",
-    desc: "Explore Gateway of India, Marine Drive and city life.",
-    img: "/adventure/delights/mumbai2.jpg",
-    next: "Departure",
-  },
-  {
-    title: "Day 17: Farewell & Departure",
-    desc: "Departure with unforgettable memories.",
-  },
-];
-
-export default function ItinerarySection() {
+export default function Itinerary() {
   return (
-    <div className="space-y-8">
+    <section className="py-6">
 
-      {/* Heading */}
-      <h2 className="text-3xl font-semibold text-center">
-        Detailed Itinerary
-      </h2>
+      {/* 🔥 SAME WIDTH AS CITY SECTION */}
+      <div className="max-w-5xl mx-auto">
 
-      {/* Cards */}
-      {itineraryData.map((item, index) => (
-        <div
-          key={index}
-          className="bg-[#f5f5f5] rounded-xl shadow-md p-6"
-        >
-          <h3 className="text-lg font-semibold text-red-600 mb-3">
-            {item.title}
-          </h3>
+        {/* 🔹 Heading */}
+        <h2 className="text-3xl md:text-4xl text-center font-semibold mb-6">
+          Detailed Itinerary
+        </h2>
 
-          <p className="text-gray-700 mb-4">
-            {item.desc}
-          </p>
+        <div className="space-y-12">
 
-          {item.img && (
-            <Image
-              src={item.img}
-              alt={item.title}
-              width={800}
-              height={400}
-              className="rounded-lg mb-4"
-            />
-          )}
+          {/* ================= Day 1-3: Cochin ================= */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
-          {item.next && (
-            <p className="font-medium text-gray-800">
-              <span className="font-semibold">Next Stop:</span> {item.next}
+            <h3 className="text-lg font-semibold text-red-500">
+              Day 1-3: Cochin
+            </h3>
+
+            <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
+             When you arrive at Cochin Airport, our team will ensure your warm welcome with a sign board, ensuring your smooth journey.
             </p>
-          )}
-        </div>
-      ))}
 
-    </div>
+            <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              For those who are arriving early, they have 2 options to explore coachin. Head to local sightseeing tour of Kochi. 
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+
+              {/* IMAGE */}
+              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
+                <Image
+                  src="/adventure/delights/itinerary/i1.jpg"
+                  alt="Delhi"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              {/* TEXT */}
+              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+                <p>
+                 You can begin by Sain Francis Church, an amazing monuments of Kochi. Then you can visit Old Paradise Synagogue which is the oldest active synagogue in the Commonwealth of Nations.
+                </p>
+                <p className="mt-6">
+                 Then you can visit Mattancherry Palace, which is a Portuguese palace popularly known as Dutch palace. Overnight stay will be at hotel in Kochi.
+                </p>
+              </div>
+
+            </div>
+
+            <div className="pt-2">
+              <p className="font-semibold">Next stop: Alleppey</p>
+              <p className="text-sm text-gray-500">A 1-hour and 20-minute drive, covering 55 kilometres.</p>
+            </div>
+
+          </div>
+
+          {/* ================= Day 3-4: Alleppey ================= */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
+
+            <h3 className="text-lg font-semibold text-red-500">
+              Day 3-4: Alleppey
+            </h3>
+            <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
+             Reach Alleppey by noon & check-in a well-booked beautiful houseboat. Enjoy boat cruise through mesmerising Vembanad Lake enjoying experience of backwater cruising.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+
+              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
+                <Image
+                  src="/adventure/delights/itinerary/alleppey.jpg"
+                  alt="Agra"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="space-y-3 text-gray-700 text-[15px] leading-relaxed text-justify">
+                <p>
+                  As you travel narrow strips of land you can witness amazing life of livelihoods of fishing communities, women immersed in their daily lives & children swimming.
+                </p>
+                <p>
+                 You’ll witness amazing spots along the way, feel free to explore them.
+                </p>
+              </div>
+
+            </div>
+
+            <div>
+              <p className="font-semibold">Next stop: Thekkady</p>
+              <p className="text-sm text-gray-500">A scenic 3-hour and 30-minute drive, of 140 kilometres, to Thekkady</p>
+            </div>
+
+          </div>
+
+          {/* ================= Day 4-6: Thekkady ================= */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
+
+            <h3 className="text-lg font-semibold text-red-500">
+              Day 4-6: Thekkady
+            </h3>
+            <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
+             Early morning you can go on a guided jungle hike & bamboo rafting at Periyar National Park. This will take around 6 hours & visiting there means exploring nature around & enjoying peaceful nature. There are many chances you get to witness the elephant herd in the jungle while hiking.
+            </p>
+
+            <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              After that you can enjoy Bamboo rafting on the Periyar Lake, where also you’ll have the chance to see wildlife and explore one of India’s exceptional animal sanctuaries.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+
+              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
+                <Image
+                  src="/adventure/delights/itinerary/i3.jpg"
+                  alt="Jaipur"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+                <p>
+                 You can also see fragrant spice market which has cinnamon, pepper & cardamom.
+                </p>
+                <p className="mt-4">
+                 Venture into the fragrant spice plantations, where cardamom, cinnamon, pepper, and coffee thrive.
+                </p>
+                <p className="mt-4">
+                  At evening you can see kathakali Dance which is very famous for of Indian classical dance.
+                </p>
+              </div>
+
+            </div>
+
+            <div>
+              <p className="font-semibold">Next stop: Munnar</p>
+              <p className="text-sm text-gray-500">A 3-hour drive, covering 90 kilometres to Munnar.</p>
+            </div>
+
+          </div>
+
+          {/* ================= Day 6-8: Munnar================= */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
+
+            <h3 className="text-lg font-semibold text-red-500">
+              Day 6-8: Munnar
+            </h3>
+
+            <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <p>
+                Entering Munnar on the way you can witness world’s largest tea-growing region. After reaching you can go to see Kalaripayattu show which is an ancient martial art that originated in Kerala.
+              </p>
+              <p>
+                Next day morning you can go to guided trek tour which will be 3-hour trekking tour covering 9km of walking which include grassland, tea plantations & rocks. 
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+
+              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
+                <Image
+                  src="/adventure/delights/itinerary/munnar2.jpg"
+                  alt="Delhi"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+                <p>
+                 Next you can visit Munnar Tea Museum which preserve the aspects of the origin of tea plantation.
+                </p>
+                <p className="mt-4">
+                 Next you can also visit Pothamedu Viewpoint,a amazing spot which offers panoramic view of valley. You can also visit Muthirapuzha River & Idukki Dam, the view from there is impressive which offers hill slopes view.
+                </p>
+              </div>
+            </div>
+            <div>
+              <p className="font-semibold">Next stop: Madurai</p>
+              <p className="text-sm text-gray-500">A 2-hour flight to Mumbai.</p>
+            </div>
+
+          </div>
+
+          {/* ================= Day 8-10: Madurai ================= */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
+
+            <h3 className="text-lg font-semibold text-red-500">
+              Day 8-10: Madurai
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+
+              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
+                <Image
+                  src="/adventure/delights/itinerary/i5.jpg"
+                  alt="Delhi"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+                <p>
+                 Visit the most famous template dedicated to Goddess of Wealth, The Meenakshi Amman Temple.
+                </p>
+                <p className="mt-4">
+                 It is oldest & one of the most famous temples in India, also it has a great historical & mythological significance. You can visit Madurai Flower market which is one of the biggest in Tamil Nadu. Next you can visit Gandhi Museum which was built in 1959.
+                </p>
+              </div>
+            </div>
+            <div>
+              <p className="font-semibold">Next stop: Thanjavur</p>
+              <p className="text-sm text-gray-500">A 3-hour drive of 190 kilometres to Thanjavur.</p>
+            </div>
+
+          </div>
+
+          {/* ================= Day 10-11: Thanjavur ================= */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
+
+            <h3 className="text-lg font-semibold text-red-500">
+              Day 10-11: Thanjavur
+            </h3>
+
+            <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <p className="mt-4">
+               On the way you can visit Airavatesvara Temple built in 12th century. It is a lord Shiva Temple which is also recognized as UNESCO world Heritage site & also known as ”Great Living Chola Temples”. 
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+
+              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
+                <Image
+                  src="/adventure/delights/itinerary/i6.jpg"
+                  alt="Delhi"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+                <p>
+                  Next visit Thanjavur Royal palace & Museum which have amazing art & royal collection. You can visit Thanjavur Brass-work shops, which have tradiotnal handicraft of Tamil Nadu.
+                </p>
+                <p className="mt-4">
+                 Visit Brihadeeshwara Temple also a UNESCO world heritage site which is perfect model of great heights achieved in architecture by the Chola rulers.
+                </p>
+              </div>
+            </div>
+            <div>
+              <p className="font-semibold">Next stop: Pondicherry</p>
+              <p className="text-sm text-gray-500">A 4-hour and 20-minute drive of 170 kilometres.</p>
+            </div>
+
+          </div>
+
+          {/* ================= Day 11-13: Pondicherry ================= */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
+
+            <h3 className="text-lg font-semibold text-red-500">
+             Day 11-13: Pondicherry
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+
+              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
+                <Image
+                  src="/adventure/delights/itinerary/pondicherry2.jpg"
+                  alt="Delhi"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+                <p>
+                 Pondicherry is the Union Territory of India. Visit French Quarter which are colonial buildings.  Visit The Basilica of the Sacred Heart of Jesus, which is oriental specimen of Gothic architrecture.
+                </p>
+                <p className="mt-4">
+                 Later explore Arulmigu Manakula Vinayagar Temple, dedicated to Lord Ganesha. In the evening you can hangout at Pondicherry beaches which have unique charm.
+                </p>
+              </div>
+            </div>
+            <div>
+              <p className="font-semibold">Next stop: Mahabalipuram</p>
+              <p className="text-sm text-gray-500">A 2-hour drive, covering 100 kilometers.</p>
+            </div>
+
+          </div>
+  
+          {/* ================= Day 13-15: Mahabalipuram ================= */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
+
+            <h3 className="text-lg font-semibold text-red-500">
+              Day 13-15: Mahabalipuram
+            </h3>
+
+            <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <p className="mt-4">
+               A beautiful city with vast casuarinas trees, silvery sandy beach, classical handmade crafts & mesmerising ancient architecture. 
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+
+              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
+                <Image
+                  src="/adventure/delights/itinerary/mahabalipuram2.jpg"
+                  alt="Delhi"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+                <p>
+                  Visit the most famous monument, Shore Temple which is made of granite in 8th century CE.
+                </p>
+                <p className="mt-4">
+                 Later you can visit Pancha Ratha which is a set of 5 different monuments each is named after Pandavas of epic ”Mahabharat” & their family. Then you can visit Cave Temple which is located on the hillock of the town.
+                </p>
+              </div>
+            </div>
+            <div>
+              <p className="font-semibold">Next stop: Mumbai</p>
+              <p className="text-sm text-gray-500">A 2-hour flight to Mumbai.</p>
+            </div>
+
+          </div>
+
+          {/* ================= Day 15-16: Mumbai ================= */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
+
+            <h3 className="text-lg font-semibold text-red-500">
+              Day 15-16: Mumbai
+            </h3>
+
+            <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <p className="mt-4">
+               Dive in Mumbai’s busy life. Visit Gateway of India, which is the most famous tourist attraction.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+
+              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
+                <Image
+                  src="/adventure/delights/itinerary/i4.jpg"
+                  alt="Delhi"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+                <p>
+                  Next you can head to Taj Mahal Palace Hotel followed by Victoria Terminus station. It is a world heritage site & historic railway station. It has great artwork of Victorian-Gothic style of architecture. You can also visit Mani Bhawan, Haji Ali & Jain temple. You can alsi visit Dharavi, an area where famous movie shoot happens including Oscar-winning “Slumdog Millionaire”.
+                </p>
+              </div>
+            </div>
+            <div>
+              <p className="font-semibold">Next stop: Mumbai</p>
+              <p className="text-sm text-gray-500">A 2-hour flight to Mumbai.</p>
+            </div>
+
+          </div>          
+
+          {/* ================= Day 12 ================= */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
+
+            <h3 className="text-lg font-semibold text-red-500">
+              Day 12: Farewell and Departure
+            </h3>
+
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+
+              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
+                <Image
+                  src="/destination/north-tour/itinerary/i9.jpg"
+                  alt="Departure"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
+                After discovering & exploring & taking back the beautiful memories from India, you’re all set ready for your journey back to your home. Your dedicated driver will ensure you reach the airport promptly on time, in accordance with your flight schedule.
+                Safe travels!
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* 🔹 CTA */}
+        <div className="mt-14 flex justify-center">
+
+          <button className="bg-[#AF956C] text-white 
+                            px-10 py-5 rounded-lg
+                            text-sm tracking-wide
+                            transition-all duration-300
+                            shadow-sm
+                            hover:shadow-md">
+            
+            Book This Tour Or Modify This Itinerary
+            
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
   );
 }

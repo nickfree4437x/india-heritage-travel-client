@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { diwaliData } from "./diwaliData";
 import StickyNav from "../holi/components/StickyNav";
 import DesignedFor from "../holi/components/DesignedFor";
 import AboutSection from "./AboutSection";
@@ -9,48 +8,53 @@ import SpecialSection from "./SpecialSection";
 import ItinerarySection from "./ItinerarySection";
 import PricingSection from "./PricingSection";
 import ExploreMoreSection from "./ExploreMoreSection";
-import FAQSection from "./FAQSection";
+import FAQSection from "../holi/components/FAQSection";
+import Footer from "../../../footer/Footer";
 
 export default function DiwaliDetails() {
   return (
     <div className="w-full">
 
       {/* 🔥 HERO SECTION */}
-      <section className="relative w-full h-[80vh]">
+    <section className="relative h-[93vh] w-full overflow-hidden">
 
-        {/* Background Image */}
+      {/* Background Image with Zoom */}
+      <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/festivals/diwali/diwali.jpg"
+          src="/festivals/diwali/dewali.jpg"
           alt="Diwali Festival"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-center will-change-transform"
         />
+      </div>
 
-        {/* Overlay (Gradient for premium look) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
 
-        {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 text-white">
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
-          {/* Title */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            {diwaliData.title}
-          </h1>
+        {/* Title */}
+        <h1
+          className="text-4xl md:text-5xl font-bold mb-4 leading-tight
+                    opacity-0 translate-y-10
+                    animate-[fadeUp_1.2s_ease-out_0.3s_forwards]"
+        >
+          Diwali: Festival of lights
+        </h1>
 
-          {/* Subtitle */}
-          <p className="max-w-2xl text-lg md:text-xl mb-6 opacity-90">
-            {diwaliData.description}
-          </p>
+        {/* Subtitle */}
+        <p
+          className="max-w-2xl text-lg md:text-lg mb-6 text-gray-200
+                    opacity-0 translate-y-10
+                    animate-[fadeUp_1.4s_ease-out_0.6s_forwards]"
+        >
+          Festival of Lights & new beginnings, celebrating good over evil.
+        </p>
 
-          {/* CTA */}
-          <button className="bg-[#9b7a50] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#876845] transition">
-            Book Now
-          </button>
-
-        </div>
-
-      </section>
+      </div>
+    </section>
       <StickyNav/>
       <DesignedFor/>
       <AboutSection/>
@@ -59,6 +63,7 @@ export default function DiwaliDetails() {
       <PricingSection/>
       <ExploreMoreSection/>
       <FAQSection/>
+      <Footer/>
 
     </div>
   );

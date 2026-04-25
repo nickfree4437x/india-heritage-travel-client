@@ -189,7 +189,7 @@ export default function Footer() {
 
         <div className="mt-12 -mx-6 md:-mx-20 border-t border-gray-800"></div>
 
-        <p className="text-center text-xs text-gray-400 mt-6 px-6 md:px-20">
+        <p className="text-center text-sm text-gray-400 mt-6 px-6 md:px-20">
           © {new Date().getFullYear()} India Heritage Travel. Crafted with ❤️ for unforgettable journeys.
         </p>
 

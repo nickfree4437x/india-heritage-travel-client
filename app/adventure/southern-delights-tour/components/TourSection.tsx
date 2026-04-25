@@ -19,7 +19,7 @@ export default function TourSection({
         {title}
       </h2>
 
-      <p className="text-gray-700 leading-relaxed mb-4 whitespace-pre-line">
+      <p className="text-gray-700 text-[15px] leading-relaxed mb-4 whitespace-pre-line text-justify">
         {description}
       </p>
 

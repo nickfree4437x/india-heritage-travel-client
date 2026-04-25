@@ -1,5 +1,17 @@
 "use client";
 
+import {
+  Check,
+  Hotel,
+  Car,
+  Utensils,
+  CreditCard,
+  Wifi,
+  ChefHat,
+  Plane,
+  Bus,
+} from "lucide-react";
+
 export default function OdysseyHighlights() {
   const highlights = [
     "Explore Delhi, Agra, and Jaipur's rich heritage",
@@ -9,42 +21,77 @@ export default function OdysseyHighlights() {
     "Relax with seamless logistics and accommodations",
   ];
 
+  const inclusions = [
+    { icon: Hotel, text: "9 nights,\nchosen hotels" },
+    { icon: Car, text: "Local driver,\nguide" },
+    { icon: Utensils, text: "Daily breakfast" },
+    { icon: CreditCard, text: "All costs covered" },
+    { icon: Wifi, text: "In Car Wi-fi" },
+    { icon: ChefHat, text: "Cooking dinner" },
+    { icon: Plane, text: "Airport transfer" },
+    { icon: Bus, text: "Rickshaw ride" },
+  ];
+
   return (
-    <section className="py-16 px-6 bg-[#f8f6f2]">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+    <section>
 
-        {/* Highlights */}
-        <div className="bg-white rounded-xl shadow p-6">
-          <h3 className="text-2xl font-semibold mb-4 text-center">
-            Highlights
-          </h3>
+      <div className="max-w-5xl mx-auto px-6">
 
-          <ul className="space-y-3 text-gray-700">
-            {highlights.map((item, i) => (
-              <li key={i}>✔ {item}</li>
-            ))}
-          </ul>
-        </div>
+        <div className="grid md:grid-cols-2 gap-10">
 
-        {/* Inclusions */}
-        <div className="bg-white rounded-xl shadow p-6 text-center">
-          <h3 className="text-2xl font-semibold mb-6">
-            Inclusions
-          </h3>
+          {/* 🔹 Highlights */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6">
 
-          <div className="grid grid-cols-2 gap-6 text-sm">
-            <div>🏨 9 nights hotels</div>
-            <div>🚗 Local driver</div>
-            <div>🍽 Daily breakfast</div>
-            <div>💳 All costs covered</div>
-            <div>📶 Wi-fi</div>
-            <div>🍳 Cooking dinner</div>
-            <div>✈ Airport transfer</div>
-            <div>🛺 Rickshaw</div>
+            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center">
+              Highlights
+            </h2>
+
+            <ul className="space-y-3 text-gray-700 text-sm">
+              {highlights.map((item, index) => (
+                <li key={index} className="flex items-center gap-2">
+
+                  <Check size={16} className="text-[#AF956C]" />
+
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
           </div>
+
+          {/* 🔹 Inclusions */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6">
+
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+              Inclusions
+            </h2>
+
+            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
+
+              {inclusions.map((item, index) => {
+                const Icon = item.icon;
+
+                return (
+                  <div key={index} className="flex flex-col items-center gap-1.5">
+
+                    <Icon size={18} className="text-[#AF956C]" />
+
+                    <p className="text-[12px] leading-tight whitespace-pre-line">
+                      {item.text}
+                    </p>
+
+                  </div>
+                );
+              })}
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>
+
     </section>
   );
 }

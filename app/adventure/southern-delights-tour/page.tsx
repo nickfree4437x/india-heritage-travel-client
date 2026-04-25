@@ -1,3 +1,4 @@
+import Footer from "@/src/components/sections/footer/Footer";
 import HeroSection from "./components/HeroSection";
 import RecommendedTours from "./components/RecommendedTours";
 import SuitableFor from "./components/SuitableFor";
@@ -10,6 +11,7 @@ export default function RoyalRajasthanPage() {
       <SuitableFor />
       <TourLayout />
       <RecommendedTours />
+      <Footer/>
     </div>
   );
 }

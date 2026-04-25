@@ -1,93 +1,99 @@
 "use client";
 
-import { Check, Hotel, Car, Utensils, Wifi, Plane, CreditCard } from "lucide-react";
+import {
+  Check,
+  Hotel,
+  Car,
+  Utensils,
+  Wifi,
+  Plane,
+  CreditCard,
+  ChefHat,
+  Bus,
+} from "lucide-react";
 
 export default function HighlightsInclusions() {
   return (
-    <section className="grid md:grid-cols-2 gap-8 mt-16">
+    <section className="bg-[#f4f0ea]">
 
-      {/* LEFT - Highlights */}
-      <div className="bg-white shadow-md rounded-xl p-6 border">
+      <div className="max-w-5xl mx-auto">
 
-        <h2 className="text-2xl font-semibold text-center mb-6">
-          Highlights
-        </h2>
+        <div className="grid md:grid-cols-2 gap-10">
 
-        <ul className="space-y-4 text-gray-700">
+          {/* 🔹 Highlights */}
+          <div className="bg-white rounded-md
+                          shadow-sm
+                          border border-[#eee7dd]
+                          p-6">
 
-          <li className="flex items-start gap-3">
-            <Check className="text-[#9b7a50] mt-1" />
-            Witness the Taj Mahal at sunrise in Agra
-          </li>
+            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center text-[#2c2c2c]">
+              Highlights
+            </h2>
 
-          <li className="flex items-start gap-3">
-            <Check className="text-[#9b7a50] mt-1" />
-            Explore Delhi's bustling markets
-          </li>
+            <ul className="space-y-3 text-gray-700 text-sm">
 
-          <li className="flex items-start gap-3">
-            <Check className="text-[#9b7a50] mt-1" />
-            Experience Jaipur's royal history
-          </li>
+              {[
+                "Witness the Taj Mahal at sunrise in Agra",
+                "Explore Delhi's bustling markets",
+                "Experience Jaipur's royal history",
+                "Open art gallery of Mandawa",
+              ].map((item, index) => (
+                <li key={index} className="flex items-center gap-2">
 
-          <li className="flex items-start gap-3">
-            <Check className="text-[#9b7a50] mt-1" />
-            Open art gallery of Mandawa
-          </li>
+                  <Check size={16} className="text-[#AF956C]" />
 
-        </ul>
-      </div>
+                  <span>{item}</span>
+                </li>
+              ))}
 
-      {/* RIGHT - Inclusions */}
-      <div className="bg-white shadow-md rounded-xl p-6 border">
+            </ul>
 
-        <h2 className="text-2xl font-semibold text-center mb-6">
-          Inclusions
-        </h2>
-
-        <div className="grid grid-cols-2 gap-6 text-center text-sm text-gray-700">
-
-          <div className="flex flex-col items-center gap-2">
-            <Hotel className="text-[#9b7a50]" size={28} />
-            <p>7 nights, chosen hotels</p>
           </div>
 
-          <div className="flex flex-col items-center gap-2">
-            <Car className="text-[#9b7a50]" size={28} />
-            <p>Local driver, guide</p>
-          </div>
+          {/* 🔹 Inclusions */}
+          <div className="bg-white rounded-md
+                          shadow-sm
+                          border border-[#eee7dd]
+                          p-6">
 
-          <div className="flex flex-col items-center gap-2">
-            <Utensils className="text-[#9b7a50]" size={28} />
-            <p>Daily breakfast</p>
-          </div>
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center text-[#2c2c2c]">
+              Inclusions
+            </h2>
 
-          <div className="flex flex-col items-center gap-2">
-            <CreditCard className="text-[#9b7a50]" size={28} />
-            <p>All costs covered</p>
-          </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-4 text-center">
 
-          <div className="flex flex-col items-center gap-2">
-            <Wifi className="text-[#9b7a50]" size={28} />
-            <p>In Car Wi-fi</p>
-          </div>
+              {[
+                { icon: Hotel, text: "7 nights,\nchosen hotels" },
+                { icon: Car, text: "Local driver,\nguide" },
+                { icon: Utensils, text: "Daily breakfast" },
+                { icon: CreditCard, text: "All costs covered" },
+                { icon: Wifi, text: "In Car Wi-fi" },
+                { icon: ChefHat, text: "Cooking classes,\ndinner" },
+                { icon: Plane, text: "Airport transfer" },
+                { icon: Bus, text: "Delhi rickshaw" },
+              ].map((item, index) => {
+                const Icon = item.icon;
 
-          <div className="flex flex-col items-center gap-2">
-            <Utensils className="text-[#9b7a50]" size={28} />
-            <p>Cooking classes, dinner</p>
-          </div>
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center gap-1.5"
+                  >
+                    <Icon size={18} className="text-[#AF956C]" />
 
-          <div className="flex flex-col items-center gap-2">
-            <Plane className="text-[#9b7a50]" size={28} />
-            <p>Airport transfer</p>
-          </div>
+                    <p className="text-[12px] leading-tight whitespace-pre-line">
+                      {item.text}
+                    </p>
+                  </div>
+                );
+              })}
 
-          <div className="flex flex-col items-center gap-2">
-            <Car className="text-[#9b7a50]" size={28} />
-            <p>Delhi rickshaw</p>
+            </div>
+
           </div>
 
         </div>
+
       </div>
 
     </section>

@@ -5,40 +5,36 @@ import { rajasthanDetails } from "../data/tourData";
 
 export default function Hero() {
   return (
-    <section className="relative h-[80vh] w-full">
+    <section className="relative h-[92vh] w-full overflow-hidden">
 
-      {/* Background Image */}
+      {/* 🔥 Background Image (Smooth Zoom Animation) */}
       <Image
         src="/rajasthan.jpg"
         alt="Rajasthan Tour"
         fill
         priority
-        className="object-cover"
+        className="object-cover scale-105 animate-[zoomSlow_20s_ease-in-out_infinite]"
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* 🔥 Dark Overlay (Premium Look) */}
+      <div className="absolute inset-0 bg-black/20" />
 
-      {/* Content */}
+      {/* 🔥 Gradient Overlay (Depth Add) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
+
+      {/* 🔥 Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
 
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          {rajasthanDetails.title}
-        </h1>
+        <div className="max-w-3xl">
 
-        <p className="max-w-2xl text-lg md:text-xl mb-6 text-gray-200">
-          {rajasthanDetails.content}
-        </p>
+          <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-5 tracking-wide">
+            {rajasthanDetails.title}
+          </h1>
 
-        {/* CTA */}
-        <div className="flex gap-4">
-          <button className="bg-[#c29d59] hover:bg-[#a88445] px-6 py-3 rounded-full text-white font-medium transition">
-            Book Now
-          </button>
+          <p className="text-lg md:text-lg text-gray-200 leading-relaxed">
+            {rajasthanDetails.content}
+          </p>
 
-          <button className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
-            Explore
-          </button>
         </div>
 
       </div>

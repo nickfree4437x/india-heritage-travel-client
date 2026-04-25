@@ -1,50 +1,63 @@
+"use client";
+
 import { Briefcase, Users, User, Flower } from "lucide-react";
 
 export default function DesignedFor() {
   const items = [
     {
-      icon: <Flower size={40} />,
-      text: "Spiritual, Cultural & Artistic Interests",
+      icon: <Flower size={42} />,
+      text: "Spiritual, Cultural, Artistic & Gastronomic Interests",
     },
     {
-      icon: <Briefcase size={40} />,
+      icon: <Briefcase size={42} />,
       text: "Corporate Travel",
     },
     {
-      icon: <Users size={40} />,
+      icon: <Users size={42} />,
       text: "Friends & Family Travel",
     },
     {
-      icon: <User size={40} />,
+      icon: <User size={42} />,
       text: "Solo Travel",
     },
   ];
 
   return (
-    <section className="py-20 bg-[#f4f0ea]" id="about">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="bg-[#f4f0ea] pt-20 pb-10" id="about">
 
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#9b7a50] mb-12">
-          Designed For
-        </h2>
+      {/* HEADING */}
+      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-[#2c2c2c] tracking-wide">
+        Designed For
+      </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
-          {items.map((item, i) => (
-            <div key={i} className="flex flex-col items-center gap-4">
+      {/* GRID */}
+      <div className="grid grid-cols-2 md:grid-cols-4 
+                      gap-x-12 gap-y-10 
+                      max-w-6xl mx-auto px-6 text-center">
 
-              <div className="text-[#9b7a50]">
-                {item.icon}
-              </div>
+        {items.map((item, i) => (
+          <div
+            key={i}
+            className="group flex flex-col items-center gap-4 
+                       px-6 py-8 rounded-md
+                       transition-all duration-500"
+          >
 
-              <p className="text-sm md:text-base font-medium text-gray-700">
-                {item.text}
-              </p>
-
+            {/* ICON */}
+            <div className="text-[#9A7A58]">
+              {item.icon}
             </div>
-          ))}
-        </div>
+
+            {/* TEXT */}
+            <p className="font-medium text-[#3a3a3a] leading-snug">
+              {item.text}
+            </p>
+
+          </div>
+        ))}
 
       </div>
+
     </section>
   );
 }

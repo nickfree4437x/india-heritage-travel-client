@@ -3,39 +3,55 @@
 import Image from "next/image";
 
 interface CitySectionProps {
+  id?: string;
   title: string;
   description: string;
   image: string;
 }
 
 export default function CitySection({
+  id,
   title,
   description,
   image,
 }: CitySectionProps) {
   return (
-    <div>
+    <section id={id} className="scroll-mt-28">
 
-      {/* Heading */}
-      <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+      {/* TITLE */}
+      <h2
+        className="text-3xl md:text-4xl font-semibold mb-4 text-[#2c2c2c]
+                   opacity-0 translate-y-10
+                   animate-[fadeUp_1.2s_ease-out_0.2s_forwards]"
+      >
         {title}
       </h2>
 
-      {/* Description */}
-      <p className="text-gray-700 mb-6 leading-relaxed">
+      {/* DESCRIPTION */}
+      <p
+        className="text-gray-700 mb-8 leading-relaxed text-[15px]
+                   text-left md:text-justify
+                   opacity-0 translate-y-10
+                   animate-[fadeUp_1.4s_ease-out_0.4s_forwards]"
+      >
         {description}
       </p>
 
-      {/* Image */}
-      <div className="relative w-full h-[420px] rounded-xl overflow-hidden shadow-md">
+      {/* IMAGE */}
+      <div
+        className="relative w-full h-[420px] rounded-md overflow-hidden shadow-md group
+                   opacity-0 translate-y-10
+                   animate-[fadeUp_1.6s_ease-out_0.6s_forwards]"
+      >
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover"
+          priority={false}
+          className="object-cover transition-transform duration-700"
         />
       </div>
 
-    </div>
+    </section>
   );
 }

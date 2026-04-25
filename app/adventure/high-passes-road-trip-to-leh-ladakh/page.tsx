@@ -1,8 +1,10 @@
+import Footer from "@/src/components/sections/footer/Footer";
+import RecommendedTours from "../divine-kashmir-and-exciting-ladakh/components/RecommendedTours";
 import HeroSection from "./components/HeroSection";
 import SuitableFor from "./components/SuitableFor";
 import TourDetails from "./components/TourDetails";
 import TourLayout from "./components/TourLayout";
-import RecommendedTours from "./components/RecommendedTours";
+import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/ExcludedServices";
 
 export default function RoyalRajasthanPage() {
   return (
@@ -13,9 +15,11 @@ export default function RoyalRajasthanPage() {
       {/* MAIN SECTION */}
       <TourLayout>
         <TourDetails />
+        <ExcludedServices/>
       </TourLayout>
 
-      <RecommendedTours />
+      <RecommendedTours/>
+      <Footer/>
     </div>
   );
 }

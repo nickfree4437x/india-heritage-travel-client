@@ -1,65 +1,61 @@
-import { Users, Map, Clock, MapPin } from "lucide-react";
+import { ShieldCheck, Compass, Headphones, Route } from "lucide-react";
 
 export default function Difference() {
   const items = [
     {
-      icon: <Users size={24} />,
-      text: "Safe And Secure Women Travel",
+      icon: <ShieldCheck size={36} />,
+      text: "Women-first safety & comfort in every journey",
     },
     {
-      icon: <Map size={24} />,
-      text: "100+ Diverse Destinations",
+      icon: <Compass size={36} />,
+      text: "100+ handpicked destinations across India & beyond",
     },
     {
-      icon: <Clock size={24} />,
-      text: "24×7 Round The Clock Support",
+      icon: <Headphones size={36} />,
+      text: "24×7 support for a smooth & worry-free experience",
     },
     {
-      icon: <MapPin size={24} />,
-      text: "Traveler Friendly Curated Itineraries",
+      icon: <Route size={36} />,
+      text: "Carefully curated itineraries for seamless travel",
     },
   ];
 
   return (
-    <section className="relative py-24 px-6 bg-gray-50 overflow-hidden">
+    <section className="relative py-24 px-6 bg-white overflow-hidden">
 
-      {/* Background Glow */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-[#c9a45c]/10 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#c9a45c]/10 rounded-full blur-3xl -z-10"></div>
+      {/* Glow */}
+      <div className="absolute top-[-60px] left-[-60px] w-72 h-72 bg-[#c9a45c]/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-[-60px] right-[-60px] w-72 h-72 bg-[#c9a45c]/10 rounded-full blur-3xl"></div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
 
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-3.5xl font-bold text-[#A38664] tracking-tight">
+          <h2 className="text-3xl md:text-3xl font-semibold text-[#A38664]">
             How We Make a Difference
           </h2>
 
-          <p className="mt-3 text-gray-600 max-w-xl mx-auto text-base">
-            We craft meaningful journeys with comfort, safety, and unforgettable experiences.
+          <p className="mt-4 text-gray-500 max-w-lg mx-auto text-sm md:text-base">
+            We design travel experiences that are safe, seamless, and truly memorable.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        {/* Items */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-16 gap-x-6 text-center">
 
           {items.map((item, index) => (
-            <div
-              key={index}
-              className="group relative p-8 rounded-2xl bg-white backdrop-blur-md border border-gray-100 hover:shadow-sm transition duration-300 hover:-translate-y-2 text-center flex flex-col items-center justify-center"
-            >
+            <div key={index} className="group flex flex-col items-center">
+
               {/* Icon */}
-              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#c9a45c]/10 text-[#A38664] mb-4 group-hover:bg-[#A38664] group-hover:text-white transition duration-300">
+              <div className="w-20 h-20 flex items-center justify-center rounded-full bg-[#c9a45c]/10 text-[#A38664] mb-5 transition duration-300">
                 {item.icon}
               </div>
 
-              {/* Text */}
-              <p className="text-gray-600 text-sm font-medium leading-relaxed text-center">
+              {/* FIXED TEXT */}
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-[200px] transition">
                 {item.text}
               </p>
 
-              {/* Glow */}
-              <div className="absolute inset-0 rounded-2xl ring-1 ring-transparent group-hover:ring-[#A38664]/30 transition duration-300"></div>
             </div>
           ))}
 

@@ -5,55 +5,49 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[90vh] w-full flex items-center justify-center text-white">
+    <section className="relative h-[93vh] w-full overflow-hidden">
 
-      {/* Background Image */}
-      <Image
-        src="/adventure/wildlife/hero.jpg"
-        alt="Heritage & Wildlife Tour"
-        fill
-        priority
-        className="object-cover"
-      />
+      {/* Background Image with Zoom Effect */}
+      <motion.div
+        initial={{ scale: 1.08 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 20, ease: "easeOut" }}
+        className="absolute inset-0"
+      >
+        <Image
+          src="/adventure/wildlife/hero.jpg"
+          alt="Heritage & Wildlife Tour"
+          fill
+          priority
+          className="object-cover object-center will-change-transform"
+        />
+      </motion.div>
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      {/* Gradient Overlay (Same as previous Hero) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
+        {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-bold leading-tight"
+          transition={{ duration: 1.2, delay: 0.3 }}
+          className="text-4xl md:text-5xl font-bold mb-4"
         >
           A Journey through Heritage & Wildlife
         </motion.h1>
 
+        {/* Description */}
         <motion.p
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="mt-4 text-lg md:text-xl text-gray-200"
+          transition={{ duration: 1.4, delay: 0.6 }}
+          className="max-w-2xl text-md md:text-md text-gray-200"
         >
           Explore India's rich heritage along with breathtaking wildlife experiences.
         </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="mt-8 flex justify-center gap-4"
-        >
-          <button className="bg-[#6b8e23] hover:bg-[#556b1b] px-6 py-3 rounded-full font-semibold transition">
-            Book Now
-          </button>
-
-          <button className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
-            Explore Tour
-          </button>
-        </motion.div>
 
       </div>
     </section>

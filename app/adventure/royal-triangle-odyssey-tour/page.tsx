@@ -6,6 +6,8 @@ import OdysseyCitiesSection from "./components/OdysseyCitiesSection";
 import OdysseyHighlightsSection from "./components/OdysseyHighlights";
 import ItinerarySection from "./components/ItinerarySection";
 import RecommendedTours from "./components/RecommendedTours";
+import ExcludedServices from "@/app/destinations/rajasthani-heritage-retreat-tour/components/ExcludeServices";
+import Footer from "@/src/components/sections/footer/Footer";
 
 export default function RoyalRajasthanPage() {
   return (
@@ -18,9 +20,11 @@ export default function RoyalRajasthanPage() {
          <OdysseyCitiesSection />
          <OdysseyHighlightsSection />
          <ItinerarySection />
+         <ExcludedServices/>
       </ToursLayout>
 
       <RecommendedTours />
+      <Footer/>
 
     </div>
   );

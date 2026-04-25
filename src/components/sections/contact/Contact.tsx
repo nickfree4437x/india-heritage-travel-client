@@ -64,7 +64,7 @@ export default function ContactSection() {
         src="/contact/india.jpg"
         alt="Contact Background"
         fill
-        className="object-cover blur-[2px] scale-105"
+        className="object-cover blur-[1px] scale-105"
         priority
       />
 
@@ -79,7 +79,7 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-4xl md:text-5xl mb-4 tracking-tight">
+          <h2 className="font-heading font-semibold text-4xl md:text-5xl mb-4 tracking-tight">
             Contact
           </h2>
 
@@ -88,8 +88,8 @@ export default function ContactSection() {
             know about your dream journey and we’ll craft something unforgettable.
           </p>
 
-          <p className="italic text-[#AF956C] mt-6 text-lg">
-            Namaste 🙏
+          <p className="italic text-white font-semibold mt-6 text-lg">
+            Namaste
           </p>
         </motion.div>
 
@@ -184,7 +184,7 @@ export default function ContactSection() {
         {/* BUTTON */}
         <motion.div className="text-center mt-14">
           <button className="border border-[#AF956C] px-10 py-3 rounded-full text-white text-sm tracking-wide 
-          hover:bg-[#AF956C] hover:text-black transition duration-300">
+          hover:bg-[#AF956C] transition duration-300">
             Send Message
           </button>
         </motion.div>

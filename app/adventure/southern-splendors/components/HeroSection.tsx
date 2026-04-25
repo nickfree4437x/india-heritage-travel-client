@@ -4,30 +4,28 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
+    <section className="relative h-[92vh] w-full overflow-hidden">
 
-      {/* Background Image */}
-      <Image
-        src="/adventure/splendors/banner.jpg"
-        alt="Southern Splendors"
-        fill
-        priority
-        className="object-cover"
-      />
+      {/* Background Image with Zoom */}
+      <div className="absolute inset-0 scale-[1.08] animate-heroZoom">
+        <Image
+          src="/adventure/splendors/banner.jpg"
+          alt="Southern Splendors"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+      </div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      {/* Gradient Overlay (same as previous) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full max-w-5xl mx-auto">
 
-        <h1 className="text-white text-3xl sm:text-5xl md:text-6xl font-bold mb-6">
-          Southern Splendors
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight opacity-0 animate-fadeUp delay-300">
+          Southern Splendors: Culture & Nature Trail Tour
         </h1>
-
-        <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
-          Book Now
-        </button>
 
       </div>
     </section>

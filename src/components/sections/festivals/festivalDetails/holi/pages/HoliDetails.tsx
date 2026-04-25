@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { holiData } from "./holiData";
 
 import StickyNav from "../components/StickyNav";
 import DesignedFor from "../components/DesignedFor";
@@ -11,40 +10,45 @@ import ItinerarySection from "../components/ItinerarySection";
 import PricingSection from "../components/PricingSection";
 import ExploreMoreSection from "../components/ExploreMoreSection";
 import FAQSection from "../components/FAQSection";
+import Footer from "@/src/components/sections/footer/Footer";
 
 export default function HoliDetails() {
   return (
     <div className="w-full">
 
-      {/* 🔥 HERO SECTION */}
-      <section className="relative w-full h-[80vh]">
+      {/* 🔥 HERO SECTION (UPDATED SAME AS TOUR HERO) */}
+      <section className="relative h-[93vh] w-full overflow-hidden">
 
-        {/* Background Image */}
-        <Image
-          src="/holi.jpg"
-          alt="Holi Tour"
-          fill
-          priority
-          className="object-cover"
-        />
+        {/* Background Image with Zoom */}
+        <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
+          <Image
+            src="/holi.jpg"
+            alt="Holi Tour"
+            fill
+            priority
+            className="object-cover object-center will-change-transform"
+          />
+        </div>
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 text-white">
-          
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            {holiData.title}
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
+
+          {/* Heading */}
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight
+                         opacity-0 translate-y-10
+                         animate-[fadeUp_1.2s_ease-out_0.3s_forwards]">
+            Colors of Joy: Holi Festival
           </h1>
 
-          <p className="max-w-2xl text-lg md:text-xl mb-6 opacity-90">
-            {holiData.description}
+          {/* Description */}
+          <p className="max-w-2xl text-lg md:text-md text-gray-200
+                        opacity-0 translate-y-10
+                        animate-[fadeUp_1.4s_ease-out_0.6s_forwards]">
+            A vibrant burst of colors and unity, celebrating the arrival of spring.
           </p>
-
-          <button className="bg-[#e0b973] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#d4aa60] transition">
-            Book Now
-          </button>
 
         </div>
       </section>
@@ -61,6 +65,7 @@ export default function HoliDetails() {
       <PricingSection/>
       <ExploreMoreSection />
       <FAQSection />
+      <Footer/>
 
     </div>
   );

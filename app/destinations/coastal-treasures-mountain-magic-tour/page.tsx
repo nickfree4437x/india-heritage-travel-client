@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 import SuitableFor from "./components/SuitableFor";
 import DestinationSection from "./components/DestinationSection";
 import RecommendedTours from "./components/RecommendedTours";
+import Footer from "@/src/components/sections/footer/Footer";
 
 export default function Page() {
   return (
@@ -9,7 +10,8 @@ export default function Page() {
       <HeroSection />
       <SuitableFor />
       <DestinationSection />
-      <RecommendedTours />  
+      <RecommendedTours />
+      <Footer/>  
     </div>
   );
 }

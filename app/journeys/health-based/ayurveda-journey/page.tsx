@@ -3,6 +3,7 @@ import SuitableFor from "./sections/SuitableFor";
 import AyurvedaOverview from "./sections/AyurvedaOverview";
 import TourLayout from "./sections/TourLayout";
 import RecommendedTours from "./sections/RecommendedTours";
+import Footer from "@/src/components/sections/footer/Footer";
 
 export default function AyurvedaJourneyPage() {
   return (
@@ -12,6 +13,7 @@ export default function AyurvedaJourneyPage() {
       <AyurvedaOverview />
       <TourLayout />
       <RecommendedTours />
+      <Footer/>
     </main>
   );
 }

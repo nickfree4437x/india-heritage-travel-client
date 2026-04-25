@@ -1,61 +1,80 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const tours = [
   {
     title: "The Royal Heritage Trail Tour",
-    desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in history and regal splendor.",
-    img: "/adventure/delights/reco1.jpg",
+    desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
+    img: "/adventure/delights/recom/reco1.jpg",
+    link: "/adventure/the-royal-heritage-trail-tour",
   },
   {
     title: "A Journey Through Heritage & Wildlife",
-    desc: "Explore a 13-day adventure blending heritage and wildlife from Delhi to Ranthambore.",
-    img: "/adventure/delights/reco2.jpg",
+    desc: "Embark on a 13-day odyssey through heritage and wildlife on the ‘A Journey Through Heritage & Wildlife’ tour, from the captivating blend of history in Delhi to the wildlife wonders of Ranthambore, desert charm, and regal splendor.",
+    img: "/adventure/delights/recom/reco2.jpg",
+    link: "/adventure/journey-through-heritage-wildlife",
   },
   {
     title: "Southern Splendors: Culture & Nature Trail",
-    desc: "A 19-day journey from Mumbai to Hampi covering culture, coastal beauty, and nature.",
-    img: "/adventure/delights/reco3.jpg",
+    desc: "Embark on a 19-day ‘Southern Splendors: Culture & Nature Trail’ from Mumbai’s vibrant dreams to the rich cultural tapestry of Hampi, experiencing history, coastal delights, nature’s majesty, and regal splendor in between.",
+    img: "/adventure/delights/recom/reco3.jpg",
+    link: "/adventure/southern-splendors",
   },
 ];
 
 export default function RecommendedTours() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16">
+    <section className="bg-[#f4f0ea] py-20">
 
-      {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10">
-        Recommended Tours
-      </h2>
+      <div className="max-w-7xl mx-auto px-6">
 
-      {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Heading */}
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-[#2c2c2c] tracking-wide">
+          Recommended Tours
+        </h2>
 
-        {tours.map((tour, index) => (
-          <div
-            key={index}
-            className="bg-[#f5f5f5] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition"
-          >
-            <Image
-              src={tour.img}
-              alt={tour.title}
-              width={400}
-              height={250}
-              className="w-full h-[220vh] object-cover"
-            />
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div className="p-5">
-              <h3 className="text-lg font-semibold text-red-600 mb-2">
-                {tour.title}
-              </h3>
+          {tours.map((tour, index) => (
+            <Link key={index} href={tour.link}>
 
-              <p className="text-gray-700 text-sm leading-relaxed">
-                {tour.desc}
-              </p>
-            </div>
-          </div>
-        ))}
+              <div className="group bg-white rounded-md border border-[#eee7dd] overflow-hidden 
+                              transition-all duration-300 hover:shadow-lg cursor-pointer">
+
+                {/* Image */}
+                <div className="overflow-hidden">
+                  <Image
+                    src={tour.img}
+                    alt={tour.title}
+                    width={400}
+                    height={250}
+                    className="w-full h-[220px] object-cover 
+                               transition-transform duration-500"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="p-5">
+
+                  <h3 className="text-[16.5px] font-semibold text-[#AF956C] mb-2 leading-snug group-hover:underline">
+                    {tour.title}
+                  </h3>
+
+                  <p className="text-gray-700 text-[14px] leading-relaxed text-justify">
+                    {tour.desc}
+                  </p>
+
+                </div>
+
+              </div>
+
+            </Link>
+          ))}
+
+        </div>
 
       </div>
 

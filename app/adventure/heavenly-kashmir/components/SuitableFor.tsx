@@ -1,33 +1,41 @@
+"use client";
+
 import { Briefcase, Leaf, Users, PersonStanding } from "lucide-react";
 
 export default function SuitableFor() {
   const items = [
-    {
-      icon: <Briefcase size={40} />,
-      title: "Corporate Travel",
-    },
-    {
-      icon: <Leaf size={40} />,
-      title: "Spiritual, Cultural, Artistic & Gastronomic Interests",
-    },
-    {
-      icon: <Users size={40} />,
-      title: "Friends & Family Travel",
-    },
-    {
-      icon: <PersonStanding size={40} />,
-      title: "Solo Travel",
-    },
+    { icon: <Briefcase size={40} />, title: "Corporate Travel" },
+    { icon: <Leaf size={40} />, title: "Spiritual, Cultural, Artistic & Gastronomic Interests" },
+    { icon: <Users size={40} />, title: "Friends & Family Travel" },
+    { icon: <PersonStanding size={40} />, title: "Solo Travel" },
   ];
 
   return (
-    <section className="py-16 bg-[#f8f8f8]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-[#f8f8f8]">
 
-        {/* Top Locations Bar */}
-        <div className="bg-[#9b7a50] text-white text-center py-3 mb-12 text-sm md:text-base font-medium tracking-wide">
-          Srinagar &nbsp; | &nbsp; Gulmarg &nbsp; | &nbsp; Pahalgam
-        </div>
+      {/* 🔥 FULL WIDTH LOCATION BAR (HERO SE CHIPKI) */}
+      <div className="w-full bg-[#9b7a50] text-white text-center py-4 text-sm md:text-base font-medium tracking-wide">
+
+        <a href="#srinagar" className="hover:underline">
+          Srinagar
+        </a>
+
+        <span className="mx-3">|</span>
+
+        <a href="#gulmarg" className="hover:underline">
+          Gulmarg
+        </a>
+
+        <span className="mx-3">|</span>
+
+        <a href="#pahalgam" className="hover:underline">
+          Pahalgam
+        </a>
+
+      </div>
+
+      {/* CONTENT */}
+      <div className="max-w-7xl mx-auto px-6 py-16">
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-gray-800">
@@ -52,6 +60,7 @@ export default function SuitableFor() {
         </div>
 
       </div>
+
     </section>
   );
 }

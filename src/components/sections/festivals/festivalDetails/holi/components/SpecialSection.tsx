@@ -49,70 +49,115 @@ export default function SpecialSection() {
   const prev = () =>
     setIndex((prev) => (prev - 1 + data.length) % data.length);
 
-  // 🔥 Auto slide
+  // AUTO SLIDE
   useEffect(() => {
-    const interval = setInterval(next, 4000);
+    const interval = setInterval(next, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="py-20 bg-[#f4f0ea]" id="special">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-[#f4f0ea] pt-20 pb-10" id="special">
+      <div className="max-w-6xl mx-auto px-6">
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-semibold text-center text-[#9b7a50] mb-12">
+        {/* HEADING */}
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-[#2c2c2c] tracking-wide">
           What makes this trip Special?
         </h2>
 
-        {/* Carousel */}
-        <div className="relative h-[450px] overflow-hidden rounded-xl">
+        {/* SLIDER */}
+        <div className="relative h-[500px] overflow-hidden">
 
           {data.map((item, i) => (
             <div
               key={i}
-              className={`absolute inset-0 transition-all duration-700 ease-in-out ${
-                i === index
-                  ? "opacity-100 scale-100 z-10"
-                  : "opacity-0 scale-105 z-0"
-              }`}
+              className={`absolute inset-0 transition-all duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)]
+                ${
+                  i === index
+                    ? "opacity-100 translate-x-0 z-10"
+                    : i < index
+                    ? "opacity-0 -translate-x-10 z-0"
+                    : "opacity-0 translate-x-10 z-0"
+                }`}
             >
-              {/* Image */}
+              {/* IMAGE */}
               <Image
                 src={item.image}
                 alt={item.title}
                 fill
-                className="object-cover"
+                className="object-cover scale-[1.05] transition-transform duration-[6000ms] ease-linear"
               />
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/40"></div>
+              {/* OVERLAY */}
+              <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/70" />
 
-              {/* Content */}
-              <div className="absolute bottom-10 left-10 text-white max-w-lg">
-                <h3 className="text-2xl md:text-3xl font-bold mb-2">
+              {/* CONTENT */}
+              <div className="absolute bottom-12 left-8 md:left-12 text-white max-w-xl">
+
+                <h3
+                  className={`text-2xl md:text-3xl font-semibold mb-3
+                  transition-all duration-[1000ms] delay-200
+                  ${
+                    i === index
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-6"
+                  }`}
+                >
                   {item.title}
                 </h3>
-                <p className="text-sm md:text-base opacity-90">
+
+                <p
+                  className={`text-sm md:text-base text-gray-200 leading-relaxed
+                  transition-all duration-[1000ms] delay-400
+                  ${
+                    i === index
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-6"
+                  }`}
+                >
                   {item.desc}
                 </p>
+
               </div>
             </div>
           ))}
 
-          {/* Buttons */}
+          {/* LEFT BUTTON */}
           <button
             onClick={prev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full"
+            className="absolute left-4 top-1/2 -translate-y-1/2 
+                       bg-white/80 backdrop-blur-sm 
+                       p-2 rounded-full 
+                       hover:scale-110 transition duration-300"
           >
             <ChevronLeft />
           </button>
 
+          {/* RIGHT BUTTON */}
           <button
             onClick={next}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full"
+            className="absolute right-4 top-1/2 -translate-y-1/2 
+                       bg-white/80 backdrop-blur-sm 
+                       p-2 rounded-full 
+                       hover:scale-110 transition duration-300"
           >
             <ChevronRight />
           </button>
+
+          {/* DOTS */}
+          <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2">
+            {data.map((_, i) => (
+              <div
+                key={i}
+                onClick={() => setIndex(i)}
+                className={`h-[6px] rounded-full cursor-pointer transition-all duration-300
+                  ${
+                    i === index
+                      ? "w-6 bg-white"
+                      : "w-2 bg-white/50"
+                  }`}
+              />
+            ))}
+          </div>
 
         </div>
 

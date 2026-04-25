@@ -2,7 +2,7 @@
 
 import {
   Check,
-  Building2,
+  Hotel,
   Car,
   Utensils,
   CreditCard,
@@ -14,82 +14,83 @@ import {
 
 export default function HighlightsInclusions() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section className="bg-[#f4f0ea]">
 
-      {/* LEFT: Highlights */}
-      <div className="bg-[#f5f5f5] rounded-xl shadow-md p-6">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6">
-          Highlights
-        </h2>
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
 
-        <ul className="space-y-3 text-gray-800">
-          {[
-            "Cochin’s Culture Unveiled",
-            "Alleppey’s Backwater Bliss",
-            "Thekkady’s Wild Wonders",
-            "Munnar’s Tea Paradise",
-            "Madurai’s Temple Treasures",
-            "Thanjavur’s Cultural Gem",
-            "Pondicherry’s Serene Fusion",
-            "Mahabalipuram’s Ancient Marvels",
-          ].map((item, index) => (
-            <li key={index} className="flex items-center gap-3">
-              <Check className="text-[#9b7a50] w-5 h-5" />
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
+        {/* 🔹 LEFT: Highlights */}
+        <div className="bg-white rounded-md border border-[#eee7dd] p-6 transition-all duration-300">
 
-      {/* RIGHT: Inclusions */}
-      <div className="bg-[#f5f5f5] rounded-xl shadow-md p-6">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6">
-          Inclusions
-        </h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-[#2c2c2c] tracking-wide">
+            Highlights
+          </h2>
 
-        <div className="grid grid-cols-2 gap-6 text-center">
-          
-          <div className="flex flex-col items-center gap-2">
-            <Building2 className="w-7 h-7 text-[#9b7a50]" />
-            <p className="text-sm font-medium">16 nights, chosen hotels</p>
-          </div>
+          <ul className="space-y-2 text-[#3a3a3a] text-sm">
 
-          <div className="flex flex-col items-center gap-2">
-            <Car className="w-7 h-7 text-[#9b7a50]" />
-            <p className="text-sm font-medium">Local driver, guide</p>
-          </div>
+            {[
+              "Cochin’s Culture Unveiled",
+              "Alleppey’s Backwater Bliss",
+              "Thekkady’s Wild Wonders",
+              "Munnar’s Tea Paradise",
+              "Madurai’s Temple Treasures",
+              "Thanjavur’s Cultural Gem",
+              "Pondicherry’s Serene Fusion",
+              "Mahabalipuram’s Ancient Marvels",
+            ].map((item, index) => (
+              <li key={index} className="flex items-start gap-3">
 
-          <div className="flex flex-col items-center gap-2">
-            <Utensils className="w-7 h-7 text-[#9b7a50]" />
-            <p className="text-sm font-medium">Daily breakfast</p>
-          </div>
+                <Check
+                  size={18}
+                  className="text-[#9A7A58] mt-0.5"
+                />
 
-          <div className="flex flex-col items-center gap-2">
-            <CreditCard className="w-7 h-7 text-[#9b7a50]" />
-            <p className="text-sm font-medium">All costs covered</p>
-          </div>
+                <span>{item}</span>
+              </li>
+            ))}
 
-          <div className="flex flex-col items-center gap-2">
-            <Wifi className="w-7 h-7 text-[#9b7a50]" />
-            <p className="text-sm font-medium">In Car Wi-fi</p>
-          </div>
-
-          <div className="flex flex-col items-center gap-2">
-            <ChefHat className="w-7 h-7 text-[#9b7a50]" />
-            <p className="text-sm font-medium">Cooking classes, dinner</p>
-          </div>
-
-          <div className="flex flex-col items-center gap-2">
-            <Plane className="w-7 h-7 text-[#9b7a50]" />
-            <p className="text-sm font-medium">Airport transfer</p>
-          </div>
-
-          <div className="flex flex-col items-center gap-2">
-            <Bus className="w-7 h-7 text-[#9b7a50]" />
-            <p className="text-sm font-medium">Delhi rickshaw</p>
-          </div>
-
+          </ul>
         </div>
+
+        {/* 🔹 RIGHT: Inclusions */}
+        <div className="bg-white rounded-md
+                          shadow-sm 
+                          border border-[#eee7dd] 
+                          p-6">
+
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+              Inclusions
+            </h2>
+
+            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
+
+              {[
+                { icon: Hotel, text: "11 nights,\nchosen hotels" },
+                { icon: Car, text: "Local driver,\nguide" },
+                { icon: Utensils, text: "Daily breakfast" },
+                { icon: CreditCard, text: "All costs covered" },
+                { icon: Wifi, text: "In Car Wi-fi" },
+                { icon: ChefHat, text: "Cooking classes,\ndinner" },
+                { icon: Plane, text: "Airport transfer" },
+                { icon: Bus, text: "Delhi rickshaw" },
+              ].map((item, index) => {
+                const Icon = item.icon;
+
+                return (
+                  <div key={index} className="flex flex-col items-center gap-1.5">
+
+                    <Icon size={18} className="text-[#AF956C]" />
+
+                    <p className="text-[12px] leading-tight">
+                      {item.text}
+                    </p>
+
+                  </div>
+                );
+              })}
+
+            </div>
+
+          </div>
       </div>
 
     </section>

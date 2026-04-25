@@ -30,9 +30,9 @@ export default function Hero() {
       <AnimatePresence>
         <motion.div
           key={current}
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1.05 }}
-          exit={{ opacity: 0, scale: 1.08 }}
+          initial={{ opacity: 0, scale: 1.08 }}
+          animate={{ opacity: 1, scale: 1.02 }}
+          exit={{ opacity: 0, scale: 1.05 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="absolute inset-0"
         >
@@ -41,96 +41,88 @@ export default function Hero() {
             alt="India Travel"
             fill
             priority
-            className="object-cover"
+            className="object-cover object-[center_25%]"
           />
         </motion.div>
       </AnimatePresence>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/90"></div>
-
-      {/* Particles */}
+      <div className="absolute inset-0 bg-black/50"></div>
       <HeroParticles />
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center h-full text-white px-6">
+      {/* CONTENT (BOTTOM LEFT) */}
+      <div className="absolute bottom-0 left-0 w-full px-6 md:px-16 pb-14 md:pb-10 z-10">
 
-        {/* Heading */}
-        <motion.h1
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          className="text-4xl md:text-5xl font-bold tracking-tight leading-[1.15] max-w-4xl"
-        >
-          Explore India Beyond Landmarks:{" "}
-          <span className="bg-[#A38664] bg-clip-text text-transparent">
-            Curated Heritage Journeys
-          </span>
-        </motion.h1>
+        <div className="max-w-xl text-white">
 
-        {/* Description */}
-        <motion.p
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.9 }}
-          className="mt-6 max-w-2xl text-base md:text-lg text-gray-300 leading-relaxed"
-        >
-          Discover India’s hidden cultures, ancient traditions, and untouched landscapes, personalised just for you.
-        </motion.p>
-
-        {/* CTA Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="mt-10 flex flex-col sm:flex-row gap-5"
-        >
-          {/* Primary */}
-          <button className="group relative text-[0.9rem] overflow-hidden bg-[#A38664] text-white px-7 py-2.5 rounded-full transition-all duration-300 shadow-md hover:shadow-2xl hover:scale-105 active:scale-95">
-            
-            <span className="absolute inset-0 bg-[#CBB299] opacity-0 group-hover:opacity-100 transition duration-500"></span>
-            
-            <span className="absolute left-[-100%] text-[0.9rem] top-0 h-full w-[50%] bg-white/20 skew-x-12 group-hover:left-[120%] transition-all duration-700"></span>
-
-            <span className="relative z-10 tracking-wide">
-              Explore Tours
+          {/* Heading */}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-3xl md:text-3xl font-bold"
+          >
+            <span className="whitespace-nowrap">
+              Explore India Beyond Landmarks: Curated
             </span>
-          </button>
 
-          {/* Secondary */}
-          <button className="group relative text-[0.9rem] overflow-hidden border border-white/30 text-white px-7 py-2.5 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-md">
-            
-            <span className="absolute inset-0 bg-[#c9a45c]/15 opacity-0 group-hover:opacity-100 transition duration-500"></span>
+            <br />
 
-            <span className="absolute inset-0 rounded-full ring-1 ring-transparent group-hover:ring-[#c9a45c]/40 transition duration-300"></span>
+            <span className="text-[#CBB299]">
+              Heritage Journeys
+            </span>
+          </motion.h1>
 
-            <span className="relative z-10 tracking-wide group-hover:text-white transition">
+          {/* Description */}
+            <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="mt-4 text-[15px] leading-relaxed text-gray-200 text-justify"
+          >
+            Discover India’s hidden cultures, ancient traditions, and untouched
+            landscapes, personalised just for you.
+          </motion.p>
+
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            className="mt-6 flex gap-4 flex-wrap"
+          >
+            <button className="px-6 py-2.5 rounded-full bg-[#A38664] text-white text-xs shadow-md hover:scale-105 transition">
+              Explore Destinations
+            </button>
+
+            <button className="px-6 py-3 rounded-full border border-white/30 text-white text-xs hover:scale-105 hover:bg-white/10 transition">
               Customize Journey
-            </span>
-          </button>
-        </motion.div>
+            </button>
+          </motion.div>
 
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-          className="absolute bottom-10 flex flex-col items-center gap-2"
-        >
-          <span className="text-xs tracking-widest text-white/60 uppercase">
-            Scroll
-          </span>
-
-          <div className="relative w-[2px] h-12 bg-white/20 overflow-hidden">
-            <motion.div
-              animate={{ y: ["-100%", "100%"] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute w-full h-6 bg-gradient-to-b from-[#c9a45c] to-transparent"
-            />
-          </div>
-        </motion.div>
-
+        </div>
       </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center"
+      >
+        <span className="text-[10px] tracking-widest text-white/60 uppercase">
+          Scroll
+        </span>
+
+        <div className="w-[2px] h-10 bg-white/20 mt-2 overflow-hidden relative">
+          <motion.div
+            animate={{ y: ["-100%", "100%"] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            className="absolute w-full h-5 bg-gradient-to-b from-[#c9a45c] to-transparent"
+          />
+        </div>
+      </motion.div>
+
     </section>
   );
 }

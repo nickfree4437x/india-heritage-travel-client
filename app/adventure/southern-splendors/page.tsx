@@ -4,7 +4,10 @@ import TourLayout from "./components/TourLayout";
 import BookingCard from "./components/BookingCard";
 import TourContent from "./components/TourContent";
 import DetailedItinerary from "./components/DetailedItinerary";
-import RecommendedTours from "./components/RecommendedTours";
+import HightlightSection from "./components/HightlightSection";
+import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/ExcludedServices";
+import RecommendedTours from "@/app/destinations/majestic-golden-triangle-tour/components/RecommendedTours";
+import Footer from "@/src/components/sections/footer/Footer";
 
 export default function RoyalRajasthanPage() {
   return (
@@ -14,9 +17,12 @@ export default function RoyalRajasthanPage() {
 
       <TourLayout sidebar={<BookingCard />}>
         <TourContent />
+        <HightlightSection/>
         <DetailedItinerary />
+        <ExcludedServices/>
       </TourLayout>
-      <RecommendedTours />
+      <RecommendedTours/>
+      <Footer/>
     </div>
   );
 }

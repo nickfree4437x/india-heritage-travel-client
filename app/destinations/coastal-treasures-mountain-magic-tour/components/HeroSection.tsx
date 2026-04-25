@@ -4,35 +4,40 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[500px] w-full overflow-hidden">
+    <section className="relative h-[93vh] w-full overflow-hidden">
 
-      {/* Background Image */}
-      <Image
-        src="/kerala.jpg"
-        alt="Kerala Tour"
-        fill
-        priority
-        className="object-cover scale-105"
-      />
+      {/* Background Image with Zoom Animation */}
+      <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
+        <Image
+          src="/destination/coastal-tour/kerala.jpg"
+          alt="Kerala Tour"
+          fill
+          priority
+          className="object-cover object-center will-change-transform"
+        />
+      </div>
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/40" />
+      {/* Gradient Overlay (SAME AS GOLDEN TRIANGLE) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-
-        {/* Badge */}
-        <span className="bg-white/20 backdrop-blur-md text-white px-4 py-1 rounded-full text-sm mb-4 border border-white/30">
-          Kerala Tour
-        </span>
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">
+        <h1
+          className="text-4xl md:text-5xl font-bold mb-4
+                     opacity-0 translate-y-10
+                     animate-[fadeUp_1.2s_ease-out_0.3s_forwards]"
+        >
           Coastal Treasures <br /> & Mountain Magic
         </h1>
 
         {/* Subtitle */}
-        <p className="text-white/90 max-w-2xl text-lg md:text-xl">
+        <p
+          className="max-w-2xl text-md md:text-md text-gray-200
+                     opacity-0 translate-y-10
+                     animate-[fadeUp_1.4s_ease-out_0.6s_forwards]"
+        >
           Experience Kerala’s serene backwaters, lush greenery, and peaceful beaches.
         </p>
 

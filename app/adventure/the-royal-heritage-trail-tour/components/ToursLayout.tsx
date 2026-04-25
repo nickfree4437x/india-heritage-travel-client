@@ -8,26 +8,23 @@ export default function ToursLayout({
   rightContent: React.ReactNode;
 }) {
   return (
-    <section className="py-16 bg-white">
+    <section className="bg-[#f4f0ea] py-16">
+      <div className="max-w-[1400px] mx-auto px-6 
+                      grid grid-cols-1 lg:grid-cols-[2.4fr_1fr] gap-8">
 
-      <div className="max-w-7xl mx-auto px-4">
+        {/* LEFT */}
+        <div className="space-y-20 w-full">
+          {children}
+        </div>
 
-        <div className="flex gap-10 items-start">
-
-          {/* LEFT SIDE */}
-          <div className="flex-1 min-w-0 space-y-12">
-            {children}
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="w-[320px] shrink-0 sticky top-24">
+        {/* RIGHT */}
+        <div className="lg:pl-4">
+          <div className="sticky top-24">
             {rightContent}
           </div>
-
         </div>
 
       </div>
-
-    </section>
+  </section>
   );
 }

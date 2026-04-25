@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const data = [
   {
@@ -47,14 +48,15 @@ const data = [
 ];
 
 export default function SpecialSection() {
-  const [active, setActive] = useState(0);
+  const [index, setIndex] = useState(0);
 
-  // 🔥 Auto slide
+  const next = () => setIndex((prev) => (prev + 1) % data.length);
+  const prev = () =>
+    setIndex((prev) => (prev - 1 + data.length) % data.length);
+
+  // 🔥 Auto Slide
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActive((prev) => (prev + 1) % data.length);
-    }, 4000);
-
+    const interval = setInterval(next, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -63,50 +65,68 @@ export default function SpecialSection() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-semibold text-center text-[#9b7a50] mb-12">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-[#2c2c2c] tracking-wide">
           What makes this trip Special?
         </h2>
 
-        {/* STRIP SLIDER */}
-        <div className="flex h-[420px] overflow-hidden rounded-xl">
+        {/* Carousel */}
+        <div className="relative h-[450px] overflow-hidden rounded-2xl shadow-md">
 
-          {data.map((item, i) => {
-            const isActive = i === active;
+          {data.map((item, i) => (
+            <div
+              key={i}
+              className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                i === index
+                  ? "opacity-100 scale-100 z-10"
+                  : "opacity-0 scale-105 z-0"
+              }`}
+            >
+              {/* Image */}
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-cover object-center"
+                priority={i === 0}
+              />
 
-            return (
-              <div
-                key={i}
-                className={`relative transition-all duration-700 ease-in-out cursor-pointer ${
-                  isActive ? "w-[40%]" : "w-[8%]"
-                }`}
-                onClick={() => setActive(i)}
-              >
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
-                {/* Image */}
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover"
-                />
+              {/* Content */}
+              <div className="absolute bottom-10 left-10 text-white max-w-lg">
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/40"></div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-2">
+                  {item.title}
+                </h3>
 
-                {/* Content (only active) */}
-                {isActive && (
-                  <div className="absolute bottom-6 left-6 text-white max-w-sm">
-                    <h3 className="text-xl md:text-2xl font-bold mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm opacity-90">
-                      {item.desc}
-                    </p>
-                  </div>
-                )}
+                <p className="text-sm md:text-base text-gray-200">
+                  {item.desc}
+                </p>
+
               </div>
-            );
-          })}
+            </div>
+          ))}
+
+          {/* Left Button */}
+          <button
+            onClick={prev}
+            className="absolute left-4 top-1/2 -translate-y-1/2 
+                       bg-white/80 hover:bg-white 
+                       p-3 rounded-full shadow transition"
+          >
+            <ChevronLeft size={20} />
+          </button>
+
+          {/* Right Button */}
+          <button
+            onClick={next}
+            className="absolute right-4 top-1/2 -translate-y-1/2 
+                       bg-white/80 hover:bg-white 
+                       p-3 rounded-full shadow transition"
+          >
+            <ChevronRight size={20} />
+          </button>
 
         </div>
 

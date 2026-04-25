@@ -1,45 +1,115 @@
+"use client";
+
 import { Briefcase, Flower2, Users, User } from "lucide-react";
 
 export default function SuitableFor() {
   return (
-    <section className="bg-[#f5f5f5] py-10 border-t">
-      
-      {/* Top Locations Strip */}
-      <div className="bg-[#9b7a50] text-white text-center py-3 text-sm md:text-base font-medium">
-        Cochin | Alleppey | Thekkady | Munnar | Madurai | Thanjavur | Pondicherry | Mahabalipuram | Mumbai
+    <>
+      {/* 🔥 STICKY LOCATION BAR (UPGRADED) */}
+      <div className="sticky top-0 z-30 bg-[#9A7A58] text-white overflow-x-auto">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4 whitespace-nowrap text-sm md:text-base font-medium">
+
+          <a href="#cochin" className="hover:underline">Cochin</a>
+          <span className="opacity-60">|</span>
+
+          <a href="#alleppey" className="hover:underline">Alleppey</a>
+          <span className="opacity-60">|</span>
+
+          <a href="#thekkady" className="hover:underline">Thekkady</a>
+          <span className="opacity-60">|</span>
+
+          <a href="#munnar" className="hover:underline">Munnar</a>
+          <span className="opacity-60">|</span>
+
+          <a href="#madurai" className="hover:underline">Madurai</a>
+          <span className="opacity-60">|</span>
+
+          <a href="#thanjavur" className="hover:underline">Thanjavur</a>
+          <span className="opacity-60">|</span>
+
+          <a href="#pondicherry" className="hover:underline">Pondicherry</a>
+          <span className="opacity-60">|</span>
+
+          <a href="#mahabalipuram" className="hover:underline">Mahabalipuram</a>
+          <span className="opacity-60">|</span>
+
+          <a href="#mumbai" className="hover:underline">Mumbai</a>
+
+        </div>
       </div>
 
-      {/* Title */}
-      <h2 className="text-2xl md:text-3xl font-semibold text-center mt-8 mb-10">
-        Suitable For
-      </h2>
+      {/* 🎯 MAIN SECTION */}
+      <section className="bg-[#f4f0ea] pt-20 pb-10">
 
-      {/* Items */}
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-4 text-center">
-        
-        <div className="flex flex-col items-center gap-3">
-          <Briefcase className="w-10 h-10 text-[#9b7a50]" />
-          <p className="font-medium">Corporate Travel</p>
+        {/* 🏷 Heading */}
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-[#2c2c2c] tracking-wide">
+          Suitable For
+        </h2>
+
+        {/* 🎴 CARDS */}
+        <div className="grid grid-cols-2 md:grid-cols-4 
+                        gap-x-12 gap-y-10 
+                        max-w-6xl mx-auto px-6 text-center">
+
+          {/* CARD */}
+          <div className="group flex flex-col items-center gap-4 
+                          px-6 py-8 rounded-md
+                          transition-all duration-500  ">
+
+            <Briefcase
+              size={42}
+              className="text-[#9A7A58] transition-all duration-500  "
+            />
+            <p className="font-medium text-[#3a3a3a]">
+              Corporate Travel
+            </p>
+          </div>
+
+          {/* CARD */}
+          <div className="group flex flex-col items-center gap-4 
+                          px-6 py-8 rounded-md
+                          transition-all duration-500  ">
+
+            <Flower2
+              size={42}
+              className="text-[#9A7A58] transition-all duration-500  "
+            />
+            <p className="font-medium text-[#3a3a3a] leading-snug">
+              Spiritual, Cultural, Artistic & Gastronomic Interests
+            </p>
+          </div>
+
+          {/* CARD */}
+          <div className="group flex flex-col items-center gap-4 
+                          px-6 py-8 rounded-md
+                          transition-all duration-500  ">
+
+            <Users
+              size={42}
+              className="text-[#9A7A58] transition-all duration-500  "
+            />
+            <p className="font-medium text-[#3a3a3a]">
+              Friends & Family Travel
+            </p>
+          </div>
+
+          {/* CARD */}
+          <div className="group flex flex-col items-center gap-4 
+                          px-6 py-8 rounded-md
+                          transition-all duration-500  ">
+
+            <User
+              size={42}
+              className="text-[#9A7A58] transition-all duration-500  "
+            />
+            <p className="font-medium text-[#3a3a3a]">
+              Solo Travel
+            </p>
+          </div>
+
         </div>
 
-        <div className="flex flex-col items-center gap-3">
-          <Flower2 className="w-10 h-10 text-[#9b7a50]" />
-          <p className="font-medium text-sm">
-            Spiritual, Cultural, Artistic & Gastronomic Interests
-          </p>
-        </div>
-
-        <div className="flex flex-col items-center gap-3">
-          <Users className="w-10 h-10 text-[#9b7a50]" />
-          <p className="font-medium">Friends & Family Travel</p>
-        </div>
-
-        <div className="flex flex-col items-center gap-3">
-          <User className="w-10 h-10 text-[#9b7a50]" />
-          <p className="font-medium">Solo Travel</p>
-        </div>
-
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

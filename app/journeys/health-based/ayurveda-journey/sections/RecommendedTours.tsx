@@ -1,41 +1,74 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+
+const tours = [
+  {
+    title: "Yoga Escapes: Discover Balance & Rejuvenate",
+    desc: "Yoga is an ancient and intricate practice deeply rooted in Indian philosophy. It originally served as a spiritual discipline but has evolved into a popular approach for enhancing physical and mental well-being.",
+    image: "/journeys/ayurvedic/recom.jpg",
+    slug: "/journeys/health-based/yoga-escapes",
+  },
+];
+
 export default function RecommendedTours() {
   return (
-    <section className="py-20 bg-[#f3f3f3]">
-      <div className="max-w-5xl mx-auto px-6">
+    <section className="max-w-[1400px] mx-auto px-6 py-20">
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10">
-          Recommended Tours
-        </h2>
+      {/* 🔹 Heading */}
+      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-14 tracking-wide">
+        Recommended Tours
+      </h2>
 
-        {/* Card */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+      {/* 🔹 Cards */}
+      <div className="flex justify-center">
+        {tours.map((tour, index) => (
+          <Link
+            key={index}
+            href={tour.slug}
+            className="block group w-full max-w-[380px]"
+          >
+            <div
+              className="bg-white rounded-sm
+                         shadow-sm
+                         border border-[#eee7dd]
+                         overflow-hidden 
+                         transition-all duration-500
+                         hover:shadow-md"
+            >
 
-          {/* Image */}
-          <img
-            src="/journeys/yoga/hero.jpg"
-            alt="Yoga Tour"
-            className="w-full h-[300px] object-cover"
-          />
+              {/* 🔥 Image */}
+              <div className="relative h-[240px] w-full overflow-hidden">
+                <Image
+                  src={tour.image}
+                  alt={tour.title}
+                  fill
+                  className="object-cover"
+                />
 
-          {/* Content */}
-          <div className="p-6">
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition" />
+              </div>
 
-            <h3 className="text-xl md:text-2xl font-semibold text-red-600 mb-4">
-              Yoga Escapes: Discover Balance & Rejuvenate
-            </h3>
+              {/* 🔥 Content */}
+              <div className="p-6 space-y-3">
 
-            <p className="text-gray-700 leading-relaxed">
-              Yoga is an ancient and intricate practice deeply rooted in Indian philosophy. 
-              It originally served as a spiritual discipline but has evolved into a popular 
-              approach for enhancing physical and mental well-being.
-            </p>
+                <h3 className="text-[17px] font-semibold text-red-500 leading-snug group-hover:underline">
+                  {tour.title}
+                </h3>
 
-          </div>
+                <p className="text-gray-700 text-[14px] leading-relaxed line-clamp-4">
+                  {tour.desc}
+                </p>
 
-        </div>
+              </div>
 
+            </div>
+          </Link>
+        ))}
       </div>
+
     </section>
   );
 }

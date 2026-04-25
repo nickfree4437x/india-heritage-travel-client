@@ -14,95 +14,79 @@ import {
 
 export default function HighlightsInclusions() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16">
+    <section className="py-6">
 
-      <div className="grid md:grid-cols-2 gap-10">
+      {/* 🔥 SAME WIDTH AS DELHI SECTION */}
+      <div className="max-w-5xl mx-auto">
 
-        {/* 🔹 Highlights */}
-        <div className="bg-white rounded-xl shadow-md p-8">
+        <div className="grid md:grid-cols-2 gap-10">
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
-            Highlights
-          </h2>
+          {/* 🔹 Highlights */}
+          <div className="bg-white rounded-md
+                          shadow-sm 
+                          border border-[#eee7dd] 
+                          p-6">
 
-          <ul className="space-y-4 text-gray-700">
+            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center">
+              Highlights
+            </h2>
 
-            <li className="flex items-center gap-3">
-              <Check className="text-[#8b6b3e]" />
-              Delhi's History and Vibrancy
-            </li>
+            <ul className="space-y-3 text-gray-700 text-sm">
 
-            <li className="flex items-center gap-3">
-              <Check className="text-[#8b6b3e]" />
-              Jaipur's Regal Charms
-            </li>
+              {[
+                "Delhi's History and Vibrancy",
+                "Jaipur's Regal Charms",
+                "Taj Mahal's Timeless Beauty",
+                "Seamless Travel",
+                "Personalized Adventures",
+              ].map((item, index) => (
+                <li key={index} className="flex items-center gap-2">
+                  <Check className="text-[#AF956C]" size={16} />
+                  {item}
+                </li>
+              ))}
 
-            <li className="flex items-center gap-3">
-              <Check className="text-[#8b6b3e]" />
-              Taj Mahal's Timeless Beauty
-            </li>
+            </ul>
 
-            <li className="flex items-center gap-3">
-              <Check className="text-[#8b6b3e]" />
-              Seamless Travel
-            </li>
+          </div>
 
-            <li className="flex items-center gap-3">
-              <Check className="text-[#8b6b3e]" />
-              Personalized Adventures
-            </li>
+          {/* 🔹 Inclusions */}
+          <div className="bg-white rounded-md
+                          shadow-sm 
+                          border border-[#eee7dd] 
+                          p-6">
 
-          </ul>
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+              Inclusions
+            </h2>
 
-        </div>
+            {/* 🔥 4 COLUMN GRID */}
+            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
 
-        {/* 🔹 Inclusions */}
-        <div className="bg-white rounded-xl shadow-md p-8">
+              {[
+                { icon: Hotel, text: "6 nights, chosen hotels" },
+                { icon: Car, text: "Local driver, guide" },
+                { icon: Utensils, text: "Daily breakfast" },
+                { icon: CreditCard, text: "All costs covered" },
+                { icon: Wifi, text: "In Car Wi-fi" },
+                { icon: ChefHat, text: "Cooking classes, dinner" },
+                { icon: Plane, text: "Airport transfer" },
+                { icon: Bus, text: "Delhi rickshaw" },
+              ].map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center gap-1.5"
+                  >
+                    <Icon size={18} className="text-[#AF956C]" />
+                    <p className="text-[12px] leading-tight">
+                      {item.text}
+                    </p>
+                  </div>
+                );
+              })}
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
-            Inclusions
-          </h2>
-
-          <div className="grid grid-cols-2 gap-6 text-center text-sm">
-
-            <div className="flex flex-col items-center gap-2">
-              <Hotel className="text-[#8b6b3e]" />
-              <p>6 nights, chosen hotels</p>
-            </div>
-
-            <div className="flex flex-col items-center gap-2">
-              <Car className="text-[#8b6b3e]" />
-              <p>Local driver, guide</p>
-            </div>
-
-            <div className="flex flex-col items-center gap-2">
-              <Utensils className="text-[#8b6b3e]" />
-              <p>Daily breakfast</p>
-            </div>
-
-            <div className="flex flex-col items-center gap-2">
-              <CreditCard className="text-[#8b6b3e]" />
-              <p>All costs covered</p>
-            </div>
-
-            <div className="flex flex-col items-center gap-2">
-              <Wifi className="text-[#8b6b3e]" />
-              <p>In Car Wi-fi</p>
-            </div>
-
-            <div className="flex flex-col items-center gap-2">
-              <ChefHat className="text-[#8b6b3e]" />
-              <p>Cooking classes, dinner</p>
-            </div>
-
-            <div className="flex flex-col items-center gap-2">
-              <Plane className="text-[#8b6b3e]" />
-              <p>Airport transfer</p>
-            </div>
-
-            <div className="flex flex-col items-center gap-2">
-              <Bus className="text-[#8b6b3e]" />
-              <p>Delhi rickshaw</p>
             </div>
 
           </div>

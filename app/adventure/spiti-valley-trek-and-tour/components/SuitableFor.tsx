@@ -1,3 +1,5 @@
+"use client";
+
 import { Briefcase, Leaf, Users, PersonStanding } from "lucide-react";
 
 export default function SuitableFor() {
@@ -20,14 +22,40 @@ export default function SuitableFor() {
     },
   ];
 
-  return (
-    <section className="py-16 bg-[#f8f8f8]">
-      <div className="max-w-7xl mx-auto px-6">
+  const locations = [
+    "Delhi",
+    "Chandigarh",
+    "Manali",
+    "Chandra Tal",
+    "Kaza",
+    "Tabo",
+    "Langza",
+  ];
 
-        {/* Top Locations Bar */}
-        <div className="bg-[#9b7a50] text-white text-center py-3 mb-12 text-sm md:text-base font-medium tracking-wide">
-          Delhi &nbsp; | &nbsp; Chandigarh &nbsp; | &nbsp; Manali &nbsp; | &nbsp; Chandra Tal &nbsp; | &nbsp; Kaza &nbsp; | &nbsp; Tabo &nbsp; | &nbsp; Langza
-        </div>
+  return (
+    <section className="bg-[#f8f8f8]">
+
+      {/* 🔥 FULL WIDTH LOCATION BAR (HERO SE CHIPKI) */}
+      <div className="w-full bg-[#9b7a50] text-white text-center py-4 text-sm md:text-base font-medium tracking-wide">
+        {locations.map((loc, index) => {
+          const id = loc.toLowerCase().replace(/\s+/g, "-"); // id format
+
+          return (
+            <span key={index}>
+              <a href={`#${id}`} className="hover:underline cursor-pointer">
+                {loc}
+              </a>
+
+              {index !== locations.length - 1 && (
+                <span className="mx-3">|</span>
+              )}
+            </span>
+          );
+        })}
+      </div>
+
+      {/* CONTENT */}
+      <div className="max-w-7xl mx-auto px-6 py-16">
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-gray-800">

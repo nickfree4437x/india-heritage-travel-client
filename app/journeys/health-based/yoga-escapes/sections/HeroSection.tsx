@@ -1,27 +1,46 @@
+"use client";
+
+import Image from "next/image";
+
 export default function YogaHeroSection() {
   return (
-    <section
-      className="h-[70vh] bg-cover bg-center relative flex items-center justify-center"
-      style={{
-        backgroundImage: "url('/journeys/yoga/hero.jpg')",
-      }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+    <section className="relative h-[91vh] w-full overflow-hidden">
+
+      {/* Background Image with Zoom Animation */}
+      <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
+        <Image
+          src="/journeys/yoga/hero.jpg"
+          alt="Yoga Escapes: Discover Balance & Rejuvenate"
+          fill
+          priority
+          className="object-cover object-center will-change-transform"
+        />
+      </div>
+
+      {/* Gradient Overlay (Same as other hero) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
 
       {/* Content */}
-      <div className="relative text-center text-white px-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Yoga Escapes
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
+
+        {/* Heading */}
+        <h1
+          className="text-4xl font-bold mb-4
+                     opacity-0 translate-y-10
+                     animate-[fadeUp_1.2s_ease-out_0.3s_forwards]"
+        >
+          Yoga Escapes: Discover<br></br> Balance & Rejuvenate
         </h1>
 
-        <p className="max-w-2xl mx-auto mb-6 text-sm md:text-base text-gray-200">
+        {/* Subtext */}
+        <p
+          className="max-w-2xl text-sm md:text-base text-gray-200
+                     opacity-0 translate-y-10
+                     animate-[fadeUp_1.4s_ease-out_0.6s_forwards]"
+        >
           Reconnect your mind, body, and soul with peaceful yoga retreats across India.
         </p>
 
-        <button className="bg-[#9b7a50] hover:bg-[#7c5f3d] transition px-6 py-3 rounded-full text-sm font-medium">
-          Book Your Retreat
-        </button>
       </div>
     </section>
   );
