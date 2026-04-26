@@ -11,6 +11,7 @@ import {
   Mail,
 } from "lucide-react";
 import { FaPinterestP } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -90,32 +91,25 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-5">Quick Links</h3>
 
           <ul className="space-y-3 text-gray-300 text-sm">
-            {[
-              "FAQ’s",
-              "Journeys",
-              "Festivals",
-              "Travel Tips",
-              "Visa Rules for India",
-            ].map((item, i) => (
-              <li
-                key={i}
-                className="group flex items-center gap-2 cursor-pointer transition"
-              >
-
-                {/* Arrow */}
-                <span className="text-white transition duration-300 group-hover:translate-x-1">
+          {[
+            { name: "FAQ’s", href: "/faq" },
+            { name: "Journeys", href: "/journeys" },
+            { name: "Festivals", href: "/festivals" },
+            { name: "Travel Tips", href: "/travel-tips" },
+            { name: "Visa Rules for India", href: "/visa-rules" },
+          ].map((item, i) => (
+            <Link key={i} href={item.href}>
+              <li className="group flex items-center gap-2 cursor-pointer transition">
+                <span className="text-white group-hover:translate-x-1 transition">
                   ›
                 </span>
-
-                {/* Text */}
-                <span className="transition duration-300 hover:underline group-hover:text-white">
-                  {item}
+                <span className="hover:underline group-hover:text-white transition">
+                  {item.name}
                 </span>
-
               </li>
-            ))}
-
-          </ul>
+            </Link>
+          ))}
+        </ul>
         </div>
 
         {/* 🔹 Online Payment + Links */}

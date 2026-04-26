@@ -47,55 +47,57 @@ export default function Hero() {
       </AnimatePresence>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
+
+      {/* Particles */}
       <HeroParticles />
 
-      {/* CONTENT (BOTTOM LEFT) */}
-      <div className="absolute bottom-0 left-0 w-full px-6 md:px-16 pb-14 md:pb-10 z-10">
+      {/* CENTER CONTENT */}
+      <div className="relative z-10 flex items-center justify-center h-full px-4 md:px-10 text-center">
 
-        <div className="max-w-xl text-white">
+        <div className="w-full max-w-4xl text-white flex flex-col items-center">
 
-          {/* Heading */}
+          {/* 🔥 HEADING (FIXED 2 LINE STRUCTURE) */}
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl md:text-3xl font-bold"
+            className="font-semibold leading-tight text-white"
           >
-            <span className="whitespace-nowrap">
-              Explore India Beyond Landmarks: Curated
+            {/* Line 1 */}
+            <span className="block text-[26px] sm:text-3xl md:text-5xl">
+              Explore India Beyond Landmarks:
             </span>
 
-            <br />
-
-            <span className="text-[#CBB299]">
-              Heritage Journeys
+            {/* Line 2 */}
+            <span className="block text-[#CBB299] text-[26px] sm:text-3xl md:text-5xl mt-1">
+              Curated Heritage Journeys
             </span>
           </motion.h1>
 
           {/* Description */}
-            <motion.p
-            initial={{ opacity: 0, y: 30 }}
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="mt-4 text-[15px] leading-relaxed text-gray-200 text-justify"
+            className="mt-4 text-sm md:text-base leading-relaxed text-gray-200 max-w-xl"
           >
             Discover India’s hidden cultures, ancient traditions, and untouched
             landscapes, personalised just for you.
           </motion.p>
 
-          {/* CTA */}
+          {/* Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="mt-6 flex gap-4 flex-wrap"
+            className="mt-6 flex gap-4 flex-wrap justify-center"
           >
-            <button className="px-6 py-2.5 rounded-full bg-[#A38664] text-white text-xs shadow-md hover:scale-105 transition">
+            <button className="px-6 py-3 rounded-full bg-[#A38664] text-white text-xs md:text-sm shadow-md hover:scale-105 transition">
               Explore Destinations
             </button>
 
-            <button className="px-6 py-3 rounded-full border border-white/30 text-white text-xs hover:scale-105 hover:bg-white/10 transition">
+            <button className="px-6 py-3 rounded-full border border-white/30 text-white text-xs md:text-sm hover:scale-105 hover:bg-white/10 transition">
               Customize Journey
             </button>
           </motion.div>

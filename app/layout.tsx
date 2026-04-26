@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
+        className={`${inter.variable} ${playfair.variable} font-[var(--font-inter)] antialiased`}
       >
 
         {/* Navbar */}
@@ -55,7 +55,7 @@ export default function RootLayout({
 
         {/* Google Translate Library */}
         <Script
-          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
         />
 

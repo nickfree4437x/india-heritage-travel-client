@@ -27,15 +27,17 @@ export default function Navbar() {
   const navLinks = [
     { name: "Blogs", href: "/blogs" },
     { name: "About Us", href: "/about" },
-    { name: "Testimonials", href: "/testimonials" },
+    { name: "Reviews", href: "/testimonials" },
     { name: "Contact", href: "/contact" },
-    { name: "Rent a Car", href: "/rent-car" },
+    { name: "Rent-A-Car", href: "/rent-car" },
   ];
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition ${
-      scrolled ? "bg-[#C2A985] shadow-md" : "bg-transparent"
-    }`}>
+    <header
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-[#C2A985]/90 shadow-sm" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-[70px] md:h-[80px]">
 
@@ -50,28 +52,64 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Desktop */}
-          <nav className="hidden md:flex gap-8 text-white text-sm">
-            <JourneysMegaMenu />
+          {/* Desktop Nav */}
+          <nav
+            className="hidden md:flex items-center gap-4 text-[13px] font-[300] tracking-[0.14em]"
+            style={{ fontFamily: "var(--font-inter)" }}
+          >
+
+            {/* Journeys (Active Default + Scroll Change) */}
+            <div
+              className={`px-4 py-2.5 rounded-full transition-all duration-300 ${
+                scrolled
+                  ? "bg-white text-black [&_*]:text-black hover:bg-white [&_*:hover]:text-black"
+                  : "bg-white/5 text-white hover:bg-white/10"
+              }`}
+            >
+              <JourneysMegaMenu />
+            </div>
+
+            {/* Other Links */}
             {navLinks.map((l) => (
-              <Link key={l.name} href={l.href}>
+              <Link
+                key={l.name}
+                href={l.href}
+                className={`px-4 py-2.5 rounded-full transition-all duration-300 ${
+                  scrolled
+                    ? "text-black hover:bg-white/20"
+                    : "text-white hover:bg-white/10"
+                }`}
+              >
                 {l.name}
               </Link>
             ))}
           </nav>
 
-          {/* Desktop Right */}
+          {/* Right Side */}
           <div className="hidden md:flex items-center gap-4">
-            <button className="border px-4 py-1 rounded-full text-white text-xs">
+
+            <button
+              style={{ fontFamily: "var(--font-inter)" }}
+              className={`px-6 py-2.5 rounded-2xl text-[12px] font-[300] tracking-[0.08em]
+              border transition-all duration-300 ease-out ${
+                scrolled
+                  ? "bg-white text-black border-white hover:bg-white/90"
+                  : "bg-transparent text-white border-white/20 hover:bg-white hover:text-black"
+              }`}
+            >
               Customize Journey
             </button>
-            <LanguageSwitcher />
+
+            {/* ✅ FIX */}
+            <LanguageSwitcher scrolled={scrolled} />
           </div>
 
           {/* Mobile */}
           <div className="flex md:hidden items-center gap-3">
-            <LanguageSwitcher />
-            <button onClick={() => setIsOpen(!isOpen)}>
+            {/* ✅ FIX */}
+            <LanguageSwitcher scrolled={scrolled} />
+
+            <button onClick={() => setIsOpen(!isOpen)} className={scrolled ? "text-black" : "text-white"}>
               {isOpen ? <X /> : <Menu />}
             </button>
           </div>
@@ -81,7 +119,12 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div className="md:hidden bg-white px-6 py-6 space-y-4">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="md:hidden bg-white px-6 py-6 space-y-4"
+          >
 
             {/* Journeys */}
             <div>
@@ -95,8 +138,6 @@ export default function Navbar() {
               {journeyOpen && (
                 <div className="mt-3 space-y-4">
                   {journeyCategories.map((cat) => {
-                    
-                    // ✅ FIX: safe typing
                     const items =
                       journeysData[cat.id as keyof typeof journeysData] || [];
 
@@ -120,13 +161,12 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Other links */}
+            {/* Links */}
             {navLinks.map((l) => (
-              <Link key={l.name} href={l.href}>
+              <Link key={l.name} href={l.href} className="block font-medium">
                 {l.name}
               </Link>
             ))}
-
           </motion.div>
         )}
       </AnimatePresence>
