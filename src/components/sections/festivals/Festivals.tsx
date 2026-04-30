@@ -3,7 +3,7 @@ import { festivals } from "./festivalData";
 
 export default function Festivals() {
   return (
-    <section className="bg-[#f4f0ea] py-20 px-6">
+    <section className="bg-[#f4f0ea] py-20 px-6" id="festivals">
       
       <div className="max-w-7xl mx-auto">
 

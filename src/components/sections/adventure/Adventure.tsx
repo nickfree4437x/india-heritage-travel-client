@@ -29,7 +29,7 @@ export default function ChooseAdventure() {
   };
 
   return (
-    <section className="bg-[#f8f5f0] py-24 px-6">
+    <section className="bg-[#f8f5f0] py-24 px-6" id="adventure">
       <div className="max-w-7xl mx-auto space-y-20">
 
         {/* TOP */}
@@ -57,7 +57,7 @@ export default function ChooseAdventure() {
         </div>
 
         {/* BOTTOM (CENTERED + SAME WIDTH) */}
-        <div className="flex justify-center">
+        <div className="flex justify-center" id="east-west">
           <div className="grid lg:grid-cols-2 gap-10 w-full lg:w-2/3">
 
             <div>
