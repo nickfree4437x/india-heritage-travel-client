@@ -76,35 +76,13 @@ export default function Hero() {
       <div className="relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 md:px-10 text-center">
         <div className="w-full max-w-3xl text-white flex flex-col items-center">
 
-          {/* 🔥 DYNAMIC BADGE */}
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={current}
-              initial={{ opacity: 0, y: 10, scale: 0.9 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -10, scale: 1.05 }}
-              transition={{ duration: 0.4 }}
-              className="
-                text-[9px] sm:text-[10px] md:text-xs
-                tracking-[2px] sm:tracking-[3px]
-                uppercase text-[#CBB299]
-                px-3 sm:px-4 py-1.5
-                rounded-full
-                bg-white/5 backdrop-blur-sm border border-white/10
-                mb-3 sm:mb-4
-              "
-            >
-              {badgeTexts[current]}
-            </motion.span>
-          </AnimatePresence>
-
           {/* 🔥 HEADING */}
           <motion.h1 className="font-semibold leading-tight">
-            <span className="block text-[20px] sm:text-3xl md:text-5xl">
+            <span className="block text-[20px] sm:text-3xl md:text-4xl">
               Explore India Beyond Landmarks
             </span>
 
-            <span className="block text-[#CBB299] text-[20px] sm:text-3xl md:text-5xl mt-1 sm:mt-2">
+            <span className="block text-[#CBB299] text-[20px] sm:text-3xl md:text-4xl mt-1 sm:mt-2">
               Curated Heritage Journeys
             </span>
           </motion.h1>
@@ -114,20 +92,6 @@ export default function Hero() {
             Discover India’s hidden cultures, ancient traditions, and untouched
             landscapes thoughtfully curated for a truly immersive journey.
           </p>
-
-          {/* 🔥 BUTTONS */}
-          <div className="mt-5 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
-
-            <button className="w-full sm:w-auto px-6 sm:px-6 py-3 sm:py-3 rounded-full bg-gradient-to-r from-[#A38664] to-[#CBB299] text-white text-xs sm:text-sm shadow-md hover:scale-105 active:scale-95 transition-all duration-300">
-              Explore Destinations
-            </button>
-
-            <button className="w-full sm:w-auto px-6 sm:px-6 py-3 sm:py-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-white text-xs sm:text-sm hover:scale-105 active:scale-95 transition-all duration-300">
-              Customize Journey
-            </button>
-
-          </div>
-
         </div>
       </div>
 

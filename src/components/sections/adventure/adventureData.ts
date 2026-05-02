@@ -1,9 +1,9 @@
 export const rajasthan = [
   {
     title: "Rajasthani Heritage Retreat Tour",
-    img: "/Adventure/raj1.jpg",
+    img: "/Adventure/heritage.jpg",
     days: "Days: 16",
-    desc: "Discover Rajasthan’s culture and history in its palaces and forts.",
+    desc: "Discover Rajasthan’s culture and history in its palaces, forts, and warm hospitality.",
     link: "/destinations/rajasthani-heritage-retreat-tour",
   },
   {

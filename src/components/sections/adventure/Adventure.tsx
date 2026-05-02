@@ -12,7 +12,6 @@ import {
 
 export default function ChooseAdventure() {
 
-  // ✅ DEFAULT OPEN (index 0)
   const [open, setOpen] = useState<any>({
     r1: 0,
     r2: 0,
@@ -29,65 +28,76 @@ export default function ChooseAdventure() {
   };
 
   return (
-    <section className="bg-gradient-to-b from-[#f3efe8] to-[#f1ede6] py-16 sm:py-20 md:py-24 px-4 sm:px-6" id="adventure">
-      <div className="max-w-7xl mx-auto space-y-20">
+    <section
+      className="bg-gradient-to-b from-[#f3efe8] to-[#f1ede6] 
+                 py-16 sm:py-6"
+      id="adventure"
+    >
 
-         {/* 🔥 NEW HEADING */}
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-3xl font-semibold text-[#8b6a3d] mb-4">
-            Choose Your Adventure
-          </h2>
+      {/* 🔥 PROPER CONTAINER (FIXED SPACING) */}
+      <div className="max-w-[1200px] xl:max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
 
-          <p className="text-base md:text-md text-[#8b6a3d] tracking-wide">
-            Experience The Beauty and Diversity of India with Our Unforgettable Tours!
-          </p>
-        </div>
+        <div className="space-y-16">
 
-        {/* TOP */}
-        <div className="grid lg:grid-cols-3 gap-10">
-          <div>
-            <h3 className="text-2xl font-semibold mb-6">
-              The Royal Rajasthan
-            </h3>
-            <Accordion items={rajasthan} open={open} toggle={toggle} section="r1" />
+          {/* HEADING */}
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="font-heading text-3xl md:text-3xl font-semibold mb-4 text-[#8b6a3d]">
+              Choose Your Adventure
+            </h2>
+
+            <p className="text-base md:text-md text-[#8b6a3d] tracking-wide">
+              Experience The Beauty and Diversity of India with Our Unforgettable Tours!
+            </p>
           </div>
 
-          <div>
-            <h3 className="text-2xl font-semibold mb-6">
-              Golden Triangle Splendor
-            </h3>
-            <Accordion items={triangle} open={open} toggle={toggle} section="r2" />
-          </div>
-
-          <div>
-            <h3 className="text-2xl font-semibold mb-6">
-              South India Gateways
-            </h3>
-            <Accordion items={south} open={open} toggle={toggle} section="r3" />
-          </div>
-        </div>
-
-        {/* BOTTOM (CENTERED + SAME WIDTH) */}
-        <div className="flex justify-center" id="east-west">
-          <div className="grid lg:grid-cols-2 gap-10 w-full lg:w-2/3">
+          {/* TOP GRID */}
+          <div className="grid lg:grid-cols-3 gap-6">
 
             <div>
-              <h3 className="text-2xl font-semibold mb-6 text-center lg:text-left">
-                Serene Kashmir Journeys
+              <h3 className="font-heading text-gray-700 text-center text-2xl font-semibold mb-6">
+                The Royal Rajasthan
               </h3>
-              <Accordion items={kashmir} open={open} toggle={toggle} section="r4" />
+              <Accordion items={rajasthan} open={open} toggle={toggle} section="r1" />
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-6 text-center lg:text-left">
-                Ladakh & Spiti Escapes
+              <h3 className="font-heading text-gray-700 text-center text-2xl font-semibold mb-6">
+                Golden Triangle Splendor
               </h3>
-              <Accordion items={ladakh} open={open} toggle={toggle} section="r5" />
+              <Accordion items={triangle} open={open} toggle={toggle} section="r2" />
+            </div>
+
+            <div>
+              <h3 className="font-heading text-gray-700 text-center text-2xl font-semibold mb-6">
+                South India Gateways
+              </h3>
+              <Accordion items={south} open={open} toggle={toggle} section="r3" />
             </div>
 
           </div>
-        </div>
 
+          {/* BOTTOM GRID */}
+          <div className="flex justify-center" id="east-west">
+            <div className="grid lg:grid-cols-2 gap-10 w-full lg:w-2/3">
+
+              <div>
+                <h3 className="font-heading text-gray-700 text-center text-2xl font-semibold mb-6 lg:text-center">
+                  Serene Kashmir Journeys
+                </h3>
+                <Accordion items={kashmir} open={open} toggle={toggle} section="r4" />
+              </div>
+
+              <div>
+                <h3 className="font-heading text-gray-700 text-2xl font-semibold mb-6 text-center lg:text-center">
+                  Ladakh & Spiti Escapes
+                </h3>
+                <Accordion items={ladakh} open={open} toggle={toggle} section="r5" />
+              </div>
+
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
   );
