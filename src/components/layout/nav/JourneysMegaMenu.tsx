@@ -13,31 +13,51 @@ export default function JourneysMegaMenu() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<keyof MenuData | null>(null);
 
-  // ✅ TSX SAFE REF
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLDivElement>(null);
 
   const router = useRouter();
   const pathname = usePathname();
 
-  //////////////////////////////////////
-  // MOUSE HANDLERS
-  //////////////////////////////////////
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setOpen(true);
     setActive("curated");
   };
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (e: React.MouseEvent) => {
+    const relatedTarget = e.relatedTarget as Node;
+    
+    // Check if moving to dropdown menu
+    if (menuRef.current && menuRef.current.contains(relatedTarget)) {
+      return;
+    }
+    
     timeoutRef.current = setTimeout(() => {
       setOpen(false);
       setActive(null);
     }, 200);
   };
 
-  //////////////////////////////////////
-  // SCROLL HANDLER (ONLY FOR CURATED)
-  //////////////////////////////////////
+  const handleMenuMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  };
+
+  const handleMenuMouseLeave = (e: React.MouseEvent) => {
+    const relatedTarget = e.relatedTarget as Node;
+    
+    // Check if moving back to trigger
+    if (triggerRef.current && triggerRef.current.contains(relatedTarget)) {
+      return;
+    }
+    
+    timeoutRef.current = setTimeout(() => {
+      setOpen(false);
+      setActive(null);
+    }, 200);
+  };
+
   const handleScroll = (sectionId: string) => {
     if (!sectionId) return;
 
@@ -46,99 +66,91 @@ export default function JourneysMegaMenu() {
       if (el) {
         const offset = 80;
         const elementPosition = el.getBoundingClientRect().top;
-        const offsetPosition =
-          elementPosition + window.pageYOffset - offset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
       }
     } else {
       router.push(`/#${sectionId}`);
     }
-
     setOpen(false);
   };
 
-  //////////////////////////////////////
-  // CLEANUP
-  //////////////////////////////////////
   useEffect(() => {
     return () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
     };
   }, []);
 
-  //////////////////////////////////////
-  // RENDER
-  //////////////////////////////////////
   return (
-    <div
-      className="relative"
+    <div 
+      ref={triggerRef}
+      className="relative" 
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      style={{ zIndex: 99999 }} // SUPER HIGH Z-INDEX
     >
-      {/* Trigger */}
-      <button className="group flex items-center gap-1.5 px-2 py-1 text-sm font-[300] tracking-[0.14em] text-white/80 hover:text-white transition-all duration-300">
+      {/* Trigger Button */}
+      <button className="group flex items-center gap-1.5 px-3 py-1.5 text-[11px] xl:text-[12px] font-[400] tracking-[0.1em] text-white/90 hover:text-white transition-all duration-300 rounded-full hover:bg-white/10">
         Journeys
         <ChevronDown
           size={14}
           className={`transition-all duration-300 ${
-            open
-              ? "rotate-180 opacity-100"
-              : "opacity-60 group-hover:opacity-100"
+            open ? "rotate-180 opacity-100" : "opacity-60 group-hover:opacity-100"
           }`}
         />
       </button>
 
-      {/* Dropdown */}
+      {/* Dropdown Menu - FIXED VISIBILITY */}
       <AnimatePresence>
         {open && (
           <motion.div
+            ref={menuRef}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            transition={{
-              duration: 0.3,
-              ease: [0.23, 1, 0.32, 1],
-            }}
-            className="absolute left-0 mt-3 rounded-sm shadow-xl border border-white/15 overflow-hidden"
+            transition={{ duration: 0.2 }}
+            onMouseEnter={handleMenuMouseEnter}
+            onMouseLeave={handleMenuMouseLeave}
             style={{
+              position: "absolute",
+              left: 0,
+              top: "100%",
+              marginTop: "8px",
               backgroundColor: "#A38664",
+              minWidth: "420px",
+              borderRadius: "12px",
+              boxShadow: "0 20px 25px -5px rgba(0,0,0,0.2), 0 10px 10px -5px rgba(0,0,0,0.1)",
+              border: "1px solid rgba(255,255,255,0.2)",
+              zIndex: 999999, // HIGHEST Z-INDEX
+              overflow: "visible", // Ensure no clipping
             }}
           >
-            <div className="flex">
+            <div className="flex" style={{ overflow: "visible" }}>
               
               {/* LEFT PANEL */}
-              <div className="border-r border-white/15">
-                <div className="py-1">
+              <div 
+                className="border-r border-white/15" 
+                style={{ minWidth: "140px", overflow: "visible" }}
+              >
+                <div className="py-2">
                   {journeyCategories.map((item) => {
                     const isActive = active === item.id;
-
                     return (
                       <div
                         key={item.id}
-                        onMouseEnter={() =>
-                          setActive(item.id as keyof MenuData)
-                        }
+                        onMouseEnter={() => setActive(item.id as keyof MenuData)}
                         className="relative cursor-pointer"
+                        style={{ overflow: "visible" }}
                       >
                         <div
                           className={`
-                            px-4 py-1.5 transition-all duration-300
-                            ${
-                              isActive
-                                ? "bg-black/30"
-                                : "hover:bg-black/20"
-                            }
+                            px-5 py-2.5 transition-all duration-300
+                            ${isActive ? "bg-black/30" : "hover:bg-black/20"}
                           `}
                         >
                           <span
-                            className={`text-[12px] font-normal tracking-wide whitespace-nowrap transition-all duration-300 ${
-                              isActive
-                                ? "text-white"
-                                : "text-white/80 hover:text-white"
+                            className={`text-[12px] font-medium tracking-wide whitespace-nowrap transition-all duration-300 ${
+                              isActive ? "text-white" : "text-white/80 hover:text-white"
                             }`}
                           >
                             {item.title}
@@ -151,8 +163,8 @@ export default function JourneysMegaMenu() {
               </div>
 
               {/* RIGHT PANEL */}
-              <div className="min-w-[200px]">
-                <div className="py-1">
+              <div style={{ minWidth: "220px", overflow: "visible" }}>
+                <div className="py-2">
                   <AnimatePresence mode="wait">
                     {active && (
                       <motion.div
@@ -160,31 +172,26 @@ export default function JourneysMegaMenu() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 0.2 }}
+                        transition={{ duration: 0.15 }}
+                        style={{ overflow: "visible" }}
                       >
                         {journeysData[active].map((item, idx) => {
-
-                          //////////////////////////////////////
-                          // ✅ ONLY CURATED → SCROLL
-                          //////////////////////////////////////
                           if (active === "curated") {
                             return (
                               <motion.button
                                 key={idx}
                                 initial={{ opacity: 0, x: -5 }}
                                 animate={{ opacity: 1, x: 0 }}
-                                transition={{
-                                  delay: idx * 0.02,
-                                  duration: 0.2,
-                                }}
+                                transition={{ delay: idx * 0.02, duration: 0.15 }}
                                 onClick={() => {
                                   if ("sectionId" in item) {
                                     handleScroll(item.sectionId);
                                   }
                                 }}
                                 className="group w-full text-left transition-all duration-300 hover:bg-black/20"
+                                style={{ overflow: "visible" }}
                               >
-                                <div className="px-4 py-1.5">
+                                <div className="px-5 py-2">
                                   <span className="text-[12px] font-normal tracking-wide whitespace-nowrap text-white/80 group-hover:text-white transition-all duration-300">
                                     {item.name}
                                   </span>
@@ -192,25 +199,20 @@ export default function JourneysMegaMenu() {
                               </motion.button>
                             );
                           }
-
-                          //////////////////////////////////////
-                          // ✅ FESTIVALS + HEALTH → LINK
-                          //////////////////////////////////////
                           return (
                             <motion.div
                               key={idx}
                               initial={{ opacity: 0, x: -5 }}
                               animate={{ opacity: 1, x: 0 }}
-                              transition={{
-                                delay: idx * 0.02,
-                                duration: 0.2,
-                              }}
+                              transition={{ delay: idx * 0.02, duration: 0.15 }}
+                              style={{ overflow: "visible" }}
                             >
                               <Link
                                 href={item.link}
+                                onClick={() => setOpen(false)}
                                 className="group block transition-all duration-300 hover:bg-black/20"
                               >
-                                <div className="px-4 py-1.5">
+                                <div className="px-5 py-2">
                                   <span className="text-[12px] font-normal tracking-wide whitespace-nowrap text-white/80 group-hover:text-white transition-all duration-300">
                                     {item.name}
                                   </span>

@@ -42,9 +42,9 @@ export default function GallerySlider({ images }: { images: string[] }) {
                 className="w-full h-[420px] sm:h-[320px] md:h-[360px] lg:h-[460px] object-cover transition-transform duration-500"
               />
 
-              {/* overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition duration-300"></div>
-
+              {/* 🔥 CLEAN DARK OVERLAY */}
+              <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 transition duration-300"></div>
+              
               {/* border */}
               <div className="absolute inset-0 border border-white/10 group-hover:border-[#A07008]/40 transition duration-300"></div>
             </div>

@@ -29,8 +29,19 @@ export default function ChooseAdventure() {
   };
 
   return (
-    <section className="bg-[#f8f5f0] py-24 px-6" id="adventure">
+    <section className="bg-gradient-to-b from-[#f3efe8] to-[#f1ede6] py-16 sm:py-20 md:py-24 px-4 sm:px-6" id="adventure">
       <div className="max-w-7xl mx-auto space-y-20">
+
+         {/* 🔥 NEW HEADING */}
+        <div className="text-center max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-3xl font-semibold text-[#8b6a3d] mb-4">
+            Choose Your Adventure
+          </h2>
+
+          <p className="text-base md:text-md text-[#8b6a3d] tracking-wide">
+            Experience The Beauty and Diversity of India with Our Unforgettable Tours!
+          </p>
+        </div>
 
         {/* TOP */}
         <div className="grid lg:grid-cols-3 gap-10">

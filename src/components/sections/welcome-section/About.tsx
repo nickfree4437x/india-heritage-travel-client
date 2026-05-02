@@ -1,89 +1,81 @@
-import Image from "next/image";
+"use client";
 
 export default function WelcomeSection() {
   return (
-    <section className="relative py-32 px-6 bg-gradient-to-br from-[#fefcf8] to-[#f9f5ef] overflow-hidden">
+    <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-[#f8f6f2] overflow-hidden">
+      
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
 
-      {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-[#9b7a50]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#9b7a50]/10 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-6xl border border-[#9b7a50]/10 rounded-full blur-2xl"></div>
+        {/* 🔥 LEFT CONTENT */}
+        <div className="flex flex-col items-center text-center max-w-[720px] mx-auto">
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 lg:gap-24 items-center relative z-10">
+          {/* Namaste */}
+          <h3 className="text-[#9b7a50] text-[22px] sm:text-[24px] md:text-[26px] font-medium mb-3 sm:mb-4">
+            Namaste!
+          </h3>
 
-        {/* LEFT CONTENT */}
-        <div className="max-w-xl">
-
-          {/* Tag with decorative line */}
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-[2px] bg-[#9b7a50]"></div>
-            <span className="text-xs tracking-[0.3em] text-[#9b7a50] font-medium uppercase">
-              Namaste
-            </span>
-             <div className="w-8 h-[2px] bg-[#9b7a50]"></div>
-          </div>
-
-          {/* Heading */}
-          <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-            Welcome to{" "}
-            <span className="relative inline-block">
-              <span className="text-[#9b7a50]">India Heritage</span>
-            </span>
-            <br />
-            <span className="text-[#9b7a50]">Travel</span>
+          {/* Main Heading */}
+          <h2 className="text-[24px] sm:text-[28px] md:text-[32px] font-semibold text-[#8b6b47] leading-snug mb-3">
+            Welcome To India Heritage Travel
           </h2>
 
-          {/* Description with enhanced styling */}
-          <div className="mt-8 space-y-5 text-gray-600 text-justify">
-            <div className="space-y-3">
-               <p className="text-base leading-relaxed flex gap-3">
-                <span className="text-[#9b7a50] text-xl">✦</span>
-                Step into a land where every journey tells a story and every sight leaves you in awe.
-              </p>
-              <p className="text-base leading-relaxed flex gap-3">
-                <span className="text-[#9b7a50] text-xl">✦</span>
+          {/* Intro */}
+          <p className="text-gray-700 text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed mb-5 max-w-[600px]">
+            Step into a land where every journey tells a story and every sight leaves you in awe.
+          </p>
+
+          {/* Sections */}
+          <div className="space-y-6 sm:space-y-8 md:space-y-10 text-gray-700 text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed max-w-[620px]">
+
+            <div>
+              <h4 className="text-[#9b7a50] font-semibold text-[16px] sm:text-[17px] md:text-[18px] mb-1">
+                Feel the essence
+              </h4>
+              <p>
                 With vibrant festivals, colorful landscapes, and the unique charm of India’s rich traditions.
               </p>
+            </div>
 
-              <p className="text-base leading-relaxed flex gap-3">
-                <span className="text-[#9b7a50] text-xl">✦</span>
+            <div>
+              <h4 className="text-[#9b7a50] font-semibold text-[16px] sm:text-[17px] md:text-[18px] mb-1">
+                Discover yourself
+              </h4>
+              <p>
                 In serene yoga retreats, spiritual journeys, and the peaceful rhythm of ancient practices.
               </p>
-              <p className="text-base leading-relaxed flex gap-3">
-                <span className="text-[#9b7a50] text-xl">✦</span>
-                From the towering peaks of the Himalayas to the tranquil backwaters of Kerala, majestic forts, 
+            </div>
+
+            <div>
+              <h4 className="text-[#9b7a50] font-semibold text-[16px] sm:text-[17px] md:text-[18px] mb-1">
+                Explore with us
+              </h4>
+              <p>
+                From the towering peaks of the Himalayas to the tranquil backwaters of Kerala, majestic forts,
                 palaces, and ancient temples that showcase India’s rich history and culture.
               </p>
             </div>
+
           </div>
         </div>
 
-        {/* RIGHT VIDEO CARD */}
-        <div className="relative flex justify-center group">
+        {/* 🔥 RIGHT SIDE */}
+        <div className="flex justify-center">
 
-          {/* Outer glowing ring */}
-          <div className="absolute -inset-4 bg-gradient-to-r from-[#9b7a50]/30 via-[#9b7a50]/10 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+          <div className="relative w-full max-w-[340px] sm:max-w-[420px] md:max-w-[500px] h-[350px] sm:h-[360px] md:h-[450px] overflow-hidden rounded-sm">
 
-          {/* Main Card */}
-          <div className="relative rounded-xl overflow-hidden shadow-sm transform transition-transform duration-500">
-
-            {/* Video */}
             <video
               src="/welcome-section/video.mp4"
               autoPlay
               loop
               muted
               playsInline
-              className="h-[420px] w-[320px] md:w-[550px] object-cover"
+              className="w-full h-full object-cover"
             />
 
-            {/* Gradient Overlay - Top to Bottom */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20"></div>
-
-            {/* Decorative corner accents */}
-            <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-white/40 rounded-tl-lg"></div>
-            <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-white/40 rounded-br-lg"></div>
+            {/* overlay */}
+            <div className="absolute inset-0 bg-black/20"></div>
           </div>
+
         </div>
 
       </div>

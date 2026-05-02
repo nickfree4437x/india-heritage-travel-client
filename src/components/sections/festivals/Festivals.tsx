@@ -3,12 +3,12 @@ import { festivals } from "./festivalData";
 
 export default function Festivals() {
   return (
-    <section className="bg-[#f4f0ea] py-20 px-6" id="festivals">
+    <section className="bg-[#CBB299] py-20 md:py-24 px-6" id="festivals">
       
       <div className="max-w-7xl mx-auto">
 
         {/* HEADING */}
-        <h2 className="text-center text-4xl font-semibold text-[#8b6a3d] mb-14">
+        <h2 className="text-center text-4xl font-semibold text-white mb-14">
           Immerse In Festive Celebrations
         </h2>
 

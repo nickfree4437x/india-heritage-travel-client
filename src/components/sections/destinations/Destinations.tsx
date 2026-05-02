@@ -5,16 +5,16 @@ import { destinations } from "./data";
 
 export default function PopularDestinations() {
   return (
-    <section className="bg-[#f4f0ea] py-24 px-6">
+    <section className="bg-[#CBB299] py-24 px-6">
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-3xl font-semibold text-[#8b6a3d] mb-4">
+          <h2 className="text-3xl md:text-3xl font-semibold text-white mb-4">
             Begin Your Journey With Popular Destinations
           </h2>
 
-          <p className="text-base md:text-md text-[#8b6a3d] tracking-wide">
+          <p className="text-base md:text-md text-white tracking-wide">
             Our Best-Loved Routes Across India’s Cultural Landscape.
           </p>
         </div>
