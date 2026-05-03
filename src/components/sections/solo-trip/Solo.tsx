@@ -40,33 +40,33 @@ export default function SoloTravelSection() {
           </div>
 
           {/* RIGHT COLLAGE */}
-<div className="grid grid-cols-4 gap-6 w-[560px] flex-shrink-0">
+          <div className="grid grid-cols-4 gap-6 w-[560px] flex-shrink-0">
 
-  {/* TOP LEFT */}
-  <img
-    src="/solo-trip/elephant.jpeg"
-    className="col-span-2 w-full h-[220px] object-cover rounded-sm"
-  />
+            {/* TOP LEFT */}
+            <img
+              src="/solo-trip/elephant.jpeg"
+              className="col-span-2 w-full h-[220px] object-cover rounded-sm"
+            />
 
-  {/* TOP RIGHT */}
-  <img
-    src="/solo-trip/women-wall.jpeg"
-    className="col-span-2 w-full h-[300px] object-cover rounded-sm"
-  />
+            {/* TOP RIGHT */}
+            <img
+              src="/solo-trip/women-wall.jpeg"
+              className="col-span-2 w-full h-[300px] object-cover rounded-sm"
+            />
 
-  {/* BOTTOM LEFT (HEIGHT ↑ + TOP ALIGN) */}
-  <img
-    src="/solo-trip/night-lights.jpeg"
-    className="col-span-2 w-full h-[320px] object-cover rounded-sm -mt-10"
-  />
+            {/* BOTTOM LEFT (HEIGHT ↑ + TOP ALIGN) */}
+            <img
+              src="/solo-trip/night-lights.jpeg"
+              className="col-span-2 w-full h-[320px] object-cover rounded-sm -mt-10"
+            />
 
-  {/* BOTTOM RIGHT (TAJ WIDE LEFT TAK) */}
-  <img
-    src="/solo-trip/taj-mahal.jpeg"
-    className="col-span-2 w-full h-[240px] object-cover rounded-sm"
-  />
+            {/* BOTTOM RIGHT (TAJ WIDE LEFT TAK) */}
+            <img
+              src="/solo-trip/taj-mahal.jpeg"
+              className="col-span-2 w-full h-[240px] object-cover rounded-sm"
+            />
 
-</div>
+          </div>
 
         </div>
       </div>
