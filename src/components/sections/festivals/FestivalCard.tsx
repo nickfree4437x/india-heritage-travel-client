@@ -29,11 +29,14 @@ export default function FestivalCard({
   };
 
   return (
-    <Link href={`/festivals/${slug}`} className="block">
-      <div className="relative rounded-sm overflow-hidden group cursor-pointer h-[420px]
-                      shadow-[0_10px_30px_rgba(0,0,0,0.08)] 
-                      hover:shadow-[0_20px_50px_rgba(0,0,0,0.18)]
-                      transition-all duration-700">
+    <Link href={`/festivals/${slug}`} className="block w-full">
+      <div
+        className="relative w-full max-w-[420px] mx-auto rounded-sm overflow-hidden group cursor-pointer 
+                   h-[190px] sm:h-[430px] md:h-[450px]   /* 🔥 SAME HEIGHT SYSTEM */
+                   shadow-[0_10px_30px_rgba(0,0,0,0.08)] 
+                   hover:shadow-[0_25px_60px_rgba(0,0,0,0.18)]
+                   transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
+      >
 
         {/* IMAGE */}
         <Image
@@ -42,46 +45,70 @@ export default function FestivalCard({
           fill
           sizes="(max-width: 768px) 100vw, 420px"
           className="object-cover object-center
-                     transition-all duration-[2000ms]
-                     group-hover:blur-[1.5px]"
+                     transition-all duration-[2000ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
         />
 
-        {/* OVERLAY */}
+        {/* GRADIENT */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent" />
-        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-[1200ms]" />
 
-        {/* DEFAULT */}
-        <div className="absolute bottom-0 left-0 right-0 p-5 flex flex-col items-center text-white
-                        transition-all duration-[1200ms]
-                        group-hover:opacity-0 group-hover:translate-y-10">
+        {/* HOVER OVERLAY (desktop only) */}
+        <div
+          className="absolute inset-0 bg-black/50 opacity-0 
+                     sm:group-hover:opacity-100 
+                     transition-opacity duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
+        />
 
-          <div className="mb-3 text-white opacity-90">
-            {renderIcon(36)}
+        {/* DEFAULT CONTENT (Mobile Focus) */}
+        <div
+          className="absolute inset-0 flex flex-col justify-end items-center text-white pb-4 pt-6 sm:p-6
+                     transition-all duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)]
+                     sm:group-hover:opacity-0 sm:group-hover:translate-y-10"
+        >
+          <div className="mb-1 opacity-90 sm:mb-2">
+            {renderIcon(26)}
           </div>
 
-          <h3 className="text-lg font-semibold text-center">{title}</h3>
+          <h3 
+            className="font-heading text-[13px] sm:text-[15px] md:text-[15px] font-semibold tracking-wide text-center text-[#f5f5f5] leading-snug"
+            style={{ textShadow: "0 2px 8px rgba(0,0,0,0.5)" }}
+          >
+            {title}
+          </h3>
+
+          {/* Mobile CTA */}
+          <span className="mt-1 text-[11.5px] sm:hidden inline-block relative">
+            Know Festival
+            <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-white"></span>
+          </span>
         </div>
 
-        {/* HOVER */}
-        <div className="absolute inset-0 flex flex-col justify-between p-6 text-white text-center
-                        translate-y-[110%] group-hover:translate-y-0
-                        transition-transform duration-[2000ms]">
+        {/* HOVER CONTENT (Desktop Only) */}
+        <div
+          className="hidden sm:flex absolute inset-0 flex-col justify-between p-6 text-white text-center
+                     translate-y-[110%] group-hover:translate-y-0
+                     transition-transform duration-[2000ms]"
+        >
 
-          <div className="opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0
-                          transition-all duration-[1200ms] delay-200
-                          flex flex-col items-center">
+          {/* TOP */}
+          <div className="opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-[1200ms] delay-200 flex flex-col items-center"> <div className="mb-3 text-white opacity-95"> {renderIcon(34)} </div>
 
-            <div className="mb-3 text-white opacity-95">
-              {renderIcon(42)}
-            </div>
-
-            <h3 className="text-xl font-semibold">{title}</h3>
+            <h3 className="font-heading text-[15px] sm:text-[16px] md:text-[16px] font-semibold tracking-wide">
+              {title}
+            </h3>
           </div>
 
-          <div className="opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0
+          {/* MIDDLE */}
+          <div className="opacity-0 translate-y-6 
+                          group-hover:opacity-100 group-hover:translate-y-0
                           transition-all duration-[1200ms] delay-400">
-            <p className="text-sm text-gray-200 leading-relaxed">{desc}</p>
-            <p className="mt-2 text-sm font-medium">Days : {days}</p>
+
+            <p className="text-[12.5px] sm:text-[13px] md:text-[13px] font-light text-gray-200 leading-relaxed">
+              {desc}
+            </p>
+
+            <p className="mt-2 text-[12.5px] sm:text-[13px] font-medium">
+              Days : {days}
+            </p>
           </div>
 
           {/* LINK */}
@@ -91,7 +118,7 @@ export default function FestivalCard({
 
             <span
               onClick={(e) => e.stopPropagation()}
-              className="mt-4 inline-block text-sm text-white cursor-pointer relative"
+              className="mt-4 inline-block text-[11px] text-white cursor-pointer relative"
             >
               Know Festival
               <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-white"></span>

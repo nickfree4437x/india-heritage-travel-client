@@ -23,7 +23,7 @@ export default function Accordion({ items, open, toggle, section }: any) {
               onClick={() => toggle(section, i)}
               className="w-full flex justify-between items-center px-4 py-2.5 text-left"
             >
-              <span className="font-medium font-heading text-[14px] text-gray-700">
+              <span className="font-medium text-[13px] text-gray-700">
                 {item.title}
               </span>
 
@@ -96,7 +96,7 @@ export default function Accordion({ items, open, toggle, section }: any) {
                   )}
 
                   {/* DESCRIPTION */}
-                  <p className="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-xs text-gray-600 leading-relaxed">
                     {item.desc}
                   </p>
                 </motion.div>
