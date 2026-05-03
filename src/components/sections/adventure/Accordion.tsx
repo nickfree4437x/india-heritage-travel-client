@@ -21,9 +21,9 @@ export default function Accordion({ items, open, toggle, section }: any) {
             {/* HEADER */}
             <button
               onClick={() => toggle(section, i)}
-              className="w-full flex justify-between items-center px-5 py-4 text-left"
+              className="w-full flex justify-between items-center px-4 py-2.5 text-left"
             >
-              <span className="font-medium font-heading text-[15px] text-gray-700">
+              <span className="font-medium font-heading text-[14px] text-gray-700">
                 {item.title}
               </span>
 
@@ -46,7 +46,7 @@ export default function Accordion({ items, open, toggle, section }: any) {
                 >
                   {item.link ? (
                     <Link href={item.link}>
-                      <div className="relative h-[210px] rounded-lg overflow-hidden mb-8 cursor-pointer group">
+                      <div className="relative h-[220px] rounded-lg overflow-hidden mb-8 cursor-pointer group">
 
                         <Image
                           src={item.img}

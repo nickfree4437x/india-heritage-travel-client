@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function ReviewsSection() {
   return (
-    <section className="relative py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-[#f8f6f2] overflow-hidden">
+    <section className="relative py-16 sm:py-20 md:py-6 px-4 sm:px-6 bg-[#f8f6f2] overflow-hidden">
 
       {/* 🔥 SOFT GLOW */}
       <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#c9a45c]/10 rounded-full blur-3xl z-0"></div>
@@ -15,11 +15,6 @@ export default function ReviewsSection() {
 
         {/* 🔥 HEADER */}
         <div className="text-center mb-12 sm:mb-14 md:mb-16">
-
-          {/* Badge */}
-          <span className="inline-block text-[10px] sm:text-xs tracking-[3px] uppercase bg-[#e9dfd3] text-[#8b6a3d] px-4 py-1 rounded-full mb-4">
-            Testimonials
-          </span>
 
           {/* Heading */}
           <motion.h2

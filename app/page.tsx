@@ -10,6 +10,7 @@ import Festival from "@/src/components/sections/festivals/Festivals";
 import GallerySection from "@/src/components/sections/gallery/Gallery";
 import CotactSection from "@/src/components/sections/contact/Contact";
 import Footer from "@/src/components/sections/footer/Footer";
+import SoloTravelSection from "@/src/components/sections/solo-trip/Solo";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <About />
       <Difference />
       <Destinations />
+      <SoloTravelSection/>
       <Adventure />
       <Festival />
       <ReviewsSection/>

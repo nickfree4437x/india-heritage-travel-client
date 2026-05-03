@@ -1,21 +1,29 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Caveat_Brush } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
 import Navbar from "@/src/components/layout/Navbar";
 
-// ✅ Body Font (clean UI)
+// Body Font
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
 
-// ✅ Heading Font (luxury feel)
+// Heading Font
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
+  display: "swap",
+});
+
+// ✅ Handwritten Font (FIXED EXACT STYLE)
+const caveatBrush = Caveat_Brush({
+  subsets: ["latin"],
+  variable: "--font-handwritten",
+  weight: "400",
   display: "swap",
 });
 
@@ -32,9 +40,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfair.variable} font-[var(--font-inter)] antialiased`}
+        className={`${inter.variable} ${playfair.variable} ${caveatBrush.variable} font-[var(--font-inter)] antialiased`}
       >
-
         {/* Navbar */}
         <Navbar />
 
@@ -71,7 +78,6 @@ export default function RootLayout({
             setInterval(removeBanner, 500);
           `}
         </Script>
-
       </body>
     </html>
   );

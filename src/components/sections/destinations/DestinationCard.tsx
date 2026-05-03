@@ -65,9 +65,9 @@ export default function DestinationCard({
 
         {/* HOVER CONTENT */}
         <div
-          className="absolute inset-0 flex flex-col justify-between p-7 text-white text-center
+          className="absolute inset-0 flex flex-col justify-between p-6 text-white text-center
                      translate-y-[110%] group-hover:translate-y-0
-                     transition-transform duration-[2000ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
+                     transition-transform duration-[2000ms]"
         >
 
           {/* TOP */}

@@ -120,3 +120,8 @@ nav span {
   display: inline-block;
   max-width: 100%;
 }
+
+/* Handwritten font helper */
+.handwritten {
+  font-family: var(--font-handwritten), cursive;
+}

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FestivalType } from "./festivalData";
-import { Sun, Sparkles, Tent, Waves } from "lucide-react";
+import { SunMedium, Lamp, Mountain, Flower } from "lucide-react";
 
 export default function FestivalCard({
   title,
@@ -13,96 +13,90 @@ export default function FestivalCard({
   slug,
 }: FestivalType) {
 
-  // 🔥 FIXED ICON MAPPING
-  const getIcon = () => {
+  const renderIcon = (size: number) => {
     switch (slug) {
       case "holi":
-        return Sun; // energy vibe
+        return <SunMedium size={size} strokeWidth={1} />;
       case "diwali":
-        return Sparkles; // lights
+        return <Lamp size={size} strokeWidth={1} />;
       case "pushkar":
-        return Tent; // mela / fair feel (best match)
+        return <Mountain size={size} strokeWidth={1} />;
       case "kumbh":
-        return Waves; // river
+        return <Flower size={size} strokeWidth={1} />;
       default:
-        return Sparkles;
+        return <SunMedium size={size} strokeWidth={1} />;
     }
   };
-
-  const Icon = getIcon();
 
   return (
     <Link href={`/festivals/${slug}`} className="block">
       <div className="relative rounded-sm overflow-hidden group cursor-pointer h-[420px]
                       shadow-[0_10px_30px_rgba(0,0,0,0.08)] 
                       hover:shadow-[0_20px_50px_rgba(0,0,0,0.18)]
-                      transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+                      transition-all duration-700">
 
         {/* IMAGE */}
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover
-                     transition-all duration-[2600ms] ease-[cubic-bezier(0.22,1,0.36,1)]
+          sizes="(max-width: 768px) 100vw, 420px"
+          className="object-cover object-center
+                     transition-all duration-[2000ms]
                      group-hover:blur-[1.5px]"
         />
 
-        {/* 🔥 DARK OVERLAY */}
-        <div className="absolute inset-0 bg-black/45 opacity-0 
-                        group-hover:opacity-100 
-                        transition-opacity duration-[1800ms] ease-[cubic-bezier(0.22,1,0.36,1)]" />
+        {/* OVERLAY */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-[1200ms]" />
 
-        {/* DEFAULT CONTENT */}
+        {/* DEFAULT */}
         <div className="absolute bottom-0 left-0 right-0 p-5 flex flex-col items-center text-white
-                        transition-all duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)]
+                        transition-all duration-[1200ms]
                         group-hover:opacity-0 group-hover:translate-y-10">
 
-          <Icon size={38} className="mb-2 opacity-90" />
+          <div className="mb-3 text-white opacity-90">
+            {renderIcon(36)}
+          </div>
+
           <h3 className="text-lg font-semibold text-center">{title}</h3>
         </div>
 
-        {/* HOVER CONTENT */}
+        {/* HOVER */}
         <div className="absolute inset-0 flex flex-col justify-between p-6 text-white text-center
-                        translate-y-[115%] group-hover:translate-y-0
-                        transition-transform duration-[2400ms] ease-[cubic-bezier(0.22,1,0.36,1)]">
+                        translate-y-[110%] group-hover:translate-y-0
+                        transition-transform duration-[2000ms]">
 
-          {/* TOP */}
-          <div className="opacity-0 translate-y-6 
-                          group-hover:opacity-100 group-hover:translate-y-0
-                          transition-all duration-[1400ms] delay-200 ease-[cubic-bezier(0.22,1,0.36,1)]">
+          <div className="opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0
+                          transition-all duration-[1200ms] delay-200
+                          flex flex-col items-center">
 
-            <Icon size={40} className="mx-auto mb-3 opacity-95" />
+            <div className="mb-3 text-white opacity-95">
+              {renderIcon(42)}
+            </div>
+
             <h3 className="text-xl font-semibold">{title}</h3>
           </div>
 
-          {/* MIDDLE */}
-          <div className="opacity-0 translate-y-6 
-                          group-hover:opacity-100 group-hover:translate-y-0
-                          transition-all duration-[1400ms] delay-400 ease-[cubic-bezier(0.22,1,0.36,1)]">
-
-            <p className="text-sm text-gray-200 leading-relaxed">
-              {desc}
-            </p>
-
-            <p className="mt-2 text-sm font-medium">
-              Days : {days}
-            </p>
+          <div className="opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0
+                          transition-all duration-[1200ms] delay-400">
+            <p className="text-sm text-gray-200 leading-relaxed">{desc}</p>
+            <p className="mt-2 text-sm font-medium">Days : {days}</p>
           </div>
 
-          {/* BUTTON */}
+          {/* LINK */}
           <div className="opacity-0 translate-y-6 
                           group-hover:opacity-90 group-hover:translate-y-0
-                          transition-all duration-[1400ms] delay-600 ease-[cubic-bezier(0.22,1,0.36,1)]">
+                          transition-all duration-[1200ms] delay-600">
 
-            <button
+            <span
               onClick={(e) => e.stopPropagation()}
-              className="mt-4 text-xs px-5 py-2 border border-white rounded-full 
-                         hover:bg-white hover:text-black 
-                         transition-all duration-500 ease-in-out backdrop-blur-md"
+              className="mt-4 inline-block text-sm text-white cursor-pointer relative"
             >
-              Explore Festival
-            </button>
+              Know Festival
+              <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-white"></span>
+            </span>
+
           </div>
 
         </div>
