@@ -24,7 +24,7 @@ export default function PopularDestinations() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-6 sm:gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 mt-6">
+        <div className="grid gap-6 sm:gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 mt-6 mb-10">
           {destinations.map((item, index) => (
             <DestinationCard key={index} {...item} />
           ))}

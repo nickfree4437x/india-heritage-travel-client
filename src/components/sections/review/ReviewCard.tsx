@@ -1,147 +1,154 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Star } from "lucide-react";
+import { Star, User, Quote, ChevronRight } from "lucide-react";
+import ReviewModal from "./ReviewModal";
+import { useState } from "react";
 
-// ✅ TYPE DEFINE
 type Review = {
-  id: string | number;
-  image: string;
+  id: number;
   name: string;
+  type: string;
+  rating: number;
   short: string;
   full: string;
-  rating: number;
-  location: string;
-  type: string;
+  image: string;
 };
 
-type ReviewCardProps = {
+type Props = {
   reviews: Review[];
+  index: number;
+  visibleCards: number;
 };
 
-export default function ReviewCard({ reviews }: ReviewCardProps) {
-  const [index, setIndex] = useState<number>(0);
+export default function ReviewCard({ reviews, index, visibleCards }: Props) {
   const [selected, setSelected] = useState<Review | null>(null);
 
-  const visibleCards = 3;
+  const renderStars = (rating: number) => (
+    <div className="flex gap-0.5">
+      {[1, 2, 3, 4, 5].map((star) => (
+        <Star
+          key={star}
+          size={12}
+          className={`${
+            star <= rating
+              ? "fill-[#c9a45c] text-[#c9a45c]"
+              : "fill-gray-200 text-gray-200"
+          }`}
+        />
+      ))}
+    </div>
+  );
 
-  const next = () => {
-    setIndex((prev) => (prev + 1) % reviews.length);
+  const getTypeColor = (type: string) => {
+    switch (type.toLowerCase()) {
+      case "solo":
+        return "bg-purple-500/10 text-purple-700 border-purple-200";
+      case "couple":
+        return "bg-pink-500/10 text-pink-700 border-pink-200";
+      case "family":
+        return "bg-blue-500/10 text-blue-700 border-blue-200";
+      default:
+        return "bg-gray-500/10 text-gray-700 border-gray-200";
+    }
   };
-
-  // 🔥 AUTO SLIDE
-  useEffect(() => {
-    if (!reviews.length) return;
-
-    const interval = setInterval(next, 3500);
-    return () => clearInterval(interval);
-  }, [reviews.length]);
-
-  const renderStars = (rating: number) =>
-    Array.from({ length: 5 }).map((_, i) => (
-      <Star
-        key={i}
-        size={16}
-        className={`${
-          i < rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
-        }`}
-      />
-    ));
 
   return (
     <>
-      <div className="relative">
-        {/* 🔥 SLIDER */}
-        <div className="overflow-hidden">
-          <div
-            className="flex transition-transform duration-700 ease-in-out"
-            style={{
-              transform: `translateX(-${index * (100 / visibleCards)}%)`,
-            }}
-          >
-            {reviews.map((review) => (
+      <div className="overflow-hidden">
+        <div
+          className="flex w-full transition-transform duration-700 ease-[cubic-bezier(0.33,1,0.68,1)]"
+          style={{
+            transform: `translateX(-${index * (100 / visibleCards)}%)`,
+          }}
+        >
+          {reviews.map((review) => (
+            <div
+              key={review.id}
+              className="px-2 sm:px-3"
+              style={{
+                flex: `0 0 ${100 / visibleCards}%`,
+                maxWidth: `${100 / visibleCards}%`,
+              }}
+            >
               <div
-                key={review.id}
-                className="w-full sm:w-1/2 lg:w-1/3 px-3 flex-shrink-0"
+                onClick={() => setSelected(review)}
+                className="group isolate relative bg-white sm:rounded-sm overflow-hidden cursor-pointer
+                           transition-all duration-300 shadow-sm hover:shadow-md
+                           border border-gray-100"
               >
-                {/* 🔥 CARD */}
-                <div
-                  onClick={() => setSelected(review)}
-                  className="relative h-[380px] rounded-sm overflow-hidden cursor-pointer group"
-                >
-                  {/* ✅ IMAGE FIX */}
+                {/* IMAGE */}
+                <div className="relative h-44 sm:h-52 w-full overflow-hidden">
                   <Image
                     src={review.image}
                     alt={review.name}
                     fill
-                    sizes="(max-width:768px) 100vw, 33vw"
-                    className="object-cover transition duration-700 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
+                </div>
 
-                  {/* 🔥 OVERLAY */}
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition" />
+                {/* CONTENT */}
+                <div className="p-3 sm:p-4">
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <div className="flex items-center gap-2 flex-1 min-w-0">
+                      <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-[#c9a45c] to-[#a8843a] 
+                                      flex items-center justify-center text-white font-semibold text-xs flex-shrink-0">
+                        {review.name.charAt(0)}
+                      </div>
 
-                  {/* 🔥 TEXT */}
-                  <div className="absolute bottom-0 left-0 right-0 p-5 text-white text-center">
-                    <p className="text-sm line-clamp-2 mb-2">
-                      “{review.short}”
-                    </p>
-                    <h4 className="text-sm font-medium">{review.name}</h4>
+                      <div className="min-w-0 flex-1">
+                        <h3 className="font-semibold text-gray-800 text-xs sm:text-sm truncate">
+                          {review.name}
+                        </h3>
+
+                        <div className="flex items-center gap-1 mt-0.5">
+                          <User size={10} className="text-gray-400" />
+                          <span className="text-[10px] text-gray-500 capitalize truncate">
+                            {review.type}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {renderStars(review.rating)}
                   </div>
+
+                  <div className="relative mt-2">
+                    <Quote size={12} className="text-[#c9a45c]/20 absolute -top-1 -left-1" />
+                    <p className="text-gray-600 text-[11px] sm:text-xs leading-relaxed line-clamp-3 pl-4">
+                      {review.short}
+                    </p>
+                  </div>
+
+                  <div className="w-8 h-px bg-gradient-to-r from-[#c9a45c]/30 to-transparent my-2" />
+
+                  <button
+                    className="inline-flex items-center gap-1 text-[11px] sm:text-xs font-medium text-[#8b6a3d] 
+                               hover:text-[#a8843a] transition group/btn"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelected(review);
+                    }}
+                  >
+                    <span>Read full story</span>
+                    <ChevronRight
+                      size={12}
+                      className="group-hover/btn:translate-x-0.5 transition"
+                    />
+                  </button>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* 🔥 MODAL BACK */}
       {selected && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 px-4">
-          <div className="bg-white max-w-lg w-full rounded-xl overflow-hidden relative">
-            {/* CLOSE */}
-            <button
-              onClick={() => setSelected(null)}
-              className="absolute top-3 right-3 text-white bg-black/50 px-2 rounded-full z-10"
-            >
-              ✕
-            </button>
-
-            {/* IMAGE */}
-            <div className="relative h-[250px]">
-              <Image
-                src={selected.image}
-                alt={selected.name}
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            {/* CONTENT */}
-            <div className="p-6 text-center">
-              <h3 className="text-lg font-semibold text-[#8b6a3d]">
-                {selected.name}
-              </h3>
-
-              <p className="text-sm text-gray-500">{selected.location}</p>
-
-              {/* ⭐ STARS */}
-              <div className="flex justify-center gap-1 mt-2">
-                {renderStars(selected.rating)}
-              </div>
-
-              {/* FULL REVIEW */}
-              <p className="text-gray-700 text-sm mt-4 leading-relaxed">
-                “{selected.full}”
-              </p>
-
-              <span className="inline-block mt-4 bg-[#8b6a3d]/10 text-[#8b6a3d] px-4 py-1 rounded-full text-xs">
-                {selected.type}
-              </span>
-            </div>
-          </div>
-        </div>
+        <ReviewModal
+          review={selected}
+          onClose={() => setSelected(null)}
+        />
       )}
     </>
   );
