@@ -58,6 +58,6 @@ export const reviews = [
     short: "Loved every moment of my solo trip.",
     full:
       "Loved every moment of my solo trip. It was safe, well-organized, and full of unique experiences. I felt confident traveling alone thanks to the amazing support.",
-    image: "/reviews/r5.jpeg",
+    image: "/reviews/r5.JPEG",
   },
 ];
