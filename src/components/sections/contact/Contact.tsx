@@ -57,19 +57,21 @@ export default function ContactSection() {
   );
 
   return (
-    <section className="relative py-24 px-6 text-white overflow-hidden">
+    <section className="relative mt-16 min-h-[100vh] py-10 px-6 text-white overflow-hidden">
 
-      {/* Background */}
-      <Image
-        src="/contact/india.jpg"
+      {/* Background Wrapper */}
+      <div className="absolute inset-0 -z-10 bg-black flex items-center justify-center">
+        <Image
+        src="/contact/contact1.jpeg"
         alt="Contact Background"
         fill
-        className="object-cover blur-[1px] scale-105"
         priority
+        className="object-cover object-[center_30%]"
       />
+      </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/60 -z-10"></div>
 
       <div className="relative max-w-5xl mx-auto">
 
@@ -79,17 +81,13 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading font-semibold text-4xl md:text-5xl mb-4 tracking-tight">
+          <h2 className="font-heading text-[20px] sm:text-[24px] md:text-[28px] font-semibold tracking-wide text-white mb-2 leading-snug md:whitespace-nowrap">
             Contact
           </h2>
 
-          <p className="text-gray-200 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
-            <span className="text-white font-medium">Be our guest!</span> Let us
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] font-light leading-relaxed text-white/90 tracking-wide max-w-[580px] mx-auto">
+            <span className="text-white">Be our guest!</span> Let us
             know about your dream journey and we’ll craft something unforgettable.
-          </p>
-
-          <p className="italic text-white font-semibold mt-6 text-lg">
-            Namaste
           </p>
         </motion.div>
 
@@ -97,28 +95,28 @@ export default function ContactSection() {
         <motion.form
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="grid md:grid-cols-2 gap-x-12 gap-y-10"
+          className="grid md:grid-cols-2 gap-x-12 gap-y-10 mb-8"
         >
 
           {/* Name */}
           <input
             type="text"
             placeholder="Name"
-            className="w-full bg-transparent border-b border-white/40 py-3 outline-none placeholder-gray-400 focus:border-[#AF956C] transition"
+            className="w-full bg-transparent border-b border-white/30 py-1 text-xs outline-none placeholder-gray-400 focus:border-[#AF956C] transition-all duration-300"
           />
 
           {/* Email */}
           <input
             type="email"
             placeholder="Email"
-            className="w-full bg-transparent border-b border-white/40 py-3 outline-none placeholder-gray-400 focus:border-[#AF956C] transition"
+            className="w-full bg-transparent border-b border-white/30 py-1 text-xs outline-none placeholder-gray-400 focus:border-[#AF956C] transition-all duration-300"
           />
 
           {/* Phone */}
           <input
             type="tel"
             placeholder="Phone Number"
-            className="w-full bg-transparent border-b border-white/40 py-3 outline-none placeholder-gray-400 focus:border-[#AF956C] transition"
+            className="w-full bg-transparent border-b border-white/30 py-1 text-xs outline-none placeholder-gray-400 focus:border-[#AF956C] transition-all duration-300"
           />
 
           {/* Country */}
@@ -133,7 +131,7 @@ export default function ContactSection() {
                 setOpen(true);
               }}
               onFocus={() => setOpen(true)}
-              className="w-full bg-transparent border-b border-white/40 py-3 outline-none placeholder-gray-400 focus:border-[#AF956C] transition"
+              className="w-full bg-transparent border-b border-white/30 py-1 text-xs outline-none placeholder-gray-400 focus:border-[#AF956C] transition-all duration-300"
             />
 
             {open && (
@@ -175,7 +173,7 @@ export default function ContactSection() {
             <textarea
               rows={4}
               placeholder="Message"
-              className="w-full bg-transparent border-b border-white/40 py-3 outline-none placeholder-gray-400 focus:border-[#AF956C] transition resize-none"
+              className="w-full bg-transparent border-b border-white/30 py-1 text-xs outline-none placeholder-gray-400 focus:border-[#AF956C] transition-all duration-300"
             ></textarea>
           </div>
 
@@ -183,7 +181,7 @@ export default function ContactSection() {
 
         {/* BUTTON */}
         <motion.div className="text-center mt-14">
-          <button className="border border-[#AF956C] px-10 py-3 rounded-full text-white text-sm tracking-wide 
+          <button className="border border-[#AF956C] px-7 py-3 rounded-full text-white text-xs tracking-wide 
           hover:bg-[#AF956C] transition duration-300">
             Send Message
           </button>

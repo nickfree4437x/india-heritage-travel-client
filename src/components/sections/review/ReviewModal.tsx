@@ -53,9 +53,9 @@ export default function ReviewModal({ review, onClose }: ReviewModalProps) {
       case "solo":
       case "couple":
       case "family":
-        return "bg-gray-500/10 text-white border-gray-200";
+        return "bg-gray-600/10 text-white border-gray-200";
       default:
-        return "bg-gray-500/10 text-white border-gray-200";
+        return "bg-gray-600/10 text-white border-gray-200";
     }
   };
 
@@ -79,14 +79,13 @@ export default function ReviewModal({ review, onClose }: ReviewModalProps) {
         </button>
 
         {/* HERO IMAGE */}
-        <div className="relative w-full h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px]">
+        <div className="relative w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[360px]">
           <Image
             src={review.image}
             alt={review.name}
             fill
-            className="object-cover w-full h-full"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 700px"
             priority
+            className="object-cover object-[center_30%] transition-transform duration-500 hover:scale-105"
           />
 
           {/* Gradient */}
@@ -108,7 +107,7 @@ export default function ReviewModal({ review, onClose }: ReviewModalProps) {
 
               <div className="flex items-center gap-2 mt-1 flex-wrap">
                 <div
-                  className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 ${getTypeColor(
+                  className={`inline-flex text-xs items-center gap-1 rounded-full px-2 py-1 ${getTypeColor(
                     review.type
                   )} bg-white/90 backdrop-blur-sm`}
                 >
@@ -135,7 +134,7 @@ export default function ReviewModal({ review, onClose }: ReviewModalProps) {
               paragraph.trim() && (
                 <p
                   key={idx}
-                  className="text-gray-700 leading-relaxed text-xs sm:text-[13px]"
+                  className="text-gray-700 leading-relaxed text-xs sm:text-[13px] text-justify"
                 >
                   {paragraph.trim()}
                 </p>

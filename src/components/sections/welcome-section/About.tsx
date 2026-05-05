@@ -11,18 +11,18 @@ export default function WelcomeSection() {
 
         {/* Namaste */}
         <h3 
-          className="text-[#9b7a50] text-[18px] sm:text-[20px] md:text-[22px] font-medium tracking-wide mb-3 sm:mb-4"
+          className="text-[#9b7a50] text-[16px] sm:text-[20px] md:text-[22px] font-medium tracking-wide mb-3 sm:mb-4"
         >
          Namaste!
         </h3>
 
       {/* Main Heading */}
-      <h2 className="text-[20px]  sm:text-[24px] md:text-[22px] font-[600] text-[#8b6b47] tracking-wide leading-snug mb-3">
+      <h2 className="text-[18px]  sm:text-[24px] md:text-[22px] font-[600] text-[#8b6b47] tracking-wide leading-snug mb-3">
         Welcome To India Heritage Travel
       </h2>
 
       {/* Intro */}
-      <p className="text-gray-800 text-[12px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
+      <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
         Step into a land where every journey tells a story and every sight leaves you in awe.
       </p>
 
@@ -30,28 +30,28 @@ export default function WelcomeSection() {
       <div className="space-y-6 sm:space-y-8 md:space-y-10 text-gray-800 text-[13px] sm:text-[14px] md:text-[15px] font-light tracking-wide leading-relaxed max-w-[620px]">
 
         <div>
-          <h4 className="text-[#8b6b47] font-medium text-[14px] sm:text-[15px] md:text-[15px] mb-1">
+          <h4 className="text-[#8b6b47] font-medium text-[13px] sm:text-[15px] md:text-[15px] mb-1">
             Feel the essence
           </h4>
-          <p className="text-gray-800 text-[12px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
+          <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
             With vibrant festivals, colorful landscapes, and the unique charm of India’s rich traditions.
           </p>
         </div>
 
         <div>
-          <h4 className="text-[#8b6b47] font-medium text-[14px] sm:text-[15px] md:text-[15px] mb-1 -mt-5">
+          <h4 className="text-[#8b6b47] font-medium text-[13px] sm:text-[15px] md:text-[15px] mb-1 -mt-5">
             Discover yourself
           </h4>
-          <p className="text-gray-800 text-[12px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
+          <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
             In serene yoga retreats, spiritual journeys, and the peaceful rhythm of ancient practices.
           </p>
         </div>
 
           <div>
-            <h4 className="text-[#8b6b47] font-medium text-[14px] sm:text-[15px] md:text-[15px] mb-1 -mt-5">
+            <h4 className="text-[#8b6b47] font-medium text-[13px] sm:text-[15px] md:text-[15px] mb-1 -mt-5">
               Explore with us
             </h4>
-            <p className="text-gray-800 text-[12px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
+            <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
               From the towering peaks of the Himalayas to the tranquil backwaters of Kerala, majestic forts,
               palaces, and ancient temples that showcase India’s rich history and culture.
             </p>

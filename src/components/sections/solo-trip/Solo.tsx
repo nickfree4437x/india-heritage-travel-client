@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SoloTravelSection() {
   return (
-    <section className="w-full bg-white py-16 relative overflow-hidden">
+    <section className="w-full bg-white py-14 relative overflow-hidden">
       {/* MAIN WRAPPER */}
       <div className="w-full px-6 md:px-20 lg:px-28 xl:px-36">
 
@@ -29,7 +29,11 @@ export default function SoloTravelSection() {
 
             <p
               className="text-[13px] leading-[1.8] text-gray-600 mb-6"
-              style={{ fontFamily: '"Lucida Calligraphy", cursive' }}
+              style={{
+                fontFamily: 'Georgia, "Times New Roman", Times, serif',
+                fontStyle: "italic",
+                letterSpacing: "0.3px",
+              }}
             >
               Traveling as a solo women through India...<br />
               but always knowing someone has your back :)
@@ -42,8 +46,6 @@ export default function SoloTravelSection() {
               <span className="font-semibold text-gray-800">Hi, I'm Isha.</span><br />
               And I help women experience India in a way that feels safe, calm,
               and deeply personal without taking away the magic of discovering it.<br />
-              So you can travel solo...<br />
-              but never feel alone.
             </p>
 
             <p
@@ -54,7 +56,7 @@ export default function SoloTravelSection() {
               but never feel alone.
             </p>
 
-            <button className="w-full sm:w-auto bg-transparent text-[#a67c52] text-sm px-7 py-3 rounded-full border border-[#a67c52] hover:bg-[#a67c52] hover:text-white transition-all duration-300">
+            <button className="w-full sm:w-auto md:-ml-2 bg-transparent text-[#a67c52] text-sm px-7 py-3 rounded-full border border-[#a67c52] hover:bg-[#a67c52] hover:text-white transition-all duration-300">
               Come travel with me
             </button>
           </div>
@@ -71,7 +73,7 @@ export default function SoloTravelSection() {
 
             {/* Rangoli background */}
             <div className="relative">
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+              {/* <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
                 <Image
                   src="/solo-trip/rangoli.png"
                   alt="rangoli"
@@ -79,13 +81,13 @@ export default function SoloTravelSection() {
                   height={120}
                   className="opacity-20 mt-32 ml-40"
                 />
-              </div>
+              </div> */}
 
               {/* 2-col grid layout for mobile */}
               <div className="relative z-10 grid grid-cols-2 gap-3">
 
                 {/* TOP LEFT — elephant */}
-                <div className="col-span-1">
+                {/* <div className="col-span-1">
                   <Image
                     src="/solo-trip/elephant.jpeg"
                     alt="elephant"
@@ -93,7 +95,7 @@ export default function SoloTravelSection() {
                     height={200}
                     className="w-full h-[180px] sm:h-[220px] object-cover rounded-sm"
                   />
-                </div>
+                </div> */}
 
                 {/* TOP RIGHT — women wall (taller) */}
                 <div className="col-span-1 row-span-2">
@@ -113,12 +115,12 @@ export default function SoloTravelSection() {
                     alt="lights"
                     width={300}
                     height={200}
-                    className="w-full h-[180px] sm:h-[220px] object-cover rounded-sm"
+                    className="w-full h-[280px] sm:h-[220px] object-cover rounded-sm"
                   />
                 </div>
 
                 {/* BOTTOM FULL WIDTH — taj mahal */}
-                <div className="col-span-2 mt-1">
+                <div className="col-span-2 -mt-3">
                   <Image
                     src="/solo-trip/taj-mahal.jpeg"
                     alt="taj"
@@ -180,7 +182,7 @@ export default function SoloTravelSection() {
             </div>
 
             {/* BOTTOM RIGHT (EXPAND LEFT) */}
-            <div className="absolute bottom-0 right-[16px] w-[58%] z-10">
+            <div className="absolute bottom-0 right-[16px] w-[59%] z-10">
               <Image
                 src="/solo-trip/taj-mahal.jpeg"
                 alt="taj"

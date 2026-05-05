@@ -23,18 +23,18 @@ const images = [
 export default function GallerySection() {
   return (
     <section
-      className="py-6 sm:py-8 md:py-8 bg-white relative overflow-hidden"
+      className="py-8 sm:py-8 md:py-10 bg-white relative overflow-hidden"
       id="gallery"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8">
 
         {/* HEADER */}
         <div className="text-center mb-10 sm:mb-14 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-semibold mb-2">
-            Our <span className="text-[#A38664]">Gallery</span>
+          <h2 className="text-[20px] sm:text-[24px] md:text-[28px] font-semibold tracking-wide mb-2 leading-snug md:whitespace-nowrap text-[#8b6a3d]">
+            Our Gallery
           </h2>
 
-          <p className="text-xs sm:text-sm md:text-md text-gray-600 max-w-2xl mx-auto">
+          <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed tracking-wide max-w-[580px] mx-auto text-[#8b6a3d]">
             Explore beautiful moments from our curated travel experiences
           </p>
         </div>

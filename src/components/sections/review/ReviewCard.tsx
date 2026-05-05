@@ -78,16 +78,16 @@ export default function ReviewCard({ reviews, index, visibleCards }: Props) {
                            border border-gray-100"
               >
                 {/* IMAGE */}
-                <div className="relative h-44 sm:h-52 w-full overflow-hidden">
+                <div className="relative h-52 sm:h-60 w-full overflow-hidden">
                   <Image
                     src={review.image}
                     alt={review.name}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    priority
+                    className="object-cover object-[center_30%] transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-
+                
                 {/* CONTENT */}
                 <div className="p-3 sm:p-4">
                   <div className="flex items-start justify-between gap-2 mb-2">
