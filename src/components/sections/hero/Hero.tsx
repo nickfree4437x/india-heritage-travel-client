@@ -73,7 +73,7 @@ export default function Hero() {
             `,
           }}
         >
-          <source src="/hero/hero.mp4" type="video/mp4" />
+          <source src="/hero/hero-small.mp4" type="video/mp4" />
         </video>
       </motion.div>
 
