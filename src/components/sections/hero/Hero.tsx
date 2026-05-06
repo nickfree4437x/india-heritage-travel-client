@@ -29,6 +29,17 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, []);
 
+  // 🔥 SMOOTH SCROLL FUNCTION
+  const scrollToDestination = () => {
+    const destinationSection = document.getElementById('welcome-destination');
+    if (destinationSection) {
+      destinationSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   if (!mounted) {
     return (
       <section className="relative min-h-screen w-full overflow-hidden bg-black">
@@ -68,7 +79,7 @@ export default function Hero() {
           className="w-full h-full object-cover"
           style={{
             filter: `
-              brightness(${0.7 + videoProgress * 0.1}) 
+              brightness(${0.85 + videoProgress * 0.1}) 
               contrast(${1.05 + Math.sin(videoProgress * Math.PI * 2) * 0.03})
             `,
           }}
@@ -77,28 +88,28 @@ export default function Hero() {
         </video>
       </motion.div>
 
-      {/* 🔥 DARK OVERLAY */}
+      {/* 🔥 DARK OVERLAY - LIGHT KIYA HAI BHAI */}
       <motion.div
         className="absolute inset-0"
         animate={{
           background: [
-            "linear-gradient(145deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 100%)",
-            "linear-gradient(125deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.25) 50%, rgba(0,0,0,0.75) 100%)",
-            "linear-gradient(145deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 100%)",
+            "linear-gradient(145deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.35) 100%)",
+            "linear-gradient(125deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.4) 100%)",
+            "linear-gradient(145deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.35) 100%)",
           ]
         }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      {/* 🔥 SOFT RADIAL GLOW */}
+      {/* 🔥 SOFT RADIAL GLOW - THODA AUR VISIBLE */}
       <motion.div
         className="absolute inset-0 pointer-events-none"
         animate={{
           background: [
-            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.06) 0%, transparent 60%)",
-            "radial-gradient(circle at 70% 50%, rgba(203,178,153,0.08) 0%, transparent 60%)",
-            "radial-gradient(circle at 50% 50%, rgba(203,178,153,0.05) 0%, transparent 60%)",
-            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.06) 0%, transparent 60%)",
+            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.12) 0%, transparent 60%)",
+            "radial-gradient(circle at 70% 50%, rgba(203,178,153,0.15) 0%, transparent 60%)",
+            "radial-gradient(circle at 50% 50%, rgba(203,178,153,0.1) 0%, transparent 60%)",
+            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.12) 0%, transparent 60%)",
           ]
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
@@ -108,17 +119,17 @@ export default function Hero() {
       <motion.div
         className="absolute inset-0 pointer-events-none"
         animate={{ 
-          opacity: [0.1, 0.3, 0.1],
+          opacity: [0.2, 0.45, 0.2],
         }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
       >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_40%,rgba(203,178,153,0.1),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_40%,rgba(203,178,153,0.15),transparent_70%)]" />
       </motion.div>
 
       {/* 🔥 MOVING LIGHT BEAM */}
       <motion.div className="absolute inset-0 pointer-events-none overflow-hidden">
         <motion.div
-          className="absolute top-0 h-full w-[25%] bg-gradient-to-r from-transparent via-white/6 to-transparent blur-2xl"
+          className="absolute top-0 h-full w-[25%] bg-gradient-to-r from-transparent via-white/12 to-transparent blur-2xl"
           animate={{ x: ["-100%", "200%"] }}
           transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
         />
@@ -128,31 +139,31 @@ export default function Hero() {
       <motion.div
         className="absolute top-0 left-0 w-full h-[50%] pointer-events-none"
         animate={{ 
-          opacity: [0.05, 0.15, 0.05],
+          opacity: [0.08, 0.22, 0.08],
           y: [0, -10, 0],
         }}
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
       >
-        <div className="w-full h-full bg-gradient-to-b from-[#CBB299]/10 via-white/5 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-b from-[#CBB299]/15 via-white/8 to-transparent" />
       </motion.div>
 
       {/* 🔥 BOTTOM GLOW */}
       <motion.div
         className="absolute bottom-0 left-0 w-full h-[30%] pointer-events-none"
         animate={{ 
-          opacity: [0.05, 0.12, 0.05],
+          opacity: [0.08, 0.18, 0.08],
           y: [0, 8, 0],
         }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
       >
-        <div className="w-full h-full bg-gradient-to-t from-[#CBB299]/10 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-t from-[#CBB299]/15 to-transparent" />
       </motion.div>
 
       {/* 🔥 SPARKLE PARTICLES */}
       {[...Array(15)].map((_, i) => (
         <motion.div
           key={i}
-          className="absolute w-[1.5px] h-[1.5px] rounded-full bg-white/30"
+          className="absolute w-[1.5px] h-[1.5px] rounded-full bg-white/40"
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
@@ -160,7 +171,7 @@ export default function Hero() {
           animate={{
             y: [0, -30 - Math.random() * 20, 0],
             x: [0, (Math.random() - 0.5) * 30, 0],
-            opacity: [0, 0.5, 0],
+            opacity: [0, 0.6, 0],
           }}
           transition={{
             duration: 3 + Math.random() * 3,
@@ -210,21 +221,22 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 1, ease: "easeOut" }}
-            className="mt-2 sm:mt-3 text-[11px] sm:text-xs md:text-sm text-gray-300 font-light leading-relaxed tracking-wide max-w-md sm:max-w-lg px-4"
+            className="mt-2 sm:mt-3 text-[11px] sm:text-xs md:text-sm text-gray-200 font-light leading-relaxed tracking-wide max-w-md sm:max-w-lg px-4"
           >
             Discover India's hidden cultures, ancient traditions, and untouched
             landscapes thoughtfully curated for a truly immersive journey.
           </motion.p>
 
-          {/* 🔥 CTA BUTTON */}
+           {/* 🔥 CTA BUTTON - WITH CLICK HANDLER */}
           <motion.button
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
             whileTap={{ scale: 0.98 }}
+            onClick={scrollToDestination}
             className="relative group mt-6 sm:mt-8 px-6 sm:px-8 py-2.5 sm:py-3 border border-[#CBB299]/40 
             bg-black/20 backdrop-blur-md text-[#CBB299] text-[10px] sm:text-xs tracking-[2px] uppercase 
-            transition-all duration-500 overflow-hidden rounded-none"
+            transition-all duration-500 overflow-hidden rounded-md cursor-pointer"
           >
             <span className="relative z-10">Begin Your Journey</span>
             <motion.div
@@ -236,39 +248,42 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* 🔥 SCROLL INDICATOR - PERFECTLY CENTERED */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center z-20 text-center"
-        >
-        <motion.span
-          animate={{ 
-            opacity: [0.2, 0.8, 0.2],
-            y: [0, -3, 0]
-          }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="text-[8px] sm:text-[9px] tracking-[3px] text-white/40 uppercase mb-1"
-        >
-          Discover More
-        </motion.span>
 
-        <div className="w-[18px] sm:w-[20px] h-[30px] sm:h-[34px] rounded-full border border-white/20 flex items-start justify-center p-[2px] backdrop-blur-sm bg-white/5">
-          <motion.div
+      {/* 🔥 SCROLL INDICATOR - AB PERFECTLY CENTERED HAI BHAI */}
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.5, duration: 1 }}
+          className="flex flex-col items-center"
+        >
+          <motion.span
             animate={{ 
-              y: [0, 12, 0],
-              opacity: [0.5, 1, 0.5]
+              opacity: [0.2, 0.8, 0.2],
+              y: [0, -3, 0]
             }}
-            transition={{
-              duration: 1.8,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            className="w-[1.5px] h-[6px] rounded-full bg-[#CBB299] shadow-[0_0_6px_rgba(203,178,153,0.6)]"
-          />
-        </div>
-      </motion.div>
+            transition={{ duration: 2, repeat: Infinity }}
+            className="text-[8px] sm:text-[9px] tracking-[3px] text-white/40 uppercase mb-1"
+          >
+            Discover More
+          </motion.span>
+
+          <div className="w-[18px] sm:w-[20px] h-[30px] sm:h-[34px] rounded-full border border-white/20 flex items-start justify-center p-[2px] backdrop-blur-sm bg-white/5">
+            <motion.div
+              animate={{ 
+                y: [0, 12, 0],
+                opacity: [0.5, 1, 0.5]
+              }}
+              transition={{
+                duration: 1.8,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="w-[1.5px] h-[6px] rounded-full bg-[#CBB299] shadow-[0_0_6px_rgba(203,178,153,0.6)]"
+            />
+          </div>
+        </motion.div>
+      </div>
 
     </section>
   );

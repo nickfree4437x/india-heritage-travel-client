@@ -53,9 +53,9 @@ export default function ReviewModal({ review, onClose }: ReviewModalProps) {
       case "solo":
       case "couple":
       case "family":
-        return "bg-gray-600/10 text-white border-gray-200";
+        return "bg-gray-800/10 text-white border-gray-200";
       default:
-        return "bg-gray-600/10 text-white border-gray-200";
+        return "bg-gray-800/10 text-white border-gray-200";
     }
   };
 
