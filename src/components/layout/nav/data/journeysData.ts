@@ -8,27 +8,27 @@ export const journeysData = {
     {
       name: "The Royal Rajasthan",
       link: "/journeys/curated-tours/royal-rajasthan-tour",
-      sectionId: "adventure",
+      sectionId: "rotal-rajasthan",
     },
     {
       name: "Golden Triangle Tour",
       link: "/journeys/curated-tours/golden-triangle-tour",
-      sectionId: "adventure",
+      sectionId: "golden-tringle",
     },
     {
       name: "South India Getaways",
       link: "/journeys/curated-tours/south-indian-gateways",
-      sectionId: "adventure",
+      sectionId: "south-india",
     },
     {
       name: "East India Adventure",
       link: "/journeys/curated-tours/east-india-adventure",
-      sectionId: "east-west",
+      sectionId: "east-india",
     },
     {
       name: "West India Escapes",
       link: "/journeys/curated-tours/west-india-escapes",
-      sectionId: "east-west",
+      sectionId: "west-india",
     },
   ],
 

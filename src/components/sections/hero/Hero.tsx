@@ -88,14 +88,14 @@ export default function Hero() {
         </video>
       </motion.div>
 
-      {/* 🔥 DARK OVERLAY - LIGHT KIYA HAI BHAI */}
+      {/* 🔥 DARK OVERLAY - LIGHT KIYA HAI BHAI (KAM KAR DIYA) */}
       <motion.div
         className="absolute inset-0"
         animate={{
           background: [
-            "linear-gradient(145deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.35) 100%)",
-            "linear-gradient(125deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.4) 100%)",
-            "linear-gradient(145deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.35) 100%)",
+            "linear-gradient(145deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.15) 100%)",
+            "linear-gradient(125deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.03) 50%, rgba(0,0,0,0.2) 100%)",
+            "linear-gradient(145deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.15) 100%)",
           ]
         }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}

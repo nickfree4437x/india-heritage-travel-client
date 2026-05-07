@@ -91,7 +91,7 @@ export default function GallerySection() {
       className="py-8 sm:py-8 md:py-10 bg-white relative overflow-hidden"
       id="gallery"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 -mb-6">
         {/* HEADER */}
         <motion.div
           variants={headingVariants}

@@ -30,7 +30,7 @@ export default function Difference() {
     },
     {
       icon: <Compass size={55} />,
-      text: "100+ Diverse Destinations",
+      text: "100+ handpicked destinations ",
     },
     {
       icon: <Headphones size={55} />,
@@ -110,7 +110,7 @@ export default function Difference() {
         <motion.div
           variants={containerVariants}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 
-                     gap-y-14 sm:gap-y-16 md:gap-y-20 
+                     gap-y-16 sm:gap-y-16 md:gap-y-20 
                      gap-x-16 md:gap-x-24 lg:gap-x-32 text-center md:mb-14"
         >
           {items.map((item, index) => (

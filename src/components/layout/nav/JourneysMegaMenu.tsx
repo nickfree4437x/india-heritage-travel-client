@@ -4,20 +4,12 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Sparkles, Map, Heart, Users, Calendar } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { createPortal } from "react-dom";
 
 import { journeysData, journeyCategories } from "./data/journeysData";
 
 type MenuData = typeof journeysData;
-
-const categoryIcons: Record<string, any> = {
-  curated: Sparkles,
-  destinations: Map,
-  themes: Heart,
-  groups: Users,
-  seasons: Calendar,
-};
 
 export default function JourneysMegaMenu() {
   const [open, setOpen] = useState(false);
@@ -25,7 +17,8 @@ export default function JourneysMegaMenu() {
   const [dropdownPos, setDropdownPos] = useState({ top: 0, left: 0 });
   const [isMounted, setIsMounted] = useState(false);
 
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const enterTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const leaveTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const triggerRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -47,30 +40,60 @@ export default function JourneysMegaMenu() {
   };
 
   const handleMouseEnter = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    updatePosition();
-    setOpen(true);
-    setActive("curated");
-  };
-
-  const handleMouseLeave = (e: React.MouseEvent) => {
-    const relatedTarget = e.relatedTarget as Node;
-    if (menuRef.current?.contains(relatedTarget)) return;
-
-    timeoutRef.current = setTimeout(() => {
-      setOpen(false);
-      setActive(null);
+    if (leaveTimeoutRef.current) {
+      clearTimeout(leaveTimeoutRef.current);
+      leaveTimeoutRef.current = null;
+    }
+    
+    if (enterTimeoutRef.current) {
+      clearTimeout(enterTimeoutRef.current);
+    }
+    
+    // SLOW OPEN - 200ms delay before opening
+    enterTimeoutRef.current = setTimeout(() => {
+      updatePosition();
+      setOpen(true);
+      setActive("curated");
+      enterTimeoutRef.current = null;
     }, 200);
   };
 
-  const handleMenuMouseLeave = (e: React.MouseEvent) => {
-    const relatedTarget = e.relatedTarget as Node;
-    if (triggerRef.current?.contains(relatedTarget)) return;
-
-    timeoutRef.current = setTimeout(() => {
+  const handleMouseLeave = () => {
+    if (enterTimeoutRef.current) {
+      clearTimeout(enterTimeoutRef.current);
+      enterTimeoutRef.current = null;
+    }
+    
+    if (leaveTimeoutRef.current) {
+      clearTimeout(leaveTimeoutRef.current);
+    }
+    
+    // SLOW CLOSE - 600ms delay before closing
+    leaveTimeoutRef.current = setTimeout(() => {
       setOpen(false);
       setActive(null);
-    }, 200);
+      leaveTimeoutRef.current = null;
+    }, 600);
+  };
+
+  const handleMenuMouseEnter = () => {
+    if (leaveTimeoutRef.current) {
+      clearTimeout(leaveTimeoutRef.current);
+      leaveTimeoutRef.current = null;
+    }
+  };
+
+  const handleMenuMouseLeave = () => {
+    if (leaveTimeoutRef.current) {
+      clearTimeout(leaveTimeoutRef.current);
+    }
+    
+    // SLOW CLOSE from menu - 600ms delay
+    leaveTimeoutRef.current = setTimeout(() => {
+      setOpen(false);
+      setActive(null);
+      leaveTimeoutRef.current = null;
+    }, 600);
   };
 
   const handleScroll = (sectionId: string) => {
@@ -104,19 +127,26 @@ export default function JourneysMegaMenu() {
 
   useEffect(() => {
     return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      if (enterTimeoutRef.current) clearTimeout(enterTimeoutRef.current);
+      if (leaveTimeoutRef.current) clearTimeout(leaveTimeoutRef.current);
     };
   }, []);
 
   const dropdownContent = (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       {open && (
         <motion.div
           ref={menuRef}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 10 }}
-          transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+          initial={{ opacity: 0, y: -15, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: -15, scale: 0.95 }}
+          transition={{ 
+            duration: 0.6,        // SLOWER - 600ms for open/close
+            delay: 0.05,          // Small delay before animation starts
+            ease: [0.22, 1, 0.36, 1],  // Smooth cubic-bezier
+            scale: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
+          }}
+          onMouseEnter={handleMenuMouseEnter}
           onMouseLeave={handleMenuMouseLeave}
           style={{
             position: "fixed",
@@ -125,64 +155,60 @@ export default function JourneysMegaMenu() {
             zIndex: 9999999,
           }}
         >
-          <div className="flex bg-[#A38664] border border-white/20 rounded-xl shadow-2xl overflow-hidden">
+          <div className="flex bg-[#C2A985]/95 backdrop-blur-sm rounded-sm shadow-md overflow-hidden">
             
             {/* LEFT PANEL */}
-            <div className="w-44 flex-shrink-0 py-3">
-              <div className="space-y-0.5 px-2">
+            <div className="w-48 flex-shrink-0 py-3">
+              <div className="space-y-1 px-2">
                 {journeyCategories.map((item) => {
                   const isActive = active === item.id;
-                  const IconComponent = categoryIcons[item.id] || Map;
                   
                   return (
-                    <motion.div
+                    <motion.button
                       key={item.id}
                       onMouseEnter={() => setActive(item.id as keyof MenuData)}
+                      transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
                       className={`
-                        relative cursor-pointer rounded-lg transition-all duration-300
+                        relative w-full cursor-pointer rounded-lg transition-all duration-300 ease-out
                         ${isActive 
-                          ? "bg-white/15" 
-                          : "hover:bg-white/8"
+                          ? "bg-white/20 shadow-sm" 
+                          : "hover:bg-white/10"
                         }
                       `}
                     >
-                      <div className="flex items-center gap-2.5 px-3 py-2.5">
-                        <IconComponent 
-                          size={14} 
-                          strokeWidth={1.5}
-                          className={`transition-colors duration-300 flex-shrink-0 ${
-                            isActive ? "text-white" : "text-white/60"
+                      <div className="px-4 py-2">
+                        <span
+                          className={`text-[11px] xl:text-[11px] font-[300] tracking-[0.1em] whitespace-nowrap  transition-all duration-300 ease-out ${
+                            isActive ? "text-white" : "text-white/80"
                           }`}
-                        />
-                        <span className={`text-[11px] font-medium tracking-wide whitespace-nowrap transition-colors duration-300 ${
-                          isActive ? "text-white" : "text-white/80"
-                        }`}>
+                        >
                           {item.title}
                         </span>
                       </div>
-                    </motion.div>
+                    </motion.button>
                   );
                 })}
               </div>
             </div>
 
             {/* RIGHT PANEL */}
-            <div className="w-60 flex-shrink-0 bg-black/10 py-3">
+            <div className="w-56 flex-shrink-0 bg-black/10 py-3">
               <AnimatePresence mode="wait">
                 {active && (
                   <motion.div
                     key={active}
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
+                    initial={{ opacity: 0, x: -15 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -15 }}
                     transition={{ 
-                      duration: 0.35, 
-                      ease: [0.25, 0.1, 0.25, 1]
+                      duration: 0.5,      // SLOWER content transition
+                      delay: 0.08,
+                      ease: [0.22, 1, 0.36, 1]
                     }}
-                    className="px-3 space-y-0.5"
+                    className="px-3 space-y-1"
                   >
-                    <div className="px-2 pb-3 mb-2 border-b border-white/15">
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-white/60">
+                    <div className="px-4 pb-3 mb-2 border-b border-white/15">
+                      <p className="text-[10px] uppercase tracking-[0.2em] text-white/50">
                         {journeyCategories.find(c => c.id === active)?.title}
                       </p>
                     </div>
@@ -191,18 +217,17 @@ export default function JourneysMegaMenu() {
                       const content = (
                         <motion.div
                           key={idx}
-                          initial={{ opacity: 0, x: -6 }}
+                          initial={{ opacity: 0, x: -12 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ 
-                            delay: idx * 0.04,
-                            duration: 0.3,
-                            ease: [0.25, 0.1, 0.25, 1]
+                            delay: 0.1 + idx * 0.08,  // 80ms between each item
+                            duration: 0.45,
+                            ease: [0.22, 1, 0.36, 1]
                           }}
-                          className="group/item rounded-lg transition-all duration-300 hover:bg-white/10"
+                          className="group rounded-lg transition-all duration-300 ease-out hover:bg-white/10"
                         >
-                          <div className="flex items-center gap-2.5 px-2 py-2 cursor-pointer">
-                            <span className="w-1 h-1 rounded-full bg-white/40 group-hover/item:bg-white/90 transition-all duration-300 flex-shrink-0"/>
-                            <span className="text-[11px] tracking-wide whitespace-nowrap text-white/70 group-hover/item:text-white transition-all duration-300">
+                          <div className="px-4 py-2 cursor-pointer">
+                            <span className="text-[11px] xl:text-[11px] text-white font-[300] tracking-[0.1em] whitespace-nowrap  transition-all duration-300 ease-out">
                               {item.name}
                             </span>
                           </div>
@@ -257,14 +282,14 @@ export default function JourneysMegaMenu() {
         group flex items-center gap-1.5
         text-[11px] tracking-[0.1em]
         text-white/90 hover:text-white
-        transition-all duration-300
+        transition-all duration-300 ease-out
       ">
         <span>Journeys</span>
         <motion.div
           animate={{ rotate: open ? 180 : 0 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
-          <ChevronDown size={13} className="opacity-60 group-hover:opacity-100 transition-opacity" />
+          <ChevronDown size={13} className="opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
         </motion.div>
       </button>
 

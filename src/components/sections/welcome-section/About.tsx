@@ -80,14 +80,14 @@ export default function WelcomeSection() {
       ref={sectionRef}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      className="py-4 sm:py-20 md:py-16 px-4 sm:px-6 bg-[#f8f6f2] overflow-hidden"
+      className="py-8 sm:py-20 md:py-16 px-4 sm:px-6 bg-[#f8f6f2] overflow-hidden"
     >
       <motion.div
         variants={containerVariants}
         className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6 md:gap-8 items-center"
       >
         {/* 🔥 LEFT CONTENT */}
-        <div className="flex flex-col items-center text-center max-w-[720px] mx-auto md:ml-12 md:pr-6">
+        <div className="flex flex-col items-center text-center max-w-[5500px] mx-auto md:ml-12 md:pr-6">
           {/* Namaste */}
           <motion.h3
             variants={headingVariants}
@@ -107,7 +107,7 @@ export default function WelcomeSection() {
           {/* Intro */}
           <motion.p
             variants={itemVariants}
-            className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]"
+            className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[320px] sm:max-w-[600px] mx-auto"
           >
             Step into a land where every journey tells a story and every sight
             leaves you in awe.
@@ -120,7 +120,7 @@ export default function WelcomeSection() {
                 Feel the essence
               </h4>
 
-              <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
+              <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[320px] sm:max-w-[600px] mx-auto">
                 With vibrant festivals, colorful landscapes, and the unique
                 charm of India’s rich traditions.
               </p>
@@ -131,7 +131,7 @@ export default function WelcomeSection() {
                 Discover yourself
               </h4>
 
-              <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
+              <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[350px] sm:max-w-[600px] mx-auto">
                 In serene yoga retreats, spiritual journeys, and the peaceful
                 rhythm of ancient practices.
               </p>
@@ -142,7 +142,7 @@ export default function WelcomeSection() {
                 Explore with us
               </h4>
 
-              <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[600px]">
+              <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[320px] sm:max-w-[600px] mx-auto">
                 From the towering peaks of the Himalayas to the tranquil
                 backwaters of Kerala, majestic forts, palaces, and ancient
                 temples that showcase India’s rich history and culture.

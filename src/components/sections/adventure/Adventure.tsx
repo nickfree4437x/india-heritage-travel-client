@@ -126,7 +126,6 @@ export default function ChooseAdventure() {
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       className="bg-gradient-to-b from-[#f3efe8] to-[#f1ede6] py-4 sm:py-6"
-      id="adventure"
     >
       {/* 🔥 PROPER CONTAINER (FIXED SPACING) */}
       <div className="max-w-[1200px] xl:max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 mb-10">
@@ -151,7 +150,7 @@ export default function ChooseAdventure() {
             variants={topGridVariants}
             className="grid lg:grid-cols-3 gap-6"
           >
-            <motion.div variants={cardVariants}>
+            <motion.div variants={cardVariants} id="rotal-rajasthan">
               <motion.h3
                 variants={sectionHeadingVariants}
                 className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5"
@@ -167,10 +166,10 @@ export default function ChooseAdventure() {
               />
             </motion.div>
 
-            <motion.div variants={cardVariants}>
+            <motion.div variants={cardVariants} id="golden-tringle">
               <motion.h3
                 variants={sectionHeadingVariants}
-                className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5"
+                className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5 md:mt-0 mt-8"
               >
                 Golden Triangle Splendor
               </motion.h3>
@@ -183,10 +182,10 @@ export default function ChooseAdventure() {
               />
             </motion.div>
 
-            <motion.div variants={cardVariants}>
+            <motion.div variants={cardVariants} id="south-india">
               <motion.h3
                 variants={sectionHeadingVariants}
-                className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5"
+                className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5 md:mt-0 mt-8"
               >
                 South India Gateways
               </motion.h3>
@@ -204,10 +203,9 @@ export default function ChooseAdventure() {
           <motion.div
             variants={bottomGridVariants}
             className="flex justify-center"
-            id="east-west"
           >
             <div className="grid lg:grid-cols-2 gap-10 w-full lg:w-2/3">
-              <motion.div variants={cardVariants}>
+              <motion.div variants={cardVariants} id="east-india">
                 <motion.h3
                   variants={sectionHeadingVariants}
                   className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5 lg:text-center"
@@ -223,10 +221,10 @@ export default function ChooseAdventure() {
                 />
               </motion.div>
 
-              <motion.div variants={cardVariants}>
+              <motion.div variants={cardVariants} id="west-india">
                 <motion.h3
                   variants={sectionHeadingVariants}
-                  className="text-gray-700 text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5 text-center lg:text-center"
+                  className="text-gray-700 text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5  md:mt-0 mt-5 text-center lg:text-center"
                 >
                   Ladakh & Spiti Escapes
                 </motion.h3>

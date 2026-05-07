@@ -54,7 +54,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   // SCROLL HANDLER
-  const handleScrollToSection = (sectionId: string) => {
+  const handleScroll = (sectionId: string) => {
     if (!sectionId) return;
 
     if (pathname === "/") {
@@ -84,7 +84,7 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 transition-all duration-500 ease-out ${
           scrolled
-            ? "bg-[#C2A985]/95 backdrop-blur-md shadow-lg"
+            ? "bg-[#C2A985]/95 backdrop-blur-md shadow-sm"
             : "bg-gradient-to-b from-black/30 to-transparent"
         }`}
         style={{ zIndex: 9999, overflow: "visible" }}
@@ -148,11 +148,11 @@ export default function Navbar() {
                       key={link.name}
                       href={link.href}
                       className={`
-                        px-3 xl:px-4 rounded-full font-[400] tracking-[0.1em] whitespace-nowrap
+                        px-3 xl:px-4 rounded-full font-[300] tracking-[0.1em] whitespace-nowrap
                         transition-all duration-300
                         ${
                           scrolled
-                            ? "py-1 xl:py-1.5 text-[11px] xl:text-[11px] text-gray-800 hover:bg-black/10"
+                            ? "py-1 xl:py-2.5 text-[12px] xl:text-[11px] text-white hover:bg-black/10"
                             : "py-1.5 xl:py-2 text-[11px] xl:text-[12px] text-white hover:bg-white/15"
                         }
                         ${isActive ? "bg-white/20" : ""}
@@ -168,11 +168,13 @@ export default function Navbar() {
               <div className="hidden lg:flex items-center gap-3 xl:gap-4 flex-shrink-0">
                 <button
                   className={`
-                    rounded-xl font-semibold whitespace-nowrap transition-all duration-300
+                    rounded-lg whitespace-nowrap border border-white/20
+                    font-extralight tracking-[0.15em]
+                    transition-all duration-300
                     ${
                       scrolled
-                        ? "px-4 xl:px-5 py-1.5 xl:py-2 text-[11px] xl:text-[11px] bg-black text-white hover:bg-black/80"
-                        : "px-4 xl:px-6 py-2 xl:py-2.5 text-[11px] xl:text-[12px] bg-white text-[#C2A985] hover:bg-white/90 hover:scale-105"
+                        ? "px-4 xl:px-5 py-2 xl:py-2.5 text-[10px] xl:text-[11px] bg-white text-black hover:bg-white/90"
+                        : "px-4 xl:px-6 py-2 xl:py-3 text-[10px] xl:text-[11px] bg-transparent text-white hover:bg-white/10 backdrop-blur-md"
                     }
                   `}
                 >
@@ -206,7 +208,7 @@ export default function Navbar() {
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
         scrolled={scrolled}
-        handleScrollToSection={handleScrollToSection}
+        handleScroll={handleScroll}
       />
     </>
   );

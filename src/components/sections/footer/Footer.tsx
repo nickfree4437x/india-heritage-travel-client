@@ -3,7 +3,6 @@
 import Image from "next/image";
 import {
   Facebook,
-  Twitter,
   Instagram,
   Youtube,
   MapPin,
@@ -12,37 +11,81 @@ import {
 } from "lucide-react";
 import { FaPinterestP } from "react-icons/fa";
 import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function Footer() {
-  return (
-    <footer className="bg-gradient-to-br from-[#0f0f0f] via-[#121212] to-[#1a1a1a] text-gray-300 px-6 md:px-20 pt-14 pb-6">
+  const router = useRouter();
+  const pathname = usePathname();
 
-      {/* 🔥 TOP GRID */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+  // 🔥 SCROLL FUNCTION FOR SECTIONS
+  const handleScrollToSection = (sectionId: string) => {
+    if (pathname === "/") {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    } else {
+      router.push(`/#${sectionId}`);
+    }
+  };
+
+  // 🔥 HANDLE QUICK LINK CLICKS
+  const handleQuickLinkClick = (item: { name: string; href: string; isSection?: boolean; sectionId?: string }) => {
+    if (item.isSection && item.sectionId) {
+      handleScrollToSection(item.sectionId);
+    } else if (item.href) {
+      router.push(item.href);
+    }
+  };
+
+  return (
+    <footer className="bg-gradient-to-br from-[#0f0f0f] via-[#121212] to-[#1a1a1a] text-gray-300 px-4 sm:px-6 md:px-10 lg:px-20 pt-14 pb-6">
+
+      {/* 🔥 TOP GRID - FULLY RESPONSIVE */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
 
         {/* 🔹 Logo + Social */}
-        <div>
-          <Image
-            src="/logos/logo2.png"
-            alt="India Heritage Travel"
-            width={220}
-            height={100}
-            className="mb-6"
-          />
+        <div className="text-center sm:text-left">
+          <div className="flex justify-center sm:justify-start">
+            <Image
+              src="/logos/logo2.png"
+              alt="India Heritage Travel"
+              width={200}
+              height={90}
+              className="mb-6 w-auto h-auto"
+              style={{ maxWidth: '220px' }}
+            />
+          </div>
 
-          <div className="flex gap-5">
-
+          <div className="flex items-center justify-center sm:justify-start gap-3 sm:gap-4 mt-2 md:ml-4">
             {/* Facebook */}
             <a
               href="https://www.facebook.com/profile.php?id=61559592375914"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 flex items-center justify-center rounded-full 
-              bg-white/5 border border-white/10 
-              hover:bg-[#1877F2] hover:border-[#1877F2]
-              transition duration-300 cursor-pointer group"
+              className="
+                w-8 h-8 sm:w-9 sm:h-9
+                flex items-center justify-center
+                rounded-full
+                border border-white/10
+                bg-white/[0.04]
+                backdrop-blur-md
+                hover:bg-[#1877F2]
+                hover:border-[#1877F2]
+                hover:-translate-y-1
+                transition-all duration-500
+                group
+              "
             >
-              <Facebook size={16} className="text-gray-300 group-hover:text-white transition" />
+              <Facebook
+                size={13}
+                className="
+                  text-[#d8d0c5]
+                  group-hover:text-white
+                  transition-all duration-300
+                "
+              />
             </a>
 
             {/* Instagram */}
@@ -50,12 +93,30 @@ export default function Footer() {
               href="https://www.instagram.com/indiaheritagetravel"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 flex items-center justify-center rounded-full 
-              bg-white/5 border border-white/10 
-              hover:bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600
-              transition duration-300 cursor-pointer group"
+              className="
+                w-8 h-8 sm:w-9 sm:h-9
+                flex items-center justify-center
+                rounded-full
+                border border-white/10
+                bg-white/[0.04]
+                backdrop-blur-md
+                hover:bg-gradient-to-tr
+                hover:from-yellow-400
+                hover:via-pink-500
+                hover:to-purple-600
+                hover:-translate-y-1
+                transition-all duration-500
+                group
+              "
             >
-              <Instagram size={16} className="text-gray-300 group-hover:text-white transition" />
+              <Instagram
+                size={13}
+                className="
+                  text-[#d8d0c5]
+                  group-hover:text-white
+                  transition-all duration-300
+                "
+              />
             </a>
 
             {/* YouTube */}
@@ -63,12 +124,28 @@ export default function Footer() {
               href="https://youtube.com/@indiaheritagetravel?si=vFEfLrYnv_1DWHqM"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 flex items-center justify-center rounded-full 
-              bg-white/5 border border-white/10 
-              hover:bg-[#FF0000] hover:border-[#FF0000]
-              transition duration-300 cursor-pointer group"
+              className="
+                w-8 h-8 sm:w-9 sm:h-9
+                flex items-center justify-center
+                rounded-full
+                border border-white/10
+                bg-white/[0.04]
+                backdrop-blur-md
+                hover:bg-[#FF0000]
+                hover:border-[#FF0000]
+                hover:-translate-y-1
+                transition-all duration-500
+                group
+              "
             >
-              <Youtube size={16} className="text-gray-300 group-hover:text-white transition" />
+              <Youtube
+                size={13}
+                className="
+                  text-[#d8d0c5]
+                  group-hover:text-white
+                  transition-all duration-300
+                "
+              />
             </a>
 
             {/* Pinterest */}
@@ -76,59 +153,93 @@ export default function Footer() {
               href="https://pin.it/3kPXLj6Jk"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 flex items-center justify-center rounded-full 
-              bg-white/5 border border-white/10 
-              hover:bg-[#E60023] hover:border-[#E60023]
-              transition duration-300 cursor-pointer group"
+              className="
+                w-8 h-8 sm:w-9 sm:h-9
+                flex items-center justify-center
+                rounded-full
+                border border-white/10
+                bg-white/[0.04]
+                backdrop-blur-md
+                hover:bg-[#E60023]
+                hover:border-[#E60023]
+                hover:-translate-y-1
+                transition-all duration-500
+                group
+              "
             >
-              <FaPinterestP size={16} className="text-gray-300 group-hover:text-white transition" />
+              <FaPinterestP
+                size={12}
+                className="
+                  text-[#d8d0c5]
+                  group-hover:text-white
+                  transition-all duration-300
+                "
+              />
             </a>
           </div>
         </div>
 
         {/* 🔹 Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-5">Quick Links</h3>
+          <h3 className="text-[11px] sm:text-[12px] uppercase tracking-[0.24em] text-white mb-5 sm:mb-6 text-center sm:text-left">
+            Quick Links
+          </h3>
 
-          <ul className="space-y-3 text-gray-300 text-sm">
-          {[
-            { name: "FAQ’s", href: "/faq" },
-            { name: "Journeys", href: "/journeys" },
-            { name: "Festivals", href: "/festivals" },
-            { name: "Travel Tips", href: "/travel-tips" },
-            { name: "Visa Rules for India", href: "/visa-rules" },
-          ].map((item, i) => (
-            <Link key={i} href={item.href}>
-              <li className="group flex items-center gap-2 cursor-pointer transition">
-                <span className="text-white group-hover:translate-x-1 transition">
+          <ul className="flex flex-col gap-2 mt-1 text-[10px] font-extralight tracking-[0.15em] text-gray-200">
+            {[
+              { name: "FAQ’s", href: "/faq", isSection: false },
+              { name: "Journeys", href: "/journeys", isSection: true, sectionId: "welcome-destination" },
+              { name: "Festivals", href: "/festivals", isSection: true, sectionId: "festivals" },
+              { name: "Travel Tips", href: "/travel-tips", isSection: false },
+              { name: "Visa Rules for India", href: "/visa-rules", isSection: false },
+            ].map((item, i) => (
+              <button
+                key={i}
+                onClick={() => handleQuickLinkClick(item)}
+                className="w-full text-left group flex items-center gap-3 sm:gap-4 cursor-pointer transition-all duration-500"
+              >
+                {/* Arrow */}
+                <span className="text-gray-200 text-[13px] group-hover:translate-x-1 transition-all duration-300">
                   ›
                 </span>
-                <span className="hover:underline group-hover:text-white transition">
+
+                {/* Text */}
+                <span className="group-hover:text-gray-300 hover:underline transition-all duration-300">
                   {item.name}
                 </span>
-              </li>
-            </Link>
-          ))}
-        </ul>
+              </button>
+            ))}
+          </ul>
         </div>
 
         {/* 🔹 Online Payment + Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-5">Online Payment</h3>
+          <h3 className="text-[11px] sm:text-[12px] uppercase tracking-[0.24em] text-white mb-5 sm:mb-6 text-center sm:text-left">
+            Online Payment
+          </h3>
 
-          <button className="bg-blue-600 hover:bg-blue-700 transition px-4 py-2 rounded-md text-xs text-gray-300 mb-6">
-            Pay Now
-            <div className="text-xs text-gray-300">
-              Secured by Razorpay
-            </div>
-          </button>
+          <div className="text-center sm:text-left">
+            <button className="bg-blue-600 hover:bg-blue-700 transition px-4 py-2 rounded-md text-xs text-gray-300 mb-4 sm:mb-6">
+              Pay Now
+              <div className="text-xs text-gray-300">
+                Secured by Razorpay
+              </div>
+            </button>
+          </div>
 
           {/* 🔥 Extra Links */}
-          <div className="space-y-3 text-sm">
+          <div className="flex flex-col gap-2 mt-1 text-[10px] font-extralight tracking-[0.15em] text-gray-200">
             {["Contact Us", "Privacy Policy"].map((item, i) => (
-              <div
+              <button
                 key={i}
-                className="group flex items-center gap-3 cursor-pointer transition"
+                onClick={() => {
+                  if (item === "Contact Us") {
+                    handleScrollToSection("contact");
+                  } else {
+                    router.push("/privacy-policy");
+                  }
+                }}
+                className="group flex items-center gap-3 sm:gap-4 cursor-pointer transition-all duration-500 w-full text-left"
               >
                 {/* Arrow */}
                 <span className="text-white transition duration-300 group-hover:translate-x-1">
@@ -138,56 +249,74 @@ export default function Footer() {
                 <span className="transition text-gray-200 hover:text-gray-300 hover:underline duration-300">
                   {item}
                 </span>
-
-              </div>
+              </button>
             ))}
           </div>
         </div>
 
         {/* 🔹 Contact Us */}
         <div>
-          <h3 className="text-lg font-semibold mb-5">Contact Us</h3>
+          <h3 className="text-[11px] sm:text-[12px] uppercase tracking-[0.24em] text-white mb-5 sm:mb-6 text-center sm:text-left">
+            Contact Us
+          </h3>
 
-          <div className="space-y-4 text-sm">
-
-            <div className="flex items-start text-gray-200 gap-3">
-              <MapPin 
-                size={20} 
-                className="mt-1 text-white shrink-0"
+          <div className="flex flex-col gap-5 sm:gap-6 text-[10px] font-extralight tracking-[0.12em] leading-[1.9] text-gray-200">
+            {/* Address */}
+            <div className="flex items-start gap-3 justify-center sm:justify-start">
+              <MapPin
+                size={15}
+                className="mt-1 text-gray-200 shrink-0"
               />
-              <p>
-                15-16-17 Maa Shakambhari Nagar-d Block, Near Silver Stream
-                World School, Gandhi Path Road, Jaipur, Rajasthan, 302021
+
+              <p className="max-w-[250px] sm:max-w-[290px] text-center sm:text-left text-[9px] sm:text-[10px]">
+                15-16-17 Maa Shakambhari Nagar-d Block,
+                Near Silver Stream World School,
+                Gandhi Path Road, Jaipur,
+                Rajasthan, 302021
               </p>
             </div>
 
-            <div className="border-b border-gray-800"></div>
+            <div className="border-b border-white/5"></div>
 
-            <div className="flex items-center text-gray-200 gap-3">
-              <Phone size={18} className="text-white" />
-              <p>(+91) 7062101914</p>
+            {/* Phone */}
+            <div className="flex items-center gap-3 justify-center sm:justify-start">
+              <Phone
+                size={14}
+                className="text-gray-200 shrink-0"
+              />
+
+              <p className="hover:text-[#e7dfd4] transition duration-300 cursor-pointer text-center sm:text-left">
+                (+91) 7062101914
+              </p>
             </div>
 
-            <div className="border-b border-gray-800"></div>
+            <div className="border-b border-white/5"></div>
 
-            <div className="flex items-center text-gray-200 gap-3">
-              <Mail size={18} className="text-white" />
-              <p>info.indiaheritagetravel@gmail.com</p>
+            {/* Email */}
+            <div className="flex items-center gap-3 justify-center sm:justify-start">
+              <Mail
+                size={14}
+                className="text-gray-200 shrink-0"
+              />
+
+              <p className="hover:text-gray-200 transition duration-300 cursor-pointer break-all text-center sm:text-left text-[9px] sm:text-[10px]">
+                info.indiaheritagetravel@gmail.com
+              </p>
             </div>
-
           </div>
         </div>
       </div>
 
-      <div className="relative mt-12">
+      <div className="relative mt-16 sm:mt-20">
+        {/* Divider */}
+        <div className="mt-10 sm:mt-14 -mx-4 sm:-mx-6 md:-mx-10 lg:-mx-20 border-t border-white/5"></div>
 
-        <div className="mt-12 -mx-6 md:-mx-20 border-t border-gray-800"></div>
-
-        <p className="text-center text-sm text-gray-400 mt-6 px-6 md:px-20">
-          © {new Date().getFullYear()} India Heritage Travel. Crafted with ❤️ for unforgettable journeys.
+        {/* Copyright */}
+        <p className="text-center text-[9px] sm:text-[10px] font-extralight tracking-[0.15em] sm:tracking-[0.18em] text-gray-200 mt-6 sm:mt-8 px-4 sm:px-6 md:px-10 leading-relaxed">
+          © {new Date().getFullYear()} India Heritage Travel —
+          Crafted with <span className="text-[#a88b63]">❤️</span> for unforgettable journeys.
         </p>
-
-        </div>
+      </div>
     </footer>
   );
 }

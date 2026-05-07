@@ -60,15 +60,20 @@ export default function ContactSection() {
     <section className="relative mt-16 min-h-[100vh] py-10 px-6 text-white overflow-hidden">
 
       {/* Background Wrapper */}
-      <div className="absolute inset-0 -z-10 bg-black flex items-center justify-center">
-        <Image
-        src="/contact/contact1.jpeg"
-        alt="Contact Background"
-        fill
-        priority
-        className="object-cover object-[center_30%]"
-      />
-      </div>
+      <div className="absolute inset-0 -z-10 bg-black overflow-hidden">
+  <Image
+    src="/contact/contact1.jpeg"
+    alt="Contact Background"
+    fill
+    priority
+    className="
+      object-cover
+      object-[65%_center] 
+      sm:object-[center_30%]
+      scale-100
+    "
+  />
+</div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60 -z-10"></div>
