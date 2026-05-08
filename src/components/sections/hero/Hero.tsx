@@ -10,9 +10,20 @@ export default function Hero() {
   const [videoProgress, setVideoProgress] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    
+    // Check if mobile view
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -84,7 +95,10 @@ export default function Hero() {
             `,
           }}
         >
-          <source src="/hero/hero-small.mp4" type="video/mp4" />
+          <source 
+            src={isMobile ? "/hero/hero-mobile.mp4" : "/hero/hero-small.mp4"} 
+            type="video/mp4" 
+          />
         </video>
       </motion.div>
 
