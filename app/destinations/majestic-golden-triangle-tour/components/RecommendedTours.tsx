@@ -26,10 +26,15 @@ const tours = [
 
 export default function RecommendedTours() {
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-20">
+    <section className="max-w-[1400px] mx-auto px-6 py-8">
 
       {/* 🔹 Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-14 tracking-wide">
+      <h2 className=" text-[20px] sm:text-[24px] md:text-[28px]
+            font-semibold
+            text-center
+            mb-6 sm:mb-8
+            text-[#2c2c2c]
+            tracking-wide">
         Recommended Tours
       </h2>
 

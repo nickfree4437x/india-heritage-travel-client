@@ -12,10 +12,12 @@ import JaipurSection from "./components/JaipurSection";
 import AgraSection from "./components/AgraSection";
 import HighlightsSection from "./components/HighlightsSection";
 import ItinerarySection from "./components/ItinerarySection";
-import Recommended from "./components/RecommendTous";
+//import Recommended from "./components/RecommendTous";
 import ExcludedServices from "../majestic-golden-triangle-tour/components/ExcludedServices";
 import RecommendedTours from "../majestic-golden-triangle-tour/components/RecommendedTours";
 import Footer from "@/src/components/sections/footer/Footer";
+import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
+import TourSteps from "@/src/components/tours/TourSteps";
 
 export default function Page() {
   return (
@@ -28,10 +30,10 @@ export default function Page() {
       <Suitable />
 
       {/* 🔥 MAIN GRID LAYOUT */}
-      <div className="max-w-[1400px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[2.5fr_1fr] gap-12">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-4 md:py-6 grid grid-cols-1 md:grid-cols-[2.5fr_1fr] gap-6 md:gap-8 lg:gap-10">
 
         {/* LEFT SIDE */}
-        <div className="space-y-16">
+        <div className="space-y-8 sm:space-y-10 md:space-y-10 lg:space-y-10">
           <DelhiSection />
           <MandawaSection />
           <BikanerSection />
@@ -44,18 +46,20 @@ export default function Page() {
           <HighlightsSection />
           <ItinerarySection />
           <ExcludedServices/>
+          <DetailedItineraryIntro/>
           {/* Next sections */}
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="flex justify-end">
-          <div className="w-full max-w-[320px]">
+        <div className="flex justify-center md:justify-end md:mt-0">
+          <div className="w-full max-w-[280px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[350px]">
             <BookingCard />
           </div>
         </div>
       </div>
-
-      <RecommendedTours/>\
+      
+      <TourSteps/>
+      <RecommendedTours/>
       <Footer/>
 
     </div>

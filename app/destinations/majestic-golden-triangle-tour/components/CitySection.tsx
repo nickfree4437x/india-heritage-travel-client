@@ -19,22 +19,23 @@ export default function CitySection({
     <div id={id} className="max-w-5xl">
 
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+      <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
         {title}
       </h2>
 
       {/* Description */}
-      <p className="text-gray-700 mb-6 leading-relaxed text-[15px]">
+      <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[350] md:text-[14.5px] text-justify">
         {description}
       </p>
 
       {/* Image */}
-      <div className="relative w-full h-[420px] rounded-md overflow-hidden shadow-md">
+      <div className="w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
         <Image
           src={image}
           alt={title}
-          fill
-          className="object-cover"
+          width={1200}
+          height={800}
+          className="w-full h-auto max-h-[500px] object-cover"
         />
       </div>
 

@@ -1,31 +1,46 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function RecommendedTours() {
+  const router = useRouter();
+
   const tours = [
     {
       title: "The Royal Heritage Trail Tour",
       desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
       img: "/destination/coastal-tour/r1.jpg",
+      slug: "/adventure/the-royal-heritage-trail-tour",
     },
     {
       title: "Mystical North India Discovery Tour",
       desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
       img: "/destination/coastal-tour/r2.jpg",
+      slug: "/destinations/mystical-north-india-discovery-tour",
     },
     {
       title: "Heritage Odyssey: North To South India Tour",
       desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour, from Cochin’s history to Mumbai’s vibrant dreams, with coastal delights, natural majesty, and timeless wonders in between.",
       img: "/destination/coastal-tour/r3.jpg",
+      slug: "/adventure/heritage-odyssey",
     },
   ];
 
+  const handleCardClick = (slug: string) => {
+    router.push(`${slug}`);
+  };
+
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-20">
+    <section className="max-w-[1400px] mx-auto px-6 py-8">
 
       {/* 🔹 Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-14 tracking-wide">
+      <h2 className="text-[20px] sm:text-[24px] md:text-[28px]
+            font-semibold
+            text-center
+            mb-6 sm:mb-8
+            text-[#2c2c2c]
+            tracking-wide">
         Recommended Tours
       </h2>
 
@@ -35,26 +50,28 @@ export default function RecommendedTours() {
         {tours.map((tour, i) => (
           <div
             key={i}
+            onClick={() => handleCardClick(tour.slug)}
             className="bg-white rounded-sm
                        shadow-sm
                        border border-[#eee7dd]
                        overflow-hidden 
                        transition-all duration-500
                        hover:shadow-md
-                       hover:-translate-y-2"
+                       hover:-translate-y-2
+                       cursor-pointer"
           >
 
             {/* 🔥 Image */}
-            <div className="relative h-[240px] w-full overflow-hidden">
+            <div className="relative h-[240px] w-full overflow-hidden group">
               <Image
                 src={tour.img}
                 alt={tour.title}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover transition-transform duration-700"
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/10 opacity-0 transition-opacity duration-500 hover:opacity-100" />
+              <div className="absolute inset-0 bg-black/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             </div>
 
             {/* 🔥 Content */}

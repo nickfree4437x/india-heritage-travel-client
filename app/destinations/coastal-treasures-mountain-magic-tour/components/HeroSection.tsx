@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background Image with Zoom Animation */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/destination/coastal-tour/kerala.jpg"
+          src="/destination/coastal-tour/coastal.jpg"
           alt="Kerala Tour"
           fill
           priority
@@ -25,22 +25,18 @@ export default function HeroSection() {
 
         {/* Title */}
         <h1
-          className="text-4xl md:text-5xl font-bold mb-4
-                     opacity-0 translate-y-10
-                     animate-[fadeUp_1.2s_ease-out_0.3s_forwards]"
+          className="max-w-[700px]
+            text-3xl md:text-4xl
+            font-[600]
+            leading-[1.1]
+            tracking-[0.04em]
+            mb-4
+
+            opacity-0 translate-y-10
+            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]"
         >
-          Coastal Treasures <br /> & Mountain Magic
+          Coastal Treasures & Mountain <br /> Magic Tour
         </h1>
-
-        {/* Subtitle */}
-        <p
-          className="max-w-2xl text-md md:text-md text-gray-200
-                     opacity-0 translate-y-10
-                     animate-[fadeUp_1.4s_ease-out_0.6s_forwards]"
-        >
-          Experience Kerala’s serene backwaters, lush greenery, and peaceful beaches.
-        </p>
-
       </div>
     </section>
   );

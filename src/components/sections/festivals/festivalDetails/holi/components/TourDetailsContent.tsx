@@ -27,7 +27,7 @@ export default function TourDetailsContent() {
   ];
 
   return (
-    <section className="bg-[#f4f0ea] pt-20 pb-10 px-6" id="about">
+    <section className="bg-[#f4f0ea] pb-10 px-6" id="about">
 
       <div className="max-w-6xl mx-auto">
 
@@ -36,11 +36,11 @@ export default function TourDetailsContent() {
 
           {/* LEFT - ABOUT */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#2c2c2c] tracking-wide mb-6">
+            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
               Holi - A Joyful Start to Spring
             </h2>
 
-            <div className="space-y-5 text-[#3a3a3a] leading-relaxed text-[15px] md:text-[16px] text-justify">
+            <div className="space-y-5 text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[350] md:text-[14.5px] text-justify">
               <p>
                 Holi has its roots in a legend of a fearless prince named Prahlad
                 and a demoness named Holika. She tried to burn him, but in the end,
@@ -72,24 +72,46 @@ export default function TourDetailsContent() {
           </div>
 
           {/* RIGHT - INCLUSIONS */}
-          <div className="bg-white rounded-md p-8">
+          <div className="bg-white rounded-md p-6">
 
-            <h3 className="text-2xl font-semibold text-[#2c2c2c] text-center mb-8 tracking-wide">
+            <h3 className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-[#2c2c2c] text-center mb-8 tracking-wide">
               Inclusions
             </h3>
 
-            <div className="grid grid-cols-2 gap-y-8 gap-x-6">
+            <div className="grid grid-cols-2 gap-y-6 gap-x-4">
               {inclusions.map((item, i) => (
                 <div
                   key={i}
-                  className="flex flex-col items-center text-center gap-3"
+                  className="
+                    flex flex-col items-center
+                    text-center
+                    gap-2
+                  "
                 >
-                  <div className="text-[#9A7A58]">
+
+                  {/* 🔥 ICON */}
+                  <div
+                    className="
+                      text-[#9A7A58]
+                      scale-[0.85]
+                    "
+                  >
                     {item.icon}
                   </div>
-                  <p className="text-sm font-medium text-[#3a3a3a] leading-snug">
+
+                  {/* 🔥 TEXT */}
+                  <p
+                    className="
+                      text-[11px]
+                      sm:text-[12px]
+                      font-[400]
+                      text-[#3a3a3a]
+                      leading-[1.5]
+                    "
+                  >
                     {item.text}
                   </p>
+
                 </div>
               ))}
             </div>
@@ -106,7 +128,15 @@ export default function TourDetailsContent() {
           className="bg-[#e9e2d8] px-6 py-5 cursor-pointer flex justify-between items-center
                     transition-all duration-300"
         >
-          <h4 className="font-medium text-[#2c2c2c] tracking-wide">
+          <h4
+          className="
+            text-[13px]
+            sm:text-[14px]
+            font-[400]
+            text-[#2c2c2c]
+            tracking-[0.03em]
+           "
+          >
             Excluded Services in this Journey
           </h4>
 
@@ -144,7 +174,7 @@ export default function TourDetailsContent() {
                 "Others: Unspecified services.",
                 "Safaris: Game safaris not included, unless specified.",
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2 text-[#3a3a3a] text-sm">
+                <div key={i} className="flex items-start gap-2 text-[#3a3a3a] text-xs">
 
                   {/* BULLET */}
                   <span className="mt-[6px] w-[5px] h-[5px] bg-[#9A7A58] rounded-full shrink-0"></span>

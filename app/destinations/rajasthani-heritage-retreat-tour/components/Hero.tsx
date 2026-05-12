@@ -1,15 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { rajasthanDetails } from "../data/tourData";
 
 export default function Hero() {
   return (
-    <section className="relative h-[92vh] w-full overflow-hidden">
+    <section className="relative h-[93vh] w-full overflow-hidden">
 
       {/* 🔥 Background Image (Smooth Zoom Animation) */}
       <Image
-        src="/rajasthan.jpg"
+        src="/destination/heritage-tour/heritage.jpg"
         alt="Rajasthan Tour"
         fill
         priority
@@ -22,20 +21,24 @@ export default function Hero() {
       {/* 🔥 Gradient Overlay (Depth Add) */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
 
-      {/* 🔥 Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
-        <div className="max-w-3xl">
+        <h1
+          className="
+            max-w-[700px]
+            text-3xl md:text-4xl
+            font-[600]
+            leading-[1.1]
+            tracking-[0.04em]
+            mb-4
 
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-5 tracking-wide">
-            {rajasthanDetails.title}
-          </h1>
-
-          <p className="text-lg md:text-lg text-gray-200 leading-relaxed">
-            {rajasthanDetails.content}
-          </p>
-
-        </div>
+            opacity-0 translate-y-10
+            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
+          "
+        >
+          Rajasthani Heritage <br />
+          Retreat Tour
+        </h1>
 
       </div>
 

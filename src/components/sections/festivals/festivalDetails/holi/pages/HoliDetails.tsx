@@ -22,7 +22,7 @@ export default function HoliDetails() {
         {/* Background Image with Zoom */}
         <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
           <Image
-            src="/holi.jpg"
+            src="/festivals/holi/holi.jpg"
             alt="Holi Tour"
             fill
             priority
@@ -37,18 +37,19 @@ export default function HoliDetails() {
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight
-                         opacity-0 translate-y-10
-                         animate-[fadeUp_1.2s_ease-out_0.3s_forwards]">
-            Colors of Joy: Holi Festival
-          </h1>
+          <h1 className="max-w-[700px]
+            text-3xl md:text-4xl
+            font-[600]
+            leading-[1.1]
+            tracking-[0.04em]
+            mb-4
 
-          {/* Description */}
-          <p className="max-w-2xl text-lg md:text-md text-gray-200
-                        opacity-0 translate-y-10
-                        animate-[fadeUp_1.4s_ease-out_0.6s_forwards]">
-            A vibrant burst of colors and unity, celebrating the arrival of spring.
-          </p>
+            opacity-0 translate-y-10
+            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
+          ">
+           Colors of Joy: Holi<br />
+           Festival
+          </h1>
 
         </div>
       </section>

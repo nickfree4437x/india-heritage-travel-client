@@ -13,116 +13,90 @@ import {
 } from "lucide-react";
 
 export default function HighlightsInclusions() {
-  return (
-    <section className="py-6">
 
-      {/* SAME WIDTH SYSTEM */}
+  /* 🔥 HIGHLIGHTS DATA */
+  const highlights = [
+    "Journey from peaceful backwaters to thrilling wildlife",
+    "Munnar’s Tea Gardens & peace",
+    "Mumbai’s secret Charm",
+    "Cultural & Scenic journey",
+    "Kerala undiscovered",
+  ];
+
+  /* 🔥 INCLUSIONS DATA */
+  const inclusions = [
+    { icon: Hotel, text: "9 nights, chosen hotels" },
+    { icon: Car, text: "Local driver, guide" },
+    { icon: Utensils, text: "Daily breakfast" },
+    { icon: CreditCard, text: "All costs covered" },
+    { icon: Wifi, text: "In Car Wi-fi" },
+    { icon: CookingPot, text: "Cooking classes, dinner" },
+    { icon: Plane, text: "Airport transfer" },
+    { icon: Bus, text: "Delhi rickshaw" },
+  ];
+
+  return (
+    <section className="py-2">
+
       <div className="max-w-5xl mx-auto">
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-10">
 
-          {/* 🔥 Highlights */}
-          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6">
+          {/* 🔥 HIGHLIGHTS */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-4 sm:p-5 md:p-6">
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center">
+            <h2 className="text-[18px] md:text-[20px] font-medium mb-5 text-center tracking-[0.02em]">
               Highlights
             </h2>
 
-            <ul className="space-y-3 text-gray-700 text-sm">
+            <ul className="space-y-3 text-gray-700 text-[11px] sm:text-xs leading-relaxed">
 
-              <li className="flex items-center gap-2">
-                <Check className="text-[#AF956C]" size={16} />
-                Journey from peaceful backwaters to thrilling wildlife
-              </li>
+              {highlights.map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-start gap-2"
+                >
+                  <Check
+                    className="text-[#AF956C] mt-[2px] shrink-0"
+                    size={16}
+                  />
 
-              <li className="flex items-center gap-2">
-                <Check className="text-[#AF956C]" size={16} />
-                Munnar’s Tea Gardens & peace
-              </li>
-
-              <li className="flex items-center gap-2">
-                <Check className="text-[#AF956C]" size={16} />
-                Mumbai’s secret Charm
-              </li>
-
-              <li className="flex items-center gap-2">
-                <Check className="text-[#AF956C]" size={16} />
-                Cultural & Scenic journey
-              </li>
-
-              <li className="flex items-center gap-2">
-                <Check className="text-[#AF956C]" size={16} />
-                Kerala undiscovered
-              </li>
+                  {item}
+                </li>
+              ))}
 
             </ul>
+
           </div>
 
-          {/* 🔥 Inclusions */}
-          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6">
+          {/* 🔥 INCLUSIONS */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-4 sm:p-5 md:p-6">
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+            <h2 className="text-[18px] md:text-[20px] font-medium mb-5 text-center tracking-[0.02em]">
               Inclusions
             </h2>
 
-            {/* SAME GRID STYLE */}
-            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
+            <div className="grid grid-cols-4 gap-y-5 sm:gap-y-6 gap-x-3 sm:gap-x-4 text-center">
 
-              <div className="flex flex-col items-center gap-1.5">
-                <Hotel size={18} className="text-[#AF956C]" />
-                <p className="text-[12px] leading-tight">
-                  9 nights, chosen hotels
-                </p>
-              </div>
+              {inclusions.map((item, index) => {
+                const Icon = item.icon;
 
-              <div className="flex flex-col items-center gap-1.5">
-                <Car size={18} className="text-[#AF956C]" />
-                <p className="text-[12px] leading-tight">
-                  Local driver, guide
-                </p>
-              </div>
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center gap-1.5"
+                  >
+                    <Icon
+                      size={18}
+                      className="text-[#AF956C]"
+                    />
 
-              <div className="flex flex-col items-center gap-1.5">
-                <Utensils size={18} className="text-[#AF956C]" />
-                <p className="text-[12px] leading-tight">
-                  Daily breakfast
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center gap-1.5">
-                <CreditCard size={18} className="text-[#AF956C]" />
-                <p className="text-[12px] leading-tight">
-                  All costs covered
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center gap-1.5">
-                <Wifi size={18} className="text-[#AF956C]" />
-                <p className="text-[12px] leading-tight">
-                  In Car Wi-fi
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center gap-1.5">
-                <CookingPot size={18} className="text-[#AF956C]" />
-                <p className="text-[12px] leading-tight">
-                  Cooking classes, dinner
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center gap-1.5">
-                <Plane size={18} className="text-[#AF956C]" />
-                <p className="text-[12px] leading-tight">
-                  Airport transfer
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center gap-1.5">
-                <Bus size={18} className="text-[#AF956C]" />
-                <p className="text-[12px] leading-tight">
-                  Delhi rickshaw
-                </p>
-              </div>
+                    <p className="text-[10px] sm:text-[11px] leading-tight">
+                      {item.text}
+                    </p>
+                  </div>
+                );
+              })}
 
             </div>
 

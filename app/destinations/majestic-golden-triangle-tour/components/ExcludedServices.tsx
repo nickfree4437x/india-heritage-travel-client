@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronUp, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export default function ExcludedServices() {
   const [open, setOpen] = useState(false); // 🔥 default closed
 
   return (
-    <section className="py-6">
+    <section>
 
       <div className="max-w-5xl mx-auto">
 
@@ -19,7 +19,7 @@ export default function ExcludedServices() {
           className="flex justify-between items-center cursor-pointer group"
           onClick={() => setOpen(!open)}
         >
-          <h2 className="text-xl md:text-2xl font-semibold text-red-500">
+          <h2 className="text-[16px] md:text-[18px] font-medium text-[#AF956C] tracking-[0.01em]">
             Excluded Services in this Journey
           </h2>
 
@@ -44,7 +44,7 @@ export default function ExcludedServices() {
         >
           <div className="overflow-hidden">
 
-            <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-3 text-[13.5px] text-gray-700 pl-4 list-disc">
+            <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-3 text-[12px] md:text-[13.5px] font-[350] text-gray-700 pl-4 list-disc">
 
               <li>Flights: International or Domestic</li>
               <li>Drinks: Unless specified</li>

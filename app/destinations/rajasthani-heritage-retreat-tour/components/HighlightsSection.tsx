@@ -14,7 +14,7 @@ import {
 
 export default function HighlightsSection() {
   return (
-    <section className="py-6">
+    <section>
 
       {/* SAME WIDTH */}
       <div className="max-w-5xl mx-auto">
@@ -27,11 +27,11 @@ export default function HighlightsSection() {
                           border border-[#eee7dd] 
                           p-6">
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center">
+            <h2 className="text-[18px] md:text-[20px] font-medium mb-5 text-center tracking-[0.02em]">
               Highlights
             </h2>
 
-            <ul className="space-y-3 text-gray-700 text-sm">
+            <ul className="space-y-3 text-gray-700 text-xs">
 
               {[
                 "Witness the Taj Mahal at sunrise in Agra",
@@ -55,7 +55,7 @@ export default function HighlightsSection() {
                           border border-[#eee7dd] 
                           p-6">
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+            <h2 className="text-[18px] md:text-[20px] font-medium mb-5 text-center tracking-[0.02em]">
               Inclusions
             </h2>
 
@@ -75,7 +75,7 @@ export default function HighlightsSection() {
                 return (
                   <div key={i} className="flex flex-col items-center gap-1.5">
                     <Icon size={18} className="text-[#AF956C]" />
-                    <p className="text-[12px] leading-tight">
+                    <p className="text-[11px] leading-tight">
                       {item.text}
                     </p>
                   </div>

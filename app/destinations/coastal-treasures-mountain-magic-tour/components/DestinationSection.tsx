@@ -10,6 +10,7 @@ import Mumbai from "./destinations/Mumbai";
 import HighlightsInclusions from "./HighlightsInclusions";
 import DetailedItinerary from "./DetailedItinerary";
 import ExcludedServices from "../../majestic-golden-triangle-tour/components/ExcludedServices";
+import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 
 export default function DestinationSection() {
   return (
@@ -23,6 +24,7 @@ export default function DestinationSection() {
       <HighlightsInclusions />
       <DetailedItinerary />
       <ExcludedServices/>
+      <DetailedItineraryIntro/>
 
     </TourLayout>
   );

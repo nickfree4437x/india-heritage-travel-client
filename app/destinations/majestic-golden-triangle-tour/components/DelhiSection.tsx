@@ -12,7 +12,7 @@ export default function DelhiSection() {
           id="delhi"
           title="Delhi - A blend of history & royalty"
           description="Discover Delhi, which is the mixture of history and modernity with vibrant, contemporary, and bursting colours. In Old Delhi, you’ll experience the rich colours of humanity in all its shades and sensations."
-          image="/destination/golden-triangle/delhi1.jpg"
+          image="/destination/golden-triangle/delhi.jpg"
         />
 
         <CitySection
