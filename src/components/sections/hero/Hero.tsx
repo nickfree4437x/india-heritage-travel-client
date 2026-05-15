@@ -235,7 +235,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 1, ease: "easeOut" }}
-            className="mt-2 sm:mt-3 text-[11px] sm:text-xs md:text-sm text-gray-200 font-light leading-relaxed tracking-wide max-w-md sm:max-w-lg px-4"
+            className="mt-2 sm:mt-3 text-[11px] sm:text-xs md:text-[13.5px] text-gray-200 font-light leading-relaxed tracking-wide max-w-md sm:max-w-lg px-4"
           >
             Discover India's hidden cultures, ancient traditions, and untouched
             landscapes thoughtfully curated for a truly immersive journey.

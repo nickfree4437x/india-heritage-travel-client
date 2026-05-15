@@ -39,7 +39,7 @@ export default function RecommendedTours() {
       </h2>
 
       {/* 🔹 Cards */}
-      <div className="grid md:grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-3 gap-10 mb-10">
 
         {tours.map((tour, index) => (
           <Link key={index} href={tour.slug} className="block group">
@@ -72,7 +72,7 @@ export default function RecommendedTours() {
                   {tour.title}
                 </h3>
 
-                <p className="text-gray-700 text-[14px] leading-relaxed line-clamp-4">
+                <p className="text-gray-700 text-[13px] font-light leading-relaxed line-clamp-4">
                   {tour.desc}
                 </p>
 

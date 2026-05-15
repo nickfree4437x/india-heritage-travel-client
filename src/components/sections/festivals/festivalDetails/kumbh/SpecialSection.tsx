@@ -2,124 +2,197 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const slides = [
+const data = [
   {
-    image: "/festivals/kumbh/1.jpg",
-    title: "Sacred Rituals",
-    desc: "Witness ancient rituals performed on the banks of holy rivers.",
+    image: "/festivals/kumbh/kumbh1.jpg",
+    title: "The Royal Bath",
+    desc: "Join the crowds at Shahi Snan — the Kumbh’s most sacred and powerful ritual.",
   },
   {
-    image: "/festivals/kumbh/2.jpg",
-    title: "Sadhus & Saints",
-    desc: "Meet spiritual seekers living a life beyond material world.",
+    image: "/festivals/kumbh/kumbh2.jpg",
+    title: "Meet the Sadhus",
+    desc: "Visit Akhara camps and witness the life and rituals of India’s holy men.",
   },
   {
-    image: "/festivals/kumbh/3.jpg",
-    title: "Holy River Experience",
-    desc: "Take a sacred dip believed to cleanse lifetimes of sins.",
+    image: "/festivals/kumbh/kumbh3.jpg",
+    title: "Sunset Boat Ride",
+    desc: "Drift along the Ganges at sunset — a quiet break from the crowd.",
   },
   {
-    image: "/festivals/kumbh/4.jpg",
-    title: "Mass Pilgrimage",
-    desc: "Be part of the world’s largest spiritual gathering.",
+    image: "/festivals/kumbh/kumbh4.jpg",
+    title: "Listen to Spiritual Talks",
+    desc: "Attend open-air discourses where saints and gurus share ancient wisdom.",
   },
   {
-    image: "/festivals/kumbh/5.jpg",
-    title: "Spiritual Energy",
-    desc: "Feel the chants, devotion, and vibrations around you.",
+    image: "/festivals/diwali/taj.jpg",
+    title: "Timeless Beauty of the Taj",
+    desc: "Visit the Taj Mahal — a white marble wonder and symbol of eternal love, glowing at sunrise.",
   },
   {
-    image: "/festivals/kumbh/6.jpg",
-    title: "Cultural Exploration",
-    desc: "Explore temples, traditions, and spiritual heritage.",
+    image: "/festivals/kumbh/delhi.jpg",
+    title: "Experience the Pulse of India",
+    desc: "Delhi is busy, bold, and full of stories — every corner has something to offer.",
   },
 ];
 
 export default function SpecialSection() {
-  const [index, setIndex] = useState(0);
+  const [active, setActive] = useState(0);
+  const [mobileActive, setMobileActive] = useState<number | null>(0);
+  const [isPaused, setIsPaused] = useState(false);
 
-  const next = () => setIndex((prev) => (prev + 1) % slides.length);
-  const prev = () =>
-    setIndex((prev) => (prev - 1 + slides.length) % slides.length);
-
-  // 🔥 Auto Slide
+  // DESKTOP AUTO PLAY
   useEffect(() => {
-    const interval = setInterval(next, 4000);
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % data.length);
+    }, 5000);
+
     return () => clearInterval(interval);
-  }, []);
+  }, [isPaused]);
 
   return (
-    <section className="py-20 bg-[#f4f0ea]" id="special">
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      className="bg-[#f4f0ea] py-2 sm:py-6 md:py-6"
+      id="special"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-[#2c2c2c] tracking-wide">
+        {/* HEADING */}
+        <h2 className="text-[20px] sm:text-[24px] md:text-[26px] font-semibold text-center mb-4 sm:mb-4 text-[#2c2c2c] tracking-wide">
           What makes this trip Special?
         </h2>
 
-        {/* Carousel */}
-        <div className="relative h-[450px] overflow-hidden rounded-2xl shadow-md">
-
-          {slides.map((item, i) => (
+        {/* ================= MOBILE VIEW ================= */}
+        <div className="flex md:hidden flex-col overflow-hidden rounded-sm">
+          {data.map((item, i) => (
             <div
               key={i}
-              className={`absolute inset-0 transition-all duration-700 ease-in-out ${
-                i === index
-                  ? "opacity-100 scale-100 z-10"
-                  : "opacity-0 scale-105 z-0"
-              }`}
+              onClick={() => setMobileActive(mobileActive === i ? null : i)}
+              className={`
+                relative overflow-hidden cursor-pointer rounded-sm
+                transition-all duration-700 ease-out
+                ${mobileActive === i ? "h-[280px]" : "h-[70px]"}
+              `}
             >
-              {/* Image */}
+              {/* IMAGE */}
               <Image
                 src={item.image}
                 alt={item.title}
                 fill
-                className="object-cover object-center"
                 priority={i === 0}
+                className={`
+                  object-cover
+                  transition-all duration-1000 ease-out
+                  ${mobileActive === i ? "scale-110" : "scale-100"}
+                `}
+                sizes="100vw"
               />
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              {/* OVERLAY */}
+              <div
+                className={`
+                  absolute inset-0
+                  transition-all duration-700 ease-out
+                  ${mobileActive === i
+                    ? "bg-gradient-to-t from-black/85 via-black/50 to-black/20"
+                    : "bg-black/40"
+                  }
+                `}
+              />
 
-              {/* Content */}
-              <div className="absolute bottom-10 left-10 text-white max-w-lg">
-
-                <h3 className="text-2xl md:text-3xl font-bold mb-2">
+              {/* CONTENT (Expanded) */}
+              <div
+                className={`
+                  absolute bottom-0 left-0 right-0 p-5
+                  transition-all duration-700 delay-100 ease-out
+                  ${mobileActive === i
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10 pointer-events-none"
+                  }
+                `}
+              >
+                <h3 className="text-white text-[15px] font-semibold tracking-wide leading-relaxed mb-2">
                   {item.title}
                 </h3>
-
-                <p className="text-sm md:text-base text-gray-200">
+                <p className="text-gray-200 text-[12px] font-light leading-relaxed">
                   {item.desc}
                 </p>
-
               </div>
             </div>
           ))}
-
-          {/* Left Button */}
-          <button
-            onClick={prev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 
-                       bg-white/80 hover:bg-white 
-                       p-3 rounded-full shadow transition"
-          >
-            <ChevronLeft size={20} />
-          </button>
-
-          {/* Right Button */}
-          <button
-            onClick={next}
-            className="absolute right-4 top-1/2 -translate-y-1/2 
-                       bg-white/80 hover:bg-white 
-                       p-3 rounded-full shadow transition"
-          >
-            <ChevronRight size={20} />
-          </button>
-
         </div>
 
+        {/* ================= DESKTOP VIEW ================= */}
+        <div
+          className="
+            hidden md:flex
+            h-[480px] lg:h-[520px] xl:h-[560px]
+            overflow-hidden
+            rounded-sm
+            shadow-lg
+          "
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {data.map((item, i) => (
+            <div
+              key={i}
+              onMouseEnter={() => setActive(i)}
+              className={`
+                relative overflow-hidden cursor-pointer group
+                transition-all duration-1000 ease-out
+                ${active === i ? "w-[55%]" : "w-[8%] hover:w-[12%]"}
+              `}
+            >
+              {/* IMAGE */}
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                priority={i === 0}
+                className={`
+                  object-cover
+                  transition-all duration-1200 ease-out
+                  ${active === i ? "scale-105" : "scale-100 group-hover:scale-105"}
+                `}
+                sizes="100vw"
+              />
+
+              {/* OVERLAY */}
+              <div
+                className={`
+                  absolute inset-0
+                  transition-all duration-800 ease-out
+                  ${active === i
+                    ? "bg-gradient-to-t from-black/80 via-black/40 to-black/10"
+                    : "bg-black/20 group-hover:bg-black/30"
+                  }
+                `}
+              />
+
+              {/* CONTENT (Expanded) */}
+              <div
+                className={`
+                  absolute bottom-0 left-0 right-0 p-5 lg:p-6 xl:p-8
+                  transition-all duration-800 delay-150 ease-out
+                  ${active === i
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-12 pointer-events-none"
+                  }
+                `}
+              >
+                <h3 className="text-white text-[15px] lg:text-[17px] font-semibold tracking-wide leading-relaxed mb-2 max-w-xl">
+                  {item.title}
+                </h3>
+                <p className="text-gray-200 text-[13px] lg:text-[14px] font-light leading-relaxed max-w-2xl">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -44,7 +44,7 @@ export default function ExcludedServices() {
         >
           <div className="overflow-hidden">
 
-            <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-3 text-[12px] md:text-[13.5px] font-[350] text-gray-700 pl-4 list-disc">
+            <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-3 text-[12px] md:text-[13px] font-[300] text-gray-700 pl-4 list-disc">
 
               <li>Flights: International or Domestic</li>
               <li>Drinks: Unless specified</li>

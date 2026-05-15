@@ -4,6 +4,7 @@ import DestinationSection from "./components/DestinationSection";
 import RecommendedTours from "./components/RecommendedTours";
 import Footer from "@/src/components/sections/footer/Footer";
 import TourSteps from "@/src/components/tours/TourSteps";
+import CommonForm from "@/src/components/tours/CommonForm";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <SuitableFor />
       <DestinationSection />
       <TourSteps/>
+      <CommonForm/>
       <RecommendedTours />
       <Footer/>  
     </div>

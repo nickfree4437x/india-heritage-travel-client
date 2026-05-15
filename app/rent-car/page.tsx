@@ -1,4 +1,4 @@
-import FAQSection from "@/src/components/sections/festivals/festivalDetails/holi/components/FAQSection";
+import FaqSection from "@/src/components/sections/festivals/common/FAQSection";
 import Footer from "@/src/components/sections/footer/Footer";
 import BookingSection from "@/src/home/rent-car/BookingSection";
 import RentCarHero from "@/src/home/rent-car/RentCarHero";
@@ -12,7 +12,7 @@ export default function RentCarPage() {
       <WhyChooseSection/>
       <VehicleSection/>
       <BookingSection/>
-      <FAQSection/>
+      <FaqSection/>
       <Footer/>
     </>
   );

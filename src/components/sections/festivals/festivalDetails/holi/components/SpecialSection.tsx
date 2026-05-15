@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const data = [
   {
@@ -13,12 +12,12 @@ const data = [
   {
     image: "/festivals/holi/holi-female.jpeg",
     title: "Experience unique Holi traditions",
-    desc: "Celebrate Holi the traditional way — with village rituals, folk dress, and local rhythms.",
+    desc: "Celebrate Holi the traditional way with village rituals, folk dress, and local rhythms.",
   },
   {
     image: "/festivals/holi/holi3.jpeg",
     title: "Celebrate Holi like a Local",
-    desc: "Dressed in white kurtas and colorful turbans, guests celebrate Holi the local way — with joy, color, and community.",
+    desc: "Dressed in white kurtas and colorful turbans, guests celebrate Holi the local way with joy, color, and community.",
   },
   {
     image: "/festivals/holi/camel-safari.jpg",
@@ -43,150 +42,166 @@ const data = [
   {
     image: "/festivals/holi/taj.jpg",
     title: "Timeless Beauty of the Taj",
-    desc: "Visit the Taj Mahal a white marble wonder and symbol of eternal love, glowing at sunrise.",
+    desc: "Visit the Taj Mahal — a white marble wonder and symbol of eternal love, glowing at sunrise.",
   },
 ];
 
 export default function SpecialSection() {
-  const [index, setIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [active, setActive] = useState(0);
+  const [mobileActive, setMobileActive] = useState<number | null>(0);
+  const [isPaused, setIsPaused] = useState(false);
 
-  const next = () => setIndex((prev) => (prev + 1) % data.length);
-  const prev = () => setIndex((prev) => (prev - 1 + data.length) % data.length);
-
+  // DESKTOP AUTO PLAY
   useEffect(() => {
-    if (!isAutoPlaying) return;
-    const interval = setInterval(next, 5000);
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % data.length);
+    }, 5000);
+
     return () => clearInterval(interval);
-  }, [isAutoPlaying, index]);
+  }, [isPaused]);
 
   return (
-    <section className="bg-[#f4f0ea] py-12 sm:py-16 md:py-20" id="special">
+    <section
+      className="bg-[#f4f0ea] py-2 sm:py-6 md:py-6"
+      id="special"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* HEADING */}
-        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[42px] text-center tracking-wide text-[#2c2c2c] font-semibold mb-8 sm:mb-10 md:mb-12">
+        <h2 className="text-[20px] sm:text-[24px] md:text-[26px] font-semibold text-center mb-4 sm:mb-4 text-[#2c2c2c] tracking-wide">
           What makes this trip Special?
         </h2>
 
-        {/* SLIDER CONTAINER */}
-        <div 
-          className="relative rounded-2xl overflow-hidden shadow-2xl bg-black/5"
-          onMouseEnter={() => setIsAutoPlaying(false)}
-          onMouseLeave={() => setIsAutoPlaying(true)}
-        >
-          
-          {/* FIXED HEIGHT SLIDER */}
-          <div className="relative h-[450px] sm:h-[550px] md:h-[600px] lg:h-[650px] overflow-hidden">
-            
-            {data.map((item, i) => (
+        {/* ================= MOBILE VIEW ================= */}
+        <div className="flex md:hidden flex-col overflow-hidden rounded-sm">
+          {data.map((item, i) => (
+            <div
+              key={i}
+              onClick={() => setMobileActive(mobileActive === i ? null : i)}
+              className={`
+                relative overflow-hidden cursor-pointer rounded-sm
+                transition-all duration-700 ease-out
+                ${mobileActive === i ? "h-[280px]" : "h-[70px]"}
+              `}
+            >
+              {/* IMAGE */}
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                priority={i === 0}
+                className={`
+                  object-cover
+                  transition-all duration-1000 ease-out
+                  ${mobileActive === i ? "scale-110" : "scale-100"}
+                `}
+                sizes="100vw"
+              />
+
+              {/* OVERLAY */}
               <div
-                key={i}
-                className={`absolute inset-0 transition-all duration-700 ease-out
-                  ${i === index
-                    ? "opacity-100 scale-100 z-10"
-                    : "opacity-0 scale-105 z-0"
-                  }`}
+                className={`
+                  absolute inset-0
+                  transition-all duration-700 ease-out
+                  ${mobileActive === i
+                    ? "bg-gradient-to-t from-black/85 via-black/50 to-black/20"
+                    : "bg-black/40"
+                  }
+                `}
+              />
+
+              {/* CONTENT (Expanded) */}
+              <div
+                className={`
+                  absolute bottom-0 left-0 right-0 p-5
+                  transition-all duration-700 delay-100 ease-out
+                  ${mobileActive === i
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10 pointer-events-none"
+                  }
+                `}
               >
-                {/* IMAGE */}
-                <div className="relative w-full h-full">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    priority={i === 0}
-                    className="object-cover"
-                    sizes="100vw"
-                  />
-                  
-                  {/* GRADIENT OVERLAY */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
-                </div>
-
-                {/* CONTENT */}
-                <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-10 md:p-12 lg:p-16">
-                  <div className="max-w-4xl mx-auto text-center">
-                    <h3
-                      className={`text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-white mb-4 sm:mb-5 leading-tight
-                      transition-all duration-500 delay-200
-                      ${i === index
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-10"
-                      }`}
-                    >
-                      {item.title}
-                    </h3>
-
-                    <p
-                      className={`text-xs text-gray-200 leading-relaxed max-w-3xl mx-auto
-                      transition-all duration-500 delay-300
-                      ${i === index
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-10"
-                      }`}
-                    >
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
+                <h3 className="text-white text-[15px] font-semibold tracking-wide leading-relaxed mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-200 text-[12px] font-light leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
-            ))}
-
-            {/* LEFT BUTTON */}
-            <button
-              onClick={prev}
-              className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-20
-                         bg-white/90 hover:bg-white backdrop-blur-sm
-                         w-10 h-10 sm:w-12 sm:h-12 rounded-full 
-                         shadow-lg hover:shadow-2xl
-                         transition-all duration-300 hover:scale-110
-                         flex items-center justify-center
-                         focus:outline-none focus:ring-2 focus:ring-white"
-              aria-label="Previous"
-            >
-              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-gray-800" />
-            </button>
-
-            {/* RIGHT BUTTON */}
-            <button
-              onClick={next}
-              className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-20
-                         bg-white/90 hover:bg-white backdrop-blur-sm
-                         w-10 h-10 sm:w-12 sm:h-12 rounded-full 
-                         shadow-lg hover:shadow-2xl
-                         transition-all duration-300 hover:scale-110
-                         flex items-center justify-center
-                         focus:outline-none focus:ring-2 focus:ring-white"
-              aria-label="Next"
-            >
-              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-gray-800" />
-            </button>
-
-            {/* DOTS */}
-            <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2 sm:gap-3">
-              {data.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setIndex(i)}
-                  className={`transition-all duration-300 rounded-full cursor-pointer
-                    ${i === index
-                      ? "w-10 sm:w-12 h-1.5 sm:h-2 bg-white shadow-md"
-                      : "w-3 sm:w-4 h-1.5 sm:h-2 bg-white/40 hover:bg-white/60"
-                    }`}
-                  aria-label={`Go to slide ${i + 1}`}
-                />
-              ))}
             </div>
+          ))}
+        </div>
 
-            {/* SLIDE COUNTER */}
-            <div className="absolute top-4 sm:top-6 right-4 sm:right-6 z-20 
-                            bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full">
-              <span className="text-white text-xs sm:text-sm font-medium">
-                {String(index + 1).padStart(2, '0')} / {String(data.length).padStart(2, '0')}
-              </span>
+        {/* ================= DESKTOP VIEW ================= */}
+        <div
+          className="
+            hidden md:flex
+            h-[480px] lg:h-[520px] xl:h-[560px]
+            overflow-hidden
+            rounded-sm
+            shadow-lg
+          "
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {data.map((item, i) => (
+            <div
+              key={i}
+              onMouseEnter={() => setActive(i)}
+              className={`
+                relative overflow-hidden cursor-pointer group
+                transition-all duration-1000 ease-out
+                ${active === i ? "w-[55%]" : "w-[8%] hover:w-[12%]"}
+              `}
+            >
+              {/* IMAGE */}
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                priority={i === 0}
+                className={`
+                  object-cover
+                  transition-all duration-1200 ease-out
+                  ${active === i ? "scale-105" : "scale-100 group-hover:scale-105"}
+                `}
+                sizes="100vw"
+              />
+
+              {/* OVERLAY */}
+              <div
+                className={`
+                  absolute inset-0
+                  transition-all duration-800 ease-out
+                  ${active === i
+                    ? "bg-gradient-to-t from-black/80 via-black/40 to-black/10"
+                    : "bg-black/20 group-hover:bg-black/30"
+                  }
+                `}
+              />
+
+              {/* CONTENT (Expanded) */}
+              <div
+                className={`
+                  absolute bottom-0 left-0 right-0 p-5 lg:p-6 xl:p-8
+                  transition-all duration-800 delay-150 ease-out
+                  ${active === i
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-12 pointer-events-none"
+                  }
+                `}
+              >
+                <h3 className="text-white text-[15px] lg:text-[17px] font-semibold tracking-wide leading-relaxed mb-2 max-w-xl">
+                  {item.title}
+                </h3>
+                <p className="text-gray-200 text-[13px] lg:text-[14px] font-light leading-relaxed max-w-2xl">
+                  {item.desc}
+                </p>
+              </div>
             </div>
-
-          </div>
+          ))}
         </div>
       </div>
     </section>

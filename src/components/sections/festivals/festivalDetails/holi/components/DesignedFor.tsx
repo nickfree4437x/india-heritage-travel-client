@@ -43,7 +43,7 @@ export default function DesignedFor() {
         className="
           text-[20px]
           sm:text-[24px]
-          md:text-[28px]
+          md:text-[26px]
           font-semibold
           text-center
           mb-6 sm:mb-8
@@ -92,7 +92,7 @@ export default function DesignedFor() {
             {/* 🔥 TEXT */}
             <p
               className="
-                font-normal
+                font-light
                 text-[#3a3a3a]
                 text-[12px]
                 sm:text-[13px]

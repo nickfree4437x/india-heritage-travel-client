@@ -2,134 +2,207 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const data = [
   {
-    image: "/festivals/pushkar/p1.jpg",
-    title: "Vibrant Local Culture",
-    desc: "Experience colorful traditions, attire, and local Rajasthani life.",
+    image: "/festivals/pushkar/pushkar1.jpg",
+    title: "The Spirit of Pushkar",
+    desc: "Witness Rajasthan’s most vibrant desert gathering — with camels, colors, and cultural traditions.",
   },
   {
-    image: "/festivals/pushkar/p2.jpg",
-    title: "Handcrafted Markets",
-    desc: "Shop unique handicrafts, jewelry, and festive souvenirs.",
+    image: "/festivals/pushkar/pushkar2.jpeg",
+    title: "A Carnival in the Dunes",
+    desc: "Shop handmade crafts, enjoy local music, and see traditions unfold in the desert town.",
   },
   {
-    image: "/festivals/pushkar/p3.jpg",
-    title: "Desert Traditions",
-    desc: "Witness age-old rituals and traditional desert lifestyles.",
+    image: "/festivals/pushkar/pushkar3.jpeg",
+    title: "A Rajasthani Desert Spectacle",
+    desc: "Colorful turbans, dancing gypsies, and thousands of camels — Pushkar is pure magic.",
   },
   {
-    image: "/festivals/pushkar/p4.jpg",
-    title: "Camel Safari",
-    desc: "Ride through golden dunes and experience desert sunsets.",
+    image: "/festivals/pushkar/pushkar4.jpg",
+    title: "Camel Riding & Bonfire at the desert",
+    desc: "Ride through the Thar as the sun sets, then enjoy folk music, dancing, and a starlit bonfire in the dunes of Jaisalmer.",
   },
   {
-    image: "/festivals/pushkar/p5.jpg",
-    title: "Lakeside Views",
-    desc: "Relax by Pushkar Lake with spiritual and scenic beauty.",
+    image: "/festivals/holi/udaipur.jpg",
+    title: "Lakeside romance of Udaipur",
+    desc: "Enjoy a peaceful boat ride on Lake Pichola with stunning views of palaces and cityscapes.",
   },
   {
-    image: "/festivals/pushkar/p6.jpg",
-    title: "Blue City Walk",
-    desc: "Explore narrow streets and iconic blue architecture.",
+    image: "/festivals/holi/jodhpur.jpg",
+    title: "Colours of the Blue City",
+    desc: "Wander through Jodhpur's old town, past blue-washed homes, spice markets, and the towering Mehrangarh Fort above.",
   },
   {
-    image: "/festivals/pushkar/p7.jpg",
-    title: "Heritage Wonders",
-    desc: "Visit grand forts, palaces, and architectural marvels.",
+    image: "/festivals/holi/jaipur.jpg",
+    title: "Pink City's Royalty",
+    desc: "Admire Hawa Mahal's unique windows, built to let in cool air and city views for the royal women.",
   },
   {
-    image: "/festivals/pushkar/p8.jpg",
-    title: "Taj Mahal Visit",
-    desc: "End your journey with a visit to one of the world’s wonders.",
+    image: "/festivals/holi/taj.jpg",
+    title: "Timeless Beauty of the Taj",
+    desc: "Visit the Taj Mahal — a white marble wonder and symbol of eternal love, glowing at sunrise.",
   },
 ];
 
 export default function SpecialSection() {
-  const [index, setIndex] = useState(0);
+  const [active, setActive] = useState(0);
+  const [mobileActive, setMobileActive] = useState<number | null>(0);
+  const [isPaused, setIsPaused] = useState(false);
 
-  const next = () => setIndex((prev) => (prev + 1) % data.length);
-  const prev = () =>
-    setIndex((prev) => (prev - 1 + data.length) % data.length);
-
-  // 🔥 Auto Slide
+  // DESKTOP AUTO PLAY
   useEffect(() => {
-    const interval = setInterval(next, 4000);
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % data.length);
+    }, 5000);
+
     return () => clearInterval(interval);
-  }, []);
+  }, [isPaused]);
 
   return (
-    <section className="py-20 bg-[#f4f0ea]" id="special">
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      className="bg-[#f4f0ea] py-2 sm:py-6 md:py-6"
+      id="special"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-[#2c2c2c] tracking-wide">
+        {/* HEADING */}
+        <h2 className="text-[20px] sm:text-[24px] md:text-[26px] font-semibold text-center mb-4 sm:mb-4 text-[#2c2c2c] tracking-wide">
           What makes this trip Special?
         </h2>
 
-        {/* Carousel */}
-        <div className="relative h-[450px] overflow-hidden rounded-2xl shadow-md">
-
+        {/* ================= MOBILE VIEW ================= */}
+        <div className="flex md:hidden flex-col overflow-hidden rounded-sm">
           {data.map((item, i) => (
             <div
               key={i}
-              className={`absolute inset-0 transition-all duration-700 ease-in-out ${
-                i === index
-                  ? "opacity-100 scale-100 z-10"
-                  : "opacity-0 scale-105 z-0"
-              }`}
+              onClick={() => setMobileActive(mobileActive === i ? null : i)}
+              className={`
+                relative overflow-hidden cursor-pointer rounded-sm
+                transition-all duration-700 ease-out
+                ${mobileActive === i ? "h-[280px]" : "h-[70px]"}
+              `}
             >
-              {/* Image */}
+              {/* IMAGE */}
               <Image
                 src={item.image}
                 alt={item.title}
                 fill
-                className="object-cover object-center"
                 priority={i === 0}
+                className={`
+                  object-cover
+                  transition-all duration-1000 ease-out
+                  ${mobileActive === i ? "scale-110" : "scale-100"}
+                `}
+                sizes="100vw"
               />
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              {/* OVERLAY */}
+              <div
+                className={`
+                  absolute inset-0
+                  transition-all duration-700 ease-out
+                  ${mobileActive === i
+                    ? "bg-gradient-to-t from-black/85 via-black/50 to-black/20"
+                    : "bg-black/40"
+                  }
+                `}
+              />
 
-              {/* Content */}
-              <div className="absolute bottom-10 left-10 text-white max-w-lg">
-
-                <h3 className="text-2xl md:text-3xl font-bold mb-2">
+              {/* CONTENT (Expanded) */}
+              <div
+                className={`
+                  absolute bottom-0 left-0 right-0 p-5
+                  transition-all duration-700 delay-100 ease-out
+                  ${mobileActive === i
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10 pointer-events-none"
+                  }
+                `}
+              >
+                <h3 className="text-white text-[15px] font-semibold tracking-wide leading-relaxed mb-2">
                   {item.title}
                 </h3>
-
-                <p className="text-sm md:text-base text-gray-200">
+                <p className="text-gray-200 text-[12px] font-light leading-relaxed">
                   {item.desc}
                 </p>
-
               </div>
             </div>
           ))}
-
-          {/* Left Button */}
-          <button
-            onClick={prev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 
-                       bg-white/80 hover:bg-white 
-                       p-3 rounded-full shadow transition"
-          >
-            <ChevronLeft size={20} />
-          </button>
-
-          {/* Right Button */}
-          <button
-            onClick={next}
-            className="absolute right-4 top-1/2 -translate-y-1/2 
-                       bg-white/80 hover:bg-white 
-                       p-3 rounded-full shadow transition"
-          >
-            <ChevronRight size={20} />
-          </button>
-
         </div>
 
+        {/* ================= DESKTOP VIEW ================= */}
+        <div
+          className="
+            hidden md:flex
+            h-[480px] lg:h-[520px] xl:h-[560px]
+            overflow-hidden
+            rounded-sm
+            shadow-lg
+          "
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {data.map((item, i) => (
+            <div
+              key={i}
+              onMouseEnter={() => setActive(i)}
+              className={`
+                relative overflow-hidden cursor-pointer group
+                transition-all duration-1000 ease-out
+                ${active === i ? "w-[55%]" : "w-[8%] hover:w-[12%]"}
+              `}
+            >
+              {/* IMAGE */}
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                priority={i === 0}
+                className={`
+                  object-cover
+                  transition-all duration-1200 ease-out
+                  ${active === i ? "scale-105" : "scale-100 group-hover:scale-105"}
+                `}
+                sizes="100vw"
+              />
+
+              {/* OVERLAY */}
+              <div
+                className={`
+                  absolute inset-0
+                  transition-all duration-800 ease-out
+                  ${active === i
+                    ? "bg-gradient-to-t from-black/80 via-black/40 to-black/10"
+                    : "bg-black/20 group-hover:bg-black/30"
+                  }
+                `}
+              />
+
+              {/* CONTENT (Expanded) */}
+              <div
+                className={`
+                  absolute bottom-0 left-0 right-0 p-5 lg:p-6 xl:p-8
+                  transition-all duration-800 delay-150 ease-out
+                  ${active === i
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-12 pointer-events-none"
+                  }
+                `}
+              >
+                <h3 className="text-white text-[15px] lg:text-[17px] font-semibold tracking-wide leading-relaxed mb-2 max-w-xl">
+                  {item.title}
+                </h3>
+                <p className="text-gray-200 text-[13px] lg:text-[14px] font-light leading-relaxed max-w-2xl">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

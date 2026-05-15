@@ -9,7 +9,7 @@ import SpecialSection from "../components/SpecialSection";
 import ItinerarySection from "../components/ItinerarySection";
 import PricingSection from "../components/PricingSection";
 import ExploreMoreSection from "../components/ExploreMoreSection";
-import FAQSection from "../components/FAQSection";
+import FAQSection from "../../../common/FAQSection";
 import Footer from "@/src/components/sections/footer/Footer";
 
 export default function HoliDetails() {
@@ -31,8 +31,8 @@ export default function HoliDetails() {
         </div>
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
-
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/50" />
+        
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 

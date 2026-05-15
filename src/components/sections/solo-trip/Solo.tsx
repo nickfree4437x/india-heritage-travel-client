@@ -260,7 +260,7 @@ export default function SoloTravelSection() {
               variants={buttonVariants}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full sm:w-auto md:-ml-2 bg-transparent text-[#a67c52] text-sm px-7 py-3 rounded-full border border-[#a67c52] hover:bg-[#a67c52] hover:text-white transition-all duration-300"
+              className="w-full sm:w-auto md:-ml-2 bg-transparent text-[#a67c52] text-xs px-7 py-3 rounded-full border border-[#a67c52] hover:bg-[#a67c52] hover:text-white transition-all duration-300"
             >
               Come travel with me
             </motion.button>
@@ -386,7 +386,7 @@ export default function SoloTravelSection() {
             {/* BOTTOM RIGHT (EXPAND LEFT) */}
             <motion.div
               variants={desktopImageVariants}
-              className="absolute bottom-0 right-[16px] w-[59%] z-10"
+              className="absolute bottom-0 right-[18px] w-[58%] z-10"
             >
               <Image
                 src="/solo-trip/taj-mahal.jpeg"

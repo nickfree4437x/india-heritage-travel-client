@@ -132,7 +132,7 @@ export default function Difference() {
 
               {/* Text */}
               <p
-                className="text-gray-800 text-[12px] sm:text-[13px] md:text-[13px] 
+                className="text-gray-800 text-[12px] font-light sm:text-[13px] md:text-[13px] 
                            leading-relaxed tracking-wide whitespace-nowrap"
               >
                 {item.text}

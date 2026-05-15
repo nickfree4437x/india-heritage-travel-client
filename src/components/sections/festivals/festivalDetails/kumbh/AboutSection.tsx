@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import {
   Hotel,
   Car,
@@ -12,141 +11,110 @@ import {
   Bus,
 } from "lucide-react";
 
+import ExcludedServices from "../../common/ExcludedServices";
+
 export default function AboutSection() {
-  const [open, setOpen] = useState(false);
 
   const inclusions = [
-    { icon: <Hotel />, text: "15 nights, chosen hotels" },
-    { icon: <Car />, text: "Local driver, guide" },
-    { icon: <Utensils />, text: "Daily breakfast" },
-    { icon: <CreditCard />, text: "All costs covered" },
-    { icon: <Wifi />, text: "In Car Wi-fi" },
-    { icon: <ChefHat />, text: "Cooking classes, dinner" },
-    { icon: <Plane />, text: "Airport transfer" },
-    { icon: <Bus />, text: "Delhi rickshaw" },
+    { icon: <Hotel size={28} />, text: "15 nights, chosen hotels" },
+    { icon: <Car size={28} />, text: "Local driver, guide" },
+    { icon: <Utensils size={28} />, text: "Daily breakfast" },
+    { icon: <CreditCard size={28} />, text: "All costs covered" },
+    { icon: <Wifi size={28} />, text: "In Car Wi-fi" },
+    { icon: <ChefHat size={28} />, text: "Cooking classes, dinner" },
+    { icon: <Plane size={28} />, text: "Airport transfer" },
+    { icon: <Bus size={28} />, text: "Delhi rickshaw" },
   ];
 
   return (
-    <section className="py-20 px-6 bg-[#f4f0ea]" id="about">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+    <section className="bg-[#f4f0ea] pb-10 px-6" id="about">
 
-        {/* LEFT - ABOUT */}
-        <div>
+      <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#2c2c2c] tracking-wide mb-6">
-            A Spiritual Journey Like No Other
-          </h2>
+        {/* 🔹 TOP GRID */}
+        <div className="grid md:grid-cols-2 gap-2 md:gap-12 items-start">
 
-          <div className="space-y-5 text-[#3a3a3a] leading-relaxed text-[15px] md:text-[16px] text-justify">
+          {/* LEFT - ABOUT */}
+          <div>
 
-            <p>
-              It’s hard to explain what Kumbh Mela really feels like — it’s not
-              just an event. It’s a pull, a calling.
-            </p>
+            <h2 className="text-[16px] sm:text-[20px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+              A Spiritual Journey Like No Other
+            </h2>
 
-            <p>
-              Every twelve years, millions gather at the banks of sacred rivers
-              like the Ganges and Yamuna. Not for the crowd. Not for photos.
-              They come for something deeper — faith.
-            </p>
+            <div className="space-y-5 font-light text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] text-justify">
 
-            <p>
-              One dip in the holy river is believed to cleanse lifetimes of sins.
-              It’s not just a ritual — it’s a moment of transformation.
-            </p>
+              <p>
+                It’s hard to explain what Kumbh Mela really feels like —
+                it’s not just an event. It’s a pull, a calling.
+              </p>
 
-            <p>
-              You’ll see sadhus covered in ash, pilgrims walking barefoot for days,
-              and rituals that feel ancient yet alive. Some take devotion to
-              extremes — all in the name of faith.
-            </p>
+              <p>
+                Every twelve years, millions gather at the banks of sacred rivers
+                like the Ganges and Yamuna. Not for the crowd. Not for photos.
+                They come for something deeper — faith.
+              </p>
 
-            <p>
-              It’s loud, chaotic, emotional, and deeply spiritual. You don’t just
-              see Kumbh Mela — you feel it.
-            </p>
+              <p>
+                One dip in the holy river is believed to cleanse lifetimes of sins.
+                It’s not just a ritual — it’s a moment of transformation.
+              </p>
+
+              <p>
+                You’ll see sadhus covered in ash, pilgrims walking barefoot for days,
+                and rituals that feel ancient yet alive. Some take devotion to
+                extremes — all in the name of faith.
+              </p>
+
+              <p>
+                It’s loud, chaotic, emotional, and deeply spiritual.
+                You don’t just see Kumbh Mela — you feel it.
+              </p>
+
+            </div>
 
           </div>
-        </div>
 
-        {/* RIGHT - INCLUSIONS */}
-        <div className="bg-white rounded-md p-8">
+          {/* RIGHT - INCLUSIONS */}
+          <div className="bg-white rounded-md p-6" id="inclusions">
 
-            <h3 className="text-2xl font-semibold text-[#2c2c2c] text-center mb-8 tracking-wide">
+            <h3 className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-[#2c2c2c] text-center mb-8 tracking-wide">
               Inclusions
             </h3>
 
-            <div className="grid grid-cols-2 gap-y-8 gap-x-6">
+            <div className="grid grid-cols-2 gap-y-6 gap-x-4">
+
               {inclusions.map((item, i) => (
                 <div
                   key={i}
-                  className="flex flex-col items-center text-center gap-3"
+                  className="
+                    flex flex-col items-center
+                    text-center
+                    gap-2
+                  "
                 >
-                  <div className="text-[#9A7A58]">
+
+                  {/* ICON */}
+                  <div
+                    className="
+                      text-[#9A7A58]
+                      scale-[0.85]
+                    "
+                  >
                     {item.icon}
                   </div>
-                  <p className="text-sm font-medium text-[#3a3a3a] leading-snug">
-                    {item.text}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto mt-12">
-
-        {/* HEADER */}
-        <div
-          onClick={() => setOpen(!open)}
-          className="bg-[#e9e2d8] px-6 py-5 cursor-pointer flex justify-between items-center
-                    transition-all duration-300"
-        >
-          <h4 className="font-medium text-[#2c2c2c] tracking-wide">
-            Excluded Services in this Journey
-          </h4>
-
-          {/* ICON ROTATION */}
-          <span
-            className={`text-sm transition-transform duration-300 ${
-              open ? "rotate-180" : ""
-            }`}
-          >
-            ▼
-          </span>
-        </div>
-
-        {/* CONTENT */}
-        <div
-          className={`overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
-                      ${open ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"}`}
-        >
-          <div className="bg-white px-6 py-6">
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-3">
-
-              {[
-                "Flights: International or Domestic",
-                "Drinks: Unless specified.",
-                "Visa: Obtain your Indian visa independently.",
-                "Meals: Not specified.",
-                "Tips: Housekeeping, bellboys, at your discretion.",
-                "Insurance: Comprehensive travel insurance required.",
-                "Expenses: Laundry, telephone bills",
-                "Entrance: Monument fees.",
-                "Camera: Video camera fees.",
-                "Health: Medical, baggage insurance.",
-                "Taxes: Airport departure taxes.",
-                "Others: Unspecified services.",
-                "Safaris: Game safaris not included, unless specified.",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2 text-[#3a3a3a] text-sm">
-
-                  {/* BULLET */}
-                  <span className="mt-[6px] w-[5px] h-[5px] bg-[#9A7A58] rounded-full shrink-0"></span>
 
                   {/* TEXT */}
-                  <p className="leading-relaxed">{item}</p>
+                  <p
+                    className="
+                      text-[11px]
+                      sm:text-[12px]
+                      font-[400]
+                      text-[#3a3a3a]
+                      leading-[1.5]
+                    "
+                  >
+                    {item.text}
+                  </p>
 
                 </div>
               ))}
@@ -154,9 +122,15 @@ export default function AboutSection() {
             </div>
 
           </div>
+
         </div>
 
+        {/* 🔹 EXCLUSIONS */}
+        <div id="excluded-services">
+          <ExcludedServices />
+        </div>
       </div>
+
     </section>
   );
 }

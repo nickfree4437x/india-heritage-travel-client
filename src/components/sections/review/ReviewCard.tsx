@@ -116,7 +116,7 @@ export default function ReviewCard({ reviews, index, visibleCards }: Props) {
 
                   <div className="relative mt-2">
                     <Quote size={12} className="text-[#c9a45c]/20 absolute -top-1 -left-1" />
-                    <p className="text-gray-600 text-[11px] sm:text-xs leading-relaxed line-clamp-3 pl-4">
+                    <p className="text-gray-600 font-light text-[11px] sm:text-xs leading-relaxed line-clamp-3 pl-4">
                       {review.short}
                     </p>
                   </div>

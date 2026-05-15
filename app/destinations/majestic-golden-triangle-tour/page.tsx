@@ -9,6 +9,7 @@ import BookingCard from "./components/BookingCard";
 import Footer from "@/src/components/sections/footer/Footer";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 import TourSteps from "@/src/components/tours/TourSteps";
+import CommonForm from "@/src/components/tours/CommonForm";
 //import FAQSection from "@/src/components/tours/FaqSection";
 
 export default function Page() {
@@ -40,6 +41,7 @@ export default function Page() {
       </div>
       {/* <FAQSection/> */}
       <TourSteps/>
+      <CommonForm/>
       <RecommendedTours />
       <Footer/>
 

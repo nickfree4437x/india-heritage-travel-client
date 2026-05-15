@@ -45,7 +45,7 @@ export default function RecommendedTours() {
       </h2>
 
       {/* 🔹 Cards */}
-      <div className="grid md:grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-3 gap-10 mb-10">
 
         {tours.map((tour, i) => (
           <div

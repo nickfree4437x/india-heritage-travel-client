@@ -25,7 +25,14 @@ export default function DesignedFor() {
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#9b7a50] mb-12">
+        <h2 className="text-[20px]
+          sm:text-[24px]
+          md:text-[26px]
+          font-semibold
+          text-center
+          mb-6 sm:mb-8
+          text-[#2c2c2c]
+          tracking-wide">
           Designed For
         </h2>
 

@@ -18,6 +18,7 @@ import RecommendedTours from "../majestic-golden-triangle-tour/components/Recomm
 import Footer from "@/src/components/sections/footer/Footer";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 import TourSteps from "@/src/components/tours/TourSteps";
+import CommonForm from "@/src/components/tours/CommonForm";
 
 export default function Page() {
   return (
@@ -59,6 +60,7 @@ export default function Page() {
       </div>
       
       <TourSteps/>
+      <CommonForm/>
       <RecommendedTours/>
       <Footer/>
 

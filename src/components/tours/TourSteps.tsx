@@ -47,10 +47,10 @@ export default function BookingStepsSection() {
                   mt-1
                   text-[12px]
                   sm:text-[13px]
-                  md:text-[14px]
+                  md:text-[13.5px]
                   leading-[1.9]
                   text-[#7B7B7B]
-                  font-[350]
+                  font-[300]
                 ">
                   Complete our Simple Form to Start your Journey
                 </p>
@@ -73,10 +73,10 @@ export default function BookingStepsSection() {
                   mt-1
                   text-[12px]
                   sm:text-[13px]
-                  md:text-[14px]
+                  text-[13.5]
                   leading-[1.9]
                   text-[#7B7B7B]
-                  font-[350]
+                  font-[300]
                 ">
                   Expect a Call, WhatsApp, or Email
                 </p>
@@ -99,10 +99,10 @@ export default function BookingStepsSection() {
                   mt-1
                   text-[12px]
                   sm:text-[13px]
-                  md:text-[14px]
+                  text-[13.5]
                   leading-[2]
                   text-[#7B7B7B]
-                  font-[350]
+                  font-[300]
                   text-justify
                   max-w-xl
                 ">
@@ -129,10 +129,10 @@ export default function BookingStepsSection() {
                   mt-1
                   text-[12px]
                   sm:text-[13px]
-                  md:text-[14px]
+                  text-[13.5]
                   leading-[1.9]
                   text-[#7B7B7B]
-                  font-[350]
+                  font-[300]
                 ">
                   We’ll craft a unique itinerary tailored just for you!
                 </p>

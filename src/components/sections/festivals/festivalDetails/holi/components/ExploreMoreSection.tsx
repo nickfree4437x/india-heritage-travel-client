@@ -29,15 +29,22 @@ const tours = [
 
 export default function ExploreMoreSection() {
   return (
-    <section className="py-20 bg-[#f4f0ea]">
+    <section className="py-6 bg-[#f4f0ea]">
       <div className="max-w-7xl mx-auto px-6 text-center">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-semibold text-[#9b7a50] mb-4">
+        <h2 className="text-[20px]
+          sm:text-[24px]
+          md:text-[26px]
+          font-semibold
+          text-center
+          mb-4 sm:mb-4
+          text-[#2c2c2c]
+          tracking-wide">
           Keep Exploring
         </h2>
 
-        <p className="text-gray-600 mb-14 tracking-wide">
+        <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed tracking-wide max-w-[580px] mx-auto text-[#8b6a3d] mb-4">
           Go Beyond Holi With More Cultural And Offbeat Tours.
         </p>
 
@@ -47,9 +54,11 @@ export default function ExploreMoreSection() {
           {tours.map((tour, i) => (
             <Link key={i} href={tour.link} className="group block">
 
-              <div className="bg-white border border-[#eee7dd] rounded-lg overflow-hidden
-                              shadow-sm transition-all duration-300 ease-out
-                              hover:shadow-md hover:-translate-y-1">
+              <div
+                className="bg-white border border-[#eee7dd] rounded-md overflow-hidden
+                           shadow-sm transition-all duration-300 ease-out
+                           hover:shadow-md hover:-translate-y-1"
+              >
 
                 {/* Image */}
                 <div className="relative w-full h-56 overflow-hidden">
@@ -57,32 +66,35 @@ export default function ExploreMoreSection() {
                     src={tour.image}
                     alt={tour.title}
                     fill
-                    className="object-cover transition-transform duration-500 ease-out"
+                    className="object-cover transition-transform duration-700 ease-out"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
 
-                  {/* subtle overlay */}
                   <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition duration-300" />
                 </div>
 
                 {/* Content */}
                 <div className="p-6 text-center">
 
-                  <h3 className="text-[17px] font-semibold text-[#9b7a50] mb-2 leading-snug">
+                  <h3 className="text-sm font-semibold tracking-[0.10em] text-[#9b7a50] mb-3 leading-relaxed">
                     {tour.title}
                   </h3>
 
-                  <p className="text-sm font-medium text-gray-800 mb-3">
+                  <p className="text-xs tracking-[0.10em] text-gray-700 mb-4">
                     {tour.days}
                   </p>
 
-                  <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">
+                  <p className="leading-relaxed text-[12px] sm:text-[13px] font-light md:text-[14px] text-gray-600 mb-6 line-clamp-3">
                     {tour.desc}
                   </p>
 
-                  <span className="inline-block bg-[#9b7a50] text-white px-6 py-2 rounded-md
-                                   transition-all duration-300
-                                   group-hover:bg-[#876845]">
+                  <span
+                    className="inline-block border border-[#9b7a50]
+                               text-[#9b7a50] px-5 py-2 text-xs
+                                tracking-[0.10em]
+                               rounded-md transition-all duration-300
+                               hover:bg-[#9b7a50] hover:text-white"
+                  >
                     Explore Now
                   </span>
 

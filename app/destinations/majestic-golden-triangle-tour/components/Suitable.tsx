@@ -35,7 +35,7 @@ export default function Suitable() {
         {/* 🏷 Heading */}
         <h2
           className="
-            text-[20px] sm:text-[24px] md:text-[28px]
+            text-[20px] sm:text-[24px] md:text-[26px]
             font-semibold
             text-center
             mb-6 sm:mb-8
@@ -80,7 +80,7 @@ export default function Suitable() {
 
             <p
               className="
-                font-normal
+                font-light
                 text-[#3a3a3a]
                 text-[12px] sm:text-[13px] md:text-[13px]
                 leading-relaxed
@@ -113,7 +113,7 @@ export default function Suitable() {
 
             <p
               className="
-                font-normal
+                font-light
                 text-[#3a3a3a]
                 text-[12px] sm:text-[13px] md:text-[13px]
                 leading-relaxed
@@ -147,7 +147,7 @@ export default function Suitable() {
 
             <p
               className="
-                font-normal
+                font-light
                 text-[#3a3a3a]
                 text-[12px] sm:text-[13px] md:text-[13px]
                 leading-relaxed
@@ -180,7 +180,7 @@ export default function Suitable() {
 
             <p
               className="
-                font-normal
+                font-light
                 text-[#3a3a3a]
                 text-[12px] sm:text-[13px] md:text-[13px]
                 leading-relaxed

@@ -28,12 +28,19 @@ export default function PricingSection() {
   ];
 
   return (
-    <section className="py-20 bg-[#f4f0ea]" id="pricing">
+    <section className="py-8 bg-[#f4f0ea]" id="pricing">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#9b7a50] mb-3">
+        <div className="text-center">
+          <h2 className="text-[20px]
+          sm:text-[24px]
+          md:text-[26px]
+          font-semibold
+          text-center
+          mb-4 sm:mb-6
+          text-[#2c2c2c]
+          tracking-wide">
             Plan Freely with All-Inclusive Pricing
           </h2>
         </div>
@@ -53,17 +60,18 @@ export default function PricingSection() {
 
               {/* Top */}
               <div>
-                <h3 className="text-xl font-semibold text-[#9b7a50] mb-4 text-center">
+                <h3 className="font-semibold text-[#9b7a50] text-xs sm:text-sm tracking-[0.10em] mb-4 text-center">
                   {plan.title}
                 </h3>
 
                 <div className="text-center mb-6">
-                  <p className="text-3xl font-bold text-gray-900">
-                    {plan.price}
-                  </p>
-                  <span className="text-sm text-gray-500">
-                    {plan.note}
-                  </span>
+                 <p className="text-2xl tracking-wide text-gray-900">
+                  {plan.price}
+                 </p>
+
+                 <span className="text-xs tracking-[0.12em] text-gray-500">
+                  {plan.note}
+                 </span>
                 </div>
 
                 {/* Divider */}
@@ -74,7 +82,7 @@ export default function PricingSection() {
                   {plan.features.map((f, idx) => (
                     <div key={idx} className="flex items-center gap-3 text-gray-700">
                       <Check size={16} className="text-[#9b7a50]" />
-                      <span>{f}</span>
+                      <span className="text-xs tracking-[0.10em] text-gray-500">{f}</span>
                     </div>
                   ))}
                 </div>
@@ -82,7 +90,7 @@ export default function PricingSection() {
 
               {/* Button */}
               <button
-                className={`mt-8 w-full py-3 rounded-lg transition ${
+                className={`mt-8 w-full py-2.5 rounded-md text-xs font-light tracking-[0.10em] uppercase transition-all duration-300 ${
                   plan.highlight
                     ? "bg-[#9b7a50] text-white hover:bg-[#876845]"
                     : "border border-[#9b7a50] text-[#9b7a50] hover:bg-[#9b7a50] hover:text-white"

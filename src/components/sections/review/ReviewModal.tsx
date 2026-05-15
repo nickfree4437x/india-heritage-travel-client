@@ -134,7 +134,7 @@ export default function ReviewModal({ review, onClose }: ReviewModalProps) {
               paragraph.trim() && (
                 <p
                   key={idx}
-                  className="text-gray-700 leading-relaxed text-xs sm:text-[13px] text-justify"
+                  className="text-gray-700 font-light leading-relaxed text-xs sm:text-[13px] text-justify"
                 >
                   {paragraph.trim()}
                 </p>

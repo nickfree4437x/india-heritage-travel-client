@@ -12,7 +12,7 @@ export default function DetailedItineraryIntro() {
 
         {/* Description */}
         <div className="mt-5 max-w-4xl">
-          <p className="text-[12px] sm:text-[13px] lg:text-[14.5px] leading-[2] italic text-[#7B7B7B] font-[350] m-0">
+          <p className="text-[12px] font-light sm:text-[13px] lg:text-[13.5px] leading-[2] italic text-[#7B7B7B] m-0">
             <span className="font-[600] text-[#5F5F5F]">
               Note:
             </span>{" "}
