@@ -21,7 +21,7 @@ export default function DesignedFor() {
   ];
 
   return (
-    <section className="py-20 bg-[#f4f0ea]" id="designed">
+    <section className="py-20 bg-[#f8f6f2] scroll-mt-20 md:scroll-mt-16" id="designed">
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Heading */}

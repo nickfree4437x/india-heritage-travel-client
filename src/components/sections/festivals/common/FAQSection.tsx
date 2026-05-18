@@ -70,7 +70,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-8 md:py-8 bg-[#f4f0ea]" id="faq">
+    <section className="py-8 md:py-8 bg-[#f8f6f2] scroll-mt-20 md:scroll-mt-28" id="faq">
       <div className="max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
@@ -123,7 +123,7 @@ export default function FAQSection() {
               >
                 <div
                   className="px-4 sm:px-5 md:px-6 pb-4 sm:pb-5 md:pb-6 pt-3 sm:pt-4 text-justify bg-gray-50
-                            text-gray-600 text-[12px] sm:text-[13px] md:text-[14px] font-light
+                            text-gray-600 text-[12px] sm:text-[13px] md:text-[13px] font-light
                             leading-6 sm:leading-7 tracking-[0.02em]
                             border-t border-[#eee7dd]"
                 >

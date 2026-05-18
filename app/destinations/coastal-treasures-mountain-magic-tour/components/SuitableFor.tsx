@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, Leaf, Users, User } from "lucide-react";
+import { Briefcase, Flower2, Users, PersonStanding } from "lucide-react";
 
 export default function SuitableFor() {
   const navLinks = [
@@ -9,29 +9,6 @@ export default function SuitableFor() {
     { name: "Thekkady", id: "thekkady" },
     { name: "Munnar", id: "munnar" },
     { name: "Mumbai", id: "mumbai" },
-  ];
-
-  const items = [
-    {
-      icon: <Briefcase size={34} />,
-      text: "Corporate Travel",
-      id: "corporate",
-    },
-    {
-      icon: <Leaf size={34} />,
-      text: "Spiritual, Cultural, Artistic & Gastronomic Interests",
-      id: "spiritual",
-    },
-    {
-      icon: <Users size={34} />,
-      text: "Friends & Family Travel",
-      id: "family",
-    },
-    {
-      icon: <User size={34} />,
-      text: "Solo Travel",
-      id: "solo",
-    },
   ];
 
   const handleScroll = (id: string) => {
@@ -85,12 +62,12 @@ export default function SuitableFor() {
       </div>
 
       {/* 🎯 MAIN SECTION */}
-      <section className="bg-[#f4f0ea] pt-10 sm:pt-12 pb-8 sm:pb-10 px-4 sm:px-6">
+      <section className="bg-[#f8f6f2] pt-10 sm:pt-12 pb-8 sm:pb-10 px-4 sm:px-6">
 
-        {/* 🏷 HEADING */}
+        {/* 🏷 Heading */}
         <h2
           className="
-            text-[20px] sm:text-[24px] md:text-[28px]
+            text-[20px] sm:text-[24px] md:text-[26px]
             font-semibold
             text-center
             mb-6 sm:mb-8
@@ -101,7 +78,7 @@ export default function SuitableFor() {
           Suitable For
         </h2>
 
-        {/* 🎯 CARDS */}
+        {/* 🎯 Cards */}
         <div
           className="
             grid grid-cols-2 md:grid-cols-4
@@ -112,52 +89,140 @@ export default function SuitableFor() {
           "
         >
 
-          {items.map((item, i) => (
-            <div
-              key={i}
-              onClick={() => handleScroll(item.id)}
+          {/* CARD */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
+            <Briefcase
+              size={34}
               className="
-                group flex flex-col items-center
-                gap-3 sm:gap-4
-                px-2 sm:px-4 md:px-6
-                py-4 sm:py-6 md:py-8
-                rounded-md
+                text-[#9A7A58]
                 transition-all duration-500
-                cursor-pointer
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
               "
             >
+              Corporate Travel
+            </p>
+          </div>
 
-              {/* ICON */}
-              <div
-                className="
-                  text-[#9A7A58]
-                  transition-all duration-500
-                  group-hover:scale-110
-                  sm:w-[38px] sm:h-[38px]
-                  md:w-[42px] md:h-[42px]
-                  flex items-center justify-center
-                "
-              >
-                {item.icon}
-              </div>
+          {/* CARD */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
+            <Flower2
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
 
-              {/* TEXT */}
-              <p
-                className="
-                  font-normal
-                  text-[#3a3a3a]
-                  text-[12px] sm:text-[13px] md:text-[13px]
-                  leading-relaxed
-                "
-              >
-                {item.text}
-              </p>
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Spiritual, Cultural, Artistic &
+              Gastronomic Interests
+            </p>
+          </div>
 
-            </div>
-          ))}
+          {/* CARD */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
+            <Users
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Friends & Family Travel
+            </p>
+          </div>
+
+          {/* CARD */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
+            <PersonStanding
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Solo Travel
+            </p>
+          </div>
 
         </div>
-
       </section>
     </>
   );

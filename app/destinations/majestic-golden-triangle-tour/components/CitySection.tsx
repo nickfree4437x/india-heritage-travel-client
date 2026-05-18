@@ -16,7 +16,7 @@ export default function CitySection({
   image,
 }: Props) {
   return (
-    <div id={id} className="max-w-5xl">
+    <div id={id} className="max-w-5xl scroll-mt-24 md:scroll-mt-28">
 
       {/* Heading */}
       <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
@@ -24,7 +24,7 @@ export default function CitySection({
       </h2>
 
       {/* Description */}
-      <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[350] md:text-[14.5px] text-justify">
+      <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-[300] text-justify">
         {description}
       </p>
 

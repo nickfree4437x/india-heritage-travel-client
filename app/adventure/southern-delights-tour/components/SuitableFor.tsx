@@ -5,104 +5,350 @@ import { Briefcase, Flower2, Users, User } from "lucide-react";
 export default function SuitableFor() {
   return (
     <>
-      {/* 🔥 STICKY LOCATION BAR (UPGRADED) */}
-      <div className="sticky top-0 z-30 bg-[#9A7A58] text-white overflow-x-auto">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4 whitespace-nowrap text-sm md:text-base font-medium">
+      {/* 🔥 STICKY LOCATION BAR */}
+      <div className="sticky top-0 z-30 bg-[#9A7A58] shadow-sm">
 
-          <a href="#cochin" className="hover:underline">Cochin</a>
-          <span className="opacity-60">|</span>
+        {/* 🔥 HORIZONTAL SCROLL WRAPPER */}
+        <div className="overflow-x-auto scrollbar-hide">
 
-          <a href="#alleppey" className="hover:underline">Alleppey</a>
-          <span className="opacity-60">|</span>
+          <div
+            className="
+              min-w-max
+              max-w-6xl mx-auto
 
-          <a href="#thekkady" className="hover:underline">Thekkady</a>
-          <span className="opacity-60">|</span>
+              flex items-center
+              justify-start sm:justify-center
 
-          <a href="#munnar" className="hover:underline">Munnar</a>
-          <span className="opacity-60">|</span>
+              px-3 sm:px-5 lg:px-6
+              py-3 sm:py-4
 
-          <a href="#madurai" className="hover:underline">Madurai</a>
-          <span className="opacity-60">|</span>
+              gap-3 sm:gap-5 md:gap-6
+            "
+          >
 
-          <a href="#thanjavur" className="hover:underline">Thanjavur</a>
-          <span className="opacity-60">|</span>
+            <a
+              href="#cochin"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Cochin
+            </a>
 
-          <a href="#pondicherry" className="hover:underline">Pondicherry</a>
-          <span className="opacity-60">|</span>
+            <span className="text-white/40 shrink-0">|</span>
 
-          <a href="#mahabalipuram" className="hover:underline">Mahabalipuram</a>
-          <span className="opacity-60">|</span>
+            <a
+              href="#alleppey"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Alleppey
+            </a>
 
-          <a href="#mumbai" className="hover:underline">Mumbai</a>
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#thekkady"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Thekkady
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#munnar"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Munnar
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#madurai"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Madurai
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#thanjavur"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Thanjavur
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#pondicherry"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Pondicherry
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#mahabalipuram"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Mahabalipuram
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#mumbai"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Mumbai
+            </a>
+
+          </div>
 
         </div>
+
       </div>
 
       {/* 🎯 MAIN SECTION */}
-      <section className="bg-[#f4f0ea] pt-20 pb-10">
+      <section className="bg-[#f8f6f2] pt-10 sm:pt-12 pb-8 sm:pb-10 px-4 sm:px-6">
 
         {/* 🏷 Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-[#2c2c2c] tracking-wide">
+        <h2
+          className="
+            text-[20px] sm:text-[24px] md:text-[26px]
+            font-semibold
+            text-center
+            mb-6 sm:mb-8
+            text-[#2c2c2c]
+            tracking-wide
+          "
+        >
           Suitable For
         </h2>
 
-        {/* 🎴 CARDS */}
-        <div className="grid grid-cols-2 md:grid-cols-4 
-                        gap-x-12 gap-y-10 
-                        max-w-6xl mx-auto px-6 text-center">
+        {/* 🎯 Cards */}
+        <div
+          className="
+            grid grid-cols-2 md:grid-cols-4
+            gap-x-4 sm:gap-x-8 md:gap-x-12
+            gap-y-8 sm:gap-y-10
+            max-w-7xl mx-auto
+            text-center
+          "
+        >
 
           {/* CARD */}
-          <div className="group flex flex-col items-center gap-4 
-                          px-6 py-8 rounded-md
-                          transition-all duration-500  ">
-
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
             <Briefcase
-              size={42}
-              className="text-[#9A7A58] transition-all duration-500  "
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
             />
-            <p className="font-medium text-[#3a3a3a]">
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
               Corporate Travel
             </p>
           </div>
 
           {/* CARD */}
-          <div className="group flex flex-col items-center gap-4 
-                          px-6 py-8 rounded-md
-                          transition-all duration-500  ">
-
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
             <Flower2
-              size={42}
-              className="text-[#9A7A58] transition-all duration-500  "
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
             />
-            <p className="font-medium text-[#3a3a3a] leading-snug">
-              Spiritual, Cultural, Artistic & Gastronomic Interests
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Spiritual, Cultural, Artistic &
+              Gastronomic Interests
             </p>
           </div>
 
           {/* CARD */}
-          <div className="group flex flex-col items-center gap-4 
-                          px-6 py-8 rounded-md
-                          transition-all duration-500  ">
-
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
             <Users
-              size={42}
-              className="text-[#9A7A58] transition-all duration-500  "
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
             />
-            <p className="font-medium text-[#3a3a3a]">
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
               Friends & Family Travel
             </p>
           </div>
 
           {/* CARD */}
-          <div className="group flex flex-col items-center gap-4 
-                          px-6 py-8 rounded-md
-                          transition-all duration-500  ">
-
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
             <User
-              size={42}
-              className="text-[#9A7A58] transition-all duration-500  "
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
             />
-            <p className="font-medium text-[#3a3a3a]">
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
               Solo Travel
             </p>
           </div>

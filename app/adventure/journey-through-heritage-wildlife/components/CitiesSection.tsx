@@ -55,22 +55,23 @@ export default function CitiesSection() {
         <div key={city.id} id={city.id} className="w-full">
 
           {/* TITLE */}
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-[#2c2c2c]">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             {city.title}
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-700 mb-8 leading-relaxed text-[15px] text-justify">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14.5px] text-justify">
             {city.desc}
           </p>
 
           {/* IMAGE */}
-          <div className="relative w-full h-[420px] rounded-md overflow-hidden shadow-md group">
+          <div className="relative w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
             <Image
               src={city.img}
               alt={city.title}
-              fill
-              className="object-cover transition-transform duration-700"
+              width={1200}
+              height={800}
+              className="w-full h-auto max-h-[500px] object-cover"
             />
           </div>
 

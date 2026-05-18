@@ -71,22 +71,23 @@ export default function TourContent() {
         <div
           key={index}
           id={place.id} // 🔥 IMPORTANT (scroll target)
-          className="mb-16 scroll-mt-28"
+          className="mb-16 scroll-mt-24 md:scroll-mt-28"
         >
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#2c2c2c]">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             {place.title}
           </h2>
 
-          <p className="text-gray-700 text-[15px] leading-relaxed mb-6 whitespace-pre-line text-justify">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14px] text-justify">
             {place.description}
           </p>
 
-          <div className="relative w-full h-[250px] md:h-[420px] rounded-lg overflow-hidden">
+          <div className="relative w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
             <Image
               src={place.image}
               alt={place.title}
-              fill
-              className="object-cover"
+              width={1200}
+              height={800}
+              className="w-full h-auto max-h-[500px] object-cover"
             />
           </div>
         </div>

@@ -14,53 +14,89 @@ import {
 
 export default function HighlightsInclusions() {
   return (
-    <section className="bg-[#f4f0ea]">
+    <section>
 
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+      {/* 🔥 SAME WIDTH AS OTHER INFO SECTIONS */}
+      <div className="max-w-5xl mx-auto">
 
-        {/* 🔹 LEFT: Highlights */}
-        <div className="bg-white rounded-md border border-[#eee7dd] p-6 transition-all duration-300">
+        <div className="grid md:grid-cols-2 gap-10">
 
-          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-[#2c2c2c] tracking-wide">
-            Highlights
-          </h2>
+          {/* 🔹 Highlights */}
+          <div
+            className="
+              bg-white rounded-md
+              shadow-sm
+              border border-[#eee7dd]
+              p-6
+            "
+          >
 
-          <ul className="space-y-2 text-[#3a3a3a] text-sm">
+            <h2
+              className="
+                text-[18px] md:text-[20px]
+                font-medium
+                mb-5
+                text-center
+                tracking-[0.02em]
+              "
+            >
+              Highlights
+            </h2>
 
-            {[
-              "Cochin’s Culture Unveiled",
-              "Alleppey’s Backwater Bliss",
-              "Thekkady’s Wild Wonders",
-              "Munnar’s Tea Paradise",
-              "Madurai’s Temple Treasures",
-              "Thanjavur’s Cultural Gem",
-              "Pondicherry’s Serene Fusion",
-              "Mahabalipuram’s Ancient Marvels",
-            ].map((item, index) => (
-              <li key={index} className="flex items-start gap-3">
+            <ul className="space-y-3 text-gray-700 text-xs font-light">
 
-                <Check
-                  size={18}
-                  className="text-[#9A7A58] mt-0.5"
-                />
+              {[
+                "Cochin’s Culture Unveiled",
+                "Alleppey’s Backwater Bliss",
+                "Thekkady’s Wild Wonders",
+                "Munnar’s Tea Paradise",
+                "Madurai’s Temple Treasures",
+                "Thanjavur’s Cultural Gem",
+                "Pondicherry’s Serene Fusion",
+                "Mahabalipuram’s Ancient Marvels",
+              ].map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-2"
+                >
 
-                <span>{item}</span>
-              </li>
-            ))}
+                  <Check
+                    className="text-[#AF956C]"
+                    size={16}
+                  />
 
-          </ul>
-        </div>
+                  <span>{item}</span>
 
-        {/* 🔹 RIGHT: Inclusions */}
-        <div className="bg-white rounded-md
-                          shadow-sm 
-                          border border-[#eee7dd] 
-                          p-6">
+                </li>
+              ))}
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+            </ul>
+
+          </div>
+
+          {/* 🔹 Inclusions */}
+          <div
+            className="
+              bg-white rounded-md
+              shadow-sm
+              border border-[#eee7dd]
+              p-6
+            "
+          >
+
+            <h2
+              className="
+                text-[18px] md:text-[20px]
+                font-medium
+                mb-5
+                text-center
+                tracking-[0.02em]
+              "
+            >
               Inclusions
             </h2>
 
+            {/* 🔥 4 COLUMN GRID */}
             <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
 
               {[
@@ -76,11 +112,24 @@ export default function HighlightsInclusions() {
                 const Icon = item.icon;
 
                 return (
-                  <div key={index} className="flex flex-col items-center gap-1.5">
+                  <div
+                    key={index}
+                    className="flex flex-col items-center gap-1.5"
+                  >
 
-                    <Icon size={18} className="text-[#AF956C]" />
+                    <Icon
+                      size={18}
+                      className="text-[#AF956C]"
+                    />
 
-                    <p className="text-[12px] leading-tight">
+                    <p
+                      className="
+                        text-[11px]
+                        font-light
+                        leading-tight
+                        whitespace-pre-line
+                      "
+                    >
                       {item.text}
                     </p>
 
@@ -91,6 +140,9 @@ export default function HighlightsInclusions() {
             </div>
 
           </div>
+
+        </div>
+
       </div>
 
     </section>

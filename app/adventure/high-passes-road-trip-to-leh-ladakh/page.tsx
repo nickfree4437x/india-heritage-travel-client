@@ -4,7 +4,8 @@ import HeroSection from "./components/HeroSection";
 import SuitableFor from "./components/SuitableFor";
 import TourDetails from "./components/TourDetails";
 import TourLayout from "./components/TourLayout";
-import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/ExcludedServices";
+import CommonForm from "@/src/components/tours/CommonForm";
+import TourSteps from "@/src/components/tours/TourSteps";
 
 export default function RoyalRajasthanPage() {
   return (
@@ -15,9 +16,10 @@ export default function RoyalRajasthanPage() {
       {/* MAIN SECTION */}
       <TourLayout>
         <TourDetails />
-        <ExcludedServices/>
       </TourLayout>
-
+      
+      <TourSteps/>
+      <CommonForm/>
       <RecommendedTours/>
       <Footer/>
     </div>

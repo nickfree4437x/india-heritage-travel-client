@@ -64,13 +64,13 @@ export default function SpecialSection() {
 
   return (
     <section
-      className="bg-[#f4f0ea] py-2 sm:py-6 md:py-6"
+      className="bg-[#f8f6f2] py-2 sm:py-6 md:py-6 scroll-mt-24 md:scroll-mt-28"
       id="special"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* HEADING */}
-        <h2 className="text-[20px] sm:text-[24px] md:text-[26px] font-semibold text-center mb-4 sm:mb-4 text-[#2c2c2c] tracking-wide">
+        <h2 className="text-[20px] sm:text-[24px] md:text-[26px] font-semibold text-center mb-4 sm:mb-6 text-[#2c2c2c] tracking-wide">
           What makes this trip Special?
         </h2>
 
@@ -126,7 +126,7 @@ export default function SpecialSection() {
                 <h3 className="text-white text-[15px] font-semibold tracking-wide leading-relaxed mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-200 text-[12px] font-light leading-relaxed">
+                <p className="text-gray-200 text-[11px] md:text-[12px] font-light leading-relaxed">
                   {item.desc}
                 </p>
               </div>

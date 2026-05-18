@@ -49,7 +49,7 @@ export default function HighlightsInclusions() {
               Highlights
             </h2>
 
-            <ul className="space-y-3 text-gray-700 text-[11px] sm:text-xs leading-relaxed">
+            <ul className="space-y-3 text-gray-700 text-[11px] font-light sm:text-xs leading-relaxed">
 
               {highlights.map((item, index) => (
                 <li
@@ -91,7 +91,7 @@ export default function HighlightsInclusions() {
                       className="text-[#AF956C]"
                     />
 
-                    <p className="text-[10px] sm:text-[11px] leading-tight">
+                    <p className="text-[10px] sm:text-[11px] font-light leading-tight">
                       {item.text}
                     </p>
                   </div>

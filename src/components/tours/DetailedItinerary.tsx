@@ -6,13 +6,13 @@ export default function DetailedItineraryIntro() {
       <div className="max-w-6xl mx-auto bg-white px-4 sm:px-4 lg:px-4 py-4">
 
         {/* Heading */}
-        <h2 className="text-[14px] sm:text-[18px] lg:text-[20px] font-[450] tracking-[0.10em] text-[#AF956C] leading-[1.2] m-0">
+        <h2 className="text-[16px] md:text-[18px] font-medium text-[#AF956C] tracking-[0.01em]">
           Detailed Itinerary
         </h2>
 
         {/* Description */}
-        <div className="mt-5 max-w-4xl">
-          <p className="text-[12px] font-light sm:text-[13px] lg:text-[13.5px] leading-[2] italic text-[#7B7B7B] m-0">
+        <div className="mt-2 max-w-4xl">
+          <p className="text-[12px] font-light sm:text-[13px] lg:text-[13px] leading-[2] italic text-[#7B7B7B] m-0">
             <span className="font-[600] text-[#5F5F5F]">
               Note:
             </span>{" "}
@@ -34,12 +34,12 @@ export default function DetailedItineraryIntro() {
 
             bg-[#AF956C] text-white
 
-            px-6 sm:px-8 lg:px-10
-            py-3.5 sm:py-4
+            px-5 sm:px-7 lg:px-8
+            py-3 sm:py-3.5
 
             rounded-lg
 
-            text-[12px] sm:text-[13px] lg:text-[12.5px]
+            text-[11px] sm:text-[12px] lg:text-[12px]
             font-[300]
             tracking-[0.08em]
 
@@ -49,7 +49,6 @@ export default function DetailedItineraryIntro() {
 
             hover:bg-[#9d845d]
             hover:shadow-[0_12px_35px_rgba(175,149,108,0.28)]
-            hover:-translate-y-[2px]
 
             active:translate-y-0
 

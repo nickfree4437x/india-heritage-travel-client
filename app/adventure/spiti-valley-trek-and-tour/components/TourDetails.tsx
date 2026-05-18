@@ -3,6 +3,8 @@
 import Image from "next/image";
 import HighlightsInclusions from "./HighlightsInclusions";
 import Itinerary from "./Itinerary";
+import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/ExcludedServices";
+import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 
 export default function TourDetails() {
   const cities = [
@@ -16,7 +18,7 @@ export default function TourDetails() {
       id: "chandigarh",
       title: "Chandigarh- Urban & Modern City​",
       desc: "Chandigarh is located on the foothills of Shivaliks & is famous as one of the best in urban planning & modern architecture. It is the dream city of India’s 1st prime Minister, Sh. Jawahar Lal Nehru & is planned by famous French architect Le Cobuiser.",
-      img: "/adventure/spiti/chandigarh.jpg",
+      img: "/adventure/spiti/chandigarh.jpeg",
     },
     {
       id: "manali",
@@ -40,7 +42,7 @@ export default function TourDetails() {
       id: "tobo",
       title: "Tabo- Ajanta of Himalayas",
       desc: "Nubra valley is famous for its sand dunes, vibrant monasteries & stunning landscapes. It is located 10,000ft above sea level & is accessible via the Khardung La Pass which is one of the highest motorable roads in the world. This valley is famous for its double-humped Bacrian camels, confluence of the Shyok & picturesque village & Nubra rivers.",
-      img: "/adventure/spiti/tobo.jpg",
+      img: "/adventure/spiti/tabo.jpg",
     },
     {
       id: "langza",
@@ -51,32 +53,33 @@ export default function TourDetails() {
   ];
 
   return (
-    <div className="space-y-20">
+    <div className="space-y-16">
 
       {cities.map((city) => (
         <div
           key={city.id}
           id={city.id}
-          className="w-full scroll-mt-28"
+          className="w-full scroll-mt-24 md:scroll-mt-28"
         >
 
           {/* TITLE */}
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-[#2c2c2c]">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             {city.title}
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-700 mb-8 leading-relaxed text-[15px] text-justify">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14px] text-justify">
             {city.desc}
           </p>
 
           {/* IMAGE */}
-          <div className="relative w-full h-[420px] rounded-md overflow-hidden shadow-md group">
+          <div className="relative w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
             <Image
               src={city.img}
               alt={city.title}
-              fill
-              className="object-cover transition-transform duration-700"
+              width={1200}
+              height={800}
+              className="w-full h-auto max-h-[500px] object-cover"
             />
           </div>
 
@@ -86,6 +89,10 @@ export default function TourDetails() {
       {/* EXTRA SECTIONS */}
       <HighlightsInclusions />
       <Itinerary />
+      <div className="space-y-6">
+        <ExcludedServices/>
+        <DetailedItineraryIntro/>
+      </div>
 
     </div>
   );

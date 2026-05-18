@@ -12,7 +12,7 @@ export default function ItinerarySection() {
   };
 
   return (
-    <section className="py-6 bg-[#f4f0ea]" id="itinerary">
+    <section className="py-14 bg-[#f8f6f2] scroll-mt-16 md:scroll-mt-24" id="itinerary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}

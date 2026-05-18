@@ -31,7 +31,7 @@ export default function HighlightsSection() {
               Highlights
             </h2>
 
-            <ul className="space-y-3 text-gray-700 text-xs">
+            <ul className="space-y-3 text-gray-700 font-light text-xs">
 
               {[
                 "Witness the Taj Mahal at sunrise in Agra",
@@ -75,7 +75,7 @@ export default function HighlightsSection() {
                 return (
                   <div key={i} className="flex flex-col items-center gap-1.5">
                     <Icon size={18} className="text-[#AF956C]" />
-                    <p className="text-[11px] leading-tight">
+                    <p className="text-[11px] font-light leading-tight">
                       {item.text}
                     </p>
                   </div>

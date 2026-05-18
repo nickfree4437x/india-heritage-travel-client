@@ -27,7 +27,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="bg-[#f4f0ea] pb-10 px-6" id="about">
+    <section className="bg-[#f8f6f2] pb-10 px-6 scroll-mt-16 md:scroll-mt-24" id="about">
 
       <div className="max-w-6xl mx-auto">
 
@@ -41,7 +41,7 @@ export default function AboutSection() {
               Diwali – A Festival of Light & New Beginnings
             </h2>
 
-            <div className="space-y-5 font-light text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] text-justify">
+            <div className="space-y-5 font-light text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[13px] text-justify">
 
               <p>
                 There’s something about Diwali that’s hard to put into words.
@@ -84,7 +84,7 @@ export default function AboutSection() {
           </div>
 
           {/* RIGHT - INCLUSIONS */}
-          <div className="bg-white rounded-md p-6" id="inclusions">
+          <div className="bg-white rounded-md p-6 scroll-mt-20 md:scroll-mt-24" id="inclusions">
 
             <h3 className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-[#2c2c2c] text-center mb-8 tracking-wide">
               Inclusions
@@ -117,7 +117,7 @@ export default function AboutSection() {
                     className="
                       text-[11px]
                       sm:text-[12px]
-                      font-[400]
+                      font-light
                       text-[#3a3a3a]
                       leading-[1.5]
                     "
@@ -135,7 +135,7 @@ export default function AboutSection() {
         </div>
 
         {/* 🔹 EXCLUSIONS */}
-        <div id="excluded-services">
+        <div id="excluded-services" className="scroll-mt-20 md:scroll-mt-24">
           <ExcludedServices />
         </div>
 

@@ -2,14 +2,14 @@
 
 import Image from "next/image";
 
-export default function HeroSection() {
+export default function Hero() {
   return (
-    <section className="relative h-[92vh] w-full overflow-hidden">
+    <section className="relative h-[93vh] w-full overflow-hidden">
 
-      {/* Background Image with Zoom */}
+      {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/adventure/delights/hero1.jpg"
+          src="/adventure/delights/delights.jpg"
           alt="Southern Delights Tour"
           fill
           priority
@@ -17,16 +17,27 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* Gradient Overlay (Same as previous) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/55" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
-        <h1 className="text-4xl md:text-4xl font-bold mb-4
-                       opacity-0 translate-y-10
-                       animate-[fadeUp_1.2s_ease-out_0.3s_forwards]">
-          Southern Delights: A Journey<br></br> through Time Tour
+        <h1
+          className="
+            max-w-[700px]
+            text-3xl md:text-4xl
+            font-[600]
+            leading-[1.1]
+            tracking-[0.04em]
+            mb-4
+
+            opacity-0 translate-y-10
+            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
+          "
+        >
+          Southern Delights: A Journey<br />
+          through Time Tour
         </h1>
 
       </div>

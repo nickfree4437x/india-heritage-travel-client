@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, Leaf, Users, PersonStanding } from "lucide-react";
+import { Briefcase, Flower2, Users, PersonStanding } from "lucide-react";
 import { ReactNode } from "react";
 
 interface NavLink {
@@ -25,46 +25,68 @@ export default function SuitableFor() {
 
   const items: Item[] = [
     {
-      icon: <Briefcase size={40} />,
+      icon: <Briefcase />,
       title: "Corporate Travel",
       id: "corporate",
     },
     {
-      icon: <Leaf size={40} />,
+      icon: <Flower2 />,
       title: "Spiritual, Cultural, Artistic & Gastronomic Interests",
       id: "spiritual",
     },
     {
-      icon: <Users size={40} />,
+      icon: <Users />,
       title: "Friends & Family Travel",
       id: "family",
     },
     {
-      icon: <PersonStanding size={40} />,
+      icon: <PersonStanding />,
       title: "Solo Travel",
       id: "solo",
     },
   ];
 
-  // ✅ FIX: proper type added
   const handleScroll = (id: string): void => {
     const el = document.getElementById(id);
+
     if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+      el.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
 
   return (
     <>
-      {/* 🔥 TOP LINKS BAR */}
-      <div className="bg-[#9b7a50] text-white">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-center items-center gap-6 text-sm md:text-base font-medium flex-wrap">
-          
+      {/* 🔥 STICKY NAV */}
+      <div className="sticky top-0 z-30 bg-[#9A7A58] text-white overflow-x-auto">
+
+        <div
+          className="
+            max-w-6xl mx-auto
+            px-4 sm:px-6
+            py-4
+            flex justify-center items-center
+            gap-4 sm:gap-6
+            text-[12px] sm:text-[13px] md:text-[15px]
+            font-medium
+            whitespace-nowrap
+          "
+        >
+
           {navLinks.map((link, i) => (
-            <div key={i} className="flex items-center gap-6">
+            <div
+              key={i}
+              className="flex items-center gap-4 sm:gap-6"
+            >
+
               <span
                 onClick={() => handleScroll(link.id)}
-                className="cursor-pointer hover:underline"
+                className="
+                  relative group
+                  cursor-pointer
+                  hover:underline
+                "
               >
                 {link.name}
               </span>
@@ -72,6 +94,7 @@ export default function SuitableFor() {
               {i !== navLinks.length - 1 && (
                 <span className="opacity-60">|</span>
               )}
+
             </div>
           ))}
 
@@ -79,33 +102,165 @@ export default function SuitableFor() {
       </div>
 
       {/* 🎯 MAIN SECTION */}
-      <section className="py-20 bg-[#f8f6f2] text-center">
-        
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-16 text-[#2c2c2c]">
+      <section className="bg-[#f8f6f2] pt-10 sm:pt-12 pb-8 sm:pb-10 px-4 sm:px-6">
+
+        {/* 🏷 Heading */}
+        <h2
+          className="
+            text-[20px] sm:text-[24px] md:text-[26px]
+            font-semibold
+            text-center
+            mb-6 sm:mb-8
+            text-[#2c2c2c]
+            tracking-wide
+          "
+        >
           Suitable For
         </h2>
 
-        {/* Items */}
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10">
+        {/* 🎯 Cards */}
+        <div
+          className="
+            grid grid-cols-2 md:grid-cols-4
+            gap-x-4 sm:gap-x-8 md:gap-x-12
+            gap-y-8 sm:gap-y-10
+            max-w-7xl mx-auto
+            text-center
+          "
+        >
 
-          {items.map((item, index) => (
-            <div
-              key={index}
-              onClick={() => handleScroll(item.id)}
-              className="flex flex-col items-center gap-4 group cursor-pointer"
+          {/* CARD */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
+            <Briefcase
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
             >
-              {/* Icon */}
-              <div className="text-[#9b7a50] group-hover:scale-110 transition duration-300">
-                {item.icon}
-              </div>
+              Corporate Travel
+            </p>
+          </div>
 
-              {/* Title */}
-              <p className="text-sm md:text-base font-medium text-gray-800 max-w-[200px]">
-                {item.title}
-              </p>
-            </div>
-          ))}
+          {/* CARD */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
+            <Flower2
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Spiritual, Cultural, Artistic &
+              Gastronomic Interests
+            </p>
+          </div>
+
+          {/* CARD */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
+            <Users
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Friends & Family Travel
+            </p>
+          </div>
+
+          {/* CARD */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              rounded-md
+              transition-all duration-500
+            "
+          >
+            <PersonStanding
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Solo Travel
+            </p>
+          </div>
 
         </div>
       </section>

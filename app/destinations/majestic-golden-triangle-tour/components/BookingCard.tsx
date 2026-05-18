@@ -67,6 +67,7 @@ export default function BookingCard() {
             w-full
             bg-[#AF956C]
             text-white
+            font-light
             py-2 sm:py-2.5
             rounded-full
             text-[11px] sm:text-xs
@@ -74,7 +75,6 @@ export default function BookingCard() {
             transition-all duration-300
             hover:bg-[#8f7654]
             hover:shadow-sm
-            hover:-translate-y-[1px]
           "
         >
           Book This Journey

@@ -18,7 +18,7 @@ export default function RecommendedTours() {
   ];
 
   return (
-    <section className="py-20 bg-[#f5f5f5]">
+    <section className="py-8 bg-[#f5f5f5]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -31,20 +31,34 @@ export default function RecommendedTours() {
           {tours.map((tour, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden"
+              className="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden"
             >
               <img
                 src={tour.img}
                 alt={tour.title}
                 className="w-full h-56 object-cover"
               />
+              {/* Overlay */}
+              <div
+                className="
+                  absolute inset-0
+                  bg-black/10
+                  opacity-0
+                  group-hover:opacity-100
+                  transition
+                "
+              />
 
               <div className="p-5">
-                <h3 className="text-lg font-semibold text-red-500 mb-2">
+                <h3 className="text-[17px] font-semibold text-red-500 leading-snug group-hover:underline">
                   {tour.title}
                 </h3>
 
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-700
+                    text-[13px]
+                    font-light
+                    leading-relaxed
+                    line-clamp-4">
                   {tour.desc}
                 </p>
               </div>

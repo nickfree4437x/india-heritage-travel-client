@@ -31,7 +31,7 @@ export default function HighlightsInclusions() {
               Highlights
             </h2>
 
-            <ul className="space-y-3 text-gray-700 text-xs">
+            <ul className="space-y-3 text-gray-700 text-xs font-light">
 
               {[
                 "Delhi's History and Vibrancy",
@@ -61,7 +61,7 @@ export default function HighlightsInclusions() {
             </h2>
 
             {/* 🔥 4 COLUMN GRID */}
-            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
+            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center ">
 
               {[
                 { icon: Hotel, text: "6 nights, chosen hotels" },
@@ -80,7 +80,7 @@ export default function HighlightsInclusions() {
                     className="flex flex-col items-center gap-1.5"
                   >
                     <Icon size={18} className="text-[#AF956C]" />
-                    <p className="text-[11px] leading-tight">
+                    <p className="text-[11px] font-light leading-tight">
                       {item.text}
                     </p>
                   </div>

@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 export default function HighlightsInclusions() {
+
   const highlights = [
     "Famous for lakes, gardens, houseboats, and Kashmiri handicrafts.",
     "Known for skiing, Gulmarg Gondola, and the highest green golf course.",
@@ -31,32 +32,72 @@ export default function HighlightsInclusions() {
   ];
 
   return (
+
     <section>
+
+      {/* 🔥 SAME CONTENT WIDTH */}
       <div className="max-w-5xl mx-auto">
 
-        <div className="grid md:grid-cols-2 gap-10">
+        {/* 🔥 GRID */}
+        <div className="grid md:grid-cols-2 gap-8 md:gap-10">
 
-          {/* 🔹 Highlights */}
-          <div className="bg-white rounded-md
-                          shadow-sm 
-                          border border-[#eee7dd] 
-                          p-6">
+          {/* 🔹 HIGHLIGHTS */}
+          <div
+            className="
+              bg-white
+              rounded-md
+              shadow-sm
+              border border-[#eee7dd]
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center">
+              p-5 sm:p-6
+            "
+          >
+
+            {/* TITLE */}
+            <h2
+              className="
+                text-[18px] md:text-[20px]
+                font-medium
+                text-center
+                tracking-[0.02em]
+                text-[#2c2c2c]
+
+                mb-5
+              "
+            >
               Highlights
             </h2>
 
-            <ul className="space-y-3 text-gray-700 text-sm">
+            {/* LIST */}
+            <ul
+              className="
+                space-y-3
+
+                text-[12px] sm:text-[13px]
+                text-gray-700
+                font-light
+              "
+            >
 
               {highlights.map((item, index) => (
-                <li key={index} className="flex items-start gap-2">
+                <li
+                  key={index}
+                  className="flex items-start gap-2"
+                >
 
                   <Check
                     size={16}
-                    className="text-[#AF956C] mt-[2px]"
+                    className="
+                      text-[#AF956C]
+                      mt-[2px]
+                      shrink-0
+                    "
                   />
 
-                  <span>{item}</span>
+                  <span className="leading-relaxed">
+                    {item}
+                  </span>
+
                 </li>
               ))}
 
@@ -64,27 +105,73 @@ export default function HighlightsInclusions() {
 
           </div>
 
-          {/* 🔹 Inclusions */}
-          <div className="bg-white rounded-md
-                          shadow-sm 
-                          border border-[#eee7dd] 
-                          p-6">
+          {/* 🔹 INCLUSIONS */}
+          <div
+            className="
+              bg-white
+              rounded-md
+              shadow-sm
+              border border-[#eee7dd]
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+              p-5 sm:p-6
+            "
+          >
+
+            {/* TITLE */}
+            <h2
+              className="
+                text-[18px] md:text-[20px]
+                font-medium
+                text-center
+                tracking-[0.02em]
+                text-[#2c2c2c]
+
+                mb-6
+              "
+            >
               Inclusions
             </h2>
 
-            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
+            {/* ICON GRID */}
+            <div
+              className="
+                grid grid-cols-4
+
+                gap-y-6
+                gap-x-4
+
+                text-center
+              "
+            >
 
               {inclusions.map((item, index) => {
                 const Icon = item.icon;
 
                 return (
-                  <div key={index} className="flex flex-col items-center gap-1.5">
 
-                    <Icon size={18} className="text-[#AF956C]" />
+                  <div
+                    key={index}
+                    className="
+                      flex flex-col items-center
+                      gap-1.5
+                    "
+                  >
 
-                    <p className="text-[12px] leading-tight">
+                    {/* ICON */}
+                    <Icon
+                      size={18}
+                      className="text-[#AF956C]"
+                    />
+
+                    {/* TEXT */}
+                    <p
+                      className="
+                        text-[11px]
+                        leading-tight
+                        font-light
+                        text-gray-700
+                      "
+                    >
                       {item.text}
                     </p>
 
@@ -99,6 +186,7 @@ export default function HighlightsInclusions() {
         </div>
 
       </div>
+
     </section>
   );
 }

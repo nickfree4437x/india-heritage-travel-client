@@ -14,23 +14,55 @@ import {
 
 export default function HighlightsInclusions() {
   return (
-    <section className="bg-[#f4f0ea]">
+    <section
+      className="
+        w-full
+        bg-[#f4f0ea]
+        py-4 sm:py-2
+      "
+    >
 
+      {/* 🔥 SAME WIDTH SYSTEM */}
       <div className="max-w-5xl mx-auto">
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div
+          className="
+            grid md:grid-cols-2
+            gap-6 sm:gap-8 md:gap-10
+          "
+        >
 
           {/* 🔹 Highlights */}
-          <div className="bg-white rounded-md
-                          shadow-sm
-                          border border-[#eee7dd]
-                          p-6">
+          <div
+            className="
+              bg-white
+              rounded-md
+              shadow-sm
+              border border-[#eee7dd]
+              p-5 sm:p-6
+            "
+          >
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-5 text-center text-[#2c2c2c]">
+            <h2
+              className="
+                text-[18px] sm:text-[20px] md:text-[20px]
+                font-medium
+                mb-5
+                text-center
+                tracking-[0.02em]
+                text-[#2c2c2c]
+              "
+            >
               Highlights
             </h2>
 
-            <ul className="space-y-3 text-gray-700 text-sm">
+            <ul
+              className="
+                space-y-3
+                text-[#555]
+                text-[12px] sm:text-[13px] font-light
+              "
+            >
 
               {[
                 "Witness the Taj Mahal at sunrise in Agra",
@@ -38,11 +70,27 @@ export default function HighlightsInclusions() {
                 "Experience Jaipur's royal history",
                 "Open art gallery of Mandawa",
               ].map((item, index) => (
-                <li key={index} className="flex items-center gap-2">
+                <li
+                  key={index}
+                  className="
+                    flex items-start
+                    gap-2
+                  "
+                >
 
-                  <Check size={16} className="text-[#AF956C]" />
+                  <Check
+                    size={15}
+                    className="
+                      text-[#AF956C]
+                      shrink-0
+                      mt-[2px]
+                    "
+                  />
 
-                  <span>{item}</span>
+                  <span className="leading-relaxed">
+                    {item}
+                  </span>
+
                 </li>
               ))}
 
@@ -51,16 +99,39 @@ export default function HighlightsInclusions() {
           </div>
 
           {/* 🔹 Inclusions */}
-          <div className="bg-white rounded-md
-                          shadow-sm
-                          border border-[#eee7dd]
-                          p-6">
+          <div
+            className="
+              bg-white
+              rounded-md
+              shadow-sm
+              border border-[#eee7dd]
+              p-5 sm:p-6
+            "
+          >
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center text-[#2c2c2c]">
+            <h2
+              className="
+                text-[18px] sm:text-[20px] md:text-[20px]
+                font-medium
+                mb-5
+                text-center
+                tracking-[0.02em]
+                text-[#2c2c2c]
+              "
+            >
               Inclusions
             </h2>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-4 text-center">
+            {/* 🔥 GRID */}
+            <div
+              className="
+                grid grid-cols-2
+                sm:grid-cols-4
+                gap-y-6
+                gap-x-4
+                text-center
+              "
+            >
 
               {[
                 { icon: Hotel, text: "7 nights,\nchosen hotels" },
@@ -77,13 +148,28 @@ export default function HighlightsInclusions() {
                 return (
                   <div
                     key={index}
-                    className="flex flex-col items-center gap-1.5"
+                    className="
+                      flex flex-col items-center
+                      gap-1.5
+                    "
                   >
-                    <Icon size={18} className="text-[#AF956C]" />
 
-                    <p className="text-[12px] leading-tight whitespace-pre-line">
+                    <Icon
+                      size={18}
+                      className="text-[#AF956C]"
+                    />
+
+                    <p
+                      className="
+                        text-[10px] sm:text-[11px]
+                        leading-tight
+                        text-[#555]
+                        whitespace-pre-line
+                      "
+                    >
                       {item.text}
                     </p>
+
                   </div>
                 );
               })}

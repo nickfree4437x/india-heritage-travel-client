@@ -7,67 +7,128 @@ const tours = [
   {
     title: "Rajasthani Heritage Retreat",
     desc: "Explore the beautiful landscapes and rich culture of this region.",
-    image: "/adventure/kashmir/recom/tour1.jpg",
+    image: "/adventure/heritage.jpg",
     slug: "/destinations/rajasthani-heritage-retreat-tour",
   },
   {
     title: "Divine Kashmir and Exciting Ladakh",
-    desc: "Famous as the summer capital of Jammu & Kashmir, Srinagar lies in the Kashmir Valley",
-    image: "/adventure/kashmir/hero.jpg",
+    desc: "Famous as the summer capital of Jammu & Kashmir, Srinagar lies in the Kashmir Valley.",
+    image: "/adventure/kashmir.jpg",
     slug: "/adventure/divine-kashmir-and-exciting-ladakh",
   },
   {
     title: "Southern Delights: A Journey Through Time",
     desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour.",
-    image: "/adventure/kashmir/recom/tour3.jpg",
+    image: "/adventure/delights.jpg",
     slug: "/adventure/southern-delights-tour",
   },
 ];
 
 export default function RecommendedTours() {
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-20">
 
-      {/* 🔹 Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-14 tracking-wide">
+    <section className="max-w-[1400px] mx-auto px-4 sm:px-6 py-6 sm:py-10 md:py-10">
+
+      {/* 🔹 HEADING */}
+      <h2
+        className="
+          text-[20px] sm:text-[24px] md:text-[28px]
+          font-semibold
+          text-center
+          mb-8 sm:mb-10 md:mb-12
+          text-[#2c2c2c]
+          tracking-wide
+        "
+      >
         Recommended Tours
       </h2>
 
-      {/* 🔹 Cards */}
-      <div className="grid md:grid-cols-3 gap-10">
+      {/* 🔹 CARDS GRID */}
+      <div
+        className="
+          grid grid-cols-1
+          md:grid-cols-3
+
+          gap-8 md:gap-10
+        "
+      >
 
         {tours.map((tour, index) => (
-          <Link key={index} href={tour.slug} className="block group">
+          <Link
+            key={index}
+            href={tour.slug}
+            className="block group mb-10"
+          >
 
-            <div className="bg-white rounded-sm
-                            shadow-sm
-                            border border-[#eee7dd]
-                            overflow-hidden 
-                            transition-all duration-500
-                            hover:shadow-md
-                            hover:-translate-y-2">
+            {/* 🔥 CARD */}
+            <div
+              className="
+                bg-white
+                rounded-md
+                shadow-sm
+                border border-[#eee7dd]
 
-              {/* 🔥 Image */}
+                overflow-hidden
+
+                transition-all duration-500
+
+                hover:shadow-md
+                hover:-translate-y-1
+              "
+            >
+
+              {/* 🔥 IMAGE */}
               <div className="relative h-[240px] w-full overflow-hidden">
+
                 <Image
                   src={tour.image}
                   alt={tour.title}
                   fill
-                  className="object-cover transition-transform duration-700"
+                  className="
+                    object-cover
+
+                    transition-transform duration-700
+                  "
                 />
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition" />
+                {/* 🔥 OVERLAY */}
+                <div
+                  className="
+                    absolute inset-0
+                    bg-black/10
+
+                    opacity-0
+                    group-hover:opacity-100
+
+                    transition duration-500
+                  "
+                />
+
               </div>
 
-              {/* 🔥 Content */}
-              <div className="p-6 space-y-3">
+              {/* 🔥 CONTENT */}
+              <div className="p-5 sm:p-6 space-y-3">
 
-                <h3 className="text-[17px] font-semibold text-red-500 leading-snug group-hover:underline">
+                {/* TITLE */}
+                <h3
+                  className="
+                    text-[17px] font-semibold text-red-500 leading-snug group-hover:underline
+                  "
+                >
                   {tour.title}
                 </h3>
 
-                <p className="text-gray-700 text-[14px] leading-relaxed line-clamp-4">
+                {/* DESCRIPTION */}
+                <p
+                  className="
+                    text-[12px] sm:text-[13px]
+                    text-gray-700
+                    font-light
+                    leading-relaxed
+
+                    line-clamp-4
+                  "
+                >
                   {tour.desc}
                 </p>
 

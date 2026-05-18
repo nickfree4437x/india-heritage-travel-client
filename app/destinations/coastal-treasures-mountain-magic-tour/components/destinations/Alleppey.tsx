@@ -4,15 +4,15 @@ import Image from "next/image";
 
 export default function Alleppey() {
   return (
-    <div id="alleppey" className="w-full max-w-5xl mx-auto">
+    <div id="alleppey" className="w-full max-w-5xl mx-auto scroll-mt-24 md:scroll-mt-28">
 
       {/* Heading */}
-      <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold sm:mb-3">
+      <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold sm:mb-3 mb-4">
         Alleppey – World Of Coastal Delights
       </h2>
 
       {/* Description */}
-      <div className="text-gray-700 mb-4 sm:mb-5 md:mb-6 leading-relaxed font-[350] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] text-justify space-y-3 sm:space-y-4">
+      <div className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-[300] text-justify">
         <p>
           Alleppey, officially known as Alappuzha, famous among the travellers is also known as{" "}
           <span className="font-medium">"Venice of the East"</span>. 

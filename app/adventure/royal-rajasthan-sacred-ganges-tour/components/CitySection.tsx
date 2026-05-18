@@ -16,40 +16,72 @@ export default function CitySection({
   image,
 }: CitySectionProps) {
   return (
-    <section id={id} className="scroll-mt-28">
+    <section
+      id={id}
+      className="max-w-5xl scroll-mt-16 md:scroll-mt-28"
+    >
 
-      {/* TITLE */}
+      {/* Heading */}
       <h2
-        className="text-3xl md:text-4xl font-semibold mb-4 text-[#2c2c2c]
-                   opacity-0 translate-y-10
-                   animate-[fadeUp_1.2s_ease-out_0.2s_forwards]"
+        className="
+          text-[16px] sm:text-[20px] md:text-[22px]
+          tracking-wide
+          text-[#2c2c2c]
+          font-semibold
+          mb-4
+
+          opacity-0 translate-y-10
+          animate-[fadeUp_1.2s_ease-out_0.2s_forwards]
+        "
       >
         {title}
       </h2>
 
-      {/* DESCRIPTION */}
+      {/* Description */}
       <p
-        className="text-gray-700 mb-8 leading-relaxed text-[15px]
-                   text-left md:text-justify
-                   opacity-0 translate-y-10
-                   animate-[fadeUp_1.4s_ease-out_0.4s_forwards]"
+        className="
+          text-gray-700
+          mb-6
+          leading-relaxed
+          text-[12px] sm:text-[13px]
+          font-[300]
+          md:text-[14px]
+          text-justify
+
+          opacity-0 translate-y-10
+          animate-[fadeUp_1.4s_ease-out_0.4s_forwards]
+        "
       >
         {description}
       </p>
 
-      {/* IMAGE */}
+      {/* Image */}
       <div
-        className="relative w-full h-[420px] rounded-md overflow-hidden shadow-md group
-                   opacity-0 translate-y-10
-                   animate-[fadeUp_1.6s_ease-out_0.6s_forwards]"
+        className="
+          w-full rounded-md
+          overflow-hidden
+          shadow-md
+          -mb-6 md:mb-0
+
+          opacity-0 translate-y-10
+          animate-[fadeUp_1.6s_ease-out_0.6s_forwards]
+        "
       >
+
         <Image
           src={image}
           alt={title}
-          fill
+          width={1200}
+          height={800}
           priority={false}
-          className="object-cover transition-transform duration-700"
+          className="
+            w-full
+            h-auto
+            max-h-[500px]
+            object-cover
+          "
         />
+
       </div>
 
     </section>

@@ -81,7 +81,7 @@ export default function RecommendedTours() {
                 {tour.title}
               </h3>
 
-              <p className="text-gray-700 text-[15px] leading-relaxed line-clamp-4">
+              <p className="text-gray-700 text-[13px] font-light leading-relaxed line-clamp-4">
                 {tour.desc}
               </p>
 

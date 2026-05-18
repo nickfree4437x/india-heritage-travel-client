@@ -71,7 +71,7 @@ export default function Navbar() {
 
   // NAV LINKS
   const navLinks = [
-    { name: "Solo Trip", href: "/solo-trip" },
+    { name: "Solo-Women-Trip", href: "/solo-trip" },
     { name: "Blogs", href: "/blogs" },
     { name: "About Us", href: "/about" },
     { name: "Contact", href: "/contact" },

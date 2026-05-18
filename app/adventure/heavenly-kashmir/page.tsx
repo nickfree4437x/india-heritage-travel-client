@@ -4,6 +4,8 @@ import TourDetails from "./components/TourDetails";
 import TourLayout from "./components/TourLayout";
 import RecommendedTours from "./components/RecommendedTours";
 import Footer from "@/src/components/sections/footer/Footer";
+import CommonForm from "@/src/components/tours/CommonForm";
+import TourSteps from "@/src/components/tours/TourSteps";
 
 export default function RoyalRajasthanPage() {
   return (
@@ -15,6 +17,8 @@ export default function RoyalRajasthanPage() {
         <TourDetails />
       </TourLayout>
 
+      <TourSteps/>
+      <CommonForm/>
       <RecommendedTours />
       <Footer/>
     </div>

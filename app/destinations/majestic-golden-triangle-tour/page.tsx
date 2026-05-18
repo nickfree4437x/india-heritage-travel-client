@@ -14,7 +14,7 @@ import CommonForm from "@/src/components/tours/CommonForm";
 
 export default function Page() {
   return (
-    <div className="bg-[#f4f0ea] min-h-screen">
+    <div className="bg-[#f8f6f2] min-h-screen">
 
       <Hero />
       <Suitable />

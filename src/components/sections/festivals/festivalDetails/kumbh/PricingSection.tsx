@@ -41,7 +41,7 @@ export default function PricingSection() {
   ];
 
   return (
-    <section className="py-16 bg-[#f4f0ea]" id="pricing">
+    <section className="py-6 bg-[#f8f6f2] scroll-mt-24 md:scroll-mt-20" id="pricing">
 
       <div className="max-w-6xl mx-auto px-6">
 

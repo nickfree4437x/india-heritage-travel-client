@@ -23,8 +23,10 @@ export default function DestinationSection() {
       <Mumbai />
       <HighlightsInclusions />
       <DetailedItinerary />
-      <ExcludedServices/>
-      <DetailedItineraryIntro/>
+      <div className="space-y-8">
+        <ExcludedServices/>
+        <DetailedItineraryIntro/>
+      </div>
 
     </TourLayout>
   );

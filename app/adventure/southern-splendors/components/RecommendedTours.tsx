@@ -54,11 +54,11 @@ export default function RecommendedTours() {
             {/* Content */}
             <div className="p-5">
 
-              <h3 className="text-red-600 font-semibold text-lg mb-3">
+              <h3 className="text-[17px] font-semibold text-red-500 leading-snug group-hover:underline">
                 {tour.title}
               </h3>
 
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-gray-700 text-[13px] font-light leading-relaxed line-clamp-4">
                 {tour.description}
               </p>
 

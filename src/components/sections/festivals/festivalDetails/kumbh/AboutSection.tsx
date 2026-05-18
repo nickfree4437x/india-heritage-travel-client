@@ -27,7 +27,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="bg-[#f4f0ea] pb-10 px-6" id="about">
+    <section className="bg-[#f8f6f2] pb-10 px-6 scroll-mt-24 md:scroll-mt-20" id="about">
 
       <div className="max-w-6xl mx-auto">
 
@@ -75,7 +75,7 @@ export default function AboutSection() {
           </div>
 
           {/* RIGHT - INCLUSIONS */}
-          <div className="bg-white rounded-md p-6" id="inclusions">
+          <div className="bg-white rounded-md p-6 scroll-mt-24 md:scroll-mt-20" id="inclusions">
 
             <h3 className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-[#2c2c2c] text-center mb-8 tracking-wide">
               Inclusions
@@ -126,7 +126,7 @@ export default function AboutSection() {
         </div>
 
         {/* 🔹 EXCLUSIONS */}
-        <div id="excluded-services">
+        <div id="excluded-services" className="scroll-mt-24 md:scroll-mt-20">
           <ExcludedServices />
         </div>
       </div>

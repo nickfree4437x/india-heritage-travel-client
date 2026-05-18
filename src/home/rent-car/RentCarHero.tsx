@@ -2,33 +2,44 @@
 
 import Image from "next/image";
 
-export default function RentCarHero() {
+export default function Hero() {
   return (
-    <section className="relative w-full h-[75vh] md:h-[93vh] overflow-hidden">
+    <section className="relative h-[93vh] w-full overflow-hidden">
 
       {/* Background Image */}
-      <Image
-        src="/rent-car/hero.jpg" // 👈 same type image use kar (night + car)
-        alt="Rent a Car"
-        fill
-        priority
-        className="object-cover"
-      />
+      <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
+        <Image
+          src="/rent-car/hero-car.jpg" // 👈 same type image use kar (night + car)
+          alt="Rent a Car"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
 
-
-      {/* Gradient Overlay (premium feel) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/55" />
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
-        {/* Heading */}
-        <h1 className="text-white text-3xl sm:text-4xl md:text-4xl font-semibold leading-tight max-w-3xl">
-          Meet Your Perfect Travel Companion
+        <h1
+          className="
+            max-w-[700px]
+            text-3xl md:text-4xl
+            font-[600]
+            leading-[1.1]
+            tracking-[0.04em]
+            mb-4
+
+            opacity-0 translate-y-10
+            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
+          "
+        >
+          Meet Your Perfect Travel<br />
+          Companion
         </h1>
-
-        {/* Subtitle */}
-        <p className="text-gray-200 mt-6 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed">
+        <p className="text-white mb-6 leading-relaxed text-[12px] sm:text-[13px] font-light md:text-[14.5px]">
           Travel India in comfort with our meticulously maintained fleet of professional drivers.
         </p>
 

@@ -29,7 +29,7 @@ const tours = [
 
 export default function ExploreMoreSection() {
   return (
-    <section className="py-6 bg-[#f4f0ea]">
+    <section className="py-10 bg-[#f8f6f2]">
       <div className="max-w-7xl mx-auto px-6 text-center">
 
         {/* Heading */}
@@ -84,7 +84,7 @@ export default function ExploreMoreSection() {
                     {tour.days}
                   </p>
 
-                  <p className="leading-relaxed text-[12px] sm:text-[13px] font-light md:text-[14px] text-gray-600 mb-6 line-clamp-3">
+                  <p className="leading-relaxed text-[12px] sm:text-[13px] font-light md:text-[13px] text-gray-600 mb-6 line-clamp-3">
                     {tour.desc}
                   </p>
 

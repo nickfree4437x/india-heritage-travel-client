@@ -30,10 +30,10 @@ export default function DesignedFor() {
   return (
     <section
       className="
-        bg-[#f4f0ea]
+        bg-[#f8f6f2]
         pt-10 sm:pt-12
         pb-8 sm:pb-10
-        px-4 sm:px-6
+        px-4 sm:px-6 scroll-mt-24 md:scroll-mt-16
       "
       id="about"
     >

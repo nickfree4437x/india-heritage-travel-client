@@ -4,15 +4,15 @@ import Image from "next/image";
 
 export default function Thekkady() {
   return (
-    <div id="thekkady" className="w-full max-w-5xl mx-auto">
+    <div id="thekkady" className="w-full max-w-5xl mx-auto scroll-mt-24 md:scroll-mt-28">
 
       {/* Heading */}
-      <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2 sm:mb-3">
+      <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold sm:mb-3 mb-4">
         Thekkady – Where Nature Rules
       </h2>
 
       {/* Description */}
-      <div className="text-gray-700 mb-4 sm:mb-5 md:mb-6 leading-relaxed font-[350] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] text-justify space-y-3 sm:space-y-4">
+      <div className="text-gray-700 mb-4 sm:mb-5 md:mb-6 leading-relaxed font-[300] text-[12px] sm:text-[13px] md:text-[14px] text-justify space-y-3 sm:space-y-4">
         <p>
           Located in the Idukki district of Kerela, Thekkady is a beautiful hill station adorned with lush greenery, amazing landscapes & diverse wildlife. Here is the <span className="font-medium">famous Periyar National Park</span>, which is a sanctuary that has variety of animals which are even exotic in their natural habitat. The beautiful Periyar lake which is located within the park have the facilities of boat cruises which offers travellers unique experience to watch wildlife along the water edges.
         </p>

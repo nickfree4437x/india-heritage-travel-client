@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function BookingStepsSection() {
   return (
-    <section className="w-full bg-white py-8 sm:py-10 lg:py-14">
+    <section className="w-full bg-[#f7f5f1] py-8 sm:py-10 lg:py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-20 items-center">
@@ -21,7 +21,7 @@ export default function BookingStepsSection() {
               xl:text-[22px]
               leading-[1.4]
               font-[450]
-              text-[#AF956C]
+              text-[#2f2f2f]
               max-w-[620px]
             ">
               Four Easy Steps To Book Your Dream Trip
@@ -38,7 +38,7 @@ export default function BookingStepsSection() {
                   md:text-[16px]
                   lg:text-[17px]
                   font-[450]
-                  text-[#AF956C]
+                  text-[#9B7A50]
                 ">
                   Fill out the Form
                 </h3>
@@ -47,7 +47,7 @@ export default function BookingStepsSection() {
                   mt-1
                   text-[12px]
                   sm:text-[13px]
-                  md:text-[13.5px]
+                  md:text-[13px]
                   leading-[1.9]
                   text-[#7B7B7B]
                   font-[300]
@@ -64,7 +64,7 @@ export default function BookingStepsSection() {
                   md:text-[16px]
                   lg:text-[17px]
                   font-[450]
-                  text-[#AF956C]
+                  text-[#9B7A50]
                 ">
                   Our Team will Contact You!
                 </h3>
@@ -90,7 +90,7 @@ export default function BookingStepsSection() {
                   md:text-[16px]
                   lg:text-[17px]
                   font-[450]
-                  text-[#AF956C]
+                  text-[#9B7A50]
                 ">
                   Tell Us your requirements
                 </h3>
@@ -120,7 +120,7 @@ export default function BookingStepsSection() {
                   md:text-[16px]
                   lg:text-[17px]
                   font-[450]
-                  text-[#AF956C]
+                  text-[#9B7A50]
                 ">
                   Personalized Trip
                 </h3>

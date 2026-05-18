@@ -4,26 +4,31 @@ import Image from "next/image";
 
 export default function Itinerary() {
   return (
-    <section className="py-6">
+    <section className="py-2">
 
       {/* 🔥 SAME WIDTH AS CITY SECTION */}
       <div className="max-w-5xl mx-auto">
 
         {/* 🔹 Heading */}
-        <h2 className="text-3xl md:text-4xl text-center font-semibold mb-6">
+        <h2 className="text-[16px] sm:text-[20px] md:text-[24px]
+            font-semibold
+            text-center
+            mb-2 sm:mb-2
+            text-[#2c2c2c]
+            tracking-wide">
           Detailed Itinerary
         </h2>
 
-        <div className="space-y-12">
+        <div className="space-y-10">
 
           {/* ================= Day 1: Delhi ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
-            <h3 className="text-lg font-semibold text-red-500">
+            <h3 className="text-[17px]  font-semibold text-red-500">
               Day 1: Delhi
             </h3>
 
-            <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p>
                Whenever you reach at the Delhi Airport, we’ll welcome you with a sign board and take you to your well-prepared hotel for a comfortable stay.
               </p>
@@ -35,20 +40,22 @@ export default function Itinerary() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 items-start">
+            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
 
               {/* IMAGE */}
-              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="/adventure/ladakh/itinerary/i1.jpg"
-                  alt="Delhi"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="/adventure/ladakh/itinerary/i1.jpeg"
+                    alt="Delhi"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               {/* TEXT */}
-              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                   We’ll manage your journey based on your schedule and preferences, inviting you to discover Delhi’s perfect mixture of history and modern vibrancy.
                 </p>
@@ -60,8 +67,8 @@ export default function Itinerary() {
             </div>
 
             <div className="pt-2">
-              <p className="font-semibold">Next stop: Chandigarh</p>
-              <p className="text-sm text-gray-500">A 4-hour drive (243 km) from Delhi.</p>
+              <p className="font-semibold text-[14px]">Next stop: Chandigarh</p>
+              <p className="text-[12px] sm:text-[13px] font-[300] text-gray-700">A 4-hour drive (243 km) from Delhi.</p>
             </div>
 
           </div>
@@ -69,27 +76,29 @@ export default function Itinerary() {
           {/* ================= Day 2: Chandigarh ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
-            <h3 className="text-lg font-semibold text-red-500">
+            <h3 className="text-[17px]  font-semibold text-red-500">
               Day 2: Chandigarh
             </h3>
-            <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p className="mt-4">
                 Often called as Gateway to the Himalayas, Chandigarh is an amazing place to take a break while venturing inti Himalayas.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 items-start">
+            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
 
-              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="/adventure/ladakh/itinerary/i2.jpg"
-                  alt="Agra"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="/adventure/ladakh/itinerary/i2.jpg"
+                    alt="Agra"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
-              <div className="space-y-3 text-gray-700 text-[15px] leading-relaxed text-justify">
+              <div className="space-y-3 text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p> 
                  Visit famous Rock Garden which is a beautiful & huge sculpture garden which was founded by Nek chand. It was built of home waste & industrial waste & thrown-away items.
                 </p>
@@ -99,18 +108,18 @@ export default function Itinerary() {
               </div>
             </div>
             <div>
-              <p className="font-semibold">Next stop: Manali</p>
-              <p className="text-sm text-gray-500">A 6-8-hour drive (268 km) from Chandigarh..</p>
+              <p className="font-semibold text-[14px]">Next stop: Manali</p>
+              <p className="text-[12px] sm:text-[13px] font-[300] text-gray-700">A 6-8-hour drive (268 km) from Chandigarh..</p>
             </div>
           </div>
 
           {/* ================= Day 3-4: Manali ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
-            <h3 className="text-lg font-semibold text-red-500">
+            <h3 className="text-[17px]  font-semibold text-red-500">
               Day 3-4: Manali
             </h3>
-            <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p>
                Located between the snow-capped mountains of Pir Pranjal & Dhauladhar ranges, Manali is most popular hill station in India. It has lush green forests, jaw-dropping views, rivers, constant fragrance of pines & freshness- Manali is blessed with amazing scenic beauty.
               </p>
@@ -119,18 +128,20 @@ export default function Itinerary() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 items-start">
+            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
 
-              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="/adventure/ladakh/itinerary/i3.jpg"
-                  alt="Jaipur"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="/adventure/ladakh/itinerary/i3.jpg"
+                    alt="Jaipur"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
-              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p> 
                  Visit Old manali after that, it is as if you’ve stepped into another world, it looks like a retro world.
                 </p>
@@ -142,8 +153,8 @@ export default function Itinerary() {
             </div>
 
             <div>
-              <p className="font-semibold">Next stop: Jispa</p>
-              <p className="text-sm text-gray-500">A 3 hr-hour drive (92.4 km) from Manali.</p>
+              <p className="font-semibold text-[14px]">Next stop: Jispa</p>
+              <p className="text-[12px] sm:text-[13px] font-[300] text-gray-700">A 3 hr-hour drive (92.4 km) from Manali.</p>
             </div>
 
           </div>
@@ -151,26 +162,29 @@ export default function Itinerary() {
           {/* ================= Day 5: Jispa ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
-            <h3 className="text-lg font-semibold text-red-500">
+            <h3 className="text-[17px]  font-semibold text-red-500">
               Day 5: Jispa
             </h3>
-            <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p>
                Visit Jispa via Atal Tunnel which is 9.02 km & the longest tunnel above 10,000ft in the world. On the way visit Solang valley which is famous for adventure activities & a popular ski resort.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 items-start">
-              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="/adventure/ladakh/itinerary/i4.jpg"
-                  alt="Delhi"
-                  fill
+            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
+
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="/adventure/ladakh/itinerary/i4.jpg"
+                    alt="Delhi"
+                    fill
                   className="object-cover"
                 />
               </div>
+              </div>
 
-              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                    There will a change of landscapes after you cross Atul tunnel & enter Chandra River Valley. The greenery disappears & mountains become arid & brown.
                 </p>
@@ -180,8 +194,8 @@ export default function Itinerary() {
               </div>
             </div>
             <div>
-              <p className="font-semibold">Next stop: Leh</p>
-              <p className="text-sm text-gray-500">A 8 hr-hour drive (334.4 km) from Jispa.</p>
+              <p className="font-semibold text-[14px]">Next stop: Leh</p>
+              <p className="text-[12px] sm:text-[13px] font-[300] text-gray-700">A 8 hr-hour drive (334.4 km) from Jispa.</p>
             </div>
 
           </div>
@@ -189,10 +203,10 @@ export default function Itinerary() {
           {/* ================= Day 6-8 Leh ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
-            <h3 className="text-lg font-semibold text-red-500">
+            <h3 className="text-[17px]  font-semibold text-red-500">
              Day 6-8 Leh
             </h3>
-            <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p>
                Entering Leh you’ll feel Tibetan-style palace &fort which is dotted with stupas & crumbling mudbrick houses. Head out for local sightseeing to Leh palace whose rooftop provide amazing views of mountain of Stok Kangri & Ladakh mountain range.
               </p>
@@ -203,18 +217,20 @@ export default function Itinerary() {
                Next day you can visit the Hall of Fame which is a museum constructed by Indian Army in memory of brave Indian soldiers who laid down their lives defending India in Indo-Pak wars.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6 items-start">
+            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
 
-              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="/adventure/ladakh/itinerary/i5.jpg"
-                  alt="Delhi"
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="/adventure/ladakh/itinerary/i5.jpg"
+                    alt="Delhi"
                   fill
                   className="object-cover"
                 />
               </div>
+              </div>
 
-              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                   Later visit Gurudwara Pathar Sahib which is a beautiful sikh temple.Then visit Magnetic Hill, which is a “Cyclops hill” or gravity near leh which creates an amazing optic illusion.
                 </p>
@@ -224,8 +240,8 @@ export default function Itinerary() {
               </div>
             </div>
             <div>
-              <p className="font-semibold">Next stop: Nubra Valley</p>
-              <p className="text-sm text-gray-500">A 4.6 hr-hour drive (160.1 km) from Leh.</p>
+              <p className="font-semibold text-[14px]">Next stop: Nubra Valley</p>
+              <p className="text-[12px] sm:text-[13px] font-[300] text-gray-700">A 4.6 hr-hour drive (160.1 km) from Leh.</p>
             </div>
 
           </div>
@@ -233,27 +249,29 @@ export default function Itinerary() {
           {/* ================= Day 9-10: Nubra Valley ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
-            <h3 className="text-lg font-semibold text-red-500">
+            <h3 className="text-[17px]  font-semibold text-red-500">
               Day 9-10: Nubra Valley
             </h3>
 
-            <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p className="mt-4">
                Drive to Nubra valley via Khardung-La-Pass which is one of the world’s highest motorable roads. The valley offers serence peace & interaction with tribal community of Ladakh. The sasser pass & famous Kharakoram oass of the silk route which connect to Nubra with Xinjiang(China).
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6 items-start">
+            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
 
-              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="/adventure/ladakh/itinerary/i6.jpg"
-                  alt="Delhi"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="/adventure/ladakh/itinerary/i6.jpg"
+                    alt="Delhi"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
-              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                   Diskit monastery which is the largest & oldest monastery in Nubra valley. It has 11 ft high Maitreya Buddha statue. Next visit Hunder dunes which is silver dunes located at 4,000 meters.
                 </p>
@@ -263,29 +281,31 @@ export default function Itinerary() {
               </div>
             </div>
             <div>
-              <p className="font-semibold">Next stop: Pangong Lake</p>
-              <p className="text-sm text-gray-500">A 7 hr-hour drive (274 km).</p>
+              <p className="font-semibold text-[14px]">Next stop: Pangong Lake</p>
+              <p className="text-[12px] sm:text-[13px] font-[300] text-gray-700">A 7 hr-hour drive (274 km).</p>
             </div>
           </div>
 
           {/* ================= Day 11: Pangong Lake ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
-            <h3 className="text-lg font-semibold text-red-500">
+            <h3 className="text-[17px]  font-semibold text-red-500">
               Day 11: Pangong Lake
             </h3>
-            <div className="grid md:grid-cols-2 gap-6 items-start">
+            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
 
-              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="/adventure/ladakh/itinerary/i7.jpg"
-                  alt="Delhi"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="/adventure/ladakh/itinerary/i7.jpg"
+                    alt="Delhi"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
-              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                  The cottages & hotels of Pangong lake offers unparalleled views of the surrounding mountain ranges & amazing view of Pangong lake.
                 </p>
@@ -295,29 +315,31 @@ export default function Itinerary() {
               </div>
             </div>
             <div>
-              <p className="font-semibold">Next stop: Leh</p>
-              <p className="text-sm text-gray-500">A 5 hr-hour drive (224 km).</p>
+              <p className="font-semibold text-[14px]">Next stop: Leh</p>
+              <p className="text-[12px] sm:text-[13px] font-[300] text-gray-700">A 5 hr-hour drive (224 km).</p>
             </div>
           </div>
 
            {/* ================= Day 12-13 Leh  ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
-            <h3 className="text-lg font-semibold text-red-500">
+            <h3 className="text-[17px]  font-semibold text-red-500">
               Day 12-13 Leh
             </h3>
-            <div className="grid md:grid-cols-2 gap-6 items-start">
+            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
 
-              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="/adventure/ladakh/itinerary/i8.jpg"
-                  alt="Delhi"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="/adventure/ladakh/itinerary/i8.jpeg"
+                    alt="leh"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
-              <div className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                  On the way visit Hemis Monastery which is the largest monastic institution in Ladakh.
                 </p>
@@ -331,48 +353,31 @@ export default function Itinerary() {
           {/* ================= Day 14: Departure ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
-            <h3 className="text-lg font-semibold text-red-500">
+            <h3 className="text-[17px]  font-semibold text-red-500">
               Day 14: Departure
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-6 items-start">
+            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
 
-              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="/adventure/ladakh/itinerary/i10.jpg"
-                  alt="Departure"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="/destination/north-tour/itinerary/i9.jpg"
+                    alt="Departure"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
-              <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
+              <p className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 After discovering & exploring & taking back the beautiful memories from India, you’re all set ready for your journey back to your home. Your dedicated driver will ensure you reach the airport promptly on time, in accordance with your flight schedule.
                 Safe travels!
               </p>
 
             </div>
-
           </div>
-
         </div>
-
-        {/* 🔹 CTA */}
-        <div className="mt-14 flex justify-center">
-
-          <button className="bg-[#AF956C] text-white 
-                            px-10 py-5 rounded-lg
-                            text-sm tracking-wide
-                            transition-all duration-300
-                            shadow-sm
-                            hover:shadow-md">
-            
-            Book This Tour Or Modify This Itinerary
-            
-          </button>
-
-        </div>
-
       </div>
 
     </section>

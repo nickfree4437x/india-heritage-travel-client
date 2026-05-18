@@ -1,19 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 
-export default function HeroSection() {
+export default function Hero() {
   return (
     <section className="relative h-[93vh] w-full overflow-hidden">
 
-      {/* Background Image with Zoom Effect */}
-      <motion.div
-        initial={{ scale: 1.08 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 20, ease: "easeOut" }}
-        className="absolute inset-0"
-      >
+      {/* Background Image */}
+      <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="/adventure/wildlife/hero.jpg"
           alt="Heritage & Wildlife Tour"
@@ -21,35 +15,33 @@ export default function HeroSection() {
           priority
           className="object-cover object-center will-change-transform"
         />
-      </motion.div>
+      </div>
 
-      {/* Gradient Overlay (Same as previous Hero) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/55" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
-        {/* Title */}
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          className="text-4xl md:text-5xl font-bold mb-4"
-        >
-          A Journey through Heritage & Wildlife
-        </motion.h1>
+        <h1
+          className="
+            max-w-[700px]
+            text-3xl md:text-4xl
+            font-[600]
+            leading-[1.1]
+            tracking-[0.04em]
+            mb-4
 
-        {/* Description */}
-        <motion.p
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.4, delay: 0.6 }}
-          className="max-w-2xl text-md md:text-md text-gray-200"
+            opacity-0 translate-y-10
+            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
+          "
         >
-          Explore India's rich heritage along with breathtaking wildlife experiences.
-        </motion.p>
+          A Journey through Heritage<br />
+          & Wildlife
+        </h1>
 
       </div>
+
     </section>
   );
 }

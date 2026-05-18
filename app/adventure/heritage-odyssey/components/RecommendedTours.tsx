@@ -26,15 +26,20 @@ const tours = [
 
 export default function RecommendedTours() {
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-20">
+    <section className="max-w-[1400px] mx-auto px-6 py-8">
 
       {/* 🔹 Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-14 tracking-wide">
+      <h2 className="text-[20px] sm:text-[24px] md:text-[28px]
+          font-semibold
+          text-center
+          mb-6 sm:mb-8
+          text-[#2c2c2c]
+          tracking-wide">
         Recommended Tours
       </h2>
 
       {/* 🔹 Cards */}
-      <div className="grid md:grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-3 gap-10 mb-10">
 
         {tours.map((tour, index) => (
           <Link key={index} href={tour.slug} className="block group">
@@ -67,7 +72,11 @@ export default function RecommendedTours() {
                   {tour.title}
                 </h3>
 
-                <p className="text-gray-700 text-[14px] leading-relaxed line-clamp-4">
+                <p className="text-gray-700
+                              text-[13px]
+                              font-light
+                              leading-relaxed
+                              line-clamp-4">
                   {tour.desc}
                 </p>
 

@@ -1,83 +1,231 @@
-import { Briefcase, Leaf, Users, User } from "lucide-react";
+"use client";
+
+import {
+  Briefcase,
+  Leaf,
+  Users,
+  PersonStanding,
+} from "lucide-react";
 
 export default function SuitableFor() {
-  const places = [
-    "Mumbai",
-    "Cochin",
-    "Kumarakom",
-    "Alleppey",
-    "Thekkady",
-    "Munnar",
-    "Mumbai",
-  ];
 
   const items = [
     {
-      icon: <Briefcase size={40} />,
+      icon: Briefcase,
       title: "Corporate Travel",
     },
     {
-      icon: <Leaf size={40} />,
-      title: "Spiritual, Cultural, Artistic & Gastronomic",
+      icon: Leaf,
+      title:
+        "Spiritual, Cultural, Artistic & Gastronomic Interests",
     },
     {
-      icon: <Users size={40} />,
+      icon: Users,
       title: "Friends & Family Travel",
     },
     {
-      icon: <User size={40} />,
+      icon: PersonStanding,
       title: "Solo Travel",
     },
   ];
 
+  const locations = [
+    { name: "Mumbai", id: "mumbai" },
+    { name: "Cochin", id: "cochin" },
+    { name: "Kumarakom", id: "kumarakom" },
+    { name: "Alleppey", id: "alleppey" },
+    { name: "Thekkady", id: "thekkady" },
+    { name: "Munnar", id: "munnar" },
+    { name: "Mumbai", id: "mumbai2" },
+  ];
+
   return (
-    <section className="bg-[#f8f6f2]">
+    <>
 
-      {/* 🔥 Top Links Bar */}
-      <div className="bg-[#9b7a50] text-white py-3">
-        <div className="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-4 text-sm md:text-base">
-          
-          {places.map((place, index) => (
-            <span key={index} className="flex items-center gap-4">
-              
-              <span className="cursor-pointer hover:underline">
-                {place}
-              </span>
+      {/* 🔥 STICKY NAV */}
+      <div className="sticky top-0 z-30 bg-[#9A7A58] shadow-sm">
 
-              {index !== places.length - 1 && <span>|</span>}
-            </span>
-          ))}
+        {/* 🔥 MOBILE SCROLL CONTAINER */}
+        <div className="overflow-x-auto scrollbar-hide">
 
+          <div
+            className="
+              min-w-max
+              max-w-6xl mx-auto
+
+              flex items-center
+              justify-start sm:justify-center
+
+              px-3 sm:px-5 lg:px-6
+              py-3 sm:py-4
+
+              gap-3 sm:gap-5 md:gap-6
+            "
+          >
+
+            {locations.map((loc, index) => (
+
+              <div
+                key={loc.id}
+                className="
+                  flex items-center
+                  gap-3 sm:gap-5 md:gap-6
+                  shrink-0
+                "
+              >
+
+                <a
+                  href={`#${loc.id}`}
+                  className="
+                    whitespace-nowrap
+
+                    text-[11px]
+                    sm:text-[13px]
+                    md:text-[14px]
+
+                    font-medium
+                    tracking-[0.02em]
+
+                    text-white/95
+                    hover:text-white hover:underline
+
+                    transition-all duration-300
+                  "
+                >
+                  {loc.name}
+                </a>
+
+                {index !== locations.length - 1 && (
+                  <span className="text-white/40 shrink-0">
+                    |
+                  </span>
+                )}
+
+              </div>
+
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* 🔥 Suitable For Content */}
-      <div className="py-16">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          
-          <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-gray-800">
+      {/* 🎯 MAIN SECTION */}
+      <section
+        className="
+          bg-[#f8f6f2]
+
+          pt-10 sm:pt-12
+          pb-8 sm:pb-10
+
+          px-4 sm:px-6
+        "
+      >
+
+        <div className="max-w-7xl mx-auto">
+
+          {/* 🏷 HEADING */}
+          <h2
+            className="
+              text-[20px]
+              sm:text-[24px]
+              md:text-[26px]
+
+              font-semibold
+              tracking-wide
+
+              text-center
+              text-[#2c2c2c]
+
+              mb-6 sm:mb-8
+            "
+          >
             Suitable For
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
-            {items.map((item, index) => (
-              <div key={index} className="flex flex-col items-center gap-4">
-                
-                <div className="text-[#9b7a50]">
-                  {item.icon}
+          {/* 🎯 CARDS */}
+          <div
+            className="
+              grid grid-cols-2
+              md:grid-cols-4
+
+              gap-x-4
+              sm:gap-x-8
+              md:gap-x-12
+
+              gap-y-8
+              sm:gap-y-10
+
+              text-center
+            "
+          >
+
+            {items.map((item, index) => {
+
+              const Icon = item.icon;
+
+              return (
+
+                <div
+                  key={index}
+                  className="
+                    group
+                    flex flex-col items-center
+
+                    gap-3 sm:gap-4
+
+                    px-2 sm:px-4 md:px-6
+                    py-4 sm:py-6 md:py-8
+
+                    rounded-md
+
+                    transition-all duration-500
+                  "
+                >
+
+                  {/* 🔥 ICON */}
+                  <Icon
+                    size={34}
+                    className="
+                      text-[#9A7A58]
+
+                      transition-all duration-500
+
+                      sm:w-[38px]
+                      sm:h-[38px]
+
+                      md:w-[42px]
+                      md:h-[42px]
+                    "
+                  />
+
+                  {/* 🔥 TEXT */}
+                  <p
+                    className="
+                      font-light
+                      text-[#3a3a3a]
+
+                      text-[12px]
+                      sm:text-[13px]
+                      md:text-[13px]
+
+                      leading-relaxed
+
+                      max-w-[220px]
+                    "
+                  >
+                    {item.title}
+                  </p>
+
                 </div>
 
-                <p className="text-sm md:text-base font-medium text-gray-700 text-center">
-                  {item.title}
-                </p>
+              );
+            })}
 
-              </div>
-            ))}
           </div>
 
         </div>
-      </div>
 
-    </section>
+      </section>
+
+    </>
   );
 }

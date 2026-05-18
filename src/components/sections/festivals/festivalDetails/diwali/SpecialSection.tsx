@@ -64,13 +64,13 @@ export default function SpecialSection() {
 
   return (
     <section
-      className="bg-[#f4f0ea] py-2 sm:py-6 md:py-6"
+      className="bg-[#f8f6f2] py-2 sm:py-6 md:py-6 scroll-mt-20 md:scroll-mt-24"
       id="special"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* HEADING */}
-        <h2 className="text-[20px] sm:text-[24px] md:text-[26px] font-semibold text-center mb-4 sm:mb-4 text-[#2c2c2c] tracking-wide">
+        <h2 className="text-[20px] sm:text-[24px] md:text-[26px] font-semibold text-center mb-4 sm:mb-8 text-[#2c2c2c] tracking-wide">
           What makes this trip Special?
         </h2>
 

@@ -14,7 +14,7 @@ export default function OdysseyCitiesSection() {
       id: "mandawa",
       title: "Mandawa – A Town Of Timeless Heritage And Beauty",
       desc: "Mandawa is a town where walls speak tales of artistry. This Rajasthani gem have its streets decorated with beautiful frescoes and havelis, each a live canvas of history and beauty. This is a living gallery of Rajasthan’s architectural magnificence and the stories echoes on its walls.",
-      img: "/adventure/odyssey/mandawa.jpg",
+      img: "/adventure/odyssey/mandawa.jpeg",
     },
     {
       id: "jaipur",
@@ -37,28 +37,29 @@ export default function OdysseyCitiesSection() {
   ];
 
   return (
-    <div className="space-y-20">
+    <div className="space-y-16">
 
       {cities.map((item) => (
-        <div key={item.id} id={item.id} className="w-full">
+        <div key={item.id} id={item.id} className="w-full scroll-mt-24 md:scroll-mt-28">
 
           {/* TITLE */}
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-[#2c2c2c]">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             {item.title}
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-700 mb-8 leading-relaxed text-[15px] text-justify">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14px] text-justify">
             {item.desc}
           </p>
 
           {/* IMAGE */}
-          <div className="relative w-full h-[420px] rounded-md overflow-hidden shadow-md group">
+          <div className="relative w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
             <Image
               src={item.img}
               alt={item.title}
-              fill
-              className="object-cover transition-transform duration-700"
+              width={1200}
+              height={800}
+              className="w-full h-auto max-h-[500px] object-cover"
             />
           </div>
 

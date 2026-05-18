@@ -31,7 +31,7 @@ export default function DestinationSection() {
     {
       id: "orchha",
       title: "Orchha – Echoes Of History In Its Architecture",
-      desc: "Orchha, a small town known for its historical & architectural significance. Explore the blend of Mughal & Rajput architectural style in Jahangir Mahal , beautiful murals showcasing religious themes & scenes from daily life in cours in the Raja mahal. The most famous temple, Raja Ram Temple is unique temple dedicated to Lord Rama..",
+      desc: "Orchha, a small town known for its historical & architectural significance. Explore the blend of Mughal & Rajput architectural style in Jahangir Mahal , beautiful murals showcasing religious themes & scenes from daily life in cours in the Raja mahal. The most famous temple, Raja Ram Temple is unique temple dedicated to Lord Rama.",
       img: "/destination/north-tour/orchha.jpg",
     },
     {
@@ -49,29 +49,54 @@ export default function DestinationSection() {
   ];
 
   return (
-    <div className="space-y-20">
+    <div className="space-y-14 sm:space-y-16 md:space-y-16">
 
       {destinations.map((item) => (
-        <div key={item.id} id={item.id} className="w-full">
+        <div
+          key={item.id}
+          id={item.id}
+          className="max-w-5xl scroll-mt-20 md:scroll-mt-24"
+        >
 
-          {/* TITLE */}
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-[#2c2c2c]">
+          {/* Heading */}
+          <h2
+            className="
+              text-[16px] sm:text-[20px] md:text-[22px]
+              tracking-wide
+              text-[#2c2c2c]
+              font-semibold
+              mb-4
+            "
+          >
             {item.title}
           </h2>
 
-          {/* DESCRIPTION */}
-          <p className="text-gray-700 mb-8 leading-relaxed text-[15px] text-justify">
+          {/* Description */}
+          <p
+            className="
+              text-gray-700
+              mb-6
+              leading-relaxed
+              text-[12px] sm:text-[13px]
+              font-[300]
+              md:text-[14px]
+              text-justify
+            "
+          >
             {item.desc}
           </p>
 
-          {/* IMAGE */}
-          <div className="relative w-full h-[420px] rounded-md overflow-hidden shadow-md group">
+          {/* Image */}
+          <div className="w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
+
             <Image
               src={item.img}
               alt={item.title}
-              fill
-              className="object-cover transition-transform duration-700"
+              width={1200}
+              height={800}
+              className="w-full h-auto max-h-[500px] object-cover"
             />
+
           </div>
 
         </div>

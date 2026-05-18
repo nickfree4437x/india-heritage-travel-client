@@ -125,3 +125,7 @@ nav span {
 .handwritten {
   font-family: var(--font-handwritten), cursive;
 }
+
+html {
+  scroll-behavior: smooth;
+}

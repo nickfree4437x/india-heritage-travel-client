@@ -20,43 +20,40 @@ export default function BookingCard() {
       </div>
     <div className="p-5">
         {/* Title */}
-        <h3 className="text-[16.5px] font-semibold text-[#AF956C] mb-2 leading-snug">
-          Mystical North India Discovery Tour
+        <h3 className="text-[13px] sm:text-[14px] md:text-[15px] text-center font-medium text-[#AF956C] mb-2 leading-snug tracking-[0.01em]">
+          Ayurveda Journey: Explore the Science of Wellness
         </h3>
 
         {/* Label */}
-        <p className="text-[13.5px] text-gray-800 font-medium mb-3">
+        <p className="text-[12px] sm:text-[13px] md:text-[13.5px] text-center text-gray-800 font-medium mb-3">
           Price-Per Person Starting From:
         </p>
 
         {/* Pricing */}
-        <ul className="text-[13.5px] text-gray-600 space-y-2 mb-5">
+        <ul className="text-[11px] sm:text-[11.5px] md:text-[12px] text-gray-600 space-y-1.5 sm:space-y-2 mb-4 sm:mb-5">
 
           <li className="flex justify-between items-center">
             <span>Pocket Friendly</span>
-            <span className="font-semibold text-gray-800">$1765USD</span>
+            <span className="text-gray-700">$1765USD</span>
           </li>
 
           <li className="flex justify-between items-center">
             <span>Semi Luxury</span>
-            <span className="font-semibold text-gray-800">$2672USD</span>
+            <span className="text-gray-700">$2672USD</span>
           </li>
 
           <li className="flex justify-between items-center">
             <span>Luxury</span>
-            <span className="font-semibold text-gray-800">$5061USD</span>
+            <span className="text-gray-700">$5061USD</span>
           </li>
 
         </ul>
-
-        {/* Divider */}
-        {/* <div className="h-px bg-[#eee7dd] mb-4"></div> */}
 
         {/* CTA */}
         <button className="w-full bg-[#AF956C] text-white py-2.5 rounded-full 
                            text-sm tracking-wide
                            transition-all duration-300
-                           hover:bg-[#8f7654] hover:shadow-sm hover:-translate-y-[1px]">
+                           hover:bg-[#8f7654] hover:shadow-sm">
           Book This Journey
         </button>
 

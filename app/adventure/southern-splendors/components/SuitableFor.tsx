@@ -4,75 +4,354 @@ import { Briefcase, Leaf, Users, User } from "lucide-react";
 
 export default function SuitableFor() {
   return (
-    <section className="w-full bg-[#f4f0ea] pb-16">
+    <>
+      {/* 🔥 STICKY LOCATION BAR */}
+      <div className="sticky top-0 z-30 bg-[#9A7A58] shadow-sm">
 
-      {/* 🔥 TOP LOCATION BAR (CENTERED EXACT) */}
-      <div className="bg-[#9b7a50] text-white py-3">
-        <div className="flex justify-center items-center flex-wrap text-sm md:text-base font-medium gap-3">
+        {/* 🔥 MOBILE SCROLL WRAPPER */}
+        <div className="overflow-x-auto scrollbar-hide">
 
-          {[
-            "Mumbai",
-            "Cochin",
-            "Alleppey",
-            "Thekkady",
-            "Munnar",
-            "Ooty",
-            "Mysore",
-            "Hassan",
-            "Hampi",
-          ].map((place, i) => (
-            <span key={i} className="flex items-center gap-3">
-              <a
-                href={`#${place.toLowerCase()}`}
-                className="hover:underline"
-              >
-                {place}
-              </a>
-              {i !== 8 && <span>|</span>}
-            </span>
-          ))}
+          <div
+            className="
+              min-w-max
+              max-w-6xl mx-auto
+
+              flex items-center
+              justify-start sm:justify-center
+
+              px-3 sm:px-5 lg:px-6
+              py-3 sm:py-4
+
+              gap-3 sm:gap-5 md:gap-6
+            "
+          >
+
+            <a
+              href="#mumbai"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Mumbai
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#cochin"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Cochin
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#alleppey"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Alleppey
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#thekkady"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Thekkady
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#munnar"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Munnar
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#ooty"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Ooty
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#mysore"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Mysore
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#hassan"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Hassan
+            </a>
+
+            <span className="text-white/40 shrink-0">|</span>
+
+            <a
+              href="#hampi"
+              className="
+                whitespace-nowrap
+                text-[11px] sm:text-[13px] md:text-[14px]
+                font-medium
+                tracking-[0.02em]
+                text-white/95
+                hover:text-white
+                transition-all duration-300
+                shrink-0 hover:underline
+              "
+            >
+              Hampi
+            </a>
+
+          </div>
 
         </div>
+
       </div>
 
-      {/* 🎯 TITLE */}
-      <h2 className="text-center text-3xl md:text-4xl font-semibold text-[#2c2c2c] mt-16 mb-14">
-        Suitable For
-      </h2>
+      {/* 🎯 MAIN SECTION */}
+      <section className="bg-[#f8f6f2] pt-10 sm:pt-12 pb-8 sm:pb-10 px-4 sm:px-6">
 
-      {/* 🔥 SIMPLE ICONS (NO CARDS) */}
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 text-center px-6">
+        {/* 🏷 Heading */}
+        <h2
+          className="
+            text-[20px] sm:text-[24px] md:text-[26px]
+            font-semibold
+            text-center
+            mb-6 sm:mb-8
+            text-[#2c2c2c]
+            tracking-wide
+          "
+        >
+          Suitable For
+        </h2>
 
-        {/* Item */}
-        <div className="flex flex-col items-center gap-4">
-          <Briefcase className="w-12 h-12 text-[#9b7a50]" />
-          <p className="font-medium text-gray-700">
-            Corporate Travel
-          </p>
+        {/* 🎯 Icons Grid */}
+        <div
+          className="
+            grid grid-cols-2 md:grid-cols-4
+            gap-x-4 sm:gap-x-8 md:gap-x-12
+            gap-y-8 sm:gap-y-10
+            max-w-7xl mx-auto
+            text-center
+          "
+        >
+
+          {/* ITEM */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              transition-all duration-500
+            "
+          >
+            <Briefcase
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Corporate Travel
+            </p>
+          </div>
+
+          {/* ITEM */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              transition-all duration-500
+            "
+          >
+            <Leaf
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Spiritual, Cultural, Artistic &
+              Gastronomic Interests
+            </p>
+          </div>
+
+          {/* ITEM */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              transition-all duration-500
+            "
+          >
+            <Users
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Friends & Family Travel
+            </p>
+          </div>
+
+          {/* ITEM */}
+          <div
+            className="
+              group flex flex-col items-center
+              gap-3 sm:gap-4
+              px-2 sm:px-4 md:px-6
+              py-4 sm:py-6 md:py-8
+              transition-all duration-500
+            "
+          >
+            <User
+              size={34}
+              className="
+                text-[#9A7A58]
+                transition-all duration-500
+                sm:w-[38px] sm:h-[38px]
+                md:w-[42px] md:h-[42px]
+              "
+            />
+
+            <p
+              className="
+                font-light
+                text-[#3a3a3a]
+                text-[12px] sm:text-[13px] md:text-[13px]
+                leading-relaxed
+              "
+            >
+              Solo Travel
+            </p>
+          </div>
+
         </div>
 
-        <div className="flex flex-col items-center gap-4">
-          <Leaf className="w-12 h-12 text-[#9b7a50]" />
-          <p className="font-medium text-gray-700 leading-snug">
-            Spiritual, Cultural, Artistic & Gastronomic Interests
-          </p>
-        </div>
-
-        <div className="flex flex-col items-center gap-4">
-          <Users className="w-12 h-12 text-[#9b7a50]" />
-          <p className="font-medium text-gray-700">
-            Friends & Family Travel
-          </p>
-        </div>
-
-        <div className="flex flex-col items-center gap-4">
-          <User className="w-12 h-12 text-[#9b7a50]" />
-          <p className="font-medium text-gray-700">
-            Solo Travel
-          </p>
-        </div>
-
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

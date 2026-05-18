@@ -24,58 +24,71 @@ export default function StickyNav() {
   };
 
   return (
-    <div
-      className="
-        sticky top-0 z-50
-        bg-[#9A7A58]
-        text-white
-        overflow-x-auto
-        shadow-sm
-      "
-    >
+    <div className="sticky top-0 z-50 bg-[#9A7A58] shadow-sm">
 
-      <div
-        className="
-          max-w-7xl mx-auto
-          px-4 sm:px-6
-          py-4
-          flex justify-center items-center
-          gap-4 sm:gap-5 md:gap-6
-          whitespace-nowrap
-        "
-      >
+      {/* 🔥 MOBILE HORIZONTAL SCROLL */}
+      <div className="overflow-x-auto scrollbar-hide">
 
-        {sections.map((item, index) => (
-          <div
-            key={item.id}
-            className="flex items-center gap-4 sm:gap-5 md:gap-6"
-          >
+        <div
+          className="
+            min-w-max
+            max-w-7xl mx-auto
 
-            {/* 🔥 LINK */}
-            <button
-              onClick={() => scrollToSection(item.id)}
+            flex items-center
+            justify-start sm:justify-center
+
+            px-3 sm:px-5 lg:px-6
+            py-3 sm:py-4
+
+            gap-3 sm:gap-5 md:gap-6
+          "
+        >
+
+          {sections.map((item, index) => (
+
+            <div
+              key={item.id}
               className="
-                text-[11px]
-                sm:text-[12px]
-                md:text-[13px]
-                font-[400]
-                tracking-[0.02em]
-                hover:underline
-                transition-all duration-300
+                flex items-center
+                gap-3 sm:gap-5 md:gap-6
+                shrink-0
               "
             >
-              {item.label}
-            </button>
 
-            {/* 🔥 SEPARATOR */}
-            {index !== sections.length - 1 && (
-              <span className="opacity-50 text-[11px] sm:text-xs">
-                |
-              </span>
-            )}
+              {/* 🔥 NAV BUTTON */}
+              <button
+                onClick={() => scrollToSection(item.id)}
+                className="
+                  whitespace-nowrap
 
-          </div>
-        ))}
+                  text-[11px]
+                  sm:text-[12px]
+                  md:text-[13px]
+
+                  font-[400]
+                  tracking-[0.02em]
+
+                  text-white/95
+                  hover:text-white hover:underline
+
+                  transition-all duration-300
+                "
+              >
+                {item.label}
+              </button>
+
+              {/* 🔥 DIVIDER */}
+              {index !== sections.length - 1 && (
+                <span className="text-white/40 shrink-0">
+                  |
+                </span>
+              )}
+
+            </div>
+
+          ))}
+
+        </div>
 
       </div>
 
