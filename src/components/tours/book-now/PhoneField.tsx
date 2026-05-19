@@ -29,7 +29,7 @@ export default function PhoneField({
 
         overflow-hidden
 
-        focus-within:border-[#9A7A58]
+        focus-within:border-[#9A7A58] transition 
       "
     >
 

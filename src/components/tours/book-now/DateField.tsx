@@ -29,10 +29,10 @@ export default function DateField() {
           tracking-[0.2px]
 
           focus:outline-none
-          focus:border-[#9A7A58]
+          focus:border-[#9A7A58] 
 
-          cursor-pointer
-        "
+          cursor-pointer transition 
+        " 
       />
 
     </div>

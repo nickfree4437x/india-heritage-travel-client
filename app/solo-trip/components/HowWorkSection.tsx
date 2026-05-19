@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HowItWorksSection() {
   return (
-    <section className="w-full bg-[#f8f6f2] py-12 md:py-12">
+    <section className="w-full bg-[#f8f6f2] py-2 md:py-8">
 
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
@@ -12,7 +12,7 @@ export default function HowItWorksSection() {
         <p
           className="
             text-[11px]
-            tracking-[0.2em]
+            tracking-[0.1em]
             uppercase
 
             text-[#8b7355]
@@ -52,7 +52,7 @@ export default function HowItWorksSection() {
             max-w-4xl
             mx-auto
 
-            space-y-14
+            space-y-4
 
             text-[14px]
             md:text-[15px]
@@ -66,10 +66,10 @@ export default function HowItWorksSection() {
         >
 
           {/* BLOCK */}
-          <div className="space-y-5">
+          <div className="space-y-2">
 
             <h3
-              className="font-semibold text-gray-800 text-[13px] md:text-[14px] mb-4 leading-[1.7]"
+              className="font-semibold text-gray-800 text-[13px] md:text-[14px] leading-[1.7]"
               style={{
                 fontFamily:
                   '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
@@ -79,11 +79,7 @@ export default function HowItWorksSection() {
             </h3>
 
             <div
-              className="text-gray-500 text-[12px] md:text-[13px] mb-4 font-[350] leading-[1.7]"
-              style={{
-                fontFamily:
-                  '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
-              }}
+              className="text-gray-500 text-[12px] md:text-[13px] mb-4  leading-[1.7]"
             >
               <p className="mt-4">
                 Before anything else, I simply want to understand you.
@@ -103,7 +99,7 @@ export default function HowItWorksSection() {
 
               <p className="mt-4">
                 We can connect over a Google Meet or a call and simply discuss
-                ideas together — like two people planning a meaningful journey,
+                ideas together - like two people planning a meaningful journey,
                 not just a package.
               </p>
             </div>
@@ -124,12 +120,7 @@ export default function HowItWorksSection() {
             </h3>
 
             <div
-              className="text-gray-500 text-[12px] md:text-[13px] mb-4 font-[350] leading-[1.7]"
-              style={{
-                fontFamily:
-                  '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
-              }}
-            >
+              className="text-gray-500 text-[12px] md:text-[13px] mb-4  leading-[1.7]">
               <p>
                 Every route is designed around your comfort, interests,
                 energy, and travel style.
@@ -145,7 +136,7 @@ export default function HowItWorksSection() {
               </p>
 
               <p className="mt-4">
-                No two journeys feel the same here — because no two women
+                No two journeys feel the same here - because no two women
                 travel the same way.
               </p>
             </div>
@@ -166,14 +157,9 @@ export default function HowItWorksSection() {
             </h3>
 
             <div
-              className="text-gray-500 text-[12px] md:text-[13px] mb-4 font-[350] leading-[1.7]"
-              style={{
-                fontFamily:
-                  '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
-              }}
-            >
+              className="text-gray-500 text-[12px] md:text-[13px] mb-4  leading-[1.7]">
               <p>
-                The hotels we work with are handpicked carefully — places we
+                The hotels we work with are handpicked carefully - places we
                 already know, trust, and regularly work with.
               </p>
 
@@ -192,10 +178,10 @@ export default function HowItWorksSection() {
         </div>
 
         {/* DRIVERS + SUPPORT SECTION */}
-        <div className="pt-24 md:pt-28">
+        <div className="pt-6 md:pt-20">
 
           {/* FIXED GRID */}
-          <div className="grid lg:grid-cols-[0.9fr_1.3fr] gap-14 xl:gap-20 items-center">
+          <div className="grid lg:grid-cols-[0.9fr_1.3fr] gap-14 xl:gap-16 items-star">
 
             {/* LEFT IMAGE */}
             <div className="relative order-2 lg:order-1">
@@ -205,7 +191,7 @@ export default function HowItWorksSection() {
                   relative
                   w-full
                   h-[450px]
-                  md:h-[500px]
+                  md:h-[450px]
 
                   overflow-hidden
                   rounded-sm
@@ -226,7 +212,7 @@ export default function HowItWorksSection() {
             {/* RIGHT CONTENT */}
             <div
               className="
-                space-y-14
+                space-y-4
                 order-1 lg:order-2
 
                 w-full
@@ -234,7 +220,7 @@ export default function HowItWorksSection() {
             >
 
               {/* BLOCK */}
-              <div className="space-y-5">
+              <div className="space-y-4">
 
                 <h3
                   className="font-semibold text-gray-800 text-[13px] md:text-[14px] leading-[1.7]"
@@ -247,12 +233,7 @@ export default function HowItWorksSection() {
                 </h3>
 
                 <div
-                  className="text-gray-500 text-[12px] md:text-[13px] font-[350] leading-[1.7]"
-                  style={{
-                    fontFamily:
-                      '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
-                  }}
-                >
+                  className="text-gray-500 text-[12px] md:text-[13px]  leading-[1.7] font-light font-justify">
                   <p>
                     This part is very important to me.
                   </p>
@@ -284,7 +265,7 @@ export default function HowItWorksSection() {
               </div>
 
               {/* BLOCK */}
-              <div className="space-y-5 -mt-4">
+              <div className="space-y-4">
 
                 <h3
                   className="font-semibold text-gray-800 text-[13px] md:text-[14px] leading-[1.7]"
@@ -297,19 +278,14 @@ export default function HowItWorksSection() {
                 </h3>
 
                 <div
-                  className="text-gray-500 text-[12px] md:text-[13px] mb-4 font-[350] leading-[1.7]"
-                  style={{
-                    fontFamily:
-                      '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
-                  }}
-                >
+                  className="text-gray-500 text-[12px] md:text-[13px] mb-4 font-justify font-light leading-[1.7]">
                   <p>
                     From the moment your trip begins, we stay continuously connected
                     through WhatsApp and calls.
                   </p>
 
                   <p className="mt-4">
-                    So if there’s absolutely anything — even something small —
+                    So if there’s absolutely anything - even something small -
                     you can simply message me directly.
                   </p>
 

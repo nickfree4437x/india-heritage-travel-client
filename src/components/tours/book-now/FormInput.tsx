@@ -37,7 +37,7 @@ export default function FormInput({
         tracking-[0.2px]
 
         focus:outline-none
-        focus:border-[#9A7A58]
+        focus:border-[#9A7A58] transition 
         "
       />
 

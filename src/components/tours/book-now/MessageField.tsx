@@ -33,7 +33,7 @@ export default function MessageField() {
           focus:outline-none
           focus:border-[#9A7A58]
 
-          resize-none
+          resize-none transition 
         "
       />
 

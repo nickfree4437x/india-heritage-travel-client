@@ -27,7 +27,7 @@ export default function MobileMenu({
   const pathname = usePathname();
 
   const navLinks = [
-    { name: "Solo Trip", href: "/solo-trip" },
+    { name: "Solo-Women-Trip", href: "/solo-trip" },
     { name: "Blogs", href: "/blogs" },
     { name: "About Us", href: "/about" },
     { name: "Contact", href: "/contact" },

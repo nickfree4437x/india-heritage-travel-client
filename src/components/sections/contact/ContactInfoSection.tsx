@@ -4,7 +4,7 @@ import { MapPin, Mail, Phone } from "lucide-react";
 
 export default function ContactInfoSection() {
   return (
-    <section className="bg-[#f8f6f2] py-14 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="bg-[#f8f6f2] py-10 sm:py-16 lg:py-20 overflow-hidden">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
@@ -17,7 +17,7 @@ export default function ContactInfoSection() {
               </h2>
 
               {/* TEXT */}
-              <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+              <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-[300] text-justify">
                 Be our guest! Let us know about your dream or need.
                 We’ll transform it into a memorable and luxurious travel
                 experience crafted specially for you.

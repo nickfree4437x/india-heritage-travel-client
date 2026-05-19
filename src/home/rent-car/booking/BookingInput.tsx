@@ -36,6 +36,7 @@ export default function BookingInput({
 
         focus:outline-none
         focus:border-[#9A7A58]
+        transition
       "
     />
   );
