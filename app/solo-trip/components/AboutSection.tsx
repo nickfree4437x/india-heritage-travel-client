@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutSoloWomen() {
   return (
-    <section className="w-full bg-[#f8f6f2] py-8 md:py-12">
+    <section className="w-full bg-[#f8f6f2] py-12 md:py-12">
       <div className="max-w-7xl mx-auto px-5 md:px-8 lg:px-10">
 
         {/* SECTION 1 */}

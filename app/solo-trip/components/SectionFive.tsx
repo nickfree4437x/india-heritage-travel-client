@@ -2,7 +2,7 @@
 
 export default function WomensCircleSection() {
   return (
-    <section className="w-full bg-[#f8f6f2] py-4 md:py-4 overflow-hidden">
+    <section className="w-full bg-[#f8f6f2] py-14 md:py-4 overflow-hidden">
 
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
@@ -335,7 +335,7 @@ export default function WomensCircleSection() {
               <p
                 className="
                   text-[12px]
-                  md:text-[13.5px]
+                  md:text-[13px]
 
                   leading-[2]
 
@@ -349,7 +349,7 @@ export default function WomensCircleSection() {
               <p
                 className="
                   text-[12px]
-                  md:text-[13.5px]
+                  md:text-[13px]
 
                   leading-[2]
 

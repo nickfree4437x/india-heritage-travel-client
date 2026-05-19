@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 
 export default function Hero() {
@@ -22,7 +23,17 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 h-full flex items-end justify-center">
 
-        <div className="w-full flex justify-center pb-14 sm:pb-16 md:pb-20 px-6">
+        <div
+          className="
+            w-full
+            flex
+            justify-center
+            px-6
+            pb-36
+            sm:pb-40
+            md:pb-20
+          "
+        >
 
           <div className="max-w-[620px] w-full text-white">
 
@@ -30,12 +41,16 @@ export default function Hero() {
             <h1
               className="
                 text-left
-                text-[18px] sm:text-[20px] md:text-[22px]
-                font-[400] md:font-[500]
+                text-[18px]
+                sm:text-[20px]
+                md:text-[22px]
+                font-[400]
+                md:font-[500]
                 leading-[1.22]
                 tracking-[-0.03em]
                 mb-5
-                opacity-0 translate-y-10
+                opacity-0
+                translate-y-10
                 animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
               "
             >
@@ -64,7 +79,8 @@ export default function Hero() {
                 tracking-[0.03em]
                 text-white/82
                 font-light
-                opacity-0 translate-y-8
+                opacity-0
+                translate-y-8
                 animate-[fadeUp_1.2s_ease-out_0.6s_forwards]
               "
             >
