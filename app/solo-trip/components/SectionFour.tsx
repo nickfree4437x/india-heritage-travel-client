@@ -8,7 +8,7 @@ import {
   type Variants,
 } from "framer-motion";
 
-export default function WomenSeeSection(): JSX.Element {
+export default function WomenSeeSection() {
   const sectionRef = useRef<HTMLElement | null>(null);
 
   const isInView = useInView(sectionRef, {
