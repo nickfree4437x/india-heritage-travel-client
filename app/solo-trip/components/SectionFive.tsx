@@ -2,31 +2,43 @@
 
 export default function WomensCircleSection() {
   return (
-    <section className="w-full bg-[#efe7dc] py-24 md:py-32">
+    <section className="w-full bg-[#f8f6f2] py-10 md:py-14">
 
-      <div className="max-w-5xl mx-auto px-6 md:px-10 text-center">
+      <div className="max-w-5xl mx-auto px-6 md:px-10">
 
         {/* SECTION LABEL */}
-        <p className="text-[11px] tracking-[0.35em] uppercase text-[#8b7355] mb-5">
+        <p
+          className="
+            text-[11px]
+            tracking-[0.2em]
+            uppercase
+
+            text-[#8b7355]
+
+            text-center
+
+            mb-2
+          "
+        >
           Let’s connect
         </p>
 
         {/* HEADING */}
         <h2
           className="
-            text-[34px]
-            md:text-[56px]
+            text-[20px]
+            sm:text-[24px]
+            md:text-[26px]
 
-            font-[300]
-            leading-[1.08]
-            tracking-[-0.03em]
+            font-semibold
 
-            text-[#1f1f1f]
+            text-center
 
-            max-w-[850px]
-            mx-auto
+            mb-8
 
-            mb-12
+            text-[#2c2c2c]
+
+            tracking-wide
           "
         >
           You don’t have to plan it all alone either
@@ -38,21 +50,26 @@ export default function WomensCircleSection() {
             max-w-3xl
             mx-auto
 
-            space-y-7
+            space-y-5
 
-            text-[14px]
-            md:text-[15px]
+            text-[12px]
+            md:text-[13px]
 
-            leading-[2]
+            leading-[1.9]
             tracking-[0.01em]
 
-            text-[#4d4d4d]
-            font-[300]
+            text-[#5b5b5b]
+            font-[350]
           "
+          style={{
+            fontFamily:
+              '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
+          }}
         >
+
           <p>
             I’ve started creating a small space for women who are thinking
-            about traveling to India - whether it’s this year, someday later,
+            about traveling to India — whether it’s this year, someday later,
             or even just an idea sitting quietly in their mind right now.
           </p>
 
@@ -60,34 +77,77 @@ export default function WomensCircleSection() {
             A space where women can ask questions, share thoughts, connect,
             and feel a little more prepared before taking the leap.
           </p>
+
         </div>
 
         {/* WHAT IT IS */}
-        <div className="mt-16 max-w-2xl mx-auto">
+        <div className="mt-14 max-w-2xl mx-auto">
 
-          <h3 className="text-[18px] tracking-[0.18em] uppercase text-[#1f1f1f] mb-8">
+          <h3
+            className="
+              text-[14px]
+              tracking-[0.16em]
+              uppercase
+
+              text-[#1f1f1f]
+
+              mb-6
+
+              text-center
+            "
+          >
             What It Is
           </h3>
 
           <div
             className="
-              bg-white/70
-              border border-[#ddd2c3]
+              bg-white/80
+              border border-[#e4dbcf]
 
-              rounded-[28px]
+              rounded-[24px]
 
-              px-8 md:px-10
-              py-10
+              px-7 md:px-10
+              py-8 md:py-10
 
-              text-left
+              shadow-[0_4px_20px_rgba(0,0,0,0.03)]
             "
           >
 
-            <p className="text-[15px] leading-[2] text-[#4d4d4d] font-[300] mb-8">
+            <p
+              className="
+                text-[13px]
+                md:text-[14px]
+
+                leading-[1.9]
+
+                text-[#555555]
+                font-[350]
+
+                mb-7
+              "
+              style={{
+                fontFamily:
+                  '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
+              }}
+            >
               A private WhatsApp circle for women travelers interested in India.
             </p>
 
-            <div className="space-y-4 text-[14px] md:text-[15px] text-[#4d4d4d] font-[300]">
+            <div
+              className="
+                space-y-3
+
+                text-[13px]
+                md:text-[14px]
+
+                text-[#555555]
+                font-[350]
+              "
+              style={{
+                fontFamily:
+                  '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
+              }}
+            >
 
               <p>• travel questions</p>
 
@@ -106,44 +166,57 @@ export default function WomensCircleSection() {
         </div>
 
         {/* CTA */}
-        <div className="mt-14">
+        <div className="mt-12 text-center">
 
           <a
             href="YOUR_WHATSAPP_GROUP_LINK"
             target="_blank"
             rel="noopener noreferrer"
             className="
-              inline-flex items-center justify-center
+              inline-flex
+              items-center
+              justify-center
 
               px-8 md:px-10
               py-4
 
               rounded-full
 
-              bg-[#1f1f1f]
+              bg-[#25D366]
               text-white
 
               text-[12px]
-              tracking-[0.15em]
+              tracking-[0.14em]
               uppercase
 
-              hover:bg-[#000]
-              transition-all duration-300
+              shadow-[0_8px_24px_rgba(37,211,102,0.22)]
+
+              hover:bg-[#1ebe5d]
+              hover:scale-[1.02]
+
+              transition-all
+              duration-300
             "
           >
-            👉 Join the Women’s Circle
+            Join the Women’s Circle
           </a>
 
           <p
             className="
               mt-5
 
-              text-[13px]
-              md:text-[14px]
+              text-[12px]
+              md:text-[13px]
 
-              text-[#6b6b6b]
-              font-[300]
+              leading-[1.8]
+
+              text-[#6a6a6a]
+              font-[350]
             "
+            style={{
+              fontFamily:
+                '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
+            }}
           >
             No pressure. No overwhelming travel chats.
             <br />
@@ -155,38 +228,71 @@ export default function WomensCircleSection() {
         {/* FINAL TEXT */}
         <div
           className="
-            mt-24
+            mt-20
 
             max-w-3xl
             mx-auto
 
-            space-y-6
+            space-y-5
 
-            text-[15px]
-            md:text-[16px]
-
-            leading-[2]
-
-            text-[#3d3d3d]
-            font-[300]
+            text-center
           "
         >
-          <p>
+
+          <p
+            className="
+              text-[13px]
+              md:text-[14px]
+
+              text-[#5b5b5b]
+
+              leading-[1.9]
+              font-[350]
+            "
+            style={{
+              fontFamily:
+                '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
+            }}
+          >
             Whenever you feel ready…
           </p>
 
-          <p>
+          <p
+            className="
+              text-[13px]
+              md:text-[14px]
+
+              text-[#5b5b5b]
+
+              leading-[1.9]
+              font-[350]
+            "
+            style={{
+              fontFamily:
+                '"Lucida Sans", "Lucida Sans Unicode", sans-serif',
+            }}
+          >
             I’d genuinely love to help you experience India in a way that
             feels right for you.
           </p>
 
-          <p className="text-[#1f1f1f] text-[18px] md:text-[20px]">
-            👉 Come travel with me
+          <p
+            className="
+              text-[#1f1f1f]
+
+              text-[16px]
+              md:text-[18px]
+
+              font-medium
+            "
+          >
+            Come travel with me
           </p>
 
         </div>
 
       </div>
+
     </section>
   );
 }

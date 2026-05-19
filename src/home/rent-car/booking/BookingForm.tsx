@@ -12,7 +12,7 @@ export default function BookingForm() {
 
         backdrop-blur-sm
 
-        rounded-lg
+        border border-[#ddd2c2] rounded-xl shadow-sm
 
         px-5 sm:px-8 md:px-10
         py-6 sm:py-8 md:py-10

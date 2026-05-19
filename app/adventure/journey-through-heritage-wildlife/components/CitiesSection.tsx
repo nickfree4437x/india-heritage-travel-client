@@ -49,10 +49,10 @@ const cities = [
 
 export default function CitiesSection() {
   return (
-    <div className="space-y-20">
+    <div className="space-y-16">
 
       {cities.map((city) => (
-        <div key={city.id} id={city.id} className="w-full">
+        <div key={city.id} id={city.id} className="w-full scroll-mt-24 md:scroll-mt-28">
 
           {/* TITLE */}
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
@@ -60,7 +60,7 @@ export default function CitiesSection() {
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14.5px] text-justify">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14px] text-justify">
             {city.desc}
           </p>
 

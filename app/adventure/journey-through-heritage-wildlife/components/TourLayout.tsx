@@ -10,7 +10,7 @@ export default function TourLayout({
   return (
 
     /* 🔥 FULL WIDTH BG */
-    <section className="w-full bg-[#f4f0ea]">
+    <section className="w-full bg-[#f8f6f2]">
 
       {/* 🔥 CONTAINER */}
       <div

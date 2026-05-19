@@ -28,7 +28,7 @@ export default function Itinerary() {
               Day 1–3: Delhi
             </h3>
 
-            <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p>
                When you reach at the Delhi Airport, we’ll welcome you with a sign board and take you to your well-prepared hotel for a comfortable stay.
               </p>
@@ -57,7 +57,7 @@ export default function Itinerary() {
               </div>
 
               {/* TEXT */}
-              <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                  We’ll manage your journey based on your schedule and preferences, inviting you to discover Delhi’s perfect mixture of history and modern vibrancy.
                 </p>
@@ -95,7 +95,7 @@ export default function Itinerary() {
                 </div>
               </div>
 
-              <div className="space-y-3 text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+              <div className="space-y-3 text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                   An authentic Rajasthan town that immerses you in its traditional & rural life. It’s an open-art gallery where each step uncovers unique architecture and vibrant mural paintings.
                 </p>
@@ -119,7 +119,7 @@ export default function Itinerary() {
             <h3 className="text-[17px] md:text-lg font-medium text-red-500">
               Day 4-5: Pushkar
             </h3>
-            <p className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+            <p className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
              A beautiful town in India, is the most popular tourist destination worldwide. This place is also considered among the most sacred pilgrim sites. The most famous tourist attraction here is the Brahma temple, which attracts thousands of devotees and tourists worldwide.
             </p>
 
@@ -136,7 +136,7 @@ export default function Itinerary() {
                </div>
               </div>
 
-              <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                  Explore the serene Pushkar Lake which consist of 52 ghats & the water around each ghat is believed to possess special medicinal powers.
                 </p>
@@ -161,7 +161,7 @@ export default function Itinerary() {
               Day 6-7: Agra
             </h3>
 
-            <p className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+            <p className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
              Arrive in Bundi, explore the stunning Bundi Palace, and have local Rajasthani cuisin
             </p>
 
@@ -178,7 +178,7 @@ export default function Itinerary() {
                </div>
               </div>
 
-              <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                  Wander through the old town’s blue-painted houses and visit Rani Ji ki Baori. Discover Taragarh Fort and take a boat ride on Nawal Sagar Lake.
                 </p>
@@ -201,7 +201,7 @@ export default function Itinerary() {
              Day 6-8: Ranthambore
             </h3>
 
-            <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p>
                 Explore the another side of India with abundance of Fauna & wildlife adventure with a thrilling jungle safari in Ranthambore National Park. Fortunate enough to see the majestic tigers and diverse wildlife in their natural habitat.
               </p>
@@ -219,7 +219,7 @@ export default function Itinerary() {
                </div>
               </div>
 
-              <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                  Begin your day with another thrilling safari, exploring different zones of the park.
                 </p>
@@ -254,7 +254,7 @@ export default function Itinerary() {
                </div>
               </div>
 
-              <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                   Jaipur, also known as the Pink city, is a major sightseeing destination in Rajasthan. 
                   Hawa mahal & Jal mahal are most famous iconic places to visit. 
@@ -280,7 +280,7 @@ export default function Itinerary() {
               Day 10-11: Agra
             </h3>
 
-            <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p className="mt-4">
                 Agra the beautiful city on the banks of Yamuna & is a city to the most romantic story ever existed. You can take in the stunning sunset view of the Taj Mahal from the banks of the Yamuna River.
               </p>
@@ -298,7 +298,7 @@ export default function Itinerary() {
                 </div>
               </div>
 
-              <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                  If time allows, you can also explore the magnificent Red Fort on the same day. Apart from this, consider an early morning visit the next day to witness the beautiful sunrise at the Taj Mahal which will catch your eyes forever & leaves a lasting impression.
                 </p>
@@ -321,7 +321,7 @@ export default function Itinerary() {
               Day 12: Delhi
             </h3>
 
-            <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p className="mt-4">
                Reaching delhi you’ve two options, you can either relax ay your hotel for preparation of the departure of the next day. 
               </p>
@@ -339,7 +339,7 @@ export default function Itinerary() {
                 </div>
               </div>
 
-              <div className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+              <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
                  Alternatively, if you’re feeling energetic and wish to explore more, Delhi also offers a variety of markets to visit: Chandni Chowk Market, the bustling Textile Market (Wholesale Market), the Book Market, and the attracting Spice Market. If your interests also lean towards art and architecture, you can consider visiting the Fateh Puri Mosque, Sis Ganj Gurudwara, Jain Temple, and the Shiva Temple, Gurudwara Bangla Sigh Saheb. The choice is yours, made as your pace and preferences.
                 </p>
@@ -367,7 +367,7 @@ export default function Itinerary() {
                 </div>
               </div>
 
-              <p className="text-gray-700 text-[13.5px] md:text-[14px] font-[300] leading-relaxed text-justify">
+              <p className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 After discovering & exploring & taking back the beautiful memories from India, you’re all set ready for your journey back to your home. Your dedicated driver will ensure you reach the airport promptly on time, in accordance with your flight schedule.
                 Safe travels!
               </p>

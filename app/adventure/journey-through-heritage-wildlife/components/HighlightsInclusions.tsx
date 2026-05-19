@@ -53,8 +53,8 @@ export default function HighlightsInclusions() {
             <ul
               className="
                 space-y-3
-                text-[#555]
-                text-[12px] sm:text-[13px]
+                text-[#555] font-light
+                text-[11px] sm:text-[12px]
               "
             >
 
@@ -151,7 +151,7 @@ export default function HighlightsInclusions() {
                     <p
                       className="
                         text-[10px] sm:text-[11px]
-                        leading-tight
+                        leading-tight font-light
                         text-[#555]
                       "
                     >

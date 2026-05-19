@@ -30,7 +30,7 @@ export default function Hero() {
             className="
                 text-[18px] sm:text-[22px] md:text-[24px]
 
-                font-[350]
+                font-[400]
                 leading-[1.22]
                 tracking-[-0.03em]
 

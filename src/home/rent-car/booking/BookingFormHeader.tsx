@@ -9,7 +9,7 @@ export default function BookingFormHeader() {
           text-[16px] sm:text-[18px] md:text-[20px]
           font-medium
           text-[#8b6a3d]
-          tracking-wide
+          tracking-wide mb-4
         "
       >
         If you want to rent a car with us,

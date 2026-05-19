@@ -132,7 +132,7 @@ export default function RecommendedTours() {
                     className="
                       text-[16px] sm:text-[17px]
                       font-semibold
-                      text-[#AF956C]
+                      text-red-500
                       leading-snug
                       group-hover:underline
                     "

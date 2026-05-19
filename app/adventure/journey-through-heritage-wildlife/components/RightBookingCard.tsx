@@ -63,8 +63,7 @@ export default function RightBookingCard() {
             tracking-wide
             transition-all duration-300
             hover:bg-[#8f7654]
-            hover:shadow-sm
-            hover:-translate-y-[1px]"
+            hover:shadow-sm"
         >
           Book This Journey
         </button>

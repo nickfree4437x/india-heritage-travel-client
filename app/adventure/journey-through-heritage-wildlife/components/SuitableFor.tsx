@@ -11,64 +11,91 @@ export default function SuitableFor() {
   return (
     <>
       {/* 🔥 STICKY NAV */}
-      <div className="sticky top-0 z-30 bg-[#9A7A58] text-white overflow-x-auto">
+      <div className="sticky top-0 z-30 bg-[#9A7A58] text-white shadow-sm">
+        <div className="overflow-x-auto scrollbar-hide">
+          
+          {/* CENTERED NAV */}
+          <div className="flex justify-center min-w-max">
+            <div
+              className="
+                flex items-center
+                px-4 sm:px-6
+                py-3 sm:py-4
 
-        <div
-          className="
-            max-w-6xl mx-auto
-            px-4 sm:px-6
-            py-4
-            flex justify-center items-center
-            gap-4 sm:gap-6
-            text-[12px] sm:text-[13px] md:text-[15px]
-            font-medium
-            whitespace-nowrap
-          "
-        >
-          <a href="#delhi" className="hover:underline">
-            Delhi
-          </a>
+                gap-3 sm:gap-5 md:gap-6
 
-          <span className="opacity-60">|</span>
+                text-[11px] sm:text-[13px] md:text-[15px]
+                font-medium
+                whitespace-nowrap
+              "
+            >
+              <a
+                href="#delhi"
+                className="hover:underline transition-colors shrink-0"
+              >
+                Delhi
+              </a>
 
-          <a href="#mandawa" className="hover:underline">
-            Mandawa
-          </a>
+              <span className="opacity-60 shrink-0">|</span>
 
-          <span className="opacity-60">|</span>
+              <a
+                href="#mandawa"
+                className="hover:underline transition-colors shrink-0"
+              >
+                Mandawa
+              </a>
 
-          <a href="#pushkar" className="hover:underline">
-            Pushkar
-          </a>
+              <span className="opacity-60 shrink-0">|</span>
 
-          <span className="opacity-60">|</span>
+              <a
+                href="#pushkar"
+                className="hover:underline transition-colors shrink-0"
+              >
+                Pushkar
+              </a>
 
-          <a href="#bundi" className="hover:underline">
-            Bundi
-          </a>
+              <span className="opacity-60 shrink-0">|</span>
 
-          <span className="opacity-60">|</span>
+              <a
+                href="#bundi"
+                className="hover:underline transition-colors shrink-0"
+              >
+                Bundi
+              </a>
 
-          <a href="#ranthambore" className="hover:underline">
-            Ranthambore
-          </a>
+              <span className="opacity-60 shrink-0">|</span>
 
-          <span className="opacity-60">|</span>
+              <a
+                href="#ranthambore"
+                className="hover:underline transition-colors shrink-0"
+              >
+                Ranthambore
+              </a>
 
-          <a href="#jaipur" className="hover:underline">
-            Jaipur
-          </a>
+              <span className="opacity-60 shrink-0">|</span>
 
-          <span className="opacity-60">|</span>
+              <a
+                href="#jaipur"
+                className="hover:underline transition-colors shrink-0"
+              >
+                Jaipur
+              </a>
 
-          <a href="#agra" className="hover:underline">
-            Agra
-          </a>
+              <span className="opacity-60 shrink-0">|</span>
+
+              <a
+                href="#agra"
+                className="hover:underline transition-colors shrink-0"
+              >
+                Agra
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* 🎯 MAIN SECTION */}
-      <section className="bg-[#f4f0ea] pt-10 sm:pt-12 pb-8 sm:pb-10 px-4 sm:px-6">
+      <section className="bg-[#f8f6f2] pt-10 sm:pt-12 pb-8 sm:pb-10 px-4 sm:px-6">
 
         {/* 🏷 Heading */}
         <h2
