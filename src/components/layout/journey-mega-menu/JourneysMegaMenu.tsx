@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { createPortal } from "react-dom";
 
-import { journeysData, journeyCategories } from "./data/journeysData";
+import { journeysData, journeyCategories } from "../data/journeysData";
 
 type MenuData = typeof journeysData;
 

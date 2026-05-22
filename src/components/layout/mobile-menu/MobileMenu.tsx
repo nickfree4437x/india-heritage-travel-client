@@ -6,7 +6,7 @@ import { X, ChevronDown } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { journeysData, journeyCategories } from "./nav/data/journeysData";
+import { journeysData, journeyCategories } from "../data/journeysData";
 
 // ============================================================================
 // TYPES & INTERFACES

@@ -6,9 +6,9 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
-import JourneysMegaMenu from "./nav/JourneysMegaMenu";
-import LanguageSwitcher from "./nav/LanguageSwitcher";
-import MobileMenu from "./MobileMenu";
+import JourneysMegaMenu from "../journey-mega-menu/JourneysMegaMenu";
+import LanguageSwitcher from "../language-switcher/LanguageSwitcher";
+import MobileMenu from "../mobile-menu/MobileMenu";
 
 // ============================================================================
 // CONSTANTS

@@ -3,11 +3,19 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
+import HeroBackground from "./HeroBackground";
+import HeroContent from "./HeroContent";
+
 export default function Hero() {
 
-  const [videoProgress, setVideoProgress] = useState(0);
-  const [isHovering, setIsHovering] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [videoProgress, setVideoProgress] =
+    useState(0);
+
+  const [isHovering, setIsHovering] =
+    useState(false);
+
+  const [mounted, setMounted] =
+    useState(false);
 
   // MOUNT CHECK
   useEffect(() => {
@@ -21,7 +29,9 @@ export default function Hero() {
 
     const interval = setInterval(() => {
 
-      setVideoProgress((prev) => (prev + 0.003) % 1);
+      setVideoProgress(
+        (prev) => (prev + 0.003) % 1
+      );
 
     }, 50);
 
@@ -33,7 +43,9 @@ export default function Hero() {
   const scrollToDestination = () => {
 
     const destinationSection =
-      document.getElementById("welcome-destination");
+      document.getElementById(
+        "welcome-destination"
+      );
 
     if (destinationSection) {
 
@@ -64,349 +76,40 @@ export default function Hero() {
   return (
 
     <section
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
+      onMouseEnter={() =>
+        setIsHovering(true)
+      }
+      onMouseLeave={() =>
+        setIsHovering(false)
+      }
       className="relative min-h-screen w-full overflow-hidden bg-black"
     >
 
-      {/* VIDEO BACKGROUND */}
-      <motion.div
-        className="absolute inset-0"
-        initial={{ scale: 1.2 }}
-        animate={{
-          scale: isHovering ? 1.02 : 1.05,
-        }}
-        transition={{
-          scale: {
-            duration: 0.8,
-            ease: "easeOut",
-          },
-        }}
-      >
-
-        {/* DESKTOP VIDEO */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          webkit-playsinline="true"
-          className="hidden md:block w-full h-full object-cover"
-          style={{
-            filter: `
-              brightness(${0.85 + videoProgress * 0.1}) 
-              contrast(${1.05 + Math.sin(videoProgress * Math.PI * 2) * 0.03})
-            `,
-          }}
-        >
-
-          <source
-            src="/hero/hero-small.mp4"
-            type="video/mp4"
-          />
-
-        </video>
-
-        {/* MOBILE VIDEO */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          webkit-playsinline="true"
-          className="block md:hidden w-full h-full object-cover"
-          style={{
-            filter: `
-              brightness(${0.85 + videoProgress * 0.1}) 
-              contrast(${1.05 + Math.sin(videoProgress * Math.PI * 2) * 0.03})
-            `,
-          }}
-        >
-
-          <source
-            src="/hero/hero-mobile.mp4"
-            type="video/mp4"
-          />
-
-        </video>
-
-      </motion.div>
-
-      {/* DARK OVERLAY */}
-      <motion.div
-        className="absolute inset-0"
-        animate={{
-          background: [
-            "linear-gradient(145deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.15) 100%)",
-
-            "linear-gradient(125deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.03) 50%, rgba(0,0,0,0.2) 100%)",
-
-            "linear-gradient(145deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.15) 100%)",
-          ],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
+      {/* BACKGROUND */}
+      <HeroBackground
+        videoProgress={videoProgress}
+        isHovering={isHovering}
       />
-
-      {/* SOFT RADIAL GLOW */}
-      <motion.div
-        className="absolute inset-0 pointer-events-none"
-        animate={{
-          background: [
-            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.12) 0%, transparent 60%)",
-
-            "radial-gradient(circle at 70% 50%, rgba(203,178,153,0.15) 0%, transparent 60%)",
-
-            "radial-gradient(circle at 50% 50%, rgba(203,178,153,0.1) 0%, transparent 60%)",
-
-            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.12) 0%, transparent 60%)",
-          ],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-
-      {/* PULSING GLOW */}
-      <motion.div
-        className="absolute inset-0 pointer-events-none"
-        animate={{
-          opacity: [0.2, 0.45, 0.2],
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      >
-
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_40%,rgba(203,178,153,0.15),transparent_70%)]" />
-
-      </motion.div>
-
-      {/* MOVING LIGHT BEAM */}
-      <motion.div className="absolute inset-0 pointer-events-none overflow-hidden">
-
-        <motion.div
-          className="absolute top-0 h-full w-[25%] bg-gradient-to-r from-transparent via-white/12 to-transparent blur-2xl"
-          animate={{
-            x: ["-100%", "200%"],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
-
-      </motion.div>
-
-      {/* TOP AURORA */}
-      <motion.div
-        className="absolute top-0 left-0 w-full h-[50%] pointer-events-none"
-        animate={{
-          opacity: [0.08, 0.22, 0.08],
-          y: [0, -10, 0],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      >
-
-        <div className="w-full h-full bg-gradient-to-b from-[#CBB299]/15 via-white/8 to-transparent" />
-
-      </motion.div>
-
-      {/* BOTTOM GLOW */}
-      <motion.div
-        className="absolute bottom-0 left-0 w-full h-[30%] pointer-events-none"
-        animate={{
-          opacity: [0.08, 0.18, 0.08],
-          y: [0, 8, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 0.5,
-        }}
-      >
-
-        <div className="w-full h-full bg-gradient-to-t from-[#CBB299]/15 to-transparent" />
-
-      </motion.div>
-
-      {/* SPARKLE PARTICLES */}
-      {[...Array(15)].map((_, i) => (
-
-        <motion.div
-          key={i}
-          className="absolute w-[1.5px] h-[1.5px] rounded-full bg-white/40"
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-          }}
-          animate={{
-            y: [0, -30 - Math.random() * 20, 0],
-            x: [0, (Math.random() - 0.5) * 30, 0],
-            opacity: [0, 0.6, 0],
-          }}
-          transition={{
-            duration: 3 + Math.random() * 3,
-            delay: Math.random() * 5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-
-      ))}
 
       {/* CONTENT */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 md:px-10 text-center">
-
-        <div className="w-full max-w-3xl text-white flex flex-col items-center">
-
-          {/* HEADING */}
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 1.2,
-              ease: [0.21, 1.11, 0.38, 0.99],
-            }}
-          >
-
-            <motion.h1 className="font-semibold font-heading leading-tight">
-
-              <motion.span
-                initial={{
-                  clipPath: "inset(0 0 100% 0)",
-                }}
-                animate={{
-                  clipPath: "inset(0 0 0% 0)",
-                }}
-                transition={{
-                  duration: 1.2,
-                  delay: 0.2,
-                  ease: [0.77, 0, 0.18, 1],
-                }}
-                className="block text-xl sm:text-3xl md:text-4xl text-white"
-              >
-                Explore India Beyond Landmarks
-              </motion.span>
-
-              <motion.span
-                initial={{
-                  clipPath: "inset(0 0 100% 0)",
-                }}
-                animate={{
-                  clipPath: "inset(0 0 0% 0)",
-                }}
-                transition={{
-                  duration: 1.2,
-                  delay: 0.5,
-                  ease: [0.77, 0, 0.18, 1],
-                }}
-                className="block text-xl sm:text-3xl md:text-4xl mt-2 sm:mt-3"
-              >
-
-                <span className="relative inline-block">
-
-                  <span className="absolute inset-0 blur-md animate-pulse" />
-
-                  Curated Heritage Journeys
-
-                </span>
-
-              </motion.span>
-
-            </motion.h1>
-
-          </motion.div>
-
-          {/* DESCRIPTION */}
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.9,
-              delay: 1,
-              ease: "easeOut",
-            }}
-            className="mt-2 sm:mt-3 text-[11px] sm:text-xs md:text-[13.5px] text-gray-200 font-light leading-relaxed tracking-wide max-w-md sm:max-w-lg px-4"
-          >
-            Discover India's hidden cultures,
-            ancient traditions, and untouched
-            landscapes thoughtfully curated
-            for a truly immersive journey.
-          </motion.p>
-
-          {/* CTA BUTTON */}
-          <motion.button
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              delay: 1.2,
-            }}
-            whileTap={{ scale: 0.98 }}
-            onClick={scrollToDestination}
-            className="
-              relative group
-              mt-6 sm:mt-8
-              px-6 sm:px-8
-              py-2.5 sm:py-3
-              border border-[#CBB299]/40
-              bg-black/20
-              backdrop-blur-md
-              text-[#CBB299]
-              text-[10px] sm:text-xs
-              tracking-[2px]
-              uppercase
-              transition-all duration-500
-              overflow-hidden
-              rounded-md
-              cursor-pointer
-            "
-          >
-
-            <span className="relative z-10">
-              Begin Your Journey
-            </span>
-
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-[#CBB299]/0 via-[#CBB299]/15 to-[#CBB299]/0"
-              animate={{
-                x: ["-100%", "100%"],
-              }}
-              transition={{
-                duration: 2.5,
-                repeat: Infinity,
-                repeatDelay: 3,
-              }}
-            />
-
-          </motion.button>
-
-        </div>
-
-      </div>
+      <HeroContent
+        scrollToDestination={
+          scrollToDestination
+        }
+      />
 
       {/* SCROLL INDICATOR */}
       <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20">
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{
+            opacity: 0,
+            y: 30,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
           transition={{
             delay: 1.5,
             duration: 1,
@@ -450,5 +153,6 @@ export default function Hero() {
       </div>
 
     </section>
+
   );
 }

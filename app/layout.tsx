@@ -11,7 +11,7 @@ import { Toaster } from "react-hot-toast";
 
 import "./globals.css";
 
-import Navbar from "@/src/components/layout/Navbar";
+import Navbar from "@/src/components/layout/nav/Navbar";
 import StickyPlanButton from "@/src/components/common/StickyPlanButton";
 
 // Body Font
@@ -133,7 +133,7 @@ export default function RootLayout({
         </Script>
 
         {/* Tawk.to Live Chat */}
-        <Script
+        {/* <Script
           id="tawk-to"
           strategy="afterInteractive"
         >
@@ -157,7 +157,7 @@ export default function RootLayout({
 
             })();
           `}
-        </Script>
+        </Script> */}
 
       </body>
 
