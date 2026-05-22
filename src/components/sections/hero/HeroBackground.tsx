@@ -115,7 +115,7 @@ export default function HeroBackground({
         >
 
           <source
-            src="/hero/hero-mobile.mp4"
+            src="/hero/hero-small.mp4"
             type="video/mp4"
           />
 
