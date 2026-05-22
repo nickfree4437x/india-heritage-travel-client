@@ -1,6 +1,5 @@
-// src/components/layout/nav/data/journeysData.ts
-
 export const journeysData = {
+  
   //////////////////////////////////////
   // ✅ CURATED (SCROLL BASED)
   //////////////////////////////////////

@@ -1,35 +1,51 @@
 "use client";
 
 import Select from "react-select";
+
 import { CountryOption } from "./types";
 
 type Props = {
   countries: CountryOption[];
+
   selectedCountry: CountryOption | null;
-  setSelectedCountry: (country: CountryOption | null) => void;
+
+  setSelectedCountry: (
+    country: CountryOption | null
+  ) => void;
+
+  name?: string;
+
+  value?: string;
+
+  onChange?: (
+    e: React.ChangeEvent<HTMLInputElement>
+  ) => void;
+
+  required?: boolean;
 };
 
 export default function PhoneField({
   countries,
   selectedCountry,
   setSelectedCountry,
+  name,
+  value,
+  onChange,
+  required,
 }: Props) {
+
   return (
+
     <div
       className="
         flex items-center
-
         w-full
-
         border border-[#ddd2c2]
-
         bg-[#f9f7f3]
-
         rounded-lg
-
         overflow-hidden
-
-        focus-within:border-[#9A7A58] transition 
+        focus-within:border-[#9A7A58]
+        transition
       "
     >
 
@@ -101,7 +117,8 @@ export default function PhoneField({
 
               border: "1px solid #e7dfd3",
 
-              boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
+              boxShadow:
+                "0 10px 30px rgba(0,0,0,0.06)",
             }),
 
             indicatorSeparator: () => ({
@@ -138,27 +155,23 @@ export default function PhoneField({
       {/* Mobile Number */}
       <input
         type="tel"
+        name={name}
+        value={value}
+        onChange={onChange}
+        required={required}
         placeholder="Mobile Number"
         className="
           flex-1
-
           h-[45px]
-
           bg-transparent
-
           px-4
-
           text-[12px]
           sm:text-[13px]
-
           text-[#5b5348]
-
           placeholder:text-[#9a8f81]
           placeholder:font-light
-
           font-light
           tracking-[0.2px]
-
           focus:outline-none
         "
       />

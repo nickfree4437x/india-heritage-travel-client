@@ -5,10 +5,12 @@ import FaqSection from "@/src/components/sections/festivals/common/FAQSection";
 
 export default function FAQPage() {
   return (
-    <>
+    <div className="bg-[#f8f6f2]">
       <FAQHero />
-      <FaqSection/>
+      <div className="mt-10">
+        <FaqSection/>
+      </div>
       <Footer/>
-    </>
+    </div>
   );
 }

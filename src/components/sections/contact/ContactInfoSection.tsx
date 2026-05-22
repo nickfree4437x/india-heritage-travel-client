@@ -95,21 +95,22 @@ export default function ContactInfoSection() {
           {/* RIGHT SIDE */}
           <div className="lg:mr-16 xl:mr-24 2xl:mr-32 px-5 sm:px-8 lg:px-0">
 
-            <div className="rounded-sm overflow-hidden border border-[#e9dfd2] shadow-sm">
+  <div className="rounded-sm overflow-hidden border border-[#e9dfd2] shadow-sm">
 
-              <iframe
-                src="https://www.google.com/maps?q=Jaipur,Rajasthan&output=embed"
-                width="100%"
-                height="100%"
-                className="w-full h-[320px] sm:h-[380px] md:h-[450px] lg:h-[520px]"
-                style={{ border: 0 }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3607526.3185683247!2d74.17314341796877!3d27.994663692885368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3e182bf9fa9%3A0x942288a77789dd3f!2sIndia%20Heritage%20Travel!5e0!3m2!1sen!2sin!4v1779286272703!5m2!1sen!2sin"
+      width="100%"
+      height="100%"
+      className="w-full h-[320px] sm:h-[380px] md:h-[450px] lg:h-[520px]"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
 
-            </div>
+  </div>
 
-          </div>
+</div>
 
         </div>
 

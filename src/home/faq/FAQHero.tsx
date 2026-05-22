@@ -2,28 +2,41 @@
 
 import Image from "next/image";
 
-export default function FAQHero() {
+export default function Hero() {
   return (
-    <section className="relative w-full h-[65vh] md:h-[93vh] overflow-hidden">
+    <section className="relative h-[93vh] w-full overflow-hidden">
 
       {/* Background Image */}
-      <Image
-        src="/faq/hero.jpg" // 👈 Taj Mahal type image use kar
-        alt="FAQ Background"
-        fill
-        priority
-        className="object-cover"
-      />
+      <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
+        <Image
+          src="/faq/tajmahal.jpg" // 👈 Taj Mahal type image use kar
+          alt="FAQ Background"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
 
-
-      {/* Soft Gradient Overlay (premium look) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/55" />
 
       {/* Content */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
-        <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-semibold tracking-wide">
-          FAQ’s
+        <h1
+          className="
+            max-w-[700px]
+            text-3xl md:text-4xl
+            font-[600]
+            leading-[1.1]
+            tracking-[0.04em]
+            mb-4
+
+            opacity-0 translate-y-10
+            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
+          "
+        >
+          FAQ
         </h1>
 
       </div>

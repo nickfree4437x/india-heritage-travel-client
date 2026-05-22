@@ -12,7 +12,7 @@ const tips = [
   {
     title: "INSURANCE",
     text: `Travel insurance (It is recommended that you insure yourself against medical claims, theft, loss, and emergencies).`,
-    image: "/travel-tips/insurance.png",
+    image: "/travel-tips/insurance.svg",
   },
   {
     title: "CLOTHES",
@@ -32,7 +32,7 @@ const tips = [
   {
     title: "FOOD",
     text: `Food tastes good and is unique. When starting a trip, use caution when handling meat and dairy products. Fruit is safe to eat if you peel it yourself, and you can even get peeled fruit in hotels. Papayas taste great when paired with a small squeeze of lime. If your dish isn’t spicy, ask to have the chillies removed. Request less salt overall and less sugar in your chai. Try everything, even if just a little bit. There are many crowded, spotless areas where street food is served. You shouldn’t miss this aspect of Indian culture.Reduce your intake and consume boiled rice, bananas, and coke to prevent dehydration if you have an upset stomach.`,
-    image: "/travel-tips/food.png",
+    image: "/travel-tips/food.jpg",
   },
   {
     title: "WATER",
@@ -47,7 +47,7 @@ const tips = [
   {
     title: "DRIVER",
     text: `When you drive, you have someone to help you at all times, and your luggage is always secure. Telling him to drive more slowly or to call us right away is always preferable if you’re uncomfortable with the way he’s driving or if you think his speeding is unsafe.`,
-    image: "/travel-tips/driver.png",
+    image: "/travel-tips/driver.jpg",
   },
   {
     title: "SOLO WOMEN",
@@ -62,7 +62,7 @@ const tips = [
   {
     title: "TIPPING",
     text: `Tipping is a widely accepted custom in India. Some suggestions for how much to tip for face photos at tourist attractions are 20 to 50 rupees (less than a Euro). It should be between 5 and 10% of your total at restaurants. Your driver should receive a tip of at least 5 to 10 euros per day, as he receives tips only once or twice a month. The amount you tip will depend on your budget and the quality of service the driver provides.`,
-    image: "/travel-tips/tip.png",
+    image: "/travel-tips/tipping.png",
   },
   {
     title: "BEGGARS",
@@ -109,82 +109,122 @@ const tips = [
 export default function TravelTipsContent() {
   return (
     <section className="bg-[#f8f6f2] py-20 px-6 md:px-28">
-
-      {/* 🔥 Intro */}
-      <div className="grid md:grid-cols-[380px_1fr] gap-6 items-start mb-16">
+      <div className="mx-auto max-w-7xl">
+        {/* 🔥 Intro */}
+        <div className="grid md:grid-cols-[320px_1fr] gap-12 items-start mb-16">
+      
+      {/* LEFT SIDE */}
+      <div className="md:ml-6">
         <Image
-          src="/travel-tips/intro.jpg"
+          src="/travel-tips/intro.webp"
           alt="India Travel Tips"
-          width={350}
-          height={300}
-          className="rounded-md"
+          width={300}
+          height={260}
+          className="rounded-sm"
         />
-        <p className="text-gray-700 leading-relaxed text-justify mt-8">
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="md:mr-6">
+        <p className="text-gray-700 mt-8 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-[300] text-justify">
           India is a very busy, overwhelming, and occasionally confusing country. 
-          You’ll need some time to get used to the hectic energy of this confusing 
+          You'll need some time to get used to the hectic energy of this confusing 
           place and figure out how to keep yourself safe, healthy, and sane. 
           India is among the most rewarding destinations to visit, despite not being the easiest. 
           It provides some genuinely incredible views that are unmatched by anything else in the entire globe. 
           It also has mouthwatering cuisine, breathtaking scenery, friendly and endearing locals, 
           and a rich cultural history that is fascinating to discover.
+        </p>
+
+        <p className="mt-5 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-[300] text-justify">
           So, before you travel to India, here are some shrewd tips and tricks to help you make the most 
           of your experience there.
         </p>
       </div>
 
-      {/* 🔥 Heading */}
-      <h2 className="text-center text-2xl md:text-4xl font-semibold text-[#8b6a3c] mb-16">
-        THE PREPARATIONS FOR YOUR INDIA TRAVEL
-      </h2>
+    </div>
 
-      {/* 🔥 Tips List */}
-      <div className="space-y-20">
-        {tips.map((item, index) => {
-          const isLeft = index % 2 === 0;
+    {/* 🔥 Heading */}
+    <h2 className="text-[20px] sm:text-[24px] md:text-[26px]
+            font-semibold
+            text-center
+            mb-6 sm:mb-8 text-[#8b6a3c] tracking-wide">
+      THE PREPARATIONS FOR YOUR INDIA TRAVEL
+    </h2>
 
-          return (
-            <div
-              key={index}
-              className={`grid md:grid-cols-2 gap-10 items-center`}
-            >
-              {/* LEFT */}
-              {isLeft && (
-                <div>
-                  <h3 className="text-xl text-center font-semibold text-[#8b6a3c] mb-3">
+    {/* 🔥 Tips List */}
+    <div className="space-y-8">
+      {tips.map((item, index) => {
+        const isLeft = index % 2 === 0;
+
+        return (
+          <div
+            key={index}
+            className={`
+              grid items-center gap-16
+              ${isLeft
+                ? "md:grid-cols-[1fr_280px]"
+                : "md:grid-cols-[280px_1fr]"
+              }
+            `}
+          >
+
+            {/* CONTENT LEFT + IMAGE RIGHT */}
+            {isLeft ? (
+              <>
+                {/* CONTENT */}
+                <div className="md:ml-8">
+                  <h3 className="text-[16px] sm:text-[20px] md:text-[22px] text-center tracking-wide font-semibold text-[#8b6a3c]">
                     {item.title}
                   </h3>
-                  <p className="text-gray-700 leading-relaxed text-justify">
+
+                  <p className="text-gray-700 mt-8 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-[300] text-justify">
                     {item.text}
                   </p>
                 </div>
-              )}
 
-              {/* IMAGE */}
-              <div className="flex justify-center">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  width={220}
-                  height={220}
-                  className="object-contain"
-                />
-              </div>
+                {/* IMAGE */}
+                <div className="flex justify-center md:mr-8">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={220}
+                    height={200}
+                    className="object-contain rounded-full"
+                  />
+                </div>
+              </>
+            ) : (
+              <>
+                {/* IMAGE */}
+                <div className="flex justify-center md:ml-8">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={220}
+                    height={200}
+                    className="object-contain rounded-full"
+                  />
+                </div>
 
-              {/* RIGHT */}
-              {!isLeft && (
-                <div>
-                  <h3 className="text-xl text-center font-semibold text-[#8b6a3c] mb-3">
+                {/* CONTENT */}
+                <div className="md:mr-8">
+                  <h3 className="text-[16px] sm:text-[20px] md:text-[22px] text-center tracking-wide font-semibold text-[#8b6a3c]">
                     {item.title}
                   </h3>
-                  <p className="text-gray-700 leading-relaxed text-justify">
+
+                  <p className="text-gray-700 mt-8 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-[300] text-justify">
                     {item.text}
                   </p>
                 </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    </section>
+              </>
+            )}
+
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
   );
 }

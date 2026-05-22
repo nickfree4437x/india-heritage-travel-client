@@ -11,6 +11,7 @@ import PricingSection from "../components/PricingSection";
 import ExploreMoreSection from "../components/ExploreMoreSection";
 import FAQSection from "../../../common/FAQSection";
 import Footer from "@/src/components/sections/footer/Footer";
+import CommonForm from "@/src/components/tours/CommonForm";
 
 export default function HoliDetails() {
   return (
@@ -64,6 +65,7 @@ export default function HoliDetails() {
       <SpecialSection />
       <ItinerarySection />
       <PricingSection/>
+      <CommonForm/>
       <ExploreMoreSection />
       <FAQSection />
       <Footer/>

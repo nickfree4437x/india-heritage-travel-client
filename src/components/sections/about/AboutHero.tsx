@@ -2,34 +2,46 @@
 
 import Image from "next/image";
 
-export default function AboutHero() {
+export default function Hero() {
   return (
-    <section className="relative w-full h-[70vh] md:h-[93vh]">
+    <section className="relative h-[95vh] w-full overflow-hidden">
 
-      {/* Background Image (Full Banner) */}
-      <Image
-        src="/about/about-hero.jpg" // 👈 same type image use kar (jaise tune bheji)
-        alt="About Hero"
-        fill
-        priority
-        className="object-cover"
-      />
+      {/* Background Image */}
+      <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
+        <Image
+          src="/about/about-hero.jpg" // 👈 same type image use kar (jaise tune bheji)
+          alt="About Hero"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
 
-      {/* Dark Overlay (same feel as screenshot) */}
-      <div className="absolute inset-0 bg-black/40" />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/55" />
 
       {/* Content */}
-      <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
-        <div className="max-w-4xl">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
-          {/* Heading */}
-          <h1 className="text-white text-3xl sm:text-4xl md:text-4xl font-semibold leading-tight">
-            Experience India's Heritage Like <br />
-            Never Before
-          </h1>
+        <h1
+          className="
+            max-w-[700px]
+            text-3xl md:text-4xl
+            font-[600]
+            leading-[1.1]
+            tracking-[0.04em]
+            mb-4
 
-        </div>
+            opacity-0 translate-y-10
+            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
+          "
+        >
+          Experience India's Heritage like<br />
+          Never Before
+        </h1>
+
       </div>
+
     </section>
   );
 }

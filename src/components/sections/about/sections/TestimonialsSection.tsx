@@ -7,7 +7,11 @@ export default function TestimonialsSection() {
     <section id="testimonials" className="space-y-10">
 
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#9c6b2f]">
+      <h2 className="text-[22px] sm:text-[26px] md:text-[28px]
+              font-semibold
+              text-[#8b6a3d]
+              tracking-wide
+              mb-4">
         Testimonials
       </h2>
 

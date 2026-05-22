@@ -6,21 +6,24 @@ import AboutContent from "./AboutContent";
 export default function AboutLayout() {
   return (
     <section className="bg-[#f8f6f2] py-16">
-      <div className="max-w-7xl mx-auto px-6 relative">
+      <div className="max-w-7xl mx-auto px-6">
 
-        {/* GRID */}
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="relative grid grid-cols-1 md:grid-cols-[250px_minmax(0,1fr)] gap-10 md:gap-24">
 
-          {/* LEFT */}
-          <AboutSidebar />
+          {/* LEFT SIDEBAR */}
+          <div className="relative z-10">
+            <AboutSidebar />
+          </div>
 
-          {/* RIGHT */}
-          <AboutContent />
+          {/* RIGHT CONTENT */}
+          <div className="relative z-10 min-w-0">
+            <AboutContent />
+          </div>
+
+          {/* VERTICAL LINE */}
+          <div className="hidden md:block absolute top-0 bottom-0 left-[275px] w-[1.5px] bg-[#c9ab7d]/40" />
 
         </div>
-
-        {/* 🔥 VERTICAL DIVIDER (PERFECT CENTER) */}
-        <div className="hidden md:block absolute top-0 bottom-0 left-[25%] w-[2px] bg-[#9c6b2f] opacity-60" />
 
       </div>
     </section>

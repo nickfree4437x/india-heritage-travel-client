@@ -8,12 +8,16 @@ export default function TeamSection() {
 
       {/* Heading */}
       <div className="space-y-4">
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#9c6b2f]">
+        <h2 className="text-[22px] sm:text-[26px] md:text-[28px]
+              font-semibold
+              text-[#8b6a3d]
+              tracking-wide
+              mb-4">
           The faces behind your travel dreams
         </h2>
 
         {/* Sub Text */}
-        <p className="italic text-gray-600 text-lg md:text-xl">
+        <p className="italic text-[#5f6b7a] text-[15px] md:text-[17px] font-light leading-[1.9] tracking-[0.2px]">
           “We don’t just plan journeys — we live them, together”
         </p>
       </div>
@@ -32,7 +36,7 @@ export default function TeamSection() {
             />
           </div>
 
-          <p className="text-lg md:text-xl text-[#9c6b2f]">
+          <p className=" text-[#9c6b2f] text-[16px] md:text-[20px] font-medium tracking-[0.4px]">
             Piyush
           </p>
         </div>
@@ -48,7 +52,7 @@ export default function TeamSection() {
             />
           </div>
 
-          <p className="text-lg md:text-xl text-[#9c6b2f]">
+          <p className=" text-[#9c6b2f] text-[16px] md:text-[20px] font-medium tracking-[0.4px]">
             Isha
           </p>
         </div>

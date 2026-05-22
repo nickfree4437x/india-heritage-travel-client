@@ -11,6 +11,7 @@ import PricingSection from "./PricingSection";
 import ExploreSection from "./ExploreSection";
 import FAQSection from "../../common/FAQSection";
 import Footer from "../../../footer/Footer";
+import CommonForm from "@/src/components/tours/CommonForm";
 
 export default function KumbhDetails() {
   return (
@@ -85,6 +86,8 @@ export default function KumbhDetails() {
 
       {/* 💰 PRICING */}
       <PricingSection />
+
+      <CommonForm/>
 
       {/* 🌍 EXPLORE */}
       <ExploreSection />

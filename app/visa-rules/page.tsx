@@ -8,22 +8,30 @@ export default function VisaRulesPage() {
 
       {/* 🔥 HERO SECTION */}
       <section className="h-[100vh] flex items-center justify-center bg-[#8b6f6b] text-white text-center">
-        <h1 className="text-4xl md:text-5xl font-semibold">
+        <h1 className="max-w-[700px]
+            text-3xl md:text-4xl
+            font-[600]
+            leading-[1.1]
+            tracking-[0.04em]
+            mb-4
+
+            opacity-0 translate-y-10
+            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]">
           Visa Rules For India
         </h1>
       </section>
 
       {/* 🔥 MAIN CONTENT */}
-      <section className="max-w-5xl mx-auto px-6 py-16 text-center">
+      <section className="max-w-6xl mx-auto px-6 py-16 text-center">
 
         {/* Heading */}
-        <h2 className="text-3xl font-semibold text-[#9c7a45] mb-8">
+        <h2 className="text-3xl font-semibold text-[#9c7a45] mb-10">
           Visa Rules for India
         </h2>
 
         {/* Visa & Permits */}
         <h3 className="font-semibold mb-3">Visa and Permits in India</h3>
-        <p className="text-gray-700 leading-relaxed mb-6 ">
+        <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-[300] ">
           Visa serves as permission for individuals to stay in a country for a
           specific period and purpose, typically stamped in their passport.
           <span className="font-semibold"> All travelers to India</span>, except
@@ -33,7 +41,7 @@ export default function VisaRulesPage() {
 
         {/* Duration */}
         <h3 className="font-semibold mb-3">Visa Durations</h3>
-        <p className="text-gray-700 leading-relaxed mb-6">
+        <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-[300]">
           Tourist visas in India are usually issued for three to six months,
           allowing multiple entries, which is useful for side trips to neighboring
           countries like Nepal. Other options include one-year student visas,
@@ -44,7 +52,7 @@ export default function VisaRulesPage() {
 
         {/* Obtaining */}
         <h3 className="font-semibold mb-3">Obtaining a Visa</h3>
-        <p className="text-gray-700 leading-relaxed mb-6">
+        <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-[300]">
           The visa application process is more efficient when done through the
           Indian embassy in your home country. You’ll need to complete an
           application form and provide your current passport, along with at least
@@ -58,7 +66,7 @@ export default function VisaRulesPage() {
 
         {/* Special Permits */}
         <h3 className="font-semibold mb-3">Special Permits</h3>
-        <p className="text-gray-700 leading-relaxed mb-10">
+        <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-[300]">
           Certain regions in India require special permits in addition to a
           regular Indian visa. These permits can be issued by Indian High
           Commissions and Indian Embassies abroad, the Ministry of Home Affairs
@@ -68,13 +76,13 @@ export default function VisaRulesPage() {
       </section>
 
       {/* 🔥 REGIONS SECTION */}
-      <section className="max-w-5xl mx-auto px-6 pb-20">
+      <section className="max-w-6xl mx-auto px-6 pb-16">
 
         <h3 className="font-bold text-center mb-8">
           These regions include:
         </h3>
 
-        <div className="space-y-6 text-gray-700 leading-relaxed text-justify">
+        <div className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-[300] text-justify">
 
           <p>
             <span className="font-semibold">1. Northeast India:</span> The seven
@@ -88,9 +96,9 @@ export default function VisaRulesPage() {
             2 months depending on the state.
           </p>
 
-          <p>
+          <p className="mt-6">
             <span className="font-semibold">2. Sikkim:</span> Due to its proximity
-            to China, <span className="font-semibold">Sikkim is treated</span> as
+            to China, Sikkim is treated as
             a military buffer, and foreign travelers require a permit. The
             maximum stay duration cannot exceed 15 days per year. Permits are
             free and available in major Indian cities. They can be extended in
@@ -102,7 +110,7 @@ export default function VisaRulesPage() {
             obtainable only in Gangtok.
           </p>
 
-          <p>
+          <p className="mt-6">
             <span className="font-semibold">
               3. Andaman and Nicobar Islands:
             </span>{" "}
@@ -112,7 +120,7 @@ export default function VisaRulesPage() {
             permits upon arrival in Port Blair.
           </p>
 
-          <p>
+          <p className="mt-6">
             <span className="font-semibold">4. Lakshadweep:</span> Only Bangaram
             Island is open to foreigners. You can obtain a free permit through
             the Liaison Officer of Lakshadweep or at select hotels in Cochin.

@@ -11,6 +11,7 @@ import PricingSection from "./PricingSection";
 import ExploreMoreSection from "./ExploreMoreSection";
 import FAQSection from "../../common/FAQSection";
 import Footer from "../../../footer/Footer";
+import CommonForm from "@/src/components/tours/CommonForm";
 
 export default function DiwaliDetails() {
   return (
@@ -86,6 +87,8 @@ export default function DiwaliDetails() {
 
       {/* 💰 PRICING */}
       <PricingSection />
+
+      <CommonForm/>
 
       {/* 🌍 EXPLORE MORE */}
       <ExploreMoreSection />
