@@ -77,7 +77,7 @@ export default function BookNowSection() {
   if (!mounted) return null;
 
   return (
-    <section className="w-full bg-[#f8f6f2] py-6 md:py-6 lg:py-6">
+    <section className="w-full bg-white py-6 md:py-6 lg:py-6 scroll-mt-20 md:scroll-mt-24" id="booking-form">
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 

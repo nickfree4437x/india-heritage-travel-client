@@ -22,7 +22,7 @@ export default function Munnar() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-[450px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/coastal-tour/munnar.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529356/munnar_lrkkjk.jpg"
           alt="Munnar Tea Plantations"
           fill
           className="object-cover"

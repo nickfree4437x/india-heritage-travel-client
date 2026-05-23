@@ -19,7 +19,7 @@ export default function JaisalmerSection() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/heritage-tour/jaisalmer.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528273/jaisalmer_lnvrvm.jpg"
           alt="Jaisalmer"
           fill
           className="object-cover"

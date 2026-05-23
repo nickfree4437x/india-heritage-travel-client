@@ -3,7 +3,7 @@
 import Image from "next/image";
 import HighlightsInclusions from "./HighlightsInclusions";
 import Itinerary from "./Itinerary";
-import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/ExcludedServices";
+import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 
 export default function TourDetails() {

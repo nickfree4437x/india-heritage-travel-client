@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/adventure/ganga-tour/hero_img.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779539943/tour2_wqd4x6.webp"
           alt="Golden Triangle Tour"
           fill
           priority

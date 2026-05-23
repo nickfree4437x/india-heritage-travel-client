@@ -62,7 +62,7 @@ export default function SuitableFor() {
       </div>
 
       {/* 🎯 MAIN SECTION */}
-      <section className="bg-[#f8f6f2] pt-10 sm:pt-12 pb-8 sm:pb-10 px-4 sm:px-6">
+      <section className="bg-white pt-10 sm:pt-12 pb-8 sm:pb-10 px-4 sm:px-6">
 
         {/* 🏷 Heading */}
         <h2

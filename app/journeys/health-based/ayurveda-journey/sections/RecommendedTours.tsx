@@ -7,7 +7,7 @@ const tours = [
   {
     title: "Yoga Escapes: Discover Balance & Rejuvenate",
     desc: "Yoga is an ancient and intricate practice deeply rooted in Indian philosophy. It originally served as a spiritual discipline but has evolved into a popular approach for enhancing physical and mental well-being.",
-    image: "/journeys/ayurvedic/recom.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546495/recom_b3tnbe.jpg",
     slug: "/journeys/health-based/yoga-escapes",
   },
 ];

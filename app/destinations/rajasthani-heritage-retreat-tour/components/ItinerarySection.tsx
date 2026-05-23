@@ -46,7 +46,7 @@ export default function ItinerarySection() {
         <div className="w-full flex justify-center">
           <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
-              src="/destination/heritage-tour/itinerary/delhi.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528504/delhi_imc7m0.png"
               alt="Delhi"
               fill
               className="object-cover object-center"
@@ -91,7 +91,7 @@ export default function ItinerarySection() {
           <div className="w-full flex justify-center">
             <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
-                src="/destination/heritage-tour/itinerary/mandawa.jpg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528543/mandawa_waoq9v.png"
                 alt="Mandawa"
                 fill
                 className="object-cover object-center"
@@ -146,7 +146,7 @@ export default function ItinerarySection() {
         <div className="w-full flex justify-center">
           <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
-              src="/destination/heritage-tour/itinerary/bikaner.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528618/bikaner_fkzvym.png"
               alt="Bikaner"
               fill
               className="object-cover object-center"
@@ -196,7 +196,7 @@ export default function ItinerarySection() {
         <div className="w-full flex justify-center">
           <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
-              src="/destination/heritage-tour/itinerary/jaisalmer-itinerary.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528648/jaisalmer-itinerary_dchx91.jpg"
               alt="Jaisalmer"
               fill
               className="object-cover object-center"
@@ -245,7 +245,7 @@ export default function ItinerarySection() {
           <div className="w-full flex justify-center">
             <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
-                src="/destination/heritage-tour/itinerary/jodhpur.jpg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528696/jodhpur_o0ubhd.png"
                 alt="Jodhpur"
                 fill
                 className="object-cover object-center"
@@ -294,7 +294,7 @@ export default function ItinerarySection() {
             <div className="w-full flex justify-center">
               <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
-                  src="/destination/heritage-tour/itinerary/udaipur-1.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528752/udaipur-1_rbvc6x.jpg"
                   alt="Udaipur"
                   fill
                   className="object-cover object-center"
@@ -343,7 +343,7 @@ export default function ItinerarySection() {
           <div className="w-full flex justify-center">
             <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
-                src="/destination/heritage-tour/itinerary/pushkar-1.jpg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528798/pushkar-1_lkjlax.png"
                 alt="Pushkar"
                 fill
                 className="object-cover object-center"
@@ -391,7 +391,7 @@ export default function ItinerarySection() {
           <div className="w-full flex justify-center">
             <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
-                src="/destination/heritage-tour/itinerary/jaipur-1.jpg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528855/judaipur-1_fhzlur.png"
                 alt="Jaipur"
                 fill
                 className="object-cover object-center"
@@ -439,7 +439,7 @@ export default function ItinerarySection() {
         <div className="w-full flex justify-center">
           <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
-              src="/destination/heritage-tour/itinerary/agra-1.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528926/agra-1_diz5ov.png"
               alt="Agra"
               fill
               className="object-cover object-center"
@@ -487,7 +487,7 @@ export default function ItinerarySection() {
           <div className="w-full flex justify-center">
             <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
-                src="/destination/heritage-tour/itinerary/delhi-2.jpg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528974/delhi-2_zlbh3s.png"
                 alt="Delhi"
                 fill
                 className="object-cover object-center"
@@ -529,7 +529,7 @@ export default function ItinerarySection() {
           <div className="w-full flex justify-center">
             <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
-                src="/destination/golden-triangle/itinerary/farewal.jpg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
                 alt="Farewell"
                 fill
                 className="object-cover object-center"

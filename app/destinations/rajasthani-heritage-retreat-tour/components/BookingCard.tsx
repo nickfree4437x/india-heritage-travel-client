@@ -20,7 +20,7 @@ export default function BookingCard() {
       >
 
         <Image
-          src="/destination/heritage-tour/map.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528132/map_vhzw0g.webp"
           alt="Map"
           width={400}
           height={250}

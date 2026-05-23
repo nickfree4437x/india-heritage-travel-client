@@ -19,7 +19,7 @@ export default function JodhpurSection() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/heritage-tour/jodhpur.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528315/jodhpur_vusmur.jpg"
           alt="Jodhpur"
           fill
           className="object-cover"

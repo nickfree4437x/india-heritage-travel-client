@@ -11,7 +11,7 @@ export default function BookingCard() {
       {/* Map */}
       <div className="rounded-md overflow-hidden">
         <Image
-          src="/adventure/splendors/map.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779537182/map_dkqfxg.png"
           alt="Tour Map"
           width={400}
           height={250}

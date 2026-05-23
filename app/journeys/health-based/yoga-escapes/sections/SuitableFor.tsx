@@ -104,7 +104,7 @@ export default function YogaSuitableFor() {
       {/* 🎯 MAIN SECTION */}
       <section
         className="
-          bg-[#f8f6f2]
+          bg-white
 
           pt-10 sm:pt-12
           pb-8 sm:pb-10

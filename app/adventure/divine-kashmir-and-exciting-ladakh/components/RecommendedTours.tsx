@@ -7,19 +7,19 @@ const tours = [
   {
     title: "Rajasthani Heritage Retreat",
     desc: "Explore the beautiful landscapes and rich culture of this region.",
-    image: "/destination/heritage-tour/heritage.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779527998/heritage_b4eaqj.jpg",
     slug: "/destinations/rajasthani-heritage-retreat-tour",
   },
   {
     title: "Royal-Triangle-Odyssey",
     desc: "Experience adventure and breathtaking views on this thrilling tour.",
-    image: "/adventure/heritage/trail-tour.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534877/trail-tour_ypzior.png",
     slug: "/adventure/royal-rajasthan-sacred-ganges-tour",
   },
   {
     title: "Southern Delights: A Journey Through Time",
     desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour.",
-    image: "/adventure/delights.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536598/delights_g6wjjy.jpg",
     slug: "/adventure/southern-delights-tour",
   },
 ];

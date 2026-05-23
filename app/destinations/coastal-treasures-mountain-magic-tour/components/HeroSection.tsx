@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background Image with Zoom Animation */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/destination/coastal-tour/coastal.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779523352/coastal_uysoj5.jpg"
           alt="Kerala Tour"
           fill
           priority

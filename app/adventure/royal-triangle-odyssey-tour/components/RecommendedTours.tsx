@@ -7,19 +7,19 @@ const tours = [
   {
     title: "The Royal Heritage Trail Tour",
     desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
-    image: "/adventure/heritage/trail-tour.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534877/trail-tour_ypzior.png",
     slug: "/adventure/the-royal-heritage-trail-tour",
   },
   {
     title: "Mystical North India Discovery",
     desc: "Discover the mystical North India in 12 days with ‘Mystical North India Discovery,’ from Delhi to Varanasi, with timeless heritage and sculpted wonders in between.",
-    image: "/adventure/noth-india.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529935/hero_vfhtr5.jpg",
     slug: "/destinations/mystical-north-india-discovery-tour",
   },
   {
     title: "Southern Splendors: Culture & Nature Trail Tour",
     desc: "Embark on a 19-day Southern Splendors journey from Mumbai to Hampi, experiencing history, coastal delights, nature’s majesty, and regal splendor.",
-    image: "/adventure/splendors/splander.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535291/splander_rxivgm.png",
     slug: "/adventure/southern-splendors",
   },
 ];

@@ -8,7 +8,7 @@ export default function Hero() {
 
       {/* 🔥 Background Image (Smooth Zoom Animation) */}
       <Image
-        src="/destination/heritage-tour/heritage.jpg"
+        src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779527998/heritage_b4eaqj.jpg"
         alt="Rajasthan Tour"
         fill
         priority

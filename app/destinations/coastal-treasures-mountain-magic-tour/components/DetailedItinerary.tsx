@@ -37,7 +37,7 @@ export default function DetailedItinerary() {
 
               <div className="relative w-[350px] h-[240px] rounded-sm overflow-hidden shadow-sm">
                 <Image
-                  src="/destination/coastal-tour/itinerary/i1.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529506/i1_srytmy.png"
                   alt="Cochin"
                   fill
                   className="object-cover"
@@ -75,7 +75,7 @@ export default function DetailedItinerary() {
 
               <div className="relative w-[350px] h-[240px] rounded-sm overflow-hidden shadow-sm">
                 <Image
-                  src="/destination/coastal-tour/itinerary/i2.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529537/i2_ca59ye.jpg"
                   alt="Alleppey"
                   fill
                   className="object-cover"
@@ -119,7 +119,7 @@ export default function DetailedItinerary() {
 
               <div className="relative w-[350px] h-[240px] rounded-sm overflow-hidden shadow-sm">
                 <Image
-                  src="/destination/coastal-tour/itinerary/i3.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529565/i3_r9nukc.jpg"
                   alt="Thekkady"
                   fill
                   className="object-cover"
@@ -165,7 +165,7 @@ export default function DetailedItinerary() {
 
               <div className="relative w-[350px] h-[240px] rounded-sm overflow-hidden shadow-sm">
                 <Image
-                  src="/destination/coastal-tour/itinerary/i4.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529506/i1_srytmy.png"
                   alt="Munnar"
                   fill
                   className="object-cover"
@@ -203,7 +203,7 @@ export default function DetailedItinerary() {
 
               <div className="relative w-[350px] h-[240px] rounded-sm overflow-hidden shadow-sm">
                 <Image
-                  src="/destination/coastal-tour/itinerary/i5.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529635/i5_hqpbk6.jpg"
                   alt="Mumbai"
                   fill
                   className="object-cover"
@@ -231,7 +231,7 @@ export default function DetailedItinerary() {
 
               <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
                 <Image
-                  src="/destination/golden-triangle/itinerary/farewal.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
                   alt="Departure"
                   fill
                   className="object-cover"

@@ -2,7 +2,7 @@
 
 export default function YogaIntro() {
   return (
-    <section className="bg-[#f8f6f2]">
+    <section className="bg-white">
       <div className="max-w-5xl mx-auto px-6">
 
         {/* Heading */}
@@ -64,7 +64,7 @@ export default function YogaIntro() {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-4 
+              className="bg-[#f8f6f2] rounded-lg p-4 
                          transition-all duration-300 
                          shadow-sm"
             >

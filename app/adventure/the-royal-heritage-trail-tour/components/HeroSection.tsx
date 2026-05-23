@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/adventure/heritage/trail-tour.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534877/trail-tour_ypzior.png"
           alt="Royal Heritage Tour"
           fill
           priority

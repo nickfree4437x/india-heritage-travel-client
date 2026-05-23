@@ -38,7 +38,7 @@ export default function CountrySelect({
               ? "1px solid #9A7A58"
               : "1px solid #ddd2c2",
 
-            backgroundColor: "#f9f7f3",
+            backgroundColor: "white",
 
             borderRadius: "8px",
 

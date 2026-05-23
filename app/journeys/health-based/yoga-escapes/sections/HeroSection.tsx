@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/journeys/yoga/yoga.webp"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779544853/yoga_qbjzyi.webp"
           alt="Yoga Escapes: Discover Balance & Rejuvenate"
           fill
           priority

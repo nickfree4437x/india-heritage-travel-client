@@ -9,7 +9,7 @@ export default function BookingCard() {
       {/* 🗺️ Map Image */}
       <div className="rounded-t-md overflow-hidden">
         <Image
-          src="/adventure/heritage-odyssey/map.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538247/map_hwxmof.png"
           alt="Tour Map"
           width={400}
           height={250}

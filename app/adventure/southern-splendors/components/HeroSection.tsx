@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/adventure/splendors/splander.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535291/splander_rxivgm.png"
           alt="Southern Splendors"
           fill
           priority

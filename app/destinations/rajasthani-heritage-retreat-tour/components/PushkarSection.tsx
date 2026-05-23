@@ -24,7 +24,7 @@ export default function PushkarSection() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/heritage-tour/pushkar.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528390/pushkar_dfkyko.jpg"
           alt="Pushkar"
           fill
           className="object-cover"

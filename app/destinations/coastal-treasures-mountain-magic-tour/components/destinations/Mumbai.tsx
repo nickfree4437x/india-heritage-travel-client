@@ -26,7 +26,7 @@ export default function Mumbai() {
       {/* Image */}
       <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/coastal-tour/mumbai.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529329/mumbai_cgurku.jpg"
           alt="Gateway of India Mumbai"
           fill
           className="object-cover object-center"

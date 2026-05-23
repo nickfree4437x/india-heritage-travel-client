@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function BookingStepsSection() {
   return (
-    <section className="w-full bg-[#f7f5f1] py-8 sm:py-10 lg:py-14">
+    <section className="w-full bg-white py-8 sm:py-10 lg:py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-20 items-center">

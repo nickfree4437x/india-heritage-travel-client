@@ -29,7 +29,7 @@ export default function MessageField({
         className="
           w-full
           border border-[#ddd2c2]
-          bg-[#f9f7f3]
+          bg-white
           rounded-xl
           px-5
           py-4

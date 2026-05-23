@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/adventure/heaven-kashmir/hero.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541435/hero_cipdt8.jpg"
           alt="Heavenly Kashmir"
           fill
           priority

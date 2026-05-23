@@ -43,7 +43,7 @@ export default function FormInput({
         className="
           w-full
           border border-[#ddd2c2]
-          bg-[#f9f7f3]
+          bg-white
           rounded-lg
           px-5
           py-2.5 sm:py-2.5

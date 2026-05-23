@@ -15,7 +15,7 @@ export default function BookingCard() {
       {/* Map Image */}
       <div className="rounded-md overflow-hidden">
         <Image
-          src="/adventure/ganga-tour/map.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531381/map_nc9xhj.png"
           alt="Tour Map"
           width={400}
           height={250}

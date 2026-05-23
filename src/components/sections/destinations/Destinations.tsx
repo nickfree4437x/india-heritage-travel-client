@@ -6,8 +6,20 @@ import { motion, useInView } from "framer-motion";
 import DestinationCard from "./DestinationCard";
 import { destinations } from "./data";
 
+// ============================================================================
+// MAIN COMPONENT
+// ============================================================================
+
 export default function PopularDestinations() {
+  // ==========================================================================
+  // REFS
+  // ==========================================================================
+
   const sectionRef = useRef<HTMLElement | null>(null);
+
+  // ==========================================================================
+  // VIEWPORT INTERSECTION
+  // ==========================================================================
 
   const isInView = useInView(sectionRef, {
     once: true,
@@ -15,12 +27,13 @@ export default function PopularDestinations() {
     margin: "-100px 0px -100px 0px",
   });
 
-  // Heading animation - slow
+  // ==========================================================================
+  // ANIMATION VARIANTS
+  // ==========================================================================
+
+  // Heading animation
   const headingVariants = {
-    hidden: {
-      opacity: 0,
-      y: 35,
-    },
+    hidden: { opacity: 0, y: 35 },
     visible: {
       opacity: 1,
       y: 0,
@@ -32,7 +45,7 @@ export default function PopularDestinations() {
     },
   };
 
-  // Container for stagger effect on cards - slower stagger
+  // Container for stagger effect on cards
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -44,12 +57,9 @@ export default function PopularDestinations() {
     },
   };
 
-  // Individual card animation - slow
+  // Individual card animation
   const cardVariants = {
-    hidden: {
-      opacity: 0,
-      y: 60,
-    },
+    hidden: { opacity: 0, y: 60 },
     visible: {
       opacity: 1,
       y: 0,
@@ -60,6 +70,10 @@ export default function PopularDestinations() {
     },
   };
 
+  // ==========================================================================
+  // MAIN RENDER
+  // ==========================================================================
+
   return (
     <motion.section
       ref={sectionRef}
@@ -69,7 +83,9 @@ export default function PopularDestinations() {
       id="welcome-destination"
     >
       <div className="max-w-6xl mx-auto">
-        {/* Heading */}
+        {/* ====================================================================
+            HEADING SECTION
+        ==================================================================== */}
         <motion.div
           variants={headingVariants}
           className="text-center mb-10 sm:mb-12 md:mb-14 max-w-2xl mx-auto"
@@ -79,20 +95,19 @@ export default function PopularDestinations() {
           </h2>
 
           <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed text-white/90 tracking-wide max-w-[580px] mx-auto">
-            Our Best-Loved Routes Across India’s Cultural Landscape.
+            Our Best-Loved Routes Across India's Cultural Landscape.
           </p>
         </motion.div>
 
-        {/* Cards */}
+        {/* ====================================================================
+            DESTINATIONS GRID
+        ==================================================================== */}
         <motion.div
           variants={containerVariants}
           className="grid gap-6 sm:gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 mt-6 mb-10"
         >
           {destinations.map((item, index) => (
-            <motion.div
-              key={index}
-              variants={cardVariants}
-            >
+            <motion.div key={index} variants={cardVariants}>
               <DestinationCard {...item} />
             </motion.div>
           ))}

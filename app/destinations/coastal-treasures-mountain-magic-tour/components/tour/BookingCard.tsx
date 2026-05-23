@@ -29,7 +29,7 @@ export default function BookingCard() {
         "
       >
         <Image
-          src="/destination/coastal-tour/map.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529426/map_xfonwz.png"
           alt="Map"
           fill
           priority

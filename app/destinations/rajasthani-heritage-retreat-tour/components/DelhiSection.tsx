@@ -19,7 +19,7 @@ export default function DelhiSection() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/heritage-tour/delhi.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528158/delhi_r9ay8y.jpg"
           alt="Delhi"
           fill
           className="object-cover"

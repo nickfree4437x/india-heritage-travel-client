@@ -6,7 +6,7 @@ import RecommendedTours from "./components/RecommendedTours";
 import TourLayout from "./components/TourLayout";
 import HighlightsInclusions from "./components/HighlightsInclusions";
 import Itinerary from "./components/Itinerary";
-import ExcludedServices from "../majestic-golden-triangle-tour/components/ExcludedServices";
+import ExcludedServices from "../majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import Footer from "@/src/components/sections/footer/Footer";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 import TourSteps from "@/src/components/tours/TourSteps";
@@ -15,7 +15,7 @@ import CommonForm from "@/src/components/tours/CommonForm";
 
 export default function Page() {
   return (
-    <div className="bg-[#f8f6f2] min-h-screen">
+    <div className="bg-white min-h-screen">
       <HeroSection />
       <SuitableFor />
 

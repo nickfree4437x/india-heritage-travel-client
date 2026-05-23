@@ -2,26 +2,41 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import {
-  ShieldCheck,
-  Compass,
-  Headphones,
-  Route,
-} from "lucide-react";
+import { ShieldCheck, Compass, Headphones, Route } from "lucide-react";
+
+// ============================================================================
+// TYPES & INTERFACES
+// ============================================================================
 
 type ItemType = {
   icon: React.ReactNode;
   text: string;
 };
 
+// ============================================================================
+// MAIN COMPONENT
+// ============================================================================
+
 export default function Difference() {
+  // ==========================================================================
+  // REFS
+  // ==========================================================================
+
   const sectionRef = useRef<HTMLElement | null>(null);
+
+  // ==========================================================================
+  // VIEWPORT INTERSECTION
+  // ==========================================================================
 
   const isInView = useInView(sectionRef, {
     once: true,
     amount: 0.2,
     margin: "-100px 0px -100px 0px",
   });
+
+  // ==========================================================================
+  // DATA - FEATURE ITEMS
+  // ==========================================================================
 
   const items: ItemType[] = [
     {
@@ -42,7 +57,11 @@ export default function Difference() {
     },
   ];
 
-  // Container animation for stagger effect - slower
+  // ==========================================================================
+  // ANIMATION VARIANTS
+  // ==========================================================================
+
+  // Container animation for stagger effect
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -54,12 +73,9 @@ export default function Difference() {
     },
   };
 
-  // Individual item animation - slower
+  // Individual item animation
   const itemVariants = {
-    hidden: {
-      opacity: 0,
-      y: 50,
-    },
+    hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
@@ -71,12 +87,9 @@ export default function Difference() {
     },
   };
 
-  // Heading animation - slower
+  // Heading animation
   const headingVariants = {
-    hidden: {
-      opacity: 0,
-      y: 35,
-    },
+    hidden: { opacity: 0, y: 35 },
     visible: {
       opacity: 1,
       y: 0,
@@ -88,6 +101,10 @@ export default function Difference() {
     },
   };
 
+  // ==========================================================================
+  // MAIN RENDER
+  // ==========================================================================
+
   return (
     <motion.section
       ref={sectionRef}
@@ -96,7 +113,9 @@ export default function Difference() {
       className="relative py-8 sm:py-6 px-4 sm:px-6 bg-[#f8f6f2] overflow-hidden"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Heading */}
+        {/* ====================================================================
+            HEADING SECTION
+        ==================================================================== */}
         <motion.div
           variants={headingVariants}
           className="text-center mb-8 sm:mb-10 md:mb-10"
@@ -106,7 +125,9 @@ export default function Difference() {
           </h2>
         </motion.div>
 
-        {/* Items */}
+        {/* ====================================================================
+            FEATURES GRID
+        ==================================================================== */}
         <motion.div
           variants={containerVariants}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 
@@ -119,7 +140,7 @@ export default function Difference() {
               variants={itemVariants}
               className="group flex flex-col items-center px-4"
             >
-              {/* Icon with subtle hover animation */}
+              {/* Icon with hover animation */}
               <motion.div
                 className="text-[#8F6E4B] mb-4 transition duration-300"
                 whileHover={{
@@ -130,7 +151,7 @@ export default function Difference() {
                 {item.icon}
               </motion.div>
 
-              {/* Text */}
+              {/* Feature text */}
               <p
                 className="text-gray-800 text-[12px] font-light sm:text-[13px] md:text-[13px] 
                            leading-relaxed tracking-wide whitespace-nowrap"

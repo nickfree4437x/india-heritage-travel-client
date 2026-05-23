@@ -10,19 +10,19 @@ export default function RecommendedTours() {
     {
       title: "The Royal Heritage Trail Tour",
       desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
-      img: "/destination/coastal-tour/r1.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529731/r1_urhezn.jpg",
       slug: "/adventure/the-royal-heritage-trail-tour",
     },
     {
       title: "Mystical North India Discovery Tour",
       desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
-      img: "/destination/coastal-tour/r2.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529759/r2_ijxsvn.jpg",
       slug: "/destinations/mystical-north-india-discovery-tour",
     },
     {
       title: "Heritage Odyssey: North To South India Tour",
       desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour, from Cochin’s history to Mumbai’s vibrant dreams, with coastal delights, natural majesty, and timeless wonders in between.",
-      img: "/destination/coastal-tour/r3.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529784/r3_wapfho.webp",
       slug: "/adventure/heritage-odyssey",
     },
   ];

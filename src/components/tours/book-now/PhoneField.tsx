@@ -41,7 +41,7 @@ export default function PhoneField({
         flex items-center
         w-full
         border border-[#ddd2c2]
-        bg-[#f9f7f3]
+        bg-white
         rounded-lg
         overflow-hidden
         focus-within:border-[#9A7A58]
@@ -63,8 +63,8 @@ export default function PhoneField({
             control: (base) => ({
               ...base,
 
-              minHeight: "45px",
-              height: "45px",
+              minHeight: "40px",
+              height: "40px",
 
               border: "none",
 

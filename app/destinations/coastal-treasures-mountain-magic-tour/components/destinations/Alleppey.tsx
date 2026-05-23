@@ -29,7 +29,7 @@ export default function Alleppey() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-[450px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/coastal-tour/alleppey.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529254/alleppey_uqguvc.jpg"
           alt="Alleppey Backwaters"
           fill
           className="object-cover"

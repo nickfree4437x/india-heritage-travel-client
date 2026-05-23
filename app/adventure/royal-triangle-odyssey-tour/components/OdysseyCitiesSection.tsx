@@ -8,31 +8,31 @@ export default function OdysseyCitiesSection() {
       id: "delhi",
       title: "Delhi – A Blend Of History & Royalty",
       desc: "Discover Delhi, which is the mixture of history and modernity with Vibrant, contemporary, and bursting colours. In Old Delhi, you’ll experience the rich colours of humanity in all its shades and sensations.",
-      img: "/adventure/odyssey/delhi.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535347/delhi_zvevyd.jpg",
     },
     {
       id: "mandawa",
       title: "Mandawa – A Town Of Timeless Heritage And Beauty",
       desc: "Mandawa is a town where walls speak tales of artistry. This Rajasthani gem have its streets decorated with beautiful frescoes and havelis, each a live canvas of history and beauty. This is a living gallery of Rajasthan’s architectural magnificence and the stories echoes on its walls.",
-      img: "/adventure/odyssey/mandawa.jpeg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535380/mandawa_knhwkt.jpg",
     },
     {
       id: "jaipur",
       title: "Jaipur – The Pink City",
       desc: "A world where the echoes of the Mughal empire still linger, and uncover a marvel born from a timeless love tale: The Taj Mahal. Explore beautiful tombs, stately forts, and vibrant marketplaces that eagerly await your presence.",
-      img: "/adventure/odyssey/jaipur.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535421/jaipur_eplhjn.jpg",
     },
     {
       id: "agra",
       title: "Agra – Where History Rules Supreme",
       desc: "One of the most visited & loved city of Rajasthan is Jaipur. It is considered as a UNESCO World Heritage city & the heart of Rajasthan. The beautiful Pink city famous for its Grand forts & palaces, touristic spot & the best shopping site for traditional & rajasthani aesthetics",
-      img: "/adventure/odyssey/agra.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535453/agra_cgybs3.jpg",
     },
     {
       id: "varanasi",
       title: "Varanasi – The Spiritual Heart Of India",
       desc: "Varanasi, the land is ultimate spot of pilgrimage. It is also known as the oldest living cities in the world. Also Varanasi cannot be missed without a visit to Ganga Ghats. Varanasi throughout the ages, held historical significance. Also it has been centre of learning, spirituality, experiencing inner divine, culture, pilgrimage.",
-      img: "/adventure/odyssey/varanasi.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535511/varanasi_djb6cb.jpg",
     },
   ];
 

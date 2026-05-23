@@ -42,7 +42,7 @@ export default function Suitable() {
       </div>
 
       {/* 🎯 MAIN SECTION */}
-      <section className="bg-[#f8f6f2] pt-8 sm:pt-10 md:pt-12 pb-6 sm:pb-8 md:pb-10 px-3 sm:px-4 md:px-6">
+      <section className="bg-white pt-8 sm:pt-10 md:pt-12 pb-6 sm:pb-8 md:pb-10 px-3 sm:px-4 md:px-6">
         {/* 🏷 Heading */}
         <h2 className="text-[20px] sm:text-[24px] md:text-[28px] font-semibold text-center mb-4 sm:mb-6 md:mb-8 text-[#2c2c2c] tracking-wide">
           Suitable For

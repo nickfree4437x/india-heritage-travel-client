@@ -7,7 +7,7 @@ import HighlightsInclusions from "./components/HighlightsInclusions";
 import DetailedItinerary from "./components/DetailedItinerary";
 import RecommendedTours from "./components/RecommendedToures";
 import Footer from "@/src/components/sections/footer/Footer";
-import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/ExcludedServices";
+import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 import TourSteps from "@/src/components/tours/TourSteps";
 import CommonForm from "@/src/components/tours/CommonForm";

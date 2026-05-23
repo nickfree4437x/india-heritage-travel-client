@@ -19,7 +19,7 @@ export default function BikanerSection() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/heritage-tour/bikaner.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528101/bikaner_o7gsic.jpg"
           alt="Bikaner"
           fill
           className="object-cover"

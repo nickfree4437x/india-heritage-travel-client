@@ -286,7 +286,7 @@ export default function SoloTravelSection() {
                   className="col-span-1 row-span-2"
                 >
                   <Image
-                    src="/solo-trip/women-wall.jpeg"
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531020/women-wall_ftanbo.jpg"
                     alt="women"
                     width={300}
                     height={380}
@@ -300,7 +300,7 @@ export default function SoloTravelSection() {
                   className="col-span-1"
                 >
                   <Image
-                    src="/solo-trip/night-lights.jpeg"
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531130/night-lights_ncz5ue.jpg"
                     alt="lights"
                     width={300}
                     height={200}
@@ -314,7 +314,7 @@ export default function SoloTravelSection() {
                   className="col-span-2 -mt-3"
                 >
                   <Image
-                    src="/solo-trip/taj-mahal.jpeg"
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531181/taj-mahal_hln96e.jpg"
                     alt="taj"
                     width={600}
                     height={220}
@@ -333,7 +333,7 @@ export default function SoloTravelSection() {
             {/* RANGOLI (PERFECT CENTER - BACKGROUND) */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
               <Image
-                src="/solo-trip/rangoli.png"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531215/rangoli_gkxrux.png"
                 alt="rangoli"
                 width={100}
                 height={100}
@@ -347,7 +347,7 @@ export default function SoloTravelSection() {
               className="absolute top-0 left-0 w-[47%] z-10"
             >
               <Image
-                src="/solo-trip/elephant.jpeg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531252/elephant_wfliyn.jpg"
                 alt="elephant"
                 width={300}
                 height={220}
@@ -361,7 +361,7 @@ export default function SoloTravelSection() {
               className="absolute top-0 right-5 w-[46%] z-10"
             >
               <Image
-                src="/solo-trip/women-wall.jpeg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531020/women-wall_ftanbo.jpg"
                 alt="women"
                 width={300}
                 height={360}
@@ -375,7 +375,7 @@ export default function SoloTravelSection() {
               className="absolute bottom-5 left-[-60px] w-[46%] z-10"
             >
               <Image
-                src="/solo-trip/night-lights.jpeg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531130/night-lights_ncz5ue.jpg"
                 alt="lights"
                 width={300}
                 height={320}
@@ -389,7 +389,7 @@ export default function SoloTravelSection() {
               className="absolute bottom-0 right-[18px] w-[58%] z-10"
             >
               <Image
-                src="/solo-trip/taj-mahal.jpeg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531181/taj-mahal_hln96e.jpg"
                 alt="taj"
                 width={340}
                 height={250}

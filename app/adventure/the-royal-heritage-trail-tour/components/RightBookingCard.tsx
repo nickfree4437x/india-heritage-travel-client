@@ -13,7 +13,7 @@ export default function RightBookingCard() {
       {/* 🔥 MAP */}
       <div className="rounded-md overflow-hidden">
         <Image
-          src="/adventure/heritage/map.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534916/map_rmzw5b.png"
           alt="Tour Map"
           width={400}
           height={250}

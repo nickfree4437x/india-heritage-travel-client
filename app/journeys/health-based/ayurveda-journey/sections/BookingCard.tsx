@@ -11,7 +11,7 @@ export default function BookingCard() {
       {/* Map */}
       <div className="mb-4 rounded-md overflow-hidden">
         <Image
-          src="/journeys/ayurvedic/map.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546031/map_cqtksv.png"
           alt="Map"
           width={400}
           height={250}

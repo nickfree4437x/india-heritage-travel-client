@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/adventure/heritage-odyssey/banner.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538299/banner_teujgc.jpg"
           alt="Heritage Odyssey"
           fill
           priority

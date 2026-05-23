@@ -7,19 +7,19 @@ const tours = [
   {
     title: "Rajasthani Heritage Retreat",
     desc: "Explore the beautiful landscapes and rich culture of this region.",
-    image: "/adventure/heritage.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779527998/heritage_b4eaqj.jpg",
     slug: "/destinations/rajasthani-heritage-retreat-tour",
   },
   {
     title: "Divine Kashmir and Exciting Ladakh",
     desc: "Famous as the summer capital of Jammu & Kashmir, Srinagar lies in the Kashmir Valley.",
-    image: "/adventure/kashmir.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540225/kashmir_enxzcl.jpg",
     slug: "/adventure/divine-kashmir-and-exciting-ladakh",
   },
   {
     title: "Southern Delights: A Journey Through Time",
     desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour.",
-    image: "/adventure/delights.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536598/delights_g6wjjy.jpg",
     slug: "/adventure/southern-delights-tour",
   },
 ];

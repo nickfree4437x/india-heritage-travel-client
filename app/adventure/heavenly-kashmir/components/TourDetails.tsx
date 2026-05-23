@@ -3,7 +3,7 @@
 import Image from "next/image";
 import HighlightsInclusions from "./HighlightsInclusions";
 import Itinerary from "./Itinerary";
-import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/ExcludedServices";
+import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 
 export default function TourDetails() {
@@ -12,19 +12,19 @@ export default function TourDetails() {
       id: "srinagar",
       title: "Srinagar - Heaven On Earth",
       desc: "Famous as the summer capital of Jammu & Kashmir, Srinagar lies in the Kashmir Valley & on the banks of Jhelum River which is a tributary of Indus River. It has lush green gardens, lakes & houseboats which makes it more beautiful.  It has amazing Kashmiri handicrafts & famous dried fruits.",
-      img: "/adventure/heaven-kashmir/srinagar.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541846/srinagar_ihyux4.jpg",
     },
     {
       id: "gulmarg",
       title: "Gulmarg - Meadow Of Flowers",
       desc: "Gulmarg is a picturesque town in Jammu & Kashmir which is famous for its natural beauty & one spot destination for winters. It is often known as “Meadow of flowers” because of its vibrant summer meadows. It is Asia’s top skiing destination which offers pristine slope & also one of the highest cable cars in the world Gulmarg Gondola. It also has highest green golf course in the world which transforms it into golfing paradise.",
-      img: "/adventure/heaven-kashmir/gulmarg.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541884/gulmarg_oe2swx.jpg",
     },
     {
       id: "pahalgam",
       title: "Pahalgam - The Valley Of Shepherds",
       desc: "Pahalgam, also known as ‘The Valley of Shephards’ is a popular hill station. This town is situated on the banks of Lidder River at an altitude of 7,200 ft. Phalgam is a beautiful valley which is located at the streams flowing from Sheshnag Lake & the Lidder River. The area of Pahalgam is surrounded by thick wooded pine forests, snow-clad-Himalayan Mountains & amazing vistas of meadows.",
-      img: "/adventure/heaven-kashmir/pahalgam.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541920/pahalgam_uwgrf7.jpg",
     },
   ];
 

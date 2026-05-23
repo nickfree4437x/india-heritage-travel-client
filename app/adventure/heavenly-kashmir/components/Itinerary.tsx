@@ -52,7 +52,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
-                    src="/adventure/kashmir/itinerary/i1.jpg"
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541514/i1_fz7e9f.jpg"
                     alt="Delhi"
                     fill
                     className="object-cover"
@@ -99,7 +99,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
-                    src="/adventure/heaven-kashmir/itinerary/i2.jpg"
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541558/i2_n53uum.jpg"
                     alt="Gulmarg"
                     fill
                     className="object-cover"
@@ -142,7 +142,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
-                    src="/adventure/heaven-kashmir/itinerary/i3.jpg"
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541596/i3_huxrhq.jpg"
                     alt="Jaipur"
                     fill
                     className="object-cover"
@@ -179,7 +179,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image  
-                    src="/adventure/heaven-kashmir/itinerary/i4.jpg"
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541635/i4_aye22o.jpg"
                     alt="Delhi"
                     fill
                     className="object-cover"
@@ -210,7 +210,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
-                    src="/adventure/heaven-kashmir/itinerary/i5.jpeg"
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541676/i5_s6sjmp.jpg"
                     alt="Departure"
                     fill
                     className="object-cover"

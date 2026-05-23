@@ -26,7 +26,7 @@ export default function Cochin() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-[450px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/coastal-tour/cochin.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529289/cochin_yxbp74.jpg"
           alt="Cochin Backwaters"
           fill
           className="object-cover"

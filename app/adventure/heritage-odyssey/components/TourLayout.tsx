@@ -4,14 +4,14 @@ import TourLeft from "./TourLeft";
 import BookingCard from "./BookingCard";
 import HighlightsInclusions from "./HighlightSection";
 import Itinerary from "./ItinerarySection";
-import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/ExcludedServices";
+import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 
 export default function TourLayout() {
   return (
 
     /* 🔥 FULL WIDTH BG */
-    <section className="w-full bg-[#f8f6f2]">
+    <section className="w-full bg-white">
 
       {/* 🔥 CONTAINER */}
       <div

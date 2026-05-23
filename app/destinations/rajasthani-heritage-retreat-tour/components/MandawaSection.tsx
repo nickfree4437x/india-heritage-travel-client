@@ -19,7 +19,7 @@ export default function MandawaSection() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/heritage-tour/mandawa.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528356/mandawa_lhah1j.jpg"
           alt="Mandawa"
           fill
           className="object-cover"

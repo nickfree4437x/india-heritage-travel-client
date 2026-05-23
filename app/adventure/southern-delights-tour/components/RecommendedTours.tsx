@@ -7,19 +7,19 @@ const tours = [
   {
     title: "The Royal Heritage Trail Tour",
     desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
-    image: "/adventure/heritage/trail-tour.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534877/trail-tour_ypzior.png",
     slug: "/adventure/the-royal-heritage-trail-tour",
   },
   {
     title: "A Journey Through Heritage & Wildlife",
     desc: "Embark on a 13-day odyssey through heritage and wildlife on the ‘A Journey Through Heritage & Wildlife’ tour, from the captivating blend of history in Delhi to the wildlife wonders of Ranthambore, desert charm, and regal splendor.",
-    image: "/adventure/wildlife/hero.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532950/hero_xrxpym.jpg",
     slug: "/adventure/journey-through-heritage-wildlife",
   },
   {
     title: "Southern Splendors: Culture & Nature Trail",
     desc: "Embark on a 19-day ‘Southern Splendors: Culture & Nature Trail’ from Mumbai’s vibrant dreams to the rich cultural tapestry of Hampi, experiencing history, coastal delights, nature’s majesty, and regal splendor in between.",
-    image: "/adventure/splendors/splander.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535291/splander_rxivgm.png",
     slug: "/adventure/southern-splendors",
   },
 ];

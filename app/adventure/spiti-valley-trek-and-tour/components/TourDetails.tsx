@@ -3,7 +3,7 @@
 import Image from "next/image";
 import HighlightsInclusions from "./HighlightsInclusions";
 import Itinerary from "./Itinerary";
-import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/ExcludedServices";
+import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 
 export default function TourDetails() {
@@ -12,43 +12,43 @@ export default function TourDetails() {
       id: "delhi",
       title: "Delhi- A Blend Of History & Royalty",
       desc: "Discover Delhi, which is the mixture of history and modernity with Vibrant, contemporary, and bursting colours. In Old Delhi, you’ll experience the rich colours of humanity in all its shades and sensations.",
-      img: "/adventure/spiti/delhi.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542152/delhi_x74w1o.jpg",
     },
     {
       id: "chandigarh",
       title: "Chandigarh- Urban & Modern City​",
       desc: "Chandigarh is located on the foothills of Shivaliks & is famous as one of the best in urban planning & modern architecture. It is the dream city of India’s 1st prime Minister, Sh. Jawahar Lal Nehru & is planned by famous French architect Le Cobuiser.",
-      img: "/adventure/spiti/chandigarh.jpeg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542249/chandigarh_dtlwll.jpg",
     },
     {
       id: "manali",
       title: "Manali- A Picturesque Hill Station​",
       desc: "It is a popular tourist destination which serves a gateway to Lahaul & spiti district as well as Leh Ladakh. This has beautiful place which has amazing views, greenery, snow0kissed peaks, lush valleys.",
-      img: "/adventure/spiti/manali.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542288/manali_a5vjkq.jpg",
     },
     {
       id: "chandratal",
       title: "Chandratal- Moon Lake Of Himachal",
       desc: "Also known as ‘Moon-Lake’, it is high altitude lake located in Spiti valley of Himachal Pradesh. Famous for crystal waters & crescent shape, stunning landscapes.",
-      img: "/adventure/spiti/chandratal.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542330/chandratal_wbcvan.jpg",
     },
     {
       id: "kaza",
       title: "Kaza- Scenic Hub With Ancient Monasteries",
       desc: "Kaza is capital of Spiti, it is the most significant settlement you’ll witness in this planet.",
-      img: "/adventure/spiti/kaza.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542371/kaza_bd6oix.jpg",
     },
     {
       id: "tobo",
       title: "Tabo- Ajanta of Himalayas",
       desc: "Nubra valley is famous for its sand dunes, vibrant monasteries & stunning landscapes. It is located 10,000ft above sea level & is accessible via the Khardung La Pass which is one of the highest motorable roads in the world. This valley is famous for its double-humped Bacrian camels, confluence of the Shyok & picturesque village & Nubra rivers.",
-      img: "/adventure/spiti/tabo.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542416/tabo_f01iq9.jpg",
     },
     {
       id: "langza",
       title: "Langza- Natural beauty & geological history",
       desc: "Langza is a state surrounded by snow-clad mountains, barren landscapes & green pastures & have beautiful golden statue of Buddha & an ancient temple called ‘Lang’ & is said to be the Abode of the Deities of region. It is famous for its rich fossil reserve of marine plants & animals.",
-      img: "/adventure/spiti/langza.jpg",
+      img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542458/langza_zi9ccp.webp",
     },
   ];
 

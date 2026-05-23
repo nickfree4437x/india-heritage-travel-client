@@ -25,7 +25,7 @@ export default function Thekkady() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-[450px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/coastal-tour/thekkady.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529388/thekkady_u69qcl.jpg"
           alt="Thekkady Periyar Lake"
           fill
           className="object-cover"

@@ -1,8 +1,9 @@
 "use client";
 
+import { useState } from "react";
+
 type Props = {
   name?: string;
-
   value?: string;
 
   onChange?: (
@@ -16,20 +17,33 @@ export default function DateField({
   onChange,
 }: Props) {
 
+  const [inputType, setInputType] = useState("text");
+
   return (
 
     <div className="w-full">
 
       <input
-        type="date"
+        type={inputType}
         name={name}
         value={value}
+        placeholder="Select Date of Visit"
+
+        onFocus={() => setInputType("date")}
+
+        onBlur={() => {
+          if (!value) {
+            setInputType("text");
+          }
+        }}
+
         onChange={onChange}
+
         className="
           w-full
           h-12 sm:h-[45px]
           border border-[#ddd2c2]
-          bg-[#f9f7f3]
+          bg-white
           rounded-lg
           px-5
           py-2.5 sm:py-2.5

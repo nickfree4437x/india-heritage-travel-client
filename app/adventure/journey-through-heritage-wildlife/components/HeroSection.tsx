@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/adventure/wildlife/hero.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532950/hero_xrxpym.jpg"
           alt="Heritage & Wildlife Tour"
           fill
           priority

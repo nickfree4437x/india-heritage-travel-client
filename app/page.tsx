@@ -1,4 +1,4 @@
-import Navbar from "@/src/components/layout/nav/Navbar";
+import Navbar from "@/src/components/navbar-layout/navbar/Navbar";
 import Hero from "@/src/components/sections/hero/Hero";
 import Difference from "@/src/components/sections/how-make-difference/Difference";
 import About from "@/src/components/sections/welcome-section/About";

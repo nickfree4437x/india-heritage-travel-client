@@ -48,7 +48,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
-                  src="/destination/north-tour/itinerary/i1.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530292/i1_tolxzi.png"
                   alt="Delhi"
                   fill
                   className="object-cover"
@@ -132,7 +132,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
-                  src="/destination/north-tour/itinerary/i3.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530452/i3_kjoqzx.png"
                   alt="Jaipur"
                   fill
                   className="object-cover"
@@ -174,7 +174,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
-                  src="/destination/north-tour/itinerary/i4.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530492/i4_qtbyda.png"
                   alt="Delhi"
                   fill
                   className="object-cover"
@@ -218,7 +218,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
-                  src="/destination/north-tour/itinerary/i5.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530534/i5_uamdah.png"
                   alt="Delhi"
                   fill
                   className="object-cover"
@@ -259,7 +259,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
-                  src="/destination/north-tour/itinerary/i6.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530567/i6_qck9sy.jpg"
                   alt="Delhi"
                   fill
                   className="object-cover"
@@ -300,7 +300,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
-                  src="/destination/north-tour/itinerary/i7.jpeg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530600/i7_jeifrx.jpg"
                   alt="Delhi"
                   fill
                   className="object-cover"
@@ -341,7 +341,7 @@ export default function Itinerary() {
               <div className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
-                  src="/destination/north-tour/itinerary/i8.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530636/i8_ww7jgk.jpg"
                   alt="Delhi"
                   fill
                   className="object-cover"
@@ -369,7 +369,7 @@ export default function Itinerary() {
               <div  className="w-full flex justify-center">
                 <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
-                  src="/destination/golden-triangle/itinerary/farewal.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530663/i9_qsogqs.jpg"
                   alt="Departure"
                   fill
                   className="object-cover"

@@ -1,9 +1,27 @@
 "use client";
 
 export default function DetailedItineraryIntro() {
+
+  const handleScrollToForm = () => {
+
+    const formSection =
+      document.getElementById("booking-form");
+
+    if (formSection) {
+
+      formSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+    }
+
+  };
+
   return (
-    <section className="w-full bg-[#e9e5df">
-      <div className="max-w-6xl mx-auto bg-white px-4 sm:px-4 lg:px-4 py-4">
+    <section className="w-full bg-white">
+
+      <div className="max-w-6xl mx-auto bg-white shadow-sm border border-[#eee7dd] rounded-md px-4 sm:px-4 lg:px-4 py-4">
 
         {/* Heading */}
         <h2 className="text-[16px] md:text-[18px] font-medium text-[#AF956C] tracking-[0.01em]">
@@ -12,15 +30,20 @@ export default function DetailedItineraryIntro() {
 
         {/* Description */}
         <div className="mt-2 max-w-4xl">
-          <p className="text-[12px] font-light sm:text-[13px] lg:text-[13px] leading-[2] italic text-[#7B7B7B] m-0">
+
+          <p className="text-[12px] font-light sm:text-[13px] lg:text-[13px] leading-[2] italic text-gray-600 m-0">
+
             <span className="font-[600] text-[#5F5F5F]">
               Note:
             </span>{" "}
+
             This is the sample itinerary and will be customized as per your
             preference. If you are willing to make any changes in the below
             plan, fill out the form and an Expert from our team will reach
             out to you shortly.
+
           </p>
+
         </div>
 
       </div>
@@ -29,6 +52,7 @@ export default function DetailedItineraryIntro() {
       <div className="mt-8 flex justify-center px-4">
 
         <button
+          onClick={handleScrollToForm}
           className="
             group relative overflow-hidden
 
@@ -45,10 +69,10 @@ export default function DetailedItineraryIntro() {
 
             transition-all duration-300 ease-out
 
-            shadow-[0_8px_30px_rgba(175,149,108,0.18)]
+            shadow-sm
 
             hover:bg-[#9d845d]
-            hover:shadow-[0_12px_35px_rgba(175,149,108,0.28)]
+            hover:shadow-md
 
             active:translate-y-0
 
@@ -56,6 +80,7 @@ export default function DetailedItineraryIntro() {
             text-center
           "
         >
+
           <span className="relative z-10">
             Book This Tour Or Modify This Itinerary
           </span>
@@ -70,9 +95,11 @@ export default function DetailedItineraryIntro() {
               group-hover:translate-x-full
             "
           />
+
         </button>
 
       </div>
+
     </section>
   );
 }

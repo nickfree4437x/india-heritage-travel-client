@@ -19,7 +19,7 @@ export default function UdaipurSection() {
       {/* Image */}
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
-          src="/destination/heritage-tour/udaipur.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528417/udaipur_bvo97u.jpg"
           alt="Udaipur"
           fill
           className="object-cover"

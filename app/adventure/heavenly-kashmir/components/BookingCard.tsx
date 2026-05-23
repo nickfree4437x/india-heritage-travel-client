@@ -11,7 +11,7 @@ export default function BookingCard() {
       {/* Map */}
       <div className="rounded-md overflow-hidden">
         <Image
-          src="/adventure/heaven-kashmir/map.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541393/map_yzrzoc.png"
           alt="Map"
           width={400}
           height={250}

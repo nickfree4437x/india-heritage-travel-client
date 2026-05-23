@@ -7,25 +7,25 @@ const cities = [
     id: "delhi",
     title: "Delhi – A Blend Of History & Royalty",
     desc: "Discover Delhi, which is the mixture of history and modernity with Vibrant, contemporary, and bursting colours. In Old Delhi, you’ll experience the rich colours of humanity in all its shades and sensations.",
-    img: "/adventure/heritage/delhi.jpg",
+    img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534424/delhi_xcp2n1.jpg",
   },
   {
     id: "mandawa",
     title: "Mandawa – A Town Of Timeless Heritage And Beauty",
     desc: "Mandawa is a town where walls speak tales of artistry. This Rajasthani gem have its streets decorated with beautiful frescoes and havelis, each a live canvas of history and beauty. This is a living gallery of Rajasthan’s architectural magnificence and the stories echoes on its walls.",
-    img: "/adventure/heritage/mandawa.jpg",
+    img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534461/mandawa_vgoahc.jpg",
   },
   {
     id: "jaipur",
     title: "Jaipur – The Pink City Of Magnificent Grandeur",
     desc: "One of the most visited & loved city of Rajasthan is Jaipur. It is considered as a UNESCO World Heritage city & the heart of Rajasthan. The beautiful Pink city famous for its Grand forts & palaces, touristic spot & the best shopping site for traditional & rajasthani aesthetics",
-    img: "/adventure/heritage/jaipur.jpg",
+    img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534507/jaipur_bvgekd.jpg",
   },
   {
     id: "agra",
     title: "Agra – Where History Rules Supreme",
     desc: "A world where the echoes of the Mughal empire still linger, and uncover a marvel born from a timeless love tale: The Taj Mahal. Explore beautiful tombs, stately forts, and vibrant marketplaces that eagerly await your presence.",
-    img: "/adventure/heritage/agra.jpg",
+    img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534537/agra_my5ltf.jpg",
   },
 ];
 

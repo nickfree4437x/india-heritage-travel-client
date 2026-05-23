@@ -1,6 +1,6 @@
 export default function AyurvedaOverview() {
   return (
-    <section className="bg-[#f9f7f3]">
+    <section className="bg-white">
       <div className="max-w-5xl mx-auto px-6 text-center">
 
         {/* Heading */}

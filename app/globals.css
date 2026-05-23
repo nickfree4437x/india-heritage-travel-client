@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
+@import "react-datepicker/dist/react-datepicker.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -131,4 +133,34 @@ nav span {
 
 html {
   scroll-behavior: smooth;
+}
+
+.custom-datepicker {
+  border: none !important;
+  border-radius: 18px !important;
+  overflow: hidden;
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.08) !important;
+
+  font-family: inherit !important;
+}
+
+.react-datepicker__header {
+  background: #fcfbf8 !important;
+  border-bottom: 1px solid #eee7dd !important;
+}
+
+.react-datepicker__current-month {
+  color: #AF956C !important;
+  font-weight: 500 !important;
+}
+
+.react-datepicker__day--selected {
+  background: #AF956C !important;
+  border-radius: 10px !important;
+}
+
+.react-datepicker__day:hover {
+  background: #f3ede4 !important;
+  border-radius: 10px !important;
 }

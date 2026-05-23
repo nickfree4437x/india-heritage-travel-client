@@ -13,8 +13,8 @@ import AgraSection from "./components/AgraSection";
 import HighlightsSection from "./components/HighlightsSection";
 import ItinerarySection from "./components/ItinerarySection";
 //import Recommended from "./components/RecommendTous";
-import ExcludedServices from "../majestic-golden-triangle-tour/components/ExcludedServices";
-import RecommendedTours from "../majestic-golden-triangle-tour/components/RecommendedTours";
+import ExcludedServices from "../majestic-golden-triangle-tour/components/pricing/ExcludedServices";
+import RecommendedTours from "../majestic-golden-triangle-tour/components/sections/RecommendedTours";
 import Footer from "@/src/components/sections/footer/Footer";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 import TourSteps from "@/src/components/tours/TourSteps";
@@ -22,7 +22,7 @@ import CommonForm from "@/src/components/tours/CommonForm";
 
 export default function Page() {
   return (
-    <div className="bg-[#f8f6f2] min-h-screen">
+    <div className="bg-white min-h-screen">
 
       {/* 🔹 HERO */}
       <Hero />

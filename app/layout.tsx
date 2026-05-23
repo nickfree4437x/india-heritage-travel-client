@@ -11,7 +11,7 @@ import { Toaster } from "react-hot-toast";
 
 import "./globals.css";
 
-import Navbar from "@/src/components/layout/nav/Navbar";
+import Navbar from "@/src/components/navbar-layout/navbar/Navbar";
 import StickyPlanButton from "@/src/components/common/StickyPlanButton";
 
 // Body Font

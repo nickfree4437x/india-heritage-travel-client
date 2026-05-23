@@ -7,7 +7,7 @@ const tours = [
   {
     title: "Ayurveda Journey: Explore the Science of Wellness",
     desc: "Ayurveda, a natural health system, originated more than 3,000 years ago in India.",
-    image: "/journeys/yoga/recom.webp",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779545537/recom_x6z095.webp",
     slug: "/journeys/health-based/ayurveda-journey",
   },
 ];

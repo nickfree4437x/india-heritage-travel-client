@@ -11,7 +11,7 @@ export default function TourLayout({ children }: TourLayoutProps) {
   return (
 
     /* 🔥 FULL WIDTH BG */
-    <section className="w-full bg-[#f8f6f2]">
+    <section className="w-full bg-white">
 
       {/* 🔥 CONTAINER */}
       <div
