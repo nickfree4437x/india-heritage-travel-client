@@ -9,30 +9,30 @@ import { MessageCircle } from "lucide-react";
 const blogs = [
   {
     title:
-      "Top Safe & Luxury Destinations in India for Solo Female Travellers",
-    image: "/blogs/blog-2/blog-2.jpg",
-    date: "August 21, 2024",
-    slug: "safe-luxury-destinations",
+      "Top 10 Places to Visit in India During Summer",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779652419/blog-7_kt857x.jpg",
+    date: "20 Apr",
+    slug: "top-place-visit",
   },
   {
     title:
       "The Ultimate First-Time Traveler’s Guide to India",
-    image: "/blogs/blog-3/blog-3.jpg",
-    date: "November 28, 2025",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637895/blog-3_dksm9v.jpg",
+    date: "Dec 10",
     slug: "indian-traveler-guide",
   },
   {
     title:
       "Top Heritage Hotels in India for an Exclusive Stay",
-    image: "/blogs/blog-9/blog-9.jpg",
-    date: "January 12, 2026",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779638017/blog-9_h4aqqf.jpg",
+    date: "Feb 6",
     slug: "top-heritage-hotel",
   },
 ];
 
 export default function MoreFoodSection() {
   return (
-    <section className="w-full bg-white py-16 sm:py-20 border-t border-[#ddd4ca]">
+    <section className="w-full bg-white pb-14 border-t border-[#ddd4ca]">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -110,20 +110,21 @@ export default function MoreFoodSection() {
                 <h3
                   className="
                     text-[18px]
-                    sm:text-[22px]
+                    md:text-[20px]
+                    leading-[1.22]
 
-                    leading-[1.2]
+                    font-normal
+                    tracking-normal
 
-                    text-[#111111]
+                    text-[#111]
+
+                    break-words
 
                     transition-colors
                     duration-300
 
                     group-hover:text-[#7C5C38]
                   "
-                  style={{
-                    fontFamily: "'Marcellus', serif",
-                  }}
                 >
                   {blog.title}
                 </h3>
@@ -137,8 +138,9 @@ export default function MoreFoodSection() {
 
                     mt-5
 
-                    text-[#8b8b8b]
-                    text-sm
+                    text-[#5f5f5f]
+                    text-[14px]
+                    font-light
                   "
                 >
 

@@ -5,32 +5,32 @@ import { useState, useEffect } from "react";
 
 const data = [
   {
-    image: "/festivals/kumbh/kumbh1.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550685/kumbh1_jxiiun.jpg",
     title: "The Royal Bath",
     desc: "Join the crowds at Shahi Snan — the Kumbh’s most sacred and powerful ritual.",
   },
   {
-    image: "/festivals/kumbh/kumbh2.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547846/kumbh_arulyq.jpg",
     title: "Meet the Sadhus",
     desc: "Visit Akhara camps and witness the life and rituals of India’s holy men.",
   },
   {
-    image: "/festivals/kumbh/kumbh3.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550813/kumbh3_i2seiv.jpg",
     title: "Sunset Boat Ride",
     desc: "Drift along the Ganges at sunset — a quiet break from the crowd.",
   },
   {
-    image: "/festivals/kumbh/kumbh4.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550862/kumbh4_m8eozy.jpg",
     title: "Listen to Spiritual Talks",
     desc: "Attend open-air discourses where saints and gurus share ancient wisdom.",
   },
   {
-    image: "/festivals/diwali/taj.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549751/taj_hnq7kj.jpg",
     title: "Timeless Beauty of the Taj",
     desc: "Visit the Taj Mahal — a white marble wonder and symbol of eternal love, glowing at sunrise.",
   },
   {
-    image: "/festivals/kumbh/delhi.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550923/delhi_iya9on.jpg",
     title: "Experience the Pulse of India",
     desc: "Delhi is busy, bold, and full of stories — every corner has something to offer.",
   },
@@ -54,7 +54,7 @@ export default function SpecialSection() {
 
   return (
     <section
-      className="bg-[#f8f6f2] py-2 sm:py-6 md:py-6 scroll-mt-24 md:scroll-mt-20"
+      className="bg-white py-2 sm:py-6 md:py-6 scroll-mt-24 md:scroll-mt-20"
       id="special"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

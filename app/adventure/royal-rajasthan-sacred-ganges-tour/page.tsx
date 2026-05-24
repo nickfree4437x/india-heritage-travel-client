@@ -3,6 +3,7 @@ import SuitableFor from "./components/SuitableFor";
 import TourLayout from "./components/TourLayout";
 import BookingCard from "./components/BookingCard";
 import CitiesSection from "./components/CitiesSection";
+import ItinerarySection from "./components/ItinerarySection";
 import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import RecommendedTours from "@/app/destinations/majestic-golden-triangle-tour/components/sections/RecommendedTours";
 import Footer from "@/src/components/sections/footer/Footer";
@@ -19,14 +20,15 @@ export default function RoyalRajasthanPage() {
 
       <TourLayout sidebar={<BookingCard />}>
         <CitiesSection/>
-        <div className="space-y-8">
+        <div className="space-y-6">
+          <ItinerarySection/>
           <ExcludedServices/>
           <DetailedItineraryIntro/>
         </div>
       </TourLayout>
         
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="royal-rajasthan-sacred-ganges-tour"/>
       <RecommendedTours/>
       <Footer/>
 

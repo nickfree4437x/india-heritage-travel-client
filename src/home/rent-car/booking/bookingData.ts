@@ -8,9 +8,9 @@ export const bookingSteps: string[] = [
 ];
 
 export const vehicleOptions: string[] = [
-  "Innova Crysta",
-  "Etios",
-  "Dzire",
-  "Tempo Traveller",
-  "Luxury Bus",
+  "Toyota Etios",
+  "Toyota innova",
+  "Swift Dzire",
+  "Tempo Traveller 10 seater",
+  "Tempo Traveller 12 seater",
 ];

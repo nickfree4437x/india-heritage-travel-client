@@ -102,10 +102,11 @@ export default function WomenSeeSection() {
   return (
     <section
       ref={sectionRef}
-      className="w-full overflow-hidden bg-[#f8f6f2] md:py-20"
+      className="w-full overflow-hidden bg-white md:py-20"
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between lg:gap-20 xl:gap-24">
+        {/* SIRF YAHAN GAP CHANGE KIYA - gap-20 se gap-8/12 kar diya */}
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between lg:gap-12 xl:gap-16">
 
           {/* LEFT SIDE - CONTENT (NO ANIMATION) */}
           <div className="mt-12 w-full max-w-xl">
@@ -179,7 +180,7 @@ export default function WomenSeeSection() {
               className="relative mb-3 h-[300px] overflow-hidden rounded-none shadow-lg"
             >
               <Image
-                src="/solo-women/img_3.JPEG"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779633583/img_3_tgerix.jpg"
                 alt="women"
                 fill
                 className="object-cover"
@@ -199,7 +200,7 @@ export default function WomenSeeSection() {
                 className="relative h-[180px] overflow-hidden shadow-md"
               >
                 <Image
-                  src="/solo-women/img_1.JPEG"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779633575/img_1_rex932.jpg"
                   alt="elephant"
                   fill
                   className="object-cover"
@@ -214,7 +215,7 @@ export default function WomenSeeSection() {
                 className="relative h-[180px] overflow-hidden shadow-md"
               >
                 <Image
-                  src="/solo-women/img_2.JPEG"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779633697/img_2_ibmjqt.jpg"
                   alt="lights"
                   fill
                   className="object-cover"
@@ -229,7 +230,7 @@ export default function WomenSeeSection() {
                 className="relative h-[180px] overflow-hidden shadow-md"
               >
                 <Image
-                  src="/solo-women/img_4.JPEG"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779633582/img_4_bj0ywl.jpg"
                   alt="taj"
                   fill
                   className="object-cover"

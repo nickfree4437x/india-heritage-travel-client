@@ -4,6 +4,8 @@ import TourDetails from "./TourDetails";
 import BookingCard from "./BookingCard";
 import ExcludedServices from "@/app/destinations/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
+import HighlightsInclusions from "./HighlightsInclusions";
+import Itinerary from "./Itinerary";
 
 export default function TourLayout() {
   return (
@@ -43,7 +45,9 @@ export default function TourLayout() {
 
             <TourDetails />
 
-            <div className="space-y-6">
+            <div className="space-y-8">
+              <HighlightsInclusions />
+              <Itinerary />
               <ExcludedServices/>
               <DetailedItineraryIntro/>
             </div>

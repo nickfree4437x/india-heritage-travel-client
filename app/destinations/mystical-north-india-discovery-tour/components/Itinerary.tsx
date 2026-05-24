@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Itinerary() {
   return (
-    <section className="py-2">
+    <section className="py-4">
 
       {/* 🔥 SAME WIDTH AS CITY SECTION */}
       <div className="max-w-5xl mx-auto">
@@ -46,7 +46,7 @@ export default function Itinerary() {
 
               {/* IMAGE */}
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530292/i1_tolxzi.png"
                   alt="Delhi"
@@ -85,10 +85,10 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
-                  src="/destination/north-tour/itinerary/i2.png"
-                  alt="Agra"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779610788/Screenshot-2025-06-26-151340_kcrnq0.png"
+                  alt="Mandawa"
                   fill
                   className="object-cover"
                 />
@@ -130,7 +130,7 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530452/i3_kjoqzx.png"
                   alt="Jaipur"
@@ -172,7 +172,7 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530492/i4_qtbyda.png"
                   alt="Delhi"
@@ -216,7 +216,7 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530534/i5_uamdah.png"
                   alt="Delhi"
@@ -257,7 +257,7 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530567/i6_qck9sy.jpg"
                   alt="Delhi"
@@ -298,7 +298,7 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530600/i7_jeifrx.jpg"
                   alt="Delhi"
@@ -339,7 +339,7 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530636/i8_ww7jgk.jpg"
                   alt="Delhi"
@@ -367,7 +367,7 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div  className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530663/i9_qsogqs.jpg"
                   alt="Departure"

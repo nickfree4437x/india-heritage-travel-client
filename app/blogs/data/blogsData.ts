@@ -5,8 +5,7 @@ export const blogs = [
     id: 1,
     slug: "india-food-guide",
     title: "A Guide to Indian Food: What to Try & What to Avoid",
-    category: "Heritage",
-    image: "/blogs/blog-1/blog-1.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779634924/hero-1_xs9azf.jpg",
     date: "5 Jan",
     excerpt:
       "Indian food terrifies some travellers. I get it. Just the spices could ....",
@@ -15,9 +14,8 @@ export const blogs = [
     id: 2,
     slug: "safe-luxury-destinations",
     title: "It is personal choice for women to travel solo. Some trips are about ....",
-    category: "Wellness",
-    image: "/blogs/blog-2/blog-2.jpg",
-    date: "23 Dec",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637769/blog-2_ma62qv.jpg",
+    date: "Dec 10",
     excerpt:
       "It is personal choice for women to travel solo. Some trips are about rest ....",
   },
@@ -25,8 +23,7 @@ export const blogs = [
     id: 3,
     slug: "indian-traveler-guide",
     title: "The Ultimate First-Time Traveler’s Guide to India",
-    category: "Solo Women",
-    image: "/blogs/blog-3/blog-3.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637895/blog-3_dksm9v.jpg",
     date: "10 Dec",
     excerpt:
       "The second you step outside of the airport in India, everything just hits ....",
@@ -35,8 +32,7 @@ export const blogs = [
     id: 4,
     slug: "solo-traveler",
     title: "India for Slow Travelers: Cultural, Wellness and Offbeat Experiences",
-    category: "Travel Guide",
-    image: "/blogs/blog-4/blog-4.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641987/blog-4_rarjqw.jpg",
     date: "4 Dec",
     excerpt:
       "Slow travel is simple. You stay put. You breathe. You allow places to reveal ...",
@@ -45,8 +41,7 @@ export const blogs = [
     id: 5,
     slug: "chaos-your-journeys",
     title: "From Chaos to Bliss: How the Right India Travel Agency Can Flip Your Journey",
-    category: "Luxury Travel",
-    image: "/blogs/blog-5/blog-5.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779639547/blog-5_kpbanj.jpg",
     date: "29 Nov",
     excerpt:
       "You have probably felt that gnawing sense of dread before a big trip: so ...",
@@ -55,19 +50,17 @@ export const blogs = [
     id: 6,
     slug: "honeymonn-tour-package",
     title: "Find the Ideal Honeymoon Tour Packages with India Heritage Travel",
-    category: "Spiritual",
-    image: "/blogs/blog-6/blog-6.jpeg",
-    date: "May 10, 2026",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779635049/hero-3_wj3zaa.jpg",
+    date: "12 Aug",
     excerpt:
-      "Your honeymoon is not a vacation—it’s the beginning of your eternal love story.",
+      "Your honeymoon is not a vacation - it’s the beginning of your eternal love story.",
   },
   {
     id: 7,
     slug: "top-place-visit",
     title: "Top 10 Places to Visit in India During Summer",
-    category: "Mountains",
-    image: "/blogs/blog-7/blog-7.jpg",
-    date: "May 08, 2026",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779652419/blog-7_kt857x.jpg",
+    date: "20 Apr",
     excerpt:
       "As the summer hitting hard in India, May is the beautiful time to ...",
   },
@@ -86,8 +79,8 @@ export const blogs = [
     slug: "top-heritage-hotel",
     title: "Top Heritage Hotels in India for an Exclusive Stay",
     category: "Nature",
-    image: "/blogs/blog-9/blog-9.jpg",
-    date: "May 04, 2026",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779638017/blog-9_h4aqqf.jpg",
+    date: "Feb 6",
     excerpt:
       "India is a land where ancient palaces and royal residences have been ...",
   },
@@ -120,15 +113,5 @@ export const blogs = [
     date: "April 28, 2026",
     excerpt:
       "One of the most incredible cities in India, New Delhi, is the vibrant capi ...",
-  },
-  {
-    id: 13,
-    slug: "rajasthan-beyond-fort",
-    title: "Rajasthan beyond the Forts and Palaces",
-    category: "Luxury",
-    image: "/blogs/blog-13/blog-13.jpg",
-    date: "April 26, 2026",
-    excerpt:
-      "Rajasthan beyond forts and palaces is famous for its amazing culture & heritage",
   },
 ];

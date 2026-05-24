@@ -34,7 +34,7 @@ export default function Page() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-2 md:py-2 grid grid-cols-1 md:grid-cols-[2.5fr_1fr] gap-6 md:gap-8 lg:gap-10">
 
         {/* LEFT SIDE */}
-        <div className="space-y-8 sm:space-y-10 md:space-y-10 lg:space-y-10">
+        <div className="space-y-8 sm:space-y-8 md:space-y-8 lg:space-y-8">
           <DelhiSection />
           <MandawaSection />
           <BikanerSection />
@@ -45,9 +45,11 @@ export default function Page() {
           <JaipurSection />
           <AgraSection />
           <HighlightsSection />
-          <ItinerarySection />
-          <ExcludedServices/>
-          <DetailedItineraryIntro/>
+          <div className="space-y-4">
+            <ItinerarySection />
+            <ExcludedServices />
+            <DetailedItineraryIntro />
+          </div>
           {/* Next sections */}
         </div>
 
@@ -60,7 +62,7 @@ export default function Page() {
       </div>
       
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="rajasthani-heritage-retreat-tour"/>
       <RecommendedTours/>
       <Footer/>
 

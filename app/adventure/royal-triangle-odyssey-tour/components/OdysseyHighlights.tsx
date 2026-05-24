@@ -33,7 +33,7 @@ export default function OdysseyHighlights() {
   ];
 
   return (
-    <section className="">
+    <section className="md:py-0 py-8">
       
       {/* 🔥 SAME WIDTH AS DELHI SECTION */}
       <div className="max-w-5xl mx-auto">

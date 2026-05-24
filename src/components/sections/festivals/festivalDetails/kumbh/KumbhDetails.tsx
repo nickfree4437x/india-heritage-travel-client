@@ -24,7 +24,7 @@ export default function KumbhDetails() {
         <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
 
           <Image
-            src="/festivals/kumbh/kumbh.jpg"
+            src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547846/kumbh_arulyq.jpg"
             alt="Kumbh Mela"
             fill
             priority
@@ -87,7 +87,7 @@ export default function KumbhDetails() {
       {/* 💰 PRICING */}
       <PricingSection />
 
-      <CommonForm/>
+      <CommonForm tourName="kumbh-tour"/>
 
       {/* 🌍 EXPLORE */}
       <ExploreSection />

@@ -41,7 +41,6 @@ export default function DateField({
 
         className="
           w-full
-          h-12 sm:h-[45px]
           border border-[#ddd2c2]
           bg-white
           rounded-lg
@@ -50,11 +49,12 @@ export default function DateField({
           text-[12px]
           sm:text-[13px]
           text-[#5b5348]
+          placeholder:text-[#9a8f81]
+          placeholder:font-light
           font-light
           tracking-[0.2px]
           focus:outline-none
           focus:border-[#9A7A58]
-          cursor-pointer
           transition
         "
       />

@@ -3,6 +3,18 @@
 import Image from "next/image";
 
 export default function RightBookingCard() {
+
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById("booking-form");
+
+    if (formSection) {
+      formSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div
       className="ticky top-24 bg-white 
@@ -54,6 +66,7 @@ export default function RightBookingCard() {
 
         {/* CTA */}
         <button
+        onClick={handleScrollToForm}
           className="w-full
             bg-[#AF956C]
             text-white

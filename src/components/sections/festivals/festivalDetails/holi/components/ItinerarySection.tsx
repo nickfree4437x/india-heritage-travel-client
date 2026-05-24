@@ -12,7 +12,7 @@ export default function ItinerarySection() {
   };
 
   return (
-    <section className="py-10 bg-[#f8f6f2] scroll-mt-16 md:scroll-mt-24" id="itinerary">
+    <section className="py-10 bg-white scroll-mt-16 md:scroll-mt-24" id="itinerary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
@@ -407,7 +407,7 @@ export default function ItinerarySection() {
               
               <div className="rounded-md overflow-hidden shadow-sm">
                 <Image
-                  src="/festivals/holi/map.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547998/map_w7xiae.webp"
                   alt="Route Map"
                   width={700}
                   height={850}
@@ -422,7 +422,7 @@ export default function ItinerarySection() {
           <div className="lg:hidden mt-2">
             <div className="rounded-md overflow-hidden shadow-sm max-w-md mx-auto">
               <Image
-                src="/festivals/holi/map.jpg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547998/map_w7xiae.webp"
                 alt="Route Map"
                 width={600}
                 height={700}

@@ -2,7 +2,7 @@
 
 export default function HoneymoonContentSection() {
   return (
-    <section className="w-full bg-white py-16 sm:py-20 lg:py-24">
+    <section className="w-full bg-white">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -10,7 +10,7 @@ export default function HoneymoonContentSection() {
         {/* INTRO */}
         <div className="max-w-5xl space-y-8 sm:space-y-10">
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#5e5e5e] font-light">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Your honeymoon is not a vacation—it’s the beginning of your
             eternal love story. It’s a chance to relax after all the
             celebrations, bask in the happiness of being together, and
@@ -23,7 +23,7 @@ export default function HoneymoonContentSection() {
             customized per your needs.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#5e5e5e] font-light">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Whether you are fantasizing about strolling hand-in-hand
             along the marble halls of the Taj Mahal, seeing the sunset
             over a beach in Goa, sailing Kerala backwaters on a private
@@ -38,56 +38,32 @@ export default function HoneymoonContentSection() {
         </div>
 
         {/* WHY SECTION */}
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-6 sm:mt-8">
 
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[52px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-12
-              sm:mb-14
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Why Our Honeymoon Tour Packages?
           </h2>
 
           {/* ITEMS */}
-          <div className="space-y-14 sm:space-y-16">
+          <div className="space-y-10 sm:space-y-10">
 
             {/* ITEM 1 */}
             <div className="max-w-5xl">
 
               <h3
                 className="
-                  text-[26px]
-                  sm:text-[30px]
-                  lg:text-[34px]
-
-                  leading-[1.2]
-
-                  text-[#111111]
-
-                  mb-5
-                  sm:mb-6
+                  text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Personalized Romantic Escapes
               </h3>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 We get that no two couples are the same, so no two
                 itineraries should be the same either. From the classic
                 sophistication of palaces to secluded forest retreats,
@@ -102,25 +78,13 @@ export default function HoneymoonContentSection() {
 
               <h3
                 className="
-                  text-[26px]
-                  sm:text-[30px]
-                  lg:text-[34px]
-
-                  leading-[1.2]
-
-                  text-[#111111]
-
-                  mb-5
-                  sm:mb-6
+                  text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Luxury Honeymoon Without Compromise
               </h3>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 We align with the world’s best luxury hotels—from
                 decadent heritage hotels to remote eco-lodges—so every
                 night is a party for you. Rise to candlelit breakfasts,
@@ -135,25 +99,13 @@ export default function HoneymoonContentSection() {
 
               <h3
                 className="
-                  text-[26px]
-                  sm:text-[30px]
-                  lg:text-[34px]
-
-                  leading-[1.2]
-
-                  text-[#111111]
-
-                  mb-5
-                  sm:mb-6
+                 text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Unforgettable India Honeymoon Experiences
               </h3>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Whether it’s a sunset boat ride along the Ganges, chai
                 moments in stunning hill stations, following vibrant
                 desert dunes hand-in-hand, or having each other in one
@@ -168,25 +120,13 @@ export default function HoneymoonContentSection() {
 
               <h3
                 className="
-                  text-[26px]
-                  sm:text-[30px]
-                  lg:text-[34px]
-
-                  leading-[1.2]
-
-                  text-[#111111]
-
-                  mb-5
-                  sm:mb-6
+                  text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Personalized Moments & Expert Planning
               </h3>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 You should be able to move in your journey easily.
                 Whether it be the place you want to go, or the thing you
                 want to do, we can help make dreams come true. Our team
@@ -204,25 +144,13 @@ export default function HoneymoonContentSection() {
 
               <h3
                 className="
-                  text-[26px]
-                  sm:text-[30px]
-                  lg:text-[34px]
-
-                  leading-[1.2]
-
-                  text-[#111111]
-
-                  mb-5
-                  sm:mb-6
+                  text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Featured Romantic Escapes
               </h3>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Walk through some of our most enchanting experiences of
                 romance, luxury and the never seen before beauty of
                 India which are carefully designed to match the ethos of

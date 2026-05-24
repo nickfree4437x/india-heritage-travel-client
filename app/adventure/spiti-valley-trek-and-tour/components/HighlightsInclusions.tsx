@@ -75,7 +75,7 @@ export default function HighlightsInclusions() {
             {/* LIST */}
             <ul
               className="
-                space-y-3
+                space-y-1.5
 
                 text-[12px] sm:text-[12px]
                 text-gray-700

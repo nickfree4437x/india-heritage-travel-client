@@ -22,8 +22,9 @@ export default function DestinationSection() {
       <Munnar />
       <Mumbai />
       <HighlightsInclusions />
-      <DetailedItinerary />
-      <div className="space-y-8">
+      
+      <div className="space-y-6">
+        <DetailedItinerary />
         <ExcludedServices/>
         <DetailedItineraryIntro/>
       </div>

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function DestinationsSection() {
   return (
-    <section className="w-full bg-white py-10 sm:py-14 lg:py-16">
+    <section className="w-full bg-white py-10 sm:py-14 lg:py-12">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -16,25 +16,13 @@ export default function DestinationsSection() {
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Udaipur, Rajasthan
           </h2>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Udaipur is surprisingly peaceful in a way that
             surprises many of its first-time visitors.
             The lakes soften the city and the traffic is
@@ -43,7 +31,7 @@ export default function DestinationsSection() {
             of order.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Luxury stay can be at Taj Lake Palace or
             Oberoi Udaivilas. Evening boat ride on Lake
             Pichola is calm and lazy. Dining by the water,
@@ -53,25 +41,13 @@ export default function DestinationsSection() {
         </div>
 
         {/* JAIPUR SECTION */}
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-8 sm:mt-10">
 
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Jaipur, Rajasthan
           </h2>
@@ -79,7 +55,7 @@ export default function DestinationsSection() {
           {/* CONTENT */}
           <div className="max-w-5xl">
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               Jaipur is vibrant but it’s also ordered.
               Sufficient sightseeing areas, trustworthy
               guides and a constant stream of tourists
@@ -87,7 +63,7 @@ export default function DestinationsSection() {
               that is very well-versed in hospitality.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               Some luxurious places to stay are Rambagh
               Palace and Samode Haveli. Explore the culture
               without getting lost with a guided tour
@@ -121,7 +97,7 @@ export default function DestinationsSection() {
           >
 
             <Image
-              src="/blogs/blog-2/jaipur.webp"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637787/jaipur_yiv98y.webp"
               alt="Jaipur Rajasthan"
               fill
               className="object-cover"

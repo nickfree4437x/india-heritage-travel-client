@@ -20,13 +20,15 @@ export default function RoyalRajasthanPage() {
       <ToursLayout rightContent={<RightBookingCard />}>
         <CitiesSection/>
         <HighlightsInclusions />
-        <DetailedItinerary />
-        <ExcludedServices/>
-        <DetailedItineraryIntro/>
+        <div className="space-y-6">
+          <DetailedItinerary />
+          <ExcludedServices/>
+          <DetailedItineraryIntro/>
+        </div>
       </ToursLayout>
       
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="the-royal-heritage-trail-tour"/>
       <RecommendedTours />
       <Footer/>
     </>

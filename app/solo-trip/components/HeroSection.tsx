@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-[96vh] w-full overflow-hidden">
+    <section className="relative h-[100vh] w-full overflow-hidden">
 
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/solo-women/hero.jpeg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779626227/hero_a0aojv.jpg"
           alt="Solo Women Trip"
           fill
           priority
@@ -21,17 +21,25 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/30 to-black/65" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-end justify-center">
+      <div className="relative z-10 h-full flex items-end md:items-center">
 
         <div
           className="
             w-full
+
             flex
             justify-center
+            md:justify-start
+
             px-6
+            md:px-14
+            lg:px-20
+
             pb-36
-            sm:pb-40
-            md:pb-20
+            sm:pb-36
+
+            md:pb-0
+            md:pt-44
           "
         >
 
@@ -91,8 +99,11 @@ export default function Hero() {
             </p>
 
           </div>
+
         </div>
+
       </div>
+
     </section>
   );
 }

@@ -14,7 +14,7 @@ export default function RoyalRajasthanPage() {
       <TourLayout />
 
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="southern-delights-tour"/>
       <RecommendedTours />
       <Footer/>
     </div>

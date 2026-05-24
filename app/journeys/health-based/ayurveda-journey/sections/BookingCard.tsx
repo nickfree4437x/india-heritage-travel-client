@@ -3,13 +3,25 @@
 import Image from "next/image";
 
 export default function BookingCard() {
+
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById("booking-form");
+
+    if (formSection) {
+      formSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
-    <div className="ticky top-24 bg-white 
+    <div className="sticky top-24 bg-white 
                    rounded-md shadow-md p-2 
                    border border-[#eee7dd]  max-w-[350px] ml-auto">
 
       {/* Map */}
-      <div className="mb-4 rounded-md overflow-hidden">
+      <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546031/map_cqtksv.png"
           alt="Map"
@@ -50,7 +62,9 @@ export default function BookingCard() {
         </ul>
 
         {/* CTA */}
-        <button className="w-full bg-[#AF956C] text-white py-2.5 rounded-full 
+        <button 
+        onClick={handleScrollToForm}
+         className="w-full bg-[#AF956C] text-white py-2.5 rounded-full 
                            text-sm tracking-wide
                            transition-all duration-300
                            hover:bg-[#8f7654] hover:shadow-sm">

@@ -18,7 +18,7 @@ export default function RoyalRajasthanPage() {
       </TourLayout>
 
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="heavenly-kashmir-tour"/>
       <RecommendedTours />
       <Footer/>
     </div>

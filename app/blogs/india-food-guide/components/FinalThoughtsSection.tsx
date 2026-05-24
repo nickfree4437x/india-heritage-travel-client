@@ -4,7 +4,7 @@
 
 export default function FinalThoughtsSection() {
   return (
-    <section className="w-full bg-white py-8 md:py-14 pb-24">
+    <section className="w-full bg-white py-8 md:py-14 md:pb-24">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
@@ -13,14 +13,11 @@ export default function FinalThoughtsSection() {
 
           <h2 className="
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
-              "
-              style={{
-                fontFamily: "'Marcellus', serif",
-              }}>
+              ">
             The Reality for Solo Female Travellers
           </h2>
 
-          <div className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+          <div className="text-gray-700 mb-6 leading-relaxed text-[13px] md:text-[14.5px] font-[300] text-justify">
             <p>
               Getting sick whilst travelling alone isn’t fun.
               Pack hand sanitiser. Use it before meals.
@@ -50,18 +47,15 @@ export default function FinalThoughtsSection() {
         </div>
 
         {/* FINAL THOUGHTS */}
-        <div className="max-w-6xl mt-24">
+        <div className="max-w-6xl mt-0 md:mt-24">
 
           <h2 className="
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
-              "
-              style={{
-                fontFamily: "'Marcellus', serif",
-              }}>
+              ">
             Final Thoughts
           </h2>
 
-          <div className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+          <div className="text-gray-700 mb-6 leading-relaxed text-[13px] md:text-[14.5px] font-[300] text-justify">
             <p>
               Indian food is genuinely spectacular.
               The spices, the variety, the sheer creativity

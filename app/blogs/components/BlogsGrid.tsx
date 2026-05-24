@@ -27,7 +27,7 @@ export default function BlogsGrid() {
   );
 
   return (
-    <section className="py-14 sm:py-16 lg:py-24 bg-[#f4f0ea]">
+    <section className="py-14 sm:py-16 lg:py-24 bg-white">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
 
@@ -68,7 +68,8 @@ export default function BlogsGrid() {
                 {/* TITLE */}
                 <h3
                   className="
-                    text-[25px]
+                    text-[18px]
+                    md:text-[20px]
                     leading-[1.22]
 
                     font-normal
@@ -83,13 +84,6 @@ export default function BlogsGrid() {
 
                     group-hover:text-[#7C5C38]
                   "
-                  style={{
-                    fontFamily: "'Marcellus', serif",
-                    fontWeight: 400,
-                    wordWrap: "break-word",
-                    textTransform: "none",
-                    lineHeight: 1,
-                  }}
                 >
                   {blog.title}
                 </h3>
@@ -98,7 +92,7 @@ export default function BlogsGrid() {
                 <p
                   className="
                     mt-5
-                    text-[15px]
+                    text-[14px]
                     leading-5
                     text-[#5f5f5f]
                     font-light
@@ -125,55 +119,161 @@ export default function BlogsGrid() {
         </div>
 
         {/* PAGINATION */}
-        <div className="flex justify-center items-center gap-3 mt-16 sm:mt-20">
+        <div
+          className="
+            flex
+            flex-wrap
+            justify-center
+            items-center
+            gap-2
+            sm:gap-3
+            mt-16
+            sm:mt-20
+          "
+        >
 
-          {Array.from({
-            length: totalPages,
-          }).map((_, index) => (
+          {/* PREVIOUS BUTTON */}
+          <button
+            onClick={() =>
+              setCurrentPage((prev) =>
+                Math.max(prev - 1, 1)
+              )
+            }
+            disabled={currentPage === 1}
+            className="
+              w-[44px]
+              h-[44px]
 
-            <button
-              key={index}
-              onClick={() =>
-                setCurrentPage(index + 1)
-              }
-              className={`
-                relative
+              flex
+              items-center
+              justify-center
 
-                min-w-[42px]
-                h-[42px]
+              rounded-lg
 
-                rounded-full
+              border
+              border-[#e8dfd3]
 
-                text-sm
-                font-medium
+              bg-white
 
-                transition-all
-                duration-300
+              text-[#8b6a3d]
 
-                ${
-                  currentPage === index + 1
-                    ? `
-                      bg-[#2b2b2b]
-                      text-white
-                      shadow-[0_8px_30px_rgba(0,0,0,0.12)]
-                    `
-                    : `
-                      bg-white/90
-                      text-[#2b2b2b]
+              transition-all
+              duration-300
 
-                      border
-                      border-[#e7dfd4]
+              hover:bg-[#8b6a3d]
+              hover:text-white
+              hover:border-[#8b6a3d]
 
-                      hover:border-[#2b2b2b]
-                      hover:bg-[#2b2b2b]
-                      hover:text-white
-                    `
+              disabled:opacity-40
+              disabled:cursor-not-allowed
+              disabled:hover:bg-white
+              disabled:hover:text-[#8b6a3d]
+            "
+          >
+            ←
+          </button>
+
+          {/* PAGE NUMBERS */}
+          <div className="flex items-center gap-2 sm:gap-3">
+
+            {Array.from({
+              length: totalPages,
+            }).map((_, index) => (
+
+              <button
+                key={index}
+                onClick={() =>
+                  setCurrentPage(index + 1)
                 }
-              `}
-            >
-              {index + 1}
-            </button>
-          ))}
+                className={`
+                  relative
+
+                  min-w-[44px]
+                  h-[44px]
+
+                  rounded-lg
+
+                  text-[13px]
+                  font-medium
+
+                  transition-all
+                  duration-300
+
+                  ${
+                    currentPage === index + 1
+                      ? `
+                        bg-[#8b6a3d]
+                        text-white
+
+                        shadow-[0_10px_30px_rgba(0,0,0,0.12)]
+
+                        scale-[1.04]
+                      `
+                      : `
+                        bg-white
+
+                        text-[#8b6a3d]
+
+                        border
+                        border-[#e8dfd3]
+
+                        hover:bg-[#8b6a3d]
+                        hover:text-white
+                        hover:border-[#8b6a3d]
+                      `
+                  }
+                `}
+              >
+
+                {index + 1}
+
+              </button>
+
+            ))}
+
+          </div>
+
+          {/* NEXT BUTTON */}
+          <button
+            onClick={() =>
+              setCurrentPage((prev) =>
+                Math.min(prev + 1, totalPages)
+              )
+            }
+            disabled={currentPage === totalPages}
+            className="
+              w-[44px]
+              h-[44px]
+
+              flex
+              items-center
+              justify-center
+
+              rounded-lg
+
+              border
+              border-[#e8dfd3]
+
+              bg-white
+
+              text-[#8b6a3d]
+
+              transition-all
+              duration-300
+
+              hover:bg-[#8b6a3d]
+              hover:text-white
+              hover:border-[#8b6a3d]
+
+              disabled:opacity-40
+              disabled:cursor-not-allowed
+              disabled:hover:bg-white
+              disabled:hover:text-[#8b6a3d]
+            "
+          >
+            →
+          </button>
+
         </div>
       </div>
     </section>

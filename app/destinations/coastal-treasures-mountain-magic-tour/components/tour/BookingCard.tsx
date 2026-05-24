@@ -3,13 +3,25 @@
 import Image from "next/image";
 
 export default function BookingCard() {
+
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById("booking-form");
+
+    if (formSection) {
+      formSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div
       className="
         sticky top-24
         bg-white
         rounded-md
-        shadow-sm p-2 sm:p-3
+        shadow-md p-2 sm:p-3
         border border-[#eee7dd]
         overflow-hidden
         w-full
@@ -69,6 +81,7 @@ export default function BookingCard() {
 
         {/* CTA */}
         <button
+        onClick={handleScrollToForm}
           className="
             w-full
             bg-[#AF956C]
@@ -80,7 +93,6 @@ export default function BookingCard() {
             transition-all duration-300
             hover:bg-[#8f7654]
             hover:shadow-sm
-            hover:-translate-y-[1px]
             cursor-pointer
           "
         >

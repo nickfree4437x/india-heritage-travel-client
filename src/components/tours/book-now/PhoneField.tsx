@@ -162,7 +162,7 @@ export default function PhoneField({
         placeholder="Mobile Number"
         className="
           flex-1
-          h-[45px]
+          h-[40px]
           bg-transparent
           px-4
           text-[12px]

@@ -5,42 +5,42 @@ import { useState, useEffect } from "react";
 
 const data = [
   {
-    image: "/festivals/diwali/diwali1.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549089/diwali1_ofiii9.jpg",
     title: "Celebrate Diwali",
     desc: "Light diyas, join home rituals, and experience the warmth of India’s biggest festival from the inside.",
   },
   {
-    image: "/festivals/diwali/diwali2.jpeg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549133/diwali2_ux9jos.jpg",
     title: "Taste the Flavours of Diwali",
     desc: "Celebrate with handmade sweets like gujiya and laddoo, and festive snacks straight from local kitchens.",
   },
   {
-    image: "/festivals/diwali/diwali3.jpeg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549176/diwali3_uzxcna.jpg",
     title: "Diwali Traditions Up Close",
     desc: "Join in as families light diyas, decorate with rangoli, and offer prayers for new beginnings.",
   },
   {
-    image: "/festivals/diwali/diwali4.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549225/diwali4_m5epli.png",
     title: "Experience Delhi’s Rich Heritage",
     desc: "Visit iconic sites like the Red Fort and Humayun’s Tomb, and explore the soul of Old Delhi.",
   },
   {
-    image: "/festivals/diwali/diwali5.png",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549279/diwali5_cuvsxd.png",
     title: "Camel Rides & Desert Nights in Jaisalmer",
     desc: "Ride through the dunes at sunset and end the day with a bonfire, folk music, and dinner under the stars.",
   },
   {
-    image: "/festivals/diwali/diwali6.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549448/diwali6_rwagam.jpg",
     title: "Experience Spiritual Varanasi",
     desc: "Take a boat ride at sunrise, walk the ghats, and see daily rituals unfold along the Ganges.",
   },
   {
-    image: "/festivals/diwali/diwali7.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549686/diwali7_fsmjgx.jpg",
     title: "Witness the Ganga Aarti in Varanasi",
     desc: "Experience the magic of Varanasi at dusk, as bells ring and flames rise in devotion by the sacred river.",
   },
   {
-    image: "/festivals/diwali/taj.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549751/taj_hnq7kj.jpg",
     title: "Timeless Beauty of the Taj",
     desc: "Visit the Taj Mahal — a white marble wonder and symbol of eternal love, glowing at sunrise.",
   },
@@ -64,7 +64,7 @@ export default function SpecialSection() {
 
   return (
     <section
-      className="bg-[#f8f6f2] py-2 sm:py-6 md:py-6 scroll-mt-20 md:scroll-mt-24"
+      className="bg-white py-2 sm:py-6 md:py-6 scroll-mt-20 md:scroll-mt-24"
       id="special"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

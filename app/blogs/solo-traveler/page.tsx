@@ -10,7 +10,7 @@ import Footer from "@/src/components/sections/footer/Footer";
 
 export default function SoloTravelerPage() {
   return (
-    <main className="w-full bg-[#f4f0ea]">
+    <main className="w-full bg-white">
 
       <HeroSection />
 

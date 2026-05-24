@@ -42,7 +42,7 @@ export default function HoneymoonFaqSection() {
   };
 
   return (
-    <section className="w-full bg-[#f7f4ef] py-16 sm:py-20 lg:py-24">
+    <section className="w-full bg-white py-8 pb-14">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -52,17 +52,8 @@ export default function HoneymoonFaqSection() {
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[52px]
-
-              leading-[1.15]
-
-              text-[#111111]
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Frequently Asked Questions
           </h2>
@@ -77,14 +68,14 @@ export default function HoneymoonFaqSection() {
 
             bg-white
 
-            rounded-[22px]
-            sm:rounded-[28px]
+            rounded-lg
+            sm:rounded-xl
 
             border border-[#e9e2d8]
 
             overflow-hidden
 
-            shadow-[0_8px_35px_rgba(0,0,0,0.04)]
+            shadow-sm
           "
         >
 
@@ -136,8 +127,8 @@ export default function HoneymoonFaqSection() {
                         h-[38px]
 
                         sm:min-w-[42px]
-                        sm:w-[42px]
-                        sm:h-[42px]
+                        sm:w-[30px]
+                        sm:h-[40px]
 
                         rounded-full
 
@@ -169,18 +160,8 @@ export default function HoneymoonFaqSection() {
                     {/* TITLE */}
                     <h3
                       className="
-                        text-[17px]
-                        sm:text-[21px]
-                        lg:text-[24px]
-
-                        leading-[1.5]
-
-                        text-[#222222]
+                        text-[14px] sm:text-[15px] md:text-[16px] tracking-wide text-[#2c2c2c] mb-4
                       "
-                      style={{
-                        fontFamily:
-                          "'Marcellus', serif",
-                      }}
                     >
                       {faq.question}
                     </h3>
@@ -245,7 +226,7 @@ export default function HoneymoonFaqSection() {
                       "
                     >
 
-                      <p className="text-[15px] sm:text-[17px] leading-8 text-[#666666] font-light">
+                      <p className="text-gray-700 mt-4 leading-relaxed text-[13px] md:text-[14px] font-[300] text-justify">
                         {faq.answer}
                       </p>
 

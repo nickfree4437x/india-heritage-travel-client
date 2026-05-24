@@ -13,7 +13,7 @@ export const reviews = [
        The selection of properties was excellent. Each hotel offered comfort, great service, and a unique experience that enhanced every destination. The on-ground support team was always available for any questions or concerns, which gave me total peace of mind.
        A heartfelt thank you to Isha and Piyush, who personally met me in Jaipur to welcome me to India.
        This trip was truly 10/10. I highly recommend India Heritage Travel to anyone, especially women traveling solo, looking for a safe, well-organized, and unforgettable journey through India!`,
-    image: "/reviews/r1.jpeg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779576736/r1_ruxhfn.jpg",
   },
 
   {
@@ -31,7 +31,7 @@ export const reviews = [
        Also many thanks to Will, my driver in Varanasi, who took me to an awesome street food place (where I made a spectacle of myself in front of the locals at my first attempt at pani puri :); and to my guides in every city - most notably to Narendra, Rajosh, Jai, Lucky and Mubarik! And last but not least, Piyush, the other co-owner of Indian Heritage Travel, whom I got to meet in Jaipur!
        India Heritage Travel team has given me a gift to cherish for a lifetime - a trip that showed me India in ways I had not been able to experience on my own; with experiences that shifted some ways I used to look at the world.
        Thank you, Indian Heritage Travel, from the bottom of my heart! ❤️🙏❤️`,
-    image: "/reviews/r2.jpeg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779577001/r2_sgqhiy.jpg",
   },
 
   {
@@ -46,7 +46,7 @@ export const reviews = [
        The driver on the trip (Khanu Singh) was also excellent and very accommodating. He was a very safe driver and very knowledgable about all of the routes (having been driving these routes for over 16 years!) and provided us with water and snacks throughout the trip which were very welcome. Again, he is someone I would request by name if I was coming on the trip again!
        The final mention has to go to Isha herself, she personally managed so much of our trip and made sure everything went smoothly for us. When we first arrived to India (at around 2am) the drivers on the first night accidentally took us to the wrong hotel as the hotels were named almost identically and very close to each other, and Isha stayed up until past 3am to make sure we arrived safely to the correct location. She was really excellent and I would like to thank her and everyone else on the tour for making it so memorable for us.
        I would highly recommend India Heritage if you are planning a trip to the Golden Triangle!`,
-       image: "/reviews/r3.jpeg",
+       image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779577098/r3_cm8zho.jpg",
   },
 
   {
@@ -58,17 +58,45 @@ export const reviews = [
     full:
       `2week itinerary organized by Isha - we had 2 fabulous dedicated drivers that got us around Rajasthan safely and securely, they were attentive to our needs, nothing was too much, kept us fed and hydrated on the long road driving days and were pleasant to be around. Isha organized a professional guide in each city we visited who were invaluable in knowledge, stories and imparting information of their home cities.  Everything ran smoothly from start to finish, flights, accommodation and transportation were seamless. The accommodation choices were impeccable, we opted to stay in heritage havelis - all of which were top notch.  Activities you could tailor make and include in your itinerary or not.
        If it’s your first time in India I would highly recommend the services of Isha and her company.  She was so professional, aimiable and checked in with us daily. 5 stars !`,
-    image: "/reviews/r4.jpeg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779577295/r4_evh2ds.jpg",
   },
 
   {
     id: 5,
-    name: "Evangeline Chee",
-    type: "family",
+    name: "Kaizel Mendoza",
+    type: "Solo",
     rating: 5,
-    short: "Loved every moment of my solo trip.",
+    short: "The company caught my attention through social media and I immediately got a response from Isha. ",
     full:
-      "Loved every moment of my solo trip. It was safe, well-organized, and full of unique experiences. I felt confident traveling alone thanks to the amazing support.",
-    image: "/reviews/r5.JPEG",
+      `The company caught my attention through social media and I immediately got a response from Isha. She customised my itinerary based on my timeline and I cant thank her enough for her efforts. She provided detailed information and a very kind and accommodating driver Nepal. I was absoultely taken care of by the driver during our roadtrip and Isha continuously ensuring my safety and that I was having a great time. I had ample time to explore on my own in some days and I had guides that explain about the history. The best guide I had was in Jaipur. Overall, I had a great experience most specially with the customised itinerary, 
+       prompt response from Isha and the safety with the driver Nepal. Highly recommended. :)`,
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779653067/25.05.2026_01.31.20_REC_srcsgn.png",
+  },
+
+  {
+    id: 6,
+    name: "Camila Diniz",
+    type: "Solo",
+    rating: 5,
+    short: "I’ve contacted India heritage travel when planning my solo trip to India. The level of customer service and attention I received from Isha and her team was faultless . ",
+    full:
+      `I’ve contacted India heritage travel when planning my solo trip to India. The level of customer service and attention I received from Isha and her team was faultless . From the drivers, to the local guides and support they have been paramount in ensuring that my trip to India was smooth and memorable. Thank you to Khanu Singh, a superb driver who stayed with me for most of my road trip and to Jay (Jaipur), Yogesh (Jodhpur) , Deepak (a Pushkar), Lackhan (my driver in Delhi and Agra) and to all the local guides I had for your knowledge and for showing me your beautiful country.
+       If you’re planning a trip to India I would highly recommend India Heritage Travel`,
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779653974/25.05.2026_01.47.45_REC_d6lfeq.png",
+  },
+
+  {
+    id: 7,
+    name: "Anne Lemince",
+    type: "Solo",
+    rating: 5,
+    short: "I had limited time but the team organised a great experience, I was super anxious about travelling in India alone but I shouldn’t have been.",
+    full:
+      `I had limited time but the team organised a great experience, I was super anxious about travelling in India alone but I shouldn’t have been. From start to finish I was well looked after, and any questions the team answered super fast.
+      Such a polite driver (Nepal) … even came with me into shops when I felt a bit overwhelmed
+      My guide was so knowledgeable as well … was able to truly get the full historical low down and I loved it!
+      Would recommend this team to ANYONE … they can 
+      work with your budget to which really helped when I’m trying to do a lot of travel this year.`,
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779654554/25.05.2026_01.57.05_REC_hqizjy.png",
   },
 ];

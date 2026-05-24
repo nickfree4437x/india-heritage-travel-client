@@ -43,7 +43,7 @@ export default function HighlightsInclusions() {
               Highlights
             </h2>
 
-            <ul className="space-y-3 text-gray-700 text-xs font-light">
+            <ul className="space-y-1.5 text-gray-700 text-xs font-light">
 
               {[
                 "Cochin’s Culture Unveiled",

@@ -3,6 +3,18 @@
 import Image from "next/image";
 
 export default function BookingCard() {
+
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById("booking-form");
+
+    if (formSection) {
+      formSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div className="ticky top-24 bg-white 
                    rounded-md shadow-md p-2 
@@ -50,7 +62,9 @@ export default function BookingCard() {
         </ul>
 
         {/* CTA */}
-        <button className="w-full
+        <button
+         onClick={handleScrollToForm} 
+         className="w-full
             bg-[#AF956C]
             text-white
             py-2 sm:py-2.5

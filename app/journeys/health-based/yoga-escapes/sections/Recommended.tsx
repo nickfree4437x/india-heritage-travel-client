@@ -14,7 +14,7 @@ const tours = [
 
 export default function RecommendedTours() {
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-8">
+    <section className="max-w-[1400px] mx-auto px-6 py-10">
 
       {/* 🔹 Heading */}
       <h2

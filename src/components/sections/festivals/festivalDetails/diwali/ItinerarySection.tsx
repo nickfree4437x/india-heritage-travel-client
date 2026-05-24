@@ -12,7 +12,7 @@ export default function ItinerarySection() {
   };
 
   return (
-    <section className="py-14 bg-[#f8f6f2] scroll-mt-16 md:scroll-mt-24" id="itinerary">
+    <section className="py-14 bg-white scroll-mt-16 md:scroll-mt-24" id="itinerary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
@@ -460,7 +460,7 @@ export default function ItinerarySection() {
             <div className="sticky top-24">
               <div className="rounded-md overflow-hidden shadow-sm">
                 <Image
-                  src="/festivals/diwali/map.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549023/Mystical-North-India-Discovery.b4-1_glawag.png"
                   alt="Route Map"
                   width={600}
                   height={700}
@@ -475,7 +475,7 @@ export default function ItinerarySection() {
           <div className="lg:hidden mt-2">
             <div className="rounded-md overflow-hidden shadow-sm max-w-md mx-auto">
               <Image
-                src="/festivals/diwali/map.jpg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549023/Mystical-North-India-Discovery.b4-1_glawag.png"
                 alt="Route Map"
                 width={600}
                 height={700}

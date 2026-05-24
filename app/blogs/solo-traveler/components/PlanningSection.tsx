@@ -6,30 +6,17 @@ import Image from "next/image";
 
 export default function PlanningSection() {
   return (
-    <section className="w-full bg-white py-10 sm:py-14 lg:py-16">
+    <section className="w-full bg-white -mt-6">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
 
-        {/* TOP SECTION */}
 
         {/* HEADING */}
         <h2
           className="
-            text-[34px]
-            sm:text-[42px]
-            lg:text-[52px]
-
-            leading-[1.15]
-
-            text-[#111111]
-
-            mb-8
-            sm:mb-10
+            text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
           "
-          style={{
-            fontFamily: "'Marcellus', serif",
-          }}
         >
           How to Plan a Solo Trip
         </h2>
@@ -37,13 +24,13 @@ export default function PlanningSection() {
         {/* CONTENT */}
         <div className="max-w-5xl">
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Stay longer in every place. If you would
             have normally stayed two nights, stay five.
             You need those extra days to acclimatise.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Opt for heritage stays when you have the
             choice. They help families and keep old
             buildings alive. Spend money thoughtfully.
@@ -52,12 +39,12 @@ export default function PlanningSection() {
             local guides who speak from experience.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Customize tour packages in India with
             enterprises that understand slow travelling.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             The best India travel agencies won’t fit ten
             stops into one day. Holiday tour packages in
             India can be moulded to fit your travel pace,
@@ -65,13 +52,13 @@ export default function PlanningSection() {
             is a concern.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Personalized holiday packages can be a
             success only when you are honest about
             your style.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             If slow mornings are important, say that.
             If you enjoy lazy afternoons, state it.
             The best India tour packages are shaped
@@ -102,7 +89,7 @@ export default function PlanningSection() {
         >
 
           <Image
-            src="/blogs/blog-4/map.webp"
+            src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641960/map_jzsihw.webp"
             alt="Planning Slow Travel India"
             fill
             className="object-cover"
@@ -110,35 +97,23 @@ export default function PlanningSection() {
         </div>
 
         {/* BOTTOM CONTENT */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8 pb-12">
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             The Part That Stays With You
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Slow travel in India is to let things stretch.
             A cooking class takes longer because your
             host wants you to learn the dish.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             A neighbour waves you over. A brief stroll
             becomes an afternoon full of stories.
             These unplanned moments stay with you
@@ -149,7 +124,7 @@ export default function PlanningSection() {
             the memory you miss.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Working with thoughtful operators like
             <span className="text-[#2756d8] font-semibold">
               {" "}India Heritage Travel

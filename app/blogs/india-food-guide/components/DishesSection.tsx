@@ -13,17 +13,14 @@ export default function DishesSection() {
         {/* HEADING */}
         <h2 className="
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
-            "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}>
+            ">
           The Dishes You Actually Need to Try
         </h2>
 
         {/* CONTENT */}
         <div className="max-w-6xl">
 
-          <div className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+          <div className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             <p>
               Butter chicken feels cliché since it’s everywhere,
               but the creamy tomato sauce isn’t spicy enough to
@@ -79,7 +76,7 @@ export default function DishesSection() {
         <div className="relative h-[320px] sm:h-[450px] lg:h-[700px] rounded-sm overflow-hidden mt-16">
 
           <Image
-            src="/blogs/blog-1/bhature.jpg"
+            src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779636756/bhature_ihez4y.jpg"
             alt="Indian Dishes"
             fill
             className="object-cover"

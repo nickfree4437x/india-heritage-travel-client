@@ -52,7 +52,7 @@ export default function HighlightsInclusions() {
 
             <ul
               className="
-                space-y-3
+                space-y-1
                 text-[#555] font-light
                 text-[11px] sm:text-[12px]
               "

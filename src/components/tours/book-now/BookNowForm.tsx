@@ -17,13 +17,18 @@ import { CountryOption } from "./types";
 type Props = {
   countries: CountryOption[];
   selectedCountry: CountryOption | null;
-  setSelectedCountry: (country: CountryOption | null) => void;
+  setSelectedCountry: (
+    country: CountryOption | null
+  ) => void;
+
+  tourName: string;
 };
 
 export default function BookNowForm({
   countries,
   selectedCountry,
   setSelectedCountry,
+  tourName,
 }: Props) {
 
   const [loading, setLoading] = useState(false);
@@ -38,7 +43,9 @@ export default function BookNowForm({
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement
+    >
   ) => {
 
     const { name, value } = e.target;
@@ -80,12 +87,20 @@ export default function BookNowForm({
       setLoading(true);
 
       const templateParams = {
+        tour_name: tourName,
+
         full_name: formData.fullName,
+
         email: formData.email,
+
         guests: formData.guests,
+
         phone: formData.phone,
+
         country: selectedCountry?.name || "",
+
         travel_date: formData.travelDate,
+
         message: formData.message,
       };
 
@@ -96,7 +111,9 @@ export default function BookNowForm({
         "rvMW1BZcFGmyRc8y6"
       );
 
-      toast.success("Inquiry Sent Successfully!");
+      toast.success(
+        "Inquiry Sent Successfully!"
+      );
 
       setFormData({
         fullName: "",
@@ -204,7 +221,9 @@ export default function BookNowForm({
           disabled={loading}
           className="group relative w-full sm:w-auto px-8 sm:px-8 h-10 sm:h-[45px] rounded-xl bg-[#AF956C] hover:bg-[#8f7654] disabled:opacity-70 text-white font-[300] text-[12px] sm:text-[13px] tracking-wide transition-all duration-300 shadow-sm flex items-center justify-center gap-2"
         >
-          {loading ? "Sending..." : "Submit Inquiry"}
+          {loading
+            ? "Sending..."
+            : "Submit Inquiry"}
         </button>
 
       </div>

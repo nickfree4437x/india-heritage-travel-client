@@ -11,23 +11,23 @@ import {
 
 const slides = [
   {
-    image: "/blogs/hero-1.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779634924/hero-1_xs9azf.jpg",
     title: "A Guide to Indian Food: What to Try & What to Avoid",
     desc: "Step into the world of majestic forts, royal palaces, vibrant bazaars, and centuries-old cultural traditions.",
   },
   {
-    image: "/blogs/hero-2.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779635143/hero-2_yi8tf9.jpg",
     title: "A First-Timer’s Guide to Jaipur | Ultimate 3 Day Guide",
     desc: "Reconnect your mind and soul through curated wellness experiences across India’s serene destinations.",
   },
   {
-    image: "/blogs/hero-3.jpeg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779635049/hero-3_wj3zaa.jpg",
     title:
       "Find the Ideal Honeymoon Tour Packages with India Heritage Travel",
     desc: "Explore inspiring journeys, safety tips, and meaningful travel experiences designed for solo women travelers.",
   },
   {
-    image: "/blogs/hero-4.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779635022/hero-4_kjz2ij.jpg",
     title:
       "India for Solo Travelers: Cultural, Wellness and Offbeat Experiences",
     desc: "Get insider travel inspiration, hidden gems, local experiences, and expert travel insights from across India.",
@@ -104,17 +104,9 @@ export default function HeroSection() {
                   sm:text-4xl
                   sm:leading-[1.2]
                   lg:text-5xl
-                  font-heading
                   max-w-3xl
                   mx-auto
                 "
-                style={{
-                    fontFamily: "'Marcellus', serif",
-                    fontWeight: 400,
-                    wordWrap: "break-word",
-                    textTransform: "none",
-                    lineHeight: 1,
-                  }}
               >
                 {slide.title}
               </h1>

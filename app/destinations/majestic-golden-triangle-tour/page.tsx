@@ -54,7 +54,8 @@ export default function Page() {
       ==================================================================== */}
       {/* <FAQSection /> - Temporarily commented */}
       <TourSteps />
-      <CommonForm />
+      <CommonForm 
+        tourName="majestic-golden-triangle-tour"/>
       <RecommendedTours />
       <Footer />
     </div>

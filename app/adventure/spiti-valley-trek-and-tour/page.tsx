@@ -19,7 +19,7 @@ export default function RoyalRajasthanPage() {
       </TourLayout>
       
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="spiti-valley-trek-and-tour"/>
       <RecommendedTours/>
       <Footer/>
     </div>

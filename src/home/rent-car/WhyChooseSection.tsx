@@ -4,7 +4,7 @@ import { Car, MapPin, UserCheck, Map } from "lucide-react";
 
 export default function WhyChooseSection() {
   return (
-    <section className="w-full bg-[#f8f6f2] pt-10 sm:pt-12 pb-8 sm:pb-10 px-4 sm:px-6">
+    <section className="w-full bg-white pt-14 sm:pt-16 pb-8 sm:pb-10 px-4 sm:px-6">
 
       {/* 🔥 CONTAINER */}
       <div className="max-w-7xl mx-auto">

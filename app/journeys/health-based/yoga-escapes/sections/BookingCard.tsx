@@ -3,6 +3,18 @@
 import Image from "next/image";
 
 export default function BookingCard() {
+
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById("booking-form");
+
+    if (formSection) {
+      formSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div className="ticky top-24 bg-white 
                    rounded-md shadow-md p-2 
@@ -30,7 +42,7 @@ export default function BookingCard() {
         </p>
 
         {/* Pricing */}
-        <ul className="text-[11px] sm:text-[11.5px] md:text-[12px] text-gray-600 space-y-1.5 sm:space-y-2 mb-4 sm:mb-5">
+        <ul className="text-[11px] sm:text-[11.5px] md:text-[12px] text-gray-600 space-y-1.5 sm:space-y-2 mb-4 sm:mb-3">
 
           <li className="flex justify-between items-center">
             <span>Pocket Friendly</span>
@@ -50,7 +62,9 @@ export default function BookingCard() {
         </ul>
 
         {/* CTA */}
-        <button className="w-full
+        <button 
+        onClick={handleScrollToForm}
+        className="w-full
             bg-[#AF956C]
             text-white
             py-2 sm:py-2.5

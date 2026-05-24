@@ -27,7 +27,7 @@ export default function Lightbox({
 
   return (
     <div
-      className="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex flex-col items-center justify-center"
+      className="fixed inset-0 bg-black/80 backdrop-blur-md z-[9999] flex flex-col items-center justify-center"
       onClick={onClose}
     >
       <img

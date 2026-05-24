@@ -44,10 +44,11 @@ export default function TourLayout() {
 
             <HighlightsInclusions />
 
-            <Itinerary />
-
-            <ExcludedServices />
-            <DetailedItineraryIntro/>
+            <div className="space-y-6">
+              <Itinerary />
+              <ExcludedServices />
+              <DetailedItineraryIntro/>
+            </div>
 
           </div>
 

@@ -19,7 +19,7 @@ export default function Itinerary() {
           Detailed Itinerary
         </h2>
 
-        <div className="space-y-10">
+        <div className="space-y-12">
 
           {/* ================= Day 1-3: Srinagar ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
@@ -50,7 +50,7 @@ export default function Itinerary() {
 
               {/* IMAGE */}
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541514/i1_fz7e9f.jpg"
                     alt="Delhi"
@@ -97,7 +97,7 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541558/i2_n53uum.jpg"
                     alt="Gulmarg"
@@ -140,7 +140,7 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541596/i3_huxrhq.jpg"
                     alt="Jaipur"
@@ -177,7 +177,7 @@ export default function Itinerary() {
 
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image  
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541635/i4_aye22o.jpg"
                     alt="Delhi"
@@ -208,7 +208,7 @@ export default function Itinerary() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
               <div className="w-full flex justify-center">
-                <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541676/i5_s6sjmp.jpg"
                     alt="Departure"

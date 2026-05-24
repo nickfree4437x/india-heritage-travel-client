@@ -88,8 +88,8 @@ export default function TourDetails() {
 
       {/* EXTRA SECTIONS */}
       <HighlightsInclusions />
-      <Itinerary />
       <div className="space-y-6">
+        <Itinerary />
         <ExcludedServices/>
         <DetailedItineraryIntro/>
       </div>

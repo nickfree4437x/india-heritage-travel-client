@@ -36,7 +36,7 @@ export default function HighlightsInclusions() {
   ];
 
   return (
-    <section className="py-2">
+    <section>
 
       <div className="max-w-5xl mx-auto">
 

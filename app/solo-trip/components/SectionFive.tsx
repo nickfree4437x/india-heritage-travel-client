@@ -2,7 +2,7 @@
 
 export default function WomensCircleSection() {
   return (
-    <section className="w-full bg-[#f8f6f2] py-14 md:py-4 overflow-hidden">
+    <section className="w-full bg-white py-14 md:py-4 pb-8 md:pb-12 overflow-hidden">
 
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
@@ -100,6 +100,8 @@ export default function WomensCircleSection() {
 
               max-w-4xl
               mx-auto
+              border
+            border-[#dbcdbb]
 
               rounded-2xl
               bg-white/75

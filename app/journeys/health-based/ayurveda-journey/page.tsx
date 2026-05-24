@@ -16,7 +16,7 @@ export default function AyurvedaJourneyPage() {
       <TourLayout />
 
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="ayurveda-journey-tour"/>
       <RecommendedTours />
       <Footer/>
     </main>

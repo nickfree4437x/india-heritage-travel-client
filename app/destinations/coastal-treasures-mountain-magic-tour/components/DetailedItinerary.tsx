@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function DetailedItinerary() {
   return (
-    <section>
+    <section className="py-4">
 
       <div className="max-w-5xl mx-auto">
 
@@ -33,15 +33,17 @@ export default function DetailedItinerary() {
             </p>
 
             {/* IMAGE + TEXT */}
-            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
+            <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
-              <div className="relative w-[350px] h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529506/i1_srytmy.png"
-                  alt="Cochin"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529506/i1_srytmy.png"
+                    alt="Cochin"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
@@ -71,15 +73,17 @@ export default function DetailedItinerary() {
               Day 3–4: Alleppey
             </h3>
 
-            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
+            <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
-              <div className="relative w-[350px] h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529537/i2_ca59ye.jpg"
-                  alt="Alleppey"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529537/i2_ca59ye.jpg"
+                    alt="Alleppey"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
@@ -115,15 +119,17 @@ export default function DetailedItinerary() {
                Early morning you can go on a guided jungle hike & bamboo rafting at Periyar National Park. This will take around 6 hours & visiting there means exploring nature around & enjoying peaceful nature. There are many chances you get to witness the elephant herd in the jungle while hiking. After that you can enjoy Bamboo rafting on the Periyar Lake, where also you’ll have the chance to see wildlife and explore one of India’s exceptional animal sanctuaries.
             </p>
 
-            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
+            <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
-              <div className="relative w-[350px] h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529565/i3_r9nukc.jpg"
-                  alt="Thekkady"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529565/i3_r9nukc.jpg"
+                    alt="Thekkady"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
@@ -161,15 +167,17 @@ export default function DetailedItinerary() {
                Next day morning you can go to guided trek tour which will be 3-hour trekking tour covering 9km of walking which include grassland, tea plantations & rocks. 
             </p>
 
-            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
+            <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
-              <div className="relative w-[350px] h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529506/i1_srytmy.png"
-                  alt="Munnar"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529506/i1_srytmy.png"
+                    alt="Munnar"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               <div className="space-y-3 text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
@@ -199,15 +207,17 @@ export default function DetailedItinerary() {
               Day 8–9: Mumbai
             </h3>
 
-            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
+            <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
-              <div className="relative w-[350px] h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529635/i5_hqpbk6.jpg"
-                  alt="Mumbai"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529635/i5_hqpbk6.jpg"
+                    alt="Mumbai"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
@@ -227,15 +237,17 @@ export default function DetailedItinerary() {
               Day 10: Farewell And Departure
             </h3>
 
-            <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">
+            <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
 
-              <div className="relative h-[240px] rounded-sm overflow-hidden shadow-sm">
-                <Image
-                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                  alt="Departure"
-                  fill
-                  className="object-cover"
-                />
+              <div className="w-full flex justify-center">
+                <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                  <Image
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
+                    alt="Departure"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               <p className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">

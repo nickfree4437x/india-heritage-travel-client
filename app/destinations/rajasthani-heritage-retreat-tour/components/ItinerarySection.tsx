@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ItinerarySection() {
   return (
-    <section className="space-y-8">
+    <section className="space-y-12 py-6">
 
       <h2 className="text-[16px] sm:text-[20px] md:text-[24px]
             font-semibold
@@ -44,7 +44,7 @@ export default function ItinerarySection() {
 
         {/* IMAGE */}
         <div className="w-full flex justify-center">
-          <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+          <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528504/delhi_imc7m0.png"
               alt="Delhi"
@@ -89,7 +89,7 @@ export default function ItinerarySection() {
 
           {/* IMAGE */}
           <div className="w-full flex justify-center">
-            <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+            <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528543/mandawa_waoq9v.png"
                 alt="Mandawa"
@@ -144,7 +144,7 @@ export default function ItinerarySection() {
 
         {/* IMAGE */}
         <div className="w-full flex justify-center">
-          <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+          <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528618/bikaner_fkzvym.png"
               alt="Bikaner"
@@ -194,7 +194,7 @@ export default function ItinerarySection() {
 
         {/* IMAGE */}
         <div className="w-full flex justify-center">
-          <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+          <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528648/jaisalmer-itinerary_dchx91.jpg"
               alt="Jaisalmer"
@@ -243,7 +243,7 @@ export default function ItinerarySection() {
 
           {/* IMAGE */}
           <div className="w-full flex justify-center">
-            <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+            <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528696/jodhpur_o0ubhd.png"
                 alt="Jodhpur"
@@ -292,7 +292,7 @@ export default function ItinerarySection() {
 
             {/* IMAGE */}
             <div className="w-full flex justify-center">
-              <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+              <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528752/udaipur-1_rbvc6x.jpg"
                   alt="Udaipur"
@@ -341,7 +341,7 @@ export default function ItinerarySection() {
 
           {/* IMAGE */}
           <div className="w-full flex justify-center">
-            <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+            <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528798/pushkar-1_lkjlax.png"
                 alt="Pushkar"
@@ -389,7 +389,7 @@ export default function ItinerarySection() {
 
           {/* IMAGE */}
           <div className="w-full flex justify-center">
-            <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+            <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528855/judaipur-1_fhzlur.png"
                 alt="Jaipur"
@@ -437,7 +437,7 @@ export default function ItinerarySection() {
 
         {/* IMAGE */}
         <div className="w-full flex justify-center">
-          <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+          <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528926/agra-1_diz5ov.png"
               alt="Agra"
@@ -485,7 +485,7 @@ export default function ItinerarySection() {
 
           {/* IMAGE */}
           <div className="w-full flex justify-center">
-            <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+            <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528974/delhi-2_zlbh3s.png"
                 alt="Delhi"
@@ -527,7 +527,7 @@ export default function ItinerarySection() {
 
           {/* IMAGE */}
           <div className="w-full flex justify-center">
-            <div className="relative h-[220px] md:h-[240px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+            <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
                 alt="Farewell"

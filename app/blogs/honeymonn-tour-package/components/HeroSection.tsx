@@ -10,10 +10,15 @@ import {
   Twitter,
 } from "lucide-react";
 
+import {
+  FaWhatsapp,
+  FaPinterestP,
+} from "react-icons/fa";
+
 export default function HeroSection() {
 
   const shareUrl =
-    "https://yourdomain.com/blogs/india-food-guide";
+    "https://indiaheritagetravel.com/blogs/india-food-guide";
 
   const shareTitle =
     "Find the Ideal Honeymoon Tour Packages with India Heritage Travel";
@@ -25,7 +30,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
 
         <Image
-          src="/blogs/blog-6/blog-6.jpeg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779635049/hero-3_wj3zaa.jpg"
           alt="Honeymoon Tour Packages"
           fill
           priority
@@ -44,20 +49,10 @@ export default function HeroSection() {
           {/* TITLE */}
           <h1
             className="
-              text-[#111]
-
-              text-[30px]
-              leading-[1.15]
-
-              md:text-[45px]
-
-              font-normal
+              text-[18px] sm:text-[22px] md:text-[26px] tracking-wide text-[#2c2c2c] font-semibold
               max-w-5xl
               mx-auto
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Find the Ideal
             <br />
@@ -71,10 +66,10 @@ export default function HeroSection() {
             className="
               mt-4
 
-              text-[#444]
+              text-[#5f5f5f]
 
               text-[13px]
-              leading-8
+              leading-5
 
               sm:text-[14px]
 
@@ -115,7 +110,7 @@ export default function HeroSection() {
               </div>
 
               <span className="text-sm">
-                July 31, 2024
+                12 Aug
               </span>
             </div>
 
@@ -128,14 +123,14 @@ export default function HeroSection() {
 
               <div className="flex items-center gap-4 text-black">
 
-                {/* FACEBOOK */}
-                <Link
-                  href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                  target="_blank"
-                  className="hover:text-[#7C5C38] transition-colors duration-300"
-                >
-                  <Facebook size={17} strokeWidth={2} />
-                </Link>
+              {/* FACEBOOK */}
+              <Link
+                href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
+                target="_blank"
+                className="hover:text-[#7C5C38] transition-colors duration-300"
+              >
+                <Facebook size={17} strokeWidth={2} />
+              </Link>
 
                 {/* TWITTER */}
                 <Link
@@ -150,19 +145,20 @@ export default function HeroSection() {
                 <Link
                   href={`https://wa.me/?text=${shareTitle} ${shareUrl}`}
                   target="_blank"
-                  className="hover:text-[#7C5C38] transition-colors duration-300 text-[17px]"
+                  className="hover:text-[#7C5C38] transition-colors duration-300"
                 >
-                  Ⓦ
+                  <FaWhatsapp size={17} />
                 </Link>
 
                 {/* PINTEREST */}
                 <Link
                   href={`https://pinterest.com/pin/create/button/?url=${shareUrl}&description=${shareTitle}`}
                   target="_blank"
-                  className="hover:text-[#7C5C38] transition-colors duration-300 text-[17px]"
+                  className="hover:text-[#7C5C38] transition-colors duration-300"
                 >
-                  Ⓟ
+                  <FaPinterestP size={17} />
                 </Link>
+
               </div>
             </div>
           </div>

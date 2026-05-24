@@ -5,42 +5,42 @@ import { useState, useEffect } from "react";
 
 const data = [
   {
-    image: "/festivals/pushkar/pushkar1.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550070/pushkar1_gjqiea.jpg",
     title: "The Spirit of Pushkar",
     desc: "Witness Rajasthan’s most vibrant desert gathering — with camels, colors, and cultural traditions.",
   },
   {
-    image: "/festivals/pushkar/pushkar2.jpeg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550114/pushkar2_guzkh2.jpg",
     title: "A Carnival in the Dunes",
     desc: "Shop handmade crafts, enjoy local music, and see traditions unfold in the desert town.",
   },
   {
-    image: "/festivals/pushkar/pushkar3.jpeg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550232/pushkar3_sefvly.jpg",
     title: "A Rajasthani Desert Spectacle",
     desc: "Colorful turbans, dancing gypsies, and thousands of camels — Pushkar is pure magic.",
   },
   {
-    image: "/festivals/pushkar/pushkar4.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550273/pushkar4_rf0grg.jpg",
     title: "Camel Riding & Bonfire at the desert",
     desc: "Ride through the Thar as the sun sets, then enjoy folk music, dancing, and a starlit bonfire in the dunes of Jaisalmer.",
   },
   {
-    image: "/festivals/holi/udaipur.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779548289/udaipur_rnkqia.jpg",
     title: "Lakeside romance of Udaipur",
     desc: "Enjoy a peaceful boat ride on Lake Pichola with stunning views of palaces and cityscapes.",
   },
   {
-    image: "/festivals/holi/jodhpur.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779548350/jodhpur_t4gk4a.jpg",
     title: "Colours of the Blue City",
     desc: "Wander through Jodhpur's old town, past blue-washed homes, spice markets, and the towering Mehrangarh Fort above.",
   },
   {
-    image: "/festivals/holi/jaipur.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779548394/jaipur_fzm98f.jpg",
     title: "Pink City's Royalty",
     desc: "Admire Hawa Mahal's unique windows, built to let in cool air and city views for the royal women.",
   },
   {
-    image: "/festivals/holi/taj.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779548565/taj_lprg3e.jpg",
     title: "Timeless Beauty of the Taj",
     desc: "Visit the Taj Mahal — a white marble wonder and symbol of eternal love, glowing at sunrise.",
   },
@@ -64,7 +64,7 @@ export default function SpecialSection() {
 
   return (
     <section
-      className="bg-[#f8f6f2] py-2 sm:py-6 md:py-6 scroll-mt-24 md:scroll-mt-20"
+      className="bg-white py-2 sm:py-6 md:py-6 scroll-mt-24 md:scroll-mt-20"
       id="special"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

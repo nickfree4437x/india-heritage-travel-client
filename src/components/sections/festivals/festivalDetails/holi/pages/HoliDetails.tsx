@@ -23,7 +23,7 @@ export default function HoliDetails() {
         {/* Background Image with Zoom */}
         <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
           <Image
-            src="/festivals/holi/holi.jpg"
+            src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547592/holi_cx2jwa.jpg"
             alt="Holi Tour"
             fill
             priority
@@ -65,7 +65,7 @@ export default function HoliDetails() {
       <SpecialSection />
       <ItinerarySection />
       <PricingSection/>
-      <CommonForm/>
+      <CommonForm tourName="holi-tour"/>
       <ExploreMoreSection />
       <FAQSection />
       <Footer/>

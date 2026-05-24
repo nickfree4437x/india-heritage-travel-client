@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function SafetyIntroSection() {
   return (
-    <section className="w-full bg-white py-10 sm:py-14 lg:py-16">
+    <section className="w-full bg-white">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -15,7 +15,7 @@ export default function SafetyIntroSection() {
         <div className="max-w-6xl">
 
           <div
-            className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify"
+            className="text-gray-700 mb-6 leading-relaxed text-[13px] md:text-[14.5px] font-[300] text-justify"
           >
 
             <p>
@@ -48,25 +48,13 @@ export default function SafetyIntroSection() {
         </div>
 
         {/* SAFETY SECTION */}
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-10 sm:mt-12">
 
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             What Makes a Place Feel Safe for Solo Women
           </h2>
@@ -74,20 +62,20 @@ export default function SafetyIntroSection() {
           {/* CONTENT */}
           <div className="max-w-6xl">
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] md:text-[14.5px] font-[300] text-justify">
               Security is not all about rules, or warnings.
               It often boils down to how a destination feels
               once you get there. Easy transport matters.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] md:text-[14.5px] font-[300] text-justify">
               Trusted drivers, hotel transfers and short travel
               times to get you from place to place take so much
               pressure off. Walkable areas also help, when cafés,
               shops and sights are located close to each other.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] md:text-[14.5px] font-[300] text-justify">
               Hospitality also plays a quiet but important role.
               In much of India, hotel staff are trained to be
               helpful without overbearing. Destinations accustomed
@@ -95,7 +83,7 @@ export default function SafetyIntroSection() {
               and respectful.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] md:text-[14.5px] font-[300] text-justify">
               These are the areas where{" "}
               <span className="font-semibold text-[#111]">
                 India travel companies
@@ -108,7 +96,7 @@ export default function SafetyIntroSection() {
               special importance to comfort and flow.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] md:text-[14.5px] font-[300] text-justify">
               Carefully-designed{" "}
               <span className="font-semibold">
                 India travel packages
@@ -142,7 +130,7 @@ export default function SafetyIntroSection() {
           >
 
             <Image
-              src="/blogs/blog-2/solo.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637804/solo_gh8veb.jpg"
               alt="Solo Female Traveller"
               fill
               className="object-cover"

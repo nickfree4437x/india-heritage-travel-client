@@ -23,7 +23,7 @@ const tours = [
   {
     title: "Southern Delights: A Journey Through Time",
     desc: "Discover the essence of Southern India on the 'Southern Delights' 17-day tour, from Cochin's history to Mumbai's vibrant dreams, with coastal delights, natural majesty, and timeless wonders in between.",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525489/tour1_pkzz1n.webp",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536598/delights_g6wjjy.jpg",
     slug: "/adventure/southern-delights-tour",
   },
 ];
@@ -38,7 +38,7 @@ export default function RecommendedTours() {
   // ==========================================================================
 
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-8">
+    <section className="max-w-[1400px] mx-auto px-6 py-12">
       {/* ====================================================================
           SECTION HEADING
       ==================================================================== */}

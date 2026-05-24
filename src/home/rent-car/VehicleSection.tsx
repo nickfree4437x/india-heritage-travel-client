@@ -5,39 +5,51 @@ import Image from "next/image";
 const vehicles = [
   {
     name: "Toyota Innova Crysta",
-    image: "/rent-car/innova.webp",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607460/innova_ia4wad.webp",
     desc: "The Toyota Innova is a fantastic choice, combining good looks, comfortable interiors, and top-notch safety features for your travels.",
     capacity: "4 Guests + Driver + Guide",
   },
   {
     name: "Toyota Etios",
-    image: "/rent-car/etios-interior.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607501/etios-interior_eiy57s.webp",
     desc: "Big on space, safety, and value for your money – a go-to pick for travelers.",
     capacity: "3 Guests + Driver + Guide",
   },
   {
     name: "Swift Dzire",
-    image: "/rent-car/dzire-interior.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607521/dzire-interior_jfr8uo.webp",
     desc: "Spacious, safe, and budget-friendly – the go-to choice for travelers.",
     capacity: "3 Guests + Driver + Guide",
   },
   {
     name: "Bigger Vehicle - Tempo Traveller",
-    image: "/rent-car/tempo-interior.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607543/tempo-interior_e8ccfb.webp",
     desc: "The perfect choice for extended trips, offering comfort and amenities.",
     capacity: "10 Guests + Driver + Guide",
   },
   {
     name: "Luxury Bus",
-    image: "/rent-car/bus-interior.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607571/bus-interior_vv02ty.webp",
     desc: "Perfect for families and groups with supreme comfort.",
     capacity: "15 Guests + Driver + Guide",
   },
 ];
 
 export default function VehicleSection() {
+
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById("booking-form");
+
+    if (formSection) {
+      formSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
-    <section className="w-full bg-[#f8f6f2] pt-0 sm:pt-0 pb-12 sm:pb-14 px-4 sm:px-6">
+    <section className="w-full bg-white pt-6 sm:pt-6 pb-12 sm:pb-14 px-4 sm:px-6">
 
       <div className="max-w-7xl mx-auto">
 
@@ -167,10 +179,11 @@ export default function VehicleSection() {
 
                 {/* BUTTON */}
                 <button
+                 onClick={handleScrollToForm}
                   className="
-                    text-[11px] sm:text-[12px]
-                    tracking-wide
-
+                    text-[11px] sm:text-[11.2px]
+                    tracking-wide font-[300]
+ 
                     bg-[#AF956C]
                     text-white
 

@@ -102,7 +102,6 @@ export default function CitiesSection() {
         />
       ))}
        <HighlightsSection/>
-       <ItinerarySection/>
     </>
   );
 }

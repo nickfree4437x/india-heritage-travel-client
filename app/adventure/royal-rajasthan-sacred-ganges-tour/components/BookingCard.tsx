@@ -3,6 +3,18 @@
 import Image from "next/image";
 
 export default function BookingCard() {
+
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById("booking-form");
+
+    if (formSection) {
+      formSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div
       className="
@@ -31,7 +43,7 @@ export default function BookingCard() {
         {/* Title */}
         <h3
           className="
-            text-[13px] sm:text-[14px] md:text-[15px] text-center font-medium text-[#AF956C] mb-2 leading-snug tracking-[0.01em]
+            text-[13px] sm:text-[14px] md:text-[15px] mt-2 text-center font-medium text-[#AF956C] mb-2 leading-snug tracking-[0.01em]
           "
         >
           Royal Rajasthan & Sacred Ganges Tour
@@ -81,6 +93,7 @@ export default function BookingCard() {
 
         {/* CTA Button */}
         <button
+        onClick={handleScrollToForm}
           className="
             w-full
             bg-[#AF956C]

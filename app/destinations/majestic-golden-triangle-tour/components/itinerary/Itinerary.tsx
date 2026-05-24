@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Itinerary() {
   return (
-    <section>
+    <section className="py-4">
 
       {/* 🔥 SAME WIDTH AS CITY SECTION */}
       <div className="max-w-5xl mx-auto">
@@ -46,7 +46,7 @@ export default function Itinerary() {
 
            {/* IMAGE */}
            <div className="w-full flex justify-center">
-            <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+            <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525863/delhi_edqeg6.jpg"
                 alt="Delhi"
@@ -98,7 +98,7 @@ export default function Itinerary() {
 
             {/* IMAGE */}
             <div className="w-full flex justify-center">
-              <div className="relative h-[240px] w-[90%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+              <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525897/agra_n4lvva.webp"
                   alt="Agra"
@@ -150,7 +150,7 @@ export default function Itinerary() {
 
               {/* IMAGE */}
               <div className="w-full flex justify-center">
-                <div className="relative h-[220px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[220px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525948/jaipur_ls5iys.png"
                     alt="Jaipur"
@@ -201,7 +201,7 @@ export default function Itinerary() {
 
               {/* IMAGE */}
               <div className="w-full flex justify-center">
-                <div className="relative h-[220px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+                <div className="relative h-[220px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525977/delhi2_a4reej.jpg"
                     alt="Delhi"
@@ -237,7 +237,7 @@ export default function Itinerary() {
 
             {/* IMAGE */}
             <div className="w-full flex justify-center">
-              <div className="relative h-[220px] w-[92%] md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
+              <div className="relative h-[220px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
                   alt="Departure"

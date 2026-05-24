@@ -78,7 +78,7 @@ export default function ReviewCard({ reviews, index, visibleCards }: Props) {
                            border border-gray-100"
               >
                 {/* IMAGE */}
-                <div className="relative h-52 sm:h-60 w-full overflow-hidden">
+                <div className="relative h-60 sm:h-72 w-full overflow-hidden">
                   <Image
                     src={review.image}
                     alt={review.name}

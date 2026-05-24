@@ -2,23 +2,67 @@
 
 type BookingInputProps = {
   type?: string;
+
   placeholder?: string;
+
+  name?: string;
+
+  value?: string;
+
+  onChange?: (
+    e: React.ChangeEvent<HTMLInputElement>
+  ) => void;
+
+  required?: boolean;
+
+  min?: number;
+
+  max?: number;
 };
 
 export default function BookingInput({
   type = "text",
+
   placeholder,
+
+  name,
+
+  value,
+
+  onChange,
+
+  required = false,
+
+  min,
+
+  max,
 }: BookingInputProps) {
+
   return (
+
     <input
       type={type}
+
       placeholder={placeholder}
+
+      name={name}
+
+      value={value}
+
+      onChange={onChange}
+
+      required={required}
+
+      min={min}
+
+      max={max}
+
       className="
         w-full
 
         border border-[#ddd2c2]
 
-        bg-[#f9f7f3]
+        bg-white
 
         rounded-lg
 
@@ -36,6 +80,7 @@ export default function BookingInput({
 
         focus:outline-none
         focus:border-[#9A7A58]
+
         transition
       "
     />

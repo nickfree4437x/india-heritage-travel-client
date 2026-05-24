@@ -26,7 +26,7 @@ export default function TourDetailsContent() {
   ];
 
   return (
-    <section className="bg-[#f8f6f2] pb-10 px-6 scroll-mt-24 md:scroll-mt-28" id="about">
+    <section className="bg-white pb-10 px-6 scroll-mt-24 md:scroll-mt-28" id="about">
 
       <div className="max-w-6xl mx-auto">
 
@@ -71,7 +71,7 @@ export default function TourDetailsContent() {
           </div>
 
           {/* RIGHT - INCLUSIONS */}
-          <div className="bg-white rounded-md p-6 scroll-mt-24 md:scroll-mt-28" id="inclusions">
+          <div className="bg-white rounded-md p-6 shadow-sm border border-[#eee7dd] scroll-mt-24 md:scroll-mt-28" id="inclusions">
 
             <h3 className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-[#2c2c2c] text-center mb-8 tracking-wide">
               Inclusions

@@ -19,7 +19,7 @@ export default function RoyalRajasthanPage() {
       </TourLayout>
       
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="high-passes-road-trip-to-leh-ladakh-tour"/>
       <RecommendedTours/>
       <Footer/>
     </div>

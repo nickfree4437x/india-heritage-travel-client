@@ -20,7 +20,7 @@ export default function RoyalRajasthanPage() {
       <TourLayout />
 
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="heritage-odyssey-tour"/>
       <RecommendedTours/>
       <Footer/>
     </div>

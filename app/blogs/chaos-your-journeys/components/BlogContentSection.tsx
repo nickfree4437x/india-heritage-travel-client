@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function BlogContentSection() {
   return (
-    <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
+    <section className="w-full bg-white">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -14,12 +14,7 @@ export default function BlogContentSection() {
 
           <p
             className="
-              text-[18px]
-              sm:text-[20px]
-
-              leading-[2]
-
-              text-[#222222]
+              text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify
             "
           >
             You have probably felt that gnawing sense of dread before a big
@@ -35,25 +30,13 @@ export default function BlogContentSection() {
         </div>
 
         {/* FIRST SECTION */}
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-6 sm:mt-8">
 
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[52px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             When You Try It Alone
           </h2>
@@ -61,19 +44,19 @@ export default function BlogContentSection() {
           {/* CONTENT */}
           <div className="max-w-5xl">
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222] mb-8">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               Picture this: You arrive in Delhi. You’ve booked hotels and
               trains yourself by using random websites.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222] mb-8">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               But now a regional festival shifts your route. The train you
               planned to travel on is cancelled. Or your guest house does not
               come to pick you up. You try calling, but the numbers don’t
               work. You spend hours going through all of this.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               That’s what happens when you go without guidance. Every day
               becomes about fixing problems instead of enjoying places.
             </p>
@@ -93,15 +76,14 @@ export default function BlogContentSection() {
               sm:h-[420px]
               lg:h-[620px]
 
-              rounded-[24px]
-              sm:rounded-[28px]
+              rounded-sm
 
               overflow-hidden
             "
           >
 
             <Image
-              src="/blogs/blog-5/solo.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779649137/ibrahim-rifath-Y6tBl0pTe-g-unsplash_m5uxih.jpg"
               alt="Traveler looking at map"
               fill
               className="object-cover"
@@ -110,30 +92,18 @@ export default function BlogContentSection() {
 
           {/* IMAGE CREDIT */}
           <p className="mt-3 text-[12px] sm:text-[13px] text-[#8b6d52]">
-            Photo Via: Dreamstime.com
+            Photo Via: unsplash.com
           </p>
         </div>
 
         {/* SECOND SECTION */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8">
 
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             What a Good Agency Brings to the Table
           </h2>
@@ -141,7 +111,7 @@ export default function BlogContentSection() {
           {/* CONTENT */}
           <div>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222] mb-8">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               A trusted{" "}
               <span className="font-semibold">
                 India travel agency
@@ -153,26 +123,26 @@ export default function BlogContentSection() {
             {/* LIST */}
             <ul className="space-y-5 pl-5 sm:pl-6 list-disc marker:text-[#111111] mb-8">
 
-              <li className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+              <li className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 It knows what train timings are sensible,
                 not risky.
               </li>
 
-              <li className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+              <li className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 It chooses local transport you can trust.
               </li>
 
-              <li className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+              <li className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 It steers you when cultural norms or climates change.
               </li>
 
-              <li className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+              <li className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 It provides you with someone to call when
                 things get off plan.
               </li>
             </ul>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               As a result, your trip is smoother. You stop juggling logistics.
               You begin to absorb what’s around you.
             </p>

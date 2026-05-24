@@ -22,7 +22,7 @@ export default function RoyalRajasthanPage() {
       </TourLayout>
       
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="divine-kashmir-and-exciting-ladakh-tour"/>
       <RecommendedTours />
       <Footer/>
     </div>

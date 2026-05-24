@@ -1,5 +1,5 @@
-import AboutHero from "@/src/components/sections/about/AboutHero";
-import AboutLayout from "@/src/components/sections/about/AboutLayout";
+import AboutHero from "./AboutHero";
+import AboutLayout from "./AboutLayout";
 import Footer from "@/src/components/sections/footer/Footer";
 
 export default function AboutPage() {

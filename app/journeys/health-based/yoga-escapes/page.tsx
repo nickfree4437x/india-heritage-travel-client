@@ -16,7 +16,7 @@ export default function YogaEscapesPage() {
       <TourLayout />
 
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="yoga-escapes-tour"/>
       <Recommended />
       <Footer/>
     </div>

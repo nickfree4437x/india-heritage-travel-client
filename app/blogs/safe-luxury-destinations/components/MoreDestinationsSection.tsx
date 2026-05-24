@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function MoreDestinationsSection() {
   return (
-    <section className="w-full bg-white py-10 sm:py-14 lg:py-16 pb-20 sm:pb-24">
+    <section className="w-full bg-white pb-10 sm:pb-14">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -16,32 +16,20 @@ export default function MoreDestinationsSection() {
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Rishikesh, Uttarakhand
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             There’s a reason Rishikesh is such a hit with solo
             travellers. The city runs on routine and calm.
             Yoga studios, riverside paths and early evenings
             create the sense that it is a safe, gentle place.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Some of the luxury stay options are Ananda in the
             Himalayas or Aloha on Ganges. Morning yoga by the
             river, then quieter seaside walks establish an even
@@ -51,29 +39,17 @@ export default function MoreDestinationsSection() {
         </div>
 
         {/* PONDICHERRY */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8">
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Pondicherry
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Pondicherry is an easy place to travel alone.
             The streets are clean, the ocean breeze refreshing
             and the neighborhoods more compact, which makes
@@ -81,7 +57,7 @@ export default function MoreDestinationsSection() {
             your personal space here!
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             There are also fancier places to stay like
             The Promenade and Palais de Mahe.
             White Town is perfect for leisurely strolls,
@@ -91,29 +67,17 @@ export default function MoreDestinationsSection() {
         </div>
 
         {/* VARANASI */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8">
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Varanasi with Guided Support
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Varanasi is challenging, but it does not need to
             be overwhelming. If you have proper guidance,
             it can feel orderly and meaningful rather than
@@ -121,7 +85,7 @@ export default function MoreDestinationsSection() {
             money and also travel time.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             The options available for a luxury stay are
             BrijRama Palace and Taj Ganges.
             A boat ride at sunrise provides a quiet moment
@@ -138,25 +102,13 @@ export default function MoreDestinationsSection() {
         </div>
 
         {/* KERALA */}
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-6 sm:mt-8">
 
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Kerala, including Kochi,
             Alleppey, and Munnar
@@ -165,14 +117,14 @@ export default function MoreDestinationsSection() {
           {/* CONTENT */}
           <div className="max-w-5xl">
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               Kerala is also considered to be one of the most
               hassle-free parts of India for solo female
               travellers. High-quality healthcare, clear signs
               and polite local behaviour keep visitors at ease.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               For the luxury traveller, pamper yourself with
               a stay at Brunton Boatyard in Kochi,
               at exclusive houseboats in Alleppey, and
@@ -205,7 +157,7 @@ export default function MoreDestinationsSection() {
           >
 
             <Image
-              src="/blogs/blog-2/goa.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637786/goa_uw2nhp.jpg"
               alt="Kerala Backwaters"
               fill
               className="object-cover"
@@ -214,29 +166,17 @@ export default function MoreDestinationsSection() {
         </div>
 
         {/* SOUTH GOA */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8">
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             South Goa Resorts
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             South Goa is quieter and more contained than the
             north. Resorts are spaced out, beaches are less
             crowded, and evenings are relaxed rather than loud.
@@ -248,36 +188,24 @@ export default function MoreDestinationsSection() {
         </div>
 
         {/* PRACTICAL TIPS */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8">
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Practical Safety Tips for Solo Women
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Comfort grows with small habits. Choose accommodation
             with strong reviews and visible staff presence.
             Use hotel drivers or known transport services.
             Keep daily plans simple and avoid rushing between locations.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Dress in a way that feels respectful to the setting.
             Carry digital copies of documents. Share your itinerary
             with someone you trust. Ask hotel staff for local advice.
@@ -285,7 +213,7 @@ export default function MoreDestinationsSection() {
             is always acceptable.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             For travellers who value calm planning, cultural awareness,
             and steady pacing, working with experienced India travel
             companies often removes unnecessary stress. One such name

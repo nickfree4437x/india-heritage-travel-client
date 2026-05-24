@@ -17,7 +17,7 @@ export default function HighlightsInclusions() {
     <section
       className="
         w-full
-        bg-[#f4f0ea]
+        bg-white
         py-4 sm:py-2
       "
     >

@@ -14,7 +14,7 @@ export default function SoloTripPage() {
       <HowWorkSection/>
       <SectionFour/>
       <SectionFive/>
-      <CommonForm/>
+      <CommonForm tourName="Solo-Women-Tour"/>
       <Footer/>
     </>
   );

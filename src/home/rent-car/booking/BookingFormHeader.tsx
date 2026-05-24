@@ -6,7 +6,7 @@ export default function BookingFormHeader() {
 
       <h3
         className="
-          text-[16px] sm:text-[18px] md:text-[20px]
+          text-[14px] sm:text-[16px] md:text-[18px]
           font-medium
           text-[#8b6a3d]
           tracking-wide mb-4

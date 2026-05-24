@@ -22,15 +22,15 @@ export default function Page() {
       <TourLayout sidebar={<BookingCard />}>
        <DestinationSection />
        <HighlightsInclusions/>
-       <Itinerary/>
-       <div className="space-y-6 md:space-y-8">
+       <div className="space-y-6">
+        <Itinerary/>
         <ExcludedServices/>
         <DetailedItineraryIntro/>
        </div>
       </TourLayout>
 
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="mystical-north-india-discovery-tour"/>
       <RecommendedTours />
       <Footer/>
     </div>

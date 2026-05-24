@@ -24,7 +24,7 @@ export default function PushkarDetails() {
         <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
 
           <Image
-            src="/festivals/pushkar/pushkar_fair.jpg"
+            src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547787/Pushkar_k4ugcf.png"
             alt="Pushkar Camel Festival"
             fill
             priority
@@ -88,7 +88,7 @@ export default function PushkarDetails() {
       {/* 💰 PRICING */}
       <PricingSection />
 
-      <CommonForm/>
+      <CommonForm tourName="pushkar-tour"/>
 
       {/* 🌍 EXPLORE MORE */}
       <ExploreMoreSection />

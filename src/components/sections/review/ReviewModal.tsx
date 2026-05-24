@@ -53,15 +53,15 @@ export default function ReviewModal({ review, onClose }: ReviewModalProps) {
       case "solo":
       case "couple":
       case "family":
-        return "bg-gray-800/10 text-white border-gray-200";
+        return "bg-gray-800/10 text-gray-600 border-gray-200";
       default:
-        return "bg-gray-800/10 text-white border-gray-200";
+        return "bg-gray-800/10 text-gray-600 border-gray-200";
     }
   };
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
       onClick={onClose}
     >
       <div

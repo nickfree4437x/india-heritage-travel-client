@@ -5,21 +5,21 @@ import Link from "next/link";
 
 const tours = [
   {
-    image: "/festivals/holi/holi1.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547592/holi_cx2jwa.jpg",
     title: "Holi Festival Tour",
     days: "Days : 16",
     desc: "Celebrate Holi with locals through colours, music, and tradition.",
     link: "/festivals/holi",
   },
   {
-    image: "/festivals/kumbh/kumbh.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547846/kumbh_arulyq.jpg",
     title: "Sacred Path: Kumbh Mela",
     days: "Days : 11",
     desc: "Take part in Kumbh Mela’s sacred rituals, holy dips, and ancient traditions.",
     link: "/festivals/kumbh",
   },
   {
-    image: "/festivals/pushkar/Pushkar_fair.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547787/Pushkar_k4ugcf.png",
     title: "Pushkar Camel Carnival",
     days: "Days : 16",
     desc: "Experience India’s most vibrant desert fair – with camels, color, and culture.",
@@ -29,7 +29,7 @@ const tours = [
 
 export default function ExploreMoreSection() {
   return (
-    <section className="py-12 bg-[#f8f6f2]">
+    <section className="py-12 bg-white">
 
       <div className="max-w-7xl mx-auto px-6 text-center">
 

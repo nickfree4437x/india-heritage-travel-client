@@ -21,13 +21,15 @@ export default function RoyalRajasthanPage() {
       <TourLayout sidebar={<BookingCard />}>
         <TourContent />
         <HightlightSection/>
-        <DetailedItinerary />
-        <ExcludedServices/>
-        <DetailedItineraryIntro/>
+        <div className="space-y-6">
+          <DetailedItinerary />
+          <ExcludedServices/>
+          <DetailedItineraryIntro/>
+        </div>
       </TourLayout>
 
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="southern-splendors-tour"/>
       <RecommendedTours/>
       <Footer/>
     </div>

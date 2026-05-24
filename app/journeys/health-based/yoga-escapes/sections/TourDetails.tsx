@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import HighlightsInclusions from "./HighlightsInclusions";
-import Itinerary from "./Itinerary";
 
 export default function TourDetails() {
   const cities = [
@@ -65,10 +63,6 @@ export default function TourDetails() {
 
         </div>
       ))}
-
-      {/* EXTRA SECTIONS */}
-      <HighlightsInclusions />
-      <Itinerary />
 
     </div>
   );

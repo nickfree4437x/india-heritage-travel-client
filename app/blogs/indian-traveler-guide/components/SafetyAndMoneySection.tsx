@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function SafetyAndMoneySection() {
   return (
-    <section className="w-full bg-white py-10 sm:py-14 lg:py-16 pb-20 sm:pb-24">
+    <section className="w-full bg-white pb-4 sm:pb-6">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -16,47 +16,35 @@ export default function SafetyAndMoneySection() {
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Cultural Stuff Worth Knowing
           </h2>
 
           <div className="space-y-6">
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               • Namaste is a greeting that’s appropriate anywhere.
               Put your palms together at your chest and say it.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               • Dress modestly in temples. Keep those shoulders,
               chest and knees covered. Carry a scarf.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               • Take off your shoes before entering temples,
               homes and select shops.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               • Ask before photographing people. Some temples
               outright ban the cameras.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               • In small towns, people may strike up friendly
               conversations. Many are just enquiring, but trust
               your gut. If you sense something is off, walk away.
@@ -65,25 +53,13 @@ export default function SafetyAndMoneySection() {
         </div>
 
         {/* SAFETY SECTION */}
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-6 sm:mt-8">
 
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Staying Safe
             <br />
@@ -93,49 +69,49 @@ export default function SafetyAndMoneySection() {
           {/* CONTENT */}
           <div className="max-w-5xl">
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               Women can travel solo in India.
               Just stay alert and trust your judgement.
             </p>
 
             <div className="space-y-5">
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 • Book hotels with solid, recent reviews.
               </p>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 • Avoid night trains and night buses when alone.
               </p>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 • Stick to licensed guides from known India
                 travel agencies.
               </p>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 • Stay in busy areas after dark.
               </p>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 • Lock your room properly.
                 Avoid ground-floor rooms.
               </p>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 • Keep your phone charged.
               </p>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 • Use women-only train coaches when available.
               </p>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 • Keep your bag in front of you in crowds.
               </p>
             </div>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mt-8">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify mt-8">
               Common scams include taxi overcharging and fake
               guides and drivers who take you to commission-based
               shops. Booking structured India travel packages
@@ -164,7 +140,7 @@ export default function SafetyAndMoneySection() {
           >
 
             <Image
-              src="/blogs/blog-3/solo-safe.png"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779639407/solo-safe_xxh85k.png"
               alt="Solo Female Traveller Safety"
               fill
               className="object-cover"
@@ -173,29 +149,17 @@ export default function SafetyAndMoneySection() {
         </div>
 
         {/* MONEY SECTION */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8">
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Money Matters
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             India accepts digital everywhere, but you will need
             some cash for markets, villages and street food.
             ATMs are no problem to locate in larger cities.
@@ -203,23 +167,23 @@ export default function SafetyAndMoneySection() {
 
           <div className="space-y-5">
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               • Divide your money among pockets and bags.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               • Carry small bills for tuk-tuks and stalls.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               • Hotels and restaurants take cards.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               • Markets usually want cash.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               • Many India tour packages cover hotels,
               transport and main activities so you pay
               only for food, tips and shopping.
@@ -228,29 +192,17 @@ export default function SafetyAndMoneySection() {
         </div>
 
         {/* SIM CARD SECTION */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8">
 
           <h2
-            className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+            className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Getting a SIM Card
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Get a local SIM at the airport.
             Airtel and Jio counters at airports issue tourist
             plans quickly. You will need your passport,
@@ -258,7 +210,7 @@ export default function SafetyAndMoneySection() {
             One month of data runs about $15.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             A local SIM is useful for maps, cab bookings
             and for keeping in touch.
           </p>

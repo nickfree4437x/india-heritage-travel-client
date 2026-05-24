@@ -56,7 +56,7 @@ export default function Suitable() {
               size={28}
               className="text-[#9A7A58] transition-all duration-500 sm:w-[34px] sm:h-[34px] md:w-[38px] md:h-[38px] lg:w-[42px] lg:h-[42px]"
             />
-            <p className="font-normal text-[#3a3a3a] text-[11px] sm:text-[12px] md:text-[13px] leading-relaxed">
+            <p className="text-[#3a3a3a] text-[11px] sm:text-[12px] md:text-[13px] font-light leading-relaxed">
               Corporate Travel
             </p>
           </div>
@@ -67,7 +67,7 @@ export default function Suitable() {
               size={28}
               className="text-[#9A7A58] transition-all duration-500 sm:w-[34px] sm:h-[34px] md:w-[38px] md:h-[38px] lg:w-[42px] lg:h-[42px]"
             />
-            <p className="font-normal text-[#3a3a3a] text-[11px] sm:text-[12px] md:text-[13px] leading-relaxed">
+            <p className="font-light text-[#3a3a3a] text-[11px] sm:text-[12px] md:text-[13px] leading-relaxed">
               Spiritual, Cultural, Artistic & Gastronomic Interests
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function Suitable() {
               size={28}
               className="text-[#9A7A58] transition-all duration-500 sm:w-[34px] sm:h-[34px] md:w-[38px] md:h-[38px] lg:w-[42px] lg:h-[42px]"
             />
-            <p className="font-normal text-[#3a3a3a] text-[11px] sm:text-[12px] md:text-[13px] leading-relaxed">
+            <p className="font-light text-[#3a3a3a] text-[11px] sm:text-[12px] md:text-[13px] leading-relaxed">
               Friends & Family Travel
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function Suitable() {
               size={28}
               className="text-[#9A7A58] transition-all duration-500 sm:w-[34px] sm:h-[34px] md:w-[38px] md:h-[38px] lg:w-[42px] lg:h-[42px]"
             />
-            <p className="font-normal text-[#3a3a3a] text-[11px] sm:text-[12px] md:text-[13px] leading-relaxed">
+            <p className="font-light text-[#3a3a3a] text-[11px] sm:text-[12px] md:text-[13px] leading-relaxed">
               Solo Travel
             </p>
           </div>

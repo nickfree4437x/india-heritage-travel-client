@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-[93vh] w-full overflow-hidden">
+    <section className="relative h-[100vh] w-full overflow-hidden">
 
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/rent-car/hero-car.jpg" // 👈 same type image use kar (night + car)
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607390/hero-car_mp5ajm.jpg" // 👈 same type image use kar (night + car)
           alt="Rent a Car"
           fill
           priority

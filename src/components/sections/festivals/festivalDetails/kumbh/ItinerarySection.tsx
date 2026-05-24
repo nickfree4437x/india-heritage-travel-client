@@ -239,7 +239,7 @@ export default function ItinerarySection() {
             <div className="sticky top-24">
               <div className="rounded-md overflow-hidden shadow-sm">
                 <Image
-                  src="/festivals/kumbh/map.jpg"
+                  src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550527/map_qcsu6o.webp"
                   alt="Route Map"
                   width={600}
                   height={700}
@@ -254,7 +254,7 @@ export default function ItinerarySection() {
           <div className="lg:hidden mt-8">
             <div className="rounded-md overflow-hidden shadow-sm max-w-md mx-auto">
               <Image
-                src="/festivals/kumbh/map.jpg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550527/map_qcsu6o.webp"
                 alt="Route Map"
                 width={600}
                 height={700}

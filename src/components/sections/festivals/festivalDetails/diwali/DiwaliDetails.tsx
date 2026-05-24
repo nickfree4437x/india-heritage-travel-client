@@ -24,7 +24,7 @@ export default function DiwaliDetails() {
         <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
 
           <Image
-            src="/festivals/diwali/diwali_diya.jpg"
+            src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547715/diwali_yi6jku.jpg"
             alt="Diwali Festival"
             fill
             priority
@@ -88,7 +88,7 @@ export default function DiwaliDetails() {
       {/* 💰 PRICING */}
       <PricingSection />
 
-      <CommonForm/>
+      <CommonForm tourName="diwali-tour"/>
 
       {/* 🌍 EXPLORE MORE */}
       <ExploreMoreSection />

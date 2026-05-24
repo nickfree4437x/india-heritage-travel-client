@@ -26,7 +26,7 @@ const tours = [
 
 export default function OdysseyRecommendedTours() {
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-8">
+    <section className="max-w-[1400px] mx-auto px-8 py-12">
 
       {/* 🔹 Heading */}
       <h2

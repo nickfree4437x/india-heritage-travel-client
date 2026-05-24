@@ -3,6 +3,18 @@
 import { Check } from "lucide-react";
 
 export default function PricingSection() {
+
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById("booking-form");
+
+    if (formSection) {
+      formSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   const plans = [
     {
       title: "Affordable",
@@ -28,7 +40,7 @@ export default function PricingSection() {
   ];
 
   return (
-    <section className="py-8 bg-[#f8f6f2] scroll-mt-24 md:scroll-mt-24" id="pricing">
+    <section className="py-8 bg-white scroll-mt-24 md:scroll-mt-24" id="pricing">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}
@@ -90,6 +102,7 @@ export default function PricingSection() {
 
               {/* Button */}
               <button
+                onClick={handleScrollToForm}
                 className={`mt-8 w-full py-2.5 rounded-md text-xs font-light tracking-[0.10em] uppercase transition-all duration-300 ${
                   plan.highlight
                     ? "bg-[#9b7a50] text-white hover:bg-[#876845]"

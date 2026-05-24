@@ -4,7 +4,7 @@
 
 export default function FinalTravelTipsSection() {
   return (
-    <section className="w-full bg-white py-10 sm:py-14 lg:py-16 pb-20 sm:pb-28">
+    <section className="w-full bg-white pb-14 ">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -15,22 +15,8 @@ export default function FinalTravelTipsSection() {
           {/* HEADING */}
           <h2
             className="
-              text-center
-
-              text-[36px]
-              sm:text-[44px]
-              lg:text-[54px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-12
-              sm:mb-16
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Quick Do’s and Don’ts
           </h2>
@@ -43,39 +29,31 @@ export default function FinalTravelTipsSection() {
 
               <h3
                 className="
-                  text-[28px]
-                  sm:text-[32px]
-
-                  text-[#111111]
-
-                  mb-8
+                  text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Do:
               </h3>
 
               <div className="space-y-5">
 
-                <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+                <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   • Eat street food from busy stalls
                 </p>
 
-                <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+                <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   • Drink bottled water
                 </p>
 
-                <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+                <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   • Haggle politely
                 </p>
 
-                <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+                <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   • Carry toilet paper
                 </p>
 
-                <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+                <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   • Learn a few Hindi phrases
                 </p>
               </div>
@@ -86,39 +64,31 @@ export default function FinalTravelTipsSection() {
 
               <h3
                 className="
-                  text-[28px]
-                  sm:text-[32px]
-
-                  text-[#111111]
-
-                  mb-8
+                  text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Don’t:
               </h3>
 
               <div className="space-y-5">
 
-                <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+                <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   • Accept food from strangers
                 </p>
 
-                <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+                <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   • Wear heavy jewellery
                 </p>
 
-                <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+                <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   • Point your feet at someone
                 </p>
 
-                <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+                <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   • Touch anyone’s head
                 </p>
 
-                <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+                <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   • Skip travel insurance
                 </p>
               </div>
@@ -127,29 +97,17 @@ export default function FinalTravelTipsSection() {
         </div>
 
         {/* REAL TALK */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8">
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             The Real Talk
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             India does its own thing. Trains run late.
             Roads close because of sudden parades.
             Restaurants run out of the dish you came for.
@@ -157,7 +115,7 @@ export default function FinalTravelTipsSection() {
             part of the charm later.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             For first-timers, organised{" "}
             <span className="font-medium">
               India travel packages
@@ -168,7 +126,7 @@ export default function FinalTravelTipsSection() {
             to wander on your own.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             India has something for everyone:
             Rajasthan’s forts, Goa’s beaches,
             Varanasi’s river rituals, the Himalayan mountains,
@@ -177,7 +135,7 @@ export default function FinalTravelTipsSection() {
             surprise you in its own way.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             If you prefer a smooth start, working with an
             experienced company like{" "}
             <span className="font-semibold text-[#2457d6]">

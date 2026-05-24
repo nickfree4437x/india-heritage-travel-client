@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HoneymoonFinalSection() {
   return (
-    <section className="w-full bg-white py-16 sm:py-20 lg:py-24">
+    <section className="w-full bg-white py-8">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -15,20 +15,8 @@ export default function HoneymoonFinalSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[52px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Desert Dream in Rajasthan
           </h2>
@@ -36,7 +24,7 @@ export default function HoneymoonFinalSection() {
           {/* CONTENT */}
           <div className="max-w-5xl">
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               Let the golden dunes of the desert provide the backdrop
               for romance. Relax in a luxurious tented camp, indulge in
               a private jeep safari, watch a sunset camel ride, and
@@ -60,8 +48,7 @@ export default function HoneymoonFinalSection() {
               sm:h-[420px]
               lg:h-[620px]
 
-              rounded-[24px]
-              sm:rounded-[28px]
+              rounded-sm
 
               overflow-hidden
 
@@ -70,7 +57,7 @@ export default function HoneymoonFinalSection() {
           >
 
             <Image
-              src="/blogs/blog-6/rajasthan.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779651493/ivy-aralia-nizar-_769jmCf26Y-unsplash_sd4oe8.jpg"
               alt="Rajasthan Desert"
               fill
               className="object-cover"
@@ -79,65 +66,39 @@ export default function HoneymoonFinalSection() {
           </div>
 
           {/* CREDIT */}
-          <p className="mt-3 text-[12px] sm:text-[13px] text-[#8d8d8d]">
-            via wikipedia
+          <p className="mt-2 text-[12px] sm:text-[13px] text-[#8d8d8d]">
+            via unsplash.com
           </p>
 
         </div>
 
         {/* STAND OUT SECTION */}
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-6 sm:mt-8">
 
           {/* HEADING */}
           <h2
             className="
-              max-w-5xl
-
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[52px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-12
-              sm:mb-14
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             What Makes Our India Heritage Honeymoon Tour Packages Stand Out?
           </h2>
 
           {/* ITEMS */}
-          <div className="space-y-14 sm:space-y-16">
+          <div className="space-y-6 sm:space-y-8">
 
             {/* ITEM */}
             <div className="max-w-5xl">
 
               <h3
                 className="
-                  text-[26px]
-                  sm:text-[30px]
-                  lg:text-[34px]
-
-                  leading-[1.2]
-
-                  text-[#111111]
-
-                  mb-5
-                  sm:mb-6
+                  text-[16px] sm:text-[118px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Realistic Romantic Immersion
               </h3>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Get intimately connected with every place—off the beaten
                 path, we incorporate cultural immersion, local
                 interactions, and age-old traditions that deepen your
@@ -151,25 +112,13 @@ export default function HoneymoonFinalSection() {
 
               <h3
                 className="
-                  text-[26px]
-                  sm:text-[30px]
-                  lg:text-[34px]
-
-                  leading-[1.2]
-
-                  text-[#111111]
-
-                  mb-5
-                  sm:mb-6
+                  text-[16px] sm:text-[118px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Seamless Planning, Zero Stress
               </h3>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Let us handle the nitty-gritty. From airfare,
                 private transfers, and VIP requests to surprises,
                 we’re here to craft your ideal love adventure.
@@ -182,25 +131,13 @@ export default function HoneymoonFinalSection() {
 
               <h3
                 className="
-                  text-[26px]
-                  sm:text-[30px]
-                  lg:text-[34px]
-
-                  leading-[1.2]
-
-                  text-[#111111]
-
-                  mb-5
-                  sm:mb-6
+                  text-[16px] sm:text-[118px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Flexible & Transparent Pricing
               </h3>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Enjoy complete flexibility, from short retreats to
                 extended escapes—tailored to your preferences.
                 We’ll design a beautiful experience that aligns with
@@ -215,25 +152,13 @@ export default function HoneymoonFinalSection() {
 
               <h3
                 className="
-                  text-[26px]
-                  sm:text-[30px]
-                  lg:text-[34px]
-
-                  leading-[1.2]
-
-                  text-[#111111]
-
-                  mb-5
-                  sm:mb-6
+                  text-[16px] sm:text-[118px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4
                 "
-                style={{
-                  fontFamily: "'Marcellus', serif",
-                }}
               >
                 Safe, Responsible Travel
               </h3>
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 We honor local communities, regions, and heritage.
                 Our tours support conservation, responsible tourism,
                 and give back to destinations you’ll fall in love with
@@ -249,39 +174,16 @@ export default function HoneymoonFinalSection() {
         {/* READY SECTION */}
         <div
           className="
-            mt-16
-            sm:mt-20
-
-            bg-white
-
-            rounded-[24px]
-            sm:rounded-[30px]
-
-            p-7
-            sm:p-10
-            lg:p-14
-
-            shadow-[0_10px_40px_rgba(0,0,0,0.05)]
+            mt-6
+            sm:mt-8
           "
         >
 
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[52px]
-
-              leading-[1.12]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Ready to Start Your Forever?
           </h2>
@@ -289,7 +191,7 @@ export default function HoneymoonFinalSection() {
           {/* CONTENT */}
           <div className="max-w-5xl space-y-8">
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               Whether you’d like to celebrate in regal grandeur,
               nestled in tropical green hideaways, nestled in mountain
               tranquility, or surrounded by sunset-kissed beaches—our
@@ -300,7 +202,7 @@ export default function HoneymoonFinalSection() {
               </span>
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#666666] font-light">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               Contact our romance experts today for a free consultation.
               Let’s create your fairytale—the way you always dreamed.
             </p>

@@ -45,7 +45,7 @@ export default function HighlightsInclusions() {
 
             <ul
               className="
-                space-y-3
+                space-y-1.5
                 text-gray-700
                 text-xs
                 font-light

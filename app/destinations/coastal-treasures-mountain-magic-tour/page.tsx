@@ -13,7 +13,8 @@ export default function Page() {
       <SuitableFor />
       <DestinationSection />
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm
+        tourName="coastal-treasures-mountain-magic-tour"/>
       <RecommendedTours />
       <Footer/>  
     </div>

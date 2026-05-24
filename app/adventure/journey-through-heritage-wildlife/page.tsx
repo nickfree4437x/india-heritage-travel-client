@@ -19,13 +19,15 @@ export default function RoyalRajasthanPage() {
       <TourLayout>
         <CitiesSection />
         <HighlightsInclusions />
-        <ItinerarySection/>
-        <ExcludedServices/>
-        <DetailedItineraryIntro/>
+        <div className="space-y-6">
+          <ItinerarySection/>
+          <ExcludedServices/>
+          <DetailedItineraryIntro/>
+        </div>
       </TourLayout>
      
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="journey-through-heritage-wildlife"/>
       <RecommendedTours />
       <Footer/>
     </div>

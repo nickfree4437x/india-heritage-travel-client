@@ -3,28 +3,28 @@ import { Language } from "./types";
 export const LANGUAGES: Language[] = [
   {
     code: "en",
-    flag: "/flags/uk.png",
+    flag: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779551042/uk_qt8urt.png",
     name: "English",
     nativeName: "English",
   },
 
   {
     code: "es",
-    flag: "/flags/spain.png",
+    flag: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779551105/spain_zfb2ki.png",
     name: "Spanish",
     nativeName: "Español",
   },
 
   {
     code: "it",
-    flag: "/flags/italy.png",
+    flag: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779551147/italy_xgm2xj.png",
     name: "Italian",
     nativeName: "Italiano",
   },
 
   {
     code: "pt",
-    flag: "/flags/portugal.png",
+    flag: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779551193/portugal_rxp1b5.png",
     name: "Portuguese",
     nativeName: "Português",
   },
@@ -32,7 +32,7 @@ export const LANGUAGES: Language[] = [
 
 export const DEFAULT_LANGUAGE: Language = {
   code: "en",
-  flag: "/flags/uk.png",
+  flag: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779551042/uk_qt8urt.png",
   name: "English",
   nativeName: "English",
 };

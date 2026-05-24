@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function BlogFinalSection() {
   return (
-    <section className="w-full bg-white py-16 sm:py-20 lg:py-24">
+    <section className="w-full bg-white -mt-8 md:pb-12 pb-4">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -15,36 +15,24 @@ export default function BlogFinalSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[52px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             What to Look for in a Travel Partner
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             When you assess a potential India tour packages provider,
             ask:
           </p>
 
           {/* BULLETS */}
-          <ul className="space-y-5 max-w-5xl">
+          <ul className="max-w-5xl">
 
             <li className="flex items-start gap-4">
               <div className="w-2.5 h-2.5 rounded-full bg-[#8b6d52] mt-3" />
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Do they let you adjust the plan freely?
               </p>
             </li>
@@ -52,7 +40,7 @@ export default function BlogFinalSection() {
             <li className="flex items-start gap-4">
               <div className="w-2.5 h-2.5 rounded-full bg-[#8b6d52] mt-3" />
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Do they have local people helping on the ground?
               </p>
             </li>
@@ -60,7 +48,7 @@ export default function BlogFinalSection() {
             <li className="flex items-start gap-4">
               <div className="w-2.5 h-2.5 rounded-full bg-[#8b6d52] mt-3" />
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Do they give full cost break-downs with no hidden fees?
               </p>
             </li>
@@ -68,7 +56,7 @@ export default function BlogFinalSection() {
             <li className="flex items-start gap-4">
               <div className="w-2.5 h-2.5 rounded-full bg-[#8b6d52] mt-3" />
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Do they show real past journeys, photos,
                 honest feedback?
               </p>
@@ -77,14 +65,14 @@ export default function BlogFinalSection() {
             <li className="flex items-start gap-4">
               <div className="w-2.5 h-2.5 rounded-full bg-[#8b6d52] mt-3" />
 
-              <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+              <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Do they promise 24/7 support when you’re travelling?
               </p>
             </li>
 
           </ul>
 
-          <p className="mt-8 text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+          <p className="mt-8 text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             If yes, that’s a good sign.
           </p>
 
@@ -111,7 +99,7 @@ export default function BlogFinalSection() {
           >
 
             <Image
-              src="/blogs/blog-5/blog-detail-3.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779649909/pexels-chirag-purohit-44055792-15999311-scaled-e1766059375730_whku6m.webp"
               alt="Travel Heritage"
               fill
               className="object-cover"
@@ -120,37 +108,25 @@ export default function BlogFinalSection() {
         </div>
 
         {/* IMAGINE THIS TRIP */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8">
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Imagine This Trip
           </h2>
 
           <div className="space-y-8">
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               You arrive in Mumbai. The driver is waiting.
               You move gently through a mix of crowds and calm.
               You see the sunset over the Gateway of India.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               You head to Udaipur. You stay in a haveli with quiet
               walls, speaking with local artists about their craft
               rather than walking past them. You don’t worry about
@@ -158,7 +134,7 @@ export default function BlogFinalSection() {
               You simply live the moment.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               That shift, from “making this work” to “feeling the
               place”, is the change a good agency brings.
             </p>
@@ -169,49 +145,27 @@ export default function BlogFinalSection() {
         {/* FINAL THOUGHT */}
         <div
           className="
-            mt-16
-            sm:mt-20
-
-            bg-white
-
-            rounded-sm
-
-            p-7
-            sm:p-10
-            lg:p-14
-
-            shadow-[0_8px_40px_rgba(0,0,0,0.05)]
+            mt-6
+            sm:mt-8
           "
         >
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Final Thought
           </h2>
 
           <div className="max-w-5xl space-y-8">
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               A trip to India is entwined with surprises.
               It’s never totally predictable.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               But with the right India travel company by your side,
               surprises become pleasant, not painful. Your trip turns
               less about scrambling, and more about absorption.
@@ -220,7 +174,7 @@ export default function BlogFinalSection() {
               And let bliss remain.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               If you’re looking for steady, reliable travel guidance
               from people who truly understand the lay of the land,
               as well as the timing and texture of every place you are
@@ -228,14 +182,14 @@ export default function BlogFinalSection() {
               to remember.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#222222]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               For years, they’ve helped travellers tailor trips that
               feel authentic, not templated.
             </p>
 
-            <p className="text-[18px] sm:text-[20px] leading-8 text-[#111111] font-medium">
+            <p className="text-[16px] sm:text-[18px] leading-8 text-[#111111]">
               Visit{" "}
-              <span className="text-[#8b6d52]">
+              <span className="text-[#8b6d52] hover:underline">
                 indiaheritagetravel.com
               </span>{" "}
               to see how your journey could begin.

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function SlowTravelIntroSection() {
   return (
-    <section className="w-full bg-white py-14 sm:py-16 lg:py-24">
+    <section className="w-full bg-white">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -16,15 +16,7 @@ export default function SlowTravelIntroSection() {
 
           <p
             className="
-              text-[18px]
-              sm:text-[20px]
-
-              leading-[2]
-
-              text-[#1f1f1f]
-
-              mb-8
-              sm:mb-10
+              text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify
             "
           >
             Slow travel is simple. You stay put.
@@ -34,12 +26,7 @@ export default function SlowTravelIntroSection() {
 
           <p
             className="
-              text-[18px]
-              sm:text-[20px]
-
-              leading-[2]
-
-              text-[#1f1f1f]
+              text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify
             "
           >
             This type of travel works well in India,
@@ -49,25 +36,13 @@ export default function SlowTravelIntroSection() {
         </div>
 
         {/* WHY INDIA WORKS */}
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-6 sm:mt-8">
 
           {/* HEADING */}
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[52px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Why India Works So Well
             <br />
@@ -77,13 +52,13 @@ export default function SlowTravelIntroSection() {
           {/* CONTENT */}
           <div className="max-w-5xl">
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               India seems like a different place when you
               spend more time in it. People begin to
               recognise you.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               The chai vendor gives you a nod as you pass by.
               “Have you eaten?” the shopkeeper’s wife asks.
               You cease to feel like a visitor there, and you
@@ -91,7 +66,7 @@ export default function SlowTravelIntroSection() {
               in that little nook of the city.
             </p>
 
-            <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+            <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               Solo female travel in India mellows out as well.
               There’s familiarity in faces and schedules,
               there’s predictability, and all of that makes
@@ -120,7 +95,7 @@ export default function SlowTravelIntroSection() {
           >
 
             <Image
-              src="/blogs/blog-4/solo.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641965/solo_znipyv.jpg"
               alt="Slow Travel India"
               fill
               className="object-cover"
@@ -129,35 +104,23 @@ export default function SlowTravelIntroSection() {
         </div>
 
         {/* CULTURAL MOMENTS */}
-        <div className="max-w-5xl mt-16 sm:mt-20">
+        <div className="max-w-5xl mt-6 sm:mt-8">
 
           <h2
             className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
-
-              leading-[1.15]
-
-              text-[#111111]
-
-              mb-8
-              sm:mb-10
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Cultural Moments That Feel Real
           </h2>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Heritage stays put you up in old family homes,
             not globally uniform hotels. You hear tales from
             people who actually live there.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             You eat food that isn’t copied from a menu and
             cooked in the same way someone’s grandmother
             once cooked it. Craft workshops teach you to
@@ -168,7 +131,7 @@ export default function SlowTravelIntroSection() {
             you made with your hands.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             You have food trails with families that stick
             with you. You hit the morning markets together,
             you “cook” in their kitchen and you pick up
@@ -176,14 +139,14 @@ export default function SlowTravelIntroSection() {
             not in a recipe book!
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f] mb-8">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Village walks will introduce you to a quieter
             world: chalk patterns outside doorsteps,
             children playing cricket in narrow lanes,
             and farmers filing into the fields before dawn.
           </p>
 
-          <p className="text-[16px] sm:text-[17px] leading-8 text-[#1f1f1f]">
+          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             These little scenarios are taken for granted by
             locals and cherished by travellers who linger.
           </p>

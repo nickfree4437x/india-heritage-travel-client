@@ -19,14 +19,11 @@ export default function TravelTipsSection() {
             className="
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             Travel Tips in India
           </h2>
 
-          <div className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+          <div className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             <p>
               Choose busy stalls. Locals lining up leads to fresh
               food, not stuff sitting around collecting flies.
@@ -73,14 +70,11 @@ export default function TravelTipsSection() {
             className="
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             What to Definitely Avoid
           </h2>
 
-          <div className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+          <div className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             <p>
               Tap water. Do not drink it, brush your teeth with it,
               or use it as a rinse. Non-negotiable.
@@ -118,9 +112,6 @@ export default function TravelTipsSection() {
             className="
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             For Vegetarians and Vegans
           </h2>
@@ -128,7 +119,7 @@ export default function TravelTipsSection() {
           {/* CONTENT */}
           <div className="max-w-6xl">
 
-            <div className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+            <div className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               <p>
                 India’s brilliant for plant-based eating.
                 Some 30 to 40 percent of Indians are vegetarian,
@@ -175,7 +166,7 @@ export default function TravelTipsSection() {
           >
 
             <Image
-              src="/blogs/blog-1/south-india.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779636762/south-india_mwajvf.jpg"
               alt="Vegetarian Food in India"
               fill
               className="object-cover"

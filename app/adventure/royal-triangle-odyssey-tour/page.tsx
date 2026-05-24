@@ -22,13 +22,15 @@ export default function RoyalRajasthanPage() {
       <ToursLayout right={<RightBookingCard/>}>
          <OdysseyCitiesSection />
          <OdysseyHighlightsSection />
-         <ItinerarySection />
-         <ExcludedServices />
-         <DetailedItineraryIntro/>
+         <div className="space-y-4">
+          <ItinerarySection />
+          <ExcludedServices />
+          <DetailedItineraryIntro/>
+         </div>
       </ToursLayout>
       
       <TourSteps/>
-      <CommonForm/>
+      <CommonForm tourName="royal-triangle-odyssey-tour"/>
       <RecommendedTours />
       <Footer/>
 

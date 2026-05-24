@@ -12,7 +12,7 @@ import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 import Navbar from "@/src/components/navbar-layout/navbar/Navbar";
-import StickyPlanButton from "@/src/components/common/StickyPlanButton";
+// import StickyPlanButton from "@/src/components/common/StickyPlanButton";
 
 // Body Font
 const inter = Inter({
@@ -62,7 +62,7 @@ export default function RootLayout({
         <main>{children}</main>
 
         {/* Sticky Plan Your Trip Button */}
-         <StickyPlanButton />
+         {/* <StickyPlanButton /> */}
 
         {/* React Hot Toast */}
         <Toaster

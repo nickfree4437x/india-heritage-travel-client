@@ -32,7 +32,7 @@ export default function RecommendedTours() {
   };
 
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-8">
+    <section className="max-w-[1400px] mx-auto px-8 py-10">
 
       {/* 🔹 Heading */}
       <h2 className="text-[20px] sm:text-[24px] md:text-[28px]

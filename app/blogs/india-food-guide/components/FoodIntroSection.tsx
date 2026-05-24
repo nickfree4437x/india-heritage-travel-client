@@ -14,7 +14,7 @@ export default function FoodIntroSection() {
         {/* TOP PARAGRAPHS */}
         <div className="max-w-5xl">
 
-          <div className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+          <div className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
           <p 
           >
             Indian food terrifies some travellers. I get it.
@@ -57,9 +57,6 @@ export default function FoodIntroSection() {
             className="
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
             "
-            style={{
-              fontFamily: "'Marcellus', serif",
-            }}
           >
             What Makes Indian Food Different
           </h2>
@@ -67,7 +64,7 @@ export default function FoodIntroSection() {
           {/* DESC */}
           <div className="max-w-6xl">
 
-            <div className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-[300] text-justify">
+            <div className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               <p
               >
                 Indian cuisine is very different from region to
@@ -108,7 +105,7 @@ export default function FoodIntroSection() {
           >
 
             <Image
-              src="/blogs/blog-1/food-intro.webp"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779636761/food-intro_vrtj2i.webp"
               alt="Indian Food"
               fill
               className="object-cover"
