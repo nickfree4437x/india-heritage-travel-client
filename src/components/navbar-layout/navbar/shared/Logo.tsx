@@ -16,7 +16,7 @@ export default function Logo({
     <div className="flex-shrink-0">
       <Link href="/" className="block">
         <Image
-          src="/logos/logo-white.png"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742768/logo-white_r1ecll.png"
           alt="Logo"
           width={160}
           height={40}

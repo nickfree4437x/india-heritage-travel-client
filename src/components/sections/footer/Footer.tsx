@@ -49,7 +49,7 @@ export default function Footer() {
         <div className="text-center sm:text-left">
           <div className="flex justify-center sm:justify-start">
             <Image
-              src="/logos/logo2.png"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png"
               alt="India Heritage Travel"
               width={200}
               height={90}
@@ -234,9 +234,9 @@ export default function Footer() {
                 key={i}
                 onClick={() => {
                   if (item === "Contact Us") {
-                    handleScrollToSection("contact");
+                    router.push("/contact");
                   } else {
-                    router.push("/privacy-policy");
+                    router.push("#");
                   }
                 }}
                 className="group flex items-center gap-3 sm:gap-4 cursor-pointer transition-all duration-500 w-full text-left"
@@ -245,6 +245,7 @@ export default function Footer() {
                 <span className="text-white transition duration-300 group-hover:translate-x-1">
                   ›
                 </span>
+
                 {/* Text */}
                 <span className="transition text-gray-200 hover:text-gray-300 hover:underline duration-300">
                   {item}

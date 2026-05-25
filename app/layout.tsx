@@ -38,7 +38,7 @@ const caveatBrush = Caveat_Brush({
 });
 
 export const metadata: Metadata = {
-  title: "India Heritage",
+  title: "India Heritage Travel",
   description: "Explore Incredible India Journeys",
 };
 

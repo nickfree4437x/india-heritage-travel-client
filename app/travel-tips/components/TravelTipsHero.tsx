@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-[95vh] w-full overflow-hidden">
+    <section className="relative h-[100vh] w-full overflow-hidden">
 
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="/travel-tips/delhi.jpg" // 👈 Taj Mahal image
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779743488/delhi_ysns96.jpg" // 👈 Taj Mahal image
           alt="Travel Tips"
           fill
           priority

@@ -4,7 +4,7 @@ import Footer from "@/src/components/sections/footer/Footer";
 
 export default function VisaRulesPage() {
   return (
-    <main className="bg-[#f8f6f2]">
+    <main className="bg-white">
 
       {/* 🔥 HERO SECTION */}
       <section className="h-[100vh] flex items-center justify-center bg-[#8b6f6b] text-white text-center">

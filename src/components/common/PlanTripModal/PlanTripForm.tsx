@@ -183,23 +183,23 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
       <div onClick={onClose} className="absolute inset-0 bg-black/70 backdrop-blur-[2px]" />
 
       {/* MODAL */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] md:w-[92%] max-w-6xl bg-white shadow-2xl overflow-y-auto max-h-[95vh]">
-        {/* HEADER */}
-        <div className="bg-[#a68657] py-4 px-6 md:px-10 flex items-center justify-center relative sticky top-0 z-10">
-          <h2 className="text-white text-[16px] sm:text-[18px] md:text-[20px] tracking-wide  font-medium">
-            Plan Your trip
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] md:w-[92%] max-w-6xl bg-white shadow-2xl overflow-y-auto max-h-[95vh] rounded-lg md:rounded-xl">
+        {/* HEADER - Fully Responsive */}
+        <div className="bg-[#a68657] py-3 sm:py-4 md:py-5 px-4 sm:px-6 md:px-10 flex items-center justify-center relative sticky top-0 z-10 rounded-t-lg md:rounded-t-xl">
+          <h2 className="text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] tracking-wide font-medium">
+            Plan Your Trip
           </h2>
 
           <button
             onClick={onClose}
-            className="absolute top-5 right-5 text-white transition hover:scale-110"
+            className="absolute right-3 sm:right-4 md:right-5 top-1/2 -translate-y-1/2 text-white hover:scale-110 transition-transform duration-200"
           >
-            <X size={20} strokeWidth={3} />
+            <X size={18} strokeWidth={2.5} className="sm:w-5 sm:h-5 md:w-5 md:h-5" />
           </button>
         </div>
 
-        {/* CONTENT */}
-        <div className="px-5 md:px-10 py-8 md:py-10">
+        {/* CONTENT - Responsive Padding */}
+        <div className="px-4 sm:px-6 md:px-8 lg:px-10 py-6 sm:py-8 md:py-10">
           {step === 1 && (
             <Step1
               formData={formData}

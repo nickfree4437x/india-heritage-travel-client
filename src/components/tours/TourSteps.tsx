@@ -156,7 +156,7 @@ export default function BookingStepsSection() {
             shadow-md
           ">
             <Image
-              src="/images/pottery-trip.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779744414/pottery-trip_fys5yj.jpg"
               alt="Dream Trip"
               fill
               priority

@@ -51,7 +51,7 @@ export default function AboutSoloWomen() {
 
               {/* Emotional Shift */}
               <div>
-                <p className="text-[#5f5f5f] mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
+                <p className="text-[#5f5f5f] pl-5 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
                   But honestly?
                   <br />
                   India feels very different when you know someone is genuinely there for you.
@@ -76,12 +76,12 @@ export default function AboutSoloWomen() {
 
               {/* Experience & Trust */}
               <div className="space-y-3">
-                <p className="text-[#5f5f5f] mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
+                <p className="text-[#5f5f5f] pl-5 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
                   Over the years, I’ve personally hosted <span className="font-semibold text-gray-700">100+ solo women travellers</span> from around the
                   world - helping them experience India in a way that feels calm, safe, flexible,
                   and deeply personal.
                 </p>
-                <p className="text-[#5f5f5f] mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
+                <p className="text-[#5f5f5f] pl-5 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
                   Places where you can genuinely relax after a
                   long day without feeling uneasy or uncomfortable.
                 </p>

@@ -54,7 +54,7 @@ export default function HowItWorksSection() {
               mb-4 md:mb-14
               text-[#2c2c2c]
               tracking-wide">
-          So… how does it allactually work ?
+          So… how does it all actually work ?
         </h2>
 
         {/* TIMELINE STEPS - Desktop */}
@@ -107,9 +107,9 @@ export default function HowItWorksSection() {
         {/* DRIVERS + SUPPORT SECTION - New Structure */}
         <div>
           
-          {/* Image Section Full Width */}
-          <div className="relative group w-full mb-10">
-            <div className="relative w-full h-[380px] md:h-[600px] overflow-hidden rounded-xl shadow-md">
+          {/* Image Section - Hidden on mobile, visible on desktop */}
+          <div className="hidden md:block relative group w-full mb-10">
+            <div className="relative w-full h-[380px] md:h-[600px] overflow-hidden rounded-md shadow-md">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779629767/drivers_ira2vt.jpg"
                 alt="Drivers and Guides"
@@ -133,7 +133,7 @@ export default function HowItWorksSection() {
                   <h3 className="text-[16px] md:text-[18px] font-semibold text-gray-700 mb-3 flex items-center gap-2">
                     About the drivers & guides
                   </h3>
-                  <div className="space-y-2 text-[#5f5f5f] mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light">
+                  <div className="space-y-2 text-[#5f5f5f] leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light">
                     <p>This part is very important to me.</p>
                     <p>The drivers and guides you travel with are not random people assigned to a trip. Most of them have worked with us for years and are honestly like family now.</p>
                     <p>They understand how women prefer to travel. They respect your space, your comfort, your pace.</p>
@@ -143,6 +143,18 @@ export default function HowItWorksSection() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+              {/* Mobile Image - Below About the drivers & guides card with proper spacing */}
+              <div className="md:hidden mt-6 rounded-xl overflow-hidden">
+                <div className="relative w-full h-[280px]">
+                  <Image
+                    src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779629767/drivers_ira2vt.jpg"
+                    alt="Drivers and Guides"
+                    fill
+                    className="object-cover rounded-xl"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-xl"></div>
                 </div>
               </div>
             </div>
@@ -161,7 +173,7 @@ export default function HowItWorksSection() {
                     And throughout the trip I'm still there
                   </h3>
                   
-                  <div className="space-y-2 text-[#5f5f5f] mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light">
+                  <div className="space-y-2 text-[#5f5f5f] leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light">
                     <p>From the moment your trip begins, we stay continuously connected through WhatsApp and calls.</p>
                     <p>So if there's absolutely anything - even something small - you can simply message me directly.</p>
                     <p>Whether it's changing a plan, needing help, feeling confused, or simply wanting a recommendation…</p>
