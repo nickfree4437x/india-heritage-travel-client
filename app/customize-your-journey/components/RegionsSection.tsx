@@ -8,42 +8,42 @@ const regions = [
     title: "East India",
     description:
       "Step into a culturally rich, less-traveled side of India raw, real, and ready to explore.",
-    image: "/customize-journey/east.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779656308/east_eyidnq.jpg",
     button: "CUSTOMIZE EAST INDIA JOURNEY",
   },
   {
     title: "South India",
     description:
       "Explore lands where tradition meets tranquility temples, tea hills, and coastal breezes await.",
-    image: "/customize-journey/south.webp",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779656350/south_konqzj.webp",
     button: "CUSTOMIZE SOUTH INDIA JOURNEY",
   },
   {
     title: "North India",
     description:
       "Wander through royal cities, holy lands, and Himalayan hideaways all on your terms.",
-    image: "/customize-journey/north.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779656334/north_hxh5mo.jpg",
     button: "CUSTOMIZE NORTH INDIA JOURNEY",
   },
   {
     title: "Central India",
     description:
       "Travel into India's core home to majestic wildlife, mystic traditions, and lost civilizations.",
-    image: "/customize-journey/central.webp",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779656286/central_v7klfm.webp",
     button: "CUSTOMIZE CENTRAL INDIA JOURNEY",
   },
   {
     title: "West India",
     description:
       "Explore the dramatic contrasts of West India bustling bazaars, serene beaches, and desert marvels.",
-    image: "/customize-journey/west.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779656379/west_mgsk4l.jpg",
     button: "CUSTOMIZE WEST INDIA JOURNEY",
   },
   {
     title: "Nepal",
     description:
       "Trace the spirit of Nepal across prayer-flag-lined trails, golden stupas, and peaceful mountain villages.",
-    image: "/customize-journey/nepal.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779656317/nepal_zswq9b.jpg",
     button: "CUSTOMIZE NEPAL JOURNEY",
   },
 ];
@@ -91,9 +91,6 @@ export default function RegionsSection() {
             "
           >
             Design Your Trip, Region by Region
-
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-[2px] bg-[#8b6a3d]/30 rounded-full" />
-
           </h2>
 
           <p

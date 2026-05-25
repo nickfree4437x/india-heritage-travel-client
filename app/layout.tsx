@@ -12,7 +12,8 @@ import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 import Navbar from "@/src/components/navbar-layout/navbar/Navbar";
-// import StickyPlanButton from "@/src/components/common/StickyPlanButton";
+import StickyPlanButton from "@/src/components/common/StickyPlanButton";
+import WhatsAppSupport from "@/src/components/common/WhatsAppSupport";
 
 // Body Font
 const inter = Inter({
@@ -62,7 +63,10 @@ export default function RootLayout({
         <main>{children}</main>
 
         {/* Sticky Plan Your Trip Button */}
-         {/* <StickyPlanButton /> */}
+         <StickyPlanButton />
+
+         {/* WhatsApp Support */}
+        <WhatsAppSupport />
 
         {/* React Hot Toast */}
         <Toaster
@@ -131,33 +135,6 @@ export default function RootLayout({
             setInterval(removeBanner, 500);
           `}
         </Script>
-
-        {/* Tawk.to Live Chat */}
-        {/* <Script
-          id="tawk-to"
-          strategy="afterInteractive"
-        >
-          {`
-            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-
-            (function () {
-
-              var s1 = document.createElement("script"),
-              s0 = document.getElementsByTagName("script")[0];
-
-              s1.async = true;
-
-              s1.src = 'https://embed.tawk.to/69c5220b31e8e31c37c54b8d/1jkl0pvuo';
-
-              s1.charset = 'UTF-8';
-
-              s1.setAttribute('crossorigin', '*');
-
-              s0.parentNode.insertBefore(s1, s0);
-
-            })();
-          `}
-        </Script> */}
 
       </body>
 

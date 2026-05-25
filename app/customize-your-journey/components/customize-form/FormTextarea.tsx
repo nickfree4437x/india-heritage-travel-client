@@ -1,13 +1,21 @@
 type FormTextareaProps = {
   label?: string;
   placeholder?: string;
+  name?: string;
+  required?: boolean;
+  className?: string;  // ADDED className prop
 };
 
 export default function FormTextarea({
   label,
   placeholder,
+  name,
+  required,
+  className,  // ADDED className destructuring
 }: FormTextareaProps) {
+
   return (
+
     <div className="mb-6">
 
       {/* OPTIONAL LABEL */}
@@ -30,32 +38,42 @@ export default function FormTextarea({
       {/* TEXTAREA */}
       <textarea
         rows={5}
+        name={name}
+        required={required}
         placeholder={placeholder}
-        className="
-           w-full
+        className={`
+          w-full
 
-        border border-[#ddd2c2]
+          border border-[#ddd2c2]
 
-        bg-[#f9f7f3]
+          bg-[#f9f7f3]
 
-        rounded-lg
+          rounded-lg
 
-        px-5
-        py-2.5 sm:py-2.5
+          px-5
+          py-2.5 sm:py-2.5
 
-        text-[12px] sm:text-[13px]
-        text-[#5b5348]
+          text-[12px]
+          sm:text-[13px]
 
-        placeholder:text-[#9a8f81]
-        placeholder:font-light
+          text-[#5b5348]
 
-        font-light
-        tracking-[0.2px]
+          placeholder:text-[#9a8f81]
+          placeholder:font-light
 
-        focus:outline-none
-        focus:border-[#9A7A58] transition
-        "
+          font-light
+          tracking-[0.2px]
+
+          focus:outline-none
+          focus:border-[#9A7A58]
+          transition
+
+          ${className || ""}
+        `}
       />
+
     </div>
+
   );
+
 }

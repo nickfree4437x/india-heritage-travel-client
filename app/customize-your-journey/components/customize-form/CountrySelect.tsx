@@ -19,6 +19,8 @@ type Props = {
   setSelectedCountry: (
     country: CountryOption | null
   ) => void;
+
+  name?: string;
 };
 
 type RestCountry = {
@@ -39,6 +41,7 @@ type RestCountry = {
 export default function CountrySelect({
   selectedCountry,
   setSelectedCountry,
+  name,
 }: Props) {
 
   const [countries, setCountries] = useState<
@@ -103,7 +106,15 @@ export default function CountrySelect({
 
     <div className="w-full">
 
+      {/* HIDDEN INPUT FOR WEB3FORMS */}
+      <input
+        type="hidden"
+        name={name}
+        value={selectedCountry?.label || ""}
+      />
+
       <Select<CountryOption, false>
+
         options={countries}
 
         value={selectedCountry}
@@ -114,7 +125,7 @@ export default function CountrySelect({
           setSelectedCountry(value)
         }
 
-        placeholder="Select Country"
+        placeholder="Select Country *"
 
         instanceId="country-select"
 
@@ -125,10 +136,21 @@ export default function CountrySelect({
             <img
               src={country.flag}
               alt={country.label}
-              className="w-5 h-4 object-cover rounded-[2px]"
+              className="
+                w-5
+                h-4
+                object-cover
+                rounded-[2px]
+              "
             />
 
-            <span className="text-[13px] font-[300] text-[#5b5348]">
+            <span
+              className="
+                text-[13px]
+                font-[300]
+                text-[#5b5348]
+              "
+            >
               {country.label}
             </span>
 
@@ -260,4 +282,5 @@ export default function CountrySelect({
     </div>
 
   );
+
 }

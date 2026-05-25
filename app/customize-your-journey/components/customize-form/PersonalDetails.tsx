@@ -4,11 +4,31 @@ export default function PersonalDetails() {
   return (
     <div className="w-full">
 
+      {/* HEADER */}
+      <div className="mb-5 sm:mb-6">
+
+        <h3
+          className="
+            text-[16px]
+            sm:text-[20px]
+            md:text-[20px]
+            tracking-wide
+            text-[#2c2c2c]
+            font-semibold
+            -mb-2
+          "
+        >
+          Personal Details
+        </h3>
+
+      </div>
+
       {/* NAME */}
       <div className="w-full mb-5 sm:mb-6">
 
         <FormInput
-          placeholder="Your Name"
+          name="name"
+          placeholder="Your Name *"
           required
         />
 
@@ -18,26 +38,32 @@ export default function PersonalDetails() {
       <div
         className="
           grid
-    grid-cols-1
-    md:grid-cols-2
-    gap-x-6
+          grid-cols-1
+          md:grid-cols-2
+          gap-x-6
         "
       >
 
         <div className="w-full">
+
           <FormInput
             type="email"
-            placeholder="Email Address"
+            name="email"
+            placeholder="Email Address *"
             required
           />
+
         </div>
 
         <div className="w-full">
+
           <FormInput
             type="tel"
-            placeholder="Phone Number"
+            name="phone"
+            placeholder="Phone Number *"
             required
           />
+
         </div>
 
       </div>
