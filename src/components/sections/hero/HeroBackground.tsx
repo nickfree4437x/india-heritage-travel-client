@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // ============================================================================
-// TYPES & INTERFACES
+// TYPES
 // ============================================================================
 
 type Props = {
@@ -13,7 +13,7 @@ type Props = {
 };
 
 // ============================================================================
-// MAIN COMPONENT
+// COMPONENT
 // ============================================================================
 
 export default function HeroBackground({
@@ -32,52 +32,82 @@ export default function HeroBackground({
     useRef<HTMLVideoElement | null>(null);
 
   // ==========================================================================
-  // EFFECTS
+  // STATES
   // ==========================================================================
 
-  // FORCE AUTOPLAY FOR IOS + INSTAGRAM BROWSER
+  const [isMobile, setIsMobile] =
+    useState(false);
+
+  // ==========================================================================
+  // DETECT MOBILE
+  // ==========================================================================
+
+  useEffect(() => {
+
+    const checkDevice = () => {
+
+      setIsMobile(
+        window.innerWidth < 768
+      );
+
+    };
+
+    checkDevice();
+
+    window.addEventListener(
+      "resize",
+      checkDevice
+    );
+
+    return () => {
+
+      window.removeEventListener(
+        "resize",
+        checkDevice
+      );
+
+    };
+
+  }, []);
+
+  // ==========================================================================
+  // FORCE AUTOPLAY
+  // ==========================================================================
+
   useEffect(() => {
 
     const playVideos = async () => {
 
       try {
 
-        // DESKTOP VIDEO
-        if (desktopVideoRef.current) {
+        // DESKTOP
+        if (
+          desktopVideoRef.current &&
+          !isMobile
+        ) {
 
           desktopVideoRef.current.muted = true;
 
-          const desktopPlayPromise =
-            desktopVideoRef.current.play();
-
-          if (desktopPlayPromise !== undefined) {
-
-            await desktopPlayPromise;
-
-          }
+          await desktopVideoRef.current.play();
 
         }
 
-        // MOBILE VIDEO
-        if (mobileVideoRef.current) {
+        // MOBILE
+        if (
+          mobileVideoRef.current &&
+          isMobile
+        ) {
 
           mobileVideoRef.current.muted = true;
 
-          const mobilePlayPromise =
-            mobileVideoRef.current.play();
-
-          if (mobilePlayPromise !== undefined) {
-
-            await mobilePlayPromise;
-
-          }
+          await mobileVideoRef.current.play();
 
         }
 
       } catch (error) {
 
         console.log(
-          "Video autoplay blocked:",
+          "Autoplay blocked:",
           error
         );
 
@@ -87,50 +117,64 @@ export default function HeroBackground({
 
     playVideos();
 
-  }, []);
+  }, [isMobile]);
 
   // ==========================================================================
-  // RENDER HELPERS
+  // VIDEO FILTER
   // ==========================================================================
 
-  // SHARED VIDEO FILTER STYLE
+  // REMOVE FILTERS ON MOBILE
+  // IOS SAFARI + FILTERS = PLAY BUTTON ISSUE
+
   const getVideoFilter = (
     progress: number
-  ) => ({
+  ) => {
 
-    filter: `
-      brightness(${0.85 + progress * 0.1})
-      contrast(${1.05 + Math.sin(progress * Math.PI * 2) * 0.03})
-    `,
+    if (isMobile) {
 
-  });
+      return {};
+
+    }
+
+    return {
+
+      filter: `
+        brightness(${0.88 + progress * 0.08})
+        contrast(${1.03})
+      `,
+
+    };
+
+  };
 
   // ==========================================================================
-  // MAIN RENDER
+  // RENDER
   // ==========================================================================
 
   return (
     <>
 
       {/* ====================================================================
-          VIDEO BACKGROUND WITH SCALE ANIMATION
+          VIDEO WRAPPER
       ==================================================================== */}
 
       <motion.div
         className="absolute inset-0"
-        initial={{ scale: 1.2 }}
+        initial={{ scale: 1.08 }}
         animate={{
-          scale: isHovering ? 1.02 : 1.05,
+          scale: isHovering
+            ? 1.01
+            : 1.03,
         }}
         transition={{
-          scale: {
-            duration: 0.8,
-            ease: "easeOut",
-          },
+          duration: 0.8,
+          ease: "easeOut",
         }}
       >
 
-        {/* DESKTOP VIDEO */}
+        {/* ================================================================
+            DESKTOP VIDEO
+        ================================================================ */}
 
         <video
           ref={desktopVideoRef}
@@ -153,13 +197,15 @@ export default function HeroBackground({
         >
 
           <source
-            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/f_auto,q_auto,w_auto/hero-small_q95bzf.mp4"
+            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/q_auto:good,vc_h264,w_1920/hero-small_q95bzf.mp4"
             type="video/mp4"
           />
 
         </video>
 
-        {/* MOBILE VIDEO */}
+        {/* ================================================================
+            MOBILE VIDEO
+        ================================================================ */}
 
         <video
           ref={mobileVideoRef}
@@ -178,11 +224,10 @@ export default function HeroBackground({
             w-full h-full
             object-cover
           "
-          style={getVideoFilter(videoProgress)}
         >
 
           <source
-            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/v1779522352/hero-mobile_z58h4d.mp4"
+            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/q_auto:good,vc_h264,w_720/hero-mobile_z58h4d.mp4"
             type="video/mp4"
           />
 
@@ -191,7 +236,7 @@ export default function HeroBackground({
       </motion.div>
 
       {/* ====================================================================
-          DARK OVERLAY - ANIMATED GRADIENT
+          DARK OVERLAY
       ==================================================================== */}
 
       <motion.div
@@ -199,11 +244,11 @@ export default function HeroBackground({
         animate={{
           background: [
 
-            "linear-gradient(145deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.15) 100%)",
+            "linear-gradient(145deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.06) 50%, rgba(0,0,0,0.18) 100%)",
 
-            "linear-gradient(125deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.03) 50%, rgba(0,0,0,0.2) 100%)",
+            "linear-gradient(125deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.04) 50%, rgba(0,0,0,0.22) 100%)",
 
-            "linear-gradient(145deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.15) 100%)",
+            "linear-gradient(145deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.06) 50%, rgba(0,0,0,0.18) 100%)",
 
           ],
         }}
@@ -215,7 +260,7 @@ export default function HeroBackground({
       />
 
       {/* ====================================================================
-          SOFT RADIAL GLOW - MOVING LIGHT SOURCE
+          SOFT RADIAL GLOW
       ==================================================================== */}
 
       <motion.div
@@ -223,13 +268,13 @@ export default function HeroBackground({
         animate={{
           background: [
 
-            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.12) 0%, transparent 60%)",
+            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.10) 0%, transparent 60%)",
 
-            "radial-gradient(circle at 70% 50%, rgba(203,178,153,0.15) 0%, transparent 60%)",
+            "radial-gradient(circle at 70% 50%, rgba(203,178,153,0.13) 0%, transparent 60%)",
 
-            "radial-gradient(circle at 50% 50%, rgba(203,178,153,0.1) 0%, transparent 60%)",
+            "radial-gradient(circle at 50% 50%, rgba(203,178,153,0.08) 0%, transparent 60%)",
 
-            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.12) 0%, transparent 60%)",
+            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.10) 0%, transparent 60%)",
 
           ],
         }}
@@ -241,13 +286,13 @@ export default function HeroBackground({
       />
 
       {/* ====================================================================
-          PULSING GLOW OVERLAY
+          PULSING GLOW
       ==================================================================== */}
 
       <motion.div
         className="absolute inset-0 pointer-events-none"
         animate={{
-          opacity: [0.2, 0.45, 0.2],
+          opacity: [0.15, 0.3, 0.15],
         }}
         transition={{
           duration: 5,
@@ -256,12 +301,12 @@ export default function HeroBackground({
         }}
       >
 
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_40%,rgba(203,178,153,0.15),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_40%,rgba(203,178,153,0.12),transparent_70%)]" />
 
       </motion.div>
 
       {/* ====================================================================
-          MOVING LIGHT BEAM - SCANNING EFFECT
+          LIGHT BEAM
       ==================================================================== */}
 
       <motion.div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -269,12 +314,13 @@ export default function HeroBackground({
         <motion.div
           className="
             absolute top-0
-            h-full w-[25%]
+            h-full w-[20%]
             bg-gradient-to-r
             from-transparent
-            via-white/12
+            via-white/10
             to-transparent
-            blur-2xl
+            blur-xl
+            hidden md:block
           "
           animate={{
             x: ["-100%", "200%"],
@@ -289,7 +335,7 @@ export default function HeroBackground({
       </motion.div>
 
       {/* ====================================================================
-          TOP AURORA EFFECT
+          TOP AURORA
       ==================================================================== */}
 
       <motion.div
@@ -299,8 +345,8 @@ export default function HeroBackground({
           pointer-events-none
         "
         animate={{
-          opacity: [0.08, 0.22, 0.08],
-          y: [0, -10, 0],
+          opacity: [0.06, 0.16, 0.06],
+          y: [0, -8, 0],
         }}
         transition={{
           duration: 7,
@@ -309,12 +355,12 @@ export default function HeroBackground({
         }}
       >
 
-        <div className="w-full h-full bg-gradient-to-b from-[#CBB299]/15 via-white/8 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-b from-[#CBB299]/10 via-white/5 to-transparent" />
 
       </motion.div>
 
       {/* ====================================================================
-          BOTTOM GLOW EFFECT
+          BOTTOM GLOW
       ==================================================================== */}
 
       <motion.div
@@ -324,8 +370,8 @@ export default function HeroBackground({
           pointer-events-none
         "
         animate={{
-          opacity: [0.08, 0.18, 0.08],
-          y: [0, 8, 0],
+          opacity: [0.06, 0.14, 0.06],
+          y: [0, 6, 0],
         }}
         transition={{
           duration: 6,
@@ -335,7 +381,7 @@ export default function HeroBackground({
         }}
       >
 
-        <div className="w-full h-full bg-gradient-to-t from-[#CBB299]/15 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-t from-[#CBB299]/10 to-transparent" />
 
       </motion.div>
 
