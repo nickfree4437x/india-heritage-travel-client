@@ -38,82 +38,46 @@ export default function HeroBackground({
   // FORCE AUTOPLAY FOR IOS + INSTAGRAM BROWSER
   useEffect(() => {
 
-    const playVideos = async () => {
+    const setupVideo = async (
+      video: HTMLVideoElement | null
+    ) => {
+
+      if (!video) return;
 
       try {
 
-        // DESKTOP VIDEO
-        if (desktopVideoRef.current) {
+        video.muted = true;
 
-          desktopVideoRef.current.muted = true;
+        video.defaultMuted = true;
 
-          desktopVideoRef.current.defaultMuted = true;
+        video.setAttribute(
+          "muted",
+          ""
+        );
 
-          desktopVideoRef.current.setAttribute(
-            "muted",
-            "true"
-          );
+        video.setAttribute(
+          "playsinline",
+          ""
+        );
 
-          const desktopPlayPromise =
-            desktopVideoRef.current.play();
+        video.setAttribute(
+          "webkit-playsinline",
+          "true"
+        );
 
-          if (desktopPlayPromise !== undefined) {
+        const playPromise =
+          video.play();
 
-            desktopPlayPromise.catch((error) => {
+        if (playPromise !== undefined) {
 
-              console.log(
-                "Desktop autoplay blocked:",
-                error
-              );
-
-            });
-
-          }
-
-        }
-
-        // MOBILE VIDEO
-        if (mobileVideoRef.current) {
-
-          mobileVideoRef.current.muted = true;
-
-          mobileVideoRef.current.defaultMuted = true;
-
-          mobileVideoRef.current.setAttribute(
-            "muted",
-            "true"
-          );
-
-          const mobilePlayPromise =
-            mobileVideoRef.current.play();
-
-          if (mobilePlayPromise !== undefined) {
-
-            mobilePlayPromise
-              .then(() => {
-
-                console.log(
-                  "Mobile autoplay started"
-                );
-
-              })
-              .catch((error) => {
-
-                console.log(
-                  "iPhone autoplay blocked:",
-                  error
-                );
-
-              });
-
-          }
+          await playPromise;
 
         }
 
       } catch (error) {
 
         console.log(
-          "Video autoplay blocked:",
+          "Autoplay blocked:",
           error
         );
 
@@ -121,7 +85,9 @@ export default function HeroBackground({
 
     };
 
-    playVideos();
+    setupVideo(desktopVideoRef.current);
+
+    setupVideo(mobileVideoRef.current);
 
   }, []);
 
@@ -129,7 +95,6 @@ export default function HeroBackground({
   // RENDER HELPERS
   // ==========================================================================
 
-  // SHARED VIDEO FILTER STYLE
   const getVideoFilter = (
     progress: number
   ) => ({
@@ -138,6 +103,8 @@ export default function HeroBackground({
       brightness(${0.85 + progress * 0.1})
       contrast(${1.05 + Math.sin(progress * Math.PI * 2) * 0.03})
     `,
+
+    WebkitTransform: "translateZ(0)",
 
   });
 
@@ -172,19 +139,12 @@ export default function HeroBackground({
           ref={desktopVideoRef}
           autoPlay
           muted
-          defaultMuted
           loop
           playsInline
           preload="metadata"
           controls={false}
           disablePictureInPicture
           controlsList="nodownload nofullscreen noremoteplayback"
-          {...({
-            "webkit-playsinline": "true",
-            "x5-playsinline": "true",
-            "x5-video-player-type": "h5",
-            "x5-video-player-fullscreen": "false",
-          } as any)}
           className="
             hidden md:block
             w-full h-full
@@ -207,19 +167,12 @@ export default function HeroBackground({
           ref={mobileVideoRef}
           autoPlay
           muted
-          defaultMuted
           loop
           playsInline
-          controls={false}
           preload="auto"
+          controls={false}
           disablePictureInPicture
           controlsList="nodownload nofullscreen noremoteplayback"
-          {...({
-            "webkit-playsinline": "true",
-            "x5-playsinline": "true",
-            "x5-video-player-type": "h5",
-            "x5-video-player-fullscreen": "false",
-          } as any)}
           className="
             block md:hidden
             w-full h-full
