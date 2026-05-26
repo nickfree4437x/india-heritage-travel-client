@@ -76,31 +76,58 @@ export default function HeroBackground({
 
   useEffect(() => {
 
-    const playVideos = async () => {
+    const setupVideo = async (
+      video: HTMLVideoElement | null
+    ) => {
+
+      if (!video) return;
 
       try {
 
-        // DESKTOP
-        if (
-          desktopVideoRef.current &&
-          !isMobile
-        ) {
+        // IOS SAFARI FIXES
+        video.muted = true;
+        video.defaultMuted = true;
+        video.playsInline = true;
 
-          desktopVideoRef.current.muted = true;
+        video.setAttribute(
+          "muted",
+          ""
+        );
 
-          await desktopVideoRef.current.play();
+        video.setAttribute(
+          "autoplay",
+          ""
+        );
 
-        }
+        video.setAttribute(
+          "playsinline",
+          ""
+        );
 
-        // MOBILE
-        if (
-          mobileVideoRef.current &&
-          isMobile
-        ) {
+        video.setAttribute(
+          "webkit-playsinline",
+          "true"
+        );
 
-          mobileVideoRef.current.muted = true;
+        video.setAttribute(
+          "x5-playsinline",
+          "true"
+        );
 
-          await mobileVideoRef.current.play();
+        video.setAttribute(
+          "x-webkit-airplay",
+          "deny"
+        );
+
+        // FORCE LOAD
+        video.load();
+
+        // FORCE PLAY
+        const promise = video.play();
+
+        if (promise !== undefined) {
+
+          await promise;
 
         }
 
@@ -115,7 +142,19 @@ export default function HeroBackground({
 
     };
 
-    playVideos();
+    if (isMobile) {
+
+      setupVideo(
+        mobileVideoRef.current
+      );
+
+    } else {
+
+      setupVideo(
+        desktopVideoRef.current
+      );
+
+    }
 
   }, [isMobile]);
 
@@ -123,25 +162,28 @@ export default function HeroBackground({
   // VIDEO FILTER
   // ==========================================================================
 
-  // REMOVE FILTERS ON MOBILE
-  // IOS SAFARI + FILTERS = PLAY BUTTON ISSUE
-
   const getVideoFilter = (
     progress: number
   ) => {
 
+    // REMOVE FILTERS ON MOBILE
     if (isMobile) {
 
-      return {};
+      return {
+        WebkitTransform:
+          "translate3d(0,0,0)",
+      };
 
     }
 
     return {
 
       filter: `
-        brightness(${0.88 + progress * 0.08})
-        contrast(${1.03})
+        brightness(${0.9 + progress * 0.05})
       `,
+
+      WebkitTransform:
+        "translate3d(0,0,0)",
 
     };
 
@@ -159,12 +201,16 @@ export default function HeroBackground({
       ==================================================================== */}
 
       <motion.div
-        className="absolute inset-0"
-        initial={{ scale: 1.08 }}
+        className="
+          absolute inset-0
+          overflow-hidden
+          bg-black
+        "
+        initial={{ scale: 1.03 }}
         animate={{
           scale: isHovering
             ? 1.01
-            : 1.03,
+            : 1.02,
         }}
         transition={{
           duration: 0.8,
@@ -184,20 +230,32 @@ export default function HeroBackground({
           playsInline
           preload="metadata"
           disablePictureInPicture
+          disableRemotePlayback
           controlsList="nodownload nofullscreen noremoteplayback"
+          tabIndex={-1}
+          aria-hidden="true"
           {...({
-            "webkit-playsinline": "true",
+            "webkit-playsinline":
+              "true",
           } as any)}
           className="
             hidden md:block
+            absolute inset-0
             w-full h-full
             object-cover
+            pointer-events-none
+            select-none
+            transform-gpu
+            [backface-visibility:hidden]
+            [-webkit-backface-visibility:hidden]
           "
-          style={getVideoFilter(videoProgress)}
+          style={getVideoFilter(
+            videoProgress
+          )}
         >
 
           <source
-            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/q_auto:good,vc_h264,w_1920/hero-small_q95bzf.mp4"
+            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/q_auto:good,vc_h264,so_0,w_1920/hero-small_q95bzf.mp4"
             type="video/mp4"
           />
 
@@ -213,21 +271,35 @@ export default function HeroBackground({
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           disablePictureInPicture
+          disableRemotePlayback
           controlsList="nodownload nofullscreen noremoteplayback"
+          tabIndex={-1}
+          aria-hidden="true"
           {...({
-            "webkit-playsinline": "true",
+            "webkit-playsinline":
+              "true",
           } as any)}
           className="
             block md:hidden
+            absolute inset-0
             w-full h-full
             object-cover
+            pointer-events-none
+            select-none
+            transform-gpu
+            [backface-visibility:hidden]
+            [-webkit-backface-visibility:hidden]
           "
+          style={{
+            WebkitTransform:
+              "translate3d(0,0,0)",
+          }}
         >
 
           <source
-            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/q_auto:good,vc_h264,w_720/hero-mobile_z58h4d.mp4"
+            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/q_auto:good,vc_h264,so_0,w_720/hero-mobile_z58h4d.mp4"
             type="video/mp4"
           />
 
@@ -244,11 +316,11 @@ export default function HeroBackground({
         animate={{
           background: [
 
-            "linear-gradient(145deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.06) 50%, rgba(0,0,0,0.18) 100%)",
+            "linear-gradient(145deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.07) 50%, rgba(0,0,0,0.20) 100%)",
 
-            "linear-gradient(125deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.04) 50%, rgba(0,0,0,0.22) 100%)",
+            "linear-gradient(125deg, rgba(0,0,0,0.24) 0%, rgba(0,0,0,0.04) 50%, rgba(0,0,0,0.24) 100%)",
 
-            "linear-gradient(145deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.06) 50%, rgba(0,0,0,0.18) 100%)",
+            "linear-gradient(145deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.07) 50%, rgba(0,0,0,0.20) 100%)",
 
           ],
         }}
@@ -260,21 +332,24 @@ export default function HeroBackground({
       />
 
       {/* ====================================================================
-          SOFT RADIAL GLOW
+          RADIAL GLOW
       ==================================================================== */}
 
       <motion.div
-        className="absolute inset-0 pointer-events-none"
+        className="
+          absolute inset-0
+          pointer-events-none
+        "
         animate={{
           background: [
 
-            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.10) 0%, transparent 60%)",
+            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.08) 0%, transparent 60%)",
 
-            "radial-gradient(circle at 70% 50%, rgba(203,178,153,0.13) 0%, transparent 60%)",
+            "radial-gradient(circle at 70% 50%, rgba(203,178,153,0.10) 0%, transparent 60%)",
 
-            "radial-gradient(circle at 50% 50%, rgba(203,178,153,0.08) 0%, transparent 60%)",
+            "radial-gradient(circle at 50% 50%, rgba(203,178,153,0.07) 0%, transparent 60%)",
 
-            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.10) 0%, transparent 60%)",
+            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.08) 0%, transparent 60%)",
 
           ],
         }}
@@ -286,13 +361,16 @@ export default function HeroBackground({
       />
 
       {/* ====================================================================
-          PULSING GLOW
+          PULSE GLOW
       ==================================================================== */}
 
       <motion.div
-        className="absolute inset-0 pointer-events-none"
+        className="
+          absolute inset-0
+          pointer-events-none
+        "
         animate={{
-          opacity: [0.15, 0.3, 0.15],
+          opacity: [0.10, 0.22, 0.10],
         }}
         transition={{
           duration: 5,
@@ -301,7 +379,7 @@ export default function HeroBackground({
         }}
       >
 
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_40%,rgba(203,178,153,0.12),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_40%,rgba(203,178,153,0.10),transparent_70%)]" />
 
       </motion.div>
 
@@ -309,18 +387,24 @@ export default function HeroBackground({
           LIGHT BEAM
       ==================================================================== */}
 
-      <motion.div className="absolute inset-0 pointer-events-none overflow-hidden">
+      <motion.div
+        className="
+          absolute inset-0
+          pointer-events-none
+          overflow-hidden
+          hidden md:block
+        "
+      >
 
         <motion.div
           className="
             absolute top-0
-            h-full w-[20%]
+            h-full w-[18%]
             bg-gradient-to-r
             from-transparent
-            via-white/10
+            via-white/8
             to-transparent
-            blur-xl
-            hidden md:block
+            blur-lg
           "
           animate={{
             x: ["-100%", "200%"],
@@ -345,8 +429,8 @@ export default function HeroBackground({
           pointer-events-none
         "
         animate={{
-          opacity: [0.06, 0.16, 0.06],
-          y: [0, -8, 0],
+          opacity: [0.05, 0.12, 0.05],
+          y: [0, -6, 0],
         }}
         transition={{
           duration: 7,
@@ -355,7 +439,7 @@ export default function HeroBackground({
         }}
       >
 
-        <div className="w-full h-full bg-gradient-to-b from-[#CBB299]/10 via-white/5 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-b from-[#CBB299]/8 via-white/4 to-transparent" />
 
       </motion.div>
 
@@ -370,8 +454,8 @@ export default function HeroBackground({
           pointer-events-none
         "
         animate={{
-          opacity: [0.06, 0.14, 0.06],
-          y: [0, 6, 0],
+          opacity: [0.05, 0.12, 0.05],
+          y: [0, 4, 0],
         }}
         transition={{
           duration: 6,
@@ -381,7 +465,7 @@ export default function HeroBackground({
         }}
       >
 
-        <div className="w-full h-full bg-gradient-to-t from-[#CBB299]/10 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-t from-[#CBB299]/8 to-transparent" />
 
       </motion.div>
 
