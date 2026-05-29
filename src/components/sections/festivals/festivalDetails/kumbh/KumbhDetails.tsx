@@ -12,6 +12,7 @@ import ExploreSection from "./ExploreSection";
 import FAQSection from "../../common/FAQSection";
 import Footer from "../../../footer/Footer";
 import CommonForm from "@/src/components/tours/CommonForm";
+import FestivalBreadcrumb from "@/src/components/common/Breadcrumb/FestivalBreadcrumb";
 
 export default function KumbhDetails() {
   return (
@@ -71,6 +72,10 @@ export default function KumbhDetails() {
 
       {/* 🔗 STICKY NAV */}
       <StickyNav />
+
+      <FestivalBreadcrumb
+        title="Kumbh Festival"
+      />
 
       {/* 🎯 DESIGNED FOR */}
       <DesignedFor />

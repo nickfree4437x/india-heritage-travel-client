@@ -190,8 +190,8 @@ export default function Footer() {
               { name: "FAQ’s", href: "/faq", isSection: false },
               { name: "Journeys", href: "/journeys", isSection: true, sectionId: "welcome-destination" },
               { name: "Festivals", href: "/festivals", isSection: true, sectionId: "festivals" },
-              { name: "Travel Tips", href: "/travel-tips", isSection: false },
-              { name: "Visa Rules for India", href: "/visa-rules", isSection: false },
+              { name: "Travel Tips", href: "/travel-tips-for-india", isSection: false },
+              { name: "Visa Rules for India", href: "/visa-rules-for-india", isSection: false },
             ].map((item, i) => (
               <button
                 key={i}

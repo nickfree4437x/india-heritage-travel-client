@@ -31,7 +31,7 @@ export default function DesignedFor() {
     <section
       className="
         bg-white
-        pt-10 sm:pt-12
+        pt-8 sm:pt-8
         pb-8 sm:pb-10
         px-4 sm:px-6 scroll-mt-24 md:scroll-mt-16
       "

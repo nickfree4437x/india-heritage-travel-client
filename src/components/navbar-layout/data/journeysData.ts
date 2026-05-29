@@ -59,11 +59,11 @@ export const journeysData = {
   health: [
     {
       name: "Yoga Escapes",
-      link: "/journeys/health-based/yoga-escapes",
+      link: "/tours/yoga-escapes-tour",
     },
     {
       name: "Ayurveda Journey",
-      link: "/journeys/health-based/ayurveda-journey",
+      link: "/tours/ayurveda-journey-tour",
     },
   ],
 };
@@ -73,6 +73,6 @@ export const journeysData = {
 //////////////////////////////////////
 export const journeyCategories = [
   { id: "curated", title: "Curated Journeys" },
-  { id: "festivals", title: "Festivals" },
-  { id: "health", title: "Health Based" },
+  { id: "festivals", title: "Festivals Tours" },
+  { id: "health", title: "Spiritual Journeys" },
 ];

@@ -12,6 +12,7 @@ import ExploreMoreSection from "./ExploreMoreSection";
 import FAQSection from "../../common/FAQSection";
 import Footer from "../../../footer/Footer";
 import CommonForm from "@/src/components/tours/CommonForm";
+import FestivalBreadcrumb from "@/src/components/common/Breadcrumb/FestivalBreadcrumb";
 
 export default function PushkarDetails() {
   return (
@@ -72,6 +73,10 @@ export default function PushkarDetails() {
 
       {/* 🔗 STICKY NAV */}
       <StickyNav />
+
+      <FestivalBreadcrumb
+        title="Pushkar Festival"
+      />
 
       {/* 🎯 DESIGNED FOR */}
       <DesignedFor />

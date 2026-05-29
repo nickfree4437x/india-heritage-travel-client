@@ -257,7 +257,7 @@ export default function SoloTravelSection() {
               </motion.p>
             </motion.div>
 
-            <Link href="/solo-trip">
+            <Link href="/solo-women-travel">
               <motion.button
                 variants={buttonVariants} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full sm:w-auto md:-ml-2 bg-transparent text-[#a67c52] text-xs px-7 py-3 rounded-full border border-[#a67c52] hover:bg-[#a67c52] hover:text-white transition-all duration-300" >
                 Come travel with me

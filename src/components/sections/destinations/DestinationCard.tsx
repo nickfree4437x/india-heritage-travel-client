@@ -33,7 +33,7 @@ export default function DestinationCard({
   // ==========================================================================
 
   return (
-    <Link href={`/destinations/${slug}`} className="block w-full">
+    <Link href={`/tours/${slug}`} className="block w-full">
       <div
         className="relative w-full max-w-[420px] mx-auto rounded-sm overflow-hidden group cursor-pointer 
                    h-[240px] sm:h-[430px] md:h-[450px]

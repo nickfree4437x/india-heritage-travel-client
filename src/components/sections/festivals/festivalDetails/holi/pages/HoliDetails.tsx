@@ -12,6 +12,7 @@ import ExploreMoreSection from "../components/ExploreMoreSection";
 import FAQSection from "../../../common/FAQSection";
 import Footer from "@/src/components/sections/footer/Footer";
 import CommonForm from "@/src/components/tours/CommonForm";
+import FestivalBreadcrumb from "@/src/components/common/Breadcrumb/FestivalBreadcrumb";
 
 export default function HoliDetails() {
   return (
@@ -57,6 +58,10 @@ export default function HoliDetails() {
 
       {/* 🔗 STICKY NAV */}
       <StickyNav />
+
+      <FestivalBreadcrumb
+        title="Holi Festival"
+      />
 
       {/* 🎯 DESIGNED FOR */}
       <DesignedFor />
