@@ -18,7 +18,7 @@ type Props = {
 // MAIN COMPONENT
 // ============================================================================
 
-export default function CitySection({ id, title, description, image }: Props) {
+export default function CitySection({ id, title, description, image, alt }: Props) {
   // ==========================================================================
   // MAIN RENDER
   // ==========================================================================
