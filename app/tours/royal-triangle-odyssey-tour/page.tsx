@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import RoyalTriangleHero from "./components/HeroSection";
 import SuitableForSection from "./components/SuitableFor";
 import ToursLayout from "./components/ToursLayout";
@@ -11,6 +13,12 @@ import ExcludedServices from "../../tours/majestic-golden-triangle-tour/componen
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 import TourSteps from "@/src/components/tours/TourSteps";
 import CommonForm from "@/src/components/tours/CommonForm";
+
+export const metadata: Metadata = {
+  title: "Royal Triangle Odyssey Tour India | Heritage, Culture & Iconic Destinations",
+  description:
+    "Explore India's rich heritage, cultural landmarks, historic cities, and unforgettable experiences through a carefully curated Royal Triangle journey across iconic destinations.",
+};
 
 export default function RoyalRajasthanPage() {
   return (

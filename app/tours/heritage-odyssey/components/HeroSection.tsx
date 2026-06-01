@@ -36,8 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Heritage Odyssey: North to<br />
-          South India Tour
+          India Heritage Tour <br/> Package
         </h1>
 
       </div>

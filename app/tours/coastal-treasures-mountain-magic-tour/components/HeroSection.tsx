@@ -35,7 +35,7 @@ export default function HeroSection() {
             opacity-0 translate-y-10
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]"
         >
-          Coastal Treasures & Mountain <br /> Magic Tour
+          South India Tour <br/>Package
         </h1>
       </div>
     </section>

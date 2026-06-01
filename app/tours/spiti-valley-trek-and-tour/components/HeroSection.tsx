@@ -36,8 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Spiti Valley Trek <br />
-          and Tour
+          Spiti Valley Trek & <br/> Tour Package
         </h1>
 
       </div>

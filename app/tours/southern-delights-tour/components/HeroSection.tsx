@@ -36,8 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Southern Delights: A Journey<br />
-          through Time Tour
+          South India Heritage <br/> Tour Package
         </h1>
 
       </div>

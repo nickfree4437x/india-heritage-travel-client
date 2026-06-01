@@ -49,8 +49,7 @@ export default function HoliDetails() {
             opacity-0 translate-y-10
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           ">
-           Colors of Joy: Holi<br />
-           Festival
+           Holi Festival Tour India - Celebrate Colors in Rajasthan
           </h1>
 
         </div>

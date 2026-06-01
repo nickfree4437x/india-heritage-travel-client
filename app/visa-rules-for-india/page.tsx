@@ -17,7 +17,7 @@ export default function VisaRulesPage() {
 
             opacity-0 translate-y-10
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]">
-          Visa Rules For India
+          India Visa Requirements & Travel Information Guide
         </h1>
       </section>
 

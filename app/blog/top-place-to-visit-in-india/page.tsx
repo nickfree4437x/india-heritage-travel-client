@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import HeroSection from "./components/HeroSection";
 import SummerPlacesContentSection from "./components/SummerPlacesContentSection";
 import RishikeshSection from "./components/RishikeshSection";
@@ -11,6 +12,12 @@ import AuliSection from "./components/AuliSection";
 import ShillongSection from "./components/ShillongSection";
 import Moreblogs from "./components/Moreblogs";
 import Footer from "@/src/components/sections/footer/Footer";
+
+export const metadata: Metadata = {
+  title: "Best Places to Visit in India | Top Travel Destinations & Experiences",
+  description:
+    "Discover the best places to visit in India, from scenic mountains and cultural landmarks to heritage cities, beaches, and unforgettable travel experiences.",
+};
 
 export default function BlogDetailsPage() {
   return (

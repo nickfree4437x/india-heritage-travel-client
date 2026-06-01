@@ -36,8 +36,8 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Experience India's Heritage like<br />
-          Never Before
+          India Heritage Travel - Ek
+          Dil Se India Dikhane Waali Team
         </h1>
 
       </div>

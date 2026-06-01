@@ -11,7 +11,7 @@ export const getHeaderClassName = (scrolled: boolean) => {
 
 export const getLogoSizeClass = (scrolled: boolean) => {
   return scrolled
-    ? "w-[90px] sm:w-[110px] md:w-[120px]"
+    ? "w-[100px] sm:w-[120px] md:w-[150px]"
     : "w-[110px] sm:w-[130px] md:w-[150px] lg:w-[160px]";
 };
 

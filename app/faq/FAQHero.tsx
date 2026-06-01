@@ -36,7 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          FAQ
+          Frequently Asked Questions About Traveling in India
         </h1>
 
       </div>

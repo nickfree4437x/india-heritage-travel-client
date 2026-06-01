@@ -36,8 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Adventure Through High Passes:<br />
-          Road Trip to Leh-Ladakh
+          Leh Ladakh Road <br/> Trip Package
         </h1>
 
       </div>

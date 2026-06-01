@@ -8,6 +8,7 @@ import {
 import Script from "next/script";
 
 import { Toaster } from "react-hot-toast";
+import "react-datepicker/dist/react-datepicker.css";
 
 import "./globals.css";
 

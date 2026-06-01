@@ -9,6 +9,7 @@ import FormTextarea from "./FormTextarea";
 import CountrySelect, {
   type CountryOption,
 } from "./CountrySelect";
+import DateField from "./DateField";
 
 const festivalOptions = [
   "Not Particularly",
@@ -31,6 +32,9 @@ export default function JourneyDetails() {
 
   const [selectedFestival, setSelectedFestival] =
     useState("");
+
+  const [travelDate, setTravelDate] =
+   useState("");
 
   const [selectedPreferences, setSelectedPreferences] =
     useState<string[]>([]);
@@ -276,11 +280,13 @@ export default function JourneyDetails() {
         {/* DATE */}
         <div className="w-full">
 
-          <FormInput
-            type="date"
+          <DateField
             name="travel_date"
-            placeholder="Preferred Travel Dates"
-            className="h-[40px] sm:h-[40px] md:h-[40px] w-full"
+            value={travelDate}
+            placeholder="Select Date of Visit"
+            onChange={(e) =>
+              setTravelDate(e.target.value)
+            }
           />
 
         </div>

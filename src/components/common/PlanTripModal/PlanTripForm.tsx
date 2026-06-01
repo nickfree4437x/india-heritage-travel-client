@@ -183,9 +183,9 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
       <div onClick={onClose} className="absolute inset-0 bg-black/70 backdrop-blur-[2px] -m-4 sm:-m-6 md:-m-8" />
 
       {/* MODAL */}
-      <div className="relative w-full max-w-6xl mx-auto bg-white shadow-2xl overflow-y-auto max-h-full rounded-xl sm:rounded-2xl">
+      <div className="relative w-full max-w-3xl mx-auto bg-white shadow-md overflow-y-auto max-h-full rounded-sm sm:rounded-sm">
         {/* HEADER - Fully Responsive */}
-        <div className="bg-[#a68657] py-4 sm:py-5 px-5 sm:px-6 md:px-8 flex items-center justify-center relative sticky top-0 z-10 rounded-t-xl sm:rounded-t-2xl">
+        <div className="bg-[#a68657] py-4 sm:py-5 px-5 sm:px-6 md:px-8 flex items-center justify-center relative sticky top-0 z-10 rounded-t-sm sm:rounded-t-sm">
           <h2 className="text-white text-[16px] sm:text-[18px] md:text-[20px] tracking-wide font-medium">
             Plan Your Trip
           </h2>

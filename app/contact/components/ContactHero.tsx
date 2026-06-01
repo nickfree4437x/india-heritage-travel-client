@@ -36,7 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Contact Us
+          Plan Your Journey with India Heritage Travel
         </h1>
 
       </div>

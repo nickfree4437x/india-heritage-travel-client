@@ -9,6 +9,7 @@ import toast from "react-hot-toast";
 import BookingInput from "./BookingInput";
 
 import { vehicleOptions } from "./bookingData";
+import DateField from "./DateField";
 
 export default function BookingForm() {
 
@@ -257,97 +258,19 @@ export default function BookingForm() {
       <div className="grid md:grid-cols-2 gap-5 sm:gap-6 mb-6">
 
       {/* FROM */}
-      <input
-        type={
-          formData.from_date
-            ? "date"
-            : "text"
-        }
+      <DateField
         name="from_date"
         value={formData.from_date}
         placeholder="Travel From"
-        onFocus={(e) => {
-          e.target.type = "date";
-        }}
-        onBlur={(e) => {
-          if (!formData.from_date) {
-            e.target.type = "text";
-          }
-        }}
         onChange={handleChange}
-        className="
-          w-full
-
-          border border-[#ddd2c2]
-
-          bg-white
-
-          rounded-lg
-
-          px-5
-          py-2.5 sm:py-2.5
-
-          text-[12px] sm:text-[13px]
-          text-[#5b5348]
-
-          placeholder:text-[#9a8f81]
-          placeholder:font-light
-
-          font-light
-
-          outline-none
-
-          transition-all duration-300
-
-          focus:border-[#9A7A58]
-        "
       />
 
       {/* TO */}
-      <input
-        type={
-          formData.to_date
-            ? "date"
-            : "text"
-        }
+      <DateField
         name="to_date"
         value={formData.to_date}
         placeholder="Travel To"
-        onFocus={(e) => {
-          e.target.type = "date";
-        }}
-        onBlur={(e) => {
-          if (!formData.to_date) {
-            e.target.type = "text";
-          }
-        }}
         onChange={handleChange}
-        className="
-          w-full
-
-          border border-[#ddd2c2]
-
-          bg-white
-
-          rounded-lg
-
-          px-5
-          py-2.5 sm:py-2.5
-
-          text-[12px] sm:text-[13px]
-          text-[#5b5348]
-
-          placeholder:text-[#9a8f81]
-          placeholder:font-light
-
-          font-light
-
-          outline-none
-
-          transition-all duration-300
-
-          focus:border-[#9A7A58]
-        "
       />
 
     </div>

@@ -37,8 +37,7 @@ export default function HeroSection() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Southern Splendors: Culture & <br />
-          Nature Trail Tour
+          South India Cultural <br/> Tour
         </h1>
 
       </div>

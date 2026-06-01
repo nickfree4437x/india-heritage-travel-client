@@ -36,7 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Travel Tips
+          Essential India Travel Tips for International Travelers
         </h1>
 
       </div>

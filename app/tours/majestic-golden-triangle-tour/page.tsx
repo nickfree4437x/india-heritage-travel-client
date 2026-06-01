@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import Hero from "./components/hero/Hero";
 import Suitable from "./components/sections/Suitable";
 import DelhiSection from "./components/sections/DelhiSection";
@@ -10,6 +12,12 @@ import Footer from "@/src/components/sections/footer/Footer";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 import TourSteps from "@/src/components/tours/TourSteps";
 import CommonForm from "@/src/components/tours/CommonForm";
+
+export const metadata: Metadata = {
+  title: "Golden Triangle Tour India | Delhi, Agra & Jaipur Heritage Journey",
+  description:
+    "Explore Delhi, Agra, and Jaipur through a personalized Golden Triangle Tour featuring iconic landmarks, cultural experiences, heritage sites, and unforgettable journeys across India.",
+};
 
 // ============================================================================
 // MAIN COMPONENT

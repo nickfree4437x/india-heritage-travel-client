@@ -63,7 +63,7 @@ export default function KumbhDetails() {
               animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
             "
           >
-            Sacred Path: Kumbh Mela
+            Kumbh Mela Tour India - Spiritual Festival Experience
           </h1>
 
         </div>

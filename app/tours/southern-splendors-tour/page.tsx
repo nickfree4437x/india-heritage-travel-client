@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import HeroSection from "./components/HeroSection";
 import SuitableFor from "./components/SuitableFor";
 import TourLayout from "./components/TourLayout";
@@ -11,6 +13,12 @@ import Footer from "@/src/components/sections/footer/Footer";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 import CommonForm from "@/src/components/tours/CommonForm";
 import TourSteps from "@/src/components/tours/TourSteps";
+
+export const metadata: Metadata = {
+  title: "Southern Splendors Tour India | Heritage, Culture & Scenic Journeys",
+  description:
+    "Discover the heritage, architecture, natural beauty, and cultural traditions of South India through a carefully curated and immersive travel experience.",
+};
 
 export default function RoyalRajasthanPage() {
   return (

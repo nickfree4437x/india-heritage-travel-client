@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import Hero from "./components/Hero";
 import Suitable from "./components/Suitable";
 import DelhiSection from "./components/DelhiSection";
@@ -19,6 +21,12 @@ import Footer from "@/src/components/sections/footer/Footer";
 import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
 import TourSteps from "@/src/components/tours/TourSteps";
 import CommonForm from "@/src/components/tours/CommonForm";
+
+export const metadata: Metadata = {
+  title: "Rajasthan Heritage Retreat Tour | Royal Palaces, Culture & Heritage",
+  description:
+    "Explore the royal heritage of Rajasthan through majestic forts, historic palaces, vibrant culture, local traditions, and unforgettable travel experiences across India's most iconic destinations.",
+};
 
 export default function Page() {
   return (

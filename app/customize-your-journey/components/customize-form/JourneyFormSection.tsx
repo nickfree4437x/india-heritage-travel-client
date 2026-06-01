@@ -216,7 +216,7 @@ export default function JourneyFormSection() {
 
       <div
         className="
-          max-w-6xl
+          max-w-5xl
           mx-auto
           px-4
           sm:px-6

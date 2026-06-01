@@ -36,8 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Divine Kashmir and <br />
-          Exciting Ladakh
+          Kashmir & Ladakh Tour <br/> Package
         </h1>
 
       </div>

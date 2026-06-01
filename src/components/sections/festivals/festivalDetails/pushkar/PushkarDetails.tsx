@@ -63,8 +63,7 @@ export default function PushkarDetails() {
               animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
             "
           >
-            Pushkar Camel <br />
-            Fair
+            Pushkar Camel Fair Tour India - Culture & Heritage Experience
           </h1>
 
         </div>

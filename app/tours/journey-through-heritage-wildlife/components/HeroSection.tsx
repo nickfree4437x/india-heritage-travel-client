@@ -36,8 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          A Journey through Heritage<br />
-          & Wildlife
+          Heritage & Wildlife <br/> Tour India
         </h1>
 
       </div>

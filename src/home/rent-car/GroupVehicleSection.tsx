@@ -4,34 +4,22 @@ import Image from "next/image";
 
 const vehicles = [
   {
-    name: "Toyota Innova Crysta",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607460/innova_ia4wad.webp",
-    desc: "The Toyota Innova is a fantastic choice, combining good looks, comfortable interiors, and top-notch safety features for your travels.",
-    capacity: "4 Guests + Driver + Guide",
+    name: "Force Urbania (Luxury Edition)",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780283955/exterior-4-1_vtpahv.jpg",
+    desc: "A premium luxury coach offering exceptional comfort, spacious seating, and a refined group travel experience.",
+    capacity: "9 to 17 Seater",
   },
   {
-    name: "Toyota Etios",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607501/etios-interior_eiy57s.webp",
-    desc: "Big on space, safety, and value for your money – a go-to pick for travelers.",
-    capacity: "3 Guests + Driver + Guide",
+    name: "Luxury Volvo Buses & Coaches",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780287501/2326x800-volvo-9700-CGI_v1f98u.avif",
+    desc: "Premium luxury coaches offering spacious seating, superior comfort, and a smooth travel experience for large groups.",
+    capacity: "40 to 55 Seater",
   },
   {
-    name: "Swift Dzire",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607521/dzire-interior_jfr8uo.webp",
-    desc: "Spacious, safe, and budget-friendly – the go-to choice for travelers.",
-    capacity: "3 Guests + Driver + Guide",
-  },
-  {
-    name: "Bigger Vehicle - Tempo Traveller",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607543/tempo-interior_e8ccfb.webp",
-    desc: "The perfect choice for extended trips, offering comfort and amenities.",
-    capacity: "10 Guests + Driver + Guide",
-  },
-  {
-    name: "Luxury Bus",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779607571/bus-interior_vv02ty.webp",
-    desc: "Perfect for families and groups with supreme comfort.",
-    capacity: "15 Guests + Driver + Guide",
+    name: "Tempo Travellers",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780284385/ssc04qnamouiwycd9yob-1_elvngd.webp",
+    desc: "Spacious and reliable transportation for family trips, tours, and group travel.",
+    capacity: "9 to 16 Seater",
   },
 ];
 
@@ -65,7 +53,7 @@ export default function VehicleSection() {
               mb-3
             "
           >
-            Explore Our Range Of Vehicles
+            Luxury Coaches for Group Travel
           </h2>
 
           <p
@@ -78,11 +66,10 @@ export default function VehicleSection() {
               mx-auto
             "
           >
-            We provide a one-stop solution for your family, friends, business, or corporate travel needs, 
-            customised to suit you. Our cars are always in top-notch condition, and we regularly check 
-            them for safety. Our drivers are carefully selected, well-trained, polite, and thoroughly 
-            familiar with the cities and destinations they serve. We’re ready to greet you with a warm 
-            welcome.
+            Experience seamless group travel with our luxury coaches, offering exceptional comfort, ample 
+            space, and reliable performance. Ideal for large families, tour groups, corporate outings, 
+            and events, our professionally maintained vehicles ensure a relaxed and memorable journey 
+            across India.
           </p>
 
         </div>
@@ -102,7 +89,7 @@ export default function VehicleSection() {
               className="
                 group
                 w-full sm:w-[47%] lg:w-[31%]
-                max-w-[360px]
+                max-w-[370px]
 
                 bg-white/80
                 backdrop-blur-sm

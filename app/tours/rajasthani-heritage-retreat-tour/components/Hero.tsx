@@ -37,7 +37,7 @@ export default function Hero() {
           "
         >
           Rajasthani Heritage <br />
-          Retreat Tour
+          Tour Package
         </h1>
 
       </div>

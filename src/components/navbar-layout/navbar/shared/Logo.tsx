@@ -18,7 +18,7 @@ export default function Logo({
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742768/logo-white_r1ecll.png"
           alt="Logo"
-          width={160}
+          width={170}
           height={40}
           className={`
             h-auto object-contain transition-all duration-500 ease-out

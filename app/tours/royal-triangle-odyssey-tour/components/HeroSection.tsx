@@ -37,8 +37,7 @@ export default function HeroSection() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Royal Triangle Odyssey <br />
-          Tour
+          Royal Triangle Odyssey <br/> Tour India
         </h1>
 
       </div>

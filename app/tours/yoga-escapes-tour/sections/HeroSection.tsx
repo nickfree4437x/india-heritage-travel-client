@@ -36,8 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Yoga Escapes: Discover Balance & <br />
-          Rejuvenate
+          Yoga Retreat Tour <br/> India
         </h1>
 
       </div>

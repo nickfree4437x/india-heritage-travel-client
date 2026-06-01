@@ -47,8 +47,8 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Majestic Golden Triangle <br />
-          Tour
+          Golden Triangle Tour <br />
+          Package India
         </h1>
       </div>
     </section>

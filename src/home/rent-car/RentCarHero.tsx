@@ -36,8 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Meet Your Perfect Travel<br />
-          Companion
+          Car Rental with Driver in India - Explore India Your Way
         </h1>
         <p className="text-white mb-6 leading-relaxed text-[12px] sm:text-[13px] font-light md:text-[14.5px]">
           Travel India in comfort with our meticulously maintained fleet of professional drivers.

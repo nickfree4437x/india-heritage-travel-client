@@ -6,6 +6,7 @@ import FormSelect from "./FormSelect";
 import FormRadioGroup from "./FormRadioGroup";
 import FormCheckboxGroup from "./FormCheckboxGroup";
 import { FormDataType, FormErrorsType } from "./types";
+import FormDatePicker from "./FormDatePicker";
 
 interface Step1Props {
   formData: FormDataType;
@@ -64,11 +65,9 @@ export default function Step1({
 
       {/* ROW 2 */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-        <FormInput
-          name="tourDate"
-          type="date"
+        <FormDatePicker
           value={formData.tourDate}
-          onChange={(e) => updateFormData("tourDate", e.target.value)}
+          onChange={(value) => updateFormData("tourDate", value)}
           error={errors.tourDate}
         />
 

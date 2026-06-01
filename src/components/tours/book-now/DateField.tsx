@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 type Props = {
   name?: string;
   value?: string;
-
   onChange?: (
     e: React.ChangeEvent<HTMLInputElement>
   ) => void;
@@ -16,29 +16,48 @@ export default function DateField({
   value,
   onChange,
 }: Props) {
+  const selectedDate = value
+    ? (() => {
+        const [day, month, year] = value.split("-");
 
-  const [inputType, setInputType] = useState("text");
+        return new Date(
+          Number(year),
+          Number(month) - 1,
+          Number(day)
+        );
+      })()
+    : null;
 
   return (
-
     <div className="w-full">
+      <DatePicker
+        selected={selectedDate}
+        dateFormat="dd-MM-yyyy"
+        placeholderText="Select Date of Visit"
+        minDate={new Date()}
+        wrapperClassName="w-full"
+        onChange={(date) => {
+          if (!date || !onChange) return;
 
-      <input
-        type={inputType}
-        name={name}
-        value={value}
-        placeholder="Select Date of Visit"
+          const day = String(
+            date.getDate()
+          ).padStart(2, "0");
 
-        onFocus={() => setInputType("date")}
+          const month = String(
+            date.getMonth() + 1
+          ).padStart(2, "0");
 
-        onBlur={() => {
-          if (!value) {
-            setInputType("text");
-          }
+          const year = date.getFullYear();
+
+          const formattedDate = `${day}-${month}-${year}`;
+
+          onChange({
+            target: {
+              name,
+              value: formattedDate,
+            },
+          } as React.ChangeEvent<HTMLInputElement>);
         }}
-
-        onChange={onChange}
-
         className="
           w-full
           border border-[#ddd2c2]
@@ -58,7 +77,6 @@ export default function DateField({
           transition
         "
       />
-
     </div>
   );
 }
