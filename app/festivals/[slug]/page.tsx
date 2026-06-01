@@ -14,15 +14,20 @@ type PageProps = {
   }>;
 };
 
+type FestivalSeo = {
+  title: string;
+  description: string;
+  image: string;
+};
+
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { slug } = await params;
 
-  const seo =
-    festivalSeoData[
-      slug as keyof typeof festivalSeoData
-    ];
+  const seo = festivalSeoData[
+    slug as keyof typeof festivalSeoData
+  ] as FestivalSeo | undefined;
 
   if (!seo) {
     return {

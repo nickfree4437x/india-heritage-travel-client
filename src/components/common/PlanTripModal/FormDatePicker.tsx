@@ -32,7 +32,7 @@ export default function FormDatePicker({
     <div>
       <DatePicker
         selected={selectedDate}
-        onChange={(date) => {
+        onChange={(date: Date | null) => {
           if (!date) {
             onChange("");
             return;

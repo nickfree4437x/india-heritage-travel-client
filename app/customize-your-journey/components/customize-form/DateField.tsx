@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -41,7 +42,7 @@ export default function DateField({
         placeholderText={placeholder}
         minDate={new Date()}
         wrapperClassName="w-full"
-        onChange={(date) => {
+        onChange={(date: Date | null) => {
           if (!date || !onChange) return;
 
           const day = String(
@@ -65,34 +66,22 @@ export default function DateField({
           } as React.ChangeEvent<HTMLInputElement>);
         }}
         className={`
-           w-full
-
+          w-full
           border border-[#ddd2c2]
-
           bg-[#f9f7f3]
-
           rounded-lg
-
           px-5
           py-2.5 sm:py-2.5
-
           text-[12px]
           sm:text-[13px]
-
           text-[#5b5348]
-
           placeholder:text-[#9a8f81]
           placeholder:font-light
-
           font-light
           tracking-[0.2px]
-
           focus:outline-none
           focus:border-[#9A7A58]
-
           transition
-
-
           ${className}
         `}
       />
