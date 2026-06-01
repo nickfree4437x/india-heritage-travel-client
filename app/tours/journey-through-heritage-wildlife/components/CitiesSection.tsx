@@ -29,13 +29,14 @@ const cities = [
     title: "Bundi – Rajasthan’s Hidden Gem",
     desc: "This enchanting town of narrow lanes of Brahmin-blue houses with a temple at every turn, creating a unique visual tapestry. Explore its historic palaces, intricate step wells, and vibrant markets to immerse youself in the rich culture of Rajasthan. This is a less explored traveller’s paradise with great views.",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779533313/bundi_nfbpb6.png",
-    alt: "Bundi Rajasthan featuring historic palaces stepwells and traditional blue houses",
+    alt: "Traditional blue houses and historic stepwells in Bundi Rajasthan showcasing hidden architectural treasures",
   },
   {
     id: "ranthambore",
     title: "Ranthambore – Where Wildlife Roams Free",
     desc: "This wildlife heaven lies in the heart of Rajasthan, where tigers rule the lush forest. Ranthambore National Park is a wildlife reserve. Visit Ranthambore fort lies on a hilltop & Ganesh Mandir temple. Explore the rugged beauty, spot majestic creatures of the earth, and set on thrilling jungle safaris. Ranthambore, where nature’s raw power captivates all who visit",
-    alt: "Ranthambore National Park wildlife safari featuring Bengal tigers and natural landscapes",
+    img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779533349/ranthambore_hynmaj.jpg",
+    alt: "Ranthambore National Park featuring majestic Bengal tigers and lush forest landscapes in Rajasthan",
   },
   {
     id: "jaipur",
