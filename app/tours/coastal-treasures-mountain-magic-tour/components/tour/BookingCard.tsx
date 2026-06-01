@@ -42,7 +42,7 @@ export default function BookingCard() {
       >
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529426/map_xfonwz.png"
-          alt="Map"
+          alt="Coastal Treasures and Mountain Magic Kerala tour map covering Cochin Alleppey Thekkady and Munnar"
           fill
           priority
           className="object-cover"

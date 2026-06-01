@@ -49,7 +49,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779533500/i1_axjsy1.jpg"
-                  alt="Delhi"
+                  alt="Delhi heritage tour featuring India Gate Red Fort Qutub Minar and historic landmarks"
                   fill
                   className="object-cover"
                 />
@@ -88,7 +88,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                  <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779533600/i2_latx17.png"
-                  alt="Agra"
+                  alt="Mandawa heritage town featuring fresco painted havelis and Rajasthan cultural architecture"
                   fill
                   className="object-cover"
                  />
@@ -129,7 +129,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                  <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779533654/i3_f2kqog.png"
-                  alt="Jaipur"
+                  alt="Pushkar Rajasthan featuring Brahma Temple sacred lake and cultural heritage attractions"
                   fill
                   className="object-cover"
                  />
@@ -171,7 +171,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                  <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779533713/i4_z285vx.jpg"
-                  alt="Delhi"
+                  alt="Bundi Rajasthan featuring Bundi Palace Taragarh Fort and historic stepwells"
                   fill
                   className="object-cover"
                  />
@@ -212,7 +212,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                  <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779533775/i5_pvm0nh.png"
-                  alt="Delhi"
+                  alt="Ranthambore National Park wildlife safari featuring Bengal tigers and natural landscapes"
                   fill
                   className="object-cover"
                  />
@@ -247,7 +247,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                  <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779533875/i6_wxfkg6.png"
-                  alt="Delhi"
+                  alt="Jaipur Pink City tour featuring Amber Fort Hawa Mahal and Rajasthan heritage attractions"
                   fill
                   className="object-cover"
                  />
@@ -291,7 +291,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                  <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779533948/i7_ah4ggh.png"
-                  alt="Delhi"
+                  alt="Agra Taj Mahal tour showcasing Mughal architecture and historic landmarks in India"
                   fill
                   className="object-cover"
                  />
@@ -332,7 +332,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534018/i8_u4u8wt.jpg"
-                    alt="Delhi"
+                    alt="Delhi cultural tour featuring Chandni Chowk markets temples and heritage attractions"
                     fill
                     className="object-cover"
                   />
@@ -360,7 +360,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                    alt="Departure"
+                    alt="Departure from India after heritage and wildlife tour experience across Rajasthan and Delhi"
                     fill
                     className="object-cover"
                   />

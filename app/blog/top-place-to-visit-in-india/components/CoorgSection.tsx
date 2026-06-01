@@ -18,7 +18,7 @@ export default function CoorgSection() {
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779798546/aakash-goel--Zt97RnOWJ8-unsplash_b22otl.jpg"
-              alt="Coorg Karnataka"
+              alt="Lush coffee plantations and misty hill landscapes in Coorg Karnataka India"
               fill
               className="object-cover"
             />

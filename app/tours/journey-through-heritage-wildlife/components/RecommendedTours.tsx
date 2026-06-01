@@ -8,18 +8,21 @@ const tours = [
     title: "Rajasthani Heritage Retreat Tour",
     desc: "Embark on a 13-day odyssey through heritage and wildlife on the ‘A Journey Through Heritage & Wildlife’ tour, from the captivating blend of history in Delhi to the wildlife wonders of Ranthambore, all amidst timeless heritage, desert charm, and regal splendor.",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779527998/heritage_b4eaqj.jpg",
+    alt: "Rajasthani Heritage Retreat tour featuring Jaipur Udaipur Jaisalmer and Rajasthan cultural heritage attractions",
     slug: "/tours/rajasthani-heritage-retreat-tour",
   },
   {
     title: "Royal-Triangle-Odyssey",
     desc: "Experience a 10-day ‘Royal Triangle Odyssey’ from the kaleidoscope of culture in Delhi to the spiritual heart of Varanasi, with enchanting heritage in Mandawa, regal splendor in Jaipur, and the historical magnificence of Agra in between.",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534211/oddessey_qgank7.jpg",
+    alt: "Royal Triangle Odyssey tour covering Delhi Jaipur Agra and Varanasi heritage destinations in India",
     slug: "/tours/royal-triangle-odyssey-tour",
   },
   {
     title: "Southern Delights: A Journey Through Time",
     desc: "Discover the essence of Southern India on this 17-day tour, covering heritage, culture, and timeless experiences across breathtaking destinations.",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534270/delights_wa5avz.jpg",
+    alt: "Southern India tour package featuring Kerala backwaters Cochin Munnar and cultural attractions",
     slug: "/tours/southern-delights-tour",
   },
 ];
@@ -99,7 +102,7 @@ export default function RecommendedTours() {
 
                   <Image
                     src={tour.img}
-                    alt={tour.title}
+                    alt={tour.alt}
                     fill
                     className="
                       object-cover

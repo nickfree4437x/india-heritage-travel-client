@@ -23,7 +23,7 @@ export default function Munnar() {
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-[450px] rounded-md overflow-hidden shadow-md">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529356/munnar_lrkkjk.jpg"
-          alt="Munnar Tea Plantations"
+          alt="Munnar tea plantations and rolling hills in the Western Ghats of Kerala India"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"

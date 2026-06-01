@@ -33,7 +33,7 @@ export default function HeroSection() {
 
         <Image
           src="/blogs/blog-2/blog-2.jpg"
-          alt="Safe Luxury Destinations"
+          alt="Safe luxury travel destinations in India for women travelers"
           fill
           priority
           className="object-cover"

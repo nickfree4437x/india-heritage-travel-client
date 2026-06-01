@@ -50,7 +50,7 @@ export default function FinalHeritageHotelsSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779816132/26.05.2026_22.50.58_REC_ph93hv.png"
-              alt="Taj Falaknuma Palace"
+              alt="Luxury heritage experience at Taj Falaknuma Palace Hyderabad Telangana"
               fill
               className="object-cover"
             />

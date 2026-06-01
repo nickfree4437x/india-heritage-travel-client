@@ -131,7 +131,7 @@ export default function SafetyIntroSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637804/solo_gh8veb.jpg"
-              alt="Solo Female Traveller"
+              alt="Solo female traveler exploring cultural destinations across India"
               fill
               className="object-cover"
             />

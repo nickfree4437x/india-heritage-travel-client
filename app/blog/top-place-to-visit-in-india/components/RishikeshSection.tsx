@@ -18,7 +18,7 @@ export default function RishikeshSection() {
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779797762/palak-pitroda-05DurkzaUsg-unsplash_zl3qd9.jpg"
-              alt="Rishikesh Uttarakhand"
+              alt="Spiritual retreats and Ganges river views in Rishikesh Uttarakhand India"
               fill
               className="object-cover"
             />

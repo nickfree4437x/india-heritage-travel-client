@@ -76,7 +76,7 @@ export default function Accordion({ items, open, toggle, section }: any) {
 
                       <Image
                         src={item.img}
-                        alt={item.title}
+                        alt={`${item.title} | India Heritage Travel`}
                         fill
                         className="object-cover object-center 
                                    transition-transform duration-1000 

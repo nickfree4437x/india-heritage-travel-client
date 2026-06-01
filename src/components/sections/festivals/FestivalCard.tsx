@@ -41,7 +41,7 @@ export default function FestivalCard({
         {/* IMAGE */}
         <Image
           src={image}
-          alt={title}
+          alt={`${title} | India Heritage Travel`}
           fill
           sizes="(max-width: 768px) 100vw, 420px"
           className="object-cover object-center

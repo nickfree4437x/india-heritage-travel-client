@@ -286,7 +286,7 @@ export default function SoloTravelSection() {
                 >
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531020/women-wall_ftanbo.jpg"
-                    alt="women"
+                    alt="Solo woman traveler exploring cultural destinations in India"
                     width={300}
                     height={380}
                     className="w-full h-[280px] sm:h-[340px] object-cover rounded-sm"
@@ -300,7 +300,7 @@ export default function SoloTravelSection() {
                 >
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531130/night-lights_ncz5ue.jpg"
-                    alt="lights"
+                    alt="Traditional Indian festival lights and cultural celebrations"
                     width={300}
                     height={200}
                     className="w-full h-[280px] sm:h-[220px] object-cover rounded-sm"
@@ -314,7 +314,7 @@ export default function SoloTravelSection() {
                 >
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531181/taj-mahal_hln96e.jpg"
-                    alt="taj"
+                    alt="Taj Mahal in Agra one of India's most iconic heritage landmarks"
                     width={600}
                     height={220}
                     className="w-full h-[160px] sm:h-[200px] object-cover rounded-sm"
@@ -333,7 +333,7 @@ export default function SoloTravelSection() {
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531215/rangoli_gkxrux.png"
-                alt="rangoli"
+                alt="Traditional Indian rangoli artwork symbolizing culture and celebration"
                 width={100}
                 height={100}
                 className="opacity-25 -ml-20 mb-8"
@@ -347,7 +347,7 @@ export default function SoloTravelSection() {
             >
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531252/elephant_wfliyn.jpg"
-                alt="elephant"
+                alt="Decorated elephant representing India's rich cultural heritage"
                 width={300}
                 height={220}
                 className="w-full h-[200px] object-cover rounded-sm"
@@ -361,7 +361,7 @@ export default function SoloTravelSection() {
             >
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531020/women-wall_ftanbo.jpg"
-                alt="women"
+                alt="Solo woman traveler exploring cultural destinations in India"
                 width={300}
                 height={360}
                 className="w-full h-[320px] object-cover rounded-sm"
@@ -375,7 +375,7 @@ export default function SoloTravelSection() {
             >
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531130/night-lights_ncz5ue.jpg"
-                alt="lights"
+                alt="Traditional Indian festival lights and cultural celebrations"
                 width={300}
                 height={320}
                 className="w-full h-[325px] object-cover rounded-sm"
@@ -389,7 +389,7 @@ export default function SoloTravelSection() {
             >
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531181/taj-mahal_hln96e.jpg"
-                alt="taj"
+                alt="Taj Mahal in Agra one of India's most iconic heritage landmarks"
                 width={340}
                 height={250}
                 className="w-full h-[220px] mb-2 object-cover rounded-sm"

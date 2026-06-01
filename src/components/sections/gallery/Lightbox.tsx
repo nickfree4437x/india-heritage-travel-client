@@ -3,41 +3,64 @@
 import { useEffect } from "react";
 import { X } from "lucide-react";
 
+type GalleryImage = {
+  src: string;
+  alt: string;
+};
+
+type LightboxProps = {
+  images: GalleryImage[];
+  index: number;
+  setIndex: React.Dispatch<React.SetStateAction<number | null>>;
+  onClose: () => void;
+};
+
 export default function Lightbox({
   images,
   index,
   setIndex,
   onClose,
-}: any) {
-
+}: LightboxProps) {
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
-      if (e.key === "ArrowRight")
-        setIndex((prev: number) => (prev + 1) % images.length);
-      if (e.key === "ArrowLeft")
-        setIndex((prev: number) =>
-          prev === 0 ? images.length - 1 : prev - 1
-        );
+
+      if (e.key === "ArrowRight") {
+        setIndex((prev) => {
+          if (prev === null) return 0;
+          return (prev + 1) % images.length;
+        });
+      }
+
+      if (e.key === "ArrowLeft") {
+        setIndex((prev) => {
+          if (prev === null) return 0;
+          return prev === 0 ? images.length - 1 : prev - 1;
+        });
+      }
     };
 
     window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, []);
+
+    return () => {
+      window.removeEventListener("keydown", handleKey);
+    };
+  }, [images.length, onClose, setIndex]);
 
   return (
     <div
       className="fixed inset-0 bg-black/80 backdrop-blur-md z-[9999] flex flex-col items-center justify-center"
       onClick={onClose}
     >
+      {/* MAIN IMAGE */}
       <img
-        src={images[index]}
-        alt="preview"
+        src={images[index].src}
+        alt={images[index].alt}
         className="max-h-[70vh] sm:max-h-[75vh] rounded-sm shadow-lg object-contain"
         onClick={(e) => e.stopPropagation()}
       />
 
-      {/* close */}
+      {/* CLOSE */}
       <button
         onClick={onClose}
         className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white"
@@ -45,17 +68,18 @@ export default function Lightbox({
         <X size={28} />
       </button>
 
-      {/* counter */}
+      {/* COUNTER */}
       <p className="text-white mt-3 text-xs sm:text-sm">
         {index + 1} / {images.length}
       </p>
 
-      {/* thumbnails */}
+      {/* THUMBNAILS */}
       <div className="flex gap-2 mt-4 sm:mt-6 overflow-x-auto px-3 sm:px-4">
-        {images.map((img: string, i: number) => (
+        {images.map((img, i) => (
           <img
             key={i}
-            src={img}
+            src={img.src}
+            alt={img.alt}
             onClick={(e) => {
               e.stopPropagation();
               setIndex(i);
@@ -69,7 +93,7 @@ export default function Lightbox({
         ))}
       </div>
 
-      {/* nav */}
+      {/* PREVIOUS */}
       <button
         onClick={(e) => {
           e.stopPropagation();
@@ -80,6 +104,7 @@ export default function Lightbox({
         ‹
       </button>
 
+      {/* NEXT */}
       <button
         onClick={(e) => {
           e.stopPropagation();

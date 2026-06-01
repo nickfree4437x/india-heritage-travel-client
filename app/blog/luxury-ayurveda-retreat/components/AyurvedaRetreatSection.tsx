@@ -177,7 +177,7 @@ export default function AyurvedaRetreatSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779802008/mahesh-s-IqDPGXgNRFI-unsplash_osk22w.jpg"
-              alt="SwaSwara Karnataka"
+              alt="Wellness retreat at SwaSwara Gokarna Karnataka overlooking the Arabian Sea"
               fill
               className="object-cover"
             />

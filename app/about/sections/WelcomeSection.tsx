@@ -63,7 +63,7 @@ export default function WelcomeSection() {
 
           <Image
             src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779617809/welcome_gjbjt8.jpg" // 👈 apni image yaha daal
-            alt="Welcome"
+            alt="India Heritage Travel showcasing authentic cultural experiences across India"
             fill
             className="object-cover"
           />

@@ -112,7 +112,7 @@ export default function HowItWorksSection() {
             <div className="relative w-full h-[380px] md:h-[600px] overflow-hidden rounded-md shadow-md">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779629767/drivers_ira2vt.jpg"
-                alt="Drivers and Guides"
+                alt="Trusted drivers and local guides for solo women travel in India"
                 fill
                 className="object-cover transition-transform duration-700"
               />
@@ -150,7 +150,7 @@ export default function HowItWorksSection() {
                 <div className="relative w-full h-[280px]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779629767/drivers_ira2vt.jpg"
-                    alt="Drivers and Guides"
+                    alt="Trusted drivers and local guides for solo women travel in India"
                     fill
                     className="object-cover rounded-xl"
                   />

@@ -8,18 +8,21 @@ const tours = [
     title: "Rajasthani Heritage Retreat",
     desc: "Explore the beautiful landscapes and rich culture of this region.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779527998/heritage_b4eaqj.jpg",
+    alt: "Rajasthan heritage tour featuring royal palaces historic forts and vibrant cultural experiences",
     slug: "/tours/rajasthani-heritage-retreat-tour",
   },
   {
     title: "Divine Kashmir and Exciting Ladakh",
     desc: "Famous as the summer capital of Jammu & Kashmir, Srinagar lies in the Kashmir Valley.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540225/kashmir_enxzcl.jpg",
+    alt: "Kashmir and Ladakh tour featuring Himalayan mountains scenic valleys and breathtaking landscapes",
     slug: "/tours/divine-kashmir-and-exciting-ladakh",
   },
   {
     title: "Southern Delights: A Journey Through Time",
     desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536598/delights_g6wjjy.jpg",
+    alt: "South India tour featuring Kerala backwaters tea plantations temples and cultural landmarks",
     slug: "/tours/southern-delights-tour",
   },
 ];
@@ -82,7 +85,7 @@ export default function RecommendedTours() {
 
                 <Image
                   src={tour.image}
-                  alt={tour.title}
+                  alt={tour.alt}
                   fill
                   className="
                     object-cover

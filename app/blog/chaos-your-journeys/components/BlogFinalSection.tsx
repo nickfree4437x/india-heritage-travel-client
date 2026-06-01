@@ -100,7 +100,7 @@ export default function BlogFinalSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779649909/pexels-chirag-purohit-44055792-15999311-scaled-e1766059375730_whku6m.webp"
-              alt="Travel Heritage"
+              alt="Historic heritage architecture showcasing the beauty of India"
               fill
               className="object-cover"
             />

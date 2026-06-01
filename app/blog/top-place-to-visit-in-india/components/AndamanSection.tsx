@@ -18,7 +18,7 @@ export default function AndamanSection() {
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779798166/dileesh-kumar-KbirwZJIq7g-unsplash_riaaph.jpg"
-              alt="Andaman and Nicobar Islands"
+              alt="Pristine beaches and turquoise waters of the Andaman and Nicobar Islands India"
               fill
               className="object-cover"
             />

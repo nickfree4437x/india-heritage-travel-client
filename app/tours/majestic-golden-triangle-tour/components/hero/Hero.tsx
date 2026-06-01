@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779523009/golden-triangle_izyhwq.jpg"
-          alt="Golden Triangle Tour"
+          alt="Golden Triangle Tour Package India featuring Delhi Agra Jaipur and the iconic Taj Mahal"
           fill
           priority
           className="object-cover object-center will-change-transform"

@@ -32,7 +32,7 @@ export default function HeroSection() {
 
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779822612/blog-11_payr6l.jpg"
-          alt="Jaipur Travel Guide"
+          alt="Exploring the royal heritage and cultural attractions of Jaipur Rajasthan"
           fill
           priority
           className="object-cover"

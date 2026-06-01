@@ -8,18 +8,21 @@ const tours = [
     title: "Rajasthani Heritage Retreat",
     desc: "Explore the beautiful landscapes and rich culture of this region.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779527998/heritage_b4eaqj.jpg",
+    alt: "Rajasthan heritage tour featuring royal palaces historic forts and cultural experiences",
     slug: "/tours/rajasthani-heritage-retreat-tour",
   },
   {
     title: "Royal-Triangle-Odyssey",
     desc: "Experience tours and breathtaking views on this thrilling tour.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534877/trail-tour_ypzior.png",
+    alt: "North India cultural tour featuring Rajasthan heritage sites and the sacred Ganges River",
     slug: "/tours/royal-rajasthan-sacred-ganges-tour",
   },
   {
     title: "Southern Delights: A Journey Through Time",
     desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536598/delights_g6wjjy.jpg",
+    alt: "South India tour featuring Kerala backwaters temples tea plantations and cultural landmarks",
     slug: "/tours/southern-delights-tour",
   },
 ];
@@ -90,7 +93,7 @@ export default function RecommendedTours() {
 
                 <Image
                   src={tour.image}
-                  alt={tour.title}
+                  alt={tour.alt}
                   fill
                   className="
                     object-cover

@@ -58,7 +58,7 @@ export default function HoneymoonFinalSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779651493/ivy-aralia-nizar-_769jmCf26Y-unsplash_sd4oe8.jpg"
-              alt="Rajasthan Desert"
+              alt="Golden sand dunes of Rajasthan offering an authentic desert travel experience"
               fill
               className="object-cover"
             />

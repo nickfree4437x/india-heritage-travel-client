@@ -44,7 +44,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538363/i1_eo9yqe.webp"
-                    alt="Delhi"
+                    alt="Delhi sightseeing tour featuring India Gate Qutub Minar Red Fort and heritage attractions"
                     fill
                     className="object-cover"
                   />
@@ -82,7 +82,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538401/i2_heepax.webp"
-                    alt="Agra"
+                    alt="Jaipur sightseeing tour featuring Amber Fort Hawa Mahal and Rajasthan heritage landmarks"
                     fill
                     className="object-cover"
                   />
@@ -120,7 +120,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538439/i3_ys3i02.webp"
-                    alt="Jaipur"
+                    alt="Taj Mahal sunrise view in Agra during Golden Triangle India heritage tour"
                     fill
                     className="object-cover"
                   />
@@ -159,7 +159,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538482/i4_jeqo9g.webp"
-                    alt="Delhi"
+                    alt="Ajanta and Ellora Caves UNESCO World Heritage Site tour in Maharashtra India"
                     fill
                     className="object-cover"
                   />
@@ -199,7 +199,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538520/i5_chbvxr.webp"
-                    alt="Delhi"
+                    alt="Mumbai sightseeing tour featuring Gateway of India Victoria Terminus and iconic landmarks"
                     fill
                     className="object-cover"
                   />
@@ -240,7 +240,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538558/i6_lc7udi.webp"
-                    alt="Delhi"
+                    alt="Cochin Kerala heritage tour featuring Fort Kochi churches and cultural attractions"
                     fill
                     className="object-cover"
                   />
@@ -276,7 +276,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538598/i7_yidcyy.webp"
-                    alt="Delhi"
+                    alt="Alleppey houseboat cruise on Kerala backwaters during South India tour"
                     fill
                     className="object-cover"
                   />
@@ -316,7 +316,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538634/i8_mosalr.webp"
-                    alt="Delhi"
+                    alt="Thekkady Periyar National Park wildlife safari and spice plantation experience"
                     fill
                     className="object-cover"
                   />
@@ -358,7 +358,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779539182/i9_j7izqt.webp"
-                    alt="Delhi"
+                    alt="Munnar tea plantations and scenic hill station landscape in Kerala India"
                     fill
                     className="object-cover"
                   />
@@ -398,7 +398,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779539225/i10_xddzhh.webp"
-                    alt="Delhi"
+                    alt="Munnar tea plantations and scenic hill station landscape in Kerala India"
                   fill
                   className="object-cover"
                 />
@@ -431,7 +431,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                    alt="Departure"
+                    alt="Farewell departure from India after heritage and cultural tour experience"
                     fill
                     className="object-cover"
                   />

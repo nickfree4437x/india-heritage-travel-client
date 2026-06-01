@@ -22,7 +22,7 @@ export default function BookingCard() {
       <div className="rounded-t-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538247/map_hwxmof.png"
-          alt="Tour Map"
+          alt="Route map of Heritage Odyssey North to South India tour package covering major cultural and heritage destinations"
           width={400}
           height={250}
           className="w-full object-cover"

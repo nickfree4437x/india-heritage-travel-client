@@ -12,18 +12,21 @@ const tours = [
     title: "The Royal Heritage Trail Tour",
     desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525489/tour1_pkzz1n.webp",
+    alt: "Royal Heritage Trail tour featuring Delhi Mandawa Jaipur Agra and Rajasthan heritage attractions",
     slug: "/tours/the-royal-heritage-trail-tour",
   },
   {
     title: "Royal Rajasthan & Sacred Ganges",
     desc: "Experience a 20-day journey through the heart of India on the 'Royal Rajasthan & Sacred Ganges' tour. From historic Delhi to spiritual Varanasi, explore a rich tapestry of heritage and culture.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525516/tour2_cjzckz.webp",
+    alt: "Royal Rajasthan and Sacred Ganges tour covering Delhi Rajasthan Varanasi and cultural heritage destinations",
     slug: "/tours/royal-rajasthan-sacred-ganges-tour",
   },
   {
     title: "Southern Delights: A Journey Through Time",
     desc: "Discover the essence of Southern India on the 'Southern Delights' 17-day tour, from Cochin's history to Mumbai's vibrant dreams, with coastal delights, natural majesty, and timeless wonders in between.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536598/delights_g6wjjy.jpg",
+    alt: "Southern India tour package featuring Cochin Kerala backwaters Munnar and cultural attractions",
     slug: "/tours/southern-delights-tour",
   },
 ];
@@ -76,7 +79,7 @@ export default function RecommendedTours() {
               <div className="relative h-[240px] w-full overflow-hidden">
                 <Image
                   src={tour.image}
-                  alt={tour.title}
+                  alt={tour.alt}
                   fill
                   className="object-cover transition-transform duration-700"
                 />

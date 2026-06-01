@@ -48,7 +48,7 @@ export default function SpiritualFinaleSection() {
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821802/shiv-prasad-OPWM488DfeQ-unsplash_b8odle.jpg"
-                alt="Varanasi"
+                alt="Ancient ghats spiritual traditions and Ganges river views in Varanasi Uttar Pradesh India"
                 fill
                 className="object-cover"
               />

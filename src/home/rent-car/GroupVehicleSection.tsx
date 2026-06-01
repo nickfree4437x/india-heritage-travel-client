@@ -112,7 +112,7 @@ export default function VehicleSection() {
 
                 <Image
                   src={v.image}
-                  alt={v.name}
+                  alt={`${v.name} luxury coach for group travel in India`}
                   fill
                   className="
                     object-cover

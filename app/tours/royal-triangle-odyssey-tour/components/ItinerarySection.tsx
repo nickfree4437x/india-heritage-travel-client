@@ -48,7 +48,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535589/i1_jbiaos.png"
-                    alt="Delhi"
+                    alt="Old Delhi heritage landmarks in Royal Triangle Odyssey Tour India by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -87,7 +87,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535631/i2_m8f3na.png"
-                    alt="Agra"
+                    alt="Mandawa heritage havelis in Royal Triangle Odyssey Tour India by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -128,7 +128,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535681/i3_wm8plo.png"
-                    alt="Jaipur"
+                    alt="Amber Fort Jaipur in Royal Triangle Odyssey Tour India by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -170,7 +170,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535719/i4_yma8og.jpg"
-                    alt="Delhi"
+                    alt="Taj Mahal Agra in Royal Triangle Odyssey Tour India by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -209,7 +209,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535755/i5_y7qeij.png"
-                    alt="Delhi"
+                    alt="Varanasi riverside in Royal Triangle Odyssey Tour India by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -248,7 +248,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535795/i6_isktao.jpg"
-                    alt="Delhi"
+                    alt="Delhi cultural landmarks in Royal Triangle Odyssey Tour India by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -285,7 +285,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                    alt="Departure"
+                    alt="Farewell departure after Royal Triangle Odyssey Tour in India by India Heritage Travel"
                     fill
                     className="object-cover"
                   />

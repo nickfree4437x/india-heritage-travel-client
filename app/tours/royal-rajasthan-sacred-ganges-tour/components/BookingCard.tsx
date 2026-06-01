@@ -28,7 +28,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531381/map_nc9xhj.png"
-          alt="Tour Map"
+          alt="Route map of Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
           width={400}
           height={250}
           className="

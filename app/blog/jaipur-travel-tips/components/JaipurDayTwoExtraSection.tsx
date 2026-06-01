@@ -43,7 +43,7 @@ export default function JaipurDayTwoExtraSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825828/yash-parashar-_NsZ2xM6tOI-unsplash_ghxr5x.jpg"
-                alt="Patrika Gate Jaipur"
+                alt="Panoramic sunset view from Nahargarh Fort Jaipur Rajasthan"
                 fill
                 className="object-cover"
               />
@@ -98,7 +98,7 @@ export default function JaipurDayTwoExtraSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825985/27.05.2026_01.35.50_REC_euopzd.png"
-                alt="Samode Palace Jaipur"
+                alt="Samode Palace Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />
@@ -145,7 +145,7 @@ export default function JaipurDayTwoExtraSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779826258/surbhi-b-_dyJ15xPwII-unsplash_foqdpd.jpg"
-                alt="Nahargarh Fort Jaipur"
+                alt="Nahargarh Fort Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />

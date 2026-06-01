@@ -32,7 +32,7 @@ export default function HeroSection() {
 
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779635049/hero-3_wj3zaa.jpg"
-          alt="Honeymoon Tour Packages"
+          alt="Personalized honeymoon tour packages by India Heritage Travel"
           fill
           priority
           className="object-cover"

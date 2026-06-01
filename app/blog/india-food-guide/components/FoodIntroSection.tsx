@@ -106,7 +106,7 @@ export default function FoodIntroSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779636761/food-intro_vrtj2i.webp"
-              alt="Indian Food"
+              alt="Traditional Indian food showcasing the rich flavors of Indian cuisine"
               fill
               className="object-cover"
             />

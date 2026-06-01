@@ -62,7 +62,7 @@ export default function JaipurDayTwoSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779827246/prateek-katyal-To6i1FNfsOc-unsplash_di7qqj.jpg"
-                alt="Hawa Mahal Jaipur"
+                alt="Hawa Mahal Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />
@@ -111,7 +111,7 @@ export default function JaipurDayTwoSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779826597/27.05.2026_01.46.00_REC_j9pdfx.png"
-                alt="Cafe Palladio Jaipur"
+                alt="Cafe Palladio Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />
@@ -173,7 +173,7 @@ export default function JaipurDayTwoSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779826861/27.05.2026_01.50.28_REC_poelp1.png"
-                alt="Maharaniyo Ki Chhatri Jaipur"
+                alt="Maharaniyo Ki Chhatri Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />
@@ -221,7 +221,7 @@ export default function JaipurDayTwoSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779827017/shantanu-agrawal-bzD3CZh4Ixs-unsplash_pynkzu.jpg"
-                alt="Albert Hall Museum Jaipur"
+                alt="Albert Hall Museum Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />

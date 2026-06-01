@@ -47,7 +47,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543248/i1_fqiq7w.jpg"
-                    alt="Delhi"
+                    alt="Delhi sightseeing tour featuring India Gate Red Fort Qutub Minar and historic landmarks"
                     fill
                     className="object-cover"
                   />
@@ -91,7 +91,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543291/i2_njqysa.jpg"
-                    alt="Agra"
+                    alt="Chandigarh tour featuring Rock Garden Sukhna Lake and Himalayan gateway attractions"
                     fill
                     className="object-cover"
                   />
@@ -134,7 +134,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543748/i3_orbla1.jpg"
-                    alt="Jaipur"
+                    alt="Manali hill station with snow capped mountains Beas River and scenic Himalayan landscapes"
                     fill
                     className="object-cover"
                   />
@@ -177,7 +177,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543814/i4_orlllr.jpg"
-                    alt="Delhi"
+                    alt="Jispa Ladakh road trip featuring Atal Tunnel mountain valleys and high altitude landscapes"
                     fill
                   className="object-cover"
                 />
@@ -223,7 +223,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543852/i5_ifxm0l.jpg"
-                    alt="Delhi"
+                    alt="Nubra Valley Ladakh featuring Khardung La Pass Diskit Monastery and sand dunes"
                   fill
                   className="object-cover"
                 />
@@ -264,7 +264,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543900/i6_h68yfe.jpg"
-                    alt="Delhi"
+                    alt="Nubra Valley Ladakh featuring Khardung La Pass Diskit Monastery and sand dunes"
                     fill
                     className="object-cover"
                   />
@@ -298,7 +298,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543942/i7_rzwtl3.jpg"
-                    alt="Delhi"
+                    alt="Pangong Lake Ladakh with crystal clear blue waters and Himalayan mountain scenery"
                     fill
                     className="object-cover"
                   />
@@ -332,7 +332,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543985/i8_tq1kcw.jpg"
-                    alt="leh"
+                    alt="Hemis Monastery Leh Ladakh showcasing Buddhist heritage and ancient architecture"
                     fill
                     className="object-cover"
                   />
@@ -363,7 +363,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                    alt="Departure"
+                    alt="Departure from Leh Ladakh after Himalayan adventure and road trip experience"
                     fill
                     className="object-cover"
                   />

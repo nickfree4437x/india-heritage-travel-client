@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779539943/tour2_wqd4x6.webp"
-          alt="Golden Triangle Tour"
+          alt="Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
           fill
           priority
           className="object-cover object-center will-change-transform"

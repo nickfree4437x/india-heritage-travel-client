@@ -24,7 +24,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543141/map_b6wzbq.png"
-          alt="Map"
+          alt="Mystical North India Discovery Tour route map covering Delhi Agra Jaipur Varanasi and heritage destinations"
           width={400}
           height={250}
           className="w-full object-cover"

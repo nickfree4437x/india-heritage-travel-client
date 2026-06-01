@@ -33,7 +33,7 @@ export default function HeroSection() {
 
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779819835/blog-10_ex9fic.webp"
-          alt="Ultimate Luxury India Tour"
+          alt="Ultimate luxury India tour featuring heritage palaces exclusive experiences and iconic destinations"
           fill
           priority
           className="object-cover scale-[1.06]"

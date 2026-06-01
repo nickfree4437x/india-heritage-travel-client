@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779656312/hero_flclga.jpg"
-          alt="Golden Triangle Tour"
+          alt="Custom India tour planning with personalized itineraries and luxury travel experiences"
           fill
           priority
           className="object-cover object-center will-change-transform"

@@ -77,7 +77,7 @@ export default function DishesSection() {
 
           <Image
             src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779636756/bhature_ihez4y.jpg"
-            alt="Indian Dishes"
+            alt="Authentic Chole Bhature a popular North Indian food dish"
             fill
             className="object-cover"
           />

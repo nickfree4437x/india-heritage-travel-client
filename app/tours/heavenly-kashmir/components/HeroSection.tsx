@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541435/hero_cipdt8.jpg"
-          alt="Heavenly Kashmir"
+          alt="Kashmir tour package featuring Dal Lake houseboats snow-capped mountains and scenic valleys"
           fill
           priority
           className="object-cover object-center will-change-transform"

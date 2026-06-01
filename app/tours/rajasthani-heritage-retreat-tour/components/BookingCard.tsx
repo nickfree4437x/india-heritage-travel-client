@@ -33,7 +33,7 @@ export default function BookingCard() {
 
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528132/map_vhzw0g.webp"
-          alt="Map"
+          alt="Route map of Rajasthani Heritage Retreat Tour by India Heritage Travel"
           width={400}
           height={250}
           priority

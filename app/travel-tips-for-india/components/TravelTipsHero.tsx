@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779743488/delhi_ysns96.jpg" // 👈 Taj Mahal image
-          alt="Travel Tips"
+          alt="Essential India travel tips and advice for international travelers visiting India"
           fill
           priority
           className="object-cover"

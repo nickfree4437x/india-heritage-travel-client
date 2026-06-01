@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779523352/coastal_uysoj5.jpg"
-          alt="Kerala Tour"
+          alt="South India tour package featuring Kerala backwaters tea plantations and scenic landscapes"
           fill
           priority
           className="object-cover object-center will-change-transform"

@@ -77,7 +77,7 @@ export default function WellnessSection() {
 
           <Image
             src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641968/yoga_ipnvsv.jpg"
-            alt="Wellness Retreat India"
+            alt="Yoga and wellness retreat in India focused on mindfulness relaxation and holistic healing"
             fill
             className="object-cover"
           />

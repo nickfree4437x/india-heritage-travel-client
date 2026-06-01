@@ -96,7 +96,7 @@ export default function SlowTravelIntroSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641965/solo_znipyv.jpg"
-              alt="Slow Travel India"
+              alt="Solo traveler discovering authentic cultural experiences and hidden gems in India"
               fill
               className="object-cover"
             />

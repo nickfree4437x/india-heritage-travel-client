@@ -32,7 +32,7 @@ export default function HeroSection() {
 
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779634924/hero-1_xs9azf.jpg"
-          alt="Indian Food Guide"
+          alt="Traditional Indian food showcasing the rich flavors of Indian cuisine"
           fill
           priority
           className="object-cover"

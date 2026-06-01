@@ -73,7 +73,7 @@ export default function HeritageHotelsSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779816869/subhashis-das-Jmfy_ec20bk-unsplash_kayzmz.jpg"
-                alt="Taj Lake Palace"
+                alt="Luxury stay at Taj Lake Palace Udaipur Rajasthan on Lake Pichola"
                 fill
                 className="object-cover"
               />
@@ -143,7 +143,7 @@ export default function HeritageHotelsSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779817695/sam-mathews-sYxPnaE_--Q-unsplash_m6og14.jpg"
-                alt="Umaid Bhawan Palace"
+                alt="Royal heritage stay at Umaid Bhawan Palace Jodhpur Rajasthan India"
                 fill
                 className="object-cover"
               />

@@ -32,7 +32,7 @@ export default function HeroSection() {
 
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641987/blog-4_rarjqw.jpg"
-          alt="Slow Travel in India"
+          alt="Solo travel in India exploring heritage sites cultural experiences and local traditions"
           fill
           priority
           className="object-cover"
@@ -59,7 +59,7 @@ export default function HeroSection() {
               mx-auto
             "
           >
-            India for Slow Travelers:
+            India for Solo Travelers:
             <br />
             Cultural, Wellness and
             <br />

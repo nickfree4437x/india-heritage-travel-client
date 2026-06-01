@@ -7,6 +7,7 @@ const teamMembers = [
     name: "Piyush Singh",
     role: "Founder & Travel Curator",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779618257/profile_fankpm.jpg",
+    alt: "Piyush Singh founder and travel curator at India Heritage Travel",
     description:
       "Designing authentic journeys, boutique stays, heritage experiences, and luxury travel across India.",
   },
@@ -14,6 +15,7 @@ const teamMembers = [
     name: "Isha",
     role: "Co-Founder & Experience Mentor",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779625609/isha_boa8bm.jpg",
+    alt: "Isha co-founder and travel experience mentor at India Heritage Travel",
     description:
       "Bringing warmth, creativity, and personalized travel experiences into every journey.",
   },
@@ -21,6 +23,7 @@ const teamMembers = [
     name: "Monu Sharma",
     role: "Creative & Design Expert",
     image: "/about/monu.jpg",
+    alt: "Monu Sharma creative and design expert at India Heritage Travel",
     description:
       "Shaping the visual identity and boutique aesthetic of India Heritage Travel.",
   },
@@ -28,6 +31,7 @@ const teamMembers = [
     name: "Bharat Singh",
     role: "Operations & Property Manager",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779625901/WhatsApp_Image_2026-05-23_at_6.23.56_PM_kk3vfk.jpg",
+    alt: "Bharat Singh operations and property manager at India Heritage Travel",
     description:
       "Managing hospitality operations and ensuring seamless guest experiences.",
   },
@@ -35,6 +39,7 @@ const teamMembers = [
     name: "Ajay",
     role: "Photographer & Visual Storyteller",
     image: "/about/ajay.jpg",
+    alt: "Ajay photographer and visual storyteller at India Heritage Travel",
     description:
       "Capturing the timeless beauty, culture, and heritage of India through his lens.",
   },
@@ -42,6 +47,7 @@ const teamMembers = [
     name: "Vishal",
     role: "Digital & Transport Operations",
     image: "/about/vishal.jpg",
+    alt: "Vishal managing transport operations and digital presence at India Heritage Travel",
     description:
       "Handling transportation, guest coordination, website management, and digital presence.",
   },
@@ -183,7 +189,7 @@ export default function TeamSection() {
               >
                 <Image
                   src={member.image}
-                  alt={member.name}
+                  alt={member.alt}
                   fill
                   className="object-cover"
                 />

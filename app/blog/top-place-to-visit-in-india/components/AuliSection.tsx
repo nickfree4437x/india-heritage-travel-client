@@ -18,7 +18,7 @@ export default function AuliSection() {
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779798339/aniket-mandish-3cunzsPf3U4-unsplash_ro4pxv.jpg"
-              alt="Auli Uttarakhand"
+              alt="Snow covered mountains and scenic landscapes in Auli Uttarakhand India"
               fill
               className="object-cover"
             />

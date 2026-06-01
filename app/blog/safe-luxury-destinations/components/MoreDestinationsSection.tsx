@@ -158,7 +158,7 @@ export default function MoreDestinationsSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637786/goa_uw2nhp.jpg"
-              alt="Kerala Backwaters"
+              alt="Scenic beaches and coastal landscapes in Goa India"
               fill
               className="object-cover"
             />

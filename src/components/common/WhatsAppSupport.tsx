@@ -54,7 +54,7 @@ export default function WhatsAppSupport() {
       {/* WHATSAPP ICON */}
       <Image
         src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-        alt="WhatsApp"
+        alt="WhatsApp contact for India Heritage Travel customer support"
         width={32}
         height={32}
         className="

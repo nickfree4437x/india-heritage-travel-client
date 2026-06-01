@@ -18,7 +18,7 @@ export default function DarjeelingSection() {
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779798801/joy-amed-1I07SYGwuys-unsplash_kavncy.jpg"
-              alt="Darjeeling West Bengal"
+              alt="Tea gardens and Himalayan mountain views in Darjeeling West Bengal India"
               fill
               className="object-cover"
             />

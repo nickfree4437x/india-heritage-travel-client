@@ -67,7 +67,7 @@ export default function BlogExtraContentSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779649649/Jaipur-Where-the-past-paints-the-present_yefkwy.jpg"
-              alt="India Heritage"
+              alt="Jaipur heritage destination featured in a personalized India travel itinerary"
               fill
               className="object-cover"
             />

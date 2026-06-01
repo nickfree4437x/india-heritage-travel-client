@@ -24,7 +24,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779537182/map_dkqfxg.png"
-          alt="Tour Map"
+          alt="Southern Splendors Culture and Nature Trail Tour route map by India Heritage Travel"
           width={400}
           height={250}
           className="w-full object-cover"

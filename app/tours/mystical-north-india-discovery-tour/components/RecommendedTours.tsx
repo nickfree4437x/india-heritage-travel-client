@@ -9,18 +9,21 @@ export default function RecommendedTours() {
       title: "A Journey Through Heritage & Wildlife",
       desc: "Embark on a 13-day odyssey through heritage and wildlife on the ‘A Journey Through Heritage & Wildlife’ tour, from the captivating blend of history in Delhi to the wildlife wonders of Ranthambore, all amidst timeless heritage, desert charm, and regal splendor.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530718/tour1_sptbbx.webp",
+      alt: "A Journey Through Heritage and Wildlife tour package by India Heritage Travel",
       slug: "/tours/journey-through-heritage-wildlife",
     },
     {
       title: "Royal-Triangle-Odyssey",
       desc: "Experience a 10-day ‘Royal Triangle Odyssey’ from the kaleidoscope of culture in Delhi to the spiritual heart of Varanasi, with enchanting heritage in Mandawa, regal splendor in Jaipur, and the historical magnificence of Agra in between.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530743/tour2_peepxe.webp",
+      alt: "Royal Triangle Odyssey tour covering Delhi Jaipur Agra and Varanasi by India Heritage Travel",
       slug: "/tours/royal-triangle-odyssey-tour",
     },
     {
       title: "Heritage Odyssey: North To South India",
       desc: "Explore North to South India in 16 days on the ‘Heritage Odyssey’ tour. From Delhi’s history to Ajanta’s ancient rock art and Mumbai’s vibrant charm, experience a rich tapestry of heritage and culture along the way.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530772/tour3_vliois.webp",
+      alt: "Heritage Odyssey North to South India tour package by India Heritage Travel",
       slug: "/tours/heritage-odyssey",
     },
   ];
@@ -69,7 +72,7 @@ export default function RecommendedTours() {
 
                 <Image
                   src={tour.img}
-                  alt={tour.title}
+                  alt={tour.alt}
                   fill
                   className="object-cover transition-transform duration-700"
                 />

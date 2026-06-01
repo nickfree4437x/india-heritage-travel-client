@@ -11,6 +11,7 @@ type Props = {
   title: string;
   description: string;
   image: string;
+  alt: string;
 };
 
 // ============================================================================
@@ -44,7 +45,7 @@ export default function CitySection({ id, title, description, image }: Props) {
       <div className="w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
         <Image
           src={image}
-          alt={title}
+          alt={alt}
           width={1200}
           height={800}
           className="w-full h-auto max-h-[500px] object-cover"

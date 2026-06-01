@@ -99,7 +99,7 @@ export default function TravelBasicsSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779639402/visa_f67fov.png"
-              alt="India Visa Guide"
+              alt="Passport and visa documents required for travel to India"
               fill
               className="object-cover"
             />

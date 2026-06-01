@@ -87,7 +87,7 @@ export default function VehicleSection() {
               key={i}
               className="
                 group
-                w-full sm:w-[47%] lg:w-[31%]
+                w-full sm:w-[45%] lg:w-[31%]
                 max-w-[370px]
 
                 bg-white/80
@@ -111,7 +111,7 @@ export default function VehicleSection() {
 
                 <Image
                   src={v.image}
-                  alt={v.name}
+                  alt={`${v.name} family and group travel vehicle with chauffeur service in India`}
                   fill
                   className="
                     object-cover

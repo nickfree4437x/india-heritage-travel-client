@@ -90,7 +90,7 @@ export default function PlanningSection() {
 
           <Image
             src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641960/map_jzsihw.webp"
-            alt="Planning Slow Travel India"
+            alt="India travel map for planning a slow and immersive journey across India"
             fill
             className="object-cover"
           />

@@ -7,6 +7,7 @@ interface CitySectionProps {
   title: string;
   description: string;
   image: string;
+  alt: string;
 }
 
 export default function CitySection({
@@ -14,6 +15,7 @@ export default function CitySection({
   title,
   description,
   image,
+  alt
 }: CitySectionProps) {
   return (
     <section
@@ -70,7 +72,7 @@ export default function CitySection({
 
         <Image
           src={image}
-          alt={title}
+          alt={alt}
           width={1200}
           height={800}
           priority={false}

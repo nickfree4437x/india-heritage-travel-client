@@ -49,7 +49,7 @@ export default function Itinerary() {
             <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525863/delhi_edqeg6.jpg"
-                alt="Delhi"
+                alt="Delhi sightseeing tour featuring India Gate Red Fort Qutub Minar and historic landmarks"
                 fill
                 className="object-cover object-center"
               />
@@ -101,7 +101,7 @@ export default function Itinerary() {
               <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525897/agra_n4lvva.webp"
-                  alt="Agra"
+                  alt="Agra Taj Mahal tour showcasing Mughal architecture and historic landmarks in India"
                   fill
                   className="object-cover object-center"
                 />
@@ -153,7 +153,7 @@ export default function Itinerary() {
                 <div className="relative h-[220px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525948/jaipur_ls5iys.png"
-                    alt="Jaipur"
+                    alt="Jaipur Pink City tour featuring Amber Fort Hawa Mahal and Rajasthan heritage attractions"
                     fill
                     className="object-cover object-center"
                   />
@@ -204,7 +204,7 @@ export default function Itinerary() {
                 <div className="relative h-[220px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525977/delhi2_a4reej.jpg"
-                    alt="Delhi"
+                    alt="Jaipur Pink City tour featuring Amber Fort Hawa Mahal and Rajasthan heritage attractions"
                     fill
                     className="object-cover object-center"
                   />
@@ -240,7 +240,7 @@ export default function Itinerary() {
               <div className="relative h-[220px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                  alt="Departure"
+                  alt="Departure from India after Golden Triangle Tour covering Delhi Agra and Jaipur"
                   fill
                   className="object-cover object-center"
                 />

@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532950/hero_xrxpym.jpg"
-          alt="Heritage & Wildlife Tour"
+          alt="Heritage and Wildlife Tour India featuring Rajasthan heritage sites wildlife safaris and cultural attractions"
           fill
           priority
           className="object-cover object-center will-change-transform"

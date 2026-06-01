@@ -6,7 +6,16 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import Lightbox from "./Lightbox";
 
-export default function GallerySlider({ images }: { images: string[] }) {
+type GalleryImage = {
+  src: string;
+  alt: string;
+};
+
+export default function GallerySlider({
+  images,
+}: {
+  images: GalleryImage[];
+}) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
@@ -36,16 +45,16 @@ export default function GallerySlider({ images }: { images: string[] }) {
               className="relative rounded-sm overflow-hidden cursor-pointer group shadow-sm hover:shadow-md transition duration-300"
             >
               <img
-                src={img}
-                alt={`gallery-${index}`}
+                src={img.src}
+                alt={img.alt}
                 loading="lazy"
                 className="w-full h-[420px] sm:h-[320px] md:h-[360px] lg:h-[460px] object-cover transition-transform duration-500"
               />
 
-              {/* 🔥 CLEAN DARK OVERLAY */}
+              {/* CLEAN DARK OVERLAY */}
               <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 transition duration-300"></div>
-              
-              {/* border */}
+
+              {/* BORDER */}
               <div className="absolute inset-0 border border-white/10 group-hover:border-[#A07008]/40 transition duration-300"></div>
             </div>
           </SwiperSlide>

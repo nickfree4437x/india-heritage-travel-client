@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779611920/pangong-lake-main_bgfsn6.jpg" // 👈 apni bg image daal
-          alt="Contact Hero"
+          alt="Contact India Heritage Travel for luxury tours custom itineraries and travel assistance"
           fill
           priority
           className="object-cover"

@@ -98,7 +98,7 @@ export default function DestinationsSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637787/jaipur_yiv98y.webp"
-              alt="Jaipur Rajasthan"
+              alt="Historic landmarks and vibrant cityscape of Jaipur Rajasthan India"
               fill
               className="object-cover"
             />

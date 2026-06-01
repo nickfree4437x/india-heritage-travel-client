@@ -30,7 +30,7 @@ export default function Alleppey() {
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-[450px] rounded-md overflow-hidden shadow-md">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529254/alleppey_uqguvc.jpg"
-          alt="Alleppey Backwaters"
+          alt="Alleppey Kerala backwaters with traditional houseboats during Ayurveda wellness tour in India"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"

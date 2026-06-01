@@ -27,7 +27,7 @@ export default function Cochin() {
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-[450px] rounded-md overflow-hidden shadow-md">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529289/cochin_yxbp74.jpg"
-          alt="Cochin Backwaters"
+          alt="Cochin Kerala waterfront featuring historic Fort Kochi landmarks and scenic backwater views"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"

@@ -58,7 +58,7 @@ export default function DayOneJaipurSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779823118/kushal-verma-6GuqCCAIjls-unsplash_qnzxlf.jpg"
-                alt="Amer Viewpoint Jaipur"
+                alt="Sunrise view from Amer Viewpoint overlooking Jaipur Rajasthan"
                 fill
                 className="object-cover"
               />
@@ -111,7 +111,7 @@ export default function DayOneJaipurSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779823281/pradheep-rajendirane-pGQaBJ-f6rw-unsplash_ivg2kr.jpg"
-                alt="City Palace Jaipur"
+                alt="Historic City Palace Jaipur showcasing royal Rajasthani architecture"
                 fill
                 className="object-cover"
               />
@@ -159,7 +159,7 @@ export default function DayOneJaipurSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779823668/yash-parashar-WxQ1Rz-WxDU-unsplash_pi7igj.jpg"
-                alt="City Palace Door Jaipur"
+                alt="Decorative doorway inside Jaipur City Palace featuring traditional artwork"
                 fill
                 className="object-cover"
               />

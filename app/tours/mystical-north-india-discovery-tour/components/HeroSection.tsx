@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529935/hero_vfhtr5.jpg"
-          alt="Varanasi"
+          alt="Varanasi Ganga Aarti during North India Cultural Tour by India Heritage Travel"
           fill
           priority
           className="object-cover object-center will-change-transform"

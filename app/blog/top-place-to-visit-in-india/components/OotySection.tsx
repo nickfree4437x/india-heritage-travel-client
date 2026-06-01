@@ -18,7 +18,7 @@ export default function OotySection() {
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779800023/harshal-more-8dS_mTPZ38w-unsplash_dwlicq.jpg"
-              alt="Ooty Tamil Nadu"
+              alt="Rolling hills and scenic landscapes of Ooty Tamil Nadu India"
               fill
               className="object-cover"
             />

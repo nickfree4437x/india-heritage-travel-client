@@ -56,7 +56,7 @@ export default function JaipurGuideIntroSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779827246/prateek-katyal-To6i1FNfsOc-unsplash_di7qqj.jpg"
-                alt="Hawa Mahal Jaipur"
+                alt="Hawa Mahal Jaipur - Jaipur Travel Tips"
                 fill
                 className="object-cover"
               />

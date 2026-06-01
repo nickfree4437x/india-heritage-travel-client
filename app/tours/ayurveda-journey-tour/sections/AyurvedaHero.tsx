@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779545973/hero_pnpzex.webp"
-          alt="Ayurveda Journey: Explore the Science of Wellness"
+          alt="Ayurveda wellness tour in India featuring traditional healing therapies and holistic wellness retreats"
           fill
           priority
           className="object-cover object-center will-change-transform"

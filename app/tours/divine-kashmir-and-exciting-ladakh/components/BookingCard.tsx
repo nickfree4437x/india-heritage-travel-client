@@ -34,7 +34,7 @@ export default function BookingCard() {
 
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541209/map_kdtonl.png"
-          alt="Tour Map"
+          alt="Mystical North India Discovery Tour route map featuring Delhi Agra Jaipur and cultural destinations"
           width={400}
           height={250}
           className="w-full object-cover"

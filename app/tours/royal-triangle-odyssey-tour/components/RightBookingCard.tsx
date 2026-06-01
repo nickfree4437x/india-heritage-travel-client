@@ -24,7 +24,7 @@ export default function RightBookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535120/map_dcby42.png"
-          alt="Tour Map"
+          alt="Route map of The Royal Heritage Trail Tour by India Heritage Travel"
           width={400}
           height={250}
           className="w-full object-cover"

@@ -71,7 +71,7 @@ export default function LuxuryIndiaTourSection() {
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-sm">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821073/laurentiu-morariu-8XZTZIfuNrM-unsplash_jhnu0q.jpg"
-                alt="Delhi"
+                alt="Historic landmarks cultural heritage and vibrant city life in Delhi India"
                 fill
                 className="object-cover"
               />

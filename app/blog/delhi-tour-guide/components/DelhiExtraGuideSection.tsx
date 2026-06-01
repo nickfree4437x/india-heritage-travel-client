@@ -49,7 +49,7 @@ export default function DelhiExtraGuideSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821261/jovyn-chamb-iWMfiInivp4-unsplash_atjf9m.jpg"
-                alt="Taj Mahal"
+                alt="Taj Mahal in Agra a must visit day trip from Delhi"
                 fill
                 className="object-cover"
               />
@@ -98,7 +98,7 @@ export default function DelhiExtraGuideSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779828822/dewang-gupta-d7dXX2WTEG0-unsplash_tlamgl.jpg"
-                alt="Delhi Festival"
+                alt="Colorful festival celebrations showcasing Delhi culture and traditions"
                 fill
                 className="object-cover"
               />
@@ -170,7 +170,7 @@ export default function DelhiExtraGuideSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779829059/zoshua-colah-YAGz_eGSkJA-unsplash_wzk8ym.jpg"
-                alt="Delhi Shopping Market"
+                alt="Bustling Delhi market known for shopping handicrafts and souvenirs"
                 fill
                 className="object-cover"
               />

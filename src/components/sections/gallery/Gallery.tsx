@@ -5,22 +5,72 @@ import { motion, useInView } from "framer-motion";
 
 import GallerySlider from "./GallerySlider";
 
-const images: string[] = [
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578209/memory1_gayuz8.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578248/memory2_tykxtt.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578270/memory3_aosj1s.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578292/memory4_hdwx8y.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578316/memory5_iwim1u.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578435/memory6_gyayff.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578458/memory7_wgto6n.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578481/memory8_y68gce.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578511/memory9_wnggxy.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578573/memory10_sdffzl.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578639/memory11_cv2rlx.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578694/memory12_pqqhd0.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578772/memory13_bwdkam.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578796/memory14_uagzen.jpg",
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578817/memory15_gvzrqf.jpg",
+type GalleryImage = {
+  src: string;
+  alt: string;
+};
+
+const images: GalleryImage[] = [
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578209/memory1_gayuz8.jpg",
+    alt: "Traveler experiencing traditional Indian cultural attire with local women",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578248/memory2_tykxtt.jpg",
+    alt: "Solo traveler exploring the Blue City of Jodhpur Rajasthan",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578270/memory3_aosj1s.jpg",
+    alt: "Couple visiting Hawa Mahal in Jaipur Rajasthan",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578292/memory4_hdwx8y.jpg",
+    alt: "India Heritage Travel guest with local guide and private vehicle",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578316/memory5_iwim1u.jpg",
+    alt: "Cultural interaction with local women during a Rajasthan village experience",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578435/memory6_gyayff.jpg",
+    alt: "Traveler enjoying a camel safari in the Rajasthan desert",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578458/memory7_wgto6n.jpg",
+    alt: "Traveler admiring the iconic Hawa Mahal in Jaipur",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578481/memory8_y68gce.jpg",
+    alt: "Traveler visiting the Taj Mahal in Agra India",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578511/memory9_wnggxy.jpg",
+    alt: "Luxury heritage travel experience in Rajasthan India",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578573/memory10_sdffzl.jpg",
+    alt: "Cultural travel experience across historic destinations in India",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578639/memory11_cv2rlx.jpg",
+    alt: "Travelers exploring India's architectural heritage and culture",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578694/memory12_pqqhd0.jpg",
+    alt: "Authentic luxury travel experience with India Heritage Travel",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578772/memory13_bwdkam.jpg",
+    alt: "Discovering India's rich culture and local traditions",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578796/memory14_uagzen.jpg",
+    alt: "Heritage tourism experience across iconic Indian landmarks",
+  },
+  {
+    src: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779578817/memory15_gvzrqf.jpg",
+    alt: "Personalized India travel experiences and cultural exploration",
+  },
 ];
 
 export default function GallerySection() {

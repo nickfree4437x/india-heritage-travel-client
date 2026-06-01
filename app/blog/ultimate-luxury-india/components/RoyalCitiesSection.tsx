@@ -43,7 +43,7 @@ export default function RoyalCitiesSection() {
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821522/aditya-siva-3P1G67zNyCI-unsplash_rua44s.jpg"
-                alt="Jaipur"
+                alt="Majestic forts royal palaces and vibrant culture in Jaipur Rajasthan India"
                 fill
                 className="object-cover"
               />
@@ -130,7 +130,7 @@ export default function RoyalCitiesSection() {
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821653/vivek-1pNm4DFts4U-unsplash_bymbbu.jpg"
-                alt="Udaipur"
+                alt="Udaipur the City of Lakes in Rajasthan India"
                 fill
                 className="object-cover"
               />

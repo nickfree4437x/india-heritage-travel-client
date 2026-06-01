@@ -25,7 +25,7 @@ export default function PushkarSection() {
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528390/pushkar_dfkyko.jpg"
-          alt="Pushkar"
+          alt="Pushkar Lake and Brahma Temple in Rajasthani Heritage Tour Package by India Heritage Travel"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"

@@ -38,7 +38,7 @@ export default function JourneySection() {
           <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779618257/profile_fankpm.jpg" // 👈 apni image daal
-              alt="Profile"
+              alt="Piyush Singh founder of India Heritage Travel"
               fill
               className="object-cover"
             />

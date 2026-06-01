@@ -43,7 +43,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536653/i1_slqnjw.png"
-                    alt="Delhi"
+                    alt="Fort Kochi heritage attractions in South India Heritage Tour Package by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -85,7 +85,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536689/i2_phxoqj.png"
-                    alt="Agra"
+                    alt="Alleppey houseboat cruise on Kerala backwaters in South India Heritage Tour Package by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -130,7 +130,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536725/i3_czgnbm.png"
-                    alt="Jaipur"
+                    alt="Thekkady wildlife and nature in South India Heritage Tour Package by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -180,7 +180,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536766/i4_kiqcdz.png"
-                    alt="Delhi"
+                    alt="Munnar tea plantations in South India Heritage Tour Package by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -215,7 +215,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536802/i5_srmuj7.png"
-                    alt="Delhi"
+                    alt="Madurai Meenakshi Amman Temple in South India Heritage Tour Package by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -256,7 +256,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536839/i6_nxz1ap.png"
-                    alt="Delhi"
+                    alt="Thanjavur Airavatesvara Temple in South India Heritage Tour Package by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -291,7 +291,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536879/i7_ocu1y5.png"
-                    alt="Delhi"
+                    alt="Pondicherry French Quarter in South India Heritage Tour Package by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -332,7 +332,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536918/i8_v4vver.png"
-                    alt="Delhi"
+                    alt="Mahabalipuram ancient monuments in South India Heritage Tour Package by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -373,7 +373,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536956/i9_papjom.png"
-                    alt="Delhi"
+                    alt="Mumbai tourist attractions in South India Heritage Tour Package by India Heritage Travel"
                     fill
                     className="object-cover"
                   />
@@ -401,7 +401,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                    alt="Departure"
+                    alt="Farewell departure after South India Heritage Tour Package in India"
                     fill
                     className="object-cover"
                   />

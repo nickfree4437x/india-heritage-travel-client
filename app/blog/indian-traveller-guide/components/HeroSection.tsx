@@ -32,7 +32,7 @@ export default function HeroSection() {
 
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637895/blog-3_dksm9v.jpg"
-          alt="India Travel Guide"
+          alt="First time traveller discovering iconic destinations across India"
           fill
           priority
           className="object-cover"

@@ -67,7 +67,7 @@ export default function MoreWellnessRetreatsSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779802812/vivek-JPDFbeftcX0-unsplash_rnx72h.jpg"
-              alt="Vana Retreat Uttarakhand"
+              alt="Serene wellness retreat at Vana Dehradun Uttarakhand surrounded by nature"
               fill
               className="object-cover"
             />

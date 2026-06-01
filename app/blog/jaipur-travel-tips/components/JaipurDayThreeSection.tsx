@@ -57,7 +57,7 @@ export default function JaipurDayThreeSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779824313/meric-dagli-uADXI1v10us-unsplash_rq4uhj.jpg"
-                alt="Amer Fort Jaipur"
+                alt="Amer Fort Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />
@@ -122,7 +122,7 @@ export default function JaipurDayThreeSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779824736/damini-NBqK1qLisrE-unsplash_nr2xe1.jpg"
-                alt="Panna Meena Ka Kund Jaipur"
+                alt="Panna Meena Ka Kund Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />
@@ -172,7 +172,7 @@ export default function JaipurDayThreeSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779827798/27.05.2026_02.05.50_REC_nu2gqf.png"
-                alt="Jagat Shiromani Temple Jaipur"
+                alt="Jagat Shiromani Temple Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />
@@ -231,7 +231,7 @@ export default function JaipurDayThreeSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825046/pexels-axp-photography-500641970-16738838_fvfxod.jpg"
-                alt="Galta Ji Jaipur"
+                alt="Galta Ji Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />
@@ -283,7 +283,7 @@ export default function JaipurDayThreeSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825224/27.05.2026_01.23.02_REC_z5yzl6.png"
-                alt="Once Upon A Time Jaipur"
+                alt="Once Upon A Time Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />
@@ -341,7 +341,7 @@ export default function JaipurDayThreeSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825501/pexels-jaipurkachokra-2944561_wfxkcj.jpg"
-                alt="Gaitor Ki Chhatriyan Jaipur"
+                alt="Gaitor Ki Chhatriyan Jaipur on an India Heritage Travel tour"
                 fill
                 className="object-cover"
               />

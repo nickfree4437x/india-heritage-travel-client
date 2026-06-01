@@ -62,7 +62,7 @@ export default function DelhiGuideSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779829575/polina-kneis-0wG6oR13JAI-unsplash_vn9fqi.jpg"
-              alt="Delhi Streets"
+              alt="Bustling streets of Delhi showcasing everyday life and local culture"
               fill
               className="object-cover"
             />
@@ -102,7 +102,7 @@ export default function DelhiGuideSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779829674/daniel-dara--sJRd0qmQJk-unsplash_e5rku7.jpg"
-              alt="Qutub Minar"
+              alt="Qutub Minar in Delhi one of India's most iconic historical monuments"
               fill
               className="object-cover"
             />
@@ -144,7 +144,7 @@ export default function DelhiGuideSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779829059/zoshua-colah-YAGz_eGSkJA-unsplash_wzk8ym.jpg"
-              alt="Delhi Market"
+              alt="Bustling Delhi market known for shopping handicrafts and souvenirs"
               fill
               className="object-cover"
             />
@@ -183,7 +183,7 @@ export default function DelhiGuideSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779829850/brijender-dua-JZg6JVZW0DE-unsplash_jvqrdl.jpg"
-              alt="Delhi Food Market"
+              alt="Exploring Delhi's vibrant food market and local culinary culture"
               fill
               className="object-cover"
             />

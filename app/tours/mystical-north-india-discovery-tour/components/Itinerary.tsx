@@ -49,7 +49,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530292/i1_tolxzi.png"
-                  alt="Delhi"
+                  alt="Delhi sightseeing attractions in North India Cultural Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -88,7 +88,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779610788/Screenshot-2025-06-26-151340_kcrnq0.png"
-                  alt="Mandawa"
+                  alt="Mandawa heritage havelis in North India Cultural Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -133,7 +133,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530452/i3_kjoqzx.png"
-                  alt="Jaipur"
+                  alt="Amber Fort Jaipur in North India Cultural Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -175,7 +175,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530492/i4_qtbyda.png"
-                  alt="Delhi"
+                  alt="Taj Mahal Agra in North India Cultural Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -219,7 +219,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530534/i5_uamdah.png"
-                  alt="Delhi"
+                  alt="Orchha heritage architecture in North India Cultural Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -260,7 +260,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530567/i6_qck9sy.jpg"
-                  alt="Delhi"
+                  alt="Khajuraho temple complex in North India Cultural Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -301,7 +301,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530600/i7_jeifrx.jpg"
-                  alt="Delhi"
+                  alt="Varanasi Ganga Ghats in North India Cultural Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -342,7 +342,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530636/i8_ww7jgk.jpg"
-                  alt="Delhi"
+                  alt="Old Delhi cultural landmarks in North India Cultural Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -370,7 +370,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530663/i9_qsogqs.jpg"
-                  alt="Departure"
+                  alt="Farewell departure from India after North India Cultural Tour"
                   fill
                   className="object-cover"
                 />

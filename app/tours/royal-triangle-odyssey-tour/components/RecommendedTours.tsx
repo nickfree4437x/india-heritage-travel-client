@@ -8,18 +8,21 @@ const tours = [
     title: "The Royal Heritage Trail Tour",
     desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534877/trail-tour_ypzior.png",
+    alt: "The Royal Heritage Trail Tour package by India Heritage Travel",
     slug: "/tours/the-royal-heritage-trail-tour",
   },
   {
     title: "Mystical North India Discovery",
     desc: "Discover the mystical North India in 12 days with ‘Mystical North India Discovery,’ from Delhi to Varanasi, with timeless heritage and sculpted wonders in between.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529935/hero_vfhtr5.jpg",
+    alt: "Mystical North India Discovery tour package by India Heritage Travel",
     slug: "/tours/mystical-north-india-discovery-tour",
   },
   {
     title: "Southern Splendors: Culture & Nature Trail Tour",
     desc: "Embark on a 19-day Southern Splendors journey from Mumbai to Hampi, experiencing history, coastal delights, nature’s majesty, and regal splendor.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535291/splander_rxivgm.png",
+    alt: "Southern Splendors: Culture & Nature Trail Tour package by India Heritage Travel",
     slug: "/tours/southern-splendors-tour",
   },
 ];
@@ -67,7 +70,7 @@ export default function OdysseyRecommendedTours() {
               <div className="relative h-[240px] w-full overflow-hidden">
                 <Image
                   src={tour.image}
-                  alt={tour.title}
+                  alt={tour.alt}
                   fill
                   className="
                     object-cover

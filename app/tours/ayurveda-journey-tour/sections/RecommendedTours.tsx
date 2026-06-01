@@ -9,6 +9,7 @@ const tours = [
     desc: "Yoga is an ancient and intricate practice deeply rooted in Indian philosophy. It originally served as a spiritual discipline but has evolved into a popular approach for enhancing physical and mental well-being.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546495/recom_b3tnbe.jpg",
     slug: "/tours/yoga-escapes-tour",
+    alt: "Yoga wellness retreat in India featuring meditation, rejuvenation and holistic healing experiences",
   },
 ];
 
@@ -57,7 +58,7 @@ export default function RecommendedTours() {
 
                 <Image
                   src={tour.image}
-                  alt={tour.title}
+                  alt={tour.alt}
                   fill
                   className="object-cover transition-transform duration-700"
                 />

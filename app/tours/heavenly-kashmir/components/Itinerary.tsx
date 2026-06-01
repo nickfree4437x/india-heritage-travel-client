@@ -53,7 +53,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541514/i1_fz7e9f.jpg"
-                    alt="Delhi"
+                    alt="Sonamarg Kashmir featuring snow-capped Himalayan mountains alpine meadows and scenic valleys"
                     fill
                     className="object-cover"
                   />
@@ -143,7 +143,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541596/i3_huxrhq.jpg"
-                    alt="Jaipur"
+                    alt="Pahalgam Kashmir featuring Aru Valley pine forests and scenic Himalayan meadows"
                     fill
                     className="object-cover"
                   />
@@ -180,7 +180,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image  
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541635/i4_aye22o.jpg"
-                    alt="Delhi"
+                    alt="Srinagar houseboat stay on Dal Lake with scenic mountain views in Kashmir"
                     fill
                     className="object-cover"
                   />
@@ -211,7 +211,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541676/i5_s6sjmp.jpg"
-                    alt="Departure"
+                    alt="Departure from Kashmir after exploring Srinagar Gulmarg and Pahalgam attractions"
                     fill
                     className="object-cover"
                   />

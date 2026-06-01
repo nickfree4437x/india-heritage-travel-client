@@ -84,7 +84,7 @@ export default function BlogContentSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779649137/ibrahim-rifath-Y6tBl0pTe-g-unsplash_m5uxih.jpg"
-              alt="Traveler looking at map"
+              alt="Traveller planning a journey across India with expert travel guidance"
               fill
               className="object-cover"
             />

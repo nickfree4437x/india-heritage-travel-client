@@ -211,7 +211,7 @@ export default function ContactSection() {
 
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779744490/contact1_q8t4a4.jpg"
-          alt="Contact Background"
+          alt="Travel consultation and journey planning with India Heritage Travel"
           fill
           priority
           className="

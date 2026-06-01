@@ -41,7 +41,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546106/i1_csej7w.webp"
-                    alt="Delhi"
+                    alt="Mumbai sightseeing during Ayurveda wellness tour in India featuring Elephanta Caves and local culture"
                     fill
                     className="object-cover"
                   />
@@ -78,7 +78,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546152/i2_bsfcvl.webp"
-                    alt="Agra"
+                    alt="Cochin Kerala arrival experience during Ayurveda wellness tour in India"
                     fill
                     className="object-cover"
                   />
@@ -121,7 +121,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546211/i3_giaror.webp"
-                  alt="Jaipur"
+                  alt="Ayurvedic healing retreat in Kumarakom Kerala with wellness therapies and yoga sessions"
                   fill
                   className="object-cover"
                 />
@@ -163,7 +163,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546261/i4_bg2g5n.webp"
-                    alt="Delhi"
+                    alt="Houseboat cruise in Alleppey backwaters during Ayurveda wellness tour in Kerala"
                     fill
                     className="object-cover"
                   />
@@ -203,7 +203,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546304/i5_mlnm1x.webp"
-                    alt="Delhi"
+                    alt="Periyar wildlife sanctuary and spice plantation experience in Thekkady Kerala"
                   fill
                   className="object-cover"
                 />
@@ -237,7 +237,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546347/i6_leyqnx.webp"
-                    alt="Delhi"
+                    alt="Tea plantations and scenic mountain landscapes in Munnar Kerala India"
                     fill
                     className="object-cover"
                   />
@@ -291,7 +291,7 @@ export default function Itinerary() {
                   <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                     <Image
                       src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779545200/i8_q5i2zr.jpg"
-                      alt="Departure"
+                      alt="Traditional Indian market and cultural shopping experience before departure from India"
                       fill
                       className="object-cover"
                     />

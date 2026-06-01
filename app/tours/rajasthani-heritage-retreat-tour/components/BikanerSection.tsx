@@ -20,7 +20,7 @@ export default function BikanerSection() {
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528101/bikaner_o7gsic.jpg"
-          alt="Bikaner"
+          alt="Bikaner desert heritage and camel culture in Rajasthan by India Heritage Travel"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"

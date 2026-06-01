@@ -46,7 +46,7 @@ export default function BookingCard() {
       <div className="relative w-full h-[180px] sm:h-[200px] md:h-[220px] lg:h-[240px] overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526532/map_vmxpov.png"
-          alt="Golden Triangle Tour Route Map"
+          alt="Majestic Golden Triangle Tour route map covering Delhi Agra Jaipur and iconic heritage attractions in India"
           fill
           priority
           className="object-cover object-top"

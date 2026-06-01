@@ -53,7 +53,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540301/i1_fdmygi.jpg"
-                    alt="Delhi"
+                    alt="Sonamarg Kashmir featuring snow-capped Himalayan mountains and scenic alpine meadows"
                     fill
                     className="object-cover"
                   />
@@ -100,7 +100,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540354/i2_bn8y5y.jpg"
-                    alt="Agra"
+                    alt="Gulmarg Kashmir with snow-covered mountains gondola rides and scenic valleys"
                     fill
                     className="object-cover"
                   />
@@ -149,7 +149,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540394/i3_htn50n.jpg"
-                    alt="Jaipur"
+                    alt="Pahalgam Kashmir featuring Lidder Valley pine forests and Himalayan landscapes"
                     fill
                     className="object-cover"
                   />
@@ -186,7 +186,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540443/i4_ipmu3o.jpg"
-                    alt="Srinagar"
+                    alt="Srinagar houseboat experience on Dal Lake with scenic mountain views in Kashmir"
                     fill
                     className="object-cover"
                   />
@@ -218,7 +218,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540484/i5_qm6iyq.webp"
-                    alt="Kargil"
+                    alt="Kargil Ladakh mountain landscapes and historic Himalayan valley views"
                     fill
                     className="object-cover"
                   />
@@ -259,7 +259,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540751/andre-furtado-44qiS--O0uQ-unsplash_kk6fwu.jpg"
-                    alt="Leh"
+                    alt="Leh Ladakh featuring Buddhist monasteries rugged mountains and high-altitude landscapes"
                     fill
                     className="object-cover"
                   />
@@ -303,7 +303,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540563/i7_ggxtzc.jpg"
-                    alt="Delhi"
+                    alt="Nubra Valley Ladakh with sand dunes mountain scenery and traditional Himalayan culture"
                     fill
                     className="object-cover"
                   />
@@ -337,7 +337,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540617/i8_hcxytq.jpg"
-                    alt="Delhi"
+                    alt="Pangong Lake Ladakh with crystal-clear blue waters and dramatic mountain landscapes"
                     fill
                     className="object-cover"
                   />
@@ -368,7 +368,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779540617/i8_hcxytq.jpg"
-                    alt="leh"
+                    alt="Hemis Monastery near Leh Ladakh showcasing Buddhist heritage and mountain views"
                     fill
                     className="object-cover"
                   />
@@ -396,7 +396,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                    alt="Departure"
+                    alt="Departure from Ladakh after Kashmir and Himalayan adventure tour in India"
                     fill
                     className="object-cover"
                   />

@@ -181,7 +181,7 @@ export default function WomenSeeSection() {
             >
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779633583/img_3_tgerix.jpg"
-                alt="women"
+                alt="Solo woman traveller exploring the cultural beauty of India"
                 fill
                 className="object-cover"
               />
@@ -201,7 +201,7 @@ export default function WomenSeeSection() {
               >
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779633575/img_1_rex932.jpg"
-                  alt="elephant"
+                  alt="Elephant experience during a cultural tour in India"
                   fill
                   className="object-cover"
                 />
@@ -216,7 +216,7 @@ export default function WomenSeeSection() {
               >
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779633697/img_2_ibmjqt.jpg"
-                  alt="lights"
+                  alt="Traditional Indian festival lights and cultural celebrations"
                   fill
                   className="object-cover"
                 />
@@ -231,7 +231,7 @@ export default function WomenSeeSection() {
               >
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779633582/img_4_bj0ywl.jpg"
-                  alt="taj"
+                  alt="Taj Mahal in Agra one of India's most iconic heritage landmarks"
                   fill
                   className="object-cover"
                 />

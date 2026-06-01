@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779626227/hero_a0aojv.jpg"
-          alt="Solo Women Trip"
+          alt="Solo Women Tour Packages in India by India Heritage Travel"
           fill
           priority
           className="object-cover"

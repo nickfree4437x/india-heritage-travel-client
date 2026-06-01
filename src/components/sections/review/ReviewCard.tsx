@@ -81,7 +81,7 @@ export default function ReviewCard({ reviews, index, visibleCards }: Props) {
                 <div className="relative h-60 sm:h-72 w-full overflow-hidden">
                   <Image
                     src={review.image}
-                    alt={review.name}
+                    alt={`${review.name} review about India Heritage Travel`}
                     fill
                     priority
                     className="object-cover object-[center_30%] transition-transform duration-500 hover:scale-105"

@@ -26,7 +26,7 @@ export default function RightBookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779533011/map_phgvoo.png"
-          alt="Tour Map"
+          alt="Heritage and Wildlife Tour India route map covering Delhi Mandawa Pushkar Ranthambore Jaipur and Agra"
           width={400}
           height={250}
           className="w-full object-cover"

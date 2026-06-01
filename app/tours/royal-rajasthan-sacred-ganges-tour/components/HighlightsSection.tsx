@@ -13,7 +13,7 @@ import {
 
 export default function HighlightsSection() {
   return (
-    <section className="py-0">
+    <section>
 
       {/* 🔥 SAME WIDTH SYSTEM */}
       <div className="max-w-5xl mx-auto">

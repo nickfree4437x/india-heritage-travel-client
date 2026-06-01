@@ -20,7 +20,7 @@ export default function DelhiSection() {
       <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528158/delhi_r9ay8y.jpg"
-          alt="Delhi"
+          alt="Old Delhi heritage landmarks in Rajasthani Heritage Retreat Tour by India Heritage Travel"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"

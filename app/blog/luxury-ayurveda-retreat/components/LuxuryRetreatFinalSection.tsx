@@ -68,7 +68,7 @@ export default function LuxuryRetreatFinalSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779802348/dileesh-kumar-HAXToq7OVG8-unsplash_hudevd.jpg"
-              alt="The Leela Kovalam"
+              alt="Clifftop view of The Leela Kovalam Beach Kerala overlooking the Arabian Sea"
               fill
               className="object-cover"
             />
@@ -163,7 +163,7 @@ export default function LuxuryRetreatFinalSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779802545/26.05.2026_19.04.49_REC_e25qyr.png"
-              alt="Carnoustie Ayurveda Resort"
+              alt="Luxury Ayurveda and wellness retreat at Carnoustie Ayurveda Resort Kerala"
               fill
               className="object-cover"
             />

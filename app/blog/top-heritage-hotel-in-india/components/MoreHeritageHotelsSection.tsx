@@ -55,7 +55,7 @@ export default function MoreHeritageHotelsSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779818008/26.05.2026_23.22.55_REC_r5r4lb.png"
-                alt="Mandawa Kothi"
+                alt="Heritage stay at Mandawa Kothi in the historic Shekhawati region of Rajasthan"
                 fill
                 className="object-cover"
               />
@@ -113,7 +113,7 @@ export default function MoreHeritageHotelsSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779818164/26.05.2026_23.25.32_REC_r5mtkm.png"
-                alt="The Oberoi Grand"
+                alt="Luxury heritage stay at The Oberoi Grand Kolkata West Bengal India"
                 fill
                 className="object-cover"
               />
@@ -181,7 +181,7 @@ export default function MoreHeritageHotelsSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779818345/26.05.2026_23.28.21_REC_zpqp6x.png"
-                alt="Rambagh Palace"
+                alt="Luxury heritage stay at Rambagh Palace Jaipur Rajasthan India"
                 fill
                 className="object-cover"
               />

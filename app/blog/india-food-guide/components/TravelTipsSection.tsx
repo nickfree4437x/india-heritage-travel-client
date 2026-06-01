@@ -167,7 +167,7 @@ export default function TravelTipsSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779636762/south-india_mwajvf.jpg"
-              alt="Vegetarian Food in India"
+              alt="Traditional South Indian meal representing India's diverse food culture"
               fill
               className="object-cover"
             />

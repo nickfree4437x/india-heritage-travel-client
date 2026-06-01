@@ -105,7 +105,7 @@ export default function AboutSoloWomen() {
 
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779626927/about_fd99mg.jpg"
-                  alt="Solo Women Travel"
+                  alt="Isha helping solo women travellers explore India safely and confidently"
                   fill
                   className="object-cover"
                 />

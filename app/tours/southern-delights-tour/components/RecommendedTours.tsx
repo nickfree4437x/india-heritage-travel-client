@@ -8,18 +8,21 @@ const tours = [
     title: "The Royal Heritage Trail Tour",
     desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534877/trail-tour_ypzior.png",
+    alt: "The Royal Heritage Trail Tour package by India Heritage Travel",
     slug: "/tours/the-royal-heritage-trail-tour",
   },
   {
     title: "A Journey Through Heritage & Wildlife",
     desc: "Embark on a 13-day odyssey through heritage and wildlife on the ‘A Journey Through Heritage & Wildlife’ tour, from the captivating blend of history in Delhi to the wildlife wonders of Ranthambore, desert charm, and regal splendor.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532950/hero_xrxpym.jpg",
+    alt: "A Journey Through Heritage and Wildlife tour package by India Heritage Travel",
     slug: "/tours/journey-through-heritage-wildlife",
   },
   {
     title: "Southern Splendors: Culture & Nature Trail",
     desc: "Embark on a 19-day ‘Southern Splendors: Culture & Nature Trail’ from Mumbai’s vibrant dreams to the rich cultural tapestry of Hampi, experiencing history, coastal delights, nature’s majesty, and regal splendor in between.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535291/splander_rxivgm.png",
+    alt: "Southern Splendors: Culture & Nature Trail tour package by India Heritage Travel",
     slug: "/tours/southern-splendors-tour",
   },
 ];
@@ -69,7 +72,7 @@ export default function RecommendedTours() {
 
                 <Image
                   src={tour.image}
-                  alt={tour.title}
+                  alt={tour.alt}
                   fill
                   className="
                     object-cover

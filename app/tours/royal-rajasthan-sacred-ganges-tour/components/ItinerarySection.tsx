@@ -49,7 +49,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531926/delhi_muhygz.jpg"
-                  alt="Delhi"
+                  alt="Old Delhi heritage landmarks in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -88,7 +88,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531962/mandawa_xptybe.jpg"
-                  alt="Agra"
+                  alt="Mandawa heritage havelis in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -135,7 +135,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531996/bikaner_glgyle.jpg"
-                  alt="Jaipur"
+                  alt="Bikaner heritage forts in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -177,7 +177,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532034/jaisalmer_zbptft.png"
-                  alt="Delhi"
+                  alt="Jaisalmer golden sand dunes in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -217,7 +217,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532068/jodhpur_fqs6pg.jpg"
-                  alt="Delhi"
+                  alt="Jodhpur blue houses in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -253,7 +253,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532117/udaipur_vdouwe.png"
-                  alt="Delhi"
+                  alt="Udaipur lakes in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -292,7 +292,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532177/pushkar_ocaweh.png"
-                  alt="Delhi"
+                  alt="Pushkar lakes in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -332,7 +332,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532217/jaipur_r8eymf.png"
-                  alt="Delhi"
+                  alt="Jaipur heritage landmarks in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -372,7 +372,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532273/agra_deoidu.png"
-                  alt="Delhi"
+                  alt="Agra heritage landmarks in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -412,7 +412,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532314/orchha_mavmyj.jpg"
-                  alt="Delhi"
+                  alt="Orchha heritage landmarks in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -452,7 +452,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532345/khajuraho_sepbtl.jpg"
-                  alt="Delhi"
+                  alt="Khajuraho heritage temples in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -492,7 +492,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532383/varanasi_fs6c1e.png"
-                  alt="Delhi"
+                  alt="Varanasi riverside in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -532,7 +532,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532426/delhi2_daljj6.jpg"
-                  alt="Delhi"
+                  alt="Delhi cultural landmarks in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
                   fill
                   className="object-cover"
                 />
@@ -563,7 +563,7 @@ export default function Itinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                  alt="Departure"
+                  alt="Farewell departure after Royal Rajasthan and Sacred Ganges Tour in India"
                   fill
                   className="object-cover"
                 />

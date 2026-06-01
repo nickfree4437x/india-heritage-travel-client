@@ -32,7 +32,7 @@ export default function HeroSection() {
 
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779801053/blog-8_rtahzc.jpg"
-          alt="Luxury Ayurveda Retreat"
+          alt="Luxury Ayurveda retreat in India offering holistic wellness and rejuvenation"
           fill
           priority
           className="object-cover"

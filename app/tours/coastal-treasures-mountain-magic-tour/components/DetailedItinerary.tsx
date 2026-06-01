@@ -39,7 +39,7 @@ export default function DetailedItinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529506/i1_srytmy.png"
-                    alt="Cochin"
+                    alt="Fort Kochi heritage landmarks and waterfront views in Cochin Kerala"
                     fill
                     className="object-cover"
                   />
@@ -125,7 +125,7 @@ export default function DetailedItinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529565/i3_r9nukc.jpg"
-                    alt="Thekkady"
+                    alt="Thekkady wildlife sanctuary and spice plantations in Kerala India"
                     fill
                     className="object-cover"
                   />
@@ -173,7 +173,7 @@ export default function DetailedItinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529506/i1_srytmy.png"
-                    alt="Munnar"
+                    alt="Munnar tea plantations scenic valleys and mountain landscapes in Kerala"
                     fill
                     className="object-cover"
                   />
@@ -213,7 +213,7 @@ export default function DetailedItinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529635/i5_hqpbk6.jpg"
-                    alt="Mumbai"
+                    alt="Mumbai city sightseeing featuring Gateway of India and historic landmarks"
                     fill
                     className="object-cover"
                   />
@@ -243,7 +243,7 @@ export default function DetailedItinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                    alt="Departure"
+                    alt="Farewell departure from India after Kerala and Mumbai cultural tour"
                     fill
                     className="object-cover"
                   />

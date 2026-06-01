@@ -27,7 +27,7 @@ export default function Mumbai() {
       <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden shadow-md">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529329/mumbai_cgurku.jpg"
-          alt="Gateway of India Mumbai"
+          alt="Cochin Kerala waterfront featuring historic Fort Kochi landmarks and scenic backwater views"
           fill
           className="object-cover object-center"
         />

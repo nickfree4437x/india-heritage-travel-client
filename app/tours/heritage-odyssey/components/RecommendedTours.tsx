@@ -8,18 +8,21 @@ const tours = [
     title: "Rajasthani Heritage Retreat",
     desc: "Indulge in a 16-day ‘Rajasthani Heritage Retreat’ through Delhi’s history, timeless beauty in Mandawa, desert tales in Jaisalmer, and a journey of romance and regal splendor in Udaipur, all while exploring the rich heritage of Rajasthan.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779527998/heritage_b4eaqj.jpg",
+    alt: "Rajasthani Heritage Retreat tour package featuring Jaipur Udaipur Jaisalmer and Rajasthan cultural attractions",
     slug: "/tours/rajasthani-heritage-retreat-tour",
   },
   {
     title: "Royal Rajasthan & Sacred Ganges",
     desc: "Experience a 20-day journey through the heart of India on the ‘Royal Rajasthan & Sacred Ganges’ tour. From historic Delhi to spiritual Varanasi, explore a rich tapestry of heritage and culture.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779539943/tour2_wqd4x6.webp",
+    alt: "Royal Rajasthan and Sacred Ganges tour covering Delhi Rajasthan and Varanasi heritage destinations",
     slug: "/tours/royal-rajasthan-sacred-ganges-tour",
   },
   {
     title: "Southern Delights: A Journey Through Time",
     desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour, from Cochin’s history to Mumbai’s vibrant dreams, with coastal delights, natural majesty, and timeless wonders in between.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536598/delights_g6wjjy.jpg",
+    alt: "Southern India tour package featuring Cochin Kerala backwaters Munnar and cultural attractions",
     slug: "/tours/southern-delights-tour",
   },
 ];
@@ -56,7 +59,7 @@ export default function RecommendedTours() {
               <div className="relative h-[240px] w-full overflow-hidden">
                 <Image
                   src={tour.image}
-                  alt={tour.title}
+                  alt={tour.alt}
                   fill
                   className="object-cover transition-transform duration-700"
                 />

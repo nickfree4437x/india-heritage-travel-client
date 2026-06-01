@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779743099/tajmahal_nofzyw.jpg" // 👈 Taj Mahal type image use kar
-          alt="FAQ Background"
+          alt="Frequently asked questions about travel in India"
           fill
           priority
           className="object-cover"
