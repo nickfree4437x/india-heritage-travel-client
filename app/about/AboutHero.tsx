@@ -36,8 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          India Heritage Travel - Ek
-          Dil Se India Dikhane Waali Team
+          About India Heritage Travel
         </h1>
 
       </div>
