@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
-import YogaHeroSection from "./sections/HeroSection";
-import SuitableFor from "./sections/SuitableFor";
-import YogaIntro from "./sections/YogaIntro";
-import TourLayout from "./sections/TourLayout";
-import Recommended from "./sections/Recommended";
-import Footer from "@/src/components/sections/footer/Footer";
-import CommonForm from "@/src/components/tours/CommonForm";
-import TourSteps from "@/src/components/tours/TourSteps";
+import YogaHeroSection from "./sections/hero/HeroSection";
+import SuitableFor from "./sections/suitable-for/SuitableFor";
+import YogaIntro from "./sections/yoga-intro/YogaIntro";
+import TourLayout from "./sections/layout/TourLayout";
+import Recommended from "./sections/recommended-tours/Recommended";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "Yoga Retreat Tour India | Wellness, Meditation & Spiritual Experiences",

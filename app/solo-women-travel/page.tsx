@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
-import HowWorkSection from "./components/HowWorkSection";
-import SectionFour from "./components/SectionFour";
-import SectionFive from "./components/SectionFive";
-import CommonForm from "@/src/components/tours/CommonForm";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import AboutSection from "./sections/about/AboutSection";
+import HowWorkSection from "./sections/how-it-works/HowWorkSection";
+import SectionFour from "./sections/section-four/SectionFour";
+import SectionFive from "./sections/section-five/SectionFive";
+import CommonForm from "@/src/tours/CommonForm";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Solo Women Travel India | Safe India Tours for Women | Trusted Women's India Tours",

@@ -31,7 +31,7 @@ export const blogs = [
   {
     id: 4,
     slug: "solo-traveller",
-    title: "India for Slow Travelers: Cultural, Wellness and Offbeat Experiences",
+    title: "India for Solo Travelers: Cultural, Wellness and Offbeat Experiences",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641987/blog-4_rarjqw.jpg",
     date: "4 Dec",
     excerpt:

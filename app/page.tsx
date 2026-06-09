@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
-import Navbar from "@/src/components/navbar-layout/navbar/Navbar";
-import Hero from "@/src/components/sections/hero/Hero";
-import Difference from "@/src/components/sections/how-make-difference/Difference";
-import About from "@/src/components/sections/welcome-section/About";
-import Destinations from "@/src/components/sections/destinations/Destinations";
-import ReviewsSection from "@/src/components/sections/review/Reviews";
-import Adventure from "@/src/components/sections/adventure/Adventure";
-import Festival from "@/src/components/sections/festivals/Festivals";
-import GallerySection from "@/src/components/sections/gallery/Gallery";
-import CotactSection from "@/src/components/sections/contact/Contact";
-import Footer from "@/src/components/sections/footer/Footer";
-import SoloTravelSection from "@/src/components/sections/solo-trip/Solo";
+import Navbar from "@/src/navbar-layout/navbar/Navbar";
+import Hero from "@/src/sections/hero/Hero";
+import Difference from "@/src/sections/how-make-difference/Difference";
+import About from "@/src/sections/welcome-section/About";
+import Destinations from "@/src/sections/destinations/Destinations";
+import ReviewsSection from "@/src/sections/review/Reviews";
+import Adventure from "@/src/sections/adventure/Adventure";
+import Festival from "@/src/sections/festivals/Festivals";
+import GallerySection from "@/src/sections/gallery/Gallery";
+import CotactSection from "@/src/sections/contact/Contact";
+import Footer from "@/src/sections/footer/Footer";
+import SoloTravelSection from "@/src/sections/solo-trip/Solo";
 
 export const metadata: Metadata = {
   title:

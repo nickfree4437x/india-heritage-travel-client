@@ -1,7 +1,7 @@
 "use client";
 
 import { Briefcase, Flower2, Users, PersonStanding } from "lucide-react";
-import Breadcrumb from "@/src/components/common/Breadcrumb/Breadcrumb";
+import Breadcrumb from "@/src/common/Breadcrumb/Breadcrumb";
 
 // ============================================================================
 // MAIN COMPONENT

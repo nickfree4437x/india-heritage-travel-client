@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
-import FaqSection from "@/src/components/sections/festivals/common/FAQSection";
-import Footer from "@/src/components/sections/footer/Footer";
-import BookingSection from "@/src/home/rent-car/booking/BookingSection";
-import RentCarHero from "@/src/home/rent-car/RentCarHero";
-import VehicleSection from "@/src/home/rent-car/LuxuryVehicleSection";
-import WhyChooseSection from "@/src/home/rent-car/WhyChooseSection";
-import PremiumVehicleSection from "@/src/home/rent-car/PremiumVehicleSection";
-import GroupVehicleSection from "@/src/home/rent-car/GroupVehicleSection";
-import HeritageVehicleSection from "@/src/home/rent-car/HeritageVehicleSection";
+import FaqSection from "@/src/sections/festivals/common/FAQSection";
+import Footer from "@/src/sections/footer/Footer";
+import BookingSection from "./rent-car/booking/BookingSection";
+import RentCarHero from "./rent-car/sections/hero/RentCarHero";
+import VehicleSection from "./rent-car/sections/luxury-vehicles/LuxuryVehicleSection";
+import WhyChooseSection from "./rent-car/sections/why-choose/WhyChooseSection";
+import PremiumVehicleSection from "./rent-car/sections/premium-vehicles/PremiumVehicleSection";
+import GroupVehicleSection from "./rent-car/sections/group-vehicles/GroupVehicleSection";
+import HeritageVehicleSection from "./rent-car/sections/heritage-vehicles/HeritageVehicleSection";
 
 export const metadata: Metadata = {
   title: "Car Rental India With Driver | India Heritage Travel | Rajasthan Road Trips",

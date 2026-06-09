@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
-import HeroSection from "./components/HeroSection";
-import SuitableFor from "./components/SuitableFor";
-import DestinationSection from "./components/DestinationSection";
-import RecommendedTours from "./components/RecommendedTours";
-import Footer from "@/src/components/sections/footer/Footer";
-import TourSteps from "@/src/components/tours/TourSteps";
-import CommonForm from "@/src/components/tours/CommonForm";
+import HeroSection from "./sections/hero/HeroSection";
+import SuitableFor from "./sections/suitable-for/SuitableFor";
+import DestinationSection from "./sections/destinations/DestinationSection";
+import RecommendedTours from "./sections/recommended/RecommendedTours";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "South India Coastal & Mountain Tour | Beaches, Hills & Cultural Experiences",

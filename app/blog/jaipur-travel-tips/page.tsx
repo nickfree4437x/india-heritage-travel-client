@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import JaipurGuideIntroSection from "./components/JaipurGuideIntroSection";
-import DayOneJaipurSection from "./components/DayOneJaipurSection";
-import JaipurDayTwoSection from "./components/JaipurDayTwoSection";
-import JaipurDayTwoExtraSection from "./components/JaipurDayTwoExtraSection";
-import JaipurDayThreeSection from "./components/JaipurDayThreeSection";
-import Moreblogs from "./components/MoreBlogs";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import JaipurGuideIntroSection from "./sections/jaipur-guide/JaipurGuideIntroSection";
+import DayOneJaipurSection from "./sections/day-one/DayOneJaipurSection";
+import JaipurDayTwoSection from "./sections/day-two/JaipurDayTwoSection";
+import JaipurDayTwoExtraSection from "./sections/day-two-extra/JaipurDayTwoExtraSection";
+import JaipurDayThreeSection from "./sections/day-three/JaipurDayThreeSection";
+import Moreblogs from "./sections/more-blogs/MoreBlogs";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Jaipur Travel Guide | Best Places to Visit, Tips & 3-Day Itinerary",

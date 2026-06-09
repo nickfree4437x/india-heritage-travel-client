@@ -1,26 +1,25 @@
 import type { Metadata } from "next";
 
-import Hero from "./components/Hero";
-import Suitable from "./components/Suitable";
-import DelhiSection from "./components/DelhiSection";
-import BookingCard from "./components/BookingCard";
-import MandawaSection from "./components/MandawaSection";
-import BikanerSection from "./components/BikanerSection";
-import JaisalmerSection from "./components/JaisalmerSection";
-import JodhpurSection from "./components/JodhpurSection";
-import UdaipurSection from "./components/UdaipurSection";
-import PushkarSection from "./components/PushkarSection";
-import JaipurSection from "./components/JaipurSection";
-import AgraSection from "./components/AgraSection";
-import HighlightsSection from "./components/HighlightsSection";
-import ItinerarySection from "./components/ItinerarySection";
-//import Recommended from "./components/RecommendTous";
+import Hero from "./sections/hero/Hero";
+import Suitable from "./sections/suitable-for/Suitable";
+import DelhiSection from "./sections/destinations/DelhiSection";
+import BookingCard from "./sections/booking-card/BookingCard";
+import MandawaSection from "./sections/destinations/MandawaSection";
+import BikanerSection from "./sections/destinations/BikanerSection";
+import JaisalmerSection from "./sections/destinations/JaisalmerSection";
+import JodhpurSection from "./sections/destinations/JodhpurSection";
+import UdaipurSection from "./sections/destinations/UdaipurSection";
+import PushkarSection from "./sections/destinations/PushkarSection";
+import JaipurSection from "./sections/destinations/JaipurSection";
+import AgraSection from "./sections/destinations/AgraSection";
+import HighlightsSection from "./sections/hightlights/HighlightsSection";
+import ItinerarySection from "./sections/itinerary/ItinerarySection";
 import ExcludedServices from "../majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import RecommendedTours from "../majestic-golden-triangle-tour/components/sections/RecommendedTours";
-import Footer from "@/src/components/sections/footer/Footer";
-import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
-import TourSteps from "@/src/components/tours/TourSteps";
-import CommonForm from "@/src/components/tours/CommonForm";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "Rajasthan Heritage Retreat Tour | Royal Palaces, Culture & Heritage",

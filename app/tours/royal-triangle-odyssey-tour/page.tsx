@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
-import RoyalTriangleHero from "./components/HeroSection";
-import SuitableForSection from "./components/SuitableFor";
-import ToursLayout from "./components/ToursLayout";
-import RightBookingCard from "./components/RightBookingCard";
-import OdysseyCitiesSection from "./components/OdysseyCitiesSection";
-import OdysseyHighlightsSection from "./components/OdysseyHighlights";
-import ItinerarySection from "./components/ItinerarySection";
-import RecommendedTours from "./components/RecommendedTours";
-import Footer from "@/src/components/sections/footer/Footer";
+import RoyalTriangleHero from "./sections/hero/HeroSection";
+import SuitableForSection from "./sections/suitable-for/SuitableFor";
+import ToursLayout from "./sections/layout/ToursLayout";
+import RightBookingCard from "./sections/booking-card/RightBookingCard";
+import OdysseyCitiesSection from "./sections/odyssey-cities/OdysseyCitiesSection";
+import OdysseyHighlightsSection from "./sections/hightlights/OdysseyHighlights";
+import ItinerarySection from "./sections/itinerary/ItinerarySection";
+import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 import ExcludedServices from "../../tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
-import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
-import TourSteps from "@/src/components/tours/TourSteps";
-import CommonForm from "@/src/components/tours/CommonForm";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "Royal Triangle Odyssey Tour India | Heritage, Culture & Iconic Destinations",

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import BlogContentSection from "./components/BlogContentSection";
-import BlogExtraContentSection from "./components/BlogExtraContentSection";
-import BlogFinalSection from "./components/BlogFinalSection";
-import Moreblogs from "./components/MoreBlogs";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import BlogContentSection from "./sections/content/BlogContentSection";
+import BlogExtraContentSection from "./sections/extra-content/BlogExtraContentSection";
+import BlogFinalSection from "./sections/final-content/BlogFinalSection";
+import Moreblogs from "./sections/more-blogs/MoreBlogs";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "How the Right India Travel Agency Can Transform Your Journey | Travel Planning Guide",

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import HeritageHotelsSection from "./components/HeritageHotelsSection";
-import MoreHeritageHotelsSection from "./components/MoreHeritageHotelsSection";
-import FinalHeritageHotelsSection from "./components/FinalHeritageHotelsSection";
-import HeritageHotelsConclusionSection from "./components/HeritageHotelsConclusionSection";
-import Moreblogs from "./components/MoreBlogs";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import HeritageHotelsSection from "./sections/heritage-hotel/HeritageHotelsSection";
+import MoreHeritageHotelsSection from "./sections/more-heritage-hotel/MoreHeritageHotelsSection";
+import FinalHeritageHotelsSection from "./sections/final-heritage/FinalHeritageHotelsSection";
+import HeritageHotelsConclusionSection from "./sections/heritage-hotel-conclusion/HeritageHotelsConclusionSection";
+import Moreblogs from "./sections/more-blogs/MoreBlogs";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Best Heritage Hotels in India | Luxury Palace Stays & Royal Experiences",

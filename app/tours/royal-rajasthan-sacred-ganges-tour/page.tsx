@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
-import HeroSection from "./components/HeroSection";
-import SuitableFor from "./components/SuitableFor";
-import TourLayout from "./components/TourLayout";
-import BookingCard from "./components/BookingCard";
-import CitiesSection from "./components/CitiesSection";
-import ItinerarySection from "./components/ItinerarySection";
+import HeroSection from "./sections/hero/HeroSection";
+import SuitableFor from "./sections/suitable-for/SuitableFor";
+import TourLayout from "./sections/layout/TourLayout";
+import BookingCard from "./sections/booking-card/BookingCard";
+import CitiesSection from "./sections/cities-section/CitiesSection";
+import ItinerarySection from "./sections/itinerary/ItinerarySection";
 import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import RecommendedTours from "@/app/tours/majestic-golden-triangle-tour/components/sections/RecommendedTours";
-import Footer from "@/src/components/sections/footer/Footer";
-import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
-import TourSteps from "@/src/components/tours/TourSteps";
-import CommonForm from "@/src/components/tours/CommonForm";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "Royal Rajasthan & Sacred Ganges Tour India | Heritage, Culture & Spiritual Journey",

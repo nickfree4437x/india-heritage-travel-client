@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import HeroSection from "./components/HeroSection";
 import BlogsGrid from "./components/BlogsGrid";
-import Footer from "@/src/components/sections/footer/Footer";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: 'India Travel Blog | Heritage, Food, Solo & Honeymoon Guides',

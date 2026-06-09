@@ -1,12 +1,12 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import HoliDetails from "@/src/components/sections/festivals/festivalDetails/holi/pages/HoliDetails";
-import DiwaliDetails from "@/src/components/sections/festivals/festivalDetails/diwali/page";
-import PushkarDetails from "@/src/components/sections/festivals/festivalDetails/pushkar/PushkarDetails";
-import KumbhDetails from "@/src/components/sections/festivals/festivalDetails/kumbh/KumbhDetails";
+import HoliDetails from "@/src/sections/festivals/festivalDetails/holi/pages/HoliDetails";
+import DiwaliDetails from "@/src/sections/festivals/festivalDetails/diwali/page";
+import PushkarDetails from "@/src/sections/festivals/festivalDetails/pushkar/PushkarDetails";
+import KumbhDetails from "@/src/sections/festivals/festivalDetails/kumbh/KumbhDetails";
 
-import { festivalSeoData } from "@/src/components/sections/festivals/seoData";
+import { festivalSeoData } from "@/src/sections/festivals/seoData";
 
 type PageProps = {
   params: Promise<{

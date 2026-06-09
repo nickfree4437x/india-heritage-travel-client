@@ -1,12 +1,12 @@
 // app/blogs/solo-traveler/page.tsx
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import SlowTravelIntroSection from "./components/SlowTravelIntroSection";
-import WellnessSection from "./components/WellnessSection";
-import HiddenPlacesSection from "./components/HiddenPlacesSection";
-import PlanningSection from "./components/PlanningSection";
-import MoreBlogSection from "./components/MoreBlogs";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import SlowTravelIntroSection from "./sections/solo-traveler/SoloTravelntroSection";
+import WellnessSection from "./sections/wellness-section/WellnessSection";
+import HiddenPlacesSection from "./sections/hidden-places/HiddenPlacesSection";
+import PlanningSection from "./sections/planing-sections/PlanningSection";
+import MoreBlogSection from "./sections/more-blogs/MoreBlogs";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Solo Women Travel India | Safe, Meaningful & Empowering Travel Experiences",

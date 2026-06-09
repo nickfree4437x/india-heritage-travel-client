@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import HoneymoonContentSection from "./components/HoneymoonContentSection";
-import RomanticEscapesSection from "./components/RomanticEscapesSection";
-import HoneymoonFinalSection from "./components/HoneymoonFinalSection";
-import HoneymoonFaqSection from "./components/HoneymoonFaqSection";
-import Moreblogs from "./components/MoreBlogs";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import HoneymoonContentSection from "./sections/content/HoneymoonContentSection";
+import RomanticEscapesSection from "./sections/romantic-escapes/RomanticEscapesSection";
+import HoneymoonFinalSection from "./sections/final-content/HoneymoonFinalSection";
+import HoneymoonFaqSection from "./sections/faq/HoneymoonFaqSection";
+import Moreblogs from "./sections/more-blogs/MoreBlogs";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Best Honeymoon Tour Packages in India | Romantic & Luxury Getaways",

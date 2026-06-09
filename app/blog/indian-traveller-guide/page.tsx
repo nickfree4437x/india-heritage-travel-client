@@ -1,11 +1,11 @@
 // app/blogs/indian-traveler-guide/page.tsx
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import TravelBasicsSection from "./components/TravelBasicsSection";
-import SafetyAndMoneySection from "./components/SafetyAndMoneySection";
-import FinalTravelTipsSection from "./components/FinalTravelTipsSection";
-import Moreblogs from "./components/MoreBlogs";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import TravelBasicsSection from "./sections/travel-basics/TravelBasicsSection";
+import SafetyAndMoneySection from "./sections/safety-and-money/SafetyAndMoneySection";
+import FinalTravelTipsSection from "./sections/travel-tips/FinalTravelTipsSection";
+import Moreblogs from "./sections/more-blogs/MoreBlogs";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "First-Time Travel Guide to India | Essential Tips, Culture & Travel Advice",

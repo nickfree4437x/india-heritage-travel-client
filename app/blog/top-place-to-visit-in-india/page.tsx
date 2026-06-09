@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import SummerPlacesContentSection from "./components/SummerPlacesContentSection";
-import RishikeshSection from "./components/RishikeshSection";
-import SpitiValleySection from "./components/SpitiValleySection";
-import AndamanSection from "./components/AndamanSection";
-import LehLadakhSection from "./components/LehLadakhSection";
-import CoorgSection from "./components/CoorgSection";
-import OotySection from "./components/OotySection";
-import DarjeelingSection from "./components/DarjeelingSection";
-import AuliSection from "./components/AuliSection";
-import ShillongSection from "./components/ShillongSection";
-import Moreblogs from "./components/Moreblogs";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import SummerPlacesContentSection from "./sections/summer-paces/SummerPlacesContentSection";
+import RishikeshSection from "./sections/cities/rishikesh/RishikeshSection";
+import SpitiValleySection from "./sections/cities/spitivalley/SpitiValleySection";
+import AndamanSection from "./sections/cities/andaman/AndamanSection";
+import LehLadakhSection from "./sections/cities/leh-ladakh/LehLadakhSection";
+import CoorgSection from "./sections/cities/coorg/CoorgSection";
+import OotySection from "./sections/cities/ooty/OotySection";
+import DarjeelingSection from "./sections/cities/darjeeling/DarjeelingSection";
+import AuliSection from "./sections/cities/auli/AuliSection";
+import ShillongSection from "./sections/cities/shilong/ShillongSection";
+import Moreblogs from "./sections/more-blogs/Moreblogs";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Best Places to Visit in India | Top Travel Destinations & Experiences",

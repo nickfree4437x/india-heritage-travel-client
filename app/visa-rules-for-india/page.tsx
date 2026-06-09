@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from "@/src/components/sections/footer/Footer";
+import Footer from "@/src/sections/footer/Footer";
 
 export default function VisaRulesPage() {
   return (

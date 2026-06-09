@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import AyurvedaRetreatSection from "./components/AyurvedaRetreatSection";
-import MoreWellnessRetreatsSection from "./components/MoreWellnessRetreatsSection";
-import LuxuryRetreatFinalSection from "./components/LuxuryRetreatFinalSection";
-import Moreblogs from "./components/Moreblogs";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import AyurvedaRetreatSection from "./sections/ayurveda-retreat/AyurvedaRetreatSection";
+import MoreWellnessRetreatsSection from "./sections/wellness-retreat/MoreWellnessRetreatsSection";
+import LuxuryRetreatFinalSection from "./sections/luxury-retreat/LuxuryRetreatFinalSection";
+import Moreblogs from "./sections/more-blogs/Moreblogs";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Luxury Ayurveda Retreats in India | Wellness, Healing & Relaxation Guide",

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import Footer from "@/src/components/sections/footer/Footer";
+import Footer from "@/src/sections/footer/Footer";
 import TravelTipsContent from "./components/TravelTipsContent";
 import TravelTipsHero from "./components/TravelTipsHero";
 

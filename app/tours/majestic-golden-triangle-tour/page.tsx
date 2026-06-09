@@ -8,10 +8,10 @@ import Itinerary from "./components/itinerary/Itinerary";
 import ExcludedServices from "./components/pricing/ExcludedServices";
 import RecommendedTours from "./components/sections/RecommendedTours";
 import BookingCard from "./components/pricing/BookingCard";
-import Footer from "@/src/components/sections/footer/Footer";
-import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
-import TourSteps from "@/src/components/tours/TourSteps";
-import CommonForm from "@/src/components/tours/CommonForm";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "Golden Triangle Tour India | Delhi, Agra & Jaipur Heritage Journey",

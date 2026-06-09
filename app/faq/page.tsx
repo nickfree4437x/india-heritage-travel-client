@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-import Footer from "@/src/components/sections/footer/Footer";
+import Footer from "@/src/sections/footer/Footer";
 import FAQHero from "./FAQHero";
-import FaqSection from "@/src/components/sections/festivals/common/FAQSection";
+import FaqSection from "@/src/sections/festivals/common/FAQSection";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions | India Heritage Travel",

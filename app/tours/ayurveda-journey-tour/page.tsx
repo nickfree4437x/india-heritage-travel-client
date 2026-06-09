@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
-import AyurvedaHero from "./sections/AyurvedaHero";
-import SuitableFor from "./sections/SuitableFor";
-import AyurvedaOverview from "./sections/AyurvedaOverview";
-import TourLayout from "./sections/TourLayout";
-import RecommendedTours from "./sections/RecommendedTours";
-import Footer from "@/src/components/sections/footer/Footer";
-import CommonForm from "@/src/components/tours/CommonForm";
-import TourSteps from "@/src/components/tours/TourSteps";
+import AyurvedaHero from "./sections/hero/AyurvedaHero";
+import SuitableFor from "./sections/suitable-for/SuitableFor";
+import AyurvedaOverview from "./sections/overview/AyurvedaOverview";
+import TourLayout from "./layout/TourLayout";
+import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "Ayurveda Tour India | Wellness, Healing & Holistic Retreat Experiences",

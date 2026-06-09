@@ -12,9 +12,9 @@ import "react-datepicker/dist/react-datepicker.css";
 
 import "./globals.css";
 
-import Navbar from "@/src/components/navbar-layout/navbar/Navbar";
-import StickyPlanButton from "@/src/components/common/StickyPlanButton";
-import WhatsAppSupport from "@/src/components/common/WhatsAppSupport";
+import Navbar from "@/src/navbar-layout/navbar/Navbar";
+import StickyPlanButton from "@/src/common/StickyPlanButton";
+import WhatsAppSupport from "@/src/common/WhatsAppSupport";
 
 // Body Font
 const inter = Inter({

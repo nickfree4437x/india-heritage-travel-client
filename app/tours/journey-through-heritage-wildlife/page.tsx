@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
-import HeroSection from "./components/HeroSection";
-import SuitableFor from "./components/SuitableFor";
-import TourLayout from "./components/TourLayout";
-import CitiesSection from "./components/CitiesSection";
-import HighlightsInclusions from "./components/HighlightsInclusions";
-import ItinerarySection from "./components/ItinerarySection";
-import RecommendedTours from "./components/RecommendedTours";
+import HeroSection from "./sections/hero/HeroSection";
+import SuitableFor from "./sections/suitable-for/SuitableFor";
+import TourLayout from "./sections/layout/TourLayout";
+import CitiesSection from "./sections/city-section/CitiesSection";
+import HighlightsInclusions from "./sections/hightlights/HighlightsInclusions";
+import ItinerarySection from "./sections/itinerary/ItinerarySection";
+import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
-import Footer from "@/src/components/sections/footer/Footer";
-import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
-import TourSteps from "@/src/components/tours/TourSteps";
-import CommonForm from "@/src/components/tours/CommonForm";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "Heritage & Wildlife Tour India | Culture, Nature & Safari Experiences",

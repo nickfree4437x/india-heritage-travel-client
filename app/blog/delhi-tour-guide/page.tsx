@@ -1,10 +1,10 @@
 // app/blogs/delhi-tour-guide/page.tsx
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import DelhiGuideSection from "./components/DelhiGuideSection";
-import DelhiExtraGuideSection from "./components/DelhiExtraGuideSection";
-import Moreblogs from "./components/MoreBlogs";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import DelhiGuideSection from "./sections/guide/DelhiGuideSection";
+import DelhiExtraGuideSection from "./sections/extra-guide/DelhiExtraGuideSection";
+import Moreblogs from "./sections/more-blogs/MoreBlogs";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "New Delhi Travel Guide | Essential Tips for First-Time Visitors",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function DelhiTourGuidePage() {
   return (
-    <main className="w-full bg-[#f4f0ea]">
+    <main className="w-full bg-white">
 
       <HeroSection />
 

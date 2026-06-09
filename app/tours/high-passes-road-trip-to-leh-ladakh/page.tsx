@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
-import Footer from "@/src/components/sections/footer/Footer";
-import RecommendedTours from "../divine-kashmir-and-exciting-ladakh/components/RecommendedTours";
-import HeroSection from "./components/HeroSection";
-import SuitableFor from "./components/SuitableFor";
-import TourDetails from "./components/TourDetails";
-import TourLayout from "./components/TourLayout";
-import CommonForm from "@/src/components/tours/CommonForm";
-import TourSteps from "@/src/components/tours/TourSteps";
+import RecommendedTours from "../divine-kashmir-and-exciting-ladakh/sections/recommended-tours/RecommendedTours";
+import HeroSection from "./sections/hero/HeroSection";
+import SuitableFor from "./sections/suitable-for/SuitableFor";
+import TourDetails from "./sections/tour-details/TourDetails";
+import TourLayout from "./sections/layout/TourLayout";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "Leh Ladakh Road Trip | High Mountain Passes & Himalayan Adventure",

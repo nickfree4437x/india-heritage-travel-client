@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
-import ContactHero from "./components/ContactHero";
-import ContactInfoSection from "./components/ContactInfoSection";
-import ContactSection from "./components/ContactForm";
-import Footer from "@/src/components/sections/footer/Footer";
+import ContactHero from "./sections/hero/ContactHero";
+import ContactInfoSection from "./sections/contact-info/ContactInfoSection";
+import ContactSection from "./sections/contact-form/ContactForm";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Contact India Heritage Travel | Plan Your India Journey | WhatsApp +91 7062101914",

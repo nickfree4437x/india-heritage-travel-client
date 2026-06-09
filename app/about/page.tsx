@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import AboutHero from "./AboutHero";
-import AboutLayout from "./AboutLayout";
-import Footer from "@/src/components/sections/footer/Footer";
+import AboutHero from "./sections/hero/AboutHero";
+import AboutLayout from "./components/AboutLayout";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "About India Heritage Travel | Trusted India Tour Experts | Expert India Tour Operator",

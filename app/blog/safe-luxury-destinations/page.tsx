@@ -1,11 +1,11 @@
 // app/blogs/safe-luxury-destinations/page.tsx
 import type { Metadata } from "next";
-import HeroSection from "./components/HeroSection";
-import SafetyIntroSection from "./components/SafetyIntroSection";
-import DestinationsSection from "./components/DestinationsSection";
-import MoreDestinationsSection from "./components/MoreDestinationsSection";
-import Moreblogs from "./components/Moreblogs";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import SafetyIntroSection from "./sections/safety-intro/SafetyIntroSection";
+import DestinationsSection from "./sections/destination/DestinationsSection";
+import MoreDestinationsSection from "./sections/more-destinations/MoreDestinationsSection";
+import Moreblogs from "./sections/more-blogs/Moreblogs";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Safe Luxury Destinations in India | Premium Travel Experiences & Hidden Gems",

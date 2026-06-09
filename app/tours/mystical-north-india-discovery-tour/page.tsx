@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
-import HeroSection from "./components/HeroSection";
-import SuitableFor from "./components/SuitableFor";
-import BookingCard from "./components/BookingCard";
-import DestinationSection from "./components/DestinationSection";
-import RecommendedTours from "./components/RecommendedTours";
-import TourLayout from "./components/TourLayout";
-import HighlightsInclusions from "./components/HighlightsInclusions";
-import Itinerary from "./components/Itinerary";
+import HeroSection from "./sections/hero/HeroSection";
+import SuitableFor from "./sections/suitable-for/SuitableFor";
+import BookingCard from "./sections/booking-card/BookingCard";
+import DestinationSection from "./sections/destination-section/DestinationSection";
+import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
+import TourLayout from "./sections/layout/TourLayout";
+import HighlightsInclusions from "./sections/hightlights/HighlightsInclusions";
+import Itinerary from "./sections/itinerary/Itinerary";
 import ExcludedServices from "../majestic-golden-triangle-tour/components/pricing/ExcludedServices";
-import Footer from "@/src/components/sections/footer/Footer";
-import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
-import TourSteps from "@/src/components/tours/TourSteps";
-import CommonForm from "@/src/components/tours/CommonForm";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "North India Discovery Tour | Culture, Heritage & Spiritual Journeys",

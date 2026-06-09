@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
-import HeroSection from "./components/HeroSection";
-import RegionsSection from "./components/RegionsSection";
-import JourneyFormSection from "./components/customize-form/JourneyFormSection";
-import Footer from "@/src/components/sections/footer/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import RegionsSection from "./sections/regions/RegionsSection";
+import JourneyFormSection from "./sections/journey-form/JourneyFormSection";
+import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Customize Your India Tour | Tailor-Made India Travel Packages | Free Consultation",

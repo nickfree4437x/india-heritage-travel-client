@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 
-import HeroSection from "./components/HeroSection";
-import SuitableFor from "./components/SuitableFor";
-import TourDetails from "./components/TourDetails";
-import TourLayout from "./components/TourLayout";
-import RecommendedTours from "./components/RecommendedTours";
+import HeroSection from "./sections/hero/HeroSection";
+import SuitableFor from "./sections/suitablefor/SuitableFor";
+import TourDetails from "./sections/tour-details/TourDetails";
+import TourLayout from "./sections/layout/TourLayout";
+import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
-import Footer from "@/src/components/sections/footer/Footer";
-import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
-import CommonForm from "@/src/components/tours/CommonForm";
-import TourSteps from "@/src/components/tours/TourSteps";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "Kashmir & Ladakh Tour Package | Mountains, Lakes & Himalayan Adventures",

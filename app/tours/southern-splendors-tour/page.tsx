@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
-import HeroSection from "./components/HeroSection";
-import SuitableFor from "./components/SuitableFor";
-import TourLayout from "./components/TourLayout";
-import BookingCard from "./components/BookingCard";
-import TourContent from "./components/TourContent";
-import DetailedItinerary from "./components/DetailedItinerary";
-import HightlightSection from "./components/HightlightSection";
+import HeroSection from "./sections/hero/HeroSection";
+import SuitableFor from "./sections/suitable-for/SuitableFor";
+import TourLayout from "./sections/layout/TourLayout";
+import BookingCard from "./sections/booking-card/BookingCard";
+import TourContent from "./sections/tour-content/TourContent";
+import DetailedItinerary from "./sections/itinerary/DetailedItinerary";
+import HightlightSection from "./sections/hightlights/HightlightSection";
 import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import RecommendedTours from "@/app/tours/majestic-golden-triangle-tour/components/sections/RecommendedTours";
-import Footer from "@/src/components/sections/footer/Footer";
-import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
-import CommonForm from "@/src/components/tours/CommonForm";
-import TourSteps from "@/src/components/tours/TourSteps";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 
 export const metadata: Metadata = {
   title: "Southern Splendors Tour India | Heritage, Culture & Scenic Journeys",
