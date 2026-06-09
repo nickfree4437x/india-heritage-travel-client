@@ -15,9 +15,12 @@ import SoloTravelSection from "@/src/sections/solo-trip/Solo";
 
 export const metadata: Metadata = {
   title:
-    "India Heritage Travel | Luxury Heritage Tours India | Solo Women Travel",
+    "India Heritage Travel | Luxury Heritage Tours India | Tailor-Made India Tours",
   description:
     "Experience India's rich heritage with a trusted local guide. From Golden Triangle to Kerala backwaters - personalized tours for solo women, couples & families. Free itinerary consultation. Book now!",
+  alternates: {
+    canonical: "https://indiaheritagetravel.com",
+  },
 };
 
 export default function Home() {

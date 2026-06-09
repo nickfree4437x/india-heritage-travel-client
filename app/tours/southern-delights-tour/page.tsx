@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Southern Delights Tour India | Temples, Culture & South India Experiences",
   description:
     "Explore the cultural richness of South India through historic temples, scenic landscapes, local traditions, authentic cuisine, and unforgettable travel experiences.",
+  alternates: {
+    canonical: "/tours/southern-delights-tour",
+  },
 };
 
 export default function RoyalRajasthanPage() {

@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Yoga Retreat Tour India | Wellness, Meditation & Spiritual Experiences",
   description:
     "Reconnect your mind and body through yoga sessions, meditation practices, wellness retreats, spiritual experiences, and peaceful journeys across India.",
+  alternates: {
+    canonical: "/tours/yoga-escapes-tour",
+  },
 };
 
 export default function YogaEscapesPage() {

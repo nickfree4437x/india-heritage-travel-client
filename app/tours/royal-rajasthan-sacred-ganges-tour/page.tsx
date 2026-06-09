@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Royal Rajasthan & Sacred Ganges Tour India | Heritage, Culture & Spiritual Journey",
   description:
     "Experience the royal heritage of Rajasthan and the spiritual beauty of the sacred Ganges through cultural landmarks, historic cities, local traditions, and unforgettable journeys across India.",
+  alternates: {
+    canonical: "/tours/royal-rajasthan-sacred-ganges-tour",
+  },
 };
 
 export default function RoyalRajasthanPage() {

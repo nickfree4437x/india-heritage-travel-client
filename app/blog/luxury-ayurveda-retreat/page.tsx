@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Luxury Ayurveda Retreats in India | Wellness, Healing & Relaxation Guide",
   description:
     "Explore India's finest luxury Ayurveda retreats offering holistic healing, wellness therapies, yoga experiences, relaxation programs, and rejuvenating escapes.",
+  alternates: {
+    canonical: "/blog/luxury-ayurveda-retreat",
+  },
 };
 
 export default function BlogDetailsPage() {

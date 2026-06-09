@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Southern Splendors Tour India | Heritage, Culture & Scenic Journeys",
   description:
     "Discover the heritage, architecture, natural beauty, and cultural traditions of South India through a carefully curated and immersive travel experience.",
+  alternates: {
+    canonical: "/tours/southern-splendors-tour",
+  },
 };
 
 export default function RoyalRajasthanPage() {

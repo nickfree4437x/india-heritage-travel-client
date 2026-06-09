@@ -10,14 +10,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'India Travel Blog | Heritage Travel Guides',
     description: 'Discover hidden gems, local experiences & wellness journeys across India.',
-    url: 'https://www.indiaheritagetravel.com/blog',
+    url: 'https://indiaheritagetravel.com/blog',
     siteName: 'India Heritage Travel',
+  },
+  alternates: {
+    canonical: "/blog",
   },
 }
 
 export default function BlogsPage() {
   return (
-    <main className="w-full bg-[#f4f0ea]">
+    <main className="w-full bg-white">
       <HeroSection />
       <BlogsGrid />
       <Footer/>

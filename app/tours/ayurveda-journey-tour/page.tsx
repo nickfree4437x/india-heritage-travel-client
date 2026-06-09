@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Ayurveda Tour India | Wellness, Healing & Holistic Retreat Experiences",
   description:
     "Experience authentic Ayurveda therapies, holistic healing, wellness treatments, yoga practices, and rejuvenating journeys designed to restore balance and well-being.",
+  alternates: {
+    canonical: "/tours/ayurveda-journey-tour",
+  },
 };
 
 export default function AyurvedaJourneyPage() {

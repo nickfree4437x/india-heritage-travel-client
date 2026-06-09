@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "North India Discovery Tour | Culture, Heritage & Spiritual Journeys",
   description:
     "Discover the cultural, spiritual, and historical wonders of North India through heritage landmarks, local traditions, iconic destinations, and immersive travel experiences.",
+  alternates: {
+    canonical: "/tours/mystical-north-india-discovery-tour",
+  },
 };
 
 export default function Page() {

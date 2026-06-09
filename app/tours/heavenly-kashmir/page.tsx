@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Heavenly Kashmir Tour Package | Lakes, Valleys & Scenic Experiences",
   description:
     "Discover the beauty of Kashmir through peaceful lakes, lush valleys, mountain views, local culture, and unforgettable travel experiences in one of India's most stunning destinations.",
+  alternates: {
+    canonical: "/tours/heavenly-kashmir-tour",
+  },
 };
 
 export default function RoyalRajasthanPage() {

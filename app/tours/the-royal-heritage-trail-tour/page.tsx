@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "Royal Heritage Trail Tour India | Palaces, Forts & Cultural Experiences",
   description:
     "Explore India's royal heritage through magnificent palaces, historic forts, cultural landmarks, local traditions, and immersive travel experiences across iconic destinations.",
+  alternates: {
+    canonical: "/tours/the-royal-heritage-trail-tour",
+  },
 };
 
 export default function RoyalRajasthanPage() {

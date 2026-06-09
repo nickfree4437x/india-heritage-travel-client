@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Heritage Odyssey Tour India | Royal Palaces, Culture & Historic Landmarks",
   description:
     "Experience India's rich heritage through magnificent palaces, historic landmarks, cultural traditions, architectural wonders, and unforgettable journeys across iconic destinations.",
+  alternates: {
+    canonical: "/tours/heritage-odyssey-tour",
+  },
 };
 
 export default function RoyalRajasthanPage() {

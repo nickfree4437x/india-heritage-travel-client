@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Indian Food Guide | What to Eat, What to Avoid & Travel Food Tips",
   description:
     "Discover India's diverse cuisine with essential food recommendations, local specialties, travel dining tips, and practical advice on what to eat and avoid during your journey.",
+  alternates: {
+    canonical: "/blog/india-food-guide",
+  },
 };
 
 export default function IndiaFoodGuidePage() {

@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Spiti Valley Trek & Tour India | Himalayan Landscapes & Adventure Journey",
   description:
     "Experience the rugged beauty of Spiti Valley through scenic treks, mountain villages, monasteries, dramatic landscapes, and unforgettable Himalayan adventures.",
+  alternates: {
+    canonical: "/tours/spiti-valley-trek-and-tour",
+  },
 };
 
 export default function RoyalRajasthanPage() {

@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   title: "Rajasthan Heritage Retreat Tour | Royal Palaces, Culture & Heritage",
   description:
     "Explore the royal heritage of Rajasthan through majestic forts, historic palaces, vibrant culture, local traditions, and unforgettable travel experiences across India's most iconic destinations.",
+  alternates: {
+    canonical: "/tours/rajasthani-heritage-retreat-tour",
+  },
 };
 
 export default function Page() {

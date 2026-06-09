@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Solo Women Travel India | Safe India Tours for Women | Trusted Women's India Tours",
   description:
     "Travel India solo as a woman - safely, confidently, beautifully. Isha personally plans every trip. 24/7 WhatsApp support. Real testimonials from 100+ solo women. Start your India journey today.",
+    alternates: {
+    canonical: "/solo-women-travel",
+  },
 };
 
 export default function SoloTripPage() {

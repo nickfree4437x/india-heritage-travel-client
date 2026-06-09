@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "How the Right India Travel Agency Can Transform Your Journey | Travel Planning Guide",
   description:
     "Learn how expert travel planning, local knowledge, personalized itineraries, and trusted guidance can turn your India journey into a seamless experience.",
+  alternates: {
+    canonical: "/blog/chaos-your-journeys",
+  },
 };
 
 export default function BlogDetailsPage() {

@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Luxury India Tour Itinerary | Ultimate 10-Day Premium Travel Experience",
   description:
     "Discover the ultimate luxury India itinerary featuring royal palaces, heritage hotels, cultural landmarks, premium experiences, and unforgettable journeys across iconic destinations.",
+  alternates: {
+    canonical: "/blog/ultimate-luxury-india",
+  },
 };
 
 export default function BlogDetailsPage() {

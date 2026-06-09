@@ -40,13 +40,13 @@ export async function generateMetadata({
     description: seo.description,
 
     alternates: {
-      canonical: `https://www.indiaheritagetravel.com/festivals/${slug}`,
+      canonical: `/festivals/${slug}`,
     },
 
     openGraph: {
       title: seo.title,
       description: seo.description,
-      url: `https://www.indiaheritagetravel.com/festivals/${slug}`,
+      url: `/festivals/${slug}`,
       type: "website",
       images: [
         {

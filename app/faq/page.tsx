@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Frequently Asked Questions | India Heritage Travel",
   description:
     "Find answers to common questions about India tours, bookings, transportation, safety, accommodations, and travel planning.",
+    alternates: {
+    canonical: "/faq",
+  },
 };
 
 export default function FAQPage() {

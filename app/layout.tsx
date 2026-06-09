@@ -39,6 +39,7 @@ const caveatBrush = Caveat_Brush({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://indiaheritagetravel.com"),
   title: "India Heritage Travel",
   description: "Explore Incredible India Journeys",
 };

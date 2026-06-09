@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Royal Triangle Odyssey Tour India | Heritage, Culture & Iconic Destinations",
   description:
     "Explore India's rich heritage, cultural landmarks, historic cities, and unforgettable experiences through a carefully curated Royal Triangle journey across iconic destinations.",
+  alternates: {
+    canonical: "/tours/royal-triangle-odyssey-tour",
+  },
 };
 
 export default function RoyalRajasthanPage() {

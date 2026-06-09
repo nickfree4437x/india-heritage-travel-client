@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Best Honeymoon Tour Packages in India | Romantic & Luxury Getaways",
   description:
     "Explore romantic honeymoon destinations in India featuring luxury stays, cultural experiences, scenic landscapes, personalized itineraries, and unforgettable memories.",
+  alternates: {
+    canonical: "/blog/honeymoon-tour-package",
+  },
 };
 
 export default function BlogDetailsPage() {

@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "First-Time Travel Guide to India | Essential Tips, Culture & Travel Advice",
   description:
     "Plan your India journey with practical travel tips, cultural insights, destination recommendations, safety advice, and essential information for first-time visitors.",
+  alternates: {
+    canonical: "/blog/indian-traveller-guide",
+  },
 };
 
 export default function IndianTravelerGuidePage() {

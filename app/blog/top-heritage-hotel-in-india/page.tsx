@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Best Heritage Hotels in India | Luxury Palace Stays & Royal Experiences",
   description:
     "Discover India's most iconic heritage hotels featuring royal palaces, luxury accommodations, cultural experiences, historic architecture, and unforgettable hospitality.",
+  alternates: {
+    canonical: "/blog/top-heritage-hotel-in-india",
+  },
 };
 
 export default function BlogDetailsPage() {

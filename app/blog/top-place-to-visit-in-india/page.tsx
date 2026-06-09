@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Best Places to Visit in India | Top Travel Destinations & Experiences",
   description:
     "Discover the best places to visit in India, from scenic mountains and cultural landmarks to heritage cities, beaches, and unforgettable travel experiences.",
+  alternates: {
+    canonical: "/blog/top-place-to-visit-in-india",
+  },
 };
 
 export default function BlogDetailsPage() {

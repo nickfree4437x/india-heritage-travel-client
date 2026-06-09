@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "South India Coastal & Mountain Tour | Beaches, Hills & Cultural Experiences",
   description:
     "Discover the beauty of South India through scenic coastlines, misty mountains, cultural heritage, local traditions, and unforgettable travel experiences across diverse destinations.",
+  alternates: {
+    canonical: "/tours/coastal-treasures-mountain-magic-tour",
+  },
 };
 
 export default function Page() {

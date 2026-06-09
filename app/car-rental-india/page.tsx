@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Car Rental India With Driver | India Heritage Travel | Rajasthan Road Trips",
   description:
     "Hire a car with driver in India - safe, reliable, affordable. Explore Rajasthan, Golden Triangle & beyond at your pace. English-speaking drivers. Flexible hire - hourly to multi-day. Book now!",
+    alternates: {
+      canonical: "/car-rental-india",
+    },
 };
 
 export default function RentCarPage() {

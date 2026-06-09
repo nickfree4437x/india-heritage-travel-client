@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "About India Heritage Travel | Trusted India Tour Experts | Expert India Tour Operator",
   description:
     "Meet Piyush & Isha - India Heritage Travel passionate team. Jaipur-based experts specializing in solo women travel, heritage tours & cultural India experiences. 200+ happy travelers. Know our story.",
+    alternates: {
+      canonical: "/about",
+    },
 };
 
 export default function AboutPage() {

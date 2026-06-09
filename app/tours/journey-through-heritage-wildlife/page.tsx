@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Heritage & Wildlife Tour India | Culture, Nature & Safari Experiences",
   description:
     "Experience the perfect blend of India's cultural heritage and wildlife adventures through historic landmarks, natural landscapes, safari experiences, and unforgettable journeys.",
+  alternates: {
+    canonical: "/tours/journey-through-heritage-wildlife",
+  },
 };
 
 export default function RoyalRajasthanPage() {

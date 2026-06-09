@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: "Kashmir & Ladakh Tour Package | Mountains, Lakes & Himalayan Adventures",
   description:
     "Explore the breathtaking beauty of Kashmir and Ladakh through scenic valleys, mountain landscapes, monasteries, lakes, cultural experiences, and unforgettable Himalayan journeys.",
+  alternates: {
+    canonical: "/tours/divine-kashmir-and-exciting-ladakh-tour",
+  },
 };
 
 export default function RoyalRajasthanPage() {

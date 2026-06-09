@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Safe Luxury Destinations in India | Premium Travel Experiences & Hidden Gems",
   description:
     "Explore safe and luxurious destinations across India featuring heritage stays, cultural experiences, scenic landscapes, personalized journeys, and premium hospitality.",
+  alternates: {
+    canonical: "/blog/safe-luxury-destinations",
+  },
 };
 
 export default function SafeLuxuryDestinationsPage() {
