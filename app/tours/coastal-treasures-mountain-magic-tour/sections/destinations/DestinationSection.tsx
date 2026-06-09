@@ -1,16 +1,16 @@
 "use client";
 
-import TourLayout from "./tour/TourLayout";
+import TourLayout from "../layout/TourLayout";
 
-import Cochin from "./destinations/Cochin";
-import Alleppey from "./destinations/Alleppey";
-import Thekkady from "./destinations/Thekkady";
-import Munnar from "./destinations/Munnar";
-import Mumbai from "./destinations/Mumbai";
-import HighlightsInclusions from "./HighlightsInclusions";
-import DetailedItinerary from "./DetailedItinerary";
-import ExcludedServices from "../../majestic-golden-triangle-tour/components/pricing/ExcludedServices";
-import DetailedItineraryIntro from "@/src/components/tours/DetailedItinerary";
+import Cochin from "./Cochin";
+import Alleppey from "./Alleppey";
+import Thekkady from "./Thekkady";
+import Munnar from "./Munnar";
+import Mumbai from "./Mumbai";
+import HighlightsInclusions from "../highlights/HighlightsInclusions";
+import DetailedItinerary from "../itinerary/DetailedItinerary";
+import ExcludedServices from "../../../majestic-golden-triangle-tour/components/pricing/ExcludedServices";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
 
 export default function DestinationSection() {
   return (

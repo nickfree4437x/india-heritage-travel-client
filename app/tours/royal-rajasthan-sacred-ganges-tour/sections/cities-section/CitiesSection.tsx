@@ -1,7 +1,7 @@
 "use client";
 
-import CitySection from "./CitySection";
-import HighlightsSection from "./HighlightsSection";
+import CitySection from "../city-section/CitySection";
+import HighlightsSection from "../hightlights/HighlightsSection";
 
 const citiesData = [
   {

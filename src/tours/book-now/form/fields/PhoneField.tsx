@@ -2,7 +2,7 @@
 
 import Select from "react-select";
 
-import { CountryOption } from "./types";
+import { CountryOption } from "../types/types";
 
 type Props = {
   countries: CountryOption[];

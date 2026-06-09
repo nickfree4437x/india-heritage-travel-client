@@ -6,7 +6,7 @@ import React from "react";
 import BookNowHeader from "./book-now/form/BookNowHeader";
 import BookNowForm from "./book-now/form/BookNowForm";
 
-import { CountryOption } from "./book-now/types";
+import { CountryOption } from "./book-now/form/types/types";
 
 type Props = {
   tourName: string;
