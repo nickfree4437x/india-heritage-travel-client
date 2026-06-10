@@ -247,7 +247,7 @@ export default function Footer() {
                 Pay Now
               </span>
 
-              <div className="text-xs text-white/90 mt-1">
+              <div className="text-xs text-white mt-1">
                 Secured by Razorpay
               </div>
             </button>
