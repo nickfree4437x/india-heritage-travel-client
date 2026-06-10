@@ -8,7 +8,6 @@ import { useEffect, useRef } from "react";
 // ============================================================================
 
 type Props = {
-  videoProgress: number;
   isHovering: boolean;
 };
 
@@ -17,7 +16,6 @@ type Props = {
 // ============================================================================
 
 export default function HeroBackground({
-  videoProgress,
   isHovering,
 }: Props) {
 
@@ -35,7 +33,6 @@ export default function HeroBackground({
   // EFFECTS
   // ==========================================================================
 
-  // FORCE AUTOPLAY FOR IOS + INSTAGRAM BROWSER
   useEffect(() => {
 
     const setupVideo = async (
@@ -85,28 +82,15 @@ export default function HeroBackground({
 
     };
 
-    setupVideo(desktopVideoRef.current);
+    setupVideo(
+      desktopVideoRef.current
+    );
 
-    setupVideo(mobileVideoRef.current);
+    setupVideo(
+      mobileVideoRef.current
+    );
 
   }, []);
-
-  // ==========================================================================
-  // RENDER HELPERS
-  // ==========================================================================
-
-  const getVideoFilter = (
-    progress: number
-  ) => ({
-
-    filter: `
-      brightness(${0.85 + progress * 0.1})
-      contrast(${1.05 + Math.sin(progress * Math.PI * 2) * 0.03})
-    `,
-
-    WebkitTransform: "translateZ(0)",
-
-  });
 
   // ==========================================================================
   // MAIN RENDER
@@ -116,14 +100,16 @@ export default function HeroBackground({
     <>
 
       {/* ====================================================================
-          VIDEO BACKGROUND WITH SCALE ANIMATION
+          VIDEO BACKGROUND
       ==================================================================== */}
 
       <motion.div
         className="absolute inset-0"
-        initial={{ scale: 1.2 }}
+        initial={{ scale: 1.05 }}
         animate={{
-          scale: isHovering ? 1.02 : 1.05,
+          scale: isHovering
+            ? 1.02
+            : 1.05,
         }}
         transition={{
           scale: {
@@ -151,7 +137,10 @@ export default function HeroBackground({
             object-cover
             pointer-events-none
           "
-          style={getVideoFilter(videoProgress)}
+          style={{
+            filter:
+              "brightness(0.9) contrast(1.05)",
+          }}
         >
 
           <source
@@ -179,7 +168,10 @@ export default function HeroBackground({
             object-cover
             pointer-events-none
           "
-          style={getVideoFilter(videoProgress)}
+          style={{
+            filter:
+              "brightness(0.9) contrast(1.05)",
+          }}
         >
 
           <source
@@ -192,153 +184,16 @@ export default function HeroBackground({
       </motion.div>
 
       {/* ====================================================================
-          DARK OVERLAY - ANIMATED GRADIENT
+          DARK OVERLAY
       ==================================================================== */}
 
-      <motion.div
+      <div
         className="absolute inset-0"
-        animate={{
-          background: [
-
-            "linear-gradient(145deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.15) 100%)",
-
-            "linear-gradient(125deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.03) 50%, rgba(0,0,0,0.2) 100%)",
-
-            "linear-gradient(145deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.15) 100%)",
-
-          ],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
+        style={{
+          background:
+            "linear-gradient(145deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0.20) 100%)",
         }}
       />
-
-      {/* ====================================================================
-          SOFT RADIAL GLOW - MOVING LIGHT SOURCE
-      ==================================================================== */}
-
-      <motion.div
-        className="absolute inset-0 pointer-events-none"
-        animate={{
-          background: [
-
-            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.12) 0%, transparent 60%)",
-
-            "radial-gradient(circle at 70% 50%, rgba(203,178,153,0.15) 0%, transparent 60%)",
-
-            "radial-gradient(circle at 50% 50%, rgba(203,178,153,0.1) 0%, transparent 60%)",
-
-            "radial-gradient(circle at 30% 50%, rgba(203,178,153,0.12) 0%, transparent 60%)",
-
-          ],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-
-      {/* ====================================================================
-          PULSING GLOW OVERLAY
-      ==================================================================== */}
-
-      <motion.div
-        className="absolute inset-0 pointer-events-none"
-        animate={{
-          opacity: [0.2, 0.45, 0.2],
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      >
-
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_40%,rgba(203,178,153,0.15),transparent_70%)]" />
-
-      </motion.div>
-
-      {/* ====================================================================
-          MOVING LIGHT BEAM - SCANNING EFFECT
-      ==================================================================== */}
-
-      <motion.div className="absolute inset-0 pointer-events-none overflow-hidden">
-
-        <motion.div
-          className="
-            absolute top-0
-            h-full w-[25%]
-            bg-gradient-to-r
-            from-transparent
-            via-white/12
-            to-transparent
-            blur-2xl
-          "
-          animate={{
-            x: ["-100%", "200%"],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
-
-      </motion.div>
-
-      {/* ====================================================================
-          TOP AURORA EFFECT
-      ==================================================================== */}
-
-      <motion.div
-        className="
-          absolute top-0 left-0
-          w-full h-[50%]
-          pointer-events-none
-        "
-        animate={{
-          opacity: [0.08, 0.22, 0.08],
-          y: [0, -10, 0],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      >
-
-        <div className="w-full h-full bg-gradient-to-b from-[#CBB299]/15 via-white/8 to-transparent" />
-
-      </motion.div>
-
-      {/* ====================================================================
-          BOTTOM GLOW EFFECT
-      ==================================================================== */}
-
-      <motion.div
-        className="
-          absolute bottom-0 left-0
-          w-full h-[30%]
-          pointer-events-none
-        "
-        animate={{
-          opacity: [0.08, 0.18, 0.08],
-          y: [0, 8, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 0.5,
-        }}
-      >
-
-        <div className="w-full h-full bg-gradient-to-t from-[#CBB299]/15 to-transparent" />
-
-      </motion.div>
 
     </>
   );
