@@ -102,12 +102,12 @@ export default function WelcomeSection() {
         ==================================================================== */}
         <div className="flex flex-col items-center text-center max-w-[5500px] mx-auto md:ml-12 md:pr-6">
           {/* Namaste greeting */}
-          <motion.h3
+          <motion.p
             variants={headingVariants}
             className="text-[#9b7a50] text-[16px] sm:text-[20px] md:text-[22px] font-medium tracking-wide mb-3 sm:mb-4"
           >
             Namaste!
-          </motion.h3>
+          </motion.p>
 
           {/* Main heading */}
           <motion.h2
@@ -130,9 +130,9 @@ export default function WelcomeSection() {
           <div className="space-y-6 sm:space-y-8 md:space-y-10 text-gray-800 text-[13px] sm:text-[14px] md:text-[15px] font-light tracking-wide leading-relaxed max-w-[620px]">
             {/* Feature 1: Essence */}
             <motion.div variants={itemVariants}>
-              <h4 className="text-[#8b6b47] font-medium text-[13px] sm:text-[15px] md:text-[15px] mb-1">
+              <h3 className="text-[#8b6b47] font-medium text-[13px] sm:text-[15px] md:text-[15px] mb-1">
                 Feel the essence
-              </h4>
+              </h3>
               <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[320px] sm:max-w-[600px] mx-auto">
                 With vibrant festivals, colorful landscapes, and the unique
                 charm of India's rich traditions.
@@ -141,9 +141,9 @@ export default function WelcomeSection() {
 
             {/* Feature 2: Self discovery */}
             <motion.div variants={itemVariants}>
-              <h4 className="text-[#8b6b47] font-medium text-[13px] sm:text-[15px] md:text-[15px] mb-1 -mt-5">
+              <h3 className="text-[#8b6b47] font-medium text-[13px] sm:text-[15px] md:text-[15px] mb-1 -mt-5">
                 Discover yourself
-              </h4>
+              </h3>
               <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[350px] sm:max-w-[600px] mx-auto">
                 In serene yoga retreats, spiritual journeys, and the peaceful
                 rhythm of ancient practices.
@@ -152,9 +152,9 @@ export default function WelcomeSection() {
 
             {/* Feature 3: Exploration */}
             <motion.div variants={itemVariants}>
-              <h4 className="text-[#8b6b47] font-medium text-[13px] sm:text-[15px] md:text-[15px] mb-1 -mt-5">
+              <h3 className="text-[#8b6b47] font-medium text-[13px] sm:text-[15px] md:text-[15px] mb-1 -mt-5">
                 Explore with us
-              </h4>
+              </h3>
               <p className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[320px] sm:max-w-[600px] mx-auto">
                 From the towering peaks of the Himalayas to the tranquil
                 backwaters of Kerala, majestic forts, palaces, and ancient
@@ -178,6 +178,7 @@ export default function WelcomeSection() {
               loop
               muted
               playsInline
+              preload="none"
               className="w-full h-full object-cover"
             />
 
