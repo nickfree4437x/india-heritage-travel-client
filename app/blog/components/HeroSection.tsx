@@ -135,6 +135,7 @@ export default function HeroSection() {
               {/* BUTTON */}
               <div className="mt-7 sm:mt-10 flex justify-center">
                 <button
+                  aria-label="Read more about this article"
                   className="
                     border
                     font-[300]
@@ -167,88 +168,102 @@ export default function HeroSection() {
 
       {/* LEFT ARROW */}
       <button
-        onClick={prevSlide}
-        className="
-          absolute
-          left-3
-          sm:left-8
+      onClick={prevSlide}
+      aria-label="Previous slide"
+      title="Previous slide"
+      className="
+        absolute
+        left-3
+        sm:left-8
 
-          top-[58%]
-          sm:top-1/2
+        top-[58%]
+        sm:top-1/2
 
-          -translate-y-1/2
-          z-40
+        -translate-y-1/2
+        z-40
 
-          h-9
-          w-9
-          sm:h-12
-          sm:w-12
+        h-9
+        w-9
+        sm:h-12
+        sm:w-12
 
-          rounded-full
-          border
-          border-white/20
-          bg-white/5
-          backdrop-blur-sm
+        rounded-full
+        border
+        border-white/20
+        bg-white/5
+        backdrop-blur-sm
 
-          flex
-          items-center
-          justify-center
+        flex
+        items-center
+        justify-center
 
-          text-white
-          transition-all
-          duration-300
-        "
-      >
-        <ChevronLeft size={18} className="sm:w-[22px] sm:h-[22px]" />
-      </button>
+        text-white
+        transition-all
+        duration-300
+      "
+    >
+      <ChevronLeft
+        aria-hidden="true"
+        size={18}
+        className="sm:w-[22px] sm:h-[22px]"
+      />
+    </button>
 
       {/* RIGHT ARROW */}
       <button
-        onClick={nextSlide}
-        className="
-          absolute
-          right-3
-          sm:right-8
+      onClick={nextSlide}
+      aria-label="Next slide"
+      title="Next slide"
+      className="
+        absolute
+        right-3
+        sm:right-8
 
-          top-[58%]
-          sm:top-1/2
+        top-[58%]
+        sm:top-1/2
 
-          -translate-y-1/2
-          z-40
+        -translate-y-1/2
+        z-40
 
-          h-9
-          w-9
-          sm:h-12
-          sm:w-12
+        h-9
+        w-9
+        sm:h-12
+        sm:w-12
 
-          rounded-full
-          border
-          border-white/20
-          bg-white/5
-          backdrop-blur-sm
+        rounded-full
+        border
+        border-white/20
+        bg-white/5
+        backdrop-blur-sm
 
-          flex
-          items-center
-          justify-center
+        flex
+        items-center
+        justify-center
 
-          text-white
-          transition-all
-          duration-300
-        "
-      >
-        <ChevronRight size={18} className="sm:w-[22px] sm:h-[22px]" />
-      </button>
+        text-white
+        transition-all
+        duration-300
+      "
+    >
+      <ChevronRight
+        aria-hidden="true"
+        size={18}
+        className="sm:w-[22px] sm:h-[22px]"
+      />
+    </button>
 
       {/* BOTTOM AREA */}
       <div className="absolute bottom-6 sm:bottom-8 left-0 right-0 z-40">
 
         {/* DOTS */}
         <div className="flex items-center justify-center gap-2 sm:gap-3">
-
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrent(index)}
+              aria-label={`Go to slide ${index + 1}`}
+              title={`Go to slide ${index + 1}`}
+              aria-current={index === current ? "true" : undefined}
               className={`transition-all duration-500 rounded-full ${
                 index === current
                   ? "w-10 sm:w-12 h-[3px] bg-white"
