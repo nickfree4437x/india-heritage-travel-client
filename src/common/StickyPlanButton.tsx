@@ -5,83 +5,63 @@ import { useEffect, useState } from "react";
 import PlanTrip from "./PlanTripModal/PlanTripForm";
 
 export default function StickyPlanButton() {
+  const [open, setOpen] = useState(false);
 
-  const [open, setOpen] =
-    useState(false);
-
-  const [wiggle, setWiggle] =
-    useState(false);
+  const [wiggle, setWiggle] = useState(false);
 
   // AUTO WIGGLE EVERY FEW SECONDS
   useEffect(() => {
-
     const interval = setInterval(() => {
-
       setWiggle(true);
 
       setTimeout(() => {
         setWiggle(false);
       }, 1200);
-
     }, 3200);
 
-    return () =>
-      clearInterval(interval);
-
+    return () => clearInterval(interval);
   }, []);
 
   return (
-
     <>
-
       {/* DESKTOP STICKY BUTTON */}
       <div
         className="
           hidden
           md:block
-
           fixed
           left-4
           top-1/2
-
           -translate-y-1/2
-
           z-[9999]
         "
       >
-
         <button
           onClick={() => setOpen(true)}
           className={`
             relative
-
             overflow-hidden
 
-            bg-[#a88454]
-
+            bg-[#8f6d42]
             text-white
 
             px-[15px]
             py-6
 
             rounded-sm
-
             shadow-sm
 
             tracking-[2px]
 
             text-[14px]
-            lg:text-[15px]
-
-            font-[450]
 
             transition-all
             duration-500
 
             border
-            border-[#c6a06c]
+            border-[#b88c56]
 
-            hover:bg-[#8f6d42]
+            hover:bg-[#755532]
             hover:pl-[20px]
 
             ${
@@ -94,14 +74,12 @@ export default function StickyPlanButton() {
             writingMode: "vertical-rl",
             transform: "rotate(180deg)",
           }}
+          aria-label="Plan Your Trip"
         >
-
-          <span className="relative z-10">
+          <span className="relative z-10 text-[#fffdf8]">
             Plan Your Trip
           </span>
-
         </button>
-
       </div>
 
       {/* MOBILE BUTTON */}
@@ -120,38 +98,33 @@ export default function StickyPlanButton() {
           w-[35%]
         "
       >
-
         <button
           onClick={() => setOpen(true)}
           className={`
             relative
-
             overflow-hidden
 
             w-full
 
-            bg-[#a88454]
-
+            bg-[#8f6d42]
             text-white
 
-            py-3
+            py-2.5
 
             rounded-sm
-
             shadow-sm
 
             tracking-[1px]
 
-            text-[14px]
+            text-[12px]
 
             transition-all
             duration-500
 
             border
-            border-[#c6a06c]
+            border-[#b88c56]
 
-            hover:bg-[#8f6d42]
-
+            hover:bg-[#755532]
 
             ${
               wiggle
@@ -159,14 +132,12 @@ export default function StickyPlanButton() {
                 : ""
             }
           `}
+          aria-label="Plan Your Trip"
         >
-
-          <span className="relative z-10">
+          <span className="relative z-10 text-[#fffdf8]">
             Plan Your Trip
           </span>
-
         </button>
-
       </div>
 
       {/* MODAL */}
@@ -174,9 +145,6 @@ export default function StickyPlanButton() {
         open={open}
         onClose={() => setOpen(false)}
       />
-
     </>
-
   );
-
 }

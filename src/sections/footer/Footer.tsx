@@ -229,9 +229,25 @@ export default function Footer() {
           </h3>
 
           <div className="text-center sm:text-left">
-            <button className="bg-blue-600 hover:bg-blue-700 transition px-4 py-2 rounded-md text-xs text-gray-300 mb-4 sm:mb-6">
-              Pay Now
-              <div className="text-xs text-gray-300">
+            <button
+              className="
+                bg-blue-600
+                hover:bg-blue-700
+                transition
+                px-4
+                py-2
+                rounded-md
+                text-xs
+                text-white
+                mb-4
+                sm:mb-6
+              "
+            >
+              <span className="font-medium text-white">
+                Pay Now
+              </span>
+
+              <div className="text-xs text-white/90 mt-1">
                 Secured by Razorpay
               </div>
             </button>
