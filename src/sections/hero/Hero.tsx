@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 import HeroBackground from "./HeroBackground";
 import HeroContent from "./HeroContent";
@@ -10,7 +11,7 @@ export default function Hero() {
   // STATE DECLARATIONS
   // ============================================================================
 
-  const [isHovering, setIsHovering] = React.useState(false);
+  const [isHovering, setIsHovering] = useState(false);
 
   // ============================================================================
   // EVENT HANDLERS
