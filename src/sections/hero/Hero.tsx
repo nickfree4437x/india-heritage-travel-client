@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 
 import HeroBackground from "./HeroBackground";
 import HeroContent from "./HeroContent";
@@ -11,16 +10,7 @@ export default function Hero() {
   // STATE DECLARATIONS
   // ============================================================================
 
-  const [isHovering, setIsHovering] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  // ============================================================================
-  // EFFECTS
-  // ============================================================================
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const [isHovering, setIsHovering] = React.useState(false);
 
   // ============================================================================
   // EVENT HANDLERS
@@ -37,18 +27,6 @@ export default function Hero() {
       });
     }
   };
-
-  // ============================================================================
-  // SSR FALLBACK
-  // ============================================================================
-
-  if (!mounted) {
-    return (
-      <section className="relative min-h-screen w-full overflow-hidden bg-black">
-        <div className="absolute inset-0 bg-black" />
-      </section>
-    );
-  }
 
   // ============================================================================
   // MAIN RENDER
