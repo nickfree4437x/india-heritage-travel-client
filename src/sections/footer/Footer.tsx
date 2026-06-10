@@ -10,7 +10,6 @@ import {
   Mail,
 } from "lucide-react";
 import { FaPinterestP } from "react-icons/fa";
-import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 
 export default function Footer() {
@@ -185,7 +184,7 @@ export default function Footer() {
             Quick Links
           </h3>
 
-          <ul className="flex flex-col gap-2 mt-1 text-[10px] font-extralight tracking-[0.15em] text-gray-200">
+          <ul className="flex flex-col text-[10px] font-extralight tracking-[0.15em] text-gray-200">
             {[
               { name: "FAQ’s", href: "/faq", isSection: false },
               { name: "Journeys", href: "/journeys", isSection: true, sectionId: "welcome-destination" },
@@ -193,21 +192,32 @@ export default function Footer() {
               { name: "Travel Tips", href: "/travel-tips-for-india", isSection: false },
               { name: "Visa Rules for India", href: "/visa-rules-for-india", isSection: false },
             ].map((item, i) => (
-              <button
-                key={i}
-                onClick={() => handleQuickLinkClick(item)}
-                className="w-full text-left group flex items-center gap-3 sm:gap-4 cursor-pointer transition-all duration-500"
-              >
-                {/* Arrow */}
-                <span className="text-gray-200 text-[13px] group-hover:translate-x-1 transition-all duration-300">
-                  ›
-                </span>
+              <li key={i}>
+                <button
+                  onClick={() => handleQuickLinkClick(item)}
+                  className="
+                    w-full
+                    text-left
+                    group
+                    flex
+                    items-center
+                    gap-3
+                    sm:gap-2
+                    min-h-[40px]
+                    cursor-pointer
+                    transition-all
+                    duration-500
+                  "
+                >
+                  <span className="text-gray-200 text-[13px] group-hover:translate-x-1 transition-all duration-300">
+                    ›
+                  </span>
 
-                {/* Text */}
-                <span className="group-hover:text-gray-300 hover:underline transition-all duration-300">
-                  {item.name}
-                </span>
-              </button>
+                  <span className="group-hover:text-gray-300 hover:underline transition-all duration-300">
+                    {item.name}
+                  </span>
+                </button>
+              </li>
             ))}
           </ul>
         </div>
@@ -228,31 +238,42 @@ export default function Footer() {
           </div>
 
           {/* 🔥 Extra Links */}
-          <div className="flex flex-col gap-2 mt-1 text-[10px] font-extralight tracking-[0.15em] text-gray-200">
+          <ul className="flex flex-col text-[10px] font-extralight tracking-[0.15em] text-gray-200">
             {["Contact Us", "Privacy Policy"].map((item, i) => (
-              <button
-                key={i}
-                onClick={() => {
-                  if (item === "Contact Us") {
-                    router.push("/contact");
-                  } else {
-                    router.push("#");
-                  }
-                }}
-                className="group flex items-center gap-3 sm:gap-4 cursor-pointer transition-all duration-500 w-full text-left"
-              >
-                {/* Arrow */}
-                <span className="text-white transition duration-300 group-hover:translate-x-1">
-                  ›
-                </span>
+              <li key={i}>
+                <button
+                  onClick={() => {
+                    if (item === "Contact Us") {
+                      router.push("/contact");
+                    } else {
+                      router.push("/privacy-policy");
+                    }
+                  }}
+                  className="
+                    group
+                    flex
+                    items-center
+                    gap-3
+                    sm:gap-4
+                    w-full
+                    text-left
+                    min-h-[40px]
+                    cursor-pointer
+                    transition-all
+                    duration-500
+                  "
+                >
+                  <span className="text-white transition duration-300 group-hover:translate-x-1">
+                    ›
+                  </span>
 
-                {/* Text */}
-                <span className="transition text-gray-200 hover:text-gray-300 hover:underline duration-300">
-                  {item}
-                </span>
-              </button>
+                  <span className="transition text-gray-200 hover:text-gray-300 hover:underline duration-300">
+                    {item}
+                  </span>
+                </button>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
         {/* 🔹 Contact Us */}
