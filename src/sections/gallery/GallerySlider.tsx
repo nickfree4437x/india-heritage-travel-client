@@ -1,9 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
+
 import Lightbox from "./Lightbox";
 
 type GalleryImage = {
@@ -16,7 +19,8 @@ export default function GallerySlider({
 }: {
   images: GalleryImage[];
 }) {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] =
+    useState<number | null>(null);
 
   return (
     <>
@@ -41,33 +45,86 @@ export default function GallerySlider({
         {images.map((img, index) => (
           <SwiperSlide key={index}>
             <div
-              onClick={() => setActiveIndex(index)}
-              className="relative rounded-sm overflow-hidden cursor-pointer group shadow-sm hover:shadow-md transition duration-300"
+              onClick={() =>
+                setActiveIndex(index)
+              }
+              className="
+                relative
+                rounded-sm
+                overflow-hidden
+                cursor-pointer
+                group
+                shadow-sm
+                hover:shadow-md
+                transition
+                duration-300
+                h-[420px]
+                sm:h-[320px]
+                md:h-[360px]
+                lg:h-[460px]
+              "
             >
-              <img
+              {/* IMAGE */}
+
+              <Image
                 src={img.src}
                 alt={img.alt}
+                fill
                 loading="lazy"
-                className="w-full h-[420px] sm:h-[320px] md:h-[360px] lg:h-[460px] object-cover transition-transform duration-500"
+                sizes="
+                  (max-width: 640px) 100vw,
+                  (max-width: 1024px) 50vw,
+                  (max-width: 1280px) 33vw,
+                  25vw
+                "
+                className="
+                  object-cover
+                  transition-transform
+                  duration-500
+                "
               />
 
               {/* CLEAN DARK OVERLAY */}
-              <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 transition duration-300"></div>
+
+              <div
+                className="
+                  absolute
+                  inset-0
+                  bg-black/25
+                  group-hover:bg-black/40
+                  transition
+                  duration-300
+                "
+              />
 
               {/* BORDER */}
-              <div className="absolute inset-0 border border-white/10 group-hover:border-[#A07008]/40 transition duration-300"></div>
+
+              <div
+                className="
+                  absolute
+                  inset-0
+                  border
+                  border-white/10
+                  group-hover:border-[#A07008]/40
+                  transition
+                  duration-300
+                "
+              />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
       {/* LIGHTBOX */}
+
       {activeIndex !== null && (
         <Lightbox
           images={images}
           index={activeIndex}
           setIndex={setActiveIndex}
-          onClose={() => setActiveIndex(null)}
+          onClose={() =>
+            setActiveIndex(null)
+          }
         />
       )}
     </>
