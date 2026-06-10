@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 // ============================================================================
 // TYPES & INTERFACES
 // ============================================================================
@@ -65,14 +63,9 @@ export default function HeroContent({
             CTA BUTTON SECTION
         ==================================================================== */}
 
-        <motion.button
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.5,
-          }}
-          whileTap={{ scale: 0.98 }}
+        <button
           onClick={scrollToDestination}
+          aria-label="Begin Your Journey"
           className="
             relative group
             mt-6 sm:mt-8
@@ -89,22 +82,28 @@ export default function HeroContent({
             overflow-hidden
             rounded-md
             cursor-pointer
+            active:scale-[0.98]
           "
         >
           <span className="relative z-10">
             Begin Your Journey
           </span>
 
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-[#CBB299]/0 via-[#CBB299]/15 to-[#CBB299]/0"
-            animate={{ x: ["-100%", "100%"] }}
-            transition={{
-              duration: 2.5,
-              repeat: Infinity,
-              repeatDelay: 3,
-            }}
+          <span
+            className="
+              absolute
+              inset-0
+              bg-gradient-to-r
+              from-[#CBB299]/0
+              via-[#CBB299]/15
+              to-[#CBB299]/0
+              translate-x-[-100%]
+              group-hover:translate-x-[100%]
+              transition-transform
+              duration-[2500ms]
+            "
           />
-        </motion.button>
+        </button>
 
       </div>
     </div>
