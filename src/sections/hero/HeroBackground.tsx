@@ -169,7 +169,7 @@ export default function HeroBackground({
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           controls={false}
           disablePictureInPicture
           controlsList="nodownload nofullscreen noremoteplayback"
@@ -183,7 +183,7 @@ export default function HeroBackground({
         >
 
           <source
-            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/v1779792043/hero-mobile_z58h4d_oypsli.mp4"
+            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/v1781066920/hero-mobile_z58h4d_oypsli.mp4"
             type="video/mp4"
           />
 
