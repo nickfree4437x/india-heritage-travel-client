@@ -129,12 +129,25 @@ export default function RootLayout({
             const removeBanner = () => {
               const banner = document.querySelector('.goog-te-banner-frame');
 
-              if (banner) banner.remove();
+              if (banner) {
+                banner.remove();
+              }
 
               document.body.style.top = '0px';
             };
 
-            setInterval(removeBanner, 500);
+            // Initial cleanup
+            removeBanner();
+
+            // Observe DOM changes instead of running forever
+            const observer = new MutationObserver(() => {
+              removeBanner();
+            });
+
+            observer.observe(document.body, {
+              childList: true,
+              subtree: true,
+            });
           `}
         </Script>
 

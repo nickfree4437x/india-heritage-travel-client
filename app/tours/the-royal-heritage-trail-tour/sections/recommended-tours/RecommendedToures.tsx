@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const tours = [
   {
@@ -25,8 +25,6 @@ const tours = [
 ];
 
 export default function RecommendedTours() {
-  const router = useRouter();
-
   return (
     <section
       className="
@@ -35,7 +33,6 @@ export default function RecommendedTours() {
         py-10 sm:py-12 md:py-14 lg:py-16
       "
     >
-
       {/* 🔥 MAIN CONTAINER */}
       <div
         className="
@@ -44,7 +41,6 @@ export default function RecommendedTours() {
           px-3 sm:px-4 md:px-6 lg:px-8
         "
       >
-
         {/* 🔹 Heading */}
         <h2
           className="
@@ -68,13 +64,13 @@ export default function RecommendedTours() {
             gap-6 sm:gap-8 md:gap-10
           "
         >
-
           {tours.map((tour, index) => (
-            <div
+            <Link
               key={index}
-              onClick={() => router.push(tour.slug)}
+              href={tour.slug}
               className="
                 group
+                block
                 bg-white
                 rounded-sm
                 border border-[#eee7dd]
@@ -87,7 +83,6 @@ export default function RecommendedTours() {
                 h-full
               "
             >
-
               {/* 🔥 Image */}
               <div
                 className="
@@ -97,7 +92,6 @@ export default function RecommendedTours() {
                   overflow-hidden
                 "
               >
-
                 <Image
                   src={tour.img}
                   alt={tour.title}
@@ -118,7 +112,6 @@ export default function RecommendedTours() {
                     transition duration-500
                   "
                 />
-
               </div>
 
               {/* 🔥 Content */}
@@ -128,7 +121,6 @@ export default function RecommendedTours() {
                   space-y-3
                 "
               >
-
                 <h3
                   className="
                     text-[16px] sm:text-[17px]
@@ -152,16 +144,11 @@ export default function RecommendedTours() {
                 >
                   {tour.desc}
                 </p>
-
               </div>
-
-            </div>
+            </Link>
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }

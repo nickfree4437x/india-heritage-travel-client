@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
+import Image from "next/image";
 import Select, {
   SingleValue,
 } from "react-select";
@@ -133,9 +133,11 @@ export default function CountrySelect({
 
           <div className="flex items-center gap-3">
 
-            <img
+            <Image
               src={country.flag}
               alt={country.label}
+              width={20}
+              height={16}
               className="
                 w-5
                 h-4

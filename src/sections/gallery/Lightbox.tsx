@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 type GalleryImage = {
   src: string;
@@ -53,9 +54,11 @@ export default function Lightbox({
       onClick={onClose}
     >
       {/* MAIN IMAGE */}
-      <img
+      <Image
         src={images[index].src}
         alt={images[index].alt}
+        width={800}
+        height={600}
         className="max-h-[70vh] sm:max-h-[75vh] rounded-sm shadow-lg object-contain"
         onClick={(e) => e.stopPropagation()}
       />
@@ -76,10 +79,12 @@ export default function Lightbox({
       {/* THUMBNAILS */}
       <div className="flex gap-2 mt-4 sm:mt-6 overflow-x-auto px-3 sm:px-4">
         {images.map((img, i) => (
-          <img
+          <Image
             key={i}
             src={img.src}
             alt={img.alt}
+            width={60}
+            height={60}
             onClick={(e) => {
               e.stopPropagation();
               setIndex(i);

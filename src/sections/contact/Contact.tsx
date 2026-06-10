@@ -435,9 +435,11 @@ export default function ContactSection() {
                       "
                     >
 
-                      <img
+                      <Image
                         src={country.flag}
                         alt={country.name}
+                        width={20}
+                        height={16}
                         className="
                           w-5
                           h-4
@@ -576,9 +578,11 @@ export default function ContactSection() {
                         "
                       >
 
-                        <img
+                        <Image
                           src={country.flag}
                           alt={country.name}
+                          width={20}
+                          height={16}
                           className="
                             w-5
                             h-4

@@ -1,7 +1,7 @@
 "use client";
 
 import Select from "react-select";
-
+import Image from "next/image";
 import { CountryOption } from "../types/types";
 
 type Props = {
@@ -136,9 +136,11 @@ export default function PhoneField({
           formatOptionLabel={(country: any) => (
             <div className="flex items-center gap-2">
 
-              <img
+              <Image
                 src={country.flag}
                 alt={country.name}
+                width={20}
+                height={16}
                 className="w-5 h-4 object-cover rounded-sm"
               />
 

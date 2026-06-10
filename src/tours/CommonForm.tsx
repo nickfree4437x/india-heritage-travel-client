@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import React from "react";
+import Image from "next/image";
 
 import BookNowHeader from "./book-now/form/BookNowHeader";
 import BookNowForm from "./book-now/form/BookNowForm";
@@ -51,9 +51,11 @@ export default function BookNowSection({
 
               label: (
                 <div className="flex items-center gap-3">
-                  <img
+                  <Image
                     src={country.flags.svg}
                     alt={country.name.common}
+                    width={20}
+                    height={16}
                     className="w-5 h-4 object-cover rounded-sm shadow-sm"
                   />
 

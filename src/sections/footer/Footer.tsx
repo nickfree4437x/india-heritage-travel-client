@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import {
   Facebook,
   Instagram,
@@ -267,16 +268,19 @@ export default function Footer() {
 
           {/* 🔥 Extra Links */}
           <ul className="flex flex-col text-[10px] font-extralight tracking-[0.15em] text-gray-200">
-            {["Contact Us", "Privacy Policy"].map((item, i) => (
+            {[
+              {
+                name: "Contact Us",
+                href: "/contact",
+              },
+              {
+                name: "Privacy Policy",
+                href: "/privacy-policy",
+              },
+            ].map((item, i) => (
               <li key={i}>
-                <button
-                  onClick={() => {
-                    if (item === "Contact Us") {
-                      router.push("/contact");
-                    } else {
-                      router.push("/privacy-policy");
-                    }
-                  }}
+                <Link
+                  href={item.href}
                   className="
                     group
                     flex
@@ -296,9 +300,9 @@ export default function Footer() {
                   </span>
 
                   <span className="transition text-gray-200 hover:text-gray-300 hover:underline duration-300">
-                    {item}
+                    {item.name}
                   </span>
-                </button>
+                </Link>
               </li>
             ))}
           </ul>
