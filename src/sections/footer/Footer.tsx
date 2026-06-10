@@ -60,38 +60,43 @@ export default function Footer() {
           <div className="flex items-center justify-center sm:justify-start gap-3 sm:gap-4 mt-2 md:ml-4">
             {/* Facebook */}
             <a
-              href="https://www.facebook.com/profile.php?id=61559592375914"
-              target="_blank"
-              rel="noopener noreferrer"
+            href="https://www.facebook.com/profile.php?id=61559592375914"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit India Heritage Travel Facebook page"
+            title="Facebook"
+            className="
+              w-8 h-8 sm:w-9 sm:h-9
+              flex items-center justify-center
+              rounded-full
+              border border-white/10
+              bg-white/[0.04]
+              backdrop-blur-md
+              hover:bg-[#1877F2]
+              hover:border-[#1877F2]
+              hover:-translate-y-1
+              transition-all duration-500
+              group
+            "
+          >
+            <Facebook
+              aria-hidden="true"
+              size={13}
               className="
-                w-8 h-8 sm:w-9 sm:h-9
-                flex items-center justify-center
-                rounded-full
-                border border-white/10
-                bg-white/[0.04]
-                backdrop-blur-md
-                hover:bg-[#1877F2]
-                hover:border-[#1877F2]
-                hover:-translate-y-1
-                transition-all duration-500
-                group
+                text-[#d8d0c5]
+                group-hover:text-white
+                transition-all duration-300
               "
-            >
-              <Facebook
-                size={13}
-                className="
-                  text-[#d8d0c5]
-                  group-hover:text-white
-                  transition-all duration-300
-                "
-              />
-            </a>
+            />
+          </a>
 
             {/* Instagram */}
             <a
               href="https://www.instagram.com/indiaheritagetravel"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit India Heritage Travel Instagram page"
+              title="Instagram"
               className="
                 w-8 h-8 sm:w-9 sm:h-9
                 flex items-center justify-center
@@ -109,6 +114,7 @@ export default function Footer() {
               "
             >
               <Instagram
+                aria-hidden="true"
                 size={13}
                 className="
                   text-[#d8d0c5]
@@ -123,6 +129,8 @@ export default function Footer() {
               href="https://youtube.com/@indiaheritagetravel?si=vFEfLrYnv_1DWHqM"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit India Heritage Travel YouTube channel"
+              title="YouTube"
               className="
                 w-8 h-8 sm:w-9 sm:h-9
                 flex items-center justify-center
@@ -138,6 +146,7 @@ export default function Footer() {
               "
             >
               <Youtube
+                aria-hidden="true"
                 size={13}
                 className="
                   text-[#d8d0c5]
@@ -152,6 +161,8 @@ export default function Footer() {
               href="https://pin.it/3kPXLj6Jk"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit India Heritage Travel Pinterest profile"
+              title="Pinterest"
               className="
                 w-8 h-8 sm:w-9 sm:h-9
                 flex items-center justify-center
@@ -167,6 +178,7 @@ export default function Footer() {
               "
             >
               <FaPinterestP
+                aria-hidden="true"
                 size={12}
                 className="
                   text-[#d8d0c5]
