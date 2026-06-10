@@ -230,20 +230,30 @@ export default function ReviewsSection() {
             <>
               <button
                 onClick={prev}
+                aria-label="Previous review"
+                title="Previous review"
                 className="absolute -left-4 sm:-left-4 lg:-left-6 top-1/2 -translate-y-1/2 z-20 
                 w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center
                 bg-white border rounded-full shadow-sm transition hover:shadow-md hover:scale-105 duration-300"
               >
-                <ChevronLeft size={18} />
+                <ChevronLeft
+                  aria-hidden="true"
+                  size={18}
+                />
               </button>
 
               <button
                 onClick={next}
+                aria-label="Next review"
+                title="Next review"
                 className="absolute -right-4 sm:-right-4 lg:-right-6 top-1/2 -translate-y-1/2 z-20 
                 w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center
                 bg-white border rounded-full shadow-sm transition hover:shadow-md hover:scale-105 duration-300"
               >
-                <ChevronRight size={18} />
+                <ChevronRight
+                  aria-hidden="true"
+                  size={18}
+                />
               </button>
             </>
           )}
@@ -267,6 +277,9 @@ export default function ReviewsSection() {
               <button
                 key={i}
                 onClick={() => goToSlide(i)}
+                aria-label={`Go to review slide ${i + 1}`}
+                title={`Go to review slide ${i + 1}`}
+                aria-current={i === index ? "true" : undefined}
                 className={`rounded-full transition-all duration-500 ${
                   i === index
                     ? "w-6 h-2 bg-[#c9a45c]"
