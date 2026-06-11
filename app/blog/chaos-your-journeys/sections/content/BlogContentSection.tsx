@@ -83,9 +83,10 @@ export default function BlogContentSection() {
           >
 
             <Image
-              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779649137/ibrahim-rifath-Y6tBl0pTe-g-unsplash_m5uxih.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto,w_1200/v1779649137/ibrahim-rifath-Y6tBl0pTe-g-unsplash_m5uxih.jpg"
               alt="Traveller planning a journey across India with expert travel guidance"
               fill
+              sizes="(max-width: 768px) 100vw, 1200px"
               className="object-cover"
             />
           </div>

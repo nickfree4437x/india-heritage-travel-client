@@ -31,7 +31,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
 
         <Image
-          src="/blogs/blog-7/blog-7.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779652419/blog-7_kt857x.jpg"
           alt="Top 10 Places to Visit in India During Summer"
           fill
           priority

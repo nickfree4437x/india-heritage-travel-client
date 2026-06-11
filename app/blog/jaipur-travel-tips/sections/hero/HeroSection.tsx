@@ -19,7 +19,7 @@ import {
 export default function HeroSection() {
 
   const shareUrl =
-    "https://indiaheritagetravel.com/blogs/india-food-guide";
+    "https://indiaheritagetravel.com/blogs/jaipur-travel-tips";
 
   const shareTitle =
     "A First-Timer’s Guide to Jaipur | Ultimate 3 Day Guide";

@@ -12,6 +12,7 @@ import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/Deta
 import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
+import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Heritage & Wildlife Tour India | Culture, Nature & Safari Experiences",
@@ -25,6 +26,25 @@ export const metadata: Metadata = {
 export default function RoyalRajasthanPage() {
   return (
     <div>
+
+      {/* Breadcrumb Schema */}
+      <BreadcrumbSchema
+        items={[
+          {
+            name: "Home",
+            url: "https://indiaheritagetravel.com",
+          },
+          {
+            name: "Tours",
+            url: "https://indiaheritagetravel.com/tours",
+          },
+          {
+            name: "Journey Through Heritage & Wildlife Tour",
+            url: "https://indiaheritagetravel.com/tours/journey-through-heritage-wildlife",
+          },
+        ]}
+      />
+
       <HeroSection />
       <SuitableFor />
       <TourLayout>

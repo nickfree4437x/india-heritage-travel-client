@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 
 import Navbar from "@/src/navbar-layout/navbar/Navbar";
 import Hero from "@/src/sections/hero/Hero";
@@ -23,9 +24,34 @@ export const metadata: Metadata = {
   },
 };
 
+const reviewSchema = {
+  "@context": "https://schema.org",
+
+  "@type": "TravelAgency",
+
+  name: "India Heritage Travel",
+
+  url: "https://indiaheritagetravel.com",
+
+  aggregateRating: {
+    "@type": "AggregateRating",
+
+    ratingValue: "5",
+
+    reviewCount: "7",
+  },
+};
+
 export default function Home() {
   return (
     <>
+      <Script
+        id="review-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(reviewSchema),
+        }}
+      />
       <Navbar />
       <Hero />
       <About />

@@ -44,30 +44,30 @@ export default function AboutSection() {
             <div className="space-y-5 font-light text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] text-justify">
 
               <p>
-                It’s hard to explain what Kumbh Mela really feels like —
+                It’s hard to explain what Kumbh Mela really feels like -
                 it’s not just an event. It’s a pull, a calling.
               </p>
 
               <p>
                 Every twelve years, millions gather at the banks of sacred rivers
                 like the Ganges and Yamuna. Not for the crowd. Not for photos.
-                They come for something deeper — faith.
+                They come for something deeper - faith.
               </p>
 
               <p>
                 One dip in the holy river is believed to cleanse lifetimes of sins.
-                It’s not just a ritual — it’s a moment of transformation.
+                It’s not just a ritual - it’s a moment of transformation.
               </p>
 
               <p>
                 You’ll see sadhus covered in ash, pilgrims walking barefoot for days,
                 and rituals that feel ancient yet alive. Some take devotion to
-                extremes — all in the name of faith.
+                extremes - all in the name of faith.
               </p>
 
               <p>
                 It’s loud, chaotic, emotional, and deeply spiritual.
-                You don’t just see Kumbh Mela — you feel it.
+                You don’t just see Kumbh Mela - you feel it.
               </p>
 
             </div>

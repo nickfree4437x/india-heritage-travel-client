@@ -32,7 +32,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
 
         <Image
-          src="/blogs/blog-2/blog-2.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637769/blog-2_ma62qv.jpg"
           alt="Safe luxury travel destinations in India for women travelers"
           fill
           priority

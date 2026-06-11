@@ -1,5 +1,6 @@
 "use client";
 
+import Script from "next/script";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
@@ -62,6 +63,23 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+
+    name: faq.q,
+
+    acceptedAnswer: {
+      "@type": "Answer",
+
+      text: faq.a,
+    },
+  })),
+};
+
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -70,7 +88,15 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-8 md:py-8 bg-white scroll-mt-20 md:scroll-mt-28" id="faq">
+    <>
+     <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+     />
+     <section className="py-8 md:py-8 bg-white scroll-mt-20 md:scroll-mt-28" id="faq">
       <div className="max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
@@ -136,6 +162,7 @@ export default function FAQSection() {
         </div>
 
       </div>
-    </section>
+     </section>
+    </>
   );
 }

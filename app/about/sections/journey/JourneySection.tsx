@@ -37,9 +37,10 @@ export default function JourneySection() {
         <div className="flex justify-center">
           <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden">
             <Image
-              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779618257/profile_fankpm.jpg" // 👈 apni image daal
-              alt="Piyush Singh founder of India Heritage Travel"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto,w_800/v1779618257/profile_fankpm.jpg"
+              alt="Piyush Singh, Founder of India Heritage Travel"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>

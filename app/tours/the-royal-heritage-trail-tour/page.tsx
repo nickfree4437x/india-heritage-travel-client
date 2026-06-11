@@ -14,6 +14,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Royal Heritage Trail Tour India | Palaces, Forts & Cultural Experiences",
@@ -26,7 +27,26 @@ export const metadata: Metadata = {
 
 export default function RoyalRajasthanPage() {
   return (
-    <>
+    <main>
+
+      {/* Breadcrumb Schema */}
+      <BreadcrumbSchema
+        items={[
+          {
+            name: "Home",
+            url: "https://indiaheritagetravel.com",
+          },
+          {
+            name: "Tours",
+            url: "https://indiaheritagetravel.com/tours",
+          },
+          {
+            name: "The Royal Heritage Trail Tour",
+            url: "https://indiaheritagetravel.com/tours/the-royal-heritage-trail-tour",
+          },
+        ]}
+      />
+
       <HeroSection />
       <SuitableFor />
       <ToursLayout rightContent={<RightBookingCard />}>
@@ -43,6 +63,6 @@ export default function RoyalRajasthanPage() {
       <CommonForm tourName="the-royal-heritage-trail-tour"/>
       <RecommendedTours />
       <Footer/>
-    </>
+    </main>
   );
 }

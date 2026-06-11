@@ -1,25 +1,29 @@
-// app/blogs/components/BlogsGrid.tsx
-
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MessageCircle } from "lucide-react";
+
 import { blogs } from "../data/blogsData";
 
 const BLOGS_PER_PAGE = 6;
 
-export default function BlogsGrid() {
+type BlogsGridProps = {
+  currentPage: number;
+};
 
-  const [currentPage, setCurrentPage] = useState(1);
-
+export default function BlogsGrid({
+  currentPage,
+}: BlogsGridProps) {
   const totalPages = Math.ceil(
     blogs.length / BLOGS_PER_PAGE
   );
 
+  const validCurrentPage = Math.min(
+    Math.max(currentPage, 1),
+    totalPages
+  );
+
   const startIndex =
-    (currentPage - 1) * BLOGS_PER_PAGE;
+    (validCurrentPage - 1) * BLOGS_PER_PAGE;
 
   const currentBlogs = blogs.slice(
     startIndex,
@@ -28,7 +32,6 @@ export default function BlogsGrid() {
 
   return (
     <section className="py-14 sm:py-16 lg:py-24 bg-white">
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* BLOG GRID */}
@@ -40,10 +43,8 @@ export default function BlogsGrid() {
               href={`/blog/${blog.slug}`}
               className="group block"
             >
-
               {/* IMAGE */}
               <div className="relative overflow-hidden">
-
                 <Image
                   src={blog.image}
                   alt={blog.title}
@@ -64,31 +65,23 @@ export default function BlogsGrid() {
 
               {/* CONTENT */}
               <div className="pt-8">
-
-                {/* TITLE */}
                 <h3
                   className="
                     text-[18px]
                     md:text-[20px]
                     leading-[1.22]
-
                     font-normal
                     tracking-normal
-
                     text-[#111]
-
                     break-words
-
                     transition-colors
                     duration-300
-
                     group-hover:text-[#7C5C38]
                   "
                 >
                   {blog.title}
                 </h3>
 
-                {/* DESC */}
                 <p
                   className="
                     mt-5
@@ -101,12 +94,15 @@ export default function BlogsGrid() {
                   {blog.excerpt}
                 </p>
 
-                {/* META */}
                 <div className="flex items-center gap-5 mt-6 text-[#8a8a8a]">
-
                   <div className="flex items-center gap-2">
-                    <MessageCircle size={16} strokeWidth={1.7} />
-                    <span className="text-sm">0</span>
+                    <MessageCircle
+                      size={16}
+                      strokeWidth={1.7}
+                    />
+                    <span className="text-sm">
+                      0
+                    </span>
                   </div>
 
                   <span className="text-sm">
@@ -132,147 +128,147 @@ export default function BlogsGrid() {
           "
         >
 
-          {/* PREVIOUS BUTTON */}
-          <button
-            onClick={() =>
-              setCurrentPage((prev) =>
-                Math.max(prev - 1, 1)
-              )
-            }
-            disabled={currentPage === 1}
-            className="
-              w-[44px]
-              h-[44px]
-
-              flex
-              items-center
-              justify-center
-
-              rounded-lg
-
-              border
-              border-[#e8dfd3]
-
-              bg-white
-
-              text-[#8b6a3d]
-
-              transition-all
-              duration-300
-
-              hover:bg-[#8b6a3d]
-              hover:text-white
-              hover:border-[#8b6a3d]
-
-              disabled:opacity-40
-              disabled:cursor-not-allowed
-              disabled:hover:bg-white
-              disabled:hover:text-[#8b6a3d]
-            "
-          >
-            ←
-          </button>
+          {/* PREVIOUS */}
+          {validCurrentPage > 1 ? (
+            <Link
+              href={`/blog?page=${validCurrentPage - 1}`}
+              className="
+                w-[44px]
+                h-[44px]
+                flex
+                items-center
+                justify-center
+                rounded-lg
+                border
+                border-[#e8dfd3]
+                bg-white
+                text-[#8b6a3d]
+                transition-all
+                duration-300
+                hover:bg-[#8b6a3d]
+                hover:text-white
+                hover:border-[#8b6a3d]
+              "
+            >
+              ←
+            </Link>
+          ) : (
+            <span
+              className="
+                w-[44px]
+                h-[44px]
+                flex
+                items-center
+                justify-center
+                rounded-lg
+                border
+                border-[#e8dfd3]
+                bg-white
+                text-[#8b6a3d]
+                opacity-40
+                cursor-not-allowed
+              "
+            >
+              ←
+            </span>
+          )}
 
           {/* PAGE NUMBERS */}
           <div className="flex items-center gap-2 sm:gap-3">
 
             {Array.from({
               length: totalPages,
-            }).map((_, index) => (
+            }).map((_, index) => {
+              const pageNumber = index + 1;
 
-              <button
-                key={index}
-                onClick={() =>
-                  setCurrentPage(index + 1)
-                }
-                className={`
-                  relative
+              return (
+                <Link
+                  key={pageNumber}
+                  href={`/blog?page=${pageNumber}`}
+                  className={`
+                    relative
+                    min-w-[44px]
+                    h-[44px]
+                    flex
+                    items-center
+                    justify-center
+                    rounded-lg
+                    text-[13px]
+                    font-medium
+                    transition-all
+                    duration-300
 
-                  min-w-[44px]
-                  h-[44px]
-
-                  rounded-lg
-
-                  text-[13px]
-                  font-medium
-
-                  transition-all
-                  duration-300
-
-                  ${
-                    currentPage === index + 1
-                      ? `
-                        bg-[#8b6a3d]
-                        text-white
-
-                        shadow-[0_10px_30px_rgba(0,0,0,0.12)]
-
-                        scale-[1.04]
-                      `
-                      : `
-                        bg-white
-
-                        text-[#8b6a3d]
-
-                        border
-                        border-[#e8dfd3]
-
-                        hover:bg-[#8b6a3d]
-                        hover:text-white
-                        hover:border-[#8b6a3d]
-                      `
-                  }
-                `}
-              >
-
-                {index + 1}
-
-              </button>
-
-            ))}
+                    ${
+                      validCurrentPage === pageNumber
+                        ? `
+                          bg-[#8b6a3d]
+                          text-white
+                          shadow-[0_10px_30px_rgba(0,0,0,0.12)]
+                          scale-[1.04]
+                        `
+                        : `
+                          bg-white
+                          text-[#8b6a3d]
+                          border
+                          border-[#e8dfd3]
+                          hover:bg-[#8b6a3d]
+                          hover:text-white
+                          hover:border-[#8b6a3d]
+                        `
+                    }
+                  `}
+                >
+                  {pageNumber}
+                </Link>
+              );
+            })}
 
           </div>
 
-          {/* NEXT BUTTON */}
-          <button
-            onClick={() =>
-              setCurrentPage((prev) =>
-                Math.min(prev + 1, totalPages)
-              )
-            }
-            disabled={currentPage === totalPages}
-            className="
-              w-[44px]
-              h-[44px]
-
-              flex
-              items-center
-              justify-center
-
-              rounded-lg
-
-              border
-              border-[#e8dfd3]
-
-              bg-white
-
-              text-[#8b6a3d]
-
-              transition-all
-              duration-300
-
-              hover:bg-[#8b6a3d]
-              hover:text-white
-              hover:border-[#8b6a3d]
-
-              disabled:opacity-40
-              disabled:cursor-not-allowed
-              disabled:hover:bg-white
-              disabled:hover:text-[#8b6a3d]
-            "
-          >
-            →
-          </button>
+          {/* NEXT */}
+          {validCurrentPage < totalPages ? (
+            <Link
+              href={`/blog?page=${validCurrentPage + 1}`}
+              className="
+                w-[44px]
+                h-[44px]
+                flex
+                items-center
+                justify-center
+                rounded-lg
+                border
+                border-[#e8dfd3]
+                bg-white
+                text-[#8b6a3d]
+                transition-all
+                duration-300
+                hover:bg-[#8b6a3d]
+                hover:text-white
+                hover:border-[#8b6a3d]
+              "
+            >
+              →
+            </Link>
+          ) : (
+            <span
+              className="
+                w-[44px]
+                h-[44px]
+                flex
+                items-center
+                justify-center
+                rounded-lg
+                border
+                border-[#e8dfd3]
+                bg-white
+                text-[#8b6a3d]
+                opacity-40
+                cursor-not-allowed
+              "
+            >
+              →
+            </span>
+          )}
 
         </div>
       </div>

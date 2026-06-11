@@ -62,9 +62,10 @@ export default function WelcomeSection() {
         <div className="relative w-full max-w-4xl h-[260px] sm:h-[320px] md:h-[480px] rounded-md overflow-hidden shadow-md">
 
           <Image
-            src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779617809/welcome_gjbjt8.jpg" // 👈 apni image yaha daal
+            src="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto,w_1200/v1779617809/welcome_gjbjt8.jpg"
             alt="India Heritage Travel showcasing authentic cultural experiences across India"
             fill
+            sizes="(max-width: 768px) 100vw, 1200px"
             className="object-cover"
           />
 

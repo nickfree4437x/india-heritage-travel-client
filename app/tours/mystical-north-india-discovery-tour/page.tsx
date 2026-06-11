@@ -13,6 +13,7 @@ import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/Deta
 import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
+import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "North India Discovery Tour | Culture, Heritage & Spiritual Journeys",
@@ -26,6 +27,25 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="bg-white min-h-screen">
+
+      {/* Breadcrumb Schema */}
+      <BreadcrumbSchema
+        items={[
+          {
+            name: "Home",
+            url: "https://indiaheritagetravel.com",
+          },
+          {
+            name: "Tours",
+            url: "https://indiaheritagetravel.com/tours",
+          },
+          {
+            name: "Mystical North India Discovery Tour",
+            url: "https://indiaheritagetravel.com/tours/mystical-north-india-discovery-tour",
+          },
+        ]}
+      />
+
       <HeroSection />
       <SuitableFor />
 

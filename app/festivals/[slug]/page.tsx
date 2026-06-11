@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import HoliDetails from "@/src/sections/festivals/festivalDetails/holi/pages/HoliDetails";
+import HoliDetails from "@/src/sections/festivals/festivalDetails/holi/pages/page";
 import DiwaliDetails from "@/src/sections/festivals/festivalDetails/diwali/page";
 import PushkarDetails from "@/src/sections/festivals/festivalDetails/pushkar/PushkarDetails";
 import KumbhDetails from "@/src/sections/festivals/festivalDetails/kumbh/KumbhDetails";

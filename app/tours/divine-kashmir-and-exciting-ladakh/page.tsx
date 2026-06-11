@@ -10,6 +10,7 @@ import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/Deta
 import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
+import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Kashmir & Ladakh Tour Package | Mountains, Lakes & Himalayan Adventures",
@@ -23,6 +24,25 @@ export const metadata: Metadata = {
 export default function RoyalRajasthanPage() {
   return (
     <div>
+
+      {/* Breadcrumb Schema */}
+      <BreadcrumbSchema
+        items={[
+          {
+            name: "Home",
+            url: "https://indiaheritagetravel.com",
+          },
+          {
+            name: "Tours",
+            url: "https://indiaheritagetravel.com/tours",
+          },
+          {
+            name: "Divine Kashmir & Exciting Ladakh Tour",
+            url: "https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh-tour",
+          },
+        ]}
+      />
+
       <HeroSection />
       <SuitableFor />
 

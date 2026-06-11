@@ -66,9 +66,10 @@ export default function BlogExtraContentSection() {
           >
 
             <Image
-              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779649649/Jaipur-Where-the-past-paints-the-present_yefkwy.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto,w_1200/v1779649649/Jaipur-Where-the-past-paints-the-present_yefkwy.jpg"
               alt="Jaipur heritage destination featured in a personalized India travel itinerary"
               fill
+              sizes="(max-width: 768px) 100vw, 1200px"
               className="object-cover"
             />
           </div>

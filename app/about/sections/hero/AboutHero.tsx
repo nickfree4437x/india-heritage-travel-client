@@ -9,10 +9,12 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779616418/about-hero_phk0dm.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto,w_1600/v1779616418/about-hero_phk0dm.jpg"
           alt="Meet the team behind India Heritage Travel"
           fill
           priority
+          quality={80}
+          sizes="100vw"
           className="object-cover"
         />
       </div>
