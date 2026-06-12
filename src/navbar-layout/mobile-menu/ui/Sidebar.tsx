@@ -13,6 +13,10 @@ export default function Sidebar({
 }) {
   return (
     <motion.div
+      id="mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile Navigation Menu"
       initial={{ x: "100%" }}
       animate={{ x: 0 }}
       exit={{ x: "100%" }}

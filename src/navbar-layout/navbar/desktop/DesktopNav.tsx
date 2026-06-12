@@ -25,6 +25,7 @@ export default function DesktopNav({
 }: Props) {
   return (
     <nav
+      aria-label="Main Navigation"
       className="hidden lg:flex items-center gap-1 xl:gap-2 ml-6 xl:ml-10"
       style={{ overflow: "visible" }}
     >
@@ -42,6 +43,7 @@ export default function DesktopNav({
           <Link
             key={link.name}
             href={link.href}
+            aria-current={isActive ? "page" : undefined}
             className={getNavLinkClasses(scrolled, isActive)}
           >
             {link.name}

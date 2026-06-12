@@ -26,6 +26,8 @@ export default function MessageField({
         value={value}
         onChange={onChange}
         placeholder="Tell us about your travel preferences, special requests, or anything else you'd like us to know..."
+        aria-label="Travel Preferences and Special Requests"
+        autoComplete="off"
         className="
           w-full
           border border-[#ddd2c2]

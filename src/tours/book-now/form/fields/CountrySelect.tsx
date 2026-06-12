@@ -25,14 +25,16 @@ export default function CountrySelect({
         }
         placeholder="Select Country"
         instanceId="country-select"
+        aria-label="Select Country"
+        aria-required="true"
         styles={{
           control: (base, state) => ({
             ...base,
 
             width: "100%",
 
-            minHeight: "45px",
-            height: "45px",
+            minHeight: "40px",
+            height: "41px",
 
             border: state.isFocused
               ? "1px solid #9A7A58"

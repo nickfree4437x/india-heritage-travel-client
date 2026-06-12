@@ -20,18 +20,29 @@ export default function MobileControls({
       <LanguageSwitcher scrolled={scrolled} />
 
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={isOpen}
+        aria-controls="mobile-menu"
         className={`
           p-1.5 rounded-lg transition-all duration-300
+          focus:outline-none
+          focus-visible:ring-2
+          focus-visible:ring-[#9c6b2f]
+          focus-visible:ring-offset-2
           ${
             scrolled
               ? "text-gray-800 hover:bg-gray-200/50"
               : "text-white hover:bg-white/20"
           }
         `}
-        aria-label="Toggle Menu"
       >
-        {isOpen ? <X size={22} /> : <Menu size={22} />}
+        {isOpen ? (
+          <X size={22} aria-hidden="true" />
+        ) : (
+          <Menu size={22} aria-hidden="true" />
+        )}
       </button>
     </div>
   );

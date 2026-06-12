@@ -38,7 +38,7 @@ const teamMembers = [
   {
     name: "Ajay",
     role: "Photographer & Visual Storyteller",
-    image: "/about/ajay.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781258066/WhatsApp_Image_2026-06-12_at_2.14.54_PM_doxtd4.jpg",
     alt: "Ajay photographer and visual storyteller at India Heritage Travel",
     description:
       "Capturing the timeless beauty, culture, and heritage of India through his lens.",

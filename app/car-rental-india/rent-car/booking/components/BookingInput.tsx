@@ -1,5 +1,3 @@
-// components/booking/BookingInput.tsx
-
 type BookingInputProps = {
   type?: string;
 
@@ -37,26 +35,18 @@ export default function BookingInput({
 
   max,
 }: BookingInputProps) {
-
   return (
-
     <input
       type={type}
-
       placeholder={placeholder}
-
       name={name}
-
       value={value}
-
       onChange={onChange}
-
       required={required}
-
       min={min}
-
       max={max}
-
+      aria-label={placeholder}
+      aria-required={required}
       className="
         w-full
 

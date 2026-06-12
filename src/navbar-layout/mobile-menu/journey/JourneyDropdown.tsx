@@ -38,6 +38,7 @@ export default function JourneyDropdown({
     <AnimatePresence>
       {journeyOpen && (
         <motion.div
+         id="journeys-dropdown"
           initial={{
             height: 0,
             opacity: 0,

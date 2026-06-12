@@ -242,7 +242,7 @@ export default function BookingForm() {
       </div>
 
       {/* ===== NOTE ===== */}
-      <p
+      <p id="guest-help-text"
         className="
           text-[10px] sm:text-[11px]
           text-[#777]
@@ -283,6 +283,8 @@ export default function BookingForm() {
           value={formData.vehicle_type}
           onChange={handleChange}
           required
+          aria-label="Select Type of Vehicle"
+          aria-required="true"
           className="
             w-full
 

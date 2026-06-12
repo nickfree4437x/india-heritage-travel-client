@@ -37,6 +37,8 @@ export default function DateField({
         placeholderText="Select Date of Visit"
         minDate={new Date()}
         wrapperClassName="w-full"
+        ariaLabel="Select Date of Visit"
+        autoComplete="off"
         onChange={(date: Date | null) => {
           if (!date || !onChange) return;
 

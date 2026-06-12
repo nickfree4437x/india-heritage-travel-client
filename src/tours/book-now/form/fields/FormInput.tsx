@@ -27,11 +27,8 @@ export default function FormInput({
   required,
   max,
 }: Props) {
-
   return (
-
     <div>
-
       <input
         type={type}
         name={name}
@@ -40,6 +37,8 @@ export default function FormInput({
         required={required}
         max={max}
         placeholder={placeholder}
+        aria-label={placeholder}
+        aria-required={required}
         className="
           w-full
           border border-[#ddd2c2]
@@ -59,7 +58,6 @@ export default function FormInput({
           transition
         "
       />
-
     </div>
   );
 }

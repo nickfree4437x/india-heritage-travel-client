@@ -33,9 +33,7 @@ export default function PhoneField({
   onChange,
   required,
 }: Props) {
-
   return (
-
     <div
       className="
         flex items-center
@@ -48,10 +46,8 @@ export default function PhoneField({
         transition
       "
     >
-
       {/* Country Code Select */}
       <div className="w-[120px] border-r border-[#ddd2c2]">
-
         <Select
           options={countries}
           value={selectedCountry}
@@ -59,6 +55,7 @@ export default function PhoneField({
             setSelectedCountry(value as CountryOption)
           }
           instanceId="country-code-select"
+          aria-label="Country Code"
           styles={{
             control: (base) => ({
               ...base,
@@ -135,7 +132,6 @@ export default function PhoneField({
           }}
           formatOptionLabel={(country: any) => (
             <div className="flex items-center gap-2">
-
               <Image
                 src={country.flag}
                 alt={country.name}
@@ -147,11 +143,9 @@ export default function PhoneField({
               <span className="text-[13px] font-light text-[#5b5348]">
                 {country.code}
               </span>
-
             </div>
           )}
         />
-
       </div>
 
       {/* Mobile Number */}
@@ -162,9 +156,13 @@ export default function PhoneField({
         onChange={onChange}
         required={required}
         placeholder="Mobile Number"
+        aria-label="Mobile Number"
+        aria-required={required}
+        inputMode="tel"
+        autoComplete="tel"
         className="
           flex-1
-          h-[40px]
+          h-[38px]
           bg-transparent
           px-4
           text-[12px]
@@ -177,7 +175,6 @@ export default function PhoneField({
           focus:outline-none
         "
       />
-
     </div>
   );
 }

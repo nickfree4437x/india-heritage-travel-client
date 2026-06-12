@@ -51,7 +51,10 @@ export default function JourneysSection({
 
       {/* Button */}
       <button
+        type="button"
         onClick={handleJourneysToggle}
+        aria-expanded={journeyOpen}
+        aria-controls="journeys-dropdown"
         className={getJourneysButtonClassName()}
       >
         <span
@@ -61,6 +64,7 @@ export default function JourneysSection({
         </span>
 
         <motion.div
+          aria-hidden="true"
           animate={{
             rotate: journeyOpen ? 180 : 0,
           }}
@@ -70,6 +74,7 @@ export default function JourneysSection({
           }}
         >
           <ChevronDown
+            aria-hidden="true"
             className={getChevronClassName()}
           />
         </motion.div>

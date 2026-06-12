@@ -205,6 +205,7 @@ export default function ContactFormSection() {
                 type="text"
                 name="name"
                 placeholder="First Name"
+                aria-label="First Name"
                 className="
                   w-full
                   border
@@ -233,6 +234,10 @@ export default function ContactFormSection() {
                 name="mobile"
                 required
                 placeholder="Mobile No."
+                aria-label="Mobile Number"
+                aria-required="true"
+                inputMode="tel"
+                autoComplete="tel"
                 className="
                   w-full
                   border
@@ -265,6 +270,9 @@ export default function ContactFormSection() {
                 name="email"
                 required
                 placeholder="Your Email"
+                aria-label="Email Address"
+                aria-required="true"
+                autoComplete="email"
                 className="
                   w-full
                   border
@@ -294,6 +302,8 @@ export default function ContactFormSection() {
               rows={4}
               name="message"
               placeholder="Write your message"
+              aria-label="Message"
+              autoComplete="off"
               className="
                 w-full
                 border
