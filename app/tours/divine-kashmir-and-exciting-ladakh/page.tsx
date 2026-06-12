@@ -11,6 +11,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Kashmir & Ladakh Tour Package | Mountains, Lakes & Himalayan Adventures",
@@ -41,6 +42,12 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Divine Kashmir & Exciting Ladakh Tour"
+        description="Explore the breathtaking beauty of Kashmir and Ladakh through scenic valleys, mountain landscapes, monasteries, lakes, cultural experiences, and unforgettable Himalayan journeys."
+        url="https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh-tour"
       />
 
       <HeroSection />

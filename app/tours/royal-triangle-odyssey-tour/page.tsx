@@ -14,6 +14,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Royal Triangle Odyssey Tour India | Heritage, Culture & Iconic Destinations",
@@ -44,6 +45,12 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours/royal-triangle-odyssey-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Royal Triangle Odyssey Tour"
+        description="Explore India's rich heritage, cultural landmarks, historic cities, and unforgettable experiences through a carefully curated Royal Triangle journey across iconic destinations."
+        url="https://indiaheritagetravel.com/tours/Royal-triangle-odyssey-tour"
       />
 
       <RoyalTriangleHero />

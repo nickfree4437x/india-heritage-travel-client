@@ -21,6 +21,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Rajasthan Heritage Retreat Tour | Royal Palaces, Culture & Heritage",
@@ -51,6 +52,12 @@ export default function Page() {
             url: "https://indiaheritagetravel.com/tours/rajasthani-heritage-retreat-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Rajasthan Heritage Retreat Tour"
+        description="Explore the royal heritage of Rajasthan through majestic forts, historic palaces, vibrant culture, local traditions, and unforgettable travel experiences across India's most iconic destinations."
+        url="https://indiaheritagetravel.com/tours/rajasthani-heritage-retreat-tour"
       />
 
       {/* 🔹 HERO */}

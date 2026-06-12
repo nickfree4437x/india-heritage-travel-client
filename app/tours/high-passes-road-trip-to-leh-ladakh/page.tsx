@@ -9,6 +9,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Leh Ladakh Road Trip | High Mountain Passes & Himalayan Adventure",
@@ -35,10 +36,16 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours",
           },
           {
-            name: "Ayurveda Journey Tour",
-            url: "https://indiaheritagetravel.com/tours/ayurveda-journey-tour",
+            name: "Leh Ladakh Road Trip Tour",
+            url: "https://indiaheritagetravel.com/tours/high-passes-road-trip-to-leh-ladakh",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Leh Ladakh Road Trip Tour"
+        description="Embark on an unforgettable Leh Ladakh road trip featuring high mountain passes, breathtaking landscapes, monasteries, remote villages, and thrilling Himalayan experiences."
+        url="https://indiaheritagetravel.com/tours/high-passes-road-trip-to-leh-ladakh"
       />
 
       <HeroSection />

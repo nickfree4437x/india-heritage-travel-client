@@ -14,6 +14,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "North India Discovery Tour | Culture, Heritage & Spiritual Journeys",
@@ -44,6 +45,12 @@ export default function Page() {
             url: "https://indiaheritagetravel.com/tours/mystical-north-india-discovery-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Mystical North India Discovery Tour"
+        description="Discover the cultural, spiritual, and historical wonders of North India through heritage landmarks, local traditions, iconic destinations, and immersive travel experiences."
+        url="https://indiaheritagetravel.com/tours/mystical-north-india-discovery-tour"
       />
 
       <HeroSection />

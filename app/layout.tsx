@@ -72,6 +72,29 @@ const organizationSchema = {
   ],
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+
+  "@type": "WebSite",
+
+  name: "India Heritage Travel",
+
+  url: "https://indiaheritagetravel.com",
+
+  description:
+    "India Heritage Travel offers personalized heritage, cultural, wellness, festival, and luxury tours across India.",
+
+  inLanguage: "en",
+
+  publisher: {
+    "@type": "Organization",
+
+    name: "India Heritage Travel",
+
+    url: "https://indiaheritagetravel.com",
+  },
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://indiaheritagetravel.com"),
   title: "India Heritage Travel",
@@ -99,6 +122,17 @@ export default function RootLayout({
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(
                 organizationSchema
+              ),
+            }}
+          />
+
+          {/* Website Schema */}
+          <Script
+            id="website-schema"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(
+                websiteSchema
               ),
             }}
           />

@@ -46,7 +46,7 @@ const teamMembers = [
   {
     name: "Vishal",
     role: "Digital & Transport Operations",
-    image: "/about/vishal.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781241673/profile_gqcznl.jpg",
     alt: "Vishal managing transport operations and digital presence at India Heritage Travel",
     description:
       "Handling transportation, guest coordination, website management, and digital presence.",

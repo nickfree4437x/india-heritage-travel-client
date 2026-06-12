@@ -15,6 +15,7 @@ import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Royal Heritage Trail Tour India | Palaces, Forts & Cultural Experiences",
@@ -45,6 +46,12 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours/the-royal-heritage-trail-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="The Royal Heritage Trail Tour"
+        description="Explore India's royal heritage through magnificent palaces, historic forts, cultural landmarks, local traditions, and immersive travel experiences across iconic destinations."
+        url="https://indiaheritagetravel.com/tours/the-royal-heritage-trail-tour"
       />
 
       <HeroSection />

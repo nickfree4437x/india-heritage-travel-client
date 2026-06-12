@@ -13,6 +13,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Heritage & Wildlife Tour India | Culture, Nature & Safari Experiences",
@@ -43,6 +44,12 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours/journey-through-heritage-wildlife",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Journey Through Heritage & Wildlife Tour"
+        description="Experience the perfect blend of India's cultural heritage and wildlife adventures through historic landmarks, natural landscapes, safari experiences, and unforgettable journeys."
+        url="https://indiaheritagetravel.com/tours/journey-through-heritage-wildlife"
       />
 
       <HeroSection />

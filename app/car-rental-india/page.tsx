@@ -8,7 +8,6 @@ import VehicleSection from "./rent-car/sections/luxury-vehicles/LuxuryVehicleSec
 import WhyChooseSection from "./rent-car/sections/why-choose/WhyChooseSection";
 import PremiumVehicleSection from "./rent-car/sections/premium-vehicles/PremiumVehicleSection";
 import GroupVehicleSection from "./rent-car/sections/group-vehicles/GroupVehicleSection";
-import HeritageVehicleSection from "./rent-car/sections/heritage-vehicles/HeritageVehicleSection";
 
 export const metadata: Metadata = {
   title: "Car Rental India With Driver | India Heritage Travel | Rajasthan Road Trips",
@@ -27,7 +26,6 @@ export default function RentCarPage() {
       <VehicleSection/>
       <PremiumVehicleSection/>
       <GroupVehicleSection/>
-      <HeritageVehicleSection/>
       <BookingSection/>
       <FaqSection/>
       <Footer/>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 import AyurvedaHero from "./sections/hero/AyurvedaHero";
 import SuitableFor from "./sections/suitable-for/SuitableFor";
@@ -44,6 +45,12 @@ export default function AyurvedaJourneyPage() {
             url: "https://indiaheritagetravel.com/tours/ayurveda-journey-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Ayurveda Journey Tour"
+        description="Experience authentic Ayurveda therapies, holistic healing, wellness treatments, yoga practices, and rejuvenating journeys designed to restore balance and well-being."
+        url="https://indiaheritagetravel.com/tours/ayurveda-journey-tour"
       />
 
       <AyurvedaHero />

@@ -9,6 +9,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Spiti Valley Trek & Tour India | Himalayan Landscapes & Adventure Journey",
@@ -39,6 +40,12 @@ export default function SpitiValleyTrekAndTourPage() {
             url: "https://indiaheritagetravel.com/tours/spiti-valley-trek-and-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Spiti Valley Trek & Tour"
+        description="Experience the rugged beauty of Spiti Valley through scenic treks, mountain villages, monasteries, dramatic landscapes, and unforgettable Himalayan adventures."
+        url="https://indiaheritagetravel.com/tours/spiti-valley-trek-and-tour"
       />
 
       <HeroSection />

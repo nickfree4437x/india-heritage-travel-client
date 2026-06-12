@@ -1,5 +1,6 @@
 "use client";
 
+import PersonSchema from "@/src/common/seo/PersonSchema";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -8,6 +9,12 @@ export default function JourneySection() {
 
   return (
     <section id="journey" className="space-y-10">
+
+      <PersonSchema
+        name="Piyush Singh"
+        jobTitle="Founder"
+        image="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto,w_800/v1779618257/profile_fankpm.jpg"
+      />
 
       {/* TOP PART */}
       <div className="space-y-6">

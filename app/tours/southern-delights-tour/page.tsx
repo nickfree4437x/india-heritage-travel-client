@@ -8,6 +8,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Southern Delights Tour India | Temples, Culture & South India Experiences",
@@ -38,6 +39,12 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours/southern-delights-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Southern Delights Tour"
+        description="Explore the cultural richness of South India through historic temples, scenic landscapes, local traditions, authentic cuisine, and unforgettable travel experiences."
+        url="https://indiaheritagetravel.com/tours/southern-delights-tour"
       />
 
       <HeroSection />

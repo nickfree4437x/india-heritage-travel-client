@@ -9,6 +9,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Heavenly Kashmir Tour Package | Lakes, Valleys & Scenic Experiences",
@@ -39,6 +40,12 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours/heavenly-kashmir-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Heavenly Kashmir Tour"
+        description="Discover the beauty of Kashmir through peaceful lakes, lush valleys, mountain views, local culture, and unforgettable travel experiences in one of India's most stunning destinations."
+        url="https://indiaheritagetravel.com/tours/heavenly-kashmir"
       />
 
       <HeroSection />

@@ -13,6 +13,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Royal Rajasthan & Sacred Ganges Tour India | Heritage, Culture & Spiritual Journey",
@@ -43,6 +44,12 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours/royal-rajasthan-sacred-ganges-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Royal Rajasthan & Sacred Ganges Tour"
+        description="Experience the royal heritage of Rajasthan and the spiritual beauty of the sacred Ganges through cultural landmarks, historic cities, local traditions, and unforgettable journeys across India."
+        url="https://indiaheritagetravel.com/tours/royal-rajasthan-sacred-ganges-tour"
       />
 
       <HeroSection />

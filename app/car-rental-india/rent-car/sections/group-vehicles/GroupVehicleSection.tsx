@@ -5,21 +5,27 @@ import Image from "next/image";
 const vehicles = [
   {
     name: "Force Urbania (Luxury Edition)",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780283955/exterior-4-1_vtpahv.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781244308/exterior-4-1_vtpahv.avif",
     desc: "A premium luxury coach offering exceptional comfort, spacious seating, and a refined group travel experience.",
-    capacity: "9 to 17 Seater",
+    capacity: "8 to 17 Seater",
   },
   {
     name: "Luxury Volvo Buses & Coaches",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780287501/2326x800-volvo-9700-CGI_v1f98u.avif",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781244587/9600_15m_sleeper_FR_01a_hires-nbg_c50vrw.png",
     desc: "Premium luxury coaches offering spacious seating, superior comfort, and a smooth travel experience for large groups.",
-    capacity: "40 to 55 Seater",
+    capacity: "14 to 55 Seater",
   },
   {
     name: "Tempo Travellers",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780284385/ssc04qnamouiwycd9yob-1_elvngd.webp",
     desc: "Spacious and reliable transportation for family trips, tours, and group travel.",
     capacity: "9 to 16 Seater",
+  },
+  {
+    name: "Mini Coach",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781245494/stock-vector-van-bus-mini-art-d-realistic-design-template-car-vector-2280748025_cslp5u.jpg",
+    desc: "Perfect for small group journeys, offering comfort, ample space, and a smooth travel experience.",
+    capacity: "14 to 27 Seater",
   },
 ];
 

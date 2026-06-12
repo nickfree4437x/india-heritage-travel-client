@@ -9,6 +9,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Yoga Retreat Tour India | Wellness, Meditation & Spiritual Experiences",
@@ -39,6 +40,12 @@ export default function YogaEscapesPage() {
             url: "https://indiaheritagetravel.com/tours/yoga-escapes-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Yoga Escapes Tour"
+        description="Reconnect your mind and body through yoga sessions, meditation practices, wellness retreats, spiritual experiences, and peaceful journeys across India."
+        url="https://indiaheritagetravel.com/tours/yoga-escapes-tour"
       />
 
       <YogaHeroSection />

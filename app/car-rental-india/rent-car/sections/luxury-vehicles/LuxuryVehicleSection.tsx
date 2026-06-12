@@ -5,45 +5,45 @@ import Image from "next/image";
 const vehicles = [
   {
     name: "Maruti Suzuki Dzire",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780277635/download_sb7kbs.png",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781242124/download_sb7kbs.png",
     desc: "Travel comfortably across cities with this popular sedan, known for its smooth ride, spacious interiors, and reliability.",
     capacity: "3 + 1 Seater",
   },
   {
     name: "Hyundai Verna",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780286231/verna-exterior-left-front-three-quarter_k47jxh.avif",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781242610/verna-exterior-left-front-three-quarter_k47jxh.avif",
     desc: "A premium sedan built for smooth journeys, superior comfort, and stylish travel.",
+    capacity: "3 + 1 Seater",
+  },
+  {
+    name: "Toyota Etios",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781242871/front-left-side-47_alh5ut.webp",
+    desc: "A premium sedan offering exceptional comfort and a smooth ride for long-distance journeys.",
     capacity: "3 + 1 Seater",
   },
   {
     name: "BMW 5 Series",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780278386/bmw-5-series_m7pwjs.jpg",
     desc: "A premium sedan crafted for business travel, VIP transfers, and refined road journeys.",
-    capacity: "4 + 1 Seater",
-  },
-  {
-    name: "Toyota Camry",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780279018/front-left-side-47_alh5ut.avif",
-    desc: "A premium sedan offering exceptional comfort and a smooth ride for long-distance journeys.",
     capacity: "3 + 1 Seater",
   },
   {
     name: "BMW 7 Series",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780279156/cosySec_swrzwj.webp",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781243189/cosySec_swrzwj.avif",
     desc: "A flagship luxury sedan designed for VIP transfers and executive journeys.",
-    capacity: "4 + 1 Seater",
+    capacity: "3 + 1 Seater",
   },
   {
     name: "Mercedes-Benz S-Class",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780286856/sclasssclassrightfrontthreequarter_o294gh.webp",
     desc: "The ultimate luxury sedan, delivering unparalleled comfort, prestige, and refinement.",
-    capacity: "4 + 1 Seater",
+    capacity: "3 + 1 Seater",
   },
   {
     name: "Mercedes-Benz E-Class",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780279409/1757087195601_rnxpdg.avif",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781243399/1757087195601_rnxpdg.avif",
     desc: "A sophisticated executive sedan offering premium comfort and a refined travel experience.",
-    capacity: "4 + 1 Seater",
+    capacity: "3 + 1 Seater",
   },
 ];
 

@@ -14,6 +14,7 @@ import Footer from "@/src/sections/footer/Footer";
 import CommonForm from "@/src/tours/CommonForm";
 import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
   title: "Southern Splendors Tour India | Heritage, Culture & Scenic Journeys",
@@ -44,6 +45,12 @@ export default function SouthernSplendorsPage() {
             url: "https://indiaheritagetravel.com/tours/southern-splendors-tour",
           },
         ]}
+      />
+
+      <TourSchema
+        name="Southern Splendors Tour"
+        description="Discover the heritage, architecture, natural beauty, and cultural traditions of South India through a carefully curated and immersive travel experience."
+        url="https://indiaheritagetravel.com/tours/southern-splendors-tour"
       />
 
       <HeroSection />

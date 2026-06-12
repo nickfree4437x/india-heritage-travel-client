@@ -5,21 +5,21 @@ import Image from "next/image";
 const vehicles = [
   {
     name: "Toyota Innova Crysta",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780279979/innovacrystainnovacrystaleftfrontthreequarter_iafwkt.webp",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781243736/innovacrystainnovacrystaleftfrontthreequarter_iafwkt.jpg",
     desc: "A trusted choice for family and group travel, offering spacious seating and exceptional comfort.",
-    capacity: "6 + 1 Seater",
+    capacity: "4 + 1 Seater",
   },
   {
     name: "Toyota Innova Hycross",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780287165/front-left-side-47_rcnbxa.avif",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781243879/innovahycrosstoyotainnovahycrossrightfrontthreequarter_l9hxwa.jpg",
     desc: "A modern premium MUV offering spacious comfort, advanced features, and smooth long-distance travel.",
-    capacity: "7 + 1 Seater",
+    capacity: "4 + 1 Seater",
   },
   {
     name: "Kia Carens",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1780280232/kia-carens_elhq9c.jpg",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781244077/kia-carens_elhq9c.avif",
     desc: "A versatile family vehicle offering comfort, convenience, and ample space for every journey.",
-    capacity: "5 + 1 Seater",
+    capacity: "4 + 1 Seater",
   },
 ];
 
