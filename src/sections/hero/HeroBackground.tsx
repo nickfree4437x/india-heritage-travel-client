@@ -41,7 +41,7 @@ export default function HeroBackground() {
           }}
         >
           <source
-            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/f_auto,q_auto,w_auto/hero-small_q95bzf.mp4"
+            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/f_auto,q_60,w_1920/hero-small_q95bzf.mp4"
             type="video/mp4"
           />
         </video>
@@ -69,7 +69,7 @@ export default function HeroBackground() {
           }}
         >
           <source
-            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/v1781066920/hero-mobile_z58h4d_oypsli.mp4"
+            src="https://res.cloudinary.com/dhfsyt4x9/video/upload/f_auto,q_50,w_720/v1781066920/hero-mobile_z58h4d_oypsli.mp4"
             type="video/mp4"
           />
         </video>
