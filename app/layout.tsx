@@ -63,11 +63,8 @@ const organizationSchema = {
 
   sameAs: [
     "https://www.facebook.com/profile.php?id=61559592375914",
-
     "https://www.instagram.com/indiaheritagetravel",
-
     "https://youtube.com/@indiaheritagetravel?si=vFEfLrYnv_1DWHqM",
-
     "https://pin.it/3kPXLj6Jk",
   ],
 };
@@ -96,9 +93,22 @@ const websiteSchema = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://indiaheritagetravel.com"),
-  title: "India Heritage Travel",
-  description: "Explore Incredible India Journeys",
+  metadataBase: new URL(
+    "https://indiaheritagetravel.com"
+  ),
+
+  title: {
+    default: "India Heritage Travel",
+    template: "%s | India Heritage Travel",
+  },
+
+  description:
+    "Explore Incredible India Journeys",
+
+  alternates: {
+    canonical:
+      "https://indiaheritagetravel.com",
+  },
 };
 
 export default function RootLayout({
@@ -106,128 +116,137 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
-
     <html lang="en">
 
+      <head>
+        <link
+          rel="preconnect"
+          href="https://res.cloudinary.com"
+        />
+
+        <link
+          rel="dns-prefetch"
+          href="https://res.cloudinary.com"
+        />
+      </head>
+
       <body
-          className={`${inter.variable} ${playfair.variable} ${caveatBrush.variable} font-[var(--font-inter)] antialiased`}
-        >
+        className={`${inter.variable} ${playfair.variable} ${caveatBrush.variable} font-[var(--font-inter)] antialiased`}
+      >
+        {/* Organization Schema */}
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              organizationSchema
+            ),
+          }}
+        />
 
-          {/* Organization Schema */}
-          <Script
-            id="organization-schema"
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(
-                organizationSchema
-              ),
-            }}
-          />
+        {/* Website Schema */}
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              websiteSchema
+            ),
+          }}
+        />
 
-          {/* Website Schema */}
-          <Script
-            id="website-schema"
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(
-                websiteSchema
-              ),
-            }}
-          />
+        {/* Navbar */}
+        <Navbar />
 
-          {/* Navbar */}
-          <Navbar />
+        {/* Page Content */}
+        <main>{children}</main>
 
-          {/* Page Content */}
-          <main>{children}</main>
+        {/* Sticky Plan Your Trip Button */}
+        <StickyPlanButton />
 
-          {/* Sticky Plan Your Trip Button */}
-          <StickyPlanButton />
+        {/* WhatsApp Support */}
+        <WhatsAppSupport />
 
-          {/* WhatsApp Support */}
-          <WhatsAppSupport />
+        {/* React Hot Toast */}
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            duration: 4000,
 
-          {/* React Hot Toast */}
-          <Toaster
-            position="top-center"
-            toastOptions={{
-              duration: 4000,
+            style: {
+              background: "#fff",
+              color: "#333",
+              border: "1px solid white",
+              padding: "14px 16px",
+              fontSize: "13px",
+              borderRadius: "12px",
+            },
 
+            success: {
               style: {
-                background: "#fff",
-                color: "#333",
                 border: "1px solid white",
-                padding: "14px 16px",
-                fontSize: "13px",
-                borderRadius: "12px",
               },
+            },
 
-              success: {
-                style: {
-                  border: "1px solid white",
-                },
+            error: {
+              style: {
+                border: "1px solid white",
               },
+            },
+          }}
+        />
 
-              error: {
-                style: {
-                  border: "1px solid white",
-                },
-              },
-            }}
-          />
+        {/* Google Translate Init */}
+        <Script
+          id="google-translate-init"
+          strategy="afterInteractive"
+        >
+          {`
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+              );
+            }
+          `}
+        </Script>
 
-          {/* Google Translate Init */}
-          <Script
-            id="google-translate-init"
-            strategy="afterInteractive"
-          >
-            {`
-              function googleTranslateElementInit() {
-                new google.translate.TranslateElement(
-                  { pageLanguage: 'en' },
-                  'google_translate_element'
-                );
+        {/* Google Translate Library */}
+        <Script
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          strategy="afterInteractive"
+        />
+
+        {/* Fix Google Translate Banner */}
+        <Script
+          id="google-translate-fix"
+          strategy="afterInteractive"
+        >
+          {`
+            const removeBanner = () => {
+              const banner = document.querySelector('.goog-te-banner-frame');
+
+              if (banner) {
+                banner.remove();
               }
-            `}
-          </Script>
 
-          {/* Google Translate Library */}
-          <Script
-            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-            strategy="afterInteractive"
-          />
+              document.body.style.top = '0px';
+            };
 
-          {/* Fix Google Translate Banner */}
-          <Script
-            id="google-translate-fix"
-            strategy="afterInteractive"
-          >
-            {`
-              const removeBanner = () => {
-                const banner = document.querySelector('.goog-te-banner-frame');
+            removeBanner();
 
-                if (banner) {
-                  banner.remove();
-                }
-
-                document.body.style.top = '0px';
-              };
-
+            const observer = new MutationObserver(() => {
               removeBanner();
+            });
 
-              const observer = new MutationObserver(() => {
-                removeBanner();
-              });
-
-              observer.observe(document.body, {
-                childList: true,
-                subtree: true,
-              });
-            `}
-          </Script>
-        </body>
+            observer.observe(document.body, {
+              childList: true,
+              subtree: true,
+            });
+          `}
+        </Script>
+      </body>
     </html>
   );
 }

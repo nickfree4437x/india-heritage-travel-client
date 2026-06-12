@@ -1,21 +1,10 @@
 "use client";
 
 // ============================================================================
-// TYPES & INTERFACES
-// ============================================================================
-
-type Props = {
-  isHovering: boolean;
-};
-
-// ============================================================================
 // MAIN COMPONENT
 // ============================================================================
 
-export default function HeroBackground({
-  isHovering,
-}: Props) {
-
+export default function HeroBackground() {
   return (
     <>
       {/* ====================================================================
@@ -25,11 +14,8 @@ export default function HeroBackground({
       <div
         className="absolute inset-0"
         style={{
-          transform: isHovering
-            ? "scale(1.02)"
-            : "scale(1.05)",
-          transition:
-            "transform 0.8s ease-out",
+          transform: "scale(1.03)",
+          transition: "transform 0.8s ease-out",
         }}
       >
         {/* DESKTOP VIDEO */}

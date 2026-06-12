@@ -1,17 +1,9 @@
 "use client";
 
-import { useState } from "react";
-
 import HeroBackground from "./HeroBackground";
 import HeroContent from "./HeroContent";
 
 export default function Hero() {
-  // ============================================================================
-  // STATE DECLARATIONS
-  // ============================================================================
-
-  const [isHovering, setIsHovering] = useState(false);
-
   // ============================================================================
   // EVENT HANDLERS
   // ============================================================================
@@ -33,15 +25,9 @@ export default function Hero() {
   // ============================================================================
 
   return (
-    <section
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
-      className="relative min-h-screen w-full overflow-hidden bg-black"
-    >
+    <section className="relative min-h-screen w-full overflow-hidden bg-black">
       {/* BACKGROUND */}
-      <HeroBackground
-        isHovering={isHovering}
-      />
+      <HeroBackground />
 
       {/* CONTENT */}
       <HeroContent
@@ -51,7 +37,6 @@ export default function Hero() {
       {/* SCROLL INDICATOR */}
       <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20">
         <div className="flex flex-col items-center">
-
           <span
             className="
               text-[8px]
@@ -93,7 +78,6 @@ export default function Hero() {
               "
             />
           </div>
-
         </div>
       </div>
     </section>

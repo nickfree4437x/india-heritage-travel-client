@@ -19,12 +19,22 @@ const securityHeaders = [
   },
   {
     key: "Strict-Transport-Security",
-    value: "max-age=31536000; includeSubDomains; preload",
+    value:
+      "max-age=31536000; includeSubDomains; preload",
   },
 ];
 
 const nextConfig: NextConfig = {
+  compress: true,
+
   images: {
+    formats: [
+      "image/avif",
+      "image/webp",
+    ],
+
+    minimumCacheTTL: 31536000,
+
     remotePatterns: [
       {
         protocol: "https",

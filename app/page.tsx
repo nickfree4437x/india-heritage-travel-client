@@ -1,18 +1,45 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import dynamic from "next/dynamic";
 
-import Navbar from "@/src/navbar-layout/navbar/Navbar";
 import Hero from "@/src/sections/hero/Hero";
-import Difference from "@/src/sections/how-make-difference/Difference";
 import About from "@/src/sections/welcome-section/About";
-import Destinations from "@/src/sections/destinations/Destinations";
-import ReviewsSection from "@/src/sections/review/Reviews";
-import Adventure from "@/src/sections/adventure/Adventure";
-import Festival from "@/src/sections/festivals/Festivals";
-import GallerySection from "@/src/sections/gallery/Gallery";
-import CotactSection from "@/src/sections/contact/Contact";
-import Footer from "@/src/sections/footer/Footer";
-import SoloTravelSection from "@/src/sections/solo-trip/Solo";
+
+const Difference = dynamic(
+  () => import("@/src/sections/how-make-difference/Difference")
+);
+
+const Destinations = dynamic(
+  () => import("@/src/sections/destinations/Destinations")
+);
+
+const SoloTravelSection = dynamic(
+  () => import("@/src/sections/solo-trip/Solo")
+);
+
+const Adventure = dynamic(
+  () => import("@/src/sections/adventure/Adventure")
+);
+
+const Festival = dynamic(
+  () => import("@/src/sections/festivals/Festivals")
+);
+
+const ReviewsSection = dynamic(
+  () => import("@/src/sections/review/Reviews")
+);
+
+const GallerySection = dynamic(
+  () => import("@/src/sections/gallery/Gallery")
+);
+
+const CotactSection = dynamic(
+  () => import("@/src/sections/contact/Contact")
+);
+
+const Footer = dynamic(
+  () => import("@/src/sections/footer/Footer")
+);
 
 export const metadata: Metadata = {
   title:
@@ -26,18 +53,12 @@ export const metadata: Metadata = {
 
 const reviewSchema = {
   "@context": "https://schema.org",
-
   "@type": "TravelAgency",
-
   name: "India Heritage Travel",
-
   url: "https://indiaheritagetravel.com",
-
   aggregateRating: {
     "@type": "AggregateRating",
-
     ratingValue: "5",
-
     reviewCount: "7",
   },
 };
@@ -52,9 +73,10 @@ export default function Home() {
           __html: JSON.stringify(reviewSchema),
         }}
       />
-      <Navbar />
+
       <Hero />
       <About />
+
       <Difference />
       <Destinations />
       <SoloTravelSection />
