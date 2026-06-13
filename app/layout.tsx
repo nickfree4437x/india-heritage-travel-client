@@ -221,7 +221,7 @@ export default function RootLayout({
         {/* Fix Google Translate Banner */}
         <Script
           id="google-translate-fix"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         >
           {`
             const removeBanner = () => {

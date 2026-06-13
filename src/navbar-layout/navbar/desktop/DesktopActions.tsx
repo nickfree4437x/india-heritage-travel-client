@@ -1,8 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
-import LanguageSwitcher from "../../language-switcher/LanguageSwitcher";
+const LanguageSwitcher = dynamic(
+  () =>
+    import(
+      "../../language-switcher/LanguageSwitcher"
+    ),
+  {
+    ssr: false,
+  }
+);
 
 type Props = {
   scrolled: boolean;

@@ -1,13 +1,24 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { Menu, X } from "lucide-react";
 
-import LanguageSwitcher from "../../language-switcher/LanguageSwitcher";
+const LanguageSwitcher = dynamic(
+  () =>
+    import(
+      "../../language-switcher/LanguageSwitcher"
+    ),
+  {
+    ssr: false,
+  }
+);
 
 type Props = {
   scrolled: boolean;
   isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsOpen: React.Dispatch<
+    React.SetStateAction<boolean>
+  >;
 };
 
 export default function MobileControls({
@@ -22,7 +33,11 @@ export default function MobileControls({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-label={
+          isOpen
+            ? "Close navigation menu"
+            : "Open navigation menu"
+        }
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
         className={`
@@ -39,9 +54,15 @@ export default function MobileControls({
         `}
       >
         {isOpen ? (
-          <X size={22} aria-hidden="true" />
+          <X
+            size={22}
+            aria-hidden="true"
+          />
         ) : (
-          <Menu size={22} aria-hidden="true" />
+          <Menu
+            size={22}
+            aria-hidden="true"
+          />
         )}
       </button>
     </div>
