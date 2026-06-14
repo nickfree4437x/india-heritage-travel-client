@@ -1,10 +1,11 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 
 interface FormPhoneInputProps {
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (value: string) => void;
   error?: string;
 }
 
@@ -17,46 +18,24 @@ export default function FormPhoneInput({
     <div>
       <div
         className={`
-          flex items-center overflow-hidden transition-colors
-          ${error ? 'border-red-500 border rounded-lg' : 'border-[#ddd2c2]'}
+          border rounded-lg bg-white transition
+          ${
+            error
+              ? "border-red-500"
+              : "border-[#ddd2c2] focus-within:border-[#9A7A58]"
+          }
         `}
       >
-
-        <input
-          type="tel"
+        <PhoneInput
+          international
+          defaultCountry="IN"
+          countryCallingCodeEditable={false}
           value={value}
-          onChange={onChange}
+          onChange={(value) => onChange(value || "")}
           placeholder="Phone No."
-          className="w-full
-
-        border border-[#ddd2c2]
-
-        bg-white
-
-        rounded-lg
-
-        px-5
-        py-2.5 sm:py-2.5
-
-        text-[12px] sm:text-[13px]
-        text-[#5b5348]
-
-        placeholder:text-[#9a8f81]
-        placeholder:font-light
-
-        font-light
-        tracking-[0.2px]
-
-        focus:outline-none
-        focus:border-[#9A7A58]
-
-        transition"
+          className="custom-phone-input"
         />
       </div>
-
-      {/* {error && (
-        <p className="text-red-500 text-[14px] mt-2">{error}</p>
-      )} */}
     </div>
   );
 }

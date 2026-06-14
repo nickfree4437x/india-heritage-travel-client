@@ -57,10 +57,10 @@ export default function Step1({
         />
 
         <FormPhoneInput
-          value={formData.phone}
-          onChange={(e) => updateFormData("phone", e.target.value)}
-          error={errors.phone}
-        />
+            value={formData.phone}
+            onChange={(value) => updateFormData("phone", value)}
+            error={errors.phone}
+          />
       </div>
 
       {/* ROW 2 */}
@@ -128,7 +128,7 @@ export default function Step1({
         <button
           onClick={onNext}
           className="
-            bg-[#b89563] text-white tracking-[2px] text-[15px] font-light
+            bg-[#b89563] text-white tracking-[1px] text-[15px] font-light
             px-16 md:px-24 py-3 hover:bg-[#9f7a47]
             transition-all duration-300 rounded-sm
           "

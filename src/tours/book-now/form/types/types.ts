@@ -2,8 +2,9 @@ import React from "react";
 
 export interface CountryOption {
   value: string;
-  label: React.ReactNode;
-  code: string;
-  flag: string;
   name: string;
+  code: string;
+  isoCode: string;
+  flag: string;
+  label: React.ReactNode;
 }

@@ -3,10 +3,15 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { X } from "lucide-react";
+import { isValidPhoneNumber } from "react-phone-number-input";
 
 import Step1 from "./steps/Step1";
 import Step2 from "./steps/Step2";
-import { PlanTripModalProps, FormDataType, FormErrorsType } from "./types/types";
+import {
+  PlanTripModalProps,
+  FormDataType,
+  FormErrorsType,
+} from "./types/types";
 
 const WEB3FORMS_URL = "https://api.web3forms.com/submit";
 const ACCESS_KEY = "499e1d69-87f9-41fa-9539-21cf35241422";
@@ -61,26 +66,62 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
   const validateStep1 = (): boolean => {
     const newErrors: FormErrorsType = {};
 
-    if (!formData.name.trim()) newErrors.name = "Name is required";
-    if (!formData.email.trim()) newErrors.email = "Email is required";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address";
+    if (!formData.name.trim()) {
+    newErrors.name = "Name is required";
     }
-    if (!formData.phone.trim()) newErrors.phone = "Phone number is required";
-    else if (formData.phone.length < 10) {
-      newErrors.phone = "Please enter a valid 10-digit phone number";
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
+    ) {
+      newErrors.email =
+        "Please enter a valid email address";
     }
-    if (!formData.tourDate) newErrors.tourDate = "Tour start date is required";
-    if (!formData.duration) newErrors.duration = "Trip duration is required";
-    else if (parseInt(formData.duration) <= 0) {
-      newErrors.duration = "Please enter a valid duration";
+
+    if (!formData.phone) {
+      newErrors.phone = "Phone number is required";
+    } else if (
+      !isValidPhoneNumber(formData.phone)
+    ) {
+      newErrors.phone =
+        "Please enter a valid phone number";
     }
-    if (!formData.travellers) newErrors.travellers = "Number of travellers is required";
-    else if (parseInt(formData.travellers) <= 0) {
-      newErrors.travellers = "Please enter a valid number";
+
+    if (!formData.tourDate) {
+      newErrors.tourDate =
+        "Tour start date is required";
     }
-    if (!formData.accommodation) newErrors.accommodation = "Please select accommodation type";
-    if (formData.interests.length === 0) newErrors.interests = "Please select at least one interest";
+
+    if (!formData.duration) {
+      newErrors.duration =
+        "Trip duration is required";
+    } else if (
+      parseInt(formData.duration) <= 0
+    ) {
+      newErrors.duration =
+        "Please enter a valid duration";
+    }
+
+    if (!formData.travellers) {
+      newErrors.travellers =
+        "Number of travellers is required";
+    } else if (
+      parseInt(formData.travellers) <= 0
+    ) {
+      newErrors.travellers =
+        "Please enter a valid number";
+    }
+
+    if (!formData.accommodation) {
+      newErrors.accommodation =
+        "Please select accommodation type";
+    }
+
+    if (formData.interests.length === 0) {
+      newErrors.interests =
+        "Please select at least one interest";
+    }
 
     setErrors(newErrors);
 

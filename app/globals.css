@@ -188,3 +188,57 @@ html {
   }
 
 }
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+}
+
+.phone-input .PhoneInputCountry {
+  display: none !important;
+}
+
+.phone-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #5b5348;
+}
+
+.phone-input input::placeholder {
+  color: #9a8f81;
+}
+
+.custom-phone-input {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+}
+
+.custom-phone-input .PhoneInputCountry {
+  margin-left: 14px;
+  margin-right: 10px;
+}
+
+.custom-phone-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  padding: 10px 14px 10px 0;
+
+  font-size: 13px;
+  font-weight: 300;
+  color: #5b5348;
+}
+
+.custom-phone-input input::placeholder {
+  color: #9a8f81;
+  font-weight: 300;
+}

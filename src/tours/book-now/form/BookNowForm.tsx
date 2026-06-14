@@ -192,9 +192,13 @@ export default function BookNowForm({
           countries={countries}
           selectedCountry={selectedCountry}
           setSelectedCountry={setSelectedCountry}
-          name="phone"
           value={formData.phone}
-          onChange={handleChange}
+          onPhoneChange={(phone) =>
+            setFormData((prev) => ({
+              ...prev,
+              phone,
+            }))
+          }
           required
         />
 

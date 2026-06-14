@@ -1,7 +1,8 @@
 "use client";
 
-import Select from "react-select";
-import Image from "next/image";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
+
 import { CountryOption } from "../types/types";
 
 type Props = {
@@ -13,167 +14,42 @@ type Props = {
     country: CountryOption | null
   ) => void;
 
-  name?: string;
-
   value?: string;
 
-  onChange?: (
-    e: React.ChangeEvent<HTMLInputElement>
-  ) => void;
+  onPhoneChange?: (value: string) => void;
 
   required?: boolean;
 };
 
 export default function PhoneField({
-  countries,
   selectedCountry,
-  setSelectedCountry,
-  name,
   value,
-  onChange,
-  required,
+  onPhoneChange,
 }: Props) {
   return (
     <div
       className="
-        flex items-center
         w-full
         border border-[#ddd2c2]
         bg-white
         rounded-lg
-        overflow-hidden
+        px-4
         focus-within:border-[#9A7A58]
         transition
       "
     >
-      {/* Country Code Select */}
-      <div className="w-[120px] border-r border-[#ddd2c2]">
-        <Select
-          options={countries}
-          value={selectedCountry}
-          onChange={(value) =>
-            setSelectedCountry(value as CountryOption)
-          }
-          instanceId="country-code-select"
-          aria-label="Country Code"
-          styles={{
-            control: (base) => ({
-              ...base,
-
-              minHeight: "40px",
-              height: "40px",
-
-              border: "none",
-
-              backgroundColor: "transparent",
-
-              boxShadow: "none",
-
-              borderRadius: "0",
-            }),
-
-            valueContainer: (base) => ({
-              ...base,
-
-              paddingLeft: "10px",
-              paddingRight: "4px",
-            }),
-
-            singleValue: (base) => ({
-              ...base,
-
-              color: "#5b5348",
-
-              fontSize: "13px",
-
-              fontWeight: 300,
-            }),
-
-            option: (base, state) => ({
-              ...base,
-
-              fontSize: "13px",
-
-              backgroundColor: state.isFocused
-                ? "#f4eee7"
-                : "#fff",
-
-              color: "#5b5348",
-
-              fontWeight: 300,
-
-              cursor: "pointer",
-            }),
-
-            menu: (base) => ({
-              ...base,
-
-              borderRadius: "10px",
-
-              overflow: "hidden",
-
-              border: "1px solid #e7dfd3",
-
-              boxShadow:
-                "0 10px 30px rgba(0,0,0,0.06)",
-            }),
-
-            indicatorSeparator: () => ({
-              display: "none",
-            }),
-
-            dropdownIndicator: (base) => ({
-              ...base,
-
-              padding: "6px",
-
-              color: "#9a8f81",
-            }),
-          }}
-          formatOptionLabel={(country: any) => (
-            <div className="flex items-center gap-2">
-              <Image
-                src={country.flag}
-                alt={country.name}
-                width={20}
-                height={16}
-                className="w-5 h-4 object-cover rounded-sm"
-              />
-
-              <span className="text-[13px] font-light text-[#5b5348]">
-                {country.code}
-              </span>
-            </div>
-          )}
-        />
-      </div>
-
-      {/* Mobile Number */}
-      <input
-        type="tel"
-        name={name}
+      <PhoneInput
+        international
+        countryCallingCodeEditable={false}
+        defaultCountry={
+          selectedCountry?.isoCode as any
+        }
         value={value}
-        onChange={onChange}
-        required={required}
+        onChange={(phone) =>
+          onPhoneChange?.(phone || "")
+        }
         placeholder="Mobile Number"
-        aria-label="Mobile Number"
-        aria-required={required}
-        inputMode="tel"
-        autoComplete="tel"
-        className="
-          flex-1
-          h-[38px]
-          bg-transparent
-          px-4
-          text-[12px]
-          sm:text-[13px]
-          text-[#5b5348]
-          placeholder:text-[#9a8f81]
-          placeholder:font-light
-          font-light
-          tracking-[0.2px]
-          focus:outline-none
-        "
+        className="phone-input"
       />
     </div>
   );

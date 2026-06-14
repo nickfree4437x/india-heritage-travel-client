@@ -142,9 +142,14 @@ export default function Step2({
           onClick={onPrevious}
           disabled={loading}
           className="
-            bg-[#b89563] text-white tracking-[2px] text-[15px] font-light
-            px-16 md:px-24 py-3 hover:bg-[#9f7a47]
-            transition-all duration-300 rounded-sm disabled:opacity-50 disabled:cursor-not-allowed
+            bg-[#b89563] text-white tracking-[1px] text-[14px] font-light
+            min-w-[260px]
+            h-[56px]
+            hover:bg-[#9f7a47]
+            transition-all duration-300 rounded-sm
+            disabled:opacity-50 disabled:cursor-not-allowed
+            flex items-center justify-center
+            whitespace-nowrap
           "
         >
           ← PREVIOUS
@@ -154,10 +159,14 @@ export default function Step2({
           onClick={onSubmit}
           disabled={loading}
           className="
-            bg-[#b89563] text-white tracking-[2px] text-[15px] font-light
-            px-16 md:px-24 py-3 hover:bg-[#9f7a47]
-            transition-all duration-300 rounded-sm disabled:opacity-50 disabled:cursor-not-allowed
-            flex items-center gap-2
+            bg-[#b89563] text-white tracking-[1px] text-[14px] font-light
+            min-w-[260px]
+            h-[56px]
+            hover:bg-[#9f7a47]
+            transition-all duration-300 rounded-sm
+            disabled:opacity-50 disabled:cursor-not-allowed
+            flex items-center justify-center
+            whitespace-nowrap
           "
         >
           {loading ? "SENDING..." : "SUBMIT INQUIRY"}

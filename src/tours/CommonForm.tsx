@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { Country } from "country-state-city";
 
 import BookNowHeader from "./book-now/form/BookNowHeader";
 import BookNowForm from "./book-now/form/BookNowForm";
@@ -15,9 +16,7 @@ type Props = {
 export default function BookNowSection({
   tourName,
 }: Props) {
-
   const [countries, setCountries] = useState<CountryOption[]>([]);
-
   const [selectedCountry, setSelectedCountry] =
     useState<CountryOption | null>(null);
 
@@ -28,63 +27,45 @@ export default function BookNowSection({
   }, []);
 
   useEffect(() => {
-    const fetchCountries = async () => {
-      try {
-        const res = await fetch(
-          "https://restcountries.com/v3.1/all?fields=name,flags,idd"
-        );
+    try {
+      const formattedCountries = Country.getAllCountries()
+        .map((country) => ({
+          value: country.name,
+          name: country.name,
+          code: country.phonecode
+            ? `+${country.phonecode}`
+            : "",
+          isoCode: country.isoCode,
+          flag: `https://flagcdn.com/${country.isoCode.toLowerCase()}.svg`,
 
-        const data = await res.json();
+          label: (
+            <div className="flex items-center gap-3">
+              <Image
+                src={`https://flagcdn.com/${country.isoCode.toLowerCase()}.svg`}
+                alt={country.name}
+                width={20}
+                height={16}
+                className="w-5 h-4 object-cover rounded-sm shadow-sm"
+              />
 
-        const formattedCountries = data
-          .map((country: any) => {
-            const root = country.idd?.root || "";
+              <span className="text-[13px] font-normal text-gray-700">
+                {country.name}
+              </span>
+            </div>
+          ),
+        }))
+        .sort((a, b) => a.name.localeCompare(b.name));
 
-            const suffix =
-              country.idd?.suffixes?.[0] || "";
+      setCountries(formattedCountries);
 
-            return {
-              value: country.name.common,
-              name: country.name.common,
-              code: `${root}${suffix}`,
-              flag: country.flags.svg,
+      const india = formattedCountries.find(
+        (c) => c.isoCode === "IN"
+      );
 
-              label: (
-                <div className="flex items-center gap-3">
-                  <Image
-                    src={country.flags.svg}
-                    alt={country.name.common}
-                    width={20}
-                    height={16}
-                    className="w-5 h-4 object-cover rounded-sm shadow-sm"
-                  />
-
-                  <span className="text-[13px] font-normal text-gray-700">
-                    {country.name.common}
-                  </span>
-                </div>
-              ),
-            };
-          })
-
-          .sort((a: any, b: any) =>
-            a.name.localeCompare(b.name)
-          );
-
-        setCountries(formattedCountries);
-
-        const india = formattedCountries.find(
-          (c: CountryOption) => c.name === "India"
-        );
-
-        setSelectedCountry(india);
-
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchCountries();
+      setSelectedCountry(india || null);
+    } catch (error) {
+      console.error("Failed to load countries:", error);
+    }
   }, []);
 
   if (!mounted) return null;
@@ -94,28 +75,20 @@ export default function BookNowSection({
       className="w-full bg-white py-6 md:py-6 lg:py-6 scroll-mt-20 md:scroll-mt-24"
       id="booking-form"
     >
-
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-
         <BookNowHeader />
 
         <div className="border border-[#ddd2c2] rounded-xl shadow-sm overflow-hidden">
-
           <div className="p-6 sm:p-8 md:p-10">
-
             <BookNowForm
               countries={countries}
               selectedCountry={selectedCountry}
               setSelectedCountry={setSelectedCountry}
               tourName={tourName}
             />
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }
