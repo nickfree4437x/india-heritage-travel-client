@@ -17,7 +17,7 @@ export default function Logo({
       <Link href="/" className="block">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto/v1779742768/logo-white_r1ecll.png"
-          alt="Logo"
+          alt="India Heritage Travel Logo"
           width={170}
           height={40}
           className={`

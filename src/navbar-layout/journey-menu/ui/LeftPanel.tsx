@@ -1,9 +1,7 @@
 "use client";
 
 import { journeyCategories } from "../../data/journeysData";
-
 import { MenuData } from "../config/types";
-
 import CategoryButton from "./CategoryButton";
 
 type Props = {

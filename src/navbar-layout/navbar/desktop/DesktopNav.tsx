@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import JourneysMegaMenu from "../../journey-mega-menu/JourneysMegaMenu";
+import JourneysMegaMenu from "../../journey-menu/JourneysMegaMenu";
 import { NAV_LINKS } from "../config/constants";
 
 type Props = {

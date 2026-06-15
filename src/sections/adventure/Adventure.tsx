@@ -56,7 +56,7 @@ export default function ChooseAdventure() {
 
           {/* TOP GRID */}
           <div className="grid lg:grid-cols-3 gap-6">
-            <div id="rotal-rajasthan">
+            <div id="royal-rajasthan">
               <h3 className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5">
                 The Royal Rajasthan
               </h3>
@@ -69,7 +69,7 @@ export default function ChooseAdventure() {
               />
             </div>
 
-            <div id="golden-tringle">
+            <div id="golden-triangle">
               <h3 className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5 md:mt-0 mt-8">
                 Golden Triangle Splendor
               </h3>

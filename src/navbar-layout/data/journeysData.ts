@@ -7,12 +7,12 @@ export const journeysData = {
     {
       name: "The Royal Rajasthan",
       link: "/journeys/curated-tours/royal-rajasthan-tour",
-      sectionId: "rotal-rajasthan",
+      sectionId: "royal-rajasthan",
     },
     {
       name: "Golden Triangle Tour",
       link: "/journeys/curated-tours/golden-triangle-tour",
-      sectionId: "golden-tringle",
+      sectionId: "golden-triangle",
     },
     {
       name: "South India Getaways",

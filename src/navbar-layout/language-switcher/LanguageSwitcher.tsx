@@ -31,7 +31,6 @@ import {
 import ChevronIcon from "./ui/ChevronIcon";
 import Dropdown from "./ui/Dropdown";
 import DropdownHeader from "./ui/DropdownHeader";
-
 import LanguageOptions from "./sections/LanguageOptions";
 
 export default function LanguageSwitcher({

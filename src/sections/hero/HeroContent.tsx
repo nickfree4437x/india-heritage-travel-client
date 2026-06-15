@@ -53,10 +53,9 @@ export default function HeroContent({
             px-4
           "
         >
-          Discover India's hidden cultures,
-          ancient traditions, and untouched
-          landscapes thoughtfully curated
-          for a truly immersive journey.
+          Discover India's rich heritage, vibrant cultures, 
+          ancient traditions, and immersive travel experiences 
+          through thoughtfully curated heritage journeys.
         </p>
 
         {/* ====================================================================
@@ -65,7 +64,7 @@ export default function HeroContent({
 
         <button
           onClick={scrollToDestination}
-          aria-label="Begin Your Journey"
+          aria-label="Explore Tours"
           className="
             relative group
             mt-6 sm:mt-8
@@ -86,7 +85,7 @@ export default function HeroContent({
           "
         >
           <span className="relative z-10">
-            Begin Your Journey
+            Explore Tours
           </span>
 
           <span

@@ -1,9 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import { ANIMATION_CONFIGS } from "../config/constants";
-
 import { getDropdownClassName } from "../helpers/utils";
 
 export default function Dropdown({

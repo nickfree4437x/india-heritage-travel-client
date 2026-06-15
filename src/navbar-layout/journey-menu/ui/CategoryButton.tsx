@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import { MenuData } from "../config/types";
 
 type Props = {
