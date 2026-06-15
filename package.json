@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@next/third-parties": "^16.2.9",
     "axios": "^1.13.6",
     "countries-list": "^3.3.0",
     "country-state-city": "^3.2.1",

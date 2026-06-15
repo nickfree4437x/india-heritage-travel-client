@@ -4,6 +4,7 @@ import {
   Playfair_Display,
   Caveat_Brush,
 } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 import Script from "next/script";
 
@@ -134,6 +135,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} ${caveatBrush.variable} font-[var(--font-inter)] antialiased`}
       >
+        {/* Google Tag Manager */}
+       <GoogleTagManager gtmId="GTM-PK5QRZC9" />
+
         {/* Organization Schema */}
         <Script
           id="organization-schema"
