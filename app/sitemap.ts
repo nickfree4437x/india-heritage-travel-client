@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-import { festivals } from "@/src/sections/festivals/festivalData";
+import { festivals } from "@/src/sections/festivals/data/festivalData";
 import { blogs } from "@/app/blog/data/blogsData";
 
 const BASE_URL = "https://indiaheritagetravel.com";
