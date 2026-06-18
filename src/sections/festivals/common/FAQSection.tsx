@@ -27,14 +27,14 @@ const faqs = [
   },
   {
     q: "DO I NEED TRAVEL INSURANCE FOR INDIA?",
-    a: "Before traveling to India, ensure your travel insurance covers loss of personal items, personal accidents, medical emergencies, emergency travel expenses, and trip cancellation. We require all guests traveling with Incredible Real India to have travel insurance.",
+    a: "Before traveling to India, ensure your travel insurance covers loss of personal items, personal accidents, medical emergencies, emergency travel expenses, and trip cancellation. We require all guests traveling with India Heritage Travel to have travel insurance.",
   },
   {
     q: "ARE SPECIFIC VACCINATIONS REQUIRED FOR TRAVELING TO INDIA?",
     a: "We recommend discussing vaccination requirements with your healthcare provider, as we cannot provide medical advice.",
   },
   {
-    q: "How Safe Am I When Traveling with Incredible Real India?",
+    q: "How Safe Am I When Traveling with India Heritage Travel?",
     a: "In the event of a medical emergency or any unfavorable incident, our team is readily available to assist you. Your safety is our top priority, and we maintain constant communication with our vehicles on the road. Additionally, we provide contact information for private doctors and medical facilities in your journey documents, and most hotels partner with doctors for 24-hour on-call services.",
   },
   {
@@ -46,15 +46,15 @@ const faqs = [
     a: "Tipping practices vary by location. On some journeys, certain gratuities are included. Typically, it's customary to tip the car or bus driver, driver's assistant (if applicable), local tour guide, as well as waitstaff, hotel housekeeping, and hotel porters."
   },
   {
-    q: "Weather in India",
+    q: "What Is The Best Time To Visit India?",
     a: "India's climate varies from region to region. Winters are generally cool and fresh from November to March, while hot and dry temperatures, along with dust storms and coastal humidity, prevail from April to June. The best time to visit the Himalayas is during the monsoon season when the rest of the country experiences heavy rainfall."
   },
   {
-    q: "Currency in India",
+    q: "What Currency Is Used In India?",
     a: "Major international airports in India have currency exchange counters. Most hotels can also assist with currency exchange. It's a good practice to carry sufficient local currency for basic expenses, as some wildlife resorts may not offer currency exchange facilities. There are no specific restrictions on the amount of foreign currency or traveler's checks you can bring into India, but you'll need to fill out a declaration form upon arrival."
   },
   {
-    q: "Credit Card Usage in India",
+    q: "Can I Use Credit Cards In India?",
     a: "While major cities accept MasterCard and Visa, Diner's Club and American Express cards may not be as widely accepted. ATMs are readily available in major cities, but carrying some Indian currency is advisable for smaller locations and for tipping."
   },
   {

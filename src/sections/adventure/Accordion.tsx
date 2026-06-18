@@ -1,10 +1,16 @@
 "use client";
 
+// ============================================================
+// IMPORTS
+// ============================================================
 import Image from "next/image";
+import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 
+// ============================================================
+// COMPONENT
+// ============================================================
 export default function Accordion({ items, open, toggle, section }: any) {
   return (
     <div className="space-y-5">
@@ -17,8 +23,7 @@ export default function Accordion({ items, open, toggle, section }: any) {
             className="bg-white/90 backdrop-blur-sm rounded-xl 
                        shadow-sm transition-all duration-300"
           >
-
-            {/* HEADER */}
+            {/* ===== ACCORDION HEADER ===== */}
             <button
               onClick={() => toggle(section, i)}
               className="w-full flex justify-between items-center px-4 py-2.5 text-left"
@@ -34,7 +39,7 @@ export default function Accordion({ items, open, toggle, section }: any) {
               />
             </button>
 
-            {/* CONTENT */}
+            {/* ===== ACCORDION CONTENT ===== */}
             <AnimatePresence initial={false}>
               {isOpen && (
                 <motion.div
@@ -44,23 +49,23 @@ export default function Accordion({ items, open, toggle, section }: any) {
                   transition={{ duration: 0.35, ease: "easeInOut" }}
                   className="px-5 pb-5"
                 >
+                  {/* Image with Link (if link exists) */}
                   {item.link ? (
                     <Link href={item.link}>
                       <div className="relative h-[220px] rounded-lg overflow-hidden mb-8 cursor-pointer group">
-
                         <Image
                           src={item.img}
-                          alt={item.title}
+                          alt={`${item.title} | India Heritage Travel`}
                           fill
                           className="object-cover object-center 
                                      transition-transform duration-1000 
                                      group-hover:scale-105"
                         />
 
-                        {/* GRADIENT OVERLAY */}
+                        {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent" />
 
-                        {/* DAYS */}
+                        {/* Days Label */}
                         <div className="absolute inset-0 flex items-center justify-center text-white font-semibold text-sm">
                           {item.days}
                         </div>
@@ -72,8 +77,8 @@ export default function Accordion({ items, open, toggle, section }: any) {
                       </div>
                     </Link>
                   ) : (
+                    // Image without Link (fallback)
                     <div className="relative h-[210px] rounded-lg overflow-hidden mb-4 group">
-
                       <Image
                         src={item.img}
                         alt={`${item.title} | India Heritage Travel`}
@@ -84,18 +89,16 @@ export default function Accordion({ items, open, toggle, section }: any) {
                       />
 
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent" />
-
                       <div className="absolute inset-0 flex items-center justify-center text-white font-semibold text-sm">
                         {item.days}
                       </div>
-
                       <div className="absolute bottom-3 right-4 text-white text-xs underline">
                         See Itinerary
                       </div>
                     </div>
                   )}
 
-                  {/* DESCRIPTION */}
+                  {/* Description */}
                   <p className="text-xs text-gray-600 leading-relaxed">
                     {item.desc}
                   </p>

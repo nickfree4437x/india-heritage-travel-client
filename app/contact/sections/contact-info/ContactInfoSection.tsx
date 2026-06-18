@@ -61,7 +61,9 @@ export default function ContactInfoSection() {
                     </h3>
 
                     <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-[300] text-justify break-words">
-                      info.indiaheritagetravel@gmail.com
+                      <a href="mailto:info.indiaheritagetravel@gmail.com">
+                        info.indiaheritagetravel@gmail.com
+                      </a>
                     </p>
                   </div>
 
@@ -80,7 +82,9 @@ export default function ContactInfoSection() {
                     </h3>
 
                     <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-[300] text-justify">
-                      +91 7062101914
+                      <a href="tel:+917062101914">
+                        +91 7062101914
+                      </a>
                     </p>
                   </div>
 

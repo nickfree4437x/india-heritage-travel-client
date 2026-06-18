@@ -6,7 +6,7 @@ import DiwaliDetails from "@/src/sections/festivals/festivalDetails/diwali/page"
 import PushkarDetails from "@/src/sections/festivals/festivalDetails/pushkar/PushkarDetails";
 import KumbhDetails from "@/src/sections/festivals/festivalDetails/kumbh/KumbhDetails";
 
-import { festivalSeoData } from "@/src/sections/festivals/seoData";
+import { festivalSeoData } from "@/src/sections/festivals/data/seoData";
 
 type PageProps = {
   params: Promise<{

@@ -40,18 +40,15 @@ export default function ReviewCard({ reviews, index, visibleCards }: Props) {
     </div>
   );
 
-  const getTypeColor = (type: string) => {
-    switch (type.toLowerCase()) {
-      case "solo":
-        return "bg-purple-500/10 text-purple-700 border-purple-200";
-      case "couple":
-        return "bg-pink-500/10 text-pink-700 border-pink-200";
-      case "family":
-        return "bg-blue-500/10 text-blue-700 border-blue-200";
-      default:
-        return "bg-gray-500/10 text-gray-700 border-gray-200";
+  // Mobile ke liye visible cards ko limit karo
+  const getVisibleCards = () => {
+    if (typeof window !== "undefined" && window.innerWidth < 640) {
+      return Math.min(visibleCards, 2); // Mobile par max 2 cards
     }
+    return visibleCards;
   };
+
+  const cardsToShow = getVisibleCards();
 
   return (
     <>
@@ -59,16 +56,16 @@ export default function ReviewCard({ reviews, index, visibleCards }: Props) {
         <div
           className="flex w-full transition-transform duration-700 ease-[cubic-bezier(0.33,1,0.68,1)]"
           style={{
-            transform: `translateX(-${index * (100 / visibleCards)}%)`,
+            transform: `translateX(-${index * (100 / cardsToShow)}%)`,
           }}
         >
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="px-2 sm:px-3"
+              className="px-1 sm:px-3" // Mobile par kam padding
               style={{
-                flex: `0 0 ${100 / visibleCards}%`,
-                maxWidth: `${100 / visibleCards}%`,
+                flex: `0 0 ${100 / cardsToShow}%`,
+                maxWidth: `${100 / cardsToShow}%`,
               }}
             >
               <div

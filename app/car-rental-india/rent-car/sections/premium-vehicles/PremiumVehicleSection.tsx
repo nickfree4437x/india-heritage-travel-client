@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 
+// Family & group vehicles collection for chauffeur-driven travel
 const vehicles = [
   {
     name: "Toyota Innova Crysta",
@@ -24,10 +25,9 @@ const vehicles = [
 ];
 
 export default function VehicleSection() {
-
+  // Scroll to booking form when "Book Now" is clicked
   const handleScrollToForm = () => {
     const formSection = document.getElementById("booking-form");
-
     if (formSection) {
       formSection.scrollIntoView({
         behavior: "smooth",
@@ -38,50 +38,37 @@ export default function VehicleSection() {
 
   return (
     <section className="w-full bg-white pt-6 sm:pt-6 pb-12 sm:pb-14 px-4 sm:px-6">
-
       <div className="max-w-7xl mx-auto">
-
-        {/* 🏷 HEADING */}
+        {/* Section Header */}
         <div className="text-center max-w-6xl mx-auto mb-10 sm:mb-14">
-
-          <h2
-            className="
-              text-[20px] sm:text-[24px] md:text-[26px]
-              font-semibold
-              text-[#8b6a3d]
-              tracking-wide
-              mb-3
-            "
-          >
+          <h2 className="
+            text-[20px] sm:text-[24px] md:text-[26px]
+            font-semibold
+            text-[#8b6a3d]
+            tracking-wide
+            mb-3
+          ">
             Premium Family & Group Vehicles
           </h2>
-
-          <p
-            className="
-              text-[12px] sm:text-[13px] md:text-[13.5px]
-              leading-relaxed
-              text-[#5c5c5c]
-              font-light
-              max-w-5xl
-              mx-auto
-            "
-          >
-            Experience spacious comfort and exceptional convenience with our premium SUVs and MUVs. 
-            Perfect for family vacations, group tours, and intercity travel, these chauffeur-driven 
-            vehicles offer generous space, modern amenities, and a smooth ride for every journey.
+          <p className="
+            text-[12px] sm:text-[13px] md:text-[13.5px]
+            leading-relaxed
+            text-[#5c5c5c]
+            font-light
+            max-w-5xl
+            mx-auto
+          ">
+            Enjoy comfortable chauffeur-driven SUVs and MUVs for family vacations, group tours, Rajasthan 
+            road trips, Golden Triangle journeys, and intercity travel across India.
           </p>
-
         </div>
 
-        {/* 🎯 VEHICLES */}
-        <div
-          className="
-            flex flex-wrap justify-center
-            gap-y-10 sm:gap-y-10
-            gap-x-6 sm:gap-x-6
-          "
-        >
-
+        {/* Vehicle Cards Grid */}
+        <div className="
+          flex flex-wrap justify-center
+          gap-y-10 sm:gap-y-10
+          gap-x-6 sm:gap-x-6
+        ">
           {vehicles.map((v, i) => (
             <div
               key={i}
@@ -89,110 +76,75 @@ export default function VehicleSection() {
                 group
                 w-full sm:w-[45%] lg:w-[31%]
                 max-w-[370px]
-
-                bg-white/80
-                backdrop-blur-sm
-
+                bg-white/80 backdrop-blur-sm
                 border border-[#eadfce]
-
-                rounded-md
-                overflow-hidden
-
+                rounded-md overflow-hidden
                 transition-all duration-500
-
                 hover:-translate-y-1
-                shadow-sm
-                hover:shadow-md
+                shadow-sm hover:shadow-md
               "
             >
-
-              {/* 🖼 IMAGE */}
+              {/* Vehicle Image */}
               <div className="relative w-full h-[250px] rounded-md overflow-hidden">
-
                 <Image
                   src={v.image}
                   alt={`${v.name} family and group travel vehicle with chauffeur service in India`}
                   fill
-                  className="
-                    object-cover
-                    transition-transform duration-700 p-2
-                  "
+                  className="object-cover transition-transform duration-700 p-2"
                 />
-
               </div>
 
-              {/* 📄 CONTENT */}
+              {/* Vehicle Details */}
               <div className="px-5 sm:px-6 py-5 sm:py-6 text-center">
-
-                {/* TITLE */}
-                <h3
-                  className="
-                    text-[14px] sm:text-[15px]
-                    font-medium
-                    text-[#8b6a45]
-                    tracking-wide
-                    mb-3
-                  "
-                >
+                <h3 className="
+                  text-[14px] sm:text-[15px]
+                  font-medium
+                  text-[#8b6a45]
+                  tracking-wide
+                  mb-3
+                ">
                   {v.name}
                 </h3>
 
-                {/* DESCRIPTION */}
-                <p
-                  className="
-                    text-[11px] sm:text-[12px]
-                    text-[#5f5f5f]
-                    leading-[1.8]
-                    font-light
-                    mb-4
-                  "
-                >
+                <p className="
+                  text-[11px] sm:text-[12px]
+                  text-[#5f5f5f]
+                  leading-[1.8]
+                  font-light
+                  mb-4
+                ">
                   {v.desc}
                 </p>
 
-                {/* CAPACITY */}
-                <p
-                  className="
-                    text-[11px] sm:text-[12px]
-                    text-[#9A7A58]
-                    font-light
-                    tracking-wide
-                    mb-5
-                  "
-                >
+                <p className="
+                  text-[11px] sm:text-[12px]
+                  text-[#9A7A58]
+                  font-light
+                  tracking-wide
+                  mb-5
+                ">
                   {v.capacity}
                 </p>
 
-                {/* BUTTON */}
+                {/* CTA Button - scrolls to booking form */}
                 <button
-                 onClick={handleScrollToForm}
+                  onClick={handleScrollToForm}
                   className="
                     text-[11px] sm:text-[11.2px]
                     tracking-wide font-[300]
- 
-                    bg-[#AF956C]
-                    text-white
-
-                    px-5 sm:px-6
-                    py-2.5
-
+                    bg-[#AF956C] text-white
+                    px-5 sm:px-6 py-2.5
                     rounded-full
-
                     transition-all duration-300
-
                     hover:bg-[#8f7654]
                   "
                 >
                   Book Now
                 </button>
-
               </div>
-
             </div>
           ))}
-
         </div>
-
       </div>
     </section>
   );

@@ -38,8 +38,7 @@ export default function WelcomeSection() {
           <p
             className="text-gray-800 text-[11px] sm:text-[13px] md:text-[13px] font-light tracking-wide leading-relaxed mb-3 max-w-[320px] sm:max-w-[600px] mx-auto"
           >
-            Step into a land where every journey tells a story and every sight
-            leaves you in awe.
+            Journey through India's traditions, cultural wonders, and extraordinary destinations.
           </p>
 
           {/* Feature sections */}

@@ -1,7 +1,9 @@
 "use client";
 
+// ============================================================
+// IMPORTS
+// ============================================================
 import { useState } from "react";
-
 import Accordion from "./Accordion";
 import {
   rajasthan,
@@ -11,6 +13,9 @@ import {
   ladakh,
 } from "./adventureData";
 
+// ============================================================
+// TYPES
+// ============================================================
 type SectionKey = "r1" | "r2" | "r3" | "r4" | "r5";
 
 type OpenState = {
@@ -21,7 +26,11 @@ type OpenState = {
   r5: number | null;
 };
 
+// ============================================================
+// COMPONENT
+// ============================================================
 export default function ChooseAdventure() {
+  // Initialize all sections with first accordion item open
   const [open, setOpen] = useState<OpenState>({
     r1: 0,
     r2: 0,
@@ -30,6 +39,7 @@ export default function ChooseAdventure() {
     r5: 0,
   });
 
+  // Handle accordion toggle - closes if same item, opens if different
   const toggle = (section: SectionKey, index: number) => {
     setOpen((prev) => ({
       ...prev,
@@ -39,28 +49,28 @@ export default function ChooseAdventure() {
 
   return (
     <section className="bg-gradient-to-b from-[#f3efe8] to-[#f1ede6] py-4 sm:py-6">
-      {/* 🔥 PROPER CONTAINER (FIXED SPACING) */}
       <div className="max-w-[1200px] xl:max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 mb-10">
         <div className="space-y-16">
-          {/* HEADING */}
+          
+          {/* ===== SECTION HEADER ===== */}
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-[20px] sm:text-[24px] md:text-[28px] font-semibold tracking-wide mb-2 leading-snug md:whitespace-nowrap text-[#8b6a3d]">
               Choose Your Adventure
             </h2>
-
             <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed tracking-wide max-w-[580px] mx-auto text-[#8b6a3d]">
               Experience The Beauty and Diversity of India with Our
               Unforgettable Tours!
             </p>
           </div>
 
-          {/* TOP GRID */}
+          {/* ===== TOP ROW: 3 COLUMNS ===== */}
           <div className="grid lg:grid-cols-3 gap-6">
+            
+            {/* Rajasthan */}
             <div id="royal-rajasthan">
               <h3 className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5">
                 The Royal Rajasthan
               </h3>
-
               <Accordion
                 items={rajasthan}
                 open={open}
@@ -69,11 +79,11 @@ export default function ChooseAdventure() {
               />
             </div>
 
+            {/* Golden Triangle */}
             <div id="golden-triangle">
               <h3 className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5 md:mt-0 mt-8">
                 Golden Triangle Splendor
               </h3>
-
               <Accordion
                 items={triangle}
                 open={open}
@@ -82,11 +92,11 @@ export default function ChooseAdventure() {
               />
             </div>
 
+            {/* South India */}
             <div id="south-india">
               <h3 className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5 md:mt-0 mt-8">
                 South India Gateways
               </h3>
-
               <Accordion
                 items={south}
                 open={open}
@@ -96,14 +106,15 @@ export default function ChooseAdventure() {
             </div>
           </div>
 
-          {/* BOTTOM GRID */}
+          {/* ===== BOTTOM ROW: 2 COLUMNS (Centered) ===== */}
           <div className="flex justify-center">
             <div className="grid lg:grid-cols-2 gap-10 w-full lg:w-2/3">
+              
+              {/* Kashmir */}
               <div id="east-india">
                 <h3 className="text-gray-700 text-center text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5 lg:text-center">
                   Serene Kashmir Journeys
                 </h3>
-
                 <Accordion
                   items={kashmir}
                   open={open}
@@ -112,11 +123,11 @@ export default function ChooseAdventure() {
                 />
               </div>
 
+              {/* Ladakh */}
               <div id="west-india">
                 <h3 className="text-gray-700 text-[20px] sm:text-[21px] md:text-[22px] font-medium tracking-wide leading-snug mb-5 md:mt-0 mt-5 text-center lg:text-center">
-                  Ladakh & Spiti Escapes
+                  Ladakh &amp; Spiti Escapes
                 </h3>
-
                 <Accordion
                   items={ladakh}
                   open={open}
@@ -126,6 +137,7 @@ export default function ChooseAdventure() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

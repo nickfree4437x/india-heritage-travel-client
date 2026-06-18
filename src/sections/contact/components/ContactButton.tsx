@@ -1,9 +1,15 @@
 "use client";
 
+// ============================================================
+// TYPES
+// ============================================================
 interface ContactButtonProps {
   loading: boolean;
 }
 
+// ============================================================
+// COMPONENT
+// ============================================================
 export function ContactButton({ loading }: ContactButtonProps) {
   return (
     <button

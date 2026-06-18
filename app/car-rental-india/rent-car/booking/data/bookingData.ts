@@ -1,10 +1,10 @@
 // components/booking/bookingData.ts
 
 export const bookingSteps: string[] = [
-  "Choose your ride",
-  "Fill the form",
-  "Meet your driver",
-  "Travel Stress-free",
+  "Choose Your Vehicle",
+  "Submit Your Booking Request",
+  "Confirm Your Chauffeur & Trip Details",
+  "Travel Across India Stress-Free",
 ];
 
 export const vehicleOptions: string[] = [

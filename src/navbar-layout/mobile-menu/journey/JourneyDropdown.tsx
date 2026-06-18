@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-
 import JourneyItems from "./JourneyItems";
 
 import {

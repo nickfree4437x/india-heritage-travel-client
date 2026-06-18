@@ -23,7 +23,7 @@ export default function Difference() {
   const items: ItemType[] = [
     {
       icon: <ShieldCheck size={55} />,
-      text: "Safe And Secure Women Travel",
+      text: "Safe & Secure Solo Women Travel",
     },
     {
       icon: <Compass size={55} />,
@@ -35,7 +35,7 @@ export default function Difference() {
     },
     {
       icon: <Route size={55} />,
-      text: "Traveler Friendly Curated Itineraries",
+      text: "Expertly Curated Travel Itineraries",
     },
   ];
 

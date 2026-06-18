@@ -84,7 +84,7 @@ export default function GallerySection() {
           </h2>
 
           <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed tracking-wide max-w-[580px] mx-auto text-[#8b6a3d]">
-            Explore beautiful moments from our curated travel experiences
+            Explore memorable moments from our heritage and cultural journeys across India.
           </p>
         </div>
 

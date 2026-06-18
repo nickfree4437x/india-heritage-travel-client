@@ -5,9 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { journeyCategories } from "../../data/journeysData";
 
 import { MenuData } from "../config/types";
-
 import { EASE } from "../config/constants";
-
 import MenuItems from "../sections/MenuItems";
 
 type Props = {

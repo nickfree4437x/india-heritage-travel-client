@@ -44,7 +44,7 @@ export default function SoloTravelSection() {
                   letterSpacing: "0.3px",
                 }}
               >
-                Traveling as a solo women through India...
+                Traveling as a solo woman through India...
                 <br />
                 but always knowing someone has your back :)
               </p>

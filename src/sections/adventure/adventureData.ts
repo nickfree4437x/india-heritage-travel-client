@@ -10,7 +10,7 @@ export const rajasthan = [
     title: "Mystical North India Discovery Tour",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529935/hero_vfhtr5.jpg",
     days: "Days: 12",
-    desc: "Discover, where spirituality thrives in temples, cities, and the holy Ganga River. illo inventore.",
+    desc: "Discover where spirituality thrives in ancient temples, vibrant cities, and along the holy Ganga River.",
     link: "/tours/mystical-north-india-discovery-tour",
   },
   {
@@ -58,7 +58,7 @@ export const south = [
     title: "Coastal Treasures & Mountain Magic Tour",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779523352/coastal_uysoj5.jpg",
     days: "Days: 10",
-    desc: "EExplore God’s Own Country with Ayurveda, wildlife, and scenic hill stations.",
+    desc: "Explore God’s Own Country with Ayurveda, wildlife, and scenic hill stations.",
     link: "/tours/coastal-treasures-mountain-magic-tour",
   },
   {
@@ -72,7 +72,7 @@ export const south = [
     title: "Southern Splendors",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535291/splander_rxivgm.png",
     days: "Days: 11",
-    desc: "A beautiful tropical place that will amaze you with its beauty and relaxing atmosphere..",
+    desc: "A beautiful tropical place that will amaze you with its beauty and relaxing atmosphere.",
     link: "/tours/southern-splendors-tour",
   },
   {
@@ -96,7 +96,7 @@ export const kashmir = [
     title: "Heavenly Kashmir",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541435/hero_cipdt8.jpg",
     days: "Days: 08",
-    desc: "  Famous as the summer capital of Jammu & Kashmir, Srinagar lies in the Kashmir Valley",
+    desc: "Experience the breathtaking beauty of Kashmir with serene lakes and mountain landscapes.",
     link: "/tours/heavenly-kashmir",
   },
 ];
@@ -106,7 +106,7 @@ export const ladakh = [
     title: "Spiti Valley Trek and Tour",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542050/hero_io8b2h.jpg",
     days: "Days: 16",
-    desc: "Explore God’s Own Country with Ayurveda, wildlife, and scenic hill stations.",
+    desc: "Explore the rugged beauty of Spiti Valley with ancient monasteries and high-altitude villages.",
     link: "/tours/spiti-valley-trek-and-tour",
   },
   {
