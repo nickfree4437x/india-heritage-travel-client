@@ -5,60 +5,46 @@ import { Crown } from "lucide-react";
 
 const sections = [
   { id: "welcome", title: "Welcome Letter!" },
-  { id: "work", title: "How we work?" },
+  { id: "work", title: "How we work" },
   { id: "journey", title: "My Journey" },
   { id: "team", title: "Our Team" },
-  // { id: "testimonials", title: "Testimonials" },
-  // { id: "live", title: "See us live" },
 ];
 
 export default function AboutSidebar() {
   const [active, setActive] = useState("welcome");
 
-  // 🔥 Scroll Spy
+  // Scroll Spy - Track which section is currently in view
   useEffect(() => {
-  const handleScroll = () => {
-    let current = sections[0].id;
-    let closestDistance = Infinity;
+    const handleScroll = () => {
+      let current = sections[0].id;
+      let closestDistance = Infinity;
 
-    sections.forEach((sec) => {
-      const el = document.getElementById(sec.id);
-
-      if (el) {
-        const rect = el.getBoundingClientRect();
-
-        // viewport ke top se distance
-        const distance = Math.abs(rect.top - 140);
-
-        // jo section closest hoga wahi active hoga
-        if (distance < closestDistance) {
-          closestDistance = distance;
-          current = sec.id;
+      sections.forEach((sec) => {
+        const el = document.getElementById(sec.id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          const distance = Math.abs(rect.top - 140);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            current = sec.id;
+          }
         }
-      }
-    });
+      });
 
-    setActive(current);
-  };
+      setActive(current);
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
 
-  // initial check
-  handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
-
-  // 🔥 Smooth Scroll
+  // Smooth scroll to section
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
-
     if (el) {
-      const y =
-        el.getBoundingClientRect().top +
-        window.pageYOffset -
-        120;
-
+      const y = el.getBoundingClientRect().top + window.pageYOffset - 120;
       window.scrollTo({
         top: y,
         behavior: "smooth",
@@ -73,32 +59,41 @@ export default function AboutSidebar() {
           <li
             key={item.id}
             onClick={() => scrollToSection(item.id)}
-            className={`group flex items-center gap-4 cursor-pointer text-lg rounded-2xl px-4 py-3 transition-all duration-300 ${
-              active === item.id
+            className={`
+              group flex items-center gap-4 cursor-pointer
+              text-lg rounded-2xl
+              px-4 py-3
+              transition-all duration-300
+              ${active === item.id
                 ? "bg-[#ebe4d9] text-[#A67C3D]"
                 : "text-gray-600 hover:bg-[#efe6da]"
-            }`}
+              }
+            `}
           >
-            {/* ICON */}
-            <div
-              className={`w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 ${
-                active === item.id
-                  ? "bg-[#c8b08b]"
-                  : "bg-[#f3eee7] group-hover:bg-[#ebe1d3]"
-              }`}
-            >
+            {/* Icon Circle */}
+            <div className={`
+              w-7 h-7 rounded-full
+              flex items-center justify-center
+              transition-all duration-300
+              ${active === item.id
+                ? "bg-[#c8b08b]"
+                : "bg-[#f3eee7] group-hover:bg-[#ebe1d3]"
+              }
+            `}>
               <Crown
                 size={13}
                 fill="currentColor"
-                className={`transition-all duration-300 ${
-                  active === item.id
+                className={`
+                  transition-all duration-300
+                  ${active === item.id
                     ? "text-white"
                     : "text-[#c8b08b]"
-                }`}
+                  }
+                `}
               />
             </div>
 
-            {/* TITLE */}
+            {/* Title */}
             <span className="text-[16px] leading-none">
               {item.title}
             </span>

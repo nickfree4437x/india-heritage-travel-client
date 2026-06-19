@@ -1,24 +1,33 @@
 import type { Metadata } from "next";
 
+// Common components
 import Footer from "@/src/sections/footer/Footer";
-import TravelTipsContent from "./components/TravelTipsContent";
-import TravelTipsHero from "./components/TravelTipsHero";
 
+// Page sections
+import TravelTipsHero from "./components/TravelTipsHero";
+import TravelTipsContent from "./components/TravelTipsContent";
+
+// ============================================
+// SEO METADATA
+// ============================================
 export const metadata: Metadata = {
-  title: "India Travel Tips & Advice | Essential Travel Guide",
+  title: "Travel Tips For India | Essential India Travel Guide | India Heritage Travel",
   description:
-    "Discover practical travel tips, cultural insights, packing advice, and useful information for exploring India confidently.",
-    alternates: {
-      canonical: "/travel-tips-for-india",
-    },
+    "Discover essential India travel tips, cultural insights, safety advice, packing recommendations, and practical information to help you explore India with confidence.",
+  alternates: {
+    canonical: "/travel-tips-for-india",
+  },
 };
 
+// ============================================
+// PAGE COMPONENT
+// ============================================
 export default function TravelTipsPage() {
   return (
     <>
       <TravelTipsHero />
-      <TravelTipsContent/>
-      <Footer/>
+      <TravelTipsContent />
+      <Footer />
     </>
   );
 }

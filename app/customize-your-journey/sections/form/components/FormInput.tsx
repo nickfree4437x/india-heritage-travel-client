@@ -15,36 +15,24 @@ export default function FormInput({
   className = "",
   name,
 }: FormInputProps) {
-
   return (
-
     <div className="mb-6">
-
-      {/* OPTIONAL LABEL */}
+      {/* Label */}
       {label && (
-        <label
-          className="
-            block
-            text-[14px]
-            sm:text-[15px]
-            font-[400]
-            text-[#3d352c]
-            mb-2.5
-            tracking-[0.2px]
-          "
-        >
+        <label className="
+          block
+          text-[14px] sm:text-[15px]
+          font-[400]
+          text-[#3d352c]
+          mb-2.5
+          tracking-[0.2px]
+        ">
           {label}
-
-          {required && (
-            <span className="text-[#b77a2a]">
-              {" "}*
-            </span>
-          )}
-
+          {required && <span className="text-[#b77a2a]"> *</span>}
         </label>
       )}
 
-      {/* INPUT */}
+      {/* Input Field */}
       <input
         type={type}
         name={name}
@@ -52,38 +40,18 @@ export default function FormInput({
         placeholder={placeholder}
         className={`
           w-full
-
           border border-[#ddd2c2]
-
           bg-[#f9f7f3]
-
           rounded-lg
-
-          px-5
-          py-2.5 sm:py-2.5
-
-          text-[12px]
-          sm:text-[13px]
-
-          text-[#5b5348]
-
-          placeholder:text-[#9a8f81]
-          placeholder:font-light
-
-          font-light
-          tracking-[0.2px]
-
-          focus:outline-none
-          focus:border-[#9A7A58]
-
+          px-5 py-2.5 sm:py-2.5
+          text-[12px] sm:text-[13px] text-[#5b5348]
+          placeholder:text-[#9a8f81] placeholder:font-light
+          font-light tracking-[0.2px]
+          focus:outline-none focus:border-[#9A7A58]
           transition
-
           ${className}
         `}
       />
-
     </div>
-
   );
-
 }

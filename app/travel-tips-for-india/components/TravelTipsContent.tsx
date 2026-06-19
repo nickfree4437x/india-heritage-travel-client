@@ -5,8 +5,7 @@ import Image from "next/image";
 const tips = [
   {
     title: "VISA",
-    text: `India is a very busy, overwhelming, and occasionally confusing country. You’ll need some time to get used to the hectic energy of this confusing place and figure out how to keep yourself safe, healthy, and sane. India is among the most rewarding destinations to visit, despite not being the easiest. It provides some genuinely incredible views that are unmatched by anything else in the entire globe. It also has mouthwatering cuisine, breathtaking scenery, friendly and endearing locals, and a rich cultural history that is fascinating to discover.
-    So, before you travel to India, here are some shrewd tips and tricks to help you make the most of your experience there.`,
+    text: `Most international travelers require an e-Visa before arriving in India. We recommend applying through the official Indian government portal well in advance of your travel dates and ensuring your passport remains valid for at least six months from arrival.`,
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779743499/visa_awivc4.png",
     alt: "India tourist visa requirements and travel preparation tips",
 
@@ -19,7 +18,7 @@ const tips = [
   },
   {
     title: "CLOTHES",
-    text: `Travel insurance (It is recommended that you insure yourself against medical claims, theft, loss, and emergencies).`,
+    text: `Pack lightweight and comfortable clothing suitable for the season and regions you plan to visit. When visiting temples and religious sites, modest clothing that covers shoulders and knees is recommended.`,
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779743487/clothes_jqkjyc.png",
     alt: "Recommended clothing and packing essentials for travel in India",
   },
@@ -170,7 +169,7 @@ export default function TravelTipsContent() {
             font-semibold
             text-center
             mb-6 sm:mb-8 text-[#8b6a3c] tracking-wide">
-      THE PREPARATIONS FOR YOUR INDIA TRAVEL
+      How To Prepare For Your Trip To India
     </h2>
 
     {/* 🔥 Tips List */}

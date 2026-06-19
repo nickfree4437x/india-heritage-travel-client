@@ -23,7 +23,7 @@ export default function ReviewsSection() {
     const handleResize = (): void => {
       const width = window.innerWidth;
       if (width < 480) setVisibleCards(1); // Chhoti screens par 1
-      else if (width < 640) setVisibleCards(2); // Mobile par 2
+      else if (width < 640) setVisibleCards(1); // 👈 YAHAN CHANGE KIYA - Mobile par 1 card (pehle 2 tha)
       else if (width < 1024) setVisibleCards(2); // Tablet par 2
       else setVisibleCards(3); // Desktop par 3
     };
@@ -128,7 +128,7 @@ export default function ReviewsSection() {
                 flex items-center justify-center
                 rounded-full
                 bg-white/90 backdrop-blur-md
-                shadow-lg
+                shadow-sm
                 border border-gray-200/50
                 text-[#8b6a3d]
                 hover:bg-[#c9a45c] hover:text-white hover:border-[#c9a45c]
@@ -143,7 +143,7 @@ export default function ReviewsSection() {
           )}
 
           {/* Cards */}
-          <div className="px-4 sm:px-8 md:px-12">
+          <div className="px-0 sm:px-8 md:px-12"> {/* 👈 Mobile par 0 padding (pehle px-4 tha) */}
             <ReviewCard
               reviews={reviews}
               index={index}
@@ -162,7 +162,7 @@ export default function ReviewsSection() {
                 flex items-center justify-center
                 rounded-full
                 bg-white/90 backdrop-blur-md
-                shadow-lg
+                shadow-sm
                 border border-gray-200/50
                 text-[#8b6a3d]
                 hover:bg-[#c9a45c] hover:text-white hover:border-[#c9a45c]

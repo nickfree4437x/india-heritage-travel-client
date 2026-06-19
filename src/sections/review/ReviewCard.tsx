@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Star, User, Quote, ChevronRight } from "lucide-react";
 import ReviewModal from "./ReviewModal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type Review = {
   id: number;
@@ -23,6 +23,22 @@ type Props = {
 
 export default function ReviewCard({ reviews, index, visibleCards }: Props) {
   const [selected, setSelected] = useState<Review | null>(null);
+  const [cardsToShow, setCardsToShow] = useState(visibleCards);
+
+  // Mobile pe sirf 1 card dikhao
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setCardsToShow(1); // 👈 Mobile par sirf 1 card
+      } else {
+        setCardsToShow(visibleCards);
+      }
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [visibleCards]);
 
   const renderStars = (rating: number) => (
     <div className="flex gap-0.5">
@@ -40,16 +56,6 @@ export default function ReviewCard({ reviews, index, visibleCards }: Props) {
     </div>
   );
 
-  // Mobile ke liye visible cards ko limit karo
-  const getVisibleCards = () => {
-    if (typeof window !== "undefined" && window.innerWidth < 640) {
-      return Math.min(visibleCards, 2); // Mobile par max 2 cards
-    }
-    return visibleCards;
-  };
-
-  const cardsToShow = getVisibleCards();
-
   return (
     <>
       <div className="overflow-hidden">
@@ -62,7 +68,7 @@ export default function ReviewCard({ reviews, index, visibleCards }: Props) {
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="px-1 sm:px-3" // Mobile par kam padding
+              className="px-0 sm:px-3" // 👈 Mobile par 0 padding, desktop par normal
               style={{
                 flex: `0 0 ${100 / cardsToShow}%`,
                 maxWidth: `${100 / cardsToShow}%`,
@@ -72,7 +78,7 @@ export default function ReviewCard({ reviews, index, visibleCards }: Props) {
                 onClick={() => setSelected(review)}
                 className="group isolate relative bg-white sm:rounded-sm overflow-hidden cursor-pointer
                            transition-all duration-300 shadow-sm hover:shadow-md
-                           border border-gray-100"
+                           border border-gray-100 mx-0 sm:mx-0"
               >
                 {/* IMAGE */}
                 <div className="relative h-60 sm:h-72 w-full overflow-hidden">
