@@ -6,7 +6,7 @@ export default function DelhiGuideSection() {
   return (
     <section className="w-full bg-white">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* INTRO */}
         <div className="max-w-6xl mb-6">

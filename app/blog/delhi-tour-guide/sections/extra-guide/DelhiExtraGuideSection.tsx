@@ -6,7 +6,7 @@ export default function DelhiExtraGuideSection() {
   return (
     <section className="w-full bg-white py-8 pb-14">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* DAY TRIPS */}
         <div className="mb-10">

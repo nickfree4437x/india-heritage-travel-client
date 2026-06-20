@@ -44,7 +44,51 @@ export default function TourDetails() {
   ];
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-12">
+
+      {/* SEO CONTENT BLOCK */}
+      <div>
+        <h2
+          className="
+            text-[16px] sm:text-[20px] md:text-[22px]
+            tracking-wide
+            text-[#2c2c2c]
+            font-semibold
+            mb-4
+          "
+        >
+          Why Choose This Ayurveda Wellness Tour in India
+        </h2>
+
+        <div className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-[300] text-justify space-y-2">
+
+          <p>
+            Experience a transformative Ayurveda Wellness Tour in India designed
+            to restore balance to your body, mind, and spirit. This carefully
+            curated journey combines authentic Ayurvedic therapies,
+            personalized wellness programs, yoga sessions, meditation
+            practices, and rejuvenation experiences in some of Kerala’s most
+            peaceful destinations.
+          </p>
+
+          <p>
+            Under the guidance of experienced Ayurvedic practitioners, guests
+            can enjoy traditional treatments, herbal therapies, wellness
+            consultations, and holistic healing techniques tailored to
+            individual needs.
+          </p>
+
+          <p>
+            The wellness experience includes traditional Ayurvedic consultations, 
+            personalized therapies, Panchakarma-inspired treatments, yoga, meditation, 
+            and natural healing practices. Guided by experienced practitioners, guests 
+            gain deeper insight into Ayurvedic principles, including balance of the doshas 
+            (Vata, Pitta, and Kapha), helping create a holistic approach to long-term well-being 
+            and rejuvenation.
+          </p>
+
+        </div>
+      </div>
 
       {cities.map((city) => (
         <div
@@ -54,9 +98,9 @@ export default function TourDetails() {
         >
 
           {/* TITLE */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             {city.title}
-          </h2>
+          </h3>
 
           {/* DESCRIPTION */}
           <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14px] text-justify">

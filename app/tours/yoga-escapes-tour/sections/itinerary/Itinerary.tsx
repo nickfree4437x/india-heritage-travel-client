@@ -23,11 +23,9 @@ export default function Itinerary() {
 
           {/* ================= Day 1-3: Delhi ================= */}
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
-
             <h3 className="text-[17px] md:text-lg font-medium text-red-500">
               Day 1-3: Delhi
             </h3>
-
             <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p>
                Arriving at Delhi Airport, we’ll welcome you and escort you to your comfy hotel. If you’re an early riser, explore Delhi’s rich history and culture with iconic sights like India Gate, Qutub Minar, and a rickshaw ride through Old Delhi. 

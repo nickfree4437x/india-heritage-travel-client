@@ -279,7 +279,7 @@ export default function Itinerary() {
             <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
               <h3 className="text-[17px] md:text-lg font-medium text-red-500">
-                Day 14: Departure
+                Day 18: Departure
               </h3>
               <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p className="mt-2">
@@ -310,7 +310,6 @@ export default function Itinerary() {
             </div>
         </div>
       </div>
-
     </section>
   );
 }

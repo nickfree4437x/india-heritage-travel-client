@@ -67,7 +67,7 @@ export const blogs = [
   {
     id: 8,
     slug: "luxury-ayurveda-retreat",
-    title: "Luxury Ayurveda & Wellness Retreats in India – Your Perfect Escape",
+    title: "Luxury Ayurveda & Wellness Retreats in India - Your Perfect Escape",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779801053/blog-8_rtahzc.jpg",
     date: "06 Mar",
     excerpt:
@@ -105,10 +105,18 @@ export const blogs = [
     id: 12,
     slug: "delhi-tour-guide",
     title: "A first timer guide to New Delhi | How to survive",
-    category: "Yoga",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779828252/blog-12_dxeh3u.jpg",
     date: "28 April",
     excerpt:
       "One of the most incredible cities in India, New Delhi, is the vibrant capi ...",
+  },
+  {
+    id: 13,
+    slug: "golden-triangle-tour-india-guide",
+    title: "Golden Triangle Tour India: Your Ultimate 2026 Guide for First-Timers",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779523009/golden-triangle_izyhwq.jpg",
+    date: "20 June",
+    excerpt:
+      "Are you planning a Golden Triangle tour India? Find out all about the itinerary..",
   },
 ];

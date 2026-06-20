@@ -10,7 +10,7 @@ export default function AyurvedaOverview() {
             mb-2 sm:mb-4
             text-[#2c2c2c]
             tracking-wide">
-          Discover Wellness Through Ayurveda
+          Experience Authentic Ayurveda Wellness in India
         </h2>
 
         {/* Content */}
