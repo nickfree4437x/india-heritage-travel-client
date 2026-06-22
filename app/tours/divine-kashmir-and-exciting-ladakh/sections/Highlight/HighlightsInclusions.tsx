@@ -13,154 +13,94 @@ import {
 } from "lucide-react";
 
 export default function HighlightsInclusions() {
+  // Highlights data
+  const highlights = [
+    "Explore Srinagar's lakes, houseboats, and Mughal gardens.",
+    "Experience Gulmarg's skiing adventures and Gondola rides.",
+    "Discover Pahalgam's valleys, rivers, and Himalayan landscapes.",
+    "Explore Kargil's mountain scenery and cultural heritage.",
+    "Visit Leh's monasteries, palaces, and high-altitude attractions.",
+    "Experience Nubra Valley's sand dunes and double-humped camels.",
+    "Witness the stunning blue waters of Pangong Lake.",
+  ];
+
+  // Inclusions data with icons
+  const inclusions = [
+    { icon: Hotel, text: "14 nights, chosen hotels" },
+    { icon: Car, text: "Local driver, guide" },
+    { icon: Utensils, text: "Daily breakfast" },
+    { icon: CreditCard, text: "All costs covered" },
+    { icon: Wifi, text: "In Car Wi-fi" },
+    { icon: ChefHat, text: "Cooking classes, dinner" },
+    { icon: Plane, text: "Airport transfer" },
+    { icon: Bus, text: "Local travel experiences" },
+  ];
+
   return (
-    <section className="">
-
-      {/* 🔥 SAME WIDTH AS DELHI SECTION */}
+    <section>
       <div className="max-w-5xl mx-auto">
-
         <div className="grid md:grid-cols-2 gap-10">
-
-          {/* 🔹 Highlights */}
-          <div
-            className="
-              bg-white rounded-md
-              shadow-sm
-              border border-[#eee7dd]
-              p-6
-            "
-          >
-
-            <h2
-              className="
-                text-[18px] md:text-[20px]
-                font-medium
-                mb-5
-                text-center
-                tracking-[0.02em]
-              "
-            >
+          {/* Highlights */}
+          <div className="
+            bg-white rounded-md
+            shadow-sm
+            border border-[#eee7dd]
+            p-6
+          ">
+            <h2 className="
+              text-[18px] md:text-[20px]
+              font-medium
+              mb-5
+              text-center
+              tracking-[0.02em]
+            ">
               Highlights
             </h2>
 
-            <ul
-              className="
-                space-y-1.5
-                text-gray-700
-                text-xs
-                font-light
-              "
-            >
-
-              {[
-                "Explore lakes, houseboats, and lush gardens.",
-                "Enjoy skiing, Gulmarg Gondola, and vibrant meadows.",
-                "Visit scenic meadows and rivers surrounded by pine forests.",
-                "Discover war history, stunning mountains, and adventure sports.",
-                "Visit Leh Palace, Shanti Stupa, and vibrant monasteries.",
-                "Ride camels and admire desert landscapes.",
-                "Marvel at the changing blue hues and peaceful surroundings.",
-              ].map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-2"
-                >
-
-                  <Check
-                    className="text-[#AF956C] mt-[2px]"
-                    size={16}
-                  />
-
-                  <span className="leading-relaxed">
-                    {item}
-                  </span>
-
+            <ul className="space-y-1.5 text-gray-700 text-xs font-light">
+              {highlights.map((item, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <Check className="text-[#AF956C] mt-[2px]" size={16} />
+                  <span className="leading-relaxed">{item}</span>
                 </li>
               ))}
-
             </ul>
-
           </div>
 
-          {/* 🔹 Inclusions */}
-          <div
-            className="
-              bg-white rounded-md
-              shadow-sm
-              border border-[#eee7dd]
-              p-6
-            "
-          >
-
-            <h2
-              className="
-                text-[18px] md:text-[20px]
-                font-medium
-                mb-5
-                text-center
-                tracking-[0.02em]
-              "
-            >
+          {/* Inclusions */}
+          <div className="
+            bg-white rounded-md
+            shadow-sm
+            border border-[#eee7dd]
+            p-6
+          ">
+            <h2 className="
+              text-[18px] md:text-[20px]
+              font-medium
+              mb-5
+              text-center
+              tracking-[0.02em]
+            ">
               Inclusions
             </h2>
 
-            {/* 🔥 4 COLUMN GRID */}
-            <div
-              className="
-                grid grid-cols-4
-                gap-y-6 gap-x-4
-                text-center
-              "
-            >
-
-              {[
-                { icon: Hotel, text: "14 nights, chosen hotels" },
-                { icon: Car, text: "Local driver, guide" },
-                { icon: Utensils, text: "Daily breakfast" },
-                { icon: CreditCard, text: "All costs covered" },
-                { icon: Wifi, text: "In Car Wi-fi" },
-                { icon: ChefHat, text: "Cooking classes, dinner" },
-                { icon: Plane, text: "Airport transfer" },
-                { icon: Bus, text: "Delhi rickshaw" },
-              ].map((item, index) => {
+            {/* 4 Column Grid */}
+            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
+              {inclusions.map((item, index) => {
                 const Icon = item.icon;
-
                 return (
-                  <div
-                    key={index}
-                    className="
-                      flex flex-col items-center
-                      gap-1.5
-                    "
-                  >
-
-                    <Icon
-                      size={18}
-                      className="text-[#AF956C]"
-                    />
-
-                    <p
-                      className="
-                        text-[11px]
-                        leading-tight
-                        font-light
-                      "
-                    >
+                  <div key={index} className="flex flex-col items-center gap-1.5">
+                    <Icon size={18} className="text-[#AF956C]" />
+                    <p className="text-[11px] leading-tight font-light">
                       {item.text}
                     </p>
-
                   </div>
                 );
               })}
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }

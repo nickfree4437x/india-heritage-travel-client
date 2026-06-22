@@ -24,7 +24,7 @@ export default function IntroSection() {
       border: "border-amber-200/50",
       iconBg: "bg-amber-100",
       iconColor: "text-amber-700",
-      link: "/tours/heritage-odyssey",
+      link: "/tours/heritage-odyssey-tour",
     },
     {
       name: "Jaipur",
@@ -78,13 +78,13 @@ export default function IntroSection() {
 
           {/* Intro paragraphs */}
           <div className="space-y-4">
-            <div className="relative pl-4 sm:pl-6 border-l-2 border-[#c9a45c]/30 hover:border-[#c9a45c] transition-colors duration-300">
+            <div className="relative border-[#c9a45c]/30 hover:border-[#c9a45c] transition-colors duration-300">
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 There exists a certain type of silence that descends upon tourists when they reach the end of the red sandstone gate and catch a glimpse of the Taj Mahal for the first time. The guides I worked with over the past fifteen years have said that regardless of all pictures, no one gets prepared for that special moment when the marble starts glowing somehow from within and changing colors depending on the light, and travelers who saw the pyramids and colosseums usually find themselves speechless at that point.
               </p>
             </div>
             
-            <div className="relative pl-4 sm:pl-6 border-l-2 border-[#c9a45c]/20 hover:border-[#c9a45c]/40 transition-colors duration-300">
+            <div className="relative border-[#c9a45c]/20 hover:border-[#c9a45c]/40 transition-colors duration-300">
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 This exact moment serves as an emotional highlight of what is called the Golden Triangle tour India, which represents a classical travel route from Delhi, to Agra and then to Jaipur. This triangle contains more World Heritage Sites per square kilometer than almost any other region in the whole country and contains 800 years of history of the Mughal and Rajput rulers.
               </p>
@@ -92,7 +92,7 @@ export default function IntroSection() {
             
             <div className="relative pl-4 sm:pl-6 border-l-2 border-[#c9a45c]/10 bg-gradient-to-r from-[#c9a45c]/5 to-transparent p-4 sm:p-5 rounded-r-xl">
               <Quote size={16} className="text-[#c9a45c]/20 absolute top-3 right-3" />
-              <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+              <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
                 It will strip away all the haze that clouds your planning process. You will learn everything there is to know about the history of these three amazing cities that will make your visit so worthwhile, attraction-by-attraction tips along with practical information, daily itinerary, budgeting, and the detailed information regarding logistics, safety, and etiquette issues that only come from the experience of organizing such tours.
               </p>
               <div className="mt-3 flex items-center gap-2">
@@ -124,7 +124,7 @@ export default function IntroSection() {
             Delhi
           </Link>
           ,{' '}
-          <Link href="/tours/heritage-odyssey" className="text-[#c9a45c] hover:text-[#a8843a] hover:underline transition-colors duration-200">
+          <Link href="/tours/heritage-odyssey-tour" className="text-[#c9a45c] hover:text-[#a8843a] hover:underline transition-colors duration-200">
             Agra
           </Link>
           , and{' '}
@@ -194,7 +194,7 @@ export default function IntroSection() {
                 icon: Landmark,
                 title: "Agra - The Taj & Mughal Grandeur",
                 description: "Agra was the capital of the Mughal Empire in its Golden Age, and the Taj Mahal - built in 1653 as the tomb of Mumtaz Mahal - stands as the epitome of Mughal architectural grandeur. The symmetry, the inlay work and the way the building changes at dawn, noon and sunset has been possible only because of the efforts of about <span className='font-medium text-[#2c2c2c]'>20,000 artisans</span> over <span className='font-medium text-[#2c2c2c]'>10 years</span>.",
-                link: "/tours/heritage-odyssey",
+                link: "/tours/heritage-odyssey-tour",
               },
               {
                 icon: Crown,

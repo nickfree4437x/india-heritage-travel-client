@@ -46,7 +46,7 @@ export default function ConclusionCTA() {
                 Plan Your Trip
             </span>
 
-            <h3 className="text-[20px] sm:text-[26px] md:text-[32px] font-semibold text-[#2c2c2c] mb-4 leading-tight">
+            <h3 className="text-[20px] md:text-[24px] font-semibold text-[#2c2c2c] mb-4 leading-tight">
                 Ready to Experience the Golden Triangle?
             </h3>
 
@@ -62,7 +62,7 @@ export default function ConclusionCTA() {
 
                 <Link
                 href="/customize-your-journey"
-                className="inline-flex items-center justify-center gap-2 bg-[#AF956C] hover:bg-[#9b8059] text-white px-6 py-3 text-[13px] tracking-wide transition-all duration-300"
+                className="inline-flex rounded-sm items-center justify-center gap-2 bg-[#AF956C] hover:bg-[#9b8059] text-white px-6 py-3 text-[13px] tracking-wide transition-all duration-300"
                 >
                 Request Your Custom Itinerary
                 <ArrowRight size={16} />
@@ -70,7 +70,7 @@ export default function ConclusionCTA() {
 
                 <Link
                 href="/tours/majestic-golden-triangle-tour"
-                className="inline-flex items-center justify-center border border-[#d8cdbf] text-[#2c2c2c] hover:bg-white px-6 py-3 text-[13px] tracking-wide transition-all duration-300"
+                className="inline-flex rounded-sm items-center justify-center border border-[#d8cdbf] text-[#2c2c2c] hover:bg-white px-6 py-3 text-[13px] tracking-wide transition-all duration-300"
                 >
                 Explore Golden Triangle Tours
                 </Link>

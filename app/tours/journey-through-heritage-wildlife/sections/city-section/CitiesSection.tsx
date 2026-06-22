@@ -56,15 +56,49 @@ const cities = [
 
 export default function CitiesSection() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-12">
+
+      <div className="max-w-5xl mx-auto">
+        <h2
+          className="
+            text-[16px] sm:text-[20px] md:text-[24px]
+            font-semibold
+            mb-4
+            text-[#2c2c2c]
+            tracking-wide
+          "
+        >
+          Why Choose This Heritage & Wildlife Tour India
+        </h2>
+
+        <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify space-y-4">
+          <p>
+            Experience the perfect combination of India's rich cultural heritage and extraordinary wildlife 
+            through this carefully curated Heritage & Wildlife Tour India. Travel across historic cities, 
+            royal towns, sacred destinations, and renowned wildlife reserves while discovering the country's 
+            diverse traditions, architecture, and natural beauty.
+          </p>
+          <p>
+            From the historic streets of Delhi and the artistic havelis of Mandawa to the spiritual atmosphere 
+            of Pushkar, the hidden charm of Bundi, and the royal grandeur of Jaipur and Agra, every destination 
+            offers a unique cultural experience. The journey also includes the thrilling wilderness of Ranthambore 
+            National Park, one of India's most famous tiger reserves.
+          </p>
+          <p>
+            Whether you are passionate about history, architecture, culture, photography, wildlife safaris, 
+            or authentic travel experiences, this tour offers an unforgettable opportunity to explore India's 
+            heritage landmarks and natural wonders in a single journey.
+          </p>
+        </div>
+      </div>
 
       {cities.map((city) => (
         <div key={city.id} id={city.id} className="w-full scroll-mt-24 md:scroll-mt-28">
 
           {/* TITLE */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             {city.title}
-          </h2>
+          </h3>
 
           {/* DESCRIPTION */}
           <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14px] text-justify">

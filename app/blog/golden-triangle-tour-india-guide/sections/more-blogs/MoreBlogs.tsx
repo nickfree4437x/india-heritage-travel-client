@@ -9,10 +9,10 @@ import { MessageCircle } from "lucide-react";
 const blogs = [
   {
     title:
-      "Top Heritage Hotels in India for an Exclusive Stay",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779638017/blog-9_h4aqqf.jpg",
-    date: "4 Feb",
-    slug: "top-heritage-hotel-in-india",
+      "The Best Time to Visit the Golden Triangle India | Guide",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782104429/nils-huenerfuerst-T8X8vgj0Ink-unsplash_ayktot.jpg",
+    date: "22 June",
+    slug: "best-time-to-visit-golden-triangle-india",
   },
   {
     title:

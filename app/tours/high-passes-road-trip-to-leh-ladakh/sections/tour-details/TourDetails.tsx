@@ -18,14 +18,16 @@ export default function TourDetails() {
     {
       id: "chandigarh",
       title: "Chandigarh- Urban & Modern City",
-      desc: "Chandigarh is located on the foothills of Shivaliks & is famous as one of the best in urban planning & modern architecture. It is the dream city of India’s 1st prime Minister, Sh. Jawahar Lal Nehru & is planned by famous French architect Le Cobuiser.",
+      desc: `Chandigarh, located at the foothills of the Shivalik Range, is one of India’s best-planned cities and a remarkable example of modern urban design. Designed by renowned French architect Le Corbusier, the city is known for its wide roads, green spaces, and architectural excellence. It was envisioned by India’s first Prime Minister, Jawaharlal Nehru, as a symbol of a modern and progressive India.
+             The city is home to popular attractions such as the Rock Garden, Sukhna Lake, and the Capitol Complex, a UNESCO World Heritage Site. With its blend of natural beauty, modern infrastructure, and cultural attractions, Chandigarh serves as an ideal gateway to the Himalayan regions of Himachal Pradesh and Leh Ladakh.`,
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779611530/chandigarh-1-1_yxbpdq.jpg",
       alt: "Chandigarh city tour featuring Rock Garden Sukhna Lake and modern architectural attractions",
     },
     {
       id: "manali",
       title: "Manali- A Picturesque Hill Station",
-      desc: "It is a popular tourist destination which serves a gateway to Lahaul & spiti district as well as Leh Ladakh. This has beautiful place which has amazing views, greenery, snow0kissed peaks, lush valleys.",
+      desc: `Manali is one of the most popular hill stations in Himachal Pradesh and serves as a gateway to the breathtaking regions of Lahaul, Spiti, and Leh Ladakh. Surrounded by snow-capped Himalayan peaks, lush valleys, dense forests, and flowing rivers, Manali offers spectacular natural beauty throughout the year.
+             Known for its adventure activities and scenic landscapes, Manali attracts travelers seeking trekking, river rafting, skiing, and mountain exploration. Visitors can explore famous attractions such as Solang Valley, Rohtang Pass, and traditional Himalayan villages while enjoying the region’s peaceful atmosphere and stunning mountain views.`,
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779611574/manali-1-1-e1728021932879_jmguyp.jpg",
       alt: "Manali hill station with snow covered mountains lush valleys and Himalayan landscapes",
     },
@@ -60,7 +62,39 @@ export default function TourDetails() {
   ];
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-12">
+
+      <div className="max-w-5xl mx-auto">
+        <h2
+          className="
+            text-[16px] sm:text-[20px] md:text-[24px]
+            font-semibold
+            mb-4
+            text-[#2c2c2c]
+            tracking-wide
+          "
+        >
+          Why Choose This Leh Ladakh Road Trip Package
+        </h2>
+        <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify space-y-4">
+          <p>
+            Experience one of India’s most iconic Himalayan adventures with this Leh Ladakh Road Trip Package. 
+            Journey through breathtaking mountain landscapes, high-altitude passes, remote villages, pristine 
+            lakes, and culturally rich destinations while exploring the heart of the Himalayas.
+          </p>
+          <p>
+            From the historic streets of Delhi and the modern charm of Chandigarh to the scenic beauty of Manali, 
+            Jispa, Leh, Nubra Valley, and Pangong Lake, every destination offers a unique experience. Witness 
+            dramatic mountain scenery, ancient monasteries, desert landscapes, crystal-clear lakes, and some of 
+            the highest motorable roads in the world.
+          </p>
+          <p>
+            Whether you are an adventure enthusiast, nature lover, photographer, or cultural explorer, this 
+            Leh Ladakh road trip delivers unforgettable experiences, spectacular views, and a true sense of 
+            exploration across one of the most extraordinary regions of India.
+          </p>
+        </div>
+      </div>
 
       {cities.map((city) => (
         <div
@@ -70,9 +104,9 @@ export default function TourDetails() {
         >
 
           {/* TITLE */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             {city.title}
-          </h2>
+          </h3>
 
           {/* DESCRIPTION */}
           <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14.5px] text-justify">

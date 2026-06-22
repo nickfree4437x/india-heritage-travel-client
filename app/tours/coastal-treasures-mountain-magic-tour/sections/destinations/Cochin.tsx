@@ -5,14 +5,27 @@ import Image from "next/image";
 export default function Cochin() {
   return (
     <div id="cochin" className="w-full max-w-5xl mx-auto scroll-mt-24 md:scroll-mt-28">
-
-      {/* Heading */}
-      <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold sm:mb-3 mb-4">
+      {/* Section Heading */}
+      <h3 className="
+        text-[16px] sm:text-[20px] md:text-[22px]
+        tracking-wide
+        text-[#2c2c2c]
+        font-semibold
+        mb-4 sm:mb-3
+      ">
         Cochin – Where Commerce And History Meets
-      </h2>
+      </h3>
 
       {/* Description */}
-      <div className="text-gray-700 mb-4 sm:mb-5 md:mb-6 leading-relaxed font-[300] text-[12px] sm:text-[13px] md:text-[14px] text-justify space-y-3 sm:space-y-4">
+      <div className="
+        text-gray-700
+        text-[12px] sm:text-[13px] md:text-[14px]
+        font-[300]
+        leading-relaxed
+        text-justify
+        space-y-3 sm:space-y-4
+        mb-4 sm:mb-5 md:mb-6
+      ">
         <p>
           Cochin, is former name of Kochi, popularly known as the Queen of the Arabian Sea, is a busy commercial hub rich in spice trading. It is the centre of world spice trade for many centuries. It is emerging cosmopolitan city with busy life on streets, on the other hand it is also financial, commercial & industrial capital of Kerela. Its great to see that Kochi is the only city to have underwater metro system which is world's largest electric boat metro transportation infrastructure.
         </p>
@@ -24,7 +37,14 @@ export default function Cochin() {
       </div>
 
       {/* Image */}
-      <div className="relative w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-[450px] rounded-md overflow-hidden shadow-md">
+      <div className="
+        relative
+        w-full
+        h-[250px] sm:h-[320px] md:h-[400px] lg:h-[450px]
+        rounded-md
+        overflow-hidden
+        shadow-md
+      ">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529289/cochin_yxbp74.jpg"
           alt="Cochin Kerala waterfront featuring historic Fort Kochi landmarks and scenic backwater views"
@@ -33,7 +53,6 @@ export default function Cochin() {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
         />
       </div>
-
     </div>
   );
 }

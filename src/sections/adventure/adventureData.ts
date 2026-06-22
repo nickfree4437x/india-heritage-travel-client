@@ -80,7 +80,7 @@ export const south = [
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779538299/banner_teujgc.jpg",
     days: "Days: 13",
     desc: "Explore India’s rich diversity, historic landmarks, serene backwaters and lush tea plantations.",
-    link: "/tours/heritage-odyssey",
+    link: "/tours/heritage-odyssey-tour",
   },
 ];
 
@@ -97,7 +97,7 @@ export const kashmir = [
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541435/hero_cipdt8.jpg",
     days: "Days: 08",
     desc: "Experience the breathtaking beauty of Kashmir with serene lakes and mountain landscapes.",
-    link: "/tours/heavenly-kashmir",
+    link: "/tours/heavenly-kashmir-tour",
   },
 ];
 

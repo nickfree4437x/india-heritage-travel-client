@@ -24,7 +24,7 @@ export default function RecommendedTours() {
       desc: "Explore North to South India in 16 days on the ‘Heritage Odyssey’ tour. From Delhi’s history to Ajanta’s ancient rock art and Mumbai’s vibrant charm, experience a rich tapestry of heritage and culture along the way.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530772/tour3_vliois.webp",
       alt: "Heritage Odyssey North to South India tour package by India Heritage Travel",
-      slug: "/tours/heritage-odyssey",
+      slug: "/tours/heritage-odyssey-tour",
     },
   ];
 

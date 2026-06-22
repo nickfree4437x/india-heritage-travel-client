@@ -1,34 +1,44 @@
 import type { Metadata } from "next";
 
+// SEO Components
+import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+import TourSchema from "@/src/common/seo/TourSchema";
+
+// Common components
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
+import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+
+// Page sections
 import HeroSection from "./sections/hero/HeroSection";
 import SuitableFor from "./sections/suitable-for/SuitableFor";
-import TourLayout from "./sections/layout/TourLayout";
+import TourLayout from "./layout/TourLayout";
 import CitiesSection from "./sections/city-section/CitiesSection";
 import HighlightsInclusions from "./sections/hightlights/HighlightsInclusions";
 import ItinerarySection from "./sections/itinerary/ItinerarySection";
 import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
-import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
-import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
-import Footer from "@/src/sections/footer/Footer";
-import CommonForm from "@/src/tours/CommonForm";
-import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
-import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
-import TourSchema from "@/src/common/seo/TourSchema";
 
+// ============================================
+// SEO METADATA
+// ============================================
 export const metadata: Metadata = {
-  title: "Heritage & Wildlife Tour India | Culture, Nature & Safari Experiences",
+  title: "Heritage & Wildlife Tour India | Wildlife Safari, Culture & Nature Experiences",
   description:
-    "Experience the perfect blend of India's cultural heritage and wildlife adventures through historic landmarks, natural landscapes, safari experiences, and unforgettable journeys.",
+    "Experience the perfect blend of India's cultural heritage and wildlife adventures through historic landmarks, wildlife safaris, natural landscapes, cultural experiences, and unforgettable journeys.",
   alternates: {
     canonical: "/tours/journey-through-heritage-wildlife",
   },
 };
 
+// ============================================
+// PAGE COMPONENT
+// ============================================
 export default function RoyalRajasthanPage() {
   return (
     <div>
-
-      {/* Breadcrumb Schema */}
+      {/* Breadcrumb Schema - SEO */}
       <BreadcrumbSchema
         items={[
           {
@@ -46,6 +56,7 @@ export default function RoyalRajasthanPage() {
         ]}
       />
 
+      {/* Tour Schema - SEO */}
       <TourSchema
         name="Journey Through Heritage & Wildlife Tour"
         description="Experience the perfect blend of India's cultural heritage and wildlife adventures through historic landmarks, natural landscapes, safari experiences, and unforgettable journeys."
@@ -54,20 +65,24 @@ export default function RoyalRajasthanPage() {
 
       <HeroSection />
       <SuitableFor />
+
+      {/* Tour Layout with Sections */}
       <TourLayout>
         <CitiesSection />
         <HighlightsInclusions />
         <div className="space-y-6">
-          <ItinerarySection/>
-          <ExcludedServices/>
-          <DetailedItineraryIntro/>
+          <ItinerarySection />
+          <ExcludedServices />
+          <DetailedItineraryIntro />
         </div>
       </TourLayout>
-     
-      <TourSteps/>
-      <CommonForm tourName="journey-through-heritage-wildlife"/>
+      <TourSteps />
+
+      {/* Booking Form */}
+      <CommonForm tourName="journey-through-heritage-wildlife" />
+
       <RecommendedTours />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

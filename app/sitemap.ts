@@ -105,13 +105,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/tours/heavenly-kashmir`,
+      url: `${BASE_URL}/tours/heavenly-kashmir-tour`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/tours/heritage-odyssey`,
+      url: `${BASE_URL}/tours/heritage-odyssey-tour`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,

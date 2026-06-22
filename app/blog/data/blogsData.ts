@@ -119,4 +119,13 @@ export const blogs = [
     excerpt:
       "Are you planning a Golden Triangle tour India? Find out all about the itinerary..",
   },
+  {
+    id: 14,
+    slug: "best-time-to-visit-golden-triangle-india",
+    title: "The Best Time to Visit the Golden Triangle India | Guide",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782104429/nils-huenerfuerst-T8X8vgj0Ink-unsplash_ayktot.jpg",
+    date: "22 June",
+    excerpt:
+      "The best time to visit the Golden Triangle India – discover month by month the...",
+  },
 ];

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "Explore Delhi, Agra, and Jaipur through a personalized Golden Triangle Tour featuring iconic landmarks, cultural experiences, heritage sites, and unforgettable journeys across India.",
   alternates: {
-    canonical: "/tours/majestic-golden-triangle",
+    canonical: "/tours/majestic-golden-triangle-tour",
   },
 };
 

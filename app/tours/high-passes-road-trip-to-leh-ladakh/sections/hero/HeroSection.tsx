@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543183/hero_kjfvk2.jpg"
-          alt="Adventure Through High Passes: Road Trip to Leh-Ladakh"
+          alt="Leh Ladakh road trip package featuring high mountain passes scenic Himalayan landscapes monasteries and adventure routes"
           fill
           priority
           className="object-cover object-center will-change-transform"
@@ -22,7 +22,6 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
-
         <h1
           className="
             max-w-[700px]
@@ -38,7 +37,6 @@ export default function Hero() {
         >
           Leh Ladakh Road <br/> Trip Package
         </h1>
-
       </div>
 
     </section>

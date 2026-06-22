@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function RecommendedTours() {
+  // Recommended tours data
   const tours = [
     {
       title: "The Royal Heritage Trail Tour",
@@ -21,30 +22,28 @@ export default function RecommendedTours() {
     },
     {
       title: "Heritage Odyssey: North To South India Tour",
-      desc: "Discover the essence of Southern India on the ‘Southern Delights’ 17-day tour, from Cochin’s history to Mumbai’s vibrant dreams, with coastal delights, natural majesty, and timeless wonders in between.",
+      desc: "Discover the essence of Southern India on the 'Southern Delights' 17-day tour, from Cochin's history to Mumbai's vibrant dreams, with coastal delights, natural majesty, and timeless wonders in between.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529784/r3_wapfho.webp",
       alt: "India heritage tour featuring cultural landmarks Kerala backwaters and historic destinations",
-      slug: "/tours/heritage-odyssey",
+      slug: "/tours/heritage-odyssey-tour",
     },
   ];
 
   return (
     <section className="max-w-[1400px] mx-auto px-8 py-10">
-      {/* 🔹 Heading */}
-      <h2
-        className="
-          text-[20px] sm:text-[24px] md:text-[28px]
-          font-semibold
-          text-center
-          mb-6 sm:mb-8
-          text-[#2c2c2c]
-          tracking-wide
-        "
-      >
+      {/* Section Heading */}
+      <h2 className="
+        text-[20px] sm:text-[24px] md:text-[28px]
+        font-semibold
+        text-center
+        text-[#2c2c2c]
+        tracking-wide
+        mb-6 sm:mb-8
+      ">
         Recommended Tours
       </h2>
 
-      {/* 🔹 Cards */}
+      {/* Tour Cards */}
       <div className="grid md:grid-cols-3 gap-10 mb-10">
         {tours.map((tour, i) => (
           <Link
@@ -63,7 +62,7 @@ export default function RecommendedTours() {
               cursor-pointer
             "
           >
-            {/* 🔥 Image */}
+            {/* Tour Image */}
             <div className="relative h-[240px] w-full overflow-hidden group">
               <Image
                 src={tour.img}
@@ -72,11 +71,11 @@ export default function RecommendedTours() {
                 className="object-cover transition-transform duration-700"
               />
 
-              {/* Overlay */}
+              {/* Image Overlay */}
               <div className="absolute inset-0 bg-black/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             </div>
 
-            {/* 🔥 Content */}
+            {/* Tour Content */}
             <div className="p-6 space-y-3">
               <h3 className="text-[17px] font-semibold text-red-500 leading-snug hover:underline">
                 {tour.title}
