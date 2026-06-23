@@ -9,7 +9,7 @@ export default function Hero() {
       {/* 🔥 Background Image (Smooth Zoom Animation) */}
       <Image
         src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779527998/heritage_b4eaqj.jpg"
-        alt="Rajasthani Heritage Tour Package by India Heritage Travel"
+        alt="Rajasthan tour package showcasing Jaisalmer forts Udaipur palaces and royal heritage destinations"
         fill
         priority
         className="object-cover scale-105 animate-[zoomSlow_20s_ease-in-out_infinite]"

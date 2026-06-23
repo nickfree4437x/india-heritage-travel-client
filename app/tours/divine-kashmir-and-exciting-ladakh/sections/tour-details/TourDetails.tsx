@@ -3,6 +3,7 @@
 import Image from "next/image";
 import HighlightsInclusions from "../Highlight/HighlightsInclusions";
 import Itinerary from "../itinerary/Itinerary";
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 
 export default function TourDetails() {
   const cities = [
@@ -60,39 +61,7 @@ export default function TourDetails() {
   return (
     <div className="space-y-12">
 
-      <div className="max-w-5xl mx-auto">
-        <h2
-          className="
-            text-[16px] sm:text-[20px] md:text-[24px]
-            font-semibold
-            mb-4
-            text-[#2c2c2c]
-            tracking-wide
-          "
-        >
-          Why Choose This Kashmir & Ladakh Tour Package
-        </h2>
-
-        <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify space-y-4">
-          <p>
-            Discover the breathtaking beauty of the Himalayas through this carefully curated Kashmir & 
-            Ladakh Tour Package. From the serene lakes and Mughal gardens of Srinagar to the dramatic 
-            mountain landscapes of Ladakh, this journey offers a perfect blend of nature, culture, 
-            adventure, and heritage.
-          </p>
-          <p>
-            Explore iconic destinations including Gulmarg, Pahalgam, Kargil, Leh, Nubra Valley, and 
-            Pangong Lake while experiencing scenic valleys, high-altitude mountain passes, ancient 
-            monasteries, and unforgettable Himalayan landscapes. Each destination offers unique 
-            experiences that showcase the diverse beauty of Northern India.
-          </p>
-          <p>
-            Whether you are seeking adventure, photography opportunities, cultural exploration, or 
-            peaceful mountain escapes, this Kashmir and Ladakh tour delivers an unforgettable travel 
-            experience across some of India’s most spectacular destinations.
-          </p>
-        </div>
-      </div>
+      <WhyChooseSection/>
 
       {cities.map((city) => (
         <div

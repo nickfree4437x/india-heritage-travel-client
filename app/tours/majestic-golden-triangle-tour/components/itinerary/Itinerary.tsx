@@ -27,16 +27,13 @@ export default function Itinerary() {
             <h3 className="text-[17px] md:text-lg font-medium text-red-500">
              Day 1–3: Delhi
             </h3>
-
             <div  className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
             <p>
              When you reach at the Delhi Airport, we’ll welcome you with a sign board and take you to your well-prepared hotel for a comfortable stay.
             </p>
-
             <p className="mt-2">
              If you prefer to wake up early, you can explore more into Delhi’s rich history, politics, and spirituality. Explore everything from iconic landmarks such as India Gate, the President’s House, and Parliament House to the city’s major role in the Freedom Struggle
             </p>
-
             <p className="mt-2">
              Dive yourself in history at Gandhi Smriti and the unique Qutub Minar. Experience the charm of Old Delhi through a rickshaw ride, uncovering treasures such as Jama Masjid, Red Fort, and Raj Ghat. Don’t forget to explore Gurudwara Bangla Sahib and the serene Nizamuddin Sufi Saint Mosque.
             </p>
@@ -58,12 +55,10 @@ export default function Itinerary() {
 
            {/* TEXT */}
            <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
-
             <p>
               Enrich your senses at Akshardham Temple, Humayun’s Tomb and Lotus Temple,
               and don’t miss the lively Chandni Chowk market for the perfect shopping.
             </p>
-
             <p className="mt-2 md:mt-2">
               We’ll manage your journey based on your schedule and preferences,
               inviting you to discover Delhi’s perfect mixture of history and modern
@@ -72,14 +67,12 @@ export default function Itinerary() {
             </p>
 
            </div>
-
           </div>  
 
            <div className="pt-2">
             <p className="font-medium text-[14px]">
               Next stop: Agra
             </p>
-
             <p className="text-[12px] sm:text-[12px] font-[300] text-gray-700">
               A mere 5.5-hour drive (260 km) from Delhi.
             </p>
@@ -117,21 +110,17 @@ export default function Itinerary() {
                 Fort on the same day. Alternatively, consider an early morning visit
                 the next day to witness the beautiful sunrise at the Taj Mahal.
               </p>
-
               <p>
                 Please note that many attractions, including the Taj Mahal,
                 are closed on Fridays.
               </p>
-
             </div>
-
           </div>
 
           <div>
             <p className="font-medium text-[14px]">
               Next stop: Jaipur
             </p>
-
             <p className="text-[12px] sm:text-[12px] font-[300] text-gray-700">
               Just 3 hours’ drive (175 km) from Mandawa
             </p>

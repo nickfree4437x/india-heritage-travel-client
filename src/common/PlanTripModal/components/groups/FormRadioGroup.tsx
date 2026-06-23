@@ -3,7 +3,7 @@
 import { Star } from "lucide-react";
 
 interface FormRadioGroupProps {
-  label?: string;  // ADDED - optional label
+  label?: string;
   name: string;
   value: string;
   onChange: (value: string) => void;
@@ -25,14 +25,14 @@ export default function FormRadioGroup({
 }: FormRadioGroupProps) {
   return (
     <div className="mt-6">
-      {/* LABEL SECTION - ADDED */}
+      {/* Label */}
       {label && (
         <h4 className="text-[13px] sm:text-[14px] font-light text-[#3d352c] mb-3 tracking-[0.2px]">
           {label} <span className="text-red-500">*</span>
         </h4>
       )}
 
-      {/* RADIO OPTIONS */}
+      {/* Radio Options */}
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 md:gap-12">
         {options.map((opt) => (
           <label key={opt.value} className="flex items-center gap-2 sm:gap-3 cursor-pointer group">
@@ -52,15 +52,17 @@ export default function FormRadioGroup({
 
               {opt.stars && (
                 <div className="flex items-center gap-0.5 sm:gap-1">
-                  {Array(opt.stars).fill(0).map((_, i) => (
-                    <Star 
-                      key={i} 
-                      fill="#c9a15f" 
-                      stroke="#c9a15f" 
-                      size={14} 
-                      className="sm:w-[18px] sm:h-[18px] md:w-[20px] md:h-[20px]"
-                    />
-                  ))}
+                  {Array(opt.stars)
+                    .fill(0)
+                    .map((_, i) => (
+                      <Star
+                        key={i}
+                        fill="#c9a15f"
+                        stroke="#c9a15f"
+                        size={14}
+                        className="sm:w-[18px] sm:h-[18px] md:w-[20px] md:h-[20px]"
+                      />
+                    ))}
                 </div>
               )}
             </div>
@@ -68,7 +70,7 @@ export default function FormRadioGroup({
         ))}
       </div>
 
-      {/* ERROR MESSAGE */}
+      {/* Error Message */}
       {error && (
         <p className="text-red-500 text-[10px] sm:text-[11px] md:text-[12px] font-light mt-2">
           {error}

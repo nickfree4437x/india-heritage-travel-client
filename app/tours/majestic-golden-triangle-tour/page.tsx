@@ -16,9 +16,9 @@ import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
-  title: "Golden Triangle Tour India | Delhi, Agra & Jaipur Heritage Journey",
+  title: "Golden Triangle Tour India | Delhi Agra Jaipur Heritage Tour Package",
   description:
-    "Explore Delhi, Agra, and Jaipur through a personalized Golden Triangle Tour featuring iconic landmarks, cultural experiences, heritage sites, and unforgettable journeys across India.",
+    "Explore Delhi, Agra, and Jaipur on a Golden Triangle Tour India featuring the Taj Mahal, Amber Fort, heritage landmarks, cultural experiences, and unforgettable travel experiences.",
   alternates: {
     canonical: "/tours/majestic-golden-triangle-tour",
   },

@@ -22,11 +22,11 @@ export default function HighlightsInclusions() {
   // ==========================================================================
 
   const highlightsList = [
-    "Delhi's History and Vibrancy",
-    "Jaipur's Regal Charms",
-    "Taj Mahal's Timeless Beauty",
-    "Seamless Travel",
-    "Personalized Adventures",
+    "Explore Delhi's iconic landmarks including Red Fort and Qutub Minar",
+    "Witness the timeless beauty of the Taj Mahal in Agra",
+    "Discover Jaipur's magnificent forts, palaces, and royal heritage",
+    "Experience India's famous Golden Triangle cultural circuit",
+    "Enjoy comfortable travel with guided sightseeing experiences",
   ];
 
   // ==========================================================================

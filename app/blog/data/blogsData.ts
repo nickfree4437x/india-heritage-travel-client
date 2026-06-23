@@ -77,7 +77,6 @@ export const blogs = [
     id: 9,
     slug: "top-heritage-hotel-in-india",
     title: "Top Heritage Hotels in India for an Exclusive Stay",
-    category: "Nature",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779638017/blog-9_h4aqqf.jpg",
     date: "6 Feb",
     excerpt:
@@ -127,5 +126,14 @@ export const blogs = [
     date: "22 June",
     excerpt:
       "The best time to visit the Golden Triangle India – discover month by month the...",
+  },
+  {
+    id: 15,
+    slug: "rawla-narlai-luxury-heritage-hotel-rajasthan",
+    title: "Rajasthan's Most Enchanting Luxury Heritage Hotel",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782195580/23.06.2026_11.28.01_REC_xq38bb.jpg",
+    date: "23 June",
+    excerpt:
+      "Discover Rawla Narlai - a 17th-century royal hunting lodge turned luxury herit...",
   },
 ];

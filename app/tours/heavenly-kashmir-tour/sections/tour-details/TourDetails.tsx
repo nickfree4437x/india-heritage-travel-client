@@ -5,6 +5,7 @@ import HighlightsInclusions from "../hightlights/HighlightsInclusions";
 import Itinerary from "../itinerary/Itinerary";
 import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 
 export default function TourDetails() {
   const cities = [
@@ -34,38 +35,7 @@ export default function TourDetails() {
   return (
     <div className="space-y-12">
 
-      <div className="max-w-5xl mx-auto">
-        <h2
-          className="
-            text-[16px] sm:text-[20px] md:text-[24px]
-            font-semibold
-            text-center
-            mb-4
-            text-[#2c2c2c]
-            tracking-wide
-          "
-        >
-          Why Choose This Kashmir Tour Package
-        </h2>
-        <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify space-y-4">
-          <p>
-            Discover the breathtaking beauty of Kashmir through a thoughtfully designed Kashmir Tour Package 
-            that takes you to some of the region’s most iconic destinations. From the tranquil waters of Dal 
-            Lake in Srinagar to the snow-covered landscapes of Gulmarg and the scenic valleys of Pahalgam, 
-            every destination offers a unique blend of natural beauty, culture, and unforgettable experiences.
-          </p>
-          <p>
-            Experience charming houseboats, lush meadows, pine forests, traditional Kashmiri culture, and 
-            spectacular Himalayan views throughout your journey. This tour allows you to explore the very 
-            best of Kashmir while enjoying its rich heritage, warm hospitality, and world-famous landscapes.
-          </p>
-          <p>
-            Whether you are seeking a peaceful mountain retreat, a romantic getaway, a family holiday, or an 
-            immersive cultural experience, this Kashmir Tour Package provides the perfect balance of relaxation, 
-            sightseeing, and authentic local experiences in one of India’s most beautiful destinations.
-          </p>
-        </div>
-      </div>
+      <WhyChooseSection/>
 
       {cities.map((city) => (
         <div

@@ -5,6 +5,7 @@ import HighlightsInclusions from "../hightlight/HighlightsInclusions";
 import Itinerary from "../itinerary/Itinerary";
 import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 
 export default function TourDetails() {
   const cities = [
@@ -64,37 +65,7 @@ export default function TourDetails() {
   return (
     <div className="space-y-12">
 
-      <div className="max-w-5xl mx-auto">
-        <h2
-          className="
-            text-[16px] sm:text-[20px] md:text-[24px]
-            font-semibold
-            mb-4
-            text-[#2c2c2c]
-            tracking-wide
-          "
-        >
-          Why Choose This Leh Ladakh Road Trip Package
-        </h2>
-        <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify space-y-4">
-          <p>
-            Experience one of India’s most iconic Himalayan adventures with this Leh Ladakh Road Trip Package. 
-            Journey through breathtaking mountain landscapes, high-altitude passes, remote villages, pristine 
-            lakes, and culturally rich destinations while exploring the heart of the Himalayas.
-          </p>
-          <p>
-            From the historic streets of Delhi and the modern charm of Chandigarh to the scenic beauty of Manali, 
-            Jispa, Leh, Nubra Valley, and Pangong Lake, every destination offers a unique experience. Witness 
-            dramatic mountain scenery, ancient monasteries, desert landscapes, crystal-clear lakes, and some of 
-            the highest motorable roads in the world.
-          </p>
-          <p>
-            Whether you are an adventure enthusiast, nature lover, photographer, or cultural explorer, this 
-            Leh Ladakh road trip delivers unforgettable experiences, spectacular views, and a true sense of 
-            exploration across one of the most extraordinary regions of India.
-          </p>
-        </div>
-      </div>
+      <WhyChooseSection/>
 
       {cities.map((city) => (
         <div

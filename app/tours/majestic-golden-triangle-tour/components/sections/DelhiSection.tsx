@@ -1,12 +1,15 @@
 "use client";
 
 import CitySection from "./CitySection";
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 
 export default function DelhiSection() {
   return (
-    <section >
+    <section>
 
-      <div className="space-y-16">
+     <WhyChooseSection/>
+
+      <div className="space-y-12">
 
         <CitySection
           id="delhi"

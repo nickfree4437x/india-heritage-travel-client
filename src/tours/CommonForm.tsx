@@ -6,38 +6,32 @@ import { Country } from "country-state-city";
 
 import BookNowHeader from "./book-now/form/BookNowHeader";
 import BookNowForm from "./book-now/form/BookNowForm";
-
 import { CountryOption } from "./book-now/form/types/types";
 
 type Props = {
   tourName: string;
 };
 
-export default function BookNowSection({
-  tourName,
-}: Props) {
+export default function BookNowSection({ tourName }: Props) {
   const [countries, setCountries] = useState<CountryOption[]>([]);
-  const [selectedCountry, setSelectedCountry] =
-    useState<CountryOption | null>(null);
-
+  const [selectedCountry, setSelectedCountry] = useState<CountryOption | null>(null);
   const [mounted, setMounted] = useState(false);
 
+  // Mount state for hydration
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  // Load countries on mount
   useEffect(() => {
     try {
       const formattedCountries = Country.getAllCountries()
         .map((country) => ({
           value: country.name,
           name: country.name,
-          code: country.phonecode
-            ? `+${country.phonecode}`
-            : "",
+          code: country.phonecode ? `+${country.phonecode}` : "",
           isoCode: country.isoCode,
           flag: `https://flagcdn.com/${country.isoCode.toLowerCase()}.svg`,
-
           label: (
             <div className="flex items-center gap-3">
               <Image
@@ -47,7 +41,6 @@ export default function BookNowSection({
                 height={16}
                 className="w-5 h-4 object-cover rounded-sm shadow-sm"
               />
-
               <span className="text-[13px] font-normal text-gray-700">
                 {country.name}
               </span>
@@ -58,16 +51,15 @@ export default function BookNowSection({
 
       setCountries(formattedCountries);
 
-      const india = formattedCountries.find(
-        (c) => c.isoCode === "IN"
-      );
-
+      // Set India as default
+      const india = formattedCountries.find((c) => c.isoCode === "IN");
       setSelectedCountry(india || null);
     } catch (error) {
       console.error("Failed to load countries:", error);
     }
   }, []);
 
+  // Prevent hydration mismatch
   if (!mounted) return null;
 
   return (

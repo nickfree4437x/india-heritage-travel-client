@@ -7,7 +7,6 @@ import {
 import { GoogleTagManager } from "@next/third-parties/google";
 
 import Script from "next/script";
-
 import { Toaster } from "react-hot-toast";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -17,21 +16,21 @@ import Navbar from "@/src/navbar-layout/navbar/Navbar";
 import StickyPlanButton from "@/src/common/StickyPlanButton";
 import WhatsAppSupport from "@/src/common/WhatsAppSupport";
 
-// Body Font
+// ============================================
+// FONTS
+// ============================================
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
 
-// Heading Font
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
   display: "swap",
 });
 
-// Handwritten Font
 const caveatBrush = Caveat_Brush({
   subsets: ["latin"],
   variable: "--font-handwritten",
@@ -39,29 +38,22 @@ const caveatBrush = Caveat_Brush({
   display: "swap",
 });
 
+// ============================================
+// SCHEMA DATA (JSON-LD)
+// ============================================
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-
   name: "India Heritage Travel",
-
   url: "https://indiaheritagetravel.com",
-
-  logo:
-    "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png",
-
+  logo: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png",
   contactPoint: {
     "@type": "ContactPoint",
-
     telephone: "+91-7062101914",
-
     contactType: "customer service",
-
     areaServed: "IN",
-
     availableLanguage: ["English"],
   },
-
   sameAs: [
     "https://www.facebook.com/profile.php?id=61559592375914",
     "https://www.instagram.com/indiaheritagetravel",
@@ -72,46 +64,37 @@ const organizationSchema = {
 
 const websiteSchema = {
   "@context": "https://schema.org",
-
   "@type": "WebSite",
-
   name: "India Heritage Travel",
-
   url: "https://indiaheritagetravel.com",
-
   description:
     "India Heritage Travel offers personalized heritage, cultural, wellness, festival, and luxury tours across India.",
-
   inLanguage: "en",
-
   publisher: {
     "@type": "Organization",
-
     name: "India Heritage Travel",
-
     url: "https://indiaheritagetravel.com",
   },
 };
 
+// ============================================
+// SEO METADATA
+// ============================================
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://indiaheritagetravel.com"
-  ),
-
+  metadataBase: new URL("https://indiaheritagetravel.com"),
   title: {
     default: "India Heritage Travel",
     template: "%s | India Heritage Travel",
   },
-
-  description:
-    "Explore Incredible India Journeys",
-
+  description: "Explore Incredible India Journeys",
   alternates: {
-    canonical:
-      "https://indiaheritagetravel.com",
+    canonical: "https://indiaheritagetravel.com",
   },
 };
 
+// ============================================
+// ROOT LAYOUT
+// ============================================
 export default function RootLayout({
   children,
 }: {
@@ -119,44 +102,39 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-
       <head>
-        <link
-          rel="preconnect"
-          href="https://res.cloudinary.com"
-        />
-
-        <link
-          rel="dns-prefetch"
-          href="https://res.cloudinary.com"
-        />
+        {/* Preconnect for Performance */}
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
       </head>
 
       <body
-        className={`${inter.variable} ${playfair.variable} ${caveatBrush.variable} font-[var(--font-inter)] antialiased`}
+        className={`
+          ${inter.variable}
+          ${playfair.variable}
+          ${caveatBrush.variable}
+          font-[var(--font-inter)]
+          antialiased
+        `}
       >
         {/* Google Tag Manager */}
-       <GoogleTagManager gtmId="GTM-PK5QRZC9" />
+        <GoogleTagManager gtmId="GTM-PK5QRZC9" />
 
-        {/* Organization Schema */}
+        {/* Organization Schema - JSON-LD */}
         <Script
           id="organization-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(
-              organizationSchema
-            ),
+            __html: JSON.stringify(organizationSchema),
           }}
         />
 
-        {/* Website Schema */}
+        {/* Website Schema - JSON-LD */}
         <Script
           id="website-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(
-              websiteSchema
-            ),
+            __html: JSON.stringify(websiteSchema),
           }}
         />
 
@@ -177,7 +155,6 @@ export default function RootLayout({
           position="top-center"
           toastOptions={{
             duration: 4000,
-
             style: {
               background: "#fff",
               color: "#333",
@@ -186,13 +163,11 @@ export default function RootLayout({
               fontSize: "13px",
               borderRadius: "12px",
             },
-
             success: {
               style: {
                 border: "1px solid white",
               },
             },
-
             error: {
               style: {
                 border: "1px solid white",
@@ -230,11 +205,9 @@ export default function RootLayout({
           {`
             const removeBanner = () => {
               const banner = document.querySelector('.goog-te-banner-frame');
-
               if (banner) {
                 banner.remove();
               }
-
               document.body.style.top = '0px';
             };
 

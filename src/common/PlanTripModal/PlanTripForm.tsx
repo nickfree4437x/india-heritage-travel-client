@@ -13,6 +13,9 @@ import {
   FormErrorsType,
 } from "./types/types";
 
+// ============================================
+// CONSTANTS
+// ============================================
 const WEB3FORMS_URL = "https://api.web3forms.com/submit";
 const ACCESS_KEY = "499e1d69-87f9-41fa-9539-21cf35241422";
 
@@ -37,6 +40,7 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
   const [errors, setErrors] = useState<FormErrorsType>({});
   const [formData, setFormData] = useState<FormDataType>(initialFormData);
 
+  // Update form data and clear error
   const updateFormData = (field: string, value: any) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
     if (errors[field as keyof FormErrorsType]) {
@@ -44,7 +48,7 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
     }
   };
 
-  // ESC CLOSE
+  // Close on ESC key
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -53,7 +57,7 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
     return () => window.removeEventListener("keydown", handleEsc);
   }, [onClose]);
 
-  // BODY SCROLL LOCK
+  // Lock body scroll when modal is open
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden";
@@ -63,64 +67,50 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
     };
   }, [open]);
 
+  // ============================================
+  // VALIDATION FUNCTIONS
+  // ============================================
   const validateStep1 = (): boolean => {
     const newErrors: FormErrorsType = {};
 
     if (!formData.name.trim()) {
-    newErrors.name = "Name is required";
+      newErrors.name = "Name is required";
     }
 
     if (!formData.email.trim()) {
       newErrors.email = "Email is required";
-    } else if (
-      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
-    ) {
-      newErrors.email =
-        "Please enter a valid email address";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
     }
 
     if (!formData.phone) {
       newErrors.phone = "Phone number is required";
-    } else if (
-      !isValidPhoneNumber(formData.phone)
-    ) {
-      newErrors.phone =
-        "Please enter a valid phone number";
+    } else if (!isValidPhoneNumber(formData.phone)) {
+      newErrors.phone = "Please enter a valid phone number";
     }
 
     if (!formData.tourDate) {
-      newErrors.tourDate =
-        "Tour start date is required";
+      newErrors.tourDate = "Tour start date is required";
     }
 
     if (!formData.duration) {
-      newErrors.duration =
-        "Trip duration is required";
-    } else if (
-      parseInt(formData.duration) <= 0
-    ) {
-      newErrors.duration =
-        "Please enter a valid duration";
+      newErrors.duration = "Trip duration is required";
+    } else if (parseInt(formData.duration) <= 0) {
+      newErrors.duration = "Please enter a valid duration";
     }
 
     if (!formData.travellers) {
-      newErrors.travellers =
-        "Number of travellers is required";
-    } else if (
-      parseInt(formData.travellers) <= 0
-    ) {
-      newErrors.travellers =
-        "Please enter a valid number";
+      newErrors.travellers = "Number of travellers is required";
+    } else if (parseInt(formData.travellers) <= 0) {
+      newErrors.travellers = "Please enter a valid number";
     }
 
     if (!formData.accommodation) {
-      newErrors.accommodation =
-        "Please select accommodation type";
+      newErrors.accommodation = "Please select accommodation type";
     }
 
     if (formData.interests.length === 0) {
-      newErrors.interests =
-        "Please select at least one interest";
+      newErrors.interests = "Please select at least one interest";
     }
 
     setErrors(newErrors);
@@ -151,6 +141,9 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
     return true;
   };
 
+  // ============================================
+  // NAVIGATION FUNCTIONS
+  // ============================================
   const handleNext = () => {
     if (validateStep1()) {
       setStep(2);
@@ -165,6 +158,9 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  // ============================================
+  // SUBMIT FUNCTION
+  // ============================================
   const handleSubmit = async () => {
     if (!validateStep2()) return;
 
@@ -220,12 +216,15 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
 
   return (
     <div className="fixed inset-0 z-[99999] p-4 sm:p-6 md:p-8">
-      {/* OVERLAY */}
-      <div onClick={onClose} className="absolute inset-0 bg-black/70 backdrop-blur-[2px] -m-4 sm:-m-6 md:-m-8" />
+      {/* Overlay */}
+      <div
+        onClick={onClose}
+        className="absolute inset-0 bg-black/70 backdrop-blur-[2px] -m-4 sm:-m-6 md:-m-8"
+      />
 
-      {/* MODAL */}
+      {/* Modal */}
       <div className="relative w-full max-w-3xl mx-auto bg-white shadow-md overflow-y-auto max-h-full rounded-sm sm:rounded-sm">
-        {/* HEADER - Fully Responsive */}
+        {/* Header */}
         <div className="bg-[#a68657] py-4 sm:py-5 px-5 sm:px-6 md:px-8 flex items-center justify-center relative sticky top-0 z-10 rounded-t-sm sm:rounded-t-sm">
           <h2 className="text-white text-[16px] sm:text-[18px] md:text-[20px] tracking-wide font-medium">
             Plan Your Trip
@@ -239,7 +238,7 @@ export default function PlanTripModal({ open, onClose }: PlanTripModalProps) {
           </button>
         </div>
 
-        {/* CONTENT - Responsive Padding */}
+        {/* Content */}
         <div className="px-5 sm:px-7 md:px-9 lg:px-10 py-6 sm:py-8 md:py-10">
           {step === 1 && (
             <Step1

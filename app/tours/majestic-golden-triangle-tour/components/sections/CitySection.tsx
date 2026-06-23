@@ -24,13 +24,14 @@ export default function CitySection({ id, title, description, image, alt }: Prop
   // ==========================================================================
 
   return (
-    <div id={id} className="max-w-5xl scroll-mt-24 md:scroll-mt-28">
+    <div id={id} className="max-w-5xl scroll-mt-24 md:scroll-mt-28 mt-8">
+
       {/* ====================================================================
           SECTION HEADING
       ==================================================================== */}
-      <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+      <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
         {title}
-      </h2>
+      </h3>
 
       {/* ====================================================================
           SECTION DESCRIPTION

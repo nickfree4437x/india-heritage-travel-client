@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529935/hero_vfhtr5.jpg"
-          alt="Varanasi Ganga Aarti during North India Cultural Tour by India Heritage Travel"
+          alt="North India tour package featuring Varanasi Ganga Aarti heritage landmarks and cultural attractions"
           fill
           priority
           className="object-cover object-center will-change-transform"
@@ -37,7 +37,8 @@ export default function HeroSection() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          North India Cultural <br/> Tour
+          North India Discovery <br />
+           Tour Package
         </h1>
 
       </div>

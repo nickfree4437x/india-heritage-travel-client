@@ -13,29 +13,20 @@ export default function PersonSchema({
 }: PersonSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
-
     "@type": "Person",
-
     name,
-
     jobTitle,
-
     image,
-
     worksFor: {
       "@type": "Organization",
-
       name: "India Heritage Travel",
-
       url: "https://indiaheritagetravel.com",
     },
   };
 
   return (
     <Script
-      id={`person-schema-${name
-        .toLowerCase()
-        .replace(/\s+/g, "-")}`}
+      id={`person-schema-${name.toLowerCase().replace(/\s+/g, "-")}`}
       type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(schema),

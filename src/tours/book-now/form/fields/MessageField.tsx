@@ -2,12 +2,8 @@
 
 type Props = {
   name?: string;
-
   value?: string;
-
-  onChange?: (
-    e: React.ChangeEvent<HTMLTextAreaElement>
-  ) => void;
+  onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 };
 
 export default function MessageField({
@@ -15,11 +11,8 @@ export default function MessageField({
   value,
   onChange,
 }: Props) {
-
   return (
-
     <div>
-
       <textarea
         rows={4}
         name={name}
@@ -33,22 +26,15 @@ export default function MessageField({
           border border-[#ddd2c2]
           bg-white
           rounded-xl
-          px-5
-          py-4
-          text-[12px]
-          sm:text-[13px]
-          text-[#5b5348]
-          placeholder:text-[#9a8f81]
-          placeholder:font-light
-          font-light
-          tracking-[0.2px]
-          focus:outline-none
-          focus:border-[#9A7A58]
+          px-5 py-4
+          text-[12px] sm:text-[13px] text-[#5b5348]
+          placeholder:text-[#9a8f81] placeholder:font-light
+          font-light tracking-[0.2px]
+          focus:outline-none focus:border-[#9A7A58]
           resize-none
           transition
         "
       />
-
     </div>
   );
 }

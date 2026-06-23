@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 
 export default function TourDetails() {
   const cities = [
@@ -34,37 +35,7 @@ export default function TourDetails() {
     <div className="space-y-12">
 
       {/* SEO CONTENT BLOCK */}
-      <div>
-        <h2
-          className="
-            text-[16px] sm:text-[20px] md:text-[22px]
-            tracking-wide
-            text-[#2c2c2c]
-            font-semibold
-            mb-4
-          "
-        >
-          Why Choose This Yoga Retreat Tour in India
-        </h2>
-
-        <div className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-[300] text-justify space-y-2">
-
-          <p>
-            Experience a transformative Yoga Retreat Tour in India designed to nurture physical well-being, 
-            mental clarity, and inner balance. This carefully curated journey combines authentic yoga 
-            practices, guided meditation sessions, mindfulness experiences, and spiritual exploration 
-            across some of India’s most inspiring destinations.
-          </p>
-
-          <p>
-            Led by experienced yoga instructors and wellness practitioners, the retreat offers opportunities 
-            to deepen your practice through asanas, pranayama, meditation, and holistic wellness activities.
-             Whether you are a beginner or an experienced practitioner, this journey provides a supportive 
-             environment for personal growth, relaxation, and self-discovery.
-          </p>
-
-        </div>
-      </div>
+      <WhyChooseSection />
 
       {cities.map((city) => (
         <div

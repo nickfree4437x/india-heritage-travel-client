@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 
 const places = [
   {
@@ -83,38 +84,7 @@ export default function TourLeft() {
   return (
     <div className="space-y-12">
 
-      <div className="max-w-5xl mx-auto">
-        <h2
-          className="
-            text-[16px] sm:text-[20px] md:text-[24px]
-            font-semibold
-            mb-4
-            text-[#2c2c2c]
-            tracking-wide
-          "
-        >
-          Why Choose This India Heritage Tour Package
-        </h2>
-        <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify space-y-4">
-          <p>
-            Discover the rich cultural heritage of India through a carefully curated India Heritage Tour 
-            Package that takes you across some of the country’s most iconic destinations. From the historic 
-            streets of Delhi and the royal grandeur of Jaipur to the timeless beauty of the Taj Mahal in Agra, 
-            every destination reveals a unique chapter of India’s remarkable history and traditions.
-          </p>
-          <p>
-            Explore UNESCO World Heritage Sites, magnificent forts, royal palaces, ancient cave temples, vibrant 
-            local cultures, and breathtaking landscapes as you travel through North and South India. This journey
-             combines architectural wonders, cultural experiences, and historical landmarks to provide a deeper 
-             understanding of India’s diverse heritage.
-          </p>
-          <p>
-            Whether you are passionate about history, architecture, culture, or immersive travel experiences, 
-            this India Heritage Tour Package offers an unforgettable journey through some of the most celebrated 
-            heritage destinations in the country.
-          </p>
-        </div>
-      </div>
+      <WhyChooseSection/>
 
       {places.map((place, index) => (
         <section

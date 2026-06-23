@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import dynamic from "next/dynamic";
 
+// Static components (no lazy loading)
 import Hero from "@/src/sections/hero/Hero";
 import About from "@/src/sections/welcome-section/About";
 
+// Lazy loaded components
 const Difference = dynamic(
   () => import("@/src/sections/how-make-difference/Difference")
 );
@@ -41,9 +43,11 @@ const Footer = dynamic(
   () => import("@/src/sections/footer/Footer")
 );
 
+// ============================================
+// SEO METADATA
+// ============================================
 export const metadata: Metadata = {
-  title:
-    "India Heritage Travel | Luxury Heritage Tours India | Tailor-Made India Tours",
+  title: "India Heritage Travel | Luxury Heritage Tours India | Tailor-Made India Tours",
   description:
     "Experience India's rich heritage with a trusted local guide. From Golden Triangle to Kerala backwaters - personalized tours for solo women, couples & families. Free itinerary consultation. Book now!",
   alternates: {
@@ -51,6 +55,9 @@ export const metadata: Metadata = {
   },
 };
 
+// ============================================
+// SCHEMA DATA (JSON-LD)
+// ============================================
 const reviewSchema = {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
@@ -63,9 +70,13 @@ const reviewSchema = {
   },
 };
 
+// ============================================
+// HOME PAGE
+// ============================================
 export default function Home() {
   return (
     <>
+      {/* Review Schema - JSON-LD */}
       <Script
         id="review-schema"
         type="application/ld+json"
@@ -74,9 +85,9 @@ export default function Home() {
         }}
       />
 
+      {/* Page Sections */}
       <Hero />
       <About />
-
       <Difference />
       <Destinations />
       <SoloTravelSection />

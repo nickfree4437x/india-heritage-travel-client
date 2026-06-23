@@ -1,7 +1,7 @@
 "use client";
 
 interface FormCheckboxGroupProps {
-  label?: string;  // ADDED - optional label
+  label?: string;
   items: string[];
   selectedItems: string[];
   onChange: (item: string, checked: boolean) => void;
@@ -19,14 +19,14 @@ export default function FormCheckboxGroup({
 }: FormCheckboxGroupProps) {
   return (
     <div className="mt-6">
-      {/* LABEL SECTION - ADDED */}
+      {/* Label */}
       {label && (
         <h4 className="text-[13px] sm:text-[14px] font-light text-[#3d352c] mb-3 tracking-[0.2px]">
           {label} <span className="text-red-500">*</span>
         </h4>
       )}
 
-      {/* CHECKBOX OPTIONS */}
+      {/* Checkbox Options */}
       <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-${columns} gap-4 sm:gap-5 md:gap-6`}>
         {items.map((item) => (
           <label key={item} className="flex items-center gap-2 sm:gap-3 cursor-pointer group">
@@ -43,7 +43,7 @@ export default function FormCheckboxGroup({
         ))}
       </div>
 
-      {/* ERROR MESSAGE */}
+      {/* Error Message */}
       {error && (
         <p className="text-red-500 text-[10px] sm:text-[11px] md:text-[12px] font-light mt-2">
           {error}

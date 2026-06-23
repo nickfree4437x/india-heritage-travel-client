@@ -80,7 +80,7 @@ export default function PlanningSection() {
 
             h-[280px]
             sm:h-[420px]
-            lg:h-[760px]
+            lg:h-[560px]
 
             rounded-sm
 
