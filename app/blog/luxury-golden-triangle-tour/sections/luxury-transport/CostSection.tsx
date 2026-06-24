@@ -38,7 +38,7 @@ export default function LuxuryTourCostSection() {
         <div className="mb-8">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-4">
-            How Much Does a Luxury Golden Triangle Tour Cost?
+            The Cost of Experiencing the Golden Triangle in Absolute Luxury
           </h2>
 
           <p className="text-gray-700 text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed font-light text-justify">
