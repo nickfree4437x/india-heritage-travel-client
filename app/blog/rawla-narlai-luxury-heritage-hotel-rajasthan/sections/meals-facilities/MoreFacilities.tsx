@@ -85,7 +85,7 @@ export default function MoreExperiencesSection() {
           </h3>
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
-            Sometimes the simplest experiences become the most memorable.
+            The most basic experiences frequently turn into our most unforgettable memories.
             Guests can enjoy freshly prepared chai beside the lakeshore while
             taking in the peaceful surroundings and remarkable birdlife of the
             region. Early mornings are particularly special, especially during

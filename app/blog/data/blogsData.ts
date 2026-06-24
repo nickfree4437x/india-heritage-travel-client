@@ -136,4 +136,13 @@ export const blogs = [
     excerpt:
       "Discover Rawla Narlai - a 17th-century royal hunting lodge turned luxury herit...",
   },
+  {
+    id: 16,
+    slug: "luxury-golden-triangle-tour",
+    title: " Luxury Golden Triangle Tour | Premium India Travel",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782279641/pexels-axp-photography-500641970-19195961_aqlgse.jpg",
+    date: "24 June",
+    excerpt:
+      "Enjoy Delhi, Agra & Jaipur in style on a luxury Golden Triangle tour -  luxury...",
+  },
 ];

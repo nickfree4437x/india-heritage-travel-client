@@ -6,8 +6,8 @@ const weatherData = [
   {
     month: "January",
     temp: "8–21°C (46–70°F)",
-    crowd: "High",
-    experience: "Crisp mornings, foggy starts, brilliant clear days",
+    crowd: "Peak",
+    experience: "Chilly dawns with early fog, followed by bright afternoons",
     recommendation: "Excellent",
     icon: Sun,
   },

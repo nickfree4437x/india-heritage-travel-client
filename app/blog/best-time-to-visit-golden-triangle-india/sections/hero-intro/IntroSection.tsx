@@ -62,7 +62,7 @@ export default function IntroSection() {
 
             <div className="relative border-[#c9a45c]/20 bg-[#faf8f4] p-4 sm:p-5 rounded-r-xl">
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-                This is the Golden Triangle at its absolute best. Yet many travelers discover too late that this experience is highly seasonal. Visit at the wrong time and soaring temperatures, dense crowds, or weather disruptions can dramatically change the atmosphere of your journey.
+                This is the Golden Triangle at its absolute best. Yet many travelers discover too late that this experience is highly seasonal. Arriving during a less-than-ideal season can drastically alter your travel experience due to extreme temperatures, massive crowds, or unpredictable weather.
               </p>
               <div className="mt-3 flex items-center gap-2">
                 <p className="text-[#c9a45c] text-[12px] sm:text-[13px]">

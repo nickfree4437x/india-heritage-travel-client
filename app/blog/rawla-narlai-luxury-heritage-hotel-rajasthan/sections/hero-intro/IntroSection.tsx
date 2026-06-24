@@ -50,8 +50,8 @@ export default function IntroSection() {
           </h3>
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
-            Perhaps it is the famous Stepwell Dinner illuminated by hundreds of
-            oil lamps beneath the stars. Perhaps it is the silence of the Jawai
+            It could be the iconic Stepwell Dinner, an experience bathed in the warm
+            glow of countless oil lamps beneath a starlit canopy. Perhaps it is the silence of the Jawai
             wilderness at dawn, broken only by the distant movement of a
             leopard across ancient granite formations. Or perhaps it is simply
             the rare combination of history, landscape, and hospitality that
@@ -87,8 +87,7 @@ export default function IntroSection() {
           </p>
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-            In 1996, Rawla Narlai was thoughtfully transformed into a luxury
-            heritage hotel. Rather than modernizing away its character, the
+            Rawla Narlai was meticulously redesigned in 1996, opening its doors as a magnificent luxury heritage hotel. Rather than modernizing away its character, the
             restoration carefully preserved original frescoes, sandstone
             arches, courtyards, and architectural details. The result is a
             heritage hotel that allows guests to experience Rajasthan's royal

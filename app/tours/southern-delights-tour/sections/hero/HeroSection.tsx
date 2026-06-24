@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536598/delights_g6wjjy.jpg"
-          alt="South India Heritage Tour Package by India Heritage Travel"
+          alt="Southern Delights Tour showcasing South India heritage temples landscapes and cultural experiences"
           fill
           priority
           className="object-cover object-center will-change-transform"

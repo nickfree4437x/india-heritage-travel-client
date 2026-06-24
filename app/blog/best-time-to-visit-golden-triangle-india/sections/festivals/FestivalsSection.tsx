@@ -36,7 +36,7 @@ const festivals = [
     title: "Republic Day",
     period: "26 January",
     image:
-      "https://res.cloudinary.com/dja5yspwr/image/upload/v1782140545/vikram-chouhan-udaipur-web-designer-9mUD8FKhvgc-unsplash_rtrscw.jpg",
+      "https://res.cloudinary.com/dja5yspwr/image/upload/v1782225354/vikram-chouhan-udaipur-web-designer-9mUD8FKhvgc-unsplash_rtrscw.jpg",
     description:
       "Witness India's grand national celebration in Delhi featuring spectacular parades, military displays, and cultural performances.",
     slug: null, // ❌ No backlink

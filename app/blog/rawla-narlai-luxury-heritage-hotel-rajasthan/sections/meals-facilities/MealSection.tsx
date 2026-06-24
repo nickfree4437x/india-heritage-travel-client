@@ -94,11 +94,10 @@ export default function DiningSection() {
             </h3>
 
             <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light text-justify mb-4">
-              Among all experiences at Rawla Narlai, the legendary Stepwell
-              Soirée remains the one guests remember most. Hosted beside an
-              11th-century stepwell, this extraordinary dining event transforms
-              a historic architectural site into one of Rajasthan's most
-              magical dinner venues.
+              Guests often cite the famous Stepwell Soirée as their absolute favorite memory from Rawla 
+              Narlai. This incredible dinner takes place next to a historic 11th-century stepwell, 
+              beautifully converting an ancient structure into a truly mesmerizing Rajasthani dining 
+              experience.
             </p>
 
             <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light text-justify mb-4">

@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779539943/tour2_wqd4x6.webp"
-          alt="Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
+          alt="Royal Rajasthan heritage journey featuring forts palaces desert cities and the sacred Ganges in Varanasi"
           fill
           priority
           className="object-cover object-center will-change-transform"
@@ -36,7 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Royal Rajasthan & Sacred <br/> Ganges Tour
+          Royal Rajasthan & Sacred <br/> Ganges Tour India
         </h1>
 
       </div>

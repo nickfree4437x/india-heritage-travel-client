@@ -15,77 +15,55 @@ export default function CitySection({
   title,
   description,
   image,
-  alt
+  alt,
 }: CitySectionProps) {
   return (
-    <section
-      id={id}
-      className="max-w-5xl scroll-mt-16 md:scroll-mt-28"
-    >
-
+    <section id={id} className="max-w-5xl scroll-mt-16 md:scroll-mt-28">
       {/* Heading */}
-      <h2
-        className="
-          text-[16px] sm:text-[20px] md:text-[22px]
-          tracking-wide
-          text-[#2c2c2c]
-          font-semibold
-          mb-4
-
-          opacity-0 translate-y-10
-          animate-[fadeUp_1.2s_ease-out_0.2s_forwards]
-        "
-      >
+      <h3 className="
+        text-[16px] sm:text-[20px] md:text-[22px]
+        tracking-wide
+        text-[#2c2c2c]
+        font-semibold
+        mb-4
+        opacity-0 translate-y-10
+        animate-[fadeUp_1.2s_ease-out_0.2s_forwards]
+      ">
         {title}
-      </h2>
+      </h3>
 
       {/* Description */}
-      <p
-        className="
-          text-gray-700
-          mb-6
-          leading-relaxed
-          text-[12px] sm:text-[13px]
-          font-[300]
-          md:text-[14px]
-          text-justify
-
-          opacity-0 translate-y-10
-          animate-[fadeUp_1.4s_ease-out_0.4s_forwards]
-        "
-      >
+      <p className="
+        text-gray-700
+        text-[12px] sm:text-[13px] md:text-[14px]
+        font-[300]
+        leading-relaxed
+        text-justify
+        mb-6
+        opacity-0 translate-y-10
+        animate-[fadeUp_1.4s_ease-out_0.4s_forwards]
+      ">
         {description}
       </p>
 
       {/* Image */}
-      <div
-        className="
-          w-full rounded-md
-          overflow-hidden
-          shadow-md
-          -mb-6 md:mb-0
-
-          opacity-0 translate-y-10
-          animate-[fadeUp_1.6s_ease-out_0.6s_forwards]
-        "
-      >
-
+      <div className="
+        w-full rounded-md
+        overflow-hidden
+        shadow-md
+        -mb-6 md:mb-0
+        opacity-0 translate-y-10
+        animate-[fadeUp_1.6s_ease-out_0.6s_forwards]
+      ">
         <Image
           src={image}
           alt={alt}
           width={1200}
           height={800}
           priority={false}
-          className="
-            w-full
-            h-auto
-            max-h-[500px]
-            object-cover
-          "
+          className="w-full h-auto max-h-[500px] object-cover"
         />
-
       </div>
-
     </section>
   );
 }

@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import Breadcrumb from "@/src/common/Breadcrumb/Breadcrumb";
 
+// Navigation cities
 const cities = [
   "Delhi",
   "Mandawa",
@@ -22,258 +23,133 @@ const cities = [
   "Varanasi",
 ];
 
+// Suitable for items data
+const items = [
+  {
+    icon: Briefcase,
+    title: "Corporate Travel",
+  },
+  {
+    icon: Flower,
+    title: "Spiritual, Cultural, Artistic & Gastronomic Interests",
+  },
+  {
+    icon: Users,
+    title: "Friends & Family Travel",
+  },
+  {
+    icon: User,
+    title: "Solo Travel",
+  },
+];
+
 export default function SuitableFor() {
   return (
     <>
-      {/* 🔥 STICKY NAV */}
+      {/* Sticky Navigation */}
       <div className="sticky top-0 z-30 bg-[#9A7A58] shadow-sm">
-
-      {/* 🔥 SCROLLABLE WRAPPER */}
-      <div
-        className="
-          overflow-x-auto
-          scrollbar-hide
-        "
-      >
-
-        {/* 🔥 INNER CONTAINER */}
-        <div
-          className="
+        {/* Scrollable Wrapper */}
+        <div className="overflow-x-auto scrollbar-hide">
+          {/* Inner Container */}
+          <div className="
             min-w-max
             max-w-6xl mx-auto
-
             flex items-center
             justify-start sm:justify-center
-
             px-3 sm:px-5 lg:px-6
             py-3 sm:py-4
-
             gap-3 sm:gap-5 md:gap-6
-          "
-        >
-
-          {cities.map((city, index) => (
-            <div
-              key={index}
-              className="
-                flex items-center
-                gap-3 sm:gap-5 md:gap-6
-                shrink-0
-              "
-            >
-
-              {/* ✅ CLICKABLE LINK */}
-              <a
-                href={`#${city.toLowerCase()}`}
-                className="
-                  whitespace-nowrap
-
-                  text-[11px]
-                  sm:text-[13px]
-                  md:text-[14px]
-
-                  font-medium
-                  tracking-[0.02em]
-
-                  text-white/95
-                  hover:text-white
-                  hover:underline
-
-                  transition-all duration-300
-                "
+          ">
+            {cities.map((city, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-3 sm:gap-5 md:gap-6 shrink-0"
               >
-                {city}
-              </a>
+                {/* Clickable Link */}
+                <a
+                  href={`#${city.toLowerCase()}`}
+                  className="
+                    whitespace-nowrap
+                    text-[11px] sm:text-[13px] md:text-[14px]
+                    font-medium
+                    tracking-[0.02em]
+                    text-white/95 hover:text-white hover:underline
+                    transition-all duration-300
+                  "
+                >
+                  {city}
+                </a>
 
-              {/* ✅ DIVIDER */}
-              {index !== cities.length - 1 && (
-                <span className="text-white/40">
-                  |
-                </span>
-              )}
-
-            </div>
-          ))}
-
+                {/* Divider */}
+                {index !== cities.length - 1 && (
+                  <span className="text-white/40">|</span>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-
       </div>
 
-    </div>
+      {/* Breadcrumb */}
+      <Breadcrumb title="Royal Rajasthan Sacred Ganges Tour" />
 
-    <Breadcrumb
-      title="Royal Rajasthan Sacred Ganges Tour"
-    />
-
-      {/* 🎯 MAIN SECTION */}
+      {/* Main Section */}
       <section className="bg-white pt-8 sm:pt-8 pb-8 sm:pb-10 px-4 sm:px-6">
-
-        {/* 🏷 Heading */}
-        <h2
-          className="
-            text-[20px] sm:text-[24px] md:text-[26px]
-            font-semibold
-            text-center
-            mb-6 sm:mb-8
-            text-[#2c2c2c]
-            tracking-wide
-          "
-        >
+        {/* Section Heading */}
+        <h2 className="
+          text-[20px] sm:text-[24px] md:text-[26px]
+          font-semibold
+          text-center
+          text-[#2c2c2c]
+          tracking-wide
+          mb-6 sm:mb-8
+        ">
           Suitable For
         </h2>
 
-        {/* 🎯 Cards */}
-        <div
-          className="
-            grid grid-cols-2 md:grid-cols-4
-            gap-x-4 sm:gap-x-8 md:gap-x-12
-            gap-y-8 sm:gap-y-10
-            max-w-7xl mx-auto
-            text-center
-          "
-        >
-
-          {/* CARD 1 */}
-          <div
-            className="
-              group flex flex-col items-center
-              gap-3 sm:gap-4
-              px-2 sm:px-4 md:px-6
-              py-4 sm:py-6 md:py-8
-              rounded-md
-              transition-all duration-500
-            "
-          >
-
-            <Briefcase
-              size={34}
-              className="
-                text-[#9A7A58]
-                transition-all duration-500
-                sm:w-[38px] sm:h-[38px]
-                md:w-[42px] md:h-[42px]
-              "
-            />
-
-            <p
-              className="
-                font-light
-                text-[#3a3a3a]
-                text-[12px] sm:text-[13px] md:text-[13px]
-                leading-relaxed
-              "
-            >
-              Corporate Travel
-            </p>
-
-          </div>
-
-          {/* CARD 2 */}
-          <div
-            className="
-              group flex flex-col items-center
-              gap-3 sm:gap-4
-              px-2 sm:px-4 md:px-6
-              py-4 sm:py-6 md:py-8
-              rounded-md
-              transition-all duration-500
-            "
-          >
-
-            <Flower
-              size={34}
-              className="
-                text-[#9A7A58]
-                transition-all duration-500
-                sm:w-[38px] sm:h-[38px]
-                md:w-[42px] md:h-[42px]
-              "
-            />
-
-            <p
-              className="
-                font-light
-                text-[#3a3a3a]
-                text-[12px] sm:text-[13px] md:text-[13px]
-                leading-relaxed
-              "
-            >
-              Spiritual, Cultural, Artistic &
-              Gastronomic Interests
-            </p>
-
-          </div>
-
-          {/* CARD 3 */}
-          <div
-            className="
-              group flex flex-col items-center
-              gap-3 sm:gap-4
-              px-2 sm:px-4 md:px-6
-              py-4 sm:py-6 md:py-8
-              rounded-md
-              transition-all duration-500
-            "
-          >
-
-            <Users
-              size={34}
-              className="
-                text-[#9A7A58]
-                transition-all duration-500
-                sm:w-[38px] sm:h-[38px]
-                md:w-[42px] md:h-[42px]
-              "
-            />
-
-            <p
-              className="
-                font-light
-                text-[#3a3a3a]
-                text-[12px] sm:text-[13px] md:text-[13px]
-                leading-relaxed
-              "
-            >
-              Friends & Family Travel
-            </p>
-
-          </div>
-
-          {/* CARD 4 */}
-          <div
-            className="
-              group flex flex-col items-center
-              gap-3 sm:gap-4
-              px-2 sm:px-4 md:px-6
-              py-4 sm:py-6 md:py-8
-              rounded-md
-              transition-all duration-500
-            "
-          >
-
-            <User
-              size={34}
-              className="
-                text-[#9A7A58]
-                transition-all duration-500
-                sm:w-[38px] sm:h-[38px]
-                md:w-[42px] md:h-[42px]
-              "
-            />
-
-            <p
-              className="
-                font-light
-                text-[#3a3a3a]
-                text-[12px] sm:text-[13px] md:text-[13px]
-                leading-relaxed
-              "
-            >
-              Solo Travel
-            </p>
-
-          </div>
-
+        {/* Cards Grid */}
+        <div className="
+          grid grid-cols-2 md:grid-cols-4
+          gap-x-4 sm:gap-x-8 md:gap-x-12
+          gap-y-8 sm:gap-y-10
+          max-w-7xl mx-auto
+          text-center
+        ">
+          {items.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={index}
+                className="
+                  group
+                  flex flex-col items-center
+                  gap-3 sm:gap-4
+                  px-2 sm:px-4 md:px-6
+                  py-4 sm:py-6 md:py-8
+                  rounded-md
+                  transition-all duration-500
+                "
+              >
+                <Icon
+                  size={34}
+                  className="
+                    text-[#9A7A58]
+                    transition-all duration-500
+                    sm:w-[38px] sm:h-[38px]
+                    md:w-[42px] md:h-[42px]
+                  "
+                />
+                <p className="
+                  font-light
+                  text-[#3a3a3a]
+                  text-[12px] sm:text-[13px] md:text-[13px]
+                  leading-relaxed
+                ">
+                  {item.title}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>

@@ -1,12 +1,13 @@
 "use client";
 
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 import CitySection from "../city-section/CitySection";
 import HighlightsSection from "../hightlights/HighlightsSection";
 
 const citiesData = [
   {
     id: "delhi",
-    title: "Delhi- A blend Of History & Royalty",
+    title: "Delhi- A blend of History & Royalty",
     description: "Discover Delhi, which is the mixture of history and modernity with Vibrant, contemporary, and bursting colours. In Old Delhi, you’ll experience the rich colours of humanity in all its shades and sensations.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531449/delhi_gx7c7g.jpg",
     alt: "Old Delhi heritage landmarks in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
@@ -14,7 +15,7 @@ const citiesData = [
   {
     id: "mandawa",
     title: "Mandawa – A Town Of Timeless Heritage And Beauty",
-    description: "Mandawa is a town where walls speak tales of artistry. This Rajasthani gem have its streets decorated with beautiful frescoes and havelis, each a live canvas of history and beauty. This is a living gallery of Rajasthan’s architectural magnificence and the stories echoes on its walls.",
+    description: "Mandawa is a town where walls speak tales of artistry. This Rajasthani gem has its streets decorated with beautiful frescoes and havelis, each a live canvas of history and beauty. This is a living gallery of Rajasthan’s architectural magnificence and the stories echoes on its walls.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531490/mandawa_xhmzzs.jpg",
     alt: "Mandawa heritage havelis in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
   },
@@ -30,7 +31,7 @@ const citiesData = [
     id: "jaisalmer",
     title: "Jaisalmer – Where Desert Stories Come Alive",
     description:
-      "Jaisalmer, where humans and animals have acquired the desert together for centuries. A camel ride takes you to a bygone era, showcasing the strength and productivity of its people who flourish in the middle of challenging conditions, turning nature’s offerings into treasures",
+      "Jaisalmer is a timeless desert city where people, culture, and nature have thrived together for centuries. A camel ride takes you to a bygone era, showcasing the strength and productivity of its people who flourish in the middle of challenging conditions, turning nature’s offerings into treasures",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531552/jaisalmer_nakpzu.jpg",
     alt: "Jaisalmer desert landscape in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
   },
@@ -46,7 +47,7 @@ const citiesData = [
     id: "udaipur",
     title: "Udaipur – Where Romance And Royalty Reign",
     description:
-      "Udaipur lies in the heart of India, a city that combines love and richness. Explore majestic palaces, ancient temples, and graceful Havelis. Discover bustling markets, and breathtaking sunsets views on Lake Pichola. Join us in exploring the magic of Udaipur. old town.",
+      "Udaipur, often called the City of Lakes, is one of Rajasthan’s most romantic destinations, known for its royal palaces, serene lakes, vibrant markets, and breathtaking sunsets over Lake Pichola. Explore majestic palaces, ancient temples, and graceful Havelis. Discover bustling markets, and breathtaking sunsets views on Lake Pichola. Join us in exploring the magic of Udaipur. old town.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531613/udaipur_fssyax.jpg",
     alt: "Lake Pichola Udaipur in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
   },
@@ -60,7 +61,7 @@ const citiesData = [
   },
   {
     id: "jaipur",
-    title: "Jaipur – The Pink City Of Magnificent Grandeur",
+    title: "Jaipur – The Pink City & Heart of Rajasthan",
     description:
       "Jaipur is the heart of Rajasthan & a UNESCO world heritage city. It is one of the most visited tourist destinations in Rajasthan. Jaipur is famous for its magnificent forts and palaces, local cuisines, wildlife and adventure tourism, pilgrimage sites and local shopping.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531671/jaipur_qhejax.jpg",
@@ -94,7 +95,7 @@ const citiesData = [
     id: "varanasi",  
     title: "Varanasi – The Spiritual Heart Of India By The Ganges",
     description:
-        "The land of Varanasi (Kashi) has been the ultimate pilgrimage spot for Hindus for ages. They believe that one who is graced to die on the land of Varanasi would attain salvation and freedom from the cycle of birth and re-birth. Here the sacred Ganges River holds the promise of spiritual liberation, and every cremation and puja ceremony is a mystic ritual.architectural symbolism and their erotic sculptures.",
+        "The land of Varanasi (Kashi) has been the ultimate pilgrimage spot for Hindus for ages. They believe that one who is graced to die on the land of Varanasi would attain salvation and freedom from the cycle of birth and re-birth. Here the sacred Ganges River holds the promise of spiritual liberation, and every cremation and puja ceremony is a mystic ritual.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531835/varanasi_yahn0o.jpg",
     alt: "Varanasi sacred Ganges River in Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
     }
@@ -102,7 +103,10 @@ const citiesData = [
 
 export default function CitiesSection() {
   return (
-    <>
+    <div className="space-y-12">
+    
+     <WhyChooseSection/>
+
       {citiesData.map((city, index) => (
         <CitySection
           key={index}
@@ -114,6 +118,6 @@ export default function CitiesSection() {
         />
       ))}
        <HighlightsSection/>
-    </>
+    </div>
   );
 }

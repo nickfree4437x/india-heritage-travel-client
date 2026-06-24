@@ -18,7 +18,6 @@ export default function Itinerary() {
             tracking-wide">
           Detailed Itinerary
         </h2>
-
         <div className="space-y-12">
 
           {/* ================= Day 1-3 Delhi ================= */}
@@ -27,16 +26,13 @@ export default function Itinerary() {
             <h3 className="text-[17px] md:text-lg font-medium text-red-500">
               Day 1–3: Delhi
             </h3>
-
             <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
-              <p className="mt-2">
-             Reach at the Delhi Airport, where we’ll welcome you with a sign board and take you to your well-prepared hotel for a comfortable stay.
+            <p className="mt-2">
+              Reach at the Delhi Airport, where we’ll welcome you with a sign board and take you to your well-prepared hotel for a comfortable stay.
             </p>
-
             <p className="mt-2">
              If you prefer to wake up early, you can explore more into Delhi’s rich history, politics, and spirituality. Explore everything from iconic landmarks such as India Gate, the President’s House, and Parliament House to the city’s major role in the Freedom Struggle.
             </p>
-
             <p className="mt-2">
              Dive yourself in history at Gandhi Smriti and the unique Qutub Minar. Experience the charm of Old Delhi through a rickshaw ride, uncovering treasures such as Jama Masjid, Red Fort, and Raj Ghat. Don’t forget to explore Gurudwara Bangla Sahib and the serene Nizamuddin Sufi Saint Mosque. Enrich your senses at Akshardham Temple, Humayun’s Tomb and Lotus Temple, and, and don’t miss the lively Chandni Chowk market for the perfect shopping.
             </p>
@@ -67,12 +63,10 @@ export default function Itinerary() {
               </div>
 
             </div>
-
             <div className="pt-2">
               <p className="font-semibold text-[14px]">Next stop: Mandawa</p>
               <p className="text-[12px] sm:text-[13px] font-[300] text-gray-700">A mere 5.5-hour drive (260 km) from Delhi.</p>
             </div>
-
           </div>
 
           {/* ================= Day 3-5: Mandawa ================= */}

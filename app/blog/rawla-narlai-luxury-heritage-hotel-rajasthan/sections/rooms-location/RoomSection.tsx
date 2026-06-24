@@ -37,7 +37,7 @@ export default function RoomsSection() {
         <div className="mb-8">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
-            Rooms & Suites: A Palace in Every Room
+            Stay With Us: Feel Like Royalty in Every Suite
           </h2>
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">

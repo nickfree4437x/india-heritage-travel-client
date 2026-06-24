@@ -5,15 +5,18 @@ import HighlightsInclusions from "../hightlights/HighlightsInclusions";
 import ItinerarySection from "../itinerary/ItinerarySection";
 import TourSection from "../tour-section/TourSection";
 import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 
 export default function TourContent() {
   return (
-    <div className="space-y-16 w-full">
+    <div className="space-y-12 w-full">
+
+      <WhyChooseSection/>
 
       <TourSection
         id="cochin"
         title="Cochin – Where History Meets Commerce"
-        description={`Cochin, is former name of Kochi, popularly known as the Queen of the Arabian Sea, is a busy commercial hub rich in spice trading. It is the centre of world spice trade for many centuries. It is emerging cosmopolitan city with busy life on streets, on the other hand it is also financial, commercial & industrial capital of Kerela. Its great to see that Kochi is the only city ot have underwater metro system which is world’s largest electric boat metro transportation infrastructure.
+        description={`Cochin, is former name of Kochi, popularly known as the Queen of the Arabian Sea, is a busy commercial hub rich in spice trading. It is the centre of world spice trade for many centuries. It is emerging cosmopolitan city with busy life on streets, on the other hand it is also financial, commercial & industrial capital of Kerela. Its great to see that Kochi is the only city to have underwater metro system which is world’s largest electric boat metro transportation infrastructure.
         While you travel to Fort Kochi, you’ll feel a different time period. The fort is settled into history & culture through ages. Kochi is a place with beautiful monuments & variety of linguistic & ethenic community such as Arabian, Dutch, Phoenician, Portuguese, Chinese, and British influences.`}
         image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536028/cochin_mywjfc.png"
       />
@@ -47,14 +50,16 @@ export default function TourContent() {
         description={`During the Sangam Period Madurai was a major cultural & commercial centre & also India’s most iconic pilgrimage destination. It is famous for rich culture & vibrant festivals majorly the Meenakshi Thirukalyanam.
         This city is also famous for fragment flowers which include sambac jasmine which fills Nandan Market with hundred of strings. Another importants places include Meenakshi Amma Temple known for it amazing Dravadian architecture.
         culture, pilgrimage.`}
-        image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536242/madurai_tufaei.png"
+        image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1782273001/madurai_tufaei.jpg"
       />
 
       <TourSection
         id="thanjavur"
         title="Thanjavur – Where History Meets Culture"
-        description={`A historic city in Tamil Nadu, Thanjavor is known for its rich cultural heritage. It played an important role in development of South Indian art, architecture & literature. Thanjavor is also famous for its traditional dance Bharatnatyam, classical Tanjore paintings & Carnatic music. It also have a UNESCO world heritage site Brihadeswarar Temple which is famous for its grand architecture. Often called as “Rice Bowl of Tamil Nadu” Thanjavor have extensive rice cultivation & also known for traditional handicrafts like Tanjore dolls & intricate bronze work.`}
-        image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536242/madurai_tufaei.png"
+        description={`A historic city in Tamil Nadu, Thanjavor is known for its rich cultural heritage. 
+          It played an important role in development of South Indian art, architecture & literature. 
+          Thanjavor is also famous for its traditional dance Bharatnatyam, classical Tanjore paintings & Carnatic music. It also have a UNESCO world heritage site Brihadeswarar Temple which is famous for its grand architecture. Often called as “Rice Bowl of Tamil Nadu” Thanjavor have extensive rice cultivation & also known for traditional handicrafts like Tanjore dolls & intricate bronze work.`}
+        image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1782272522/pexels-roman-saienko-1867764487-37809032_lajzgp.jpg"
       />
 
       <TourSection

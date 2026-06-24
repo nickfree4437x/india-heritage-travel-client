@@ -1,5 +1,6 @@
 "use client";
 
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 import Image from "next/image";
 
 export default function OdysseyCitiesSection() {
@@ -14,21 +15,21 @@ export default function OdysseyCitiesSection() {
     {
       id: "mandawa",
       title: "Mandawa – A Town Of Timeless Heritage And Beauty",
-      desc: "Mandawa is a town where walls speak tales of artistry. This Rajasthani gem have its streets decorated with beautiful frescoes and havelis, each a live canvas of history and beauty. This is a living gallery of Rajasthan’s architectural magnificence and the stories echoes on its walls.",
+      desc: "This Rajasthani gem has streets lined with beautifully painted frescoes and historic havelis, each reflecting centuries of art, culture, and architectural brilliance. This is a living gallery of Rajasthan’s architectural magnificence and the stories echoes on its walls.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535380/mandawa_knhwkt.jpg",
       alt: "Mandawa heritage havelis in Royal Triangle Odyssey Tour India by India Heritage Travel"
     },
     {
       id: "jaipur",
       title: "Jaipur – The Pink City",
-      desc: "A world where the echoes of the Mughal empire still linger, and uncover a marvel born from a timeless love tale: The Taj Mahal. Explore beautiful tombs, stately forts, and vibrant marketplaces that eagerly await your presence.",
+      desc: "Jaipur is the heart of Rajasthan and a UNESCO World Heritage City. Known as the Pink City, it is famous for its magnificent forts, royal palaces, vibrant bazaars, traditional crafts, and rich cultural heritage. Jaipur offers a perfect blend of history, architecture, local cuisine, and authentic Rajasthani experiences.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535421/jaipur_eplhjn.jpg",
       alt: "Amber Fort Jaipur in Royal Triangle Odyssey Tour India by India Heritage Travel"
     },
     {
       id: "agra",
       title: "Agra – Where History Rules Supreme",
-      desc: "One of the most visited & loved city of Rajasthan is Jaipur. It is considered as a UNESCO World Heritage city & the heart of Rajasthan. The beautiful Pink city famous for its Grand forts & palaces, touristic spot & the best shopping site for traditional & rajasthani aesthetics",
+      desc: "Agra is home to the iconic Taj Mahal, one of the Seven Wonders of the World and a UNESCO World Heritage Site. Discover the grandeur of the Mughal Empire through magnificent monuments, historic forts, beautiful gardens, and bustling local markets that reflect the city's rich cultural legacy.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535453/agra_cgybs3.jpg",
       alt: "Taj Mahal Agra in Royal Triangle Odyssey Tour India by India Heritage Travel"
     },
@@ -42,7 +43,9 @@ export default function OdysseyCitiesSection() {
   ];
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-12">
+
+      <WhyChooseSection/>
 
       {cities.map((item) => (
         <div key={item.id} id={item.id} className="w-full scroll-mt-24 md:scroll-mt-28">

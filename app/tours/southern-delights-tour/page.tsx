@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
 
-import HeroSection from "./sections/hero/HeroSection";
-import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
-import SuitableFor from "./sections/suitable-for/SuitableFor";
-import TourLayout from "./sections/layout/TourLayout";
-import Footer from "@/src/sections/footer/Footer";
-import CommonForm from "@/src/tours/CommonForm";
-import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
+// SEO Components
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 import TourSchema from "@/src/common/seo/TourSchema";
 
+// Common components
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
+
+// Page sections
+import HeroSection from "./sections/hero/HeroSection";
+import SuitableFor from "./sections/suitable-for/SuitableFor";
+import TourLayout from "./layout/TourLayout";
+import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
+
+// ============================================
+// SEO METADATA
+// ============================================
 export const metadata: Metadata = {
   title: "Southern Delights Tour India | Temples, Culture & South India Experiences",
   description:
@@ -19,11 +27,13 @@ export const metadata: Metadata = {
   },
 };
 
+// ============================================
+// PAGE COMPONENT
+// ============================================
 export default function RoyalRajasthanPage() {
   return (
     <div>
-
-     {/* Breadcrumb Schema */}
+      {/* Breadcrumb Schema - SEO */}
       <BreadcrumbSchema
         items={[
           {
@@ -41,20 +51,24 @@ export default function RoyalRajasthanPage() {
         ]}
       />
 
+      {/* Tour Schema - SEO */}
       <TourSchema
         name="Southern Delights Tour"
         description="Explore the cultural richness of South India through historic temples, scenic landscapes, local traditions, authentic cuisine, and unforgettable travel experiences."
         url="https://indiaheritagetravel.com/tours/southern-delights-tour"
       />
 
+      {/* Hero Section */}
       <HeroSection />
       <SuitableFor />
       <TourLayout />
+      <TourSteps />
 
-      <TourSteps/>
-      <CommonForm tourName="southern-delights-tour"/>
+      {/* Booking Form */}
+      <CommonForm tourName="southern-delights-tour" />
+
       <RecommendedTours />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

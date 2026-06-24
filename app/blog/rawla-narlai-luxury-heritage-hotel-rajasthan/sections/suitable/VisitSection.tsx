@@ -94,9 +94,9 @@ export default function BestTimeToVisitSection() {
 
             <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light text-justify">
               During the monsoon months, the Aravalli landscape transforms into
-              a lush green paradise. The scenery becomes dramatically different
-              from the dry winter months, making this season particularly
-              attractive for photographers and travelers who enjoy nature.
+              a lush green paradise. The landscape undergoes a stunning transformation 
+              compared to the arid winter period, drawing in nature enthusiasts and 
+              photographers alike.
               While occasional rainfall may limit some outdoor activities such
               as safaris and hill treks, the surrounding countryside becomes
               exceptionally beautiful.

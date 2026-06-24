@@ -45,7 +45,7 @@ export default function Itinerary() {
            <div className="w-full flex justify-center">
             <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
-                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525863/delhi_edqeg6.jpg"
+                src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1782223873/delhi_edqeg6.jpg"
                 alt="Delhi sightseeing tour featuring India Gate Red Fort Qutub Minar and historic landmarks"
                 fill
                 className="object-cover object-center"

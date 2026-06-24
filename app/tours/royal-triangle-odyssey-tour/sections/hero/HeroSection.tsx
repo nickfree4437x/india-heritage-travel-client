@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534211/oddessey_qgank7.jpg"
-          alt="Royal Triangle Odyssey Tour India by India Heritage Travel"
+          alt="India heritage tour covering Delhi Mandawa Jaipur Agra and Varanasi cultural attractions"
           fill
           priority
           className="object-cover object-center will-change-transform"
