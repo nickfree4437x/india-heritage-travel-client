@@ -183,24 +183,24 @@ export default function BestTimeSection() {
                 desc: "Visit the sacred lake, Brahma Temple and experience Rajasthan's spiritual side.",
               },
               {
-                days: "Days 8–9",
-                city: "Jodhpur",
-                desc: "Mehrangarh Fort, Umaid Bhawan Palace and the historic Blue City.",
-              },
-              {
-                days: "Days 10–11",
-                city: "Jaisalmer",
-                desc: "Living Fort, desert camp, camel safari and sunset over the Sam Sand Dunes.",
-              },
-              {
-                days: "Days 12–13",
+                days: "Days 8-9",
                 city: "Udaipur",
                 desc: "Travel via Ranakpur, enjoy Lake Pichola, City Palace and heritage dining experiences.",
               },
               {
+                days: "Days 10–11",
+                city: "Jodhpur",
+                desc: "Mehrangarh Fort, Umaid Bhawan Palace and the historic Blue City.",
+              },
+              {
+                days: "Days 12–13",
+                city: "Jaisalmer",
+                desc: "Living Fort, desert camp, camel safari and sunset over the Sam Sand Dunes.",
+              },
+              {
                 days: "Day 14",
                 city: "Departure",
-                desc: "Transfer to Udaipur Airport for your onward journey.",
+                desc: "Transfer to Jaisalmer Airport for your onward journey.",
               },
             ].map((item, index) => (
 
