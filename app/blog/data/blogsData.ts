@@ -139,10 +139,19 @@ export const blogs = [
   {
     id: 16,
     slug: "luxury-golden-triangle-tour",
-    title: " Luxury Golden Triangle Tour | Premium India Travel",
+    title: "Luxury Golden Triangle Tour | Premium India Travel",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782279641/pexels-axp-photography-500641970-19195961_aqlgse.jpg",
     date: "24 June",
     excerpt:
       "Enjoy Delhi, Agra & Jaipur in style on a luxury Golden Triangle tour -  luxury...",
+  },
+  {
+    id: 17,
+    slug: "golden-triangle-tour-vs-rajasthan-tour",
+    title: "Golden Triangle Tour vs Rajasthan Tour: Which India Itinerary Is Right for You?",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782365101/sylwia-bartyzel-eU4pipU_8HA-unsplash_mvujnj.jpg",
+    date: "25 June",
+    excerpt:
+      "Two routes. Two completely different Indias. One decision that will shape your...",
   },
 ];
