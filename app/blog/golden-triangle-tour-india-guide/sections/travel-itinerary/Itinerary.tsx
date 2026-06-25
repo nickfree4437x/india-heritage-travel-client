@@ -144,15 +144,15 @@ export default function IntroSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-2 sm:py-4">
+    <section className="w-full bg-white py-2 sm:py-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         
         {/* ===== ITINERARY SECTION ===== */}
-        <div className="mb-16">
+        <div className="mb-12">
           {/* Header with decorative line */}
-          <div className="flex items-center gap-4 mb-12">
+          <div className="flex items-center gap-4 mb-8">
             <div>
-              <h2 className="text-[18px] sm:text-[22px] md:text-[26px] tracking-wide text-[#2c2c2c] font-semibold">
+              <h2 className="text-[18px] sm:text-[22px] md:text-[24px] tracking-wide text-[#2c2c2c] font-semibold">
                 Suggested 6-Day Itinerary
               </h2>
               <p className="text-[12px] text-gray-500 font-light mt-0.5">
@@ -212,9 +212,9 @@ export default function IntroSection() {
         {/* ===== WHY BOOK SECTION ===== */}
         <div>
           {/* Header */}
-          <div className="flex items-center gap-4 mb-8">
+          <div className="flex items-center gap-4 mb-4">
             <div>
-              <h2 className="text-[18px] sm:text-[22px] md:text-[26px] tracking-wide text-[#2c2c2c] font-semibold">
+              <h2 className="text-[18px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold">
                 Why Book With India Heritage Travel
               </h2>
               <p className="text-[12px] text-gray-500 font-light mt-0.5">
@@ -224,7 +224,7 @@ export default function IntroSection() {
           </div>
 
           {/* Description */}
-          <p className="text-gray-600 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-light mb-8 bg-gray-50 p-5 rounded-xl border border-gray-100">
+          <p className="text-gray-600 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light mb-8 bg-gray-50 p-5 rounded-xl border border-gray-100">
             There are a dozen ways to arrange a Golden Triangle tour – budget tour operators, generic OTA, or an independent arrangement. However, the deciding factor that determines whether your trip will turn out memorable or otherwise is usually the person responsible for its arrangement.
           </p>
 
@@ -235,7 +235,7 @@ export default function IntroSection() {
               return (
                 <div
                   key={idx}
-                  className="group bg-white rounded-xl p-5 sm:p-6 border border-gray-100 hover:border-[#c9a45c]/30 hover:shadow-sm transition-all duration-300"
+                  className="group bg-white rounded-xl p-5 sm:p-6 border border-gray-200 hover:shadow-sm transition-all duration-300"
                 >
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#c9a45c]/10 to-[#a8843a]/10 flex items-center justify-center transition-all duration-300">

@@ -36,7 +36,7 @@ export default function FAQSection() {
             return (
               <div
                 key={index}
-                className="border border-[#e7dfd4] rounded-sm bg-white overflow-hidden transition-all duration-300"
+                className="border border-[#e7dfd4] rounded-md bg-white overflow-hidden transition-all duration-300"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}

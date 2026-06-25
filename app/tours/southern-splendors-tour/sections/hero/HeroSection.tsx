@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535291/splander_rxivgm.png"
-          alt="South India Cultural Tour featured in Southern Splendors Culture and Nature Trail Tour by India Heritage Travel"
+          alt="South India Heritage Tour showcasing temples, culture, and scenic landscapes"
           fill
           priority
           className="object-cover object-center"
@@ -37,7 +37,7 @@ export default function HeroSection() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          South India Cultural <br/> Tour
+          South India Heritage <br/> Tour
         </h1>
 
       </div>

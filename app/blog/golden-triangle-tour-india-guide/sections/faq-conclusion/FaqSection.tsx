@@ -87,7 +87,7 @@ export default function FAQSection() {
 
         {/* Bottom CTA */}
 
-        <div className="mt-8 bg-[#faf7f3] border border-[#e7dfd4] rounded-sm p-5">
+        <div className="mt-8 bg-[#faf7f3] rounded-sm p-5">
 
             <h3 className="text-[14px] sm:text-[15px] font-semibold text-[#2c2c2c] mb-2">
             Still Have Questions?

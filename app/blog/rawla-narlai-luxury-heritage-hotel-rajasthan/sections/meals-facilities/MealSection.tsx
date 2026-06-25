@@ -33,7 +33,7 @@ export default function DiningSection() {
         <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md mb-10">
 
           <Image
-            src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782197713/23.06.2026_12.24.30_REC_jtjjof.png"
+            src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782298943/23.06.2026_12.24.30_REC_jtjjof.jpg"
             alt="Luxury Dining Experience at Rawla Narlai Rajasthan"
             fill
             className="object-cover"
@@ -45,7 +45,7 @@ export default function DiningSection() {
 
         <div className="grid md:grid-cols-2 gap-6 mb-10">
 
-          <div className="border border-[#e7dfd4] bg-white rounded-sm p-6">
+          <div className="border border-gray-200 bg-white rounded-md p-6">
 
             <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-3">
               Jharokha Café
@@ -62,7 +62,7 @@ export default function DiningSection() {
 
           </div>
 
-          <div className="border border-[#e7dfd4] bg-white rounded-sm p-6">
+          <div className="border border-gray-200 bg-white rounded-md p-6">
 
             <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-3">
               Rooftop Dining
@@ -125,7 +125,7 @@ export default function DiningSection() {
 
         <div className="grid md:grid-cols-2 gap-6 mb-10">
 
-          <div className="border border-[#e7dfd4] bg-white rounded-sm p-6">
+          <div className="border border-gray-200 bg-white rounded-md p-6">
 
             <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-3">
               Alfresco Lunch Experiences
@@ -140,7 +140,7 @@ export default function DiningSection() {
 
           </div>
 
-          <div className="border border-[#e7dfd4] bg-white rounded-sm p-6">
+          <div className="border border-gray-200 bg-white rounded-md p-6">
 
             <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-3">
               Poolside Sundowner Dinner

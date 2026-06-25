@@ -118,7 +118,7 @@ export default function RootLayout({
         `}
       >
         {/* Google Tag Manager */}
-        <GoogleTagManager gtmId="GTM-PK5QRZC9" />
+        <GoogleTagManager gtmId="GTM-T2N885VS" />
 
         {/* Organization Schema - JSON-LD */}
         <Script

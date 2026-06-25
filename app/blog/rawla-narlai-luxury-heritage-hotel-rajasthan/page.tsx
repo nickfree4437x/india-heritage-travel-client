@@ -35,7 +35,7 @@ const articleSchema = {
     "Discover Rawla Narlai, a 17th-century royal hunting lodge transformed into one of Rajasthan's finest luxury heritage hotels. Explore stepwell dinners, leopard safaris, heritage suites, and unforgettable experiences in the Aravalli Hills.",
 
   image:
-    "https://res.cloudinary.com/dja5yspwr/image/upload/v1782195580/23.06.2026_11.28.01_REC_xq38bb.jpg",
+    "https://res.cloudinary.com/dja5yspwr/image/upload/v1782297620/23.06.2026_11.28.01_REC_xq38bb.jpg",
 
   author: {
     "@type": "Organization",
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     images: [
       {
         url:
-          "https://res.cloudinary.com/dja5yspwr/image/upload/v1782195580/23.06.2026_11.28.01_REC_xq38bb.jpg",
+          "https://res.cloudinary.com/dja5yspwr/image/upload/v1782297620/23.06.2026_11.28.01_REC_xq38bb.jpg",
 
         width: 1200,
 
@@ -121,7 +121,7 @@ export const metadata: Metadata = {
       "Discover Rawla Narlai, a 17th-century royal hunting lodge transformed into one of Rajasthan's finest luxury heritage hotels. Explore stepwell dinners, leopard safaris, heritage suites, and unforgettable experiences in the Aravalli Hills.",
 
     images: [
-      "https://res.cloudinary.com/dja5yspwr/image/upload/v1782195580/23.06.2026_11.28.01_REC_xq38bb.jpg",
+      "https://res.cloudinary.com/dja5yspwr/image/upload/v1782297620/23.06.2026_11.28.01_REC_xq38bb.jpg",
     ],
   },
 };

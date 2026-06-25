@@ -9,7 +9,7 @@ export default function IntroSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Taj Mahal Section */}
-        <div className="mb-10">
+        <div className="mb-8">
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Top Attractions in Delhi, Agra & Jaipur
@@ -52,10 +52,14 @@ export default function IntroSection() {
               className="object-cover"
             />
           </div>
+          {/* CREDIT */}
+          <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+            via unsplash.com
+          </p>
         </div>
 
         {/* Agra Fort Section */}
-        <div className="mb-10">
+        <div className="mb-8">
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
@@ -88,8 +92,11 @@ export default function IntroSection() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+            via unsplash.com
+          </p>
 
-          <p className="text-[#2c2c2c] leading-relaxed text-[12px] sm:text-[13px] md:text-[15px] font-[400] text-justify mt-6">
+          <p className="text-[#2c2c2c] leading-relaxed text-[12px] sm:text-[13px] md:text-[15px] font-[400] text-justify mt-2">
             Best time Mid-morning after the visit to the Taj Mahal during
             the early morning, as it starts getting hot around the middle of
             the day (March-June).
@@ -97,7 +104,7 @@ export default function IntroSection() {
         </div>
 
         {/* Red Fort Delhi */}
-        <div className="mb-10">
+        <div className="mb-8">
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
@@ -134,10 +141,13 @@ export default function IntroSection() {
             />
 
           </div>
+          <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+            via unsplash.com
+          </p>
         </div>
 
         {/* Red Fort Delhi */}
-        <div className="mb-10">
+        <div className="mb-8">
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
@@ -174,6 +184,9 @@ export default function IntroSection() {
             />
 
           </div>
+          <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+            via unsplash.com
+          </p>
         </div>
       </div>
 

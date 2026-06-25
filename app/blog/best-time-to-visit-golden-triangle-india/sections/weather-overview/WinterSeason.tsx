@@ -51,11 +51,6 @@ export default function WinterSeason() {
 
         {/* ===== SECTION HEADER ===== */}
         <div className="mb-8">
-          <div className="flex items-center gap-2 mb-1">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-[#c9a45c]">
-              Peak Travel Season
-            </span>
-          </div>
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold mb-3">
             Golden Triangle in Winter (October-March)
@@ -68,7 +63,7 @@ export default function WinterSeason() {
 
         {/* ===== QUICK STATS ===== */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
-          <div className="border border-[#e7dfd4] rounded-lg p-4 bg-white">
+          <div className="border border-gray-200 rounded-lg p-4 bg-white">
             <h3 className="text-[12px] uppercase tracking-wider text-gray-500 font-medium mb-1">
               Best Overall
             </h3>
@@ -80,7 +75,7 @@ export default function WinterSeason() {
             </p>
           </div>
 
-          <div className="border border-[#e7dfd4] rounded-lg p-4 bg-white">
+          <div className="border border-gray-200 rounded-lg p-4 bg-white">
             <h3 className="text-[12px] uppercase tracking-wider text-gray-500 font-medium mb-1">
               Temperature
             </h3>
@@ -92,7 +87,7 @@ export default function WinterSeason() {
             </p>
           </div>
 
-          <div className="border border-[#e7dfd4] rounded-lg p-4 bg-white">
+          <div className="border border-gray-200 rounded-lg p-4 bg-white">
             <h3 className="text-[12px] uppercase tracking-wider text-gray-500 font-medium mb-1">
               Travel Rating
             </h3>
@@ -138,7 +133,7 @@ export default function WinterSeason() {
         {/* ===== PROS & CONS ===== */}
         <div className="grid md:grid-cols-2 gap-5 mb-10">
           {/* Pros */}
-          <div className="border border-[#e7dfd4] rounded-lg p-5 bg-white">
+          <div className="border borer-gray-200 rounded-lg p-5 bg-white">
             <div className="flex items-center gap-2 mb-4">
               <CheckCircle size={18} className="text-green-600" />
               <h3 className="text-[14px] font-semibold text-[#2c2c2c]">
@@ -157,7 +152,7 @@ export default function WinterSeason() {
           </div>
 
           {/* Cons */}
-          <div className="border border-[#e7dfd4] rounded-lg p-5 bg-white">
+          <div className="border borer-gray-200 rounded-lg p-5 bg-white">
             <div className="flex items-center gap-2 mb-4">
               <AlertCircle size={18} className="text-amber-600" />
               <h3 className="text-[14px] font-semibold text-[#2c2c2c]">

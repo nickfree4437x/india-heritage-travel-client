@@ -39,7 +39,7 @@ export default function IntroSection() {
 
         {/* SIGNATURE EXPERIENCE CARD */}
 
-        <div className="bg-white border rounded-sm p-6 mb-6 md:mb-10">
+        <div className="bg-white border border-gray-200 rounded-md p-6 mb-6 md:mb-10">
 
           <span className="inline-block text-[10px] uppercase tracking-[0.25em] text-[#AF956C] mb-2">
             Signature Experiences
@@ -60,6 +60,17 @@ export default function IntroSection() {
           </p>
 
         </div>
+
+        <div className="relative w-full mt-6 h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md mb-10">
+          
+            <Image
+              src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782298485/2_Rawla_Narlai_mlevyy.jpg"
+              alt="Luxury Heritage Room at Rawla Narlai Rajasthan"
+              fill
+              className="object-cover"
+            />
+  
+          </div>
 
         {/* HISTORY SECTION */}
 
@@ -98,7 +109,7 @@ export default function IntroSection() {
           <div className="relative w-full mt-6 h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md mb-2">
           
             <Image
-              src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782197143/23.06.2026_11.28.01_REC_ytowx8.png"
+              src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782298090/23.06.2026_11.28.01_REC_ytowx8.jpg"
               alt="Luxury Heritage Room at Rawla Narlai Rajasthan"
               fill
               className="object-cover"

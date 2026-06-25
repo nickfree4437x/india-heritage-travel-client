@@ -122,7 +122,7 @@ export default function BestTimeToVisit() {
         </p>
 
         {/* Desktop Table */}
-        <div className="hidden md:block overflow-hidden rounded-sm border border-[#e8dfd4]">
+        <div className="hidden md:block overflow-hidden rounded-md border border-[#e8dfd4]">
 
             <table className="w-full border-collapse">
 
@@ -227,7 +227,7 @@ export default function BestTimeToVisit() {
 
         {/* Bottom Recommendation Box */}
 
-        <div className="mt-8 bg-[#faf7f3] border border-[#e8dfd4] rounded-sm p-5">
+        <div className="mt-8 bg-[#faf7f3] rounded-md p-5">
             <p className="text-[12px] sm:text-[13px] md:text-[13.5px] text-gray-700 leading-relaxed font-light">
             October through March is the most recommended period
             for a Golden Triangle tour, with November, December,

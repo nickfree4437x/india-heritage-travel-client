@@ -45,7 +45,7 @@ export default function ConclusionSection() {
 
         {/* CTA BOX */}
 
-        <div className="max-w-5xl mx-auto bg-gradient-to-r from-[#faf7f3] to-[#f5f0e9] border border-[#e7dfd4] rounded-sm p-6 sm:p-8 md:p-10">
+        <div className="max-w-6xl mx-auto bg-gradient-to-r from-[#faf7f3] to-[#f5f0e9] rounded-md p-6 sm:p-8 md:p-10">
 
           <div className="text-center">
 

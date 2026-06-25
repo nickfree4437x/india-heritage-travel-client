@@ -47,7 +47,7 @@ export default function IntroSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-3 sm:py-8 lg:py-10">
+    <section className="w-full bg-white py-4 md:py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         
         {/* ===== HERO / INTRO SECTION ===== */}
@@ -95,21 +95,15 @@ export default function IntroSection() {
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
                 It will strip away all the haze that clouds your planning process. You will learn everything there is to know about the history of these three amazing cities that will make your visit so worthwhile, attraction-by-attraction tips along with practical information, daily itinerary, budgeting, and the detailed information regarding logistics, safety, and etiquette issues that only come from the experience of organizing such tours.
               </p>
-              <div className="mt-3 flex items-center gap-2">
-                <div className="w-8 h-px bg-gradient-to-r from-[#c9a45c] to-transparent" />
-                <p className="text-[#a8843a] text-[12px] sm:text-[13px]">
-                  The single Golden Triangle guide you need - whether you travel alone, with family, or as a couple.
-                </p>
-              </div>
             </div>
           </div>
         </div>
 
         {/* ===== WHAT IS GOLDEN TRIANGLE ===== */}
-        <div className="mb-12 sm:mb-16 lg:mb-20">
+        <div className="mb-8 md:mb-12">
         {/* Section Header - Simple */}
         <div className="mb-6">
-          <h2 className="text-[20px] sm:text-[24px] md:text-[28px] text-[#2c2c2c] font-semibold">
+          <h2 className="text-[18px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold">
             What Is Golden Triangle Tour?
           </h2>
           <p className="text-[13px] text-gray-500 font-light mt-1">
@@ -120,15 +114,15 @@ export default function IntroSection() {
         {/* Description - Clean */}
         <p className="text-gray-600 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light mb-6">
           The Golden Triangle tour includes travel between three cities in northern India -{' '}
-          <Link href="/tours/the-royal-heritage-trail-tour" className="text-[#c9a45c] hover:text-[#a8843a] hover:underline transition-colors duration-200">
+          <Link href="/tours/the-royal-heritage-trail-tour" className="text-[#c9a45c] hover:underline transition-colors duration-200">
             Delhi
           </Link>
           ,{' '}
-          <Link href="/tours/heritage-odyssey-tour" className="text-[#c9a45c] hover:text-[#a8843a] hover:underline transition-colors duration-200">
+          <Link href="/tours/heritage-odyssey-tour" className="text-[#c9a45c] hover:underline transition-colors duration-200">
             Agra
           </Link>
           , and{' '}
-          <Link href="/tours/majestic-golden-triangle-tour" className="text-[#c9a45c] hover:text-[#a8843a] hover:underline transition-colors duration-200">
+          <Link href="/tours/majestic-golden-triangle-tour" className="text-[#c9a45c] hover:underline transition-colors duration-200">
             Jaipur
           </Link>
           - collectively highlighting Mughal and Rajput royalty in one compact tour package.
@@ -142,14 +136,14 @@ export default function IntroSection() {
               <Link
                 key={idx}
                 href={city.link}
-                className="group block bg-white p-5 rounded-lg border border-gray-100 hover:border-[#c9a45c]/30 hover:shadow-sm transition-all duration-300"
+                className="group block bg-white p-5 rounded-lg border border-gray-100 hover:shadow-sm transition-all duration-300"
               >
                 <div className="flex items-center gap-3">
                   <div className={`flex-shrink-0 w-9 h-9 rounded-full ${city.iconBg} flex items-center justify-center`}>
                     <Icon size={16} className={city.iconColor} />
                   </div>
                   <div>
-                    <h3 className="text-[14px] font-medium text-[#2c2c2c] group-hover:text-[#c9a45c] transition-colors duration-200">
+                    <h3 className="text-[14px] font-medium text-[#2c2c2c] transition-colors duration-200">
                       {city.name}
                     </h3>
                     <p className="text-gray-500 text-[11px] sm:text-[12px] leading-relaxed font-light">
@@ -161,18 +155,13 @@ export default function IntroSection() {
             );
           })}
         </div>
-
-        {/* Additional info - Clean */}
-        <p className="text-gray-400 text-[12px] sm:text-[13px] font-light mt-4 text-center">
-          🕐 Usually takes <span className="text-gray-600 font-medium">5 to 7 days</span>, expandable to 10+ days with Ranthambore or Varanasi.
-        </p>
         </div>
         {/* ===== WHY GOLDEN TRIANGLE MATTERS ===== */}
         <div>
           {/* Section Header */}
           <div className="flex items-center gap-3 mb-6">
             <div>
-              <h2 className="text-[18px] sm:text-[22px] md:text-[24px] tracking-wide text-[#2c2c2c] font-semibold">
+              <h2 className="text-[18px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold">
                 Why the Golden Triangle Matters
               </h2>
               <p className="text-[12px] text-gray-500 font-light mt-0.5">

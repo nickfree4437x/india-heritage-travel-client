@@ -9,7 +9,7 @@ export default function IntroSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Taj Mahal Section */}
-        <div className="mb-10">
+        <div className="mb-8">
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             Amber Fort (Jaipur)
@@ -46,10 +46,13 @@ export default function IntroSection() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+            via unsplash.com
+          </p>
         </div>
 
         {/* Agra Fort Section */}
-        <div className="mb-10">
+        <div className="mb-8">
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
@@ -83,10 +86,13 @@ export default function IntroSection() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+            via unsplash.com
+          </p>
         </div>
 
         {/* Red Fort Delhi */}
-        <div className="mb-10">
+        <div className="mb-8">
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
@@ -118,10 +124,13 @@ export default function IntroSection() {
             />
 
           </div>
+          <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+            via unsplash.com
+          </p>
         </div>
 
         {/* Red Fort Delhi */}
-        <div className="mb-10">
+        <div className="mb-8">
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
@@ -157,6 +166,9 @@ export default function IntroSection() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+            via unsplash.com
+          </p>
         </div>
       </div>
 

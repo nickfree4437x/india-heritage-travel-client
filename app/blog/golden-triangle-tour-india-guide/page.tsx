@@ -7,8 +7,8 @@ import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 import Footer from "@/src/sections/footer/Footer";
 
 // Page sections
-import HeroSection from "./sections/hero/HeroSection";
-import IntroSection from "./sections/intro/IntroSection";
+import HeroSection from "./sections/hero-intro/HeroSection";
+import IntroSection from "./sections/hero-intro/IntroSection";
 import TopAttraction from "./sections/TopAttraction/TopAttraction";
 import TopMoreAttraction from "./sections/TopAttraction/TopMoreAttraction";
 import HiddenGems from "./sections/HiddenGems/HiddenGems";

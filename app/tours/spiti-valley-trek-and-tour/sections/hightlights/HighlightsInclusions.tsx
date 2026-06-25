@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export default function HighlightsInclusions() {
-
+  // Highlights data
   const highlights = [
     "Vibrant mix of history and modernity, with lively Old Delhi.",
     "Renowned for urban planning, designed by Le Corbusier.",
@@ -24,6 +24,7 @@ export default function HighlightsInclusions() {
     "Surrounded by mountains, famous for fossils and a golden Buddha statue.",
   ];
 
+  // Inclusions data with icons
   const inclusions = [
     { icon: Hotel, text: "14 nights, chosen hotels" },
     { icon: Car, text: "Local driver, guide" },
@@ -36,161 +37,50 @@ export default function HighlightsInclusions() {
   ];
 
   return (
-
     <section>
-
-      {/* 🔥 SAME CONTENT WIDTH */}
       <div className="max-w-5xl mx-auto">
-
-        {/* 🔥 GRID */}
         <div className="grid md:grid-cols-2 gap-8 md:gap-10">
-
-          {/* 🔹 HIGHLIGHTS */}
-          <div
-            className="
-              bg-white
-              rounded-md
-              shadow-sm
-              border border-[#eee7dd]
-
-              p-5 sm:p-6
-            "
-          >
-
-            {/* TITLE */}
-            <h2
-              className="
-                text-[18px] md:text-[20px]
-                font-medium
-                text-center
-                tracking-[0.02em]
-                text-[#2c2c2c]
-
-                mb-5
-              "
-            >
+          {/* Highlights */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-5 sm:p-6">
+            <h2 className="text-[18px] md:text-[20px] font-medium text-center tracking-[0.02em] text-[#2c2c2c] mb-5">
               Highlights
             </h2>
 
-            {/* LIST */}
-            <ul
-              className="
-                space-y-1.5
-
-                text-[12px] sm:text-[12px]
-                text-gray-700
-                font-light
-              "
-            >
-
+            <ul className="space-y-1.5 text-[12px] sm:text-[12px] text-gray-700 font-light">
               {highlights.map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-2"
-                >
-
+                <li key={index} className="flex items-start gap-2">
                   <Check
                     size={16}
-                    className="
-                      text-[#AF956C]
-                      mt-[2px]
-                      shrink-0
-                    "
+                    className="text-[#AF956C] mt-[2px] shrink-0"
                   />
-
-                  <span className="leading-relaxed">
-                    {item}
-                  </span>
-
+                  <span className="leading-relaxed">{item}</span>
                 </li>
               ))}
-
             </ul>
-
           </div>
 
-          {/* 🔹 INCLUSIONS */}
-          <div
-            className="
-              bg-white
-              rounded-md
-              shadow-sm
-              border border-[#eee7dd]
-
-              p-5 sm:p-6
-            "
-          >
-
-            {/* TITLE */}
-            <h2
-              className="
-                text-[18px] md:text-[20px]
-                font-medium
-                text-center
-                tracking-[0.02em]
-                text-[#2c2c2c]
-
-                mb-6
-              "
-            >
+          {/* Inclusions */}
+          <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-5 sm:p-6">
+            <h2 className="text-[18px] md:text-[20px] font-medium text-center tracking-[0.02em] text-[#2c2c2c] mb-6">
               Inclusions
             </h2>
 
-            {/* ICON GRID */}
-            <div
-              className="
-                grid grid-cols-4
-
-                gap-y-6
-                gap-x-4
-
-                text-center
-              "
-            >
-
+            <div className="grid grid-cols-4 gap-y-6 gap-x-4 text-center">
               {inclusions.map((item, index) => {
                 const Icon = item.icon;
-
                 return (
-
-                  <div
-                    key={index}
-                    className="
-                      flex flex-col items-center
-                      gap-1.5
-                    "
-                  >
-
-                    {/* ICON */}
-                    <Icon
-                      size={18}
-                      className="text-[#AF956C]"
-                    />
-
-                    {/* TEXT */}
-                    <p
-                      className="
-                        text-[11px]
-                        leading-tight
-                        font-light
-                        text-gray-700
-                      "
-                    >
+                  <div key={index} className="flex flex-col items-center gap-1.5">
+                    <Icon size={18} className="text-[#AF956C]" />
+                    <p className="text-[11px] leading-tight font-light text-gray-700">
                       {item.text}
                     </p>
-
                   </div>
                 );
               })}
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }

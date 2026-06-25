@@ -131,7 +131,7 @@ export const blogs = [
     id: 15,
     slug: "rawla-narlai-luxury-heritage-hotel-rajasthan",
     title: "Rajasthan's Most Enchanting Luxury Heritage Hotel",
-    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782195580/23.06.2026_11.28.01_REC_xq38bb.jpg",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782297620/23.06.2026_11.28.01_REC_xq38bb.jpg",
     date: "23 June",
     excerpt:
       "Discover Rawla Narlai - a 17th-century royal hunting lodge turned luxury herit...",

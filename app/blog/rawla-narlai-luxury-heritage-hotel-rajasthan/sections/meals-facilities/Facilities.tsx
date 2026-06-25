@@ -27,9 +27,9 @@ export default function AmenitiesSection() {
 
         {/* AMENITIES CARDS */}
 
-        <div className="grid md:grid-cols-3 gap-5 mb-6">
+        <div className="grid md:grid-cols-3 gap-5 mb-8">
 
-          <div className="border border-[#e7dfd4] bg-white rounded-sm p-5">
+          <div className="border border-gray-200 bg-white rounded-md p-5">
             <h3 className="text-[15px] font-semibold text-[#2c2c2c] mb-3">
               Swimming Pool
             </h3>
@@ -42,7 +42,7 @@ export default function AmenitiesSection() {
             </p>
           </div>
 
-          <div className="border border-[#e7dfd4] bg-white rounded-sm p-5">
+          <div className="border border-gray-200 bg-white rounded-md p-5">
             <h3 className="text-[15px] font-semibold text-[#2c2c2c] mb-3">
               Narlai Spa
             </h3>
@@ -55,7 +55,7 @@ export default function AmenitiesSection() {
             </p>
           </div>
 
-          <div className="border border-[#e7dfd4] bg-white rounded-sm p-5">
+          <div className="border border-gray-200 bg-white rounded-md p-5">
             <h3 className="text-[15px] font-semibold text-[#2c2c2c] mb-3">
               Poolside Bar
             </h3>
@@ -117,7 +117,7 @@ export default function AmenitiesSection() {
         <div className="relative mt-6 w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md mb-10">
           
           <Image
-              src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782208645/23.06.2026_15.27.00_REC_j45fds.png"
+              src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782299348/9_Rawla_Narlai_f5h7ih.jpg"
               alt="Luxury Dining Experience at Rawla Narlai Rajasthan"
               fill
               className="object-cover"

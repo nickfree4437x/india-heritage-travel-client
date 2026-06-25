@@ -1,5 +1,6 @@
 "use client";
 
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 import Image from "next/image";
 
 const cities = [
@@ -31,15 +32,17 @@ const cities = [
 
 export default function CitiesSection() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-12">
+
+      <WhyChooseSection/>
 
       {cities.map((city) => (
         <div key={city.id} id={city.id} className="w-full scroll-mt-24 md:scroll-mt-28">
 
           {/* TITLE */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             {city.title}
-          </h2>
+          </h3>
 
           {/* DESCRIPTION */}
           <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14px] text-justify">

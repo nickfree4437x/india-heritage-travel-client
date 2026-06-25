@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle, AlertCircle, Star, Cloud, Droplets, Camera } from "lucide-react";
+import {  Star, } from "lucide-react";
 
 export default function MonsoonSeason() {
   const highlights = [
@@ -63,7 +63,7 @@ export default function MonsoonSeason() {
 
         {/* ===== QUICK STATS ===== */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
-          <div className="border border-[#e7dfd4] rounded-lg p-4 bg-white">
+          <div className="border borer-gray-200 rounded-lg p-4 bg-white">
             <h3 className="text-[11px] uppercase tracking-wider text-gray-500 font-medium mb-1">
               Rainy Season
             </h3>
@@ -75,7 +75,7 @@ export default function MonsoonSeason() {
             </p>
           </div>
 
-          <div className="border border-[#e7dfd4] rounded-lg p-4 bg-white">
+          <div className="border borer-gray-200 rounded-lg p-4 bg-white">
             <h3 className="text-[11px] uppercase tracking-wider text-gray-500 font-medium mb-1">
               Biggest Advantage
             </h3>
@@ -87,7 +87,7 @@ export default function MonsoonSeason() {
             </p>
           </div>
 
-          <div className="border border-[#e7dfd4] rounded-lg p-4 bg-white">
+          <div className="border borer-gray-200 rounded-lg p-4 bg-white">
             <h3 className="text-[11px] uppercase tracking-wider text-gray-500 font-medium mb-1">
               Travel Rating
             </h3>
@@ -136,7 +136,7 @@ export default function MonsoonSeason() {
         {/* ===== PROS & CONS ===== */}
         <div className="grid md:grid-cols-2 gap-5 mb-10">
           {/* Pros */}
-          <div className="border border-[#e7dfd4] rounded-lg p-5 bg-white">
+          <div className="border borer-gray-200 rounded-lg p-5 bg-white">
             <h3 className="text-[14px] font-semibold text-green-700 mb-4">
               Advantages
             </h3>
@@ -152,7 +152,7 @@ export default function MonsoonSeason() {
           </div>
 
           {/* Cons */}
-          <div className="border border-[#e7dfd4] rounded-lg p-5 bg-white">
+          <div className="border borer-gray-200 rounded-lg p-5 bg-white">
             <h3 className="text-[14px] font-semibold text-red-700 mb-4">
               Considerations
             </h3>

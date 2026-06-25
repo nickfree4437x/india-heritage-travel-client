@@ -60,7 +60,7 @@ export default function IntroSection() {
               A few hundred kilometers away, the sandstone walls of Amber Fort glow under the same morning light, while the courtyards of Jaipur's City Palace come alive with marigold offerings. In Delhi, Humayun's Tomb quietly waits behind its red sandstone gateways, offering the perfect introduction to the Mughal grandeur that defines the Golden Triangle.
             </p>
 
-            <div className="relative border-[#c9a45c]/20 bg-[#faf8f4] p-4 sm:p-5 rounded-r-xl">
+            <div className="relative border-[#c9a45c]/20 bg-[#faf8f4] p-4 sm:p-5 rounded-md">
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 This is the Golden Triangle at its absolute best. Yet many travelers discover too late that this experience is highly seasonal. Arriving during a less-than-ideal season can drastically alter your travel experience due to extreme temperatures, massive crowds, or unpredictable weather.
               </p>
@@ -149,7 +149,7 @@ export default function IntroSection() {
           </div>
 
           {/* Bottom Info */}
-          <div className="bg-white border border-[#e7dfd4] rounded-lg p-4 sm:p-5">
+          <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-5">
             <div className="flex items-center gap-3">
               <Clock size={18} className="text-[#c9a45c] flex-shrink-0" />
               <p className="text-gray-600 text-[13px] sm:text-[14px] font-light">

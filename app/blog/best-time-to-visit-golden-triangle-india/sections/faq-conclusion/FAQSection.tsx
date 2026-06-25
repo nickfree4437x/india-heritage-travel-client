@@ -9,13 +9,13 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="w-full bg-white py-8 sm:py-10">
+    <section className="w-full bg-white py-3 sm:py-4">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Section Header */}
-        <div className="text-center mb-12 sm:mb-14">
+        <div className="mb-12 sm:mb-8">
 
           <h2 className="
-            text-[18px] sm:text-[22px] md:text-[24px]
+            text-[18px] sm:text-[20px] md:text-[22px]
             font-semibold
             text-[#2c2c2c]
             mb-4
@@ -29,7 +29,7 @@ export default function FAQSection() {
             text-[12px] sm:text-[13px] md:text-[14.5px]
             font-light
             leading-relaxed
-            max-w-2xl
+            max-w-6xl
             mx-auto
           ">
             Answers to some of the most common questions travelers ask when
@@ -127,8 +127,8 @@ export default function FAQSection() {
           max-w-6xl
           mx-auto
           bg-gradient-to-br from-[#faf7f3] to-[#f5f0e9]
-          border border-[#e7dfd4]
-          rounded-sm
+          border borer-gray-200
+          rounded-md
           p-6 sm:p-8 md:p-10
           text-center
           relative
@@ -200,19 +200,6 @@ export default function FAQSection() {
                   "
                 >
                   Contact Our Experts
-                  <svg 
-                    className="w-4 h-4" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={2} 
-                      d="M17 8l4 4m0 0l-4 4m4-4H3" 
-                    />
-                  </svg>
                 </Link>
 
                 <Link

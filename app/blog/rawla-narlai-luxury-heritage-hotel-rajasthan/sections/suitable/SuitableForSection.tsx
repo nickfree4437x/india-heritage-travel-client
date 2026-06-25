@@ -64,7 +64,7 @@ export default function SuitableForSection() {
           {travelers.map((traveler) => (
             <div
               key={traveler.title}
-              className="border border-[#e7dfd4] bg-white rounded-sm p-6 hover:border-[#AF956C]/40 transition-colors"
+              className="border border-gray-200 bg-white rounded-md p-6 hover:border-[#AF956C]/40 transition-colors"
             >
 
               <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-3">

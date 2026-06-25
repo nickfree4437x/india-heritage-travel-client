@@ -5,6 +5,7 @@ import HighlightsInclusions from "../hightlights/HighlightsInclusions";
 import Itinerary from "../itinerary/Itinerary";
 import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
 import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 
 export default function TourDetails() {
   const cities = [
@@ -53,7 +54,9 @@ export default function TourDetails() {
   ];
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-12">
+
+      <WhyChooseSection/>
 
       {cities.map((city) => (
         <div
@@ -63,9 +66,9 @@ export default function TourDetails() {
         >
 
           {/* TITLE */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             {city.title}
-          </h2>
+          </h3>
 
           {/* DESCRIPTION */}
           <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14px] text-justify">

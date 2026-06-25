@@ -30,7 +30,7 @@ export default function BestTimeToVisitSection() {
 
           {/* WINTER */}
 
-          <div className="border border-[#e7dfd4] bg-[#faf7f3] rounded-sm p-6">
+          <div className="border border-gray-200 bg-[#faf7f3] rounded-md p-6">
 
             <div className="flex items-center justify-between mb-3">
               <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c]">
@@ -56,7 +56,7 @@ export default function BestTimeToVisitSection() {
 
           {/* SUMMER */}
 
-          <div className="border border-[#e7dfd4] bg-white rounded-sm p-6">
+          <div className="border border-gray bg-white rounded-md p-6">
 
             <div className="flex items-center justify-between mb-3">
               <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c]">
@@ -80,7 +80,7 @@ export default function BestTimeToVisitSection() {
 
           {/* MONSOON */}
 
-          <div className="border border-[#e7dfd4] bg-white rounded-sm p-6">
+          <div className="border border-gray-200 bg-white rounded-md p-6">
 
             <div className="flex items-center justify-between mb-3">
               <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c]">

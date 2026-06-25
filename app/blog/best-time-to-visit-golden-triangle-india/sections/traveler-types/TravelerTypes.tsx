@@ -69,7 +69,7 @@ export default function TravelerTypes() {
           {travelerTypes.map((traveler) => (
             <div
               key={traveler.title}
-              className="group border border-[#e7dfd4] bg-white rounded-sm p-5 hover:border-[#AF956C]/40 hover:shadow-sm transition-all duration-300"
+              className="group border borer-gray-200 bg-white rounded-md p-5 hover:border-[#AF956C]/40 hover:shadow-sm transition-all duration-300"
             >
 
               <div className="mb-4">
@@ -95,7 +95,7 @@ export default function TravelerTypes() {
 
         {/* EXPERT RECOMMENDATION */}
 
-        <div className="bg-white border border-[#e7dfd4] rounded-sm p-5 ">
+        <div className="bg-white border borer-gray-200 rounded-sm p-5 ">
 
           <h3 className="text-[14px] sm:text-[15px] font-semibold text-[#2c2c2c] mb-2">
             Expert Recommendation

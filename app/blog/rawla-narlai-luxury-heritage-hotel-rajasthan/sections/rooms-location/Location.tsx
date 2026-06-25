@@ -54,7 +54,7 @@ export default function LocationSection() {
           {destinations.map((item) => (
             <div
               key={item.title}
-              className="border border-[#e7dfd4] bg-[#faf7f3] rounded-sm p-5 text-center"
+              className=" bg-[#faf7f3] rounded-sm p-5 text-center"
             >
 
               <h3 className="text-[14px] font-semibold text-[#2c2c2c] mb-2">
@@ -78,7 +78,7 @@ export default function LocationSection() {
 
         <div className="grid md:grid-cols-2 gap-6 mb-10">
 
-          <div className="border border-[#e7dfd4] rounded-sm p-5">
+          <div className="border border-gray-200 rounded-md p-5">
 
             <h3 className="text-[15px] font-semibold text-[#2c2c2c] mb-3">
               Nearest Airports
@@ -94,7 +94,7 @@ export default function LocationSection() {
 
           </div>
 
-          <div className="border border-[#e7dfd4] rounded-sm p-5">
+          <div className="border border-gray-200 rounded-md p-5">
 
             <h3 className="text-[15px] font-semibold text-[#2c2c2c] mb-3">
               Nearest Railway Station

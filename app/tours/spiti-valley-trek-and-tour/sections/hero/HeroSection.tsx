@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542050/hero_io8b2h.jpg"
-          alt="Spiti Valley"
+          alt="Scenic Himalayan landscape during a Spiti Valley Tour in Himachal Pradesh"
           fill
           priority
           className="object-cover object-center will-change-transform"
@@ -36,7 +36,7 @@ export default function Hero() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Spiti Valley Trek & <br/> Tour Package
+          Spiti Valley<br/> Tour Package
         </h1>
 
       </div>

@@ -55,7 +55,7 @@ export default function RoomsSection() {
         <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md mb-10">
 
           <Image
-            src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782197322/image_4_rawla-narlai-luxury-heritage-suite-room_pjyuqr.png"
+            src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782298243/7_Rawla_Narlai_ofc1v1.jpg"
             alt="Luxury Heritage Room at Rawla Narlai Rajasthan"
             fill
             className="object-cover"
@@ -70,7 +70,7 @@ export default function RoomsSection() {
           {rooms.map((room) => (
             <div
               key={room.title}
-              className="border border-[#e7dfd4] bg-white rounded-sm p-6"
+              className="border-gray-200 border rounded-md bg-white  p-6"
             >
 
               <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-3">

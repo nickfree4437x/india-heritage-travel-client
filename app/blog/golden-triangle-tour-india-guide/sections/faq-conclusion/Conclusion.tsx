@@ -35,7 +35,7 @@ export default function ConclusionCTA() {
 
         {/* CTA Card */}
 
-        <div className="relative overflow-hidden border border-[#e7dfd4] bg-[#faf7f3] rounded-sm">
+        <div className="relative overflow-hidden bg-[#faf7f3] rounded-md">
 
             {/* Background Accent */}
 
@@ -62,7 +62,7 @@ export default function ConclusionCTA() {
 
                 <Link
                 href="/customize-your-journey"
-                className="inline-flex rounded-sm items-center justify-center gap-2 bg-[#AF956C] hover:bg-[#9b8059] text-white px-6 py-3 text-[13px] tracking-wide transition-all duration-300"
+                className="inline-flex rounded-md items-center justify-center gap-2 bg-[#AF956C] hover:bg-[#9b8059] text-white px-6 py-3 text-[13px] tracking-wide transition-all duration-300"
                 >
                 Request Your Custom Itinerary
                 <ArrowRight size={16} />
@@ -70,7 +70,7 @@ export default function ConclusionCTA() {
 
                 <Link
                 href="/tours/majestic-golden-triangle-tour"
-                className="inline-flex rounded-sm items-center justify-center border border-[#d8cdbf] text-[#2c2c2c] hover:bg-white px-6 py-3 text-[13px] tracking-wide transition-all duration-300"
+                className="inline-flex rounded-md items-center justify-center border border-[#d8cdbf] text-[#2c2c2c] hover:bg-white px-6 py-3 text-[13px] tracking-wide transition-all duration-300"
                 >
                 Explore Golden Triangle Tours
                 </Link>

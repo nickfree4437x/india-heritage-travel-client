@@ -1,35 +1,45 @@
 import type { Metadata } from "next";
 
-import HeroSection from "./sections/hero/HeroSection";
-import SuitableFor from "./sections/suitable-for/SuitableFor";
-import TourLayout from "./sections/layout/TourLayout";
-import BookingCard from "./sections/booking-card/BookingCard";
-import TourContent from "./sections/tour-content/TourContent";
-import DetailedItinerary from "./sections/itinerary/DetailedItinerary";
-import HightlightSection from "./sections/hightlights/HightlightSection";
-import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
-import RecommendedTours from "@/app/tours/majestic-golden-triangle-tour/components/sections/RecommendedTours";
-import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
-import Footer from "@/src/sections/footer/Footer";
-import CommonForm from "@/src/tours/CommonForm";
-import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
+// SEO Components
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 import TourSchema from "@/src/common/seo/TourSchema";
 
+// Common components
+import Footer from "@/src/sections/footer/Footer";
+import CommonForm from "@/src/tours/CommonForm";
+import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
+import ExcludedServices from "@/app/tours/majestic-golden-triangle-tour/components/pricing/ExcludedServices";
+import DetailedItineraryIntro from "@/src/tours/book-now/sections/itinerary/DetailedItinerary";
+import RecommendedTours from "@/app/tours/majestic-golden-triangle-tour/components/sections/RecommendedTours";
+
+// Page sections
+import HeroSection from "./sections/hero/HeroSection";
+import SuitableFor from "./sections/suitable-for/SuitableFor";
+import TourLayout from "./layout/TourLayout";
+import BookingCard from "./booking-card/BookingCard";
+import TourContent from "./sections/tour-content/TourContent";
+import DetailedItinerary from "./sections/itinerary/DetailedItinerary";
+import HightlightSection from "./sections/hightlights/HightlightSection";
+
+// ============================================
+// SEO METADATA
+// ============================================
 export const metadata: Metadata = {
-  title: "Southern Splendors Tour India | Heritage, Culture & Scenic Journeys",
+  title: "South India Heritage Tour Package | Southern Splendors",
   description:
-    "Discover the heritage, architecture, natural beauty, and cultural traditions of South India through a carefully curated and immersive travel experience.",
+    "Explore South India's heritage, ancient temples, scenic landscapes, and vibrant culture on our Southern Splendors Tour. Enjoy a carefully crafted South India heritage tour with authentic local experiences.",
   alternates: {
     canonical: "/tours/southern-splendors-tour",
   },
 };
 
+// ============================================
+// PAGE COMPONENT
+// ============================================
 export default function SouthernSplendorsPage() {
   return (
     <div>
-
-      {/* Breadcrumb Schema */}
+      {/* Breadcrumb Schema - SEO */}
       <BreadcrumbSchema
         items={[
           {
@@ -47,29 +57,34 @@ export default function SouthernSplendorsPage() {
         ]}
       />
 
+      {/* Tour Schema - SEO */}
       <TourSchema
-        name="Southern Splendors Tour"
-        description="Discover the heritage, architecture, natural beauty, and cultural traditions of South India through a carefully curated and immersive travel experience."
+        name="South India Heritage Tour - Southern Splendors"
+        description="Explore South India on a heritage tour featuring ancient temples, cultural landmarks, scenic landscapes, authentic local experiences, and carefully planned itineraries."
         url="https://indiaheritagetravel.com/tours/southern-splendors-tour"
       />
 
+      {/* Hero Section */}
       <HeroSection />
       <SuitableFor />
 
+      {/* Tour Layout with Sidebar */}
       <TourLayout sidebar={<BookingCard />}>
         <TourContent />
-        <HightlightSection/>
+        <HightlightSection />
         <div className="space-y-6">
           <DetailedItinerary />
-          <ExcludedServices/>
-          <DetailedItineraryIntro/>
+          <ExcludedServices />
+          <DetailedItineraryIntro />
         </div>
       </TourLayout>
+      <TourSteps />
 
-      <TourSteps/>
-      <CommonForm tourName="southern-splendors-tour"/>
-      <RecommendedTours/>
-      <Footer/>
+      {/* Booking Form */}
+      <CommonForm tourName="southern-splendors-tour" />
+      
+      <RecommendedTours />
+      <Footer />
     </div>
   );
 }

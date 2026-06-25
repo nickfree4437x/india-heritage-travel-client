@@ -52,7 +52,7 @@ export default function DestinationWeather() {
     <section className="w-full bg-white py-2 sm:py-4">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Section Header - Better styled */}
-        <div className="text-center mb-14 sm:mb-16">
+        <div className="mb-14 sm:mb-16">
 
           <h2 className="
             text-[18px] sm:text-[22px] md:text-[24px]
@@ -69,7 +69,7 @@ export default function DestinationWeather() {
             text-[12px] sm:text-[13px] md:text-[14.5px]
             font-light
             leading-relaxed
-            max-w-3xl
+            max-w-6xl
             mx-auto
           ">
             Although the Golden Triangle is often discussed as a single journey,

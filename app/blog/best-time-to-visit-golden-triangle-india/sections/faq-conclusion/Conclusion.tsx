@@ -44,7 +44,7 @@ export default function Conclusion() {
 
         {/* CTA */}
 
-        <div className="bg-gradient-to-br from-[#faf7f3] to-[#f4efe8] border border-[#e7dfd4] rounded-sm overflow-hidden mb-12">
+        <div className="bg-gradient-to-br from-[#faf7f3] to-[#f4efe8] border borer-gray-200 rounded-md overflow-hidden mb-12">
 
           <div className=" border-[#AF956C] p-6 sm:p-8">
 
@@ -68,14 +68,14 @@ export default function Conclusion() {
 
               <Link
                 href="/customize-your-journey"
-                className="inline-flex rounded-sm items-center justify-center px-5 py-3 bg-[#AF956C] text-white text-[12px] hover:bg-[#9d835b] transition-colors"
+                className="inline-flex rounded-md items-center justify-center px-5 py-3 bg-[#AF956C] text-white text-[12px] hover:bg-[#9d835b] transition-colors"
               >
                 Request Your Custom Itinerary
               </Link>
 
               <Link
                 href="/tours/majestic-golden-triangle-tour"
-                className="inline-flex rounded-sm items-center justify-center px-5 py-3 border border-[#d8cdbf] text-[#2c2c2c] text-[12px] hover:bg-white transition-colors"
+                className="inline-flex rounded-md items-center justify-center px-5 py-3 border border-[#d8cdbf] text-[#2c2c2c] text-[12px] hover:bg-white transition-colors"
               >
                 Explore Golden Triangle Tours
               </Link>
