@@ -148,11 +148,11 @@ export default function ComparisonTable() {
                     key={item.category}
                     className={index % 2 === 0 ? "bg-white" : "bg-[#fcfbf9]"}
                   >
-                    <td className="px-5 py-4 text-[13px] text-[#2c2c2c] border-b border-[#ece7de] align-top">
+                    <td className="px-5 py-4 text-[12px] md:text-[13px] text-[#2c2c2c] border-b border-[#ece7de] align-top">
                       {item.category}
                     </td>
 
-                    <td className="px-5 py-4 text-[13px] leading-relaxed text-gray-700 font-light border-b border-[#ece7de] align-top">
+                    <td className="px-5 py-4 text-[12px] md:text-[13px] leading-relaxed text-gray-700 font-light border-b border-[#ece7de] align-top">
                       {renderCellContent(
                         item.goldenTriangle,
                         isRecommended,
@@ -160,7 +160,7 @@ export default function ComparisonTable() {
                       )}
                     </td>
 
-                    <td className="px-5 py-4 text-[11px] md:text-[13px] leading-relaxed text-gray-700 font-light border-b border-[#ece7de] align-top">
+                    <td className="px-5 py-4 text-[12px] md:text-[13px] leading-relaxed text-gray-700 font-light border-b border-[#ece7de] align-top">
                       {renderCellContent(
                         item.rajasthan,
                         isRecommended,
