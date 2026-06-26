@@ -1,69 +1,35 @@
-// app/blogs/india-food-guide/page.tsx
 import type { Metadata } from "next";
-import HeroSection from "./sections/hero/HeroSection";
-import FoodIntroSection from "./sections/intro/FoodIntroSection";
+
+// SEO Metadata
+import { metadata as pageMetadata } from "./seo/metadata";
+import { articleSchema, organizationSchema, webPageSchema } from "./seo/schema";
+
+// SEO Components
+import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
+
+// Common components
+import Footer from "@/src/sections/footer/Footer";
+
+// Page sections
+import HeroSection from "./sections/hero-intro/HeroSection";
+import FoodIntroSection from "./sections/hero-intro/FoodIntroSection";
 import DishesSection from "./sections/dishes/DishesSection";
 import TravelTipsSection from "./sections/travel-tips/TravelTipsSection";
 import FinalThoughtsSection from "./sections/final-thoughts/FinalThoughtsSection";
 import MoreFoodSection from "./sections/more-blogs/MoreFoodSection";
-import Footer from "@/src/sections/footer/Footer";
-import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 
-const articleSchema = {
-  "@context": "https://schema.org",
+// ============================================
+// PAGE METADATA
+// ============================================
+export const metadata: Metadata = pageMetadata;
 
-  "@type": "Article",
-
-  headline:
-    "Indian Food Guide | What to Eat, What to Avoid & Travel Food Tips",
-
-  description:
-    "Discover India's diverse cuisine with essential food recommendations, local specialties, travel dining tips, and practical advice on what to eat and avoid during your journey.",
-
-  image:
-    "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779634924/hero-1_xs9azf.jpg",
-
-  author: {
-    "@type": "Organization",
-
-    name: "India Heritage Travel",
-  },
-
-  publisher: {
-    "@type": "Organization",
-
-    name: "India Heritage Travel",
-
-    logo: {
-      "@type": "ImageObject",
-
-      url:
-        "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png",
-    },
-  },
-
-  mainEntityOfPage: {
-    "@type": "WebPage",
-
-    "@id":
-      "https://indiaheritagetravel.com/blog/india-food-guide",
-  },
-};
-
-export const metadata: Metadata = {
-  title: "Indian Food Guide | What to Eat, What to Avoid & Travel Food Tips",
-  description:
-    "Discover India's diverse cuisine with essential food recommendations, local specialties, travel dining tips, and practical advice on what to eat and avoid during your journey.",
-  alternates: {
-    canonical: "/blog/india-food-guide",
-  },
-};
-
+// ============================================
+// PAGE COMPONENT
+// ============================================
 export default function IndiaFoodGuidePage() {
   return (
     <main className="w-full bg-white">
-
-      {/* Breadcrumb Schema */}
+      {/* Breadcrumb Schema - SEO */}
       <BreadcrumbSchema
         items={[
           {
@@ -81,28 +47,38 @@ export default function IndiaFoodGuidePage() {
         ]}
       />
 
+      {/* Article Schema - JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            articleSchema
-          ),
+          __html: JSON.stringify(articleSchema),
         }}
       />
-      
+
+      {/* WebPage Schema - JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(webPageSchema),
+        }}
+      />
+
+      {/* Organization Schema - JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema),
+        }}
+      />
+
+      {/* Page Sections */}
       <HeroSection />
-
       <FoodIntroSection />
-
       <DishesSection />
-
       <TravelTipsSection />
-
       <FinalThoughtsSection />
-
       <MoreFoodSection />
-      <Footer/>
-
+      <Footer />
     </main>
   );
 }

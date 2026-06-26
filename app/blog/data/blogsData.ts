@@ -154,4 +154,13 @@ export const blogs = [
     excerpt:
       "Two routes. Two completely different Indias. One decision that will shape your...",
   },
+  {
+    id: 18,
+    slug: "top-forts-and-palaces-in-rajasthan ",
+    title: "15 Forts & Palaces to See in Rajasthan, India",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782461064/chirag-vashist-mnqLnEBHMp8-unsplash_fkxnnf.jpg",
+    date: "26 June",
+    excerpt:
+      "On the verge of visiting Rajasthan, India? Get ready to know about the top 15 f...",
+  },
 ];
