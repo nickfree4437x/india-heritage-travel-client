@@ -4,7 +4,7 @@ import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
 
 import { blogs } from "../data/blogsData";
 
-const BLOGS_PER_PAGE = 6;
+const BLOGS_PER_PAGE = 9;
 
 type BlogsGridProps = {
   currentPage: number;

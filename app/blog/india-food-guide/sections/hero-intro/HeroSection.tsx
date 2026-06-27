@@ -19,7 +19,7 @@ export default function HeroSection() {
       {/* Hero Image */}
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
-          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779634924/hero-1_xs9azf.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579634924/hero-1_xs9azf.jpg"
           alt="Traditional Indian food showcasing the rich flavors of Indian cuisine"
           fill
           priority
@@ -78,8 +78,8 @@ export default function HeroSection() {
             {/* Left Side - Author Info */}
             <div className="flex items-center gap-5 text-[#6a6a6a] justify-center sm:justify-start">
               <div className="flex items-center gap-2">
-                <MessageCircle size={17} strokeWidth={1.7} />
-                <span className="text-sm">0</span>
+                <MessageCircle size={15} strokeWidth={1.7} />
+                <span className="text-[12px] md:text-[13px] font-light">0</span>
               </div>
 
               <span className="text-[12px] md:text-[13px] font-light">Jan 5</span>
@@ -101,36 +101,44 @@ export default function HeroSection() {
                 <Link
                   href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Share this article on Facebook"
                   className="hover:text-[#7C5C38] transition-colors duration-300"
                 >
-                  <Facebook size={17} strokeWidth={2} />
+                  <Facebook size={15} strokeWidth={2} />
                 </Link>
 
                 {/* Twitter */}
                 <Link
                   href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareTitle}`}
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Share this article on Twitter"
                   className="hover:text-[#7C5C38] transition-colors duration-300"
                 >
-                  <Twitter size={17} strokeWidth={2} />
+                  <Twitter size={15} strokeWidth={2} />
                 </Link>
 
                 {/* WhatsApp */}
                 <Link
                   href={`https://wa.me/?text=${shareTitle} ${shareUrl}`}
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Share this article on Whatsapp"
                   className="hover:text-[#7C5C38] transition-colors duration-300"
                 >
-                  <FaWhatsapp size={17} />
+                  <FaWhatsapp size={15} />
                 </Link>
 
                 {/* Pinterest */}
                 <Link
                   href={`https://pinterest.com/pin/create/button/?url=${shareUrl}&description=${shareTitle}`}
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Share this article on Pinterest"
                   className="hover:text-[#7C5C38] transition-colors duration-300"
                 >
-                  <FaPinterestP size={17} />
+                  <FaPinterestP size={15} />
                 </Link>
               </div>
             </div>

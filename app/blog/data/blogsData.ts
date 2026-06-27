@@ -14,7 +14,7 @@ export const blogs = [
     id: 2,
     slug: "safe-luxury-destinations",
     title: "It is personal choice for women to travel solo. Some trips are about ....",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637769/blog-2_ma62qv.jpg",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782539739/blog-2_ma62qv_msocje.jpg",
     date: "10 Dec",
     excerpt:
       "It is personal choice for women to travel solo. Some trips are about rest ....",
@@ -23,7 +23,7 @@ export const blogs = [
     id: 3,
     slug: "indian-traveller-guide",
     title: "The Ultimate First-Time Traveler’s Guide to India",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637895/blog-3_dksm9v.jpg",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782540276/pexels-soubhagya23-17685500_tihzeu.jpg",
     date: "10 Dec",
     excerpt:
       "The second you step outside of the airport in India, everything just hits ....",
@@ -156,11 +156,20 @@ export const blogs = [
   },
   {
     id: 18,
-    slug: "top-forts-and-palaces-in-rajasthan ",
+    slug: "top-forts-and-palaces-in-rajasthan",
     title: "15 Forts & Palaces to See in Rajasthan, India",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782461064/chirag-vashist-mnqLnEBHMp8-unsplash_fkxnnf.jpg",
     date: "26 June",
     excerpt:
       "On the verge of visiting Rajasthan, India? Get ready to know about the top 15 f...",
+  },
+  {
+    id: 19,
+    slug: "top-heritage-hotels-of-rajasthan",
+    title: "Top Heritage Hotels of Rajasthan: Where Rich History Meets Luxury",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782554877/Rambagh_Palace_Jaipur_ny9xx7.jpg",
+    date: "27 June",
+    excerpt:
+      "Reviews of the top heritage hotels of Rajasthan, from palace hotels in Udaipur...",
   },
 ];
