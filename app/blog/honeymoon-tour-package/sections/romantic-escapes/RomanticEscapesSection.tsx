@@ -25,7 +25,7 @@ const escapes = [
   {
     title: "Goa's Coastal Bliss & Culture",
     description:
-      "Indulge in lazy beach holidays, swaying sunsets, and colorful Goan lifestyle in this seaside heaven. Delve into sizzling seafood by the beach, relax to warm breezes, and discover cozy churches, spice farms, and local art forms—all in finest cohesion.",
+      "Indulge in lazy beach holidays, swaying sunsets, and colorful Goan lifestyle in this seaside heaven. Delve into sizzling seafood by the beach, relax to warm breezes, and discover cozy churches, spice farms, and local art forms all in finest cohesion.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779651278/alexey-turenkov-bWJiSZjIgTM-unsplash_da97lc.jpg",
   },
 ];
@@ -37,13 +37,13 @@ export default function RomanticEscapesSection() {
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
 
-        <div className="space-y-8 sm:space-y-10">
+        <div className="space-y-4 sm:space-y-5">
 
           {escapes.map((item, index) => (
             <div key={index}>
 
               {/* CONTENT */}
-              <div className="max-w-4xl">
+              <div className="max-w-6xl">
 
                 <h3
                   className="
@@ -53,14 +53,14 @@ export default function RomanticEscapesSection() {
                   {item.title}
                 </h3>
 
-                <p className="mt-2 text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+                <p className="mt-2 text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                   {item.description}
                 </p>
 
               </div>
 
               {/* IMAGE */}
-              <div className="mt-8 sm:mt-10">
+              <div className="mt-4 sm:mt-6">
 
                 <div
                   className="
@@ -84,13 +84,14 @@ export default function RomanticEscapesSection() {
                     src={item.image}
                     alt={item.title}
                     fill
+                    sizes="100vw"
                     className="object-cover"
                   />
 
                 </div>
 
                 {/* CREDIT */}
-                <p className="mt-3 text-[12px] sm:text-[13px] text-[#8d8d8d]">
+                <p className="mt-2 text-[11px] sm:text-[12px] font-light text-gray-700">
                   via unsplash.com
                 </p>
 

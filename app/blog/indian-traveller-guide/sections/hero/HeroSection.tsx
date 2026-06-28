@@ -18,7 +18,7 @@ export default function HeroSection() {
       {/* Hero Image */}
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
-          src="https://res.cloudinary.com/dja5yspwr/image/upload/v1582540276/pexels-soubhagya23-15685500_tihzeu.jpg"
+          src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782540276/pexels-soubhagya23-17685500_tihzeu.jpg"
           alt="First time traveller discovering iconic destinations across India"
           fill
           priority

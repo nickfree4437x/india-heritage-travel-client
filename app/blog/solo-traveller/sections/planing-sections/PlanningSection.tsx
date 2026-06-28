@@ -3,34 +3,32 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PlanningSection() {
   return (
     <section className="w-full bg-white -mt-6">
-
-      {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
-
-
-        {/* HEADING */}
-        <h2
-          className="
-            text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
-          "
-        >
+        {/* Heading */}
+        <h2 className="
+          text-[16px] sm:text-[20px] md:text-[22px]
+          tracking-wide
+          text-[#2c2c2c]
+          font-semibold
+          mb-4
+        ">
           How to Plan a Solo Trip
         </h2>
 
-        {/* CONTENT */}
-        <div className="max-w-5xl">
-
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+        {/* Content */}
+        <div className="max-w-6xl">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Stay longer in every place. If you would
             have normally stayed two nights, stay five.
             You need those extra days to acclimatise.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Opt for heritage stays when you have the
             choice. They help families and keep old
             buildings alive. Spend money thoughtfully.
@@ -39,26 +37,26 @@ export default function PlanningSection() {
             local guides who speak from experience.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Customize tour packages in India with
             enterprises that understand slow travelling.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-            The best India travel agencies won’t fit ten
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+            The best India travel agencies won't fit ten
             stops into one day. Holiday tour packages in
             India can be moulded to fit your travel pace,
             most especially if solo female travel in India
             is a concern.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Personalized holiday packages can be a
             success only when you are honest about
             your style.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             If slow mornings are important, say that.
             If you enjoy lazy afternoons, state it.
             The best India tour packages are shaped
@@ -68,52 +66,43 @@ export default function PlanningSection() {
           </p>
         </div>
 
-        {/* IMAGE */}
-        <div
-          className="
-            relative
-
-            mt-10
-            sm:mt-12
-
-            w-full
-
-            h-[280px]
-            sm:h-[420px]
-            lg:h-[560px]
-
-            rounded-sm
-
-            overflow-hidden
-          "
-        >
-
+        {/* Image */}
+        <div className="
+          relative
+          mt-4 sm:mt-6
+          w-full
+          h-[280px] sm:h-[420px] lg:h-[560px]
+          rounded-sm
+          overflow-hidden
+        ">
           <Image
             src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641960/map_jzsihw.webp"
             alt="India travel map for planning a slow and immersive journey across India"
             fill
+            sizes="100vw"
             className="object-cover"
           />
         </div>
 
-        {/* BOTTOM CONTENT */}
+        {/* Bottom Content */}
         <div className="max-w-5xl mt-6 sm:mt-8 pb-12">
-
-          <h2
-            className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
-            "
-          >
+          <h2 className="
+            text-[16px] sm:text-[20px] md:text-[22px]
+            tracking-wide
+            text-[#2c2c2c]
+            font-semibold
+            mb-4
+          ">
             The Part That Stays With You
           </h2>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Slow travel in India is to let things stretch.
             A cooking class takes longer because your
             host wants you to learn the dish.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             A neighbour waves you over. A brief stroll
             becomes an afternoon full of stories.
             These unplanned moments stay with you
@@ -124,11 +113,14 @@ export default function PlanningSection() {
             the memory you miss.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-            Working with thoughtful operators like
-            <span className="text-[#2756d8] font-semibold">
-              {" "}India Heritage Travel
-            </span>{" "}
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+            Working with thoughtful operators like{" "}
+            <Link
+              href="https://www.indiaheritagetravel.com"
+              className="font-[400] hover:underline text-[#8b6a3d]"
+            >
+              India Heritage Travel
+            </Link>{" "}
             keeps the practical bits easy so you can
             give your time and attention to the country
             itself, not the logistics.

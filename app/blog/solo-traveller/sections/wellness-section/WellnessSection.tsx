@@ -7,23 +7,21 @@ import Image from "next/image";
 export default function WellnessSection() {
   return (
     <section className="w-full bg-white">
-
-      {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
-
-        {/* HEADING */}
-        <h2
-          className="
-            text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
-          "
-        >
+        {/* Heading */}
+        <h2 className="
+          text-[16px] sm:text-[20px] md:text-[22px]
+          tracking-wide
+          text-[#2c2c2c]
+          font-semibold
+          mb-4
+        ">
           Wellness Without the Noise
         </h2>
 
-        {/* CONTENT */}
+        {/* Content */}
         <div className="max-w-5xl">
-
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Rishikesh is the obvious pick, but small towns
             offer more peace. The slower the place,
             the easier it is to clear your head.
@@ -33,9 +31,9 @@ export default function WellnessSection() {
             good in photos.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-            Ashrams can be a challenge — no phones,
-            simple food, long silences — but they give
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+            Ashrams can be a challenge - no phones,
+            simple food, long silences - but they give
             women on their solo female travel in India
             a grounded space to reflect without stress.
             Ayurveda begins with knowing your own body type.
@@ -43,42 +41,32 @@ export default function WellnessSection() {
             routines.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Small clinics can provide the same care as
             fancy centres without breaking the bank.
           </p>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300]">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300]">
             Digital detox retreats take your phone at
             check-in. It feels odd at first.
             Then it feels freeing.
           </p>
         </div>
 
-        {/* IMAGE */}
-        <div
-          className="
-            relative
-
-            mt-10
-            sm:mt-12
-
-            w-full
-
-            h-[280px]
-            sm:h-[420px]
-            lg:h-[620px]
-
-            rounded-sm
-
-            overflow-hidden
-          "
-        >
-
+        {/* Image */}
+        <div className="
+          relative
+          mt-4 sm:mt-6
+          w-full
+          h-[280px] sm:h-[420px] lg:h-[560px]
+          rounded-sm
+          overflow-hidden
+        ">
           <Image
             src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641968/yoga_ipnvsv.jpg"
             alt="Yoga and wellness retreat in India focused on mindfulness relaxation and holistic healing"
             fill
+            sizes="100vw"
             className="object-cover"
           />
         </div>
