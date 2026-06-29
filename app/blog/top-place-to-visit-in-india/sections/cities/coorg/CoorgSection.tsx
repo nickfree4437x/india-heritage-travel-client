@@ -20,20 +20,21 @@ export default function CoorgSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779798546/aakash-goel--Zt97RnOWJ8-unsplash_b22otl.jpg"
               alt="Lush coffee plantations and misty hill landscapes in Coorg Karnataka India"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
 
-          <p className="mt-4 text-[12px] md:text-[13px] text-[#8a8a8a]">
+          <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
             via unsplash.com
           </p>
 
         </div>
 
         {/* CONTENT */}
-        <div className="mt-6 max-w-6xl mx-auto">
+        <div className="mt-4 max-w-6xl mx-auto">
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             It is a small-town famous for its coffee plantation and
             breathtaking landscapes. It has cool climate which makes it
             perfect during summers. Here you can do many activities such
@@ -49,15 +50,15 @@ export default function CoorgSection() {
           </p>
 
           {/* LOCATIONS */}
-          <div className="mt-6">
+          <div className="mt-4">
 
             <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
               Top Locations to explore:
             </h3>
 
-            <div className="mt-6 space-y-2">
+            <div className="mt-4 space-y-2">
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Abbey Falls:
                 </span>{" "}
@@ -66,7 +67,7 @@ export default function CoorgSection() {
                 walks and photography.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Dubare Elephant Camp:
                 </span>{" "}
@@ -74,7 +75,7 @@ export default function CoorgSection() {
                 elephants which includes feeding and bathing them.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Madikeri Fort:
                 </span>{" "}
@@ -83,7 +84,7 @@ export default function CoorgSection() {
                 history.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Raja’s Seat:
                 </span>{" "}

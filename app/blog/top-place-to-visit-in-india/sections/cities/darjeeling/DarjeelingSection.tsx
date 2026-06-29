@@ -20,20 +20,21 @@ export default function DarjeelingSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779798801/joy-amed-1I07SYGwuys-unsplash_kavncy.jpg"
               alt="Tea gardens and Himalayan mountain views in Darjeeling West Bengal India"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
 
-          <p className="mt-4 text-[12px] md:text-[13px] text-[#8a8a8a]">
+          <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
             via unsplash.com
           </p>
 
         </div>
 
         {/* CONTENT */}
-        <div className="mt-6 max-w-6xl mx-auto">
+        <div className="mt-4 max-w-6xl mx-auto">
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Know as ‘Queen of Hills’, Darjeeling is a picturesque town
             which is situated between the Himalayas. It produces world’s
             beat teas and has amazing tea gardens. It is perfect for
@@ -46,13 +47,13 @@ export default function DarjeelingSection() {
           </p>
 
           {/* LOCATIONS */}
-          <div className="mt-6">
+          <div className="mt-4">
 
             <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
               Top Locations to explore:
             </h3>
 
-            <div className="mt-8 space-y-5">
+            <div className="mt-4 space-y-2">
 
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
@@ -62,7 +63,7 @@ export default function DarjeelingSection() {
                 Kanchenjunga Range.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Darjeeling Himalayan Railway:
                 </span>{" "}
@@ -71,7 +72,7 @@ export default function DarjeelingSection() {
                 experience.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Batasia Loop:
                 </span>{" "}
@@ -80,7 +81,7 @@ export default function DarjeelingSection() {
                 views of Darjeeling.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Padmaja Naidu Himalayan Zoological Park:
                 </span>{" "}

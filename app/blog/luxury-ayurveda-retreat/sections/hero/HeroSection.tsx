@@ -4,171 +4,204 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  MessageCircle,
-  Facebook,
-  Twitter,
-} from "lucide-react";
+import { MessageCircle, Facebook, Twitter, UserPen } from "lucide-react";
+import { FaWhatsapp, FaPinterestP } from "react-icons/fa";
+
 import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
-import {
-  FaWhatsapp,
-  FaPinterestP,
-} from "react-icons/fa";
+// ============================================================
+// CONSTANTS
+// ============================================================
+
+const SHARE_URL = "https://indiaheritagetravel.com/blog/luxury-ayurveda-retreat";
+const SHARE_TITLE = "Luxury Ayurveda & Wellness Retreats in India - Your Perfect Escape";
+
+// ============================================================
+// SHARE LINKS
+// ============================================================
+
+const shareLinks = [
+  {
+    name: "Facebook",
+    icon: Facebook,
+    href: `https://www.facebook.com/sharer/sharer.php?u=${SHARE_URL}`,
+    ariaLabel: "Share this article on Facebook",
+  },
+  {
+    name: "Twitter",
+    icon: Twitter,
+    href: `https://twitter.com/intent/tweet?url=${SHARE_URL}&text=${SHARE_TITLE}`,
+    ariaLabel: "Share this article on Twitter",
+  },
+  {
+    name: "WhatsApp",
+    icon: FaWhatsapp,
+    href: `https://wa.me/?text=${SHARE_TITLE} ${SHARE_URL}`,
+    ariaLabel: "Share this article on WhatsApp",
+  },
+  {
+    name: "Pinterest",
+    icon: FaPinterestP,
+    href: `https://pinterest.com/pin/create/button/?url=${SHARE_URL}&description=${SHARE_TITLE}`,
+    ariaLabel: "Share this article on Pinterest",
+  },
+];
+
+// ============================================================
+// COMPONENT
+// ============================================================
 
 export default function HeroSection() {
-
-  const shareUrl =
-    "https://indiaheritagetravel.com/blogs/india-food-guide";
-
-  const shareTitle =
-    "Luxury Ayurveda & Wellness Retreats in India – Your Perfect Escape";
-
   return (
     <section className="w-full bg-white">
 
-      {/* HERO IMAGE */}
+      {/* ==========================================
+          HERO IMAGE
+          ========================================== */}
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
 
         <Image
-          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779801053/blog-8_rtahzc.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579801053/blog-8_rtahzc.jpg"
           alt="Luxury Ayurveda retreat in India offering holistic wellness and rejuvenation"
           fill
           priority
+          sizes="100vw"
           className="object-cover"
         />
 
-        {/* OVERLAY */}
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black/35" />
+
       </div>
 
-      <BlogBreadcrumb
-        title="Luxury Ayurveda & Wellness Retreats in India - Your Perfect Escape"
-      />
+      {/* ==========================================
+          BREADCRUMB
+          ========================================== */}
+      <BlogBreadcrumb title="Luxury Ayurveda Retreats in India" />
 
-      {/* CONTENT */}
+      {/* ==========================================
+          CONTENT
+          ========================================== */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
 
         <div className="py-6 sm:py-8 lg:py-8 text-center">
 
-          {/* TITLE */}
-          <h1
-            className="
-              text-[18px] sm:text-[22px] md:text-[26px] tracking-wide text-[#2c2c2c] font-semibold
-              max-w-5xl
-              mx-auto
-            "
-          >
-            Luxury Ayurveda & Wellness Retreats
-            <br/>
-            in India - Your Perfect Escape
+          {/* ----- Title ----- */}
+          <h1 className="
+            text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px]
+            tracking-wide
+            text-[#2c2c2c]
+            font-semibold
+            max-w-5xl
+            mx-auto
+          ">
+            Luxury Ayurveda & Wellness
+            <br />
+            Retreats in India
           </h1>
 
-          {/* DESCRIPTION */}
-          <p
-            className="
-             mt-4
-
-              text-[#5f5f5f]
-
-              text-[13px]
-              leading-5
-
-              sm:text-[14px]
-
-              max-w-4xl
-              mx-auto
-
-              font-light
-            "
-          >
-            If you’re looking for a place where ancient healing meets modern
+          {/* ----- Description ----- */}
+          <p className="
+            mt-4
+            text-[#5f5f5f]
+            text-[12px] sm:text-[13px] md:text-[14px]
+            leading-5 sm:leading-6
+            max-w-4xl
+            mx-auto
+            font-light
+          ">
+            If you're looking for a place where ancient healing meets modern
             luxury, India is the place to be. Discover peaceful wellness
             sanctuaries, Ayurvedic therapies, mindful retreats, and soul-soothing
             experiences designed to restore your body and mind.
           </p>
 
-          {/* LINE */}
-          <div className="w-full h-[1px] bg-[#1f1f1f] mt-7 sm:mt-12" />
+          {/* ----- Divider ----- */}
+          <div className="w-full h-[1px] bg-[#1f1f1f] mt-4 sm:mt-6" />
 
-          {/* META */}
-          <div
-            className="
-              mt-6
+          {/* ----- Meta (Author, Date, Comments, Shares) ----- */}
+          <div className="
+            mt-4
+            flex flex-col gap-4 sm:gap-5
+            sm:flex-row sm:items-center sm:justify-between
+          ">
 
-              flex
-              flex-col
-              gap-5
+            {/* LEFT: Comments + Date + Author */}
+            <div className="
+              flex items-center gap-4 sm:gap-5
+              text-[#6a6a6a]
+              justify-center sm:justify-start
+            ">
 
-              sm:flex-row
-              sm:items-center
-              sm:justify-between
-            "
-          >
-
-            {/* LEFT */}
-            <div className="flex items-center gap-5 text-[#6a6a6a] justify-center sm:justify-start">
-
-              <div className="flex items-center gap-2">
-                <MessageCircle size={17} strokeWidth={1.7} />
-                <span className="text-sm">0</span>
+              {/* Comments */}
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <MessageCircle size={15} strokeWidth={1.7} />
+                <span className="text-[12px] md:text-[13px] font-light">0</span>
               </div>
 
-              <span className="text-sm">
+              {/* Date */}
+              <span className="text-[12px] md:text-[13px] font-light">
                 06 Mar
               </span>
+
+              {/* Author */}
+              <div className="
+                flex items-center justify-center gap-1.5
+                text-[12px] sm:text-[13px] md:text-[14px]
+                font-light
+                text-gray-600
+              ">
+                <UserPen className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-gray-600" />
+                <span className="whitespace-nowrap">
+                  By Isha, India Heritage Travel
+                </span>
+              </div>
+
             </div>
 
-            {/* RIGHT */}
-            <div className="flex items-center gap-5 justify-center sm:justify-end">
+            {/* RIGHT: Share Buttons */}
+            <div className="
+              flex items-center gap-4 sm:gap-5
+              justify-center sm:justify-end
+            ">
 
-              <span className="text-[#555] text-sm">
+              {/* Shares Label */}
+              <span className="text-[#555] text-[12px] md:text-[13px] font-light">
                 Shares :
               </span>
 
-              <div className="flex items-center gap-4 text-black">
+              {/* Icons */}
+              <div className="flex items-center gap-3 sm:gap-4 text-black">
 
-              {/* FACEBOOK */}
-              <Link
-                href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                target="_blank"
-                className="hover:text-[#7C5C38] transition-colors duration-300"
-              >
-                <Facebook size={17} strokeWidth={2} />
-              </Link>
-
-                {/* TWITTER */}
-                <Link
-                  href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareTitle}`}
-                  target="_blank"
-                  className="hover:text-[#7C5C38] transition-colors duration-300"
-                >
-                  <Twitter size={17} strokeWidth={2} />
-                </Link>
-
-                {/* WHATSAPP */}
-                <Link
-                  href={`https://wa.me/?text=${shareTitle} ${shareUrl}`}
-                  target="_blank"
-                  className="hover:text-[#7C5C38] transition-colors duration-300"
-                >
-                  <FaWhatsapp size={17} />
-                </Link>
-
-                {/* PINTEREST */}
-                <Link
-                  href={`https://pinterest.com/pin/create/button/?url=${shareUrl}&description=${shareTitle}`}
-                  target="_blank"
-                  className="hover:text-[#7C5C38] transition-colors duration-300"
-                >
-                  <FaPinterestP size={17} />
-                </Link>
+                {shareLinks.map((link) => {
+                  const Icon = link.icon;
+                  return (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={link.ariaLabel}
+                      className="
+                        hover:text-[#7C5C38]
+                        transition-colors duration-300
+                      "
+                    >
+                      <Icon size={15} />
+                    </Link>
+                  );
+                })}
 
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
   );
 }

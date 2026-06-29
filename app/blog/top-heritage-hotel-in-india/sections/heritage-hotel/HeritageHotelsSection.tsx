@@ -12,19 +12,19 @@ export default function HeritageHotelsSection() {
         {/* INTRO */}
         <div className="max-w-6xl">
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             India is a land where ancient palaces and royal residences
             have been transformed into luxurious heritage hotels.
           </p>
 
-          <p className="mt-8 text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className="mt-8 text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             If your dream is to live in a royal palace then these hotels
             offer a experience like no other. We’ll take you through
             exclusive heritage stays, be it Rajasthan’s regal charm or
             unwinding in a lakeside palace via this India Travel Guide.
           </p>
 
-          <p className="mt-8 text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className="mt-8 text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Let’s dive into the magic of history, comfort, and
             extraordinary hospitality!
           </p>
@@ -32,7 +32,7 @@ export default function HeritageHotelsSection() {
         </div>
 
         {/* SECTION 1 */}
-        <div className="mt-6 sm:mt-8">
+        <div className="mt-4 sm:mt-6">
 
           {/* HEADING */}
           <h2
@@ -46,7 +46,7 @@ export default function HeritageHotelsSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2">
+          <div className="mt-4 space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Have you ever imagined surrounded by breathtaking
@@ -75,19 +75,20 @@ export default function HeritageHotelsSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779816869/subhashis-das-Jmfy_ec20bk-unsplash_kayzmz.jpg"
                 alt="Luxury stay at Taj Lake Palace Udaipur Rajasthan on Lake Pichola"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
 
             </div>
 
-            <p className="mt-2 text-[12px] md:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
               via unsplash.com
             </p>
 
           </div>
 
           {/* EXTRA CONTENT */}
-          <div className="mt-6 max-w-6xl">
+          <div className="mt-4 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               With boat transfers, royal décor, and world-class
@@ -101,7 +102,7 @@ export default function HeritageHotelsSection() {
         </div>
 
         {/* SECTION 2 */}
-        <div className="mt-6 sm:mt-8">
+        <div className="mt-4 sm:mt-6">
 
           {/* HEADING */}
           <h2
@@ -115,7 +116,7 @@ export default function HeritageHotelsSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2">
+          <div className="mt-4 space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               A amazing mixture of Art Deco and Rajasthani
@@ -137,7 +138,7 @@ export default function HeritageHotelsSection() {
           </div>
 
           {/* IMAGE */}
-          <div className="mt-6">
+          <div className="mt-4">
 
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
 
@@ -145,19 +146,20 @@ export default function HeritageHotelsSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779817695/sam-mathews-sYxPnaE_--Q-unsplash_m6og14.jpg"
                 alt="Royal heritage stay at Umaid Bhawan Palace Jodhpur Rajasthan India"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
 
             </div>
 
-            <p className="mt-2 text-[12px] md:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
               via unsplash.com
             </p>
 
           </div>
 
           {/* EXTRA CONTENT */}
-          <div className="mt-6 max-w-6xl">
+          <div className="mt-4 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you want to go back in time while experiencing modern

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AndamanSection() {
   return (
-    <section className="w-full bg-white py-10">
+    <section className="w-full bg-white py-6 md:py-8">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* TITLE */}
@@ -20,20 +20,21 @@ export default function AndamanSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779798166/dileesh-kumar-KbirwZJIq7g-unsplash_riaaph.jpg"
               alt="Pristine beaches and turquoise waters of the Andaman and Nicobar Islands India"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
 
-          <p className="mt-4 text-[12px] md:text-[13px] text-[#8a8a8a]">
+          <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
             via unsplash.com
           </p>
 
         </div>
 
         {/* CONTENT */}
-        <div className="mt-6 max-w-6xl mx-auto">
+        <div className="mt-4 max-w-6xl mx-auto">
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justifyt">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justifyt">
             For water sport lovers these islands are paradise. It has
             cleat turquoise water where tourist can experience scuba
             diving and snorkeling. Here there is rich marine life and
@@ -50,7 +51,7 @@ export default function AndamanSection() {
               Top Locations to explore:
             </h3>
 
-            <div className="mt-6 space-y-2">
+            <div className="mt-4 space-y-2">
 
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
@@ -61,7 +62,7 @@ export default function AndamanSection() {
                 diving and snorkeling.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Neil Island:
                 </span>{" "}
@@ -69,7 +70,7 @@ export default function AndamanSection() {
                 crowd which makes It more peaceful.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Cellular Jail:
                 </span>{" "}
@@ -77,7 +78,7 @@ export default function AndamanSection() {
                 sacrifices made by freedom fighters.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Ross Island:
                 </span>{" "}

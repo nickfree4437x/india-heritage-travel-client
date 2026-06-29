@@ -20,20 +20,21 @@ export default function OotySection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779800023/harshal-more-8dS_mTPZ38w-unsplash_dwlicq.jpg"
               alt="Rolling hills and scenic landscapes of Ooty Tamil Nadu India"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
 
-          <p className="mt-4 text-[12px] md:text-[13px] text-[#8a8a8a]">
+          <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
             via unsplash.com
           </p>
 
         </div>
 
         {/* CONTENT */}
-        <div className="mt-6 max-w-6xl mx-auto">
+        <div className="mt-4 max-w-6xl mx-auto">
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Ooty has vast tea gardens and misty mountains and is also
             known as Udhagamandalam. It has a pleasant weather in
             summers which makes it an ideal time for visiting. Ooty has
@@ -48,13 +49,13 @@ export default function OotySection() {
           </p>
 
           {/* LOCATIONS */}
-          <div className="mt-6">
+          <div className="mt-4">
 
             <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
               Top Locations to explore:
             </h3>
 
-            <div className="mt-6 space-y-2">
+            <div className="mt-4 space-y-2">
 
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
@@ -64,7 +65,7 @@ export default function OotySection() {
                 breathtaking views of the surrounding valleys and hills.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Ooty Lake:
                 </span>{" "}
@@ -73,7 +74,7 @@ export default function OotySection() {
                 park and toy train which is best for families.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Botanical Gardens:
                 </span>{" "}
@@ -83,7 +84,7 @@ export default function OotySection() {
                 attracts thousands of tourists.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Nilgiri Mountain Railway:
                 </span>{" "}

@@ -172,4 +172,13 @@ export const blogs = [
     excerpt:
       "Reviews of the top heritage hotels of Rajasthan, from palace hotels in Udaipur...",
   },
+  {
+    id: 20,
+    slug: "unesco-world-heritage-sites-in-india",
+    title: "India UNESCO World Heritage Sites: A Comprehensive Guide for Travelers",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782714314/pexels-roman-saienko-1867764487-38198571_poijud.jpg",
+    date: "29 June",
+    excerpt:
+      "Discover India’s famous UNESCO World Heritage Sites - from the Taj Mahal to Ha...",
+  },
 ];

@@ -10,7 +10,7 @@ export default function MoreHeritageHotelsSection() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
 
         {/* SECTION 3 */}
-        <div className="py-8">
+        <div className="py-6">
 
           {/* HEADING */}
           <h2
@@ -24,7 +24,7 @@ export default function MoreHeritageHotelsSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2">
+          <div className="mt-4 space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Mandawa Kothi is a boutique heritage hotel situated
@@ -49,7 +49,7 @@ export default function MoreHeritageHotelsSection() {
           </div>
 
           {/* IMAGE */}
-          <div className="mt-6">
+          <div className="mt-4">
 
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
 
@@ -57,12 +57,13 @@ export default function MoreHeritageHotelsSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779818008/26.05.2026_23.22.55_REC_r5r4lb.png"
                 alt="Heritage stay at Mandawa Kothi in the historic Shekhawati region of Rajasthan"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
 
             </div>
 
-            <p className="mt-2 text-[12px] md:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
               via Tripadvisor
             </p>
 
@@ -85,7 +86,7 @@ export default function MoreHeritageHotelsSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2">
+          <div className="mt-4 space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               The Oberoi Grand in Kolkata is a perfect heritage hotel
@@ -115,19 +116,20 @@ export default function MoreHeritageHotelsSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779818164/26.05.2026_23.25.32_REC_r5mtkm.png"
                 alt="Luxury heritage stay at The Oberoi Grand Kolkata West Bengal India"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
 
             </div>
 
-            <p className="mt-2 text-[12px] md:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
               via Tripadvisor
             </p>
 
           </div>
 
           {/* EXTRA TEXT */}
-          <div className="mt-6 max-w-6xl">
+          <div className="mt-4 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you’re booking India Holiday Packages, this hotel
@@ -139,7 +141,7 @@ export default function MoreHeritageHotelsSection() {
         </div>
 
         {/* SECTION 5 */}
-        <div className="mt-6 sm:mt-8">
+        <div className="mt-4 sm:mt-6">
 
           {/* HEADING */}
           <h2
@@ -153,7 +155,7 @@ export default function MoreHeritageHotelsSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2">
+          <div className="mt-4 space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               A masterpiece of Rajput architecture, Rambagh Palace a
@@ -183,19 +185,20 @@ export default function MoreHeritageHotelsSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779818345/26.05.2026_23.28.21_REC_zpqp6x.png"
                 alt="Luxury heritage stay at Rambagh Palace Jaipur Rajasthan India"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
 
             </div>
 
-            <p className="mt-2 text-[12px] md:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
               via taj hotels
             </p>
 
           </div>
 
           {/* EXTRA TEXT */}
-          <div className="mt-6 max-w-6xl">
+          <div className="mt-4 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               You should include this palace in your Luxury India Tours

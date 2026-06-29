@@ -20,20 +20,21 @@ export default function LehLadakhSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779799900/darshan-chudasama-v1oGBUnXVDs-unsplash_exd7os.jpg"
               alt="Leh Ladakh Jammu and Kashmir"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
 
-          <p className="mt-4 text-[12px] md:text-[13px] text-[#8a8a8a]">
+          <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
             via unsplash.com
           </p>
 
         </div>
 
         {/* CONTENT */}
-        <div className="mt-6 max-w-6xl mx-auto">
+        <div className="mt-4 max-w-6xl mx-auto">
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             For travelers looking for adventure and peace, the serene
             landscape of Leh-Ladakh offers another world beauty.
             Summers is the ideal time to visit Leh-Ladakh as the roads
@@ -49,13 +50,13 @@ export default function LehLadakhSection() {
           </p>
 
           {/* LOCATIONS */}
-          <div className="mt-6">
+          <div className="mt-4">
 
             <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
               Top Locations to Visit:
             </h3>
 
-            <div className="mt-6 space-y-2">
+            <div className="mt-4 space-y-2">
 
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
@@ -67,7 +68,7 @@ export default function LehLadakhSection() {
                 photography.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Nubra Valley:
                 </span>{" "}
@@ -77,7 +78,7 @@ export default function LehLadakhSection() {
                 ancient Diskit Monastery.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Leh Palace:
                 </span>{" "}
@@ -86,7 +87,7 @@ export default function LehLadakhSection() {
                 Kangri mountains and the Ladakh mountain range.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Hemis Monastery:
                 </span>{" "}

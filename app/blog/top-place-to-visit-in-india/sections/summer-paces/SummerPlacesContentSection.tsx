@@ -4,15 +4,15 @@ import Image from "next/image";
 
 export default function SummerPlacesContentSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white py-2">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* INTRO */}
         <div className="max-w-6xl mx-auto">
 
-          <div className="space-y-8">
+          <div className="space-y-4">
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               As the summer hitting hard in India, May is the beautiful
               time to explore the amazing beauties and rich experiences
               of this incredible country. Here you’ll find everything,
@@ -25,7 +25,7 @@ export default function SummerPlacesContentSection() {
               perfectly selected destinations serve all your tastes.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               So here are top 10 places to visit in India during summer
               for a perfect vacation mixed of relaxation, culture and
               thrilling activities.
@@ -49,13 +49,14 @@ export default function SummerPlacesContentSection() {
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779796837/vishy-9ttisCSNCOc-unsplash_oplhri.jpg"
-                alt="Manali Himachal Pradesh"
+                alt="Snow-capped Himalayan peaks and pine forests overlooking the scenic Kullu Valley in Manali Himachal Pradesh"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
 
-            <p className="mt-4 text-[12px] md:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
               via unsplash.com
             </p>
 
@@ -64,7 +65,7 @@ export default function SummerPlacesContentSection() {
           {/* CONTENT */}
           <div className="mt-6 md:mt-6 max-w-6xl mx-auto">
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Manali is in the Beas River Valley, and it is a beautiful
               destination for those who are looking for bother
               relaxation and adventure activities. Summer is the ideal
@@ -87,7 +88,7 @@ export default function SummerPlacesContentSection() {
                 Top Locations to explore:
               </h3>
 
-              <div className="mt-6 space-y-2">
+              <div className="mt-4 space-y-2">
 
                 <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                   <span className="font-semibold text-[#222]">

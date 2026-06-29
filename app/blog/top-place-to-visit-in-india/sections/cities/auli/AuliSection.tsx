@@ -20,20 +20,21 @@ export default function AuliSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779798339/aniket-mandish-3cunzsPf3U4-unsplash_ro4pxv.jpg"
               alt="Snow covered mountains and scenic landscapes in Auli Uttarakhand India"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
 
-          <p className="mt-4 text-[12px] md:text-[13px] text-[#8a8a8a]">
+          <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
             via unsplash.com
           </p>
 
         </div>
 
         {/* CONTENT */}
-        <div className="mt-6 max-w-6xl mx-auto">
+        <div className="mt-4 max-w-6xl mx-auto">
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justifyt">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justifyt">
             It is also known as ‘Skiing Destination of India’. During
             summers it transforms into amazing green meadow which offers
             beautiful views of Nanda Devi range. If you’re a nature
@@ -46,13 +47,13 @@ export default function AuliSection() {
           </p>
 
           {/* LOCATIONS */}
-          <div className="mt-6">
+          <div className="mt-4">
 
             <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
               Top Locations to explore:
             </h3>
 
-            <div className="mt-8 space-y-5">
+            <div className="mt-4 space-y-2">
 
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
@@ -62,7 +63,7 @@ export default function AuliSection() {
                 It is a perfect spot for relaxation and photography.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Gurso Bugyal:
                 </span>{" "}
@@ -70,7 +71,7 @@ export default function AuliSection() {
                 stunning views of the surrounding peaks.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Chattrakund:
                 </span>{" "}
@@ -79,7 +80,7 @@ export default function AuliSection() {
                 surroundings.
               </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 <span className="font-semibold text-[#222]">
                   Kwani Bugyal:
                 </span>{" "}
