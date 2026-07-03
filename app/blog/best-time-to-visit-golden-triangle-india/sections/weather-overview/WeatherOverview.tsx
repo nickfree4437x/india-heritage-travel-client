@@ -127,56 +127,17 @@ export default function WeatherOverview() {
   ];
 
   return (
-    <section className="w-full bg-white py-2 sm:py-4">
+    <section className="w-full bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
-
-        {/* ===== QUICK ANSWER ===== */}
-        <div className=" mb-8 bg-white">
-
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold mb-3">
-            Best Time to Visit the Golden Triangle
-          </h2>
-
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light mb-3">
-            The best time to visit the Golden Triangle is from{' '}
-            <span className=" text-[#c9a45c]">October through March</span>, when temperatures remain comfortable, skies are clearer, and sightseeing conditions are at their best.
-          </p>
-
-          <p className="text-gray-600 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
-            <span className="font-medium">November to February</span> offers the most pleasant weather, while{' '}
-            <span className="font-medium">October and March</span> provide an excellent shoulder-season balance.
-          </p>
-        </div>
-
-        {/* ===== SEASON SNAPSHOT ===== */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
-          {seasonCards.map((season, idx) => (
-            <div
-              key={idx}
-              className="border border-gray-200 rounded-lg p-4 text-center bg-white transition-colors duration-200"
-            >
-              <h3 className="text-[18px] sm:text-[20px] font-bold text-[#c9a45c]">
-                {season.months}
-              </h3>
-              <p className="text-[11px] sm:text-[12px] text-gray-500 mt-1">
-                {season.label}
-              </p>
-            </div>
-          ))}
-        </div>
 
         {/* ===== WEATHER TABLE ===== */}
         <div className="mb-6">
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold mb-2">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-bold mb-4">
             Weather Overview
           </h2>
 
-          <p className="text-gray-500 text-[13px] sm:text-[14px] font-light mb-6">
-            Compare weather, crowds, and travel experience month by month.
-          </p>
-
           {/* Desktop Table */}
-          <div className="hidden lg:block overflow-x-auto border border-[#e7dfd4] rounded-lg">
+          <div className="hidden lg:block overflow-x-auto rounded-md">
             <table className="w-full text-left">
               <thead className="bg-[#faf7f3]">
                 <tr>
@@ -207,9 +168,8 @@ export default function WeatherOverview() {
                         idx % 2 === 0 ? "bg-white" : "bg-[#fcfbf9]"
                       }`}
                     >
-                      <td className="px-4 py-3 text-[13px] font-medium text-[#2c2c2c]">
+                      <td className="px-4 py-3 text-[13px] text-[#2c2c2c]">
                         <span className="flex items-center gap-2">
-                          <Icon size={14} className="text-[#c9a45c]" />
                           {item.month}
                         </span>
                       </td>
@@ -224,7 +184,7 @@ export default function WeatherOverview() {
                       </td>
                       <td className="px-4 py-3">
                         <span
-                          className={`px-3 py-1 rounded-full text-[11px] font-medium ${getBadgeStyles(
+                          className={`px-3 py-1 rounded-full text-[11px] ${getBadgeStyles(
                             item.recommendation
                           )}`}
                         >
@@ -245,7 +205,7 @@ export default function WeatherOverview() {
               return (
                 <div
                   key={item.month}
-                  className="border border-[#e7dfd4] rounded-lg p-4 bg-white"
+                  className="border border-gray-00 rounded-md p-4 bg-white"
                 >
                   <div className="flex justify-between items-center mb-2">
                     <div className="flex items-center gap-2">

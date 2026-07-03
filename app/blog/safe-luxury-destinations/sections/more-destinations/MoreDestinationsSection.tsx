@@ -3,6 +3,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MoreDestinationsSection() {
   return (
@@ -294,6 +295,39 @@ export default function MoreDestinationsSection() {
             designed journeys that respect local culture while keeping
             comfort and safety at the centre.
           </p>
+        </div>
+        <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
+
+          <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+            Looking for a Safe Luxury Destination?
+          </h3>
+
+          <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light mb-4">
+            India Heritage Travel designs personalised journeys that combine luxury, safety, and comfort with authentic cultural experiences, trusted local recommendations, and expert travel guidance throughout your trip.
+          </p>
+
+          <Link
+            href="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              rounded-md
+              bg-[#AF956C]
+              px-6
+              py-2 md:py-2.5
+              text-[12px]
+              sm:text-[13px]
+              font-light
+              text-white
+              transition-colors
+              duration-300
+              hover:bg-[#9d8157]
+            "
+          >
+            Plan Your India Journey
+          </Link>
+
         </div>
       </div>
     </section>

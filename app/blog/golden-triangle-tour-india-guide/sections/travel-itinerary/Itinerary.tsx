@@ -144,7 +144,7 @@ export default function IntroSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-2 sm:py-2">
+    <section className="w-full bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         
         {/* ===== ITINERARY SECTION ===== */}
@@ -152,7 +152,7 @@ export default function IntroSection() {
           {/* Header with decorative line */}
           <div className="flex items-center gap-4 mb-8">
             <div>
-              <h2 className="text-[18px] sm:text-[22px] md:text-[24px] tracking-wide text-[#2c2c2c] font-semibold">
+              <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-bold">
                 Suggested 6-Day Itinerary
               </h2>
               <p className="text-[12px] text-gray-500 font-light mt-0.5">
@@ -163,35 +163,24 @@ export default function IntroSection() {
 
           {/* Timeline */}
           <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-[15px] sm:left-[20px] top-0 bottom-0 w-px bg-[#c9a45c]/30 to-transparent" />
 
             <div className="space-y-6">
               {itinerary.map((item, idx) => {
                 const Icon = item.icon;
                 return (
                   <div key={idx} className="relative flex gap-4 sm:gap-6 group">
-                    {/* Timeline dot */}
-                    <div className="relative z-10 flex-shrink-0">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-[#c9a45c] to-[#a8843a] flex items-center justify-center shadow-sm shadow-[#c9a45c]/20">
-                        <span className="text-white text-[10px] sm:text-[11px] font-bold">
-                          {idx + 1}
-                        </span>
-                      </div>
-                    </div>
 
                     {/* Content card */}
-                    <div className="flex-1 bg-white rounded-xl p-4 sm:p-5 shadow-sm transition-shadow duration-300 border border-gray-200/50 hover:border-[#c9a45c]/20">
+                    <div className="flex-1 bg-white rounded-xl p-4 sm:p-5 transition-shadow duration-300 border border-gray-200/50 hover:border-[#c9a45c]/20">
                       <div className="flex flex-wrap items-center gap-2 mb-1.5">
                         <span className="text-[#c9a45c] font-semibold text-[13px] sm:text-[14px]">
                           {item.day}
                         </span>
-                        <span className="w-px h-4 bg-gray-300" />
                         <h3 className="text-[14px] sm:text-[15px] font-medium text-[#2c2c2c]">
                           {item.title}
                         </h3>
                       </div>
-                      <p className="text-gray-600 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light">
+                      <p className="text-gray-600 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
                         {item.description}
                       </p>
                     </div>
@@ -200,62 +189,7 @@ export default function IntroSection() {
               })}
             </div>
           </div>
-
-          {/* Footer note */}
-          <div className="mt-8 p-4 sm:p-5 bg-gradient-to-r from-[#c9a45c]/5 to-transparent rounded-xl border border-[#c9a45c]/10">
-            <p className="text-gray-600 text-[12px] sm:text-[13px] font-light italic flex items-start gap-2">
-              This itinerary can be compressed to 5 days or extended to 8-10 days depending on pace preference, and we customize the sequence and pacing for every client based on travel style, mobility, and interests.
-            </p>
-          </div>
         </div>
-
-        {/* ===== WHY BOOK SECTION ===== */}
-        <div>
-          {/* Header */}
-          <div className="flex items-center gap-4 mb-4">
-            <div>
-              <h2 className="text-[18px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold">
-                Why Book With India Heritage Travel
-              </h2>
-              <p className="text-[12px] text-gray-500 font-light mt-0.5">
-                What makes us different from the rest
-              </p>
-            </div>
-          </div>
-
-          {/* Description */}
-          <p className="text-gray-600 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light mb-8 bg-gray-50 p-5 rounded-xl border border-gray-100">
-            There are a dozen ways to arrange a Golden Triangle tour – budget tour operators, generic OTA, or an independent arrangement. However, the deciding factor that determines whether your trip will turn out memorable or otherwise is usually the person responsible for its arrangement.
-          </p>
-
-          {/* Reasons Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-            {reasons.map((reason, idx) => {
-              const Icon = reason.icon;
-              return (
-                <div
-                  key={idx}
-                  className="group bg-white rounded-xl p-5 sm:p-6 border border-gray-200 hover:shadow-sm transition-all duration-300"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#c9a45c]/10 to-[#a8843a]/10 flex items-center justify-center transition-all duration-300">
-                      <Icon size={18} className="text-[#c9a45c] transition-colors duration-300" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-[14px] sm:text-[15px] font-semibold text-[#2c2c2c] mb-1">
-                        {reason.title}
-                      </h3>
-                      <p className="text-gray-500 text-[12px] sm:text-[13px] leading-relaxed font-light">
-                        {reason.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
       </div>
     </section>
   );

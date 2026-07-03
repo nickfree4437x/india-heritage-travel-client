@@ -11,14 +11,14 @@ const blogs = [
   {
     title:
       "From Chaos to Bliss: How the Right India Travel Agency Can Flip....",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779639547/blog-5_kpbanj.jpg",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782731045/pexels-daciana-cristina-visan-2149801141-31301782_xtgnau.jpg",
     date: "29 Nov",
     slug: "chaos-your-journeys",
   },
   {
     title:
       "The Ultimate First-Time Traveler's Guide to India",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637895/blog-3_dksm9v.jpg",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782540276/pexels-soubhagya23-17685500_tihzeu.jpg",
     date: "Dec 10",
     slug: "indian-traveler-guide",
   },

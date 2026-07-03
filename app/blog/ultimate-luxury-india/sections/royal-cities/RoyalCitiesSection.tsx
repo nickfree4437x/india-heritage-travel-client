@@ -45,11 +45,12 @@ export default function RoyalCitiesSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821522/aditya-siva-3P1G67zNyCI-unsplash_rua44s.jpg"
                 alt="Majestic forts royal palaces and vibrant culture in Jaipur Rajasthan India"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
 
-            <p className="mt-2 text-[12px] md:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
               via unsplash
             </p>
 
@@ -96,7 +97,7 @@ export default function RoyalCitiesSection() {
         </div>
 
         {/* DAY 7-8 */}
-        <div className="mt-4 md:mt-4">
+        <div className="mt-2 md:mt-2">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             Day 7-8: Udaipur – The City of Lakes
@@ -132,11 +133,12 @@ export default function RoyalCitiesSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821653/vivek-1pNm4DFts4U-unsplash_bymbbu.jpg"
                 alt="Udaipur the City of Lakes in Rajasthan India"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
 
-            <p className="mt-2 text-[12px] nd:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
               via unsplash
             </p>
 

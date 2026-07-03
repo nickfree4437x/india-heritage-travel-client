@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function JaipurDayTwoSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white py-2">
 
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
@@ -16,7 +16,7 @@ export default function JaipurDayTwoSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               From the City Palace next spot you can visit is the
@@ -64,24 +64,26 @@ export default function JaipurDayTwoSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779827246/prateek-katyal-To6i1FNfsOc-unsplash_di7qqj.jpg"
                 alt="Hawa Mahal Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via unsplash
+            </p>
           </div>
 
         </div>
 
         {/* CAFE PALLADIO */}
-        <div className="mt-6 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             HAVE DINEER AT CAFE PALLADIO
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               After relaxing we went to Cafe Palladio which is a
@@ -113,17 +115,19 @@ export default function JaipurDayTwoSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779826597/27.05.2026_01.46.00_REC_j9pdfx.png"
                 alt="Cafe Palladio Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via unsplash
+            </p>
           </div>
 
         </div>
 
         {/* DAY 2 */}
-        <div className="mt-6 md:mt-10">
+        <div className="mt-4 md:mt-6">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             DAY 2
@@ -175,24 +179,26 @@ export default function JaipurDayTwoSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779826861/27.05.2026_01.50.28_REC_poelp1.png"
                 alt="Maharaniyo Ki Chhatri Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via shutterstock
+            </p>
           </div>
 
         </div>
 
         {/* ALBERT HALL */}
-        <div className="mt-6 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             VISIT ALBERT HALL MUSEUM
           </h3>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Next we visited Albert Hall Museum which is the oldest
@@ -223,20 +229,13 @@ export default function JaipurDayTwoSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779827017/shantanu-agrawal-bzD3CZh4Ixs-unsplash_pynkzu.jpg"
                 alt="Albert Hall Museum Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
-          </div>
-
-          <div className="mt-6">
-
-            <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-              Many locals come here to take pre-wedding photos with the
-              birds. It’s a beautiful spot to pass by for a few snaps.
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via unsplash
             </p>
-
           </div>
 
         </div>

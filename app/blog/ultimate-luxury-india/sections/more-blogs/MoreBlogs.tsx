@@ -17,7 +17,7 @@ const blogs = [
   {
     title:
       "The Ultimate First-Time Traveler’s Guide to India",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779637895/blog-3_dksm9v.jpg",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1582539739/blog-2_ma62qv_msocje.jpg",
     date: "10 Dec",
     slug: "indian-traveller-guide",
   },

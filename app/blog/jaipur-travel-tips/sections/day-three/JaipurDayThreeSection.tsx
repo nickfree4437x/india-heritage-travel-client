@@ -1,10 +1,11 @@
 "use client";
+import Link from "next/link";
 
 import Image from "next/image";
 
 export default function JaipurDayThreeSection() {
   return (
-    <section className="w-full bg-white py-8 pb-16">
+    <section className="w-full bg-white py-8 pb-10 md:pb-12">
 
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
@@ -25,7 +26,7 @@ export default function JaipurDayThreeSection() {
           </h3>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               On our third day in Jaipur, we visited another one of
@@ -54,37 +55,29 @@ export default function JaipurDayThreeSection() {
           <div className="mt-6">
 
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
-
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779824313/meric-dagli-uADXI1v10us-unsplash_rq4uhj.jpg"
                 alt="Amer Fort Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
-          </div>
-
-          <div className="mt-6">
-
-            <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-              Tickets cost 500INR for foreign tourists.
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via unsplash
             </p>
-
           </div>
-
         </div>
 
         {/* PANNA MEENA */}
-        <div className="mt-6 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             VISIT PANNA MEENA KA KUND (STEPWELL)
           </h3>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-5xl">
+          <div className="mt-4 space-y-2 max-w-5xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Next we visited Panna Meena ka Kund which is famous for
@@ -119,29 +112,29 @@ export default function JaipurDayThreeSection() {
           <div className="mt-6">
 
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
-
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779824736/damini-NBqK1qLisrE-unsplash_nr2xe1.jpg"
                 alt="Panna Meena Ka Kund Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via unsplash
+            </p>
           </div>
-
         </div>
 
         {/* JAGAT SHIROMANI */}
-        <div className="mt-6 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             VISIT JAGAT SHIROMANI TEMPLE
           </h3>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Next we visited the stunning Jagat Shiromani Temple
@@ -169,29 +162,29 @@ export default function JaipurDayThreeSection() {
           <div className="mt-6">
 
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
-
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779827798/27.05.2026_02.05.50_REC_nu2gqf.png"
                 alt="Jagat Shiromani Temple Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via istock
+            </p>
           </div>
-
         </div>
 
         {/* GALTA JI */}
-        <div className="mt-4 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             SPEND AFTERNOON AT GALTA JI (MONKEY TEMPLE)
           </h3>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               After spending our morning in Amer, it’s time to head
@@ -228,29 +221,29 @@ export default function JaipurDayThreeSection() {
           <div className="mt-6">
 
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
-
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825046/pexels-axp-photography-500641970-16738838_fvfxod.jpg"
                 alt="Galta Ji Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via unsplash
+            </p>
           </div>
-
         </div>
 
         {/* ONCE UPON A TIME */}
-        <div className="mt-6 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             HAVE LINCH AT ONCE UPON A TIME @ THE BAGH
           </h3>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Now if you want a cool place for lunch, this
@@ -285,24 +278,25 @@ export default function JaipurDayThreeSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825224/27.05.2026_01.23.02_REC_z5yzl6.png"
                 alt="Once Upon A Time Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via thebagh
+            </p>
           </div>
-
         </div>
 
         {/* GAITOR */}
-        <div className="mt-6 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             EVENING AT GAITOR KI CHHATRIYAN (ROYAL GAITOR)
           </h3>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Gatore Ki Chhatriyan is royal crematorium situated on
@@ -336,22 +330,54 @@ export default function JaipurDayThreeSection() {
 
           {/* IMAGE */}
           <div className="mt-6">
-
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560] rounded-sm overflow-hidden shadow-md">
-
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825501/pexels-jaipurkachokra-2944561_wfxkcj.jpg"
                 alt="Gaitor Ki Chhatriyan Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via unsplash
+            </p>
           </div>
-
         </div>
+        <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
+          <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+            Planning a Trip to Jaipur?
+          </h3>
+
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">
+             India Heritage Travel designs personalised Jaipur journeys that seamlessly blend luxury, safety, 
+             and comfort with authentic cultural experiences. From exploring majestic forts and royal palaces 
+             to indulging in local cuisine and vibrant bazaars, we curate every detail of your trip.
+          </p>
+
+          <Link
+            href="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              rounded-md
+              bg-[#AF956C]
+              px-6
+              py-1.5 md:py-2
+              text-[12px]
+              sm:text-[13px]
+              font-light
+              text-white
+              transition-colors
+              duration-300
+              hover:bg-[#9d8157]
+            "
+          >
+            Plan Your Jaipur Journey
+          </Link>
+        </div>
       </div>
 
     </section>

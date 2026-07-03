@@ -110,7 +110,7 @@ export default function BestTimeToVisit() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
-        <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
+        <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-bold mb-2">
             Best Time To Visit
         </h2>
 
@@ -122,7 +122,7 @@ export default function BestTimeToVisit() {
         </p>
 
         {/* Desktop Table */}
-        <div className="hidden md:block overflow-hidden rounded-md border border-[#e8dfd4]">
+        <div className="hidden md:block overflow-hidden rounded-md">
 
             <table className="w-full border-collapse">
 
@@ -152,7 +152,7 @@ export default function BestTimeToVisit() {
                     className="hover:bg-[#faf8f5] transition-colors duration-200"
                 >
 
-                    <td className="px-5 py-4 border-b border-[#f0ebe5] text-[13px] font-medium text-[#2c2c2c]">
+                    <td className="px-5 py-4 border-b border-[#f0ebe5] text-[13px] text-[#2c2c2c]">
                     {item.month}
                     </td>
 
@@ -163,7 +163,7 @@ export default function BestTimeToVisit() {
                     <td className="px-5 py-4 border-b border-[#f0ebe5]">
 
                     <span
-                        className={`inline-flex items-center px-3 py-1.5 rounded-full text-[11px] font-medium ${getBadgeClasses(
+                        className={`inline-flex items-center px-3 py-1.5 rounded-full text-[11px] ${getBadgeClasses(
                         item.status
                         )}`}
                     >
@@ -187,7 +187,7 @@ export default function BestTimeToVisit() {
             {bestTimeData.map((item) => (
             <div
                 key={item.month}
-                className="border border-[#e8dfd4] rounded-sm p-4 bg-white"
+                className="rounded-md border border-gray-200 p-4 bg-white"
             >
 
                 <div className="flex items-center justify-between mb-3">
@@ -222,20 +222,6 @@ export default function BestTimeToVisit() {
 
             </div>
             ))}
-
-        </div>
-
-        {/* Bottom Recommendation Box */}
-
-        <div className="mt-8 bg-[#faf7f3] rounded-md p-5">
-            <p className="text-[12px] sm:text-[13px] md:text-[13.5px] text-gray-700 leading-relaxed font-light">
-            October through March is the most recommended period
-            for a Golden Triangle tour, with November, December,
-            January, and February offering the most comfortable
-            daytime sightseeing conditions. Travelers visiting
-            during these months can enjoy pleasant weather,
-            clearer skies, and the best overall travel experience.
-            </p>
 
         </div>
       </div>

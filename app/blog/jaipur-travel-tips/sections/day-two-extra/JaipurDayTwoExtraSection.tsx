@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function JaipurDayTwoExtraSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white mt-2 md:mt-4">
 
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
@@ -16,7 +16,7 @@ export default function JaipurDayTwoExtraSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-5xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               This is one is one of my favourite places in Jaipur.
@@ -45,24 +45,26 @@ export default function JaipurDayTwoExtraSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825828/yash-parashar-_NsZ2xM6tOI-unsplash_ghxr5x.jpg"
                 alt="Panoramic sunset view from Nahargarh Fort Jaipur Rajasthan"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via unsplash
+            </p>
           </div>
 
         </div>
 
         {/* SAMODE PALACE */}
-        <div className="mt-6 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             ENJOY LUNCH AT SAMODE PALACE
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Next we went to a luxurious 300 year old mansion turned
@@ -100,24 +102,26 @@ export default function JaipurDayTwoExtraSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825985/27.05.2026_01.35.50_REC_euopzd.png"
                 alt="Samode Palace Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via istock
+            </p>
           </div>
 
         </div>
 
         {/* NAHARGARH FORT */}
-        <div className="mt-6 md:md-8">
+        <div className="mt-4 md:mt-6">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             ENJOY SUNSET AT NAHARGARH FORT
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-2xl">
+          <div className="mt-4 space-y-2 max-w-2xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               One of the most popular spots in Jaipur is Nahargarh
@@ -147,11 +151,13 @@ export default function JaipurDayTwoExtraSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779826258/surbhi-b-_dyJ15xPwII-unsplash_foqdpd.jpg"
                 alt="Nahargarh Fort Jaipur on an India Heritage Travel tour"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via unsplash
+            </p>
           </div>
 
         </div>

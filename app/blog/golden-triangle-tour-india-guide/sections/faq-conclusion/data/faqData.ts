@@ -55,34 +55,4 @@ export const faqs = [
     answer:
       "Absolutely. Popular extensions include Ranthambore National Park, Udaipur, Varanasi, and Pushkar.",
   },
-  {
-    question:
-      "Is it safe to drink tap water in Delhi, Agra, and Jaipur?",
-    answer:
-      "No. Bottled or filtered water is strongly recommended throughout your trip.",
-  },
-  {
-    question:
-      "What currency should I carry for the Golden Triangle tour?",
-    answer:
-      "Indian Rupees (INR) are recommended for local purchases, tips, and markets. Credit cards are accepted at most hotels and larger restaurants.",
-  },
-  {
-    question:
-      "How far in advance should I book a Golden Triangle tour?",
-    answer:
-      "For travel between October and March, booking 2–3 months in advance is recommended to secure preferred hotels and better rates.",
-  },
-  {
-    question:
-      "Is the Golden Triangle suitable for elderly travelers or those with limited mobility?",
-    answer:
-      "Yes. Itineraries can be customized with a slower pace, and many attractions offer alternatives to extensive walking.",
-  },
-  {
-    question:
-      'What makes a "luxury" Golden Triangle tour different from a standard one?',
-    answer:
-      "Luxury tours generally include heritage palace hotels, private chauffeurs, specialist guides, skip-the-line experiences, and fully customized itineraries.",
-  },
 ];

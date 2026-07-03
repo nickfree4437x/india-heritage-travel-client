@@ -1,15 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DelhiExtraGuideSection() {
   return (
-    <section className="w-full bg-white py-8 pb-14">
+    <section className="w-full bg-white py-4 md:py-6 pb-10 md:pb-12">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* DAY TRIPS */}
-        <div className="mb-10">
+        <div>
 
           {/* CONTENT */}
           <div className="max-w-6xl">
@@ -51,11 +52,13 @@ export default function DelhiExtraGuideSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821261/jovyn-chamb-iWMfiInivp4-unsplash_atjf9m.jpg"
                 alt="Taj Mahal in Agra a must visit day trip from Delhi"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[12px] md:text-[13px] text-gray-700 font-light">
+              via unsplash
+            </p>
           </div>
 
         </div>
@@ -102,9 +105,10 @@ export default function DelhiExtraGuideSection() {
                 fill
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[12px] md:text-[13px] text-gray-700 font-light">
+              via unsplash
+            </p>
           </div>
 
         </div>
@@ -138,7 +142,7 @@ export default function DelhiExtraGuideSection() {
           {/* CONTENT */}
           <div className="max-w-6xl">
 
-            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
               Shop Smart
               and Souvenir
               Savvy
@@ -172,11 +176,13 @@ export default function DelhiExtraGuideSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779829059/zoshua-colah-YAGz_eGSkJA-unsplash_wzk8ym.jpg"
                 alt="Bustling Delhi market known for shopping handicrafts and souvenirs"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
-
+            <p className="mt-2 text-[12px] md:text-[13px] text-gray-700 font-light">
+              via unsplash
+            </p>
           </div>
 
         </div>
@@ -201,6 +207,42 @@ export default function DelhiExtraGuideSection() {
             help you make the most of your time in this
             incredible city.
           </p>
+        </div>
+
+        <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
+
+          <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+            Planning a Trip to Delhi?
+          </h3>
+
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 text-justify leading-relaxed font-light mb-4">
+            India Heritage Travel designs personalised Delhi journeys that seamlessly blend luxury, safety, 
+            and comfort with authentic cultural experiences. From exploring iconic landmarks like the Red 
+            Fort and Qutub Minar to savouring the city's diverse culinary scene and bustling markets, we 
+            curate every detail of your trip.
+          </p>
+
+          <Link
+            href="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              rounded-md
+              bg-[#AF956C]
+              px-6
+              py-1.5 md:py-2
+              text-[12px]
+              sm:text-[13px]
+              font-light
+              text-white
+              transition-colors
+              duration-300
+              hover:bg-[#9d8157]
+            "
+          >
+            Plan Your Delhi Journey
+          </Link>
 
         </div>
 

@@ -21,7 +21,7 @@ export default function DishesSection() {
 
         {/* Content */}
         <div className="max-w-6xl">
-          <div className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <div className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             <p>
               Butter chicken feels cliché since it's everywhere,
               but the creamy tomato sauce isn't spicy enough to
@@ -77,7 +77,7 @@ export default function DishesSection() {
           h-[280px] sm:h-[420px] lg:h-[560px]
           rounded-sm
           overflow-hidden
-          mt-6 md:mt-8
+          mt-6
         ">
           <Image
             src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779636756/bhature_ihez4y.jpg"

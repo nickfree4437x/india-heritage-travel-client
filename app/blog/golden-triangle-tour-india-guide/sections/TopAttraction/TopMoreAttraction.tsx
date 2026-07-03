@@ -9,9 +9,9 @@ export default function IntroSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Taj Mahal Section */}
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Amber Fort (Jaipur)
           </h2>
 
@@ -34,7 +34,7 @@ export default function IntroSection() {
             opposed to touts who wait at the base.
           </p>
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-            <strong className="font-semibold">Best Time</strong> - Early morning hours between 8:00 – 10:00 AM.
+            <strong className="font-semibold">Best Time</strong> - Early morning hours between 8:00 - 10:00 AM.
           </p>
 
           {/* IMAGE */}
@@ -43,6 +43,7 @@ export default function IntroSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781947326/amber_fort_jaipur_pt5ppg.jpg"
               alt="Amber Fort Jaipur Rajasthan – Majestic Hilltop Fort on the Golden Triangle Tour India"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
@@ -52,10 +53,10 @@ export default function IntroSection() {
         </div>
 
         {/* Agra Fort Section */}
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Hawa Mahal (Jaipur)
           </h2>
 
@@ -83,6 +84,7 @@ export default function IntroSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781947692/hawa_mahal_jaipur_ym1tye.jpg"
               alt="Hawa Mahal Jaipur Rajasthan - Iconic Palace of Winds on the Golden Triangle Tour India"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
@@ -92,10 +94,10 @@ export default function IntroSection() {
         </div>
 
         {/* Red Fort Delhi */}
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             City Palace, Jaipur
           </h2>
 
@@ -120,6 +122,7 @@ export default function IntroSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781947912/city_palace_jaipur_i13ky1.jpg"
               alt="City Palace Jaipur Rajasthan – Royal Residence and Heritage Attraction on the Golden Triangle Tour India"
               fill
+              sizes="100vw"
               className="object-cover"
             />
 
@@ -130,10 +133,10 @@ export default function IntroSection() {
         </div>
 
         {/* Red Fort Delhi */}
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Jantar Mantar, Jaipur
           </h2>
 
@@ -163,6 +166,7 @@ export default function IntroSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781948564/jantar_mantar_jaipur_j28a9w.jpg"
               alt="Jantar Mantar Jaipur Rajasthan – UNESCO World Heritage Observatory on the Golden Triangle Tour India"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>

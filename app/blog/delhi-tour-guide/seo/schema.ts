@@ -1,0 +1,89 @@
+// ============================================
+// CONSTANTS
+// ============================================
+const BASE_URL = "https://indiaheritagetravel.com";
+const BLOG_URL = `${BASE_URL}/blog/delhi-tour-guide`;
+const IMAGE_URL =
+  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779828252/blog-12_dxeh3u.jpg";
+const LOGO_URL =
+  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
+
+// ============================================
+// BREADCRUMB SCHEMA
+// ============================================
+export const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: BASE_URL,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Blog",
+      item: `${BASE_URL}/blog`,
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "New Delhi Travel Guide",
+      item: BLOG_URL,
+    },
+  ],
+};
+
+// ============================================
+// ARTICLE SCHEMA
+// ============================================
+export const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline:
+    "New Delhi Travel Guide: Essential Tips, Attractions & Local Experiences",
+  description:
+    "Plan your New Delhi trip with this complete travel guide covering iconic attractions, local experiences, cultural insights, food recommendations, safety tips, and practical advice for first-time visitors.",
+  image: IMAGE_URL,
+  author: {
+    "@type": "Organization",
+    name: "India Heritage Travel",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "India Heritage Travel",
+    logo: {
+      "@type": "ImageObject",
+      url: LOGO_URL,
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": BLOG_URL,
+  },
+};
+
+// ============================================
+// WEBPAGE SCHEMA
+// ============================================
+export const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "New Delhi Travel Guide",
+  description:
+    "Explore New Delhi with practical travel tips, iconic attractions, local experiences, cultural insights, food recommendations, and essential advice for first-time visitors.",
+  url: BLOG_URL,
+};
+
+// ============================================
+// ORGANIZATION SCHEMA
+// ============================================
+export const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "India Heritage Travel",
+  url: BASE_URL,
+  logo: LOGO_URL,
+};

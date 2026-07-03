@@ -67,7 +67,7 @@ export const metadata: Metadata = {
       "Learn how expert travel planning, local knowledge, personalized itineraries, and trusted guidance can transform your India journey into a smooth and unforgettable experience.",
     images: [
       {
-        url: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779639547/blog-5_kpbanj.jpg",
+        url: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782731045/pexels-daciana-cristina-visan-2149801141-31301782_xtgnau.jpg",
         width: 1200,
         height: 630,
         alt: "How the Right India Travel Agency Can Transform Your Journey",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     description:
       "Discover how the right travel agency can make planning easier and create a more meaningful travel experience in India.",
     images: [
-      "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779639547/blog-5_kpbanj.jpg",
+      "https://res.cloudinary.com/dja5yspwr/image/upload/v1782731045/pexels-daciana-cristina-visan-2149801141-31301782_xtgnau.jpg",
     ],
   },
 };

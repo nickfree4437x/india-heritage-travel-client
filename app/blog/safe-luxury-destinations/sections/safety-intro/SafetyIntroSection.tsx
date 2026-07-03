@@ -45,7 +45,7 @@ export default function SafetyIntroSection() {
         <div className="mt-6 sm:mt-8">
           {/* Heading */}
           <h2 className="
-            text-[18px] sm:text-[22px] md:text-[24px]
+            text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
             text-[#2c2c2c]
             font-semibold
@@ -115,7 +115,7 @@ export default function SafetyIntroSection() {
             overflow-hidden
           ">
             <Image
-              src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782535595/pexels-miriamespacio-18275080_vjubws.jpg"
+              src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782731573/pexels-miriamespacio-18275080_vjubws.jpg"
               alt="Solo female traveler exploring cultural destinations across India"
               fill
               sizes="100vw"
@@ -126,6 +126,7 @@ export default function SafetyIntroSection() {
             via pexels
           </p>
         </div>
+        
       </div>
     </section>
   );

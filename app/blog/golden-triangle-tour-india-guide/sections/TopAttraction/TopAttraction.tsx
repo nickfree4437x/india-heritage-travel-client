@@ -9,12 +9,12 @@ export default function IntroSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Taj Mahal Section */}
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-bold mb-2">
             Top Attractions in Delhi, Agra & Jaipur
           </h2>
-          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Taj Mahal (Agra)
           </h2>
 
@@ -34,7 +34,7 @@ export default function IntroSection() {
           </p>
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
             <strong className="font-semibold">Tips for Visitors</strong> - Buy your ticket online via ASI website before you arrive so as to avoid waiting in
-            long lines. Security checks are quite rigorous — no food, books or large bags can be brought along
+            long lines. Security checks are quite rigorous - no food, books or large bags can be brought along
             to the site. Visiting at sunrise would mean cooler temperature and softer lighting on the white
             marble
           </p>
@@ -49,6 +49,7 @@ export default function IntroSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781942687/taj_mahal_sunrise_ozulzc.jpg"
               alt="Taj Mahal at Sunrise, Agra – Iconic Attraction on the Golden Triangle Tour India"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
@@ -59,10 +60,10 @@ export default function IntroSection() {
         </div>
 
         {/* Agra Fort Section */}
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Agra Fort (Agra)
           </h2>
 
@@ -89,6 +90,7 @@ export default function IntroSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781942951/agra_fort_g3fvgs.jpg"
               alt="Agra Fort in Agra India – UNESCO World Heritage Site on the Golden Triangle Tour"
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
@@ -104,10 +106,10 @@ export default function IntroSection() {
         </div>
 
         {/* Red Fort Delhi */}
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Red Fort (Delhi)
           </h2>
 
@@ -137,6 +139,7 @@ export default function IntroSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781943931/red_fort_delhi_pbk2jm.jpg"
               alt="Red Fort Delhi India – Historic Mughal Landmark on the Golden Triangle Tour"
               fill
+              sizes="100vw"
               className="object-cover"
             />
 
@@ -147,10 +150,10 @@ export default function IntroSection() {
         </div>
 
         {/* Red Fort Delhi */}
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[18px] md:text-[20px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Qutub Minar (Delhi)
           </h2>
 
@@ -180,6 +183,7 @@ export default function IntroSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781947015/qutub_minar_delhi_urmmne.jpg"
               alt="Qutub Minar Delhi India – UNESCO World Heritage Site on the Golden Triangle Tour"
               fill
+              sizes="100vw"
               className="object-cover"
             />
 

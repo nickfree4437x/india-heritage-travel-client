@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SpiritualFinaleSection() {
   return (
-    <section className="w-full bg-white pb-14">
+    <section className="w-full bg-white pb-10 md:pb-12">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* DAY 9-10 */}
@@ -15,7 +16,7 @@ export default function SpiritualFinaleSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               As soon you arrive to the{" "}
@@ -50,11 +51,12 @@ export default function SpiritualFinaleSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821802/shiv-prasad-OPWM488DfeQ-unsplash_b8odle.jpg"
                 alt="Ancient ghats spiritual traditions and Ganges river views in Varanasi Uttar Pradesh India"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
 
-            <p className="mt-2 text-[12px] md:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
               via unsplash
             </p>
 
@@ -93,14 +95,14 @@ export default function SpiritualFinaleSection() {
         </div>
 
         {/* GHATS */}
-        <div className="mt-6 md:mt-8">
+        <div className="">
 
-          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h3 className="text-[15px] sm:text-[15px] md:text-[18px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             Ghats:- The Ghats are the big steps that led down to the
             banks of the Ganges.
           </h3>
 
-          <div className="mt-6 space-y-2">
+          <div className="mt-4 space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               You have to start your day early morning before Sun rise
@@ -138,42 +140,42 @@ export default function SpiritualFinaleSection() {
         </div>
 
         {/* FINAL CTA */}
-        <div className="mt-6 md:mt-8 rounded-md bg-white border border-[#ebe4d9] p-6 sm:p-8 lg:p-10 shadow-sm">
+        <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
-            Your Luxury Journey Awaits!
-          </h2>
+        <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+          Experience the Ultimate Luxury in India?
+        </h3>
 
-          <div className="mt-6 space-y-4">
+        <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">
+          India Heritage Travel curates bespoke luxury journeys that redefine opulence, comfort, and exclusivity 
+          across India. From staying in heritage palaces and world-class resorts to private guided tours of 
+          iconic landmarks and hidden gems, we craft every moment with precision. 
+        </p>
 
-            <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-              This is more than just a trip; it’s a journey of
-              unforgettable experiences.
-            </p>
+        <Link
+          href="/contact"
+          className="
+            inline-flex
+            items-center
+            justify-center
+            rounded-md
+            bg-[#AF956C]
+            px-6
+            py-1.5 md:py-2
+            hover:shadow-sm
+            text-[12px]
+            sm:text-[13px]
+            font-light
+            text-white
+            transition-colors
+            duration-300
+            hover:bg-[#9d8157]
+          "
+        >
+          Plan Your Luxury India Journey
+        </Link>
 
-            <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-              Whether you’re looking for Customized India Travel
-              Packages, Rajasthan Tour Packages, or Yoga and Ayurveda
-              Tours in India, Luxury India Tour we make sure you travel
-              in comfort and style.
-            </p>
-
-            <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-              Let{" "}
-              <span className="font-semibold text-[#111]">
-                India Heritage Travel
-              </span>
-              , the Best Travel Agency in India, design your perfect
-              Luxury India Tour.
-            </p>
-
-            <p className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
-              Book Now & Experience India Like Never Before!
-            </p>
-
-          </div>
-
-        </div>
+      </div>
 
       </div>
     </section>

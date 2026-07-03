@@ -46,13 +46,8 @@ export default function SummerSeason() {
 
         {/* ===== SECTION HEADER ===== */}
         <div className="mb-8">
-          <div className="flex items-center gap-2 mb-1">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-[#c9a45c]">
-              Budget Travel Season
-            </span>
-          </div>
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold mb-3">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-bold mb-3">
             Golden Triangle in Summer (April-June)
           </h2>
 
@@ -107,29 +102,6 @@ export default function SummerSeason() {
             <p className="text-[12px] text-gray-500 font-light mt-1">
               ★★★☆☆ Best for budget travelers
             </p>
-          </div>
-        </div>
-
-        {/* ===== HIGHLIGHTS ===== */}
-        <div className="mb-10">
-          <h3 className="text-[16px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-4">
-            What to Expect in Summer
-          </h3>
-
-          <div className="space-y-3">
-            {highlights.map((item, idx) => (
-              <div
-                key={idx}
-                className=" hover:border-[#b85d00] transition-colors duration-200"
-              >
-                <h4 className="text-[14px] sm:text-[15px] font-medium text-[#2c2c2c] mb-1">
-                  {item.title}
-                </h4>
-                <p className="text-gray-600 text-[13px] sm:text-[14px] leading-relaxed font-light">
-                  {item.description}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function JaipurGuideIntroSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white py-2">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* INTRO */}
@@ -58,17 +58,20 @@ export default function JaipurGuideIntroSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779827246/prateek-katyal-To6i1FNfsOc-unsplash_di7qqj.jpg"
                 alt="Hawa Mahal Jaipur - Jaipur Travel Tips"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
-
             </div>
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
+              via unsplash
+            </p>
 
           </div>
 
         </div>
 
         {/* HOW MANY DAYS */}
-        <div className="mt-6 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
             How many days you need to explore Jaipur?
@@ -123,7 +126,7 @@ export default function JaipurGuideIntroSection() {
               your first time in India.
             </p>
 
-            <p className="text-[20px] sm:text-[22px] leading-[2] text-[#111] font-medium">
+            <p className="text-[18px] sm:text-[20px] leading-[2] text-[#111] font-medium">
               Let’s dive into First-Timer’s Guide to Jaipur.
             </p>
 

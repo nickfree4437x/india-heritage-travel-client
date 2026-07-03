@@ -41,7 +41,7 @@ export const blogs = [
     id: 5,
     slug: "chaos-your-journeys",
     title: "From Chaos to Bliss: How the Right India Travel Agency Can Flip Your Journey",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779639547/blog-5_kpbanj.jpg",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782731045/pexels-daciana-cristina-visan-2149801141-31301782_xtgnau.jpg",
     date: "29 Nov",
     excerpt:
       "You have probably felt that gnawing sense of dread before a big trip: so ...",
@@ -180,5 +180,14 @@ export const blogs = [
     date: "29 June",
     excerpt:
       "Discover India’s famous UNESCO World Heritage Sites - from the Taj Mahal to Ha...",
+  },
+  {
+    id: 21,
+    slug: "the-complete-taj-mahal-travel-guide",
+    title: "The Complete Taj Mahal Travel Guide",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783055150/pexels-ayush-dwivedi-1217090-27374536_wfmxjg.jpg",
+    date: "03 June",
+    excerpt:
+      "Everything you need for a Taj Mahal visit done right - history, ticket prices...",
   },
 ];

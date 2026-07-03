@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function LuxuryIndiaTourSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white py-2">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* INTRO */}
@@ -73,11 +73,12 @@ export default function LuxuryIndiaTourSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821073/laurentiu-morariu-8XZTZIfuNrM-unsplash_jhnu0q.jpg"
                 alt="Historic landmarks cultural heritage and vibrant city life in Delhi India"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
 
-            <p className="mt-2 text-[12px] md:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
               via unsplash
             </p>
 
@@ -154,11 +155,12 @@ export default function LuxuryIndiaTourSection() {
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821261/jovyn-chamb-iWMfiInivp4-unsplash_atjf9m.jpg"
                 alt="Taj Mahal"
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
 
-            <p className="mt-2 text-[12px] md:text-[13px] text-[#8a8a8a]">
+            <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
               via unsplash
             </p>
 

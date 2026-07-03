@@ -4,7 +4,7 @@
 const BASE_URL = "https://indiaheritagetravel.com";
 const BLOG_URL = `${BASE_URL}/blog/chaos-your-journeys`;
 const IMAGE_URL =
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779639547/blog-5_kpbanj.jpg";
+  "https://res.cloudinary.com/dja5yspwr/image/upload/v1782731045/pexels-daciana-cristina-visan-2149801141-31301782_xtgnau.jpg";
 const LOGO_URL =
   "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
 

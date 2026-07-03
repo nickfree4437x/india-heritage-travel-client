@@ -12,14 +12,14 @@ export default function FAQSection() {
   return (
     <section
       id="faqs"
-      className="mb-8 md:py-5"
+      className="mb-8"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
 
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
-            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
+            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-bold mb-2">
             Frequently Asked Questions
             </h2>
 
@@ -40,7 +40,7 @@ export default function FAQSection() {
             return (
                 <div
                 key={index}
-                className="border border-[#e7dfd4] rounded-sm bg-white overflow-hidden transition-all duration-300"
+                className="border border-gray-200 rounded-md bg-white overflow-hidden transition-all duration-300"
                 >
                 <button
                     onClick={() =>
@@ -48,7 +48,7 @@ export default function FAQSection() {
                     }
                     className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left hover:bg-[#faf7f3] transition-colors duration-300"
                 >
-                    <span className="text-[13px] sm:text-[14px] md:text-[15px] font-medium text-[#2c2c2c] leading-relaxed">
+                    <span className="text-[13px] sm:text-[14px] md:text-[15px] text-[#2c2c2c] leading-relaxed">
                     {faq.question}
                     </span>
 
@@ -71,7 +71,7 @@ export default function FAQSection() {
 
                     <div className="px-5 pb-5 border-t border-[#f2ede7]">
 
-                        <p className="pt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light">
+                        <p className="pt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] text-justify font-light">
                         {faq.answer}
                         </p>
 
@@ -82,36 +82,6 @@ export default function FAQSection() {
                 </div>
             );
             })}
-
-        </div>
-
-        {/* Bottom CTA */}
-
-        <div className="mt-8 bg-[#faf7f3] rounded-sm p-5">
-
-            <h3 className="text-[14px] sm:text-[15px] font-semibold text-[#2c2c2c] mb-2">
-            Still Have Questions?
-            </h3>
-
-            <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light">
-            Our travel specialists can help you design the perfect Golden Triangle
-            itinerary based on your travel style, interests, schedule, and
-            preferred level of comfort.{' '}
-            <Link 
-              href="/contact" 
-              className="text-[#c9a45c] hover:text-[#a8843a]  hover:underline transition-colors duration-200"
-            >
-              Contact our travel specialists
-            </Link>{' '}
-            or{' '}
-            <Link 
-              href="/customize-your-journey" 
-              className="text-[#c9a45c] hover:text-[#a8843a] hover:underline transition-colors duration-200"
-            >
-              build your custom tour
-            </Link>
-            .
-          </p>
 
         </div>
       </div>

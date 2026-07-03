@@ -1,6 +1,6 @@
 "use client";
 
-import { Sun, Cloud, Moon, CheckCircle, AlertCircle, Star } from "lucide-react";
+import { CheckCircle, AlertCircle, Star } from "lucide-react";
 
 export default function WinterSeason() {
   const highlights = [
@@ -46,13 +46,13 @@ export default function WinterSeason() {
   ];
 
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white py-2 md:py-4">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* ===== SECTION HEADER ===== */}
         <div className="mb-8">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold mb-3">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-bold mb-2">
             Golden Triangle in Winter (October-March)
           </h2>
 
@@ -104,29 +104,6 @@ export default function WinterSeason() {
             <p className="text-[12px] text-gray-500 font-light mt-1">
               ★★★★★ Best season
             </p>
-          </div>
-        </div>
-
-        {/* ===== HIGHLIGHTS ===== */}
-        <div className="mb-10">
-          <h3 className="text-[16px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-4">
-            Why Visit in Winter
-          </h3>
-
-          <div className="space-y-3">
-            {highlights.map((item, idx) => (
-              <div
-                key={idx}
-                className=" hover:border-[#a8843a] transition-colors duration-200"
-              >
-                <h4 className="text-[14px] sm:text-[15px] font-medium text-[#2c2c2c] mb-1">
-                  {item.title}
-                </h4>
-                <p className="text-gray-600 text-[13px] sm:text-[14px] leading-relaxed font-light">
-                  {item.description}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
 

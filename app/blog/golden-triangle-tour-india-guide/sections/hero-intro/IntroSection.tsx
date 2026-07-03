@@ -1,6 +1,6 @@
 "use client";
 
-import { Building2, Landmark, Quote, Crown, MapPin, Clock, Globe, Calendar } from "lucide-react";
+import { Building2, Landmark, Crown, MapPin, Clock, Globe, Calendar } from "lucide-react";
 import Link from "next/link";
 
 export default function IntroSection() {
@@ -47,14 +47,14 @@ export default function IntroSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-4 md:py-8">
+    <section className="w-full bg-white py-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         
         {/* ===== HERO / INTRO SECTION ===== */}
-        <div className="mb-8 sm:mb-10 lg:mb-12">
+        <div className="mb-6 sm:mb-8 lg:mb-8">
           {/* Header with badge */}
-          <div className="flex flex-col items-start gap-3 mb-6">
-            <h1 className="text-[18px] leading-[1.2] sm:text-[22px] md:text-[24px] font-bold tracking-wide text-[#2c2c2c]">
+          <div className="flex flex-col items-start gap-3 mb-4">
+            <h1 className="text-[16px] sm:text-[20px] md:text-[22px] font-bold tracking-wide text-[#2c2c2c] -mb-2">
               Welcome to the Golden Triangle
             </h1>
             <p className="text-gray-500 text-[13px] sm:text-[14px] font-light max-w-2xl">
@@ -69,7 +69,7 @@ export default function IntroSection() {
               return (
                 <div key={idx} className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100">
                   <Icon size={18} className="text-[#c9a45c] mx-auto mb-1" />
-                  <div className="text-[18px] sm:text-[20px] font-bold text-[#2c2c2c]">{stat.value}</div>
+                  <div className="text-[16px] sm:text-[18px] font-bold text-[#2c2c2c]">{stat.value}</div>
                   <div className="text-[10px] sm:text-[11px] text-gray-500 font-light">{stat.label}</div>
                 </div>
               );
@@ -80,30 +80,30 @@ export default function IntroSection() {
           <div className="space-y-4">
             <div className="relative border-[#c9a45c]/30 hover:border-[#c9a45c] transition-colors duration-300">
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-                There exists a certain type of silence that descends upon tourists when they reach the end of the red sandstone gate and catch a glimpse of the Taj Mahal for the first time. The guides I worked with over the past fifteen years have said that regardless of all pictures, no one gets prepared for that special moment when the marble starts glowing somehow from within and changing colors depending on the light, and travelers who saw the pyramids and colosseums usually find themselves speechless at that point.
+                There exists a certain type of silence that descends upon tourists when they reach the end of the red 
+                sandstone gate and catch a glimpse of the Taj Mahal for the first time. The guides I worked with over 
+                the past fifteen years have said that regardless of all pictures, no one gets prepared for that special 
+                moment when the marble starts glowing somehow from within and changing colors depending on the light, 
+                and travelers who saw the pyramids and colosseums usually find themselves speechless at that point.
               </p>
             </div>
             
             <div className="relative border-[#c9a45c]/20 hover:border-[#c9a45c]/40 transition-colors duration-300">
               <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-                This exact moment serves as an emotional highlight of what is called the Golden Triangle tour India, which represents a classical travel route from Delhi, to Agra and then to Jaipur. This triangle contains more World Heritage Sites per square kilometer than almost any other region in the whole country and contains 800 years of history of the Mughal and Rajput rulers.
-              </p>
-            </div>
-            
-            <div className="relative pl-4 sm:pl-6 border-l-2 border-[#c9a45c]/10 bg-gradient-to-r from-[#c9a45c]/5 to-transparent p-4 sm:p-5 rounded-r-xl">
-              <Quote size={16} className="text-[#c9a45c]/20 absolute top-3 right-3" />
-              <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
-                It will strip away all the haze that clouds your planning process. You will learn everything there is to know about the history of these three amazing cities that will make your visit so worthwhile, attraction-by-attraction tips along with practical information, daily itinerary, budgeting, and the detailed information regarding logistics, safety, and etiquette issues that only come from the experience of organizing such tours.
+                This exact moment serves as an emotional highlight of what is called the Golden Triangle tour India, 
+                which represents a classical travel route from Delhi, to Agra and then to Jaipur. This triangle 
+                contains more World Heritage Sites per square kilometer than almost any other region in the whole 
+                country and contains 800 years of history of the Mughal and Rajput rulers.
               </p>
             </div>
           </div>
         </div>
 
         {/* ===== WHAT IS GOLDEN TRIANGLE ===== */}
-        <div className="mb-8 md:mb-12">
+        <div className="mb-6 md:mb-8">
         {/* Section Header - Simple */}
-        <div className="mb-6">
-          <h2 className="text-[18px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold">
+        <div className="mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] tracking-wide font-bold">
             What Is Golden Triangle Tour?
           </h2>
           <p className="text-[13px] text-gray-500 font-light mt-1">
@@ -154,77 +154,8 @@ export default function IntroSection() {
               </Link>
             );
           })}
+         </div>
         </div>
-        </div>
-        {/* ===== WHY GOLDEN TRIANGLE MATTERS ===== */}
-        <div>
-          {/* Section Header */}
-          <div className="flex items-center gap-3 mb-6">
-            <div>
-              <h2 className="text-[18px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold">
-                Why the Golden Triangle Matters
-              </h2>
-              <p className="text-[12px] text-gray-500 font-light mt-0.5">
-                800 years of history in three iconic cities
-              </p>
-            </div>
-          </div>
-
-          {/* Cards with icons */}
-          <div className="space-y-4">
-            {[
-              {
-                icon: Building2,
-                title: "Delhi - A Millennium of Power",
-                description: "Delhi is one of the few cities that has acted as a political capital for nearly a millennium. Under and beside the modern Delhi lie seven historical capitals, and an architectural chronology could be found from the 12th century Indo-Islamic architecture of the Qutub Minar all the way to the British imperial New Delhi. No other capital city allows you to cover so much historical depth in just one afternoon.",
-                link: "/tours/the-royal-heritage-trail-tour",
-              },
-              {
-                icon: Landmark,
-                title: "Agra - The Taj & Mughal Grandeur",
-                description: "Agra was the capital of the Mughal Empire in its Golden Age, and the Taj Mahal - built in 1653 as the tomb of Mumtaz Mahal - stands as the epitome of Mughal architectural grandeur. The symmetry, the inlay work and the way the building changes at dawn, noon and sunset has been possible only because of the efforts of about <span className='font-medium text-[#2c2c2c]'>20,000 artisans</span> over <span className='font-medium text-[#2c2c2c]'>10 years</span>.",
-                link: "/tours/heritage-odyssey-tour",
-              },
-              {
-                icon: Crown,
-                title: "Jaipur - The Pink City's Royal Legacy",
-                description: "Jaipur, which was established in 1727 by Maharaja Sawai Jai Singh II, is a planned capital city of the Rajput kingdom that was built in accordance with the principles of the Vastu Shastra. The architecture of the city's forts and palaces reflects the political negotiations, battles, and matrimonial relations that the rulers of Rajasthan had with the Mughals and created a unique architectural style.",
-                link: "/tours/majestic-golden-triangle-tour",
-                extra: (
-                  <p className="text-gray-500 text-[12px] sm:text-[13px] font-light mt-2">
-                    To visit more places outside of Jaipur, check out{' '}
-                    <Link href="/tours/rajasthani-heritage-retreat-tour" className="text-[#c9a45c] hover:text-[#a8843a] hover:underline transition-colors duration-200">
-                      Luxury Rajasthan tour packages
-                    </Link>
-                    .
-                  </p>
-                ),
-              },
-            ].map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={idx}
-                  className="group bg-white p-5 sm:p-6 rounded-xl shadow-sm border border-gray-100 transition-all duration-300"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-11 h-11 rounded-full bg-gradient-to-br from-[#c9a45c]/10 to-[#a8843a]/10 flex items-center justify-center transition-all duration-300">
-                      <Icon size={18} className="text-[#c9a45c] transition-colors duration-300" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <Link href={item.link} className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-1 hover:text-[#c9a45c] transition-colors duration-200 inline-block">
-                        {item.title}
-                      </Link>
-                      <p className="text-gray-600 leading-relaxed text-[13px] sm:text-[14px] font-light" dangerouslySetInnerHTML={{ __html: item.description }} />
-                      {item.extra}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
       </div>
     </section>
   );

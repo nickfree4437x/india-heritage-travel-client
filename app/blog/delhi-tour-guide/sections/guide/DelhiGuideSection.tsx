@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function DelhiGuideSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white py-2">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
@@ -29,10 +29,10 @@ export default function DelhiGuideSection() {
         </div>
 
         {/* RESEARCH SECTION */}
-        <div className="mb-12">
+        <div className="mb-4 md:mb-6">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Begin with Research:
             First-timer’s guide
             to New Delhi
@@ -64,15 +64,18 @@ export default function DelhiGuideSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779829575/polina-kneis-0wG6oR13JAI-unsplash_vn9fqi.jpg"
               alt="Bustling streets of Delhi showcasing everyday life and local culture"
               fill
+              sizes="100vw"
               className="object-cover"
             />
-
           </div>
+          <p className="mt-2 text-[12px] md:text-[13px] text-gray-700 font-light">
+            via unsplash
+          </p>
 
         </div>
 
         {/* ITINERARY */}
-        <div className="mb-10">
+        <div className="mb-4 md:mb-6">
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
@@ -104,15 +107,18 @@ export default function DelhiGuideSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779829674/daniel-dara--sJRd0qmQJk-unsplash_e5rku7.jpg"
               alt="Qutub Minar in Delhi one of India's most iconic historical monuments"
               fill
+              sizes="100vw"
               className="object-cover"
             />
-
           </div>
+          <p className="mt-2 text-[12px] md:text-[13px] text-gray-700 font-light">
+            via unsplash
+          </p>
 
         </div>
 
         {/* TRANSPORT */}
-        <div className="mb-10">
+        <div className="mb-8 md:mb-10">
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
@@ -146,6 +152,7 @@ export default function DelhiGuideSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779829059/zoshua-colah-YAGz_eGSkJA-unsplash_wzk8ym.jpg"
               alt="Bustling Delhi market known for shopping handicrafts and souvenirs"
               fill
+              sizes="100vw"
               className="object-cover"
             />
 
@@ -154,10 +161,10 @@ export default function DelhiGuideSection() {
         </div>
 
         {/* FOOD SECTION */}
-        <div className="mb-10">
+        <div className="mb-4 md:mb-6">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Enjoy the Delhi Flavors:
             Food tour in Delhi
           </h2>
@@ -185,10 +192,13 @@ export default function DelhiGuideSection() {
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779829850/brijender-dua-JZg6JVZW0DE-unsplash_jvqrdl.jpg"
               alt="Exploring Delhi's vibrant food market and local culinary culture"
               fill
+              sizes="100vw"
               className="object-cover"
             />
-
           </div>
+          <p className="mt-2 text-[12px] md:text-[13px] text-gray-700 font-light">
+            via unsplash
+          </p>
 
         </div>
 

@@ -45,16 +45,16 @@ const festivals = [
 
 export default function FestivalsSection() {
   return (
-    <section className="w-full bg-white py-6 sm:py-10">
+    <section className="w-full bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Section Header */}
         <div className="mb-8 sm:mb-10">
           <h2 className="
-            text-[20px] sm:text-[24px] md:text-[26px]
+            text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
             text-[#2c2c2c]
-            font-semibold
-            mb-4
+            font-bold
+            mb-2
           ">
             Festivals That Make the Golden Triangle More Special
           </h2>
@@ -64,7 +64,7 @@ export default function FestivalsSection() {
             text-[12px] sm:text-[13px] md:text-[14.5px]
             font-light
             leading-relaxed
-            max-w-4xl
+            max-w-6xl
           ">
             Weather is only one part of choosing the best time to visit the
             Golden Triangle. Festivals can completely transform your experience,
@@ -82,11 +82,7 @@ export default function FestivalsSection() {
             // Card content
             const cardContent = (
               <div className="
-                border border-[#e7dfd4]
-                rounded-sm
                 overflow-hidden
-                bg-white
-                hover:shadow-sm
                 transition-all duration-300
                 h-full
                 group
