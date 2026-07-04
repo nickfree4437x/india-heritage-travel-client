@@ -24,14 +24,14 @@ export default function Conclusion() {
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/customize-your-journey"
-                className="inline-flex rounded-md items-center justify-center px-5 py-2 bg-[#AF956C] text-white text-[12px] md:text-[13px] font-light hover:bg-[#9d835b] transition-colors"
+                className="inline-flex rounded-md items-center justify-center px-5 py-2 md:py-2.5 bg-[#AF956C] text-white text-[12px] md:text-[13px] font-light hover:bg-[#9d835b] transition-colors"
               >
                 Request Your Custom Itinerary
               </Link>
 
               <Link
                 href="/tours/majestic-golden-triangle-tour"
-                className="inline-flex rounded-md items-center justify-center px-5 py-2 border border-[#d8cdbf] text-[#2c2c2c] text-[12px] md:text-[13px] font-light hover:bg-white transition-colors"
+                className="inline-flex rounded-md items-center justify-center px-5 py-2 md:py-2.5 border border-[#d8cdbf] text-[#2c2c2c] text-[12px] md:text-[13px] font-light hover:bg-white transition-colors"
               >
                 Explore Golden Triangle Tours
               </Link>

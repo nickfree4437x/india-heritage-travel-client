@@ -32,12 +32,6 @@ export default function IntroSection() {
             intricate inlay work alone (pietra dura, which means inlaying of semi-precious stones into marble)
             required several years of work by specialist craftsmen.
           </p>
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
-            <strong className="font-semibold">Tips for Visitors</strong> - Buy your ticket online via ASI website before you arrive so as to avoid waiting in
-            long lines. Security checks are quite rigorous - no food, books or large bags can be brought along
-            to the site. Visiting at sunrise would mean cooler temperature and softer lighting on the white
-            marble
-          </p>
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             <strong className="font-semibold">Best Time</strong> - Sunrise (gates typically open around 6:00 AM) for the best light and smallest crowds;
             October through March for comfortable temperatures
@@ -78,11 +72,6 @@ export default function IntroSection() {
             imprisoned here by his own son Aurangzeb and died looking at Taj Mahal through a marble
             balcony.
           </p>
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
-            <strong className="font-semibold">Visiting Tips</strong> - It should be visited together with the Taj Mahal within the same day because both of
-            them are located around 2.5 kilometers away. You can hire a guide who will give you information
-            about different constructions of the emperors.
-          </p>
 
           {/* IMAGE */}
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm shadow-md overflow-hidden mt-6">
@@ -96,12 +85,6 @@ export default function IntroSection() {
           </div>
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
             via unsplash.com
-          </p>
-
-          <p className="text-[#2c2c2c] leading-relaxed text-[12px] sm:text-[13px] md:text-[15px] font-[400] text-justify mt-2">
-            Best time Mid-morning after the visit to the Taj Mahal during
-            the early morning, as it starts getting hot around the middle of
-            the day (March-June).
           </p>
         </div>
 
@@ -124,10 +107,6 @@ export default function IntroSection() {
             speech on August 15th every year. It is as much a part of modern Indian history as it is of the
             history of the Mughals. The Diwan-i-Khas had the famous Peacock Throne inside it.
             balcony.
-          </p>
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
-            <strong className="font-semibold">Tips for Visitors</strong> - Come early so that you can avoid crowds and also heat. The sound and light show
-            in the evening is recommended if possible
           </p>
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
             <strong className="font-semibold">Best Time</strong> - Morning hours, October to March.
@@ -168,10 +147,6 @@ export default function IntroSection() {
             <strong className="font-semibold">Reasons to Visit</strong> - This is the oldest and most impressive example of Indo-Islamic architecture of
             Delhi, and its detailed carvings demonstrate an interesting fusion of Hindu and Islamic styles.
             balcony.
-          </p>
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
-            <strong className="font-semibold">Visiting Tips</strong> - Visit in the late afternoon when light falls on the stone carvings of the complex most
-            impressively. The gardens surrounding the complex offer a relaxed pace of visit.
           </p>
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
             <strong className="font-semibold">Best Timing</strong> - Late afternoon all year round.

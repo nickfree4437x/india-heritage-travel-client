@@ -67,7 +67,7 @@ export default function IntroSection() {
             {stats.map((stat, idx) => {
               const Icon = stat.icon;
               return (
-                <div key={idx} className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100">
+                <div key={idx} className="bg-white rounded-xl p-4 text-center border border-gray-200">
                   <Icon size={18} className="text-[#c9a45c] mx-auto mb-1" />
                   <div className="text-[16px] sm:text-[18px] font-bold text-[#2c2c2c]">{stat.value}</div>
                   <div className="text-[10px] sm:text-[11px] text-gray-500 font-light">{stat.label}</div>
@@ -87,28 +87,16 @@ export default function IntroSection() {
                 and travelers who saw the pyramids and colosseums usually find themselves speechless at that point.
               </p>
             </div>
-            
-            <div className="relative border-[#c9a45c]/20 hover:border-[#c9a45c]/40 transition-colors duration-300">
-              <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-                This exact moment serves as an emotional highlight of what is called the Golden Triangle tour India, 
-                which represents a classical travel route from Delhi, to Agra and then to Jaipur. This triangle 
-                contains more World Heritage Sites per square kilometer than almost any other region in the whole 
-                country and contains 800 years of history of the Mughal and Rajput rulers.
-              </p>
-            </div>
           </div>
         </div>
 
         {/* ===== WHAT IS GOLDEN TRIANGLE ===== */}
         <div className="mb-6 md:mb-8">
         {/* Section Header - Simple */}
-        <div className="mb-4">
+        <div className="mb-2">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] tracking-wide font-bold">
             What Is Golden Triangle Tour?
           </h2>
-          <p className="text-[13px] text-gray-500 font-light mt-1">
-            Three cities, one unforgettable journey
-          </p>
         </div>
 
         {/* Description - Clean */}

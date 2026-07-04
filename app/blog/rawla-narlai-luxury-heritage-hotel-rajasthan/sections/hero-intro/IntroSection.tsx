@@ -1,16 +1,13 @@
 "use client";
+
 import Image from "next/image";
 
 export default function IntroSection() {
   return (
-    <section className="w-full bg-white py-4 md:py-8">
-
+    <section className="w-full bg-white py-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
-
-        {/* INTRO */}
-
-        <div className="max-w-6xl mb-10">
-
+        {/* Intro */}
+        <div className="max-w-6xl mb-4 md:mb-6">
           <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Beneath the sands of Jodhpur and beyond the lakes of Udaipur lies a
             destination that feels less like a hotel and more like a journey
@@ -19,33 +16,11 @@ export default function IntroSection() {
             Rajput nobility once lived, entertained, and escaped into the
             tranquility of the Aravalli Hills.
           </p>
-
-          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-            Here, centuries-old sandstone architecture coexists effortlessly
-            with modern luxury. Courtyards whisper stories of royal gatherings,
-            hand-painted frescoes preserve artistic traditions, and every
-            corridor reflects a level of craftsmanship rarely found in modern
-            hospitality.
-          </p>
-
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-            Whether you are searching for a romantic retreat, a luxury family
-            holiday, an unforgettable wildlife experience near Jawai, or a
-            deeper connection with Rajasthan's royal heritage, Rawla Narlai
-            offers an experience that remains long after the journey ends.
-          </p>
-
         </div>
 
-        {/* SIGNATURE EXPERIENCE CARD */}
-
+        {/* Signature Experience Card */}
         <div className="bg-white border border-gray-200 rounded-md p-6 mb-6 md:mb-10">
-
-          <span className="inline-block text-[10px] uppercase tracking-[0.25em] text-[#AF956C] mb-2">
-            Signature Experiences
-          </span>
-
-          <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-4">
+          <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-2">
             What Makes Rawla Narlai So Special?
           </h3>
 
@@ -58,25 +33,25 @@ export default function IntroSection() {
             transforms a stay at Rawla Narlai into one of Rajasthan's most
             memorable luxury experiences.
           </p>
-
         </div>
 
-        <div className="relative w-full mt-6 h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md mb-10">
-          
-            <Image
-              src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782298485/2_Rawla_Narlai_mlevyy.jpg"
-              alt="Luxury Heritage Room at Rawla Narlai Rajasthan"
-              fill
-              className="object-cover"
-            />
-  
-          </div>
+        {/* Image 1 */}
+        <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
+          <Image
+            src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782298485/2_Rawla_Narlai_mlevyy.jpg"
+            alt="Luxury Heritage Room at Rawla Narlai Rajasthan"
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
+        <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+          via Rawla Narlai
+        </p>
 
-        {/* HISTORY SECTION */}
-
-        <div>
-
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-5">
+        {/* History Section */}
+        <div className="mt-4 md:mt-6">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             A Royal Legacy: The History of Rawla Narlai
           </h2>
 
@@ -97,30 +72,21 @@ export default function IntroSection() {
             sandstone details, and beautifully proportioned interiors.
           </p>
 
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-            Rawla Narlai was meticulously redesigned in 1996, opening its doors as a magnificent luxury heritage hotel. Rather than modernizing away its character, the
-            restoration carefully preserved original frescoes, sandstone
-            arches, courtyards, and architectural details. The result is a
-            heritage hotel that allows guests to experience Rajasthan's royal
-            legacy while enjoying the comfort and sophistication expected from
-            a modern luxury retreat.
-          </p>
-
-          <div className="relative w-full mt-6 h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md mb-2">
-          
+          {/* Image 2 */}
+          <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782298090/23.06.2026_11.28.01_REC_ytowx8.jpg"
               alt="Luxury Heritage Room at Rawla Narlai Rajasthan"
               fill
+              sizes="100vw"
               className="object-cover"
             />
-  
           </div>
-
+          <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+            via Rawla Narlai
+          </p>
         </div>
-
       </div>
-
     </section>
   );
 }

@@ -11,12 +11,12 @@ export default function SpiritualFinaleSection() {
         {/* DAY 9-10 */}
         <div className="py-8">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Day 9-10: Varanasi – A Spiritual Grand Finale
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-4 space-y-2 max-w-6xl">
+          <div className="space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               As soon you arrive to the{" "}
@@ -97,12 +97,12 @@ export default function SpiritualFinaleSection() {
         {/* GHATS */}
         <div className="">
 
-          <h3 className="text-[15px] sm:text-[15px] md:text-[18px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h3 className="text-[15px] sm:text-[15px] md:text-[18px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Ghats:- The Ghats are the big steps that led down to the
             banks of the Ganges.
           </h3>
 
-          <div className="mt-4 space-y-2">
+          <div className="space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               You have to start your day early morning before Sun rise
@@ -161,7 +161,7 @@ export default function SpiritualFinaleSection() {
             rounded-md
             bg-[#AF956C]
             px-6
-            py-1.5 md:py-2
+            py-2 md:py-2.5
             hover:shadow-sm
             text-[12px]
             sm:text-[13px]

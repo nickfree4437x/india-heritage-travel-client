@@ -48,10 +48,6 @@ export default function IntroSection() {
                 There is a certain light that bathes the Taj Mahal shortly after sunrise  -  gentle, rose gold, and fleeting. It's as if the marble were breathing. Mist rises from the waters of the Yamuna River, monkeys screech in the gardens, and for a few precious minutes, one of the world's most photographed monuments feels almost entirely your own.
               </p>
             </div>
-
-            <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-              A few hundred kilometers away, the sandstone walls of Amber Fort glow under the same morning light, while the courtyards of Jaipur's City Palace come alive with marigold offerings. In Delhi, Humayun's Tomb quietly waits behind its red sandstone gateways, offering the perfect introduction to the Mughal grandeur that defines the Golden Triangle.
-            </p>
           </div>
         </div>
 

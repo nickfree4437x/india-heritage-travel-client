@@ -5,15 +5,15 @@ import Image from "next/image";
 
 export default function DiningSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white py-0 md:py-2">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* HEADER */}
 
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Meals at Rawla Narlai: When Dining Becomes an Experience
           </h2>
 
@@ -29,25 +29,27 @@ export default function DiningSection() {
         </div>
 
         {/* FEATURE IMAGE */}
-
-        <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md mb-10">
+        <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
 
           <Image
             src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782298943/23.06.2026_12.24.30_REC_jtjjof.jpg"
             alt="Luxury Dining Experience at Rawla Narlai Rajasthan"
             fill
+            sizes="100vw"
             className="object-cover"
           />
-
         </div>
+        <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+          via Rawla Narlai
+        </p>
 
         {/* TOP DINING OPTIONS */}
 
-        <div className="grid md:grid-cols-2 gap-6 mb-10">
+        <div className="grid md:grid-cols-2 gap-6 mt-4 md:mt-6 mb-4 md:mb-6">
 
-          <div className="border border-gray-200 bg-white rounded-md p-6">
+          <div className="border border-gray-200 bg-white rounded-md p-5">
 
-            <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-3">
+            <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
               Jharokha Café
             </h3>
 
@@ -62,9 +64,9 @@ export default function DiningSection() {
 
           </div>
 
-          <div className="border border-gray-200 bg-white rounded-md p-6">
+          <div className="border border-gray-200 bg-white rounded-md p-5">
 
-            <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-3">
+            <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
               Rooftop Dining
             </h3>
 
@@ -73,84 +75,6 @@ export default function DiningSection() {
               and the surrounding Aravalli Hills creates one of the property's
               most romantic experiences. The peaceful atmosphere and stunning
               scenery transform a simple dinner into an unforgettable evening.
-            </p>
-
-          </div>
-
-        </div>
-
-        {/* STEPWELL SOIREE */}
-
-        <div className="bg-gradient-to-br from-[#faf7f3] to-[#f4efe8] rounded-sm overflow-hidden mb-10">
-
-          <div className=" p-6 sm:p-8">
-
-            <span className="inline-block text-[10px] uppercase tracking-[0.25em] text-[#AF956C] mb-2">
-              Signature Experience
-            </span>
-
-            <h3 className="text-[18px] sm:text-[22px] font-semibold text-[#2c2c2c] mb-4">
-              Stepwell Soirée - The Most Iconic Dining Experience at Rawla Narlai
-            </h3>
-
-            <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light text-justify mb-4">
-              Guests often cite the famous Stepwell Soirée as their absolute favorite memory from Rawla 
-              Narlai. This incredible dinner takes place next to a historic 11th-century stepwell, 
-              beautifully converting an ancient structure into a truly mesmerizing Rajasthani dining 
-              experience.
-            </p>
-
-            <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light text-justify mb-4">
-              The experience begins with a traditional bullock cart ride before
-              arriving at a breathtaking scene illuminated by more than 800
-              candles and lanterns. Their reflections dance across ancient
-              stone walls and water below while traditional Jogi musicians fill
-              the night air with soulful melodies.
-            </p>
-
-            <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light text-justify">
-              Guests are treated to an elegant multi-course Rajasthani feast
-              featuring specialties such as dal baati churma, aromatic curries,
-              handcrafted breads, and royal Marwari desserts. More than a meal,
-              the Stepwell Soirée is a celebration of Rajasthan's history,
-              culture, and hospitality. Advance reservations are highly
-              recommended.
-            </p>
-
-          </div>
-
-        </div>
-
-        {/* MORE EXPERIENCES */}
-
-        <div className="grid md:grid-cols-2 gap-6 mb-10">
-
-          <div className="border border-gray-200 bg-white rounded-md p-6">
-
-            <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-3">
-              Alfresco Lunch Experiences
-            </h3>
-
-            <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light">
-              Dining extends beyond the hotel itself. Guests can arrange
-              memorable alfresco lunches on local farms, scenic hilltops, or
-              secluded countryside settings, surrounded by Rajasthan's natural
-              beauty and rural charm.
-            </p>
-
-          </div>
-
-          <div className="border border-gray-200 bg-white rounded-md p-6">
-
-            <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-3">
-              Poolside Sundowner Dinner
-            </h3>
-
-            <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light">
-              As the sun disappears behind the Aravalli Hills and the sky turns
-              shades of gold and amber, poolside dining offers a relaxed and
-              elegant way to end the day with refreshing drinks, exceptional
-              cuisine, and complete tranquility.
             </p>
 
           </div>

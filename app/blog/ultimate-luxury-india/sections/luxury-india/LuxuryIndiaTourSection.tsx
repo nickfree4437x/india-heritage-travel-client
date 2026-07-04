@@ -39,12 +39,12 @@ export default function LuxuryIndiaTourSection() {
         {/* DAY 1-2 */}
         <div className="mt-6 md:mt-8">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Day 1-2: Arrive to Delhi – Where Tradition Meets Luxury
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Once you arrive in <span className="font-medium text-[#111]">Delhi</span>,
@@ -66,7 +66,7 @@ export default function LuxuryIndiaTourSection() {
           </div>
 
           {/* IMAGE */}
-          <div className="mt-6 md:mt-8">
+          <div className="mt-6">
 
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-sm">
               <Image
@@ -122,12 +122,12 @@ export default function LuxuryIndiaTourSection() {
         {/* DAY 3-4 */}
         <div className="mt-6 md:mt-8">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Day 3-4: Agra – The Timeless Beauty of the Taj Mahal
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               The journeys to Agra where you can see the legendary

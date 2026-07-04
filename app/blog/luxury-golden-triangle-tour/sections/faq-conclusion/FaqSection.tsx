@@ -1,80 +1,60 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 import { faqs } from "./data/faqData";
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="py-8 md:py-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
-        
-        {/* ===== HEADER ===== */}
-        <div className="mb-6 sm:mb-8">
-          
-          <h2 className="text-[18px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
-            Luxury Golden Triangle Tour FAQs
+        {/* Heading */}
+        <div className="mb-4 md:mb-6">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
+            Frequently Asked Questions About Luxury Golden Triangle Tour
           </h2>
-          
-          <p className="text-gray-600 text-[13px] sm:text-[14px] md:text-[15px] font-light leading-relaxed max-w-6xl mx-auto">
-            Answers to the most common questions about luxury Golden
-            Triangle tours, palace hotels, private guides, transportation,
-            customization options, and the best time to travel.
+
+          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+            Everything you need to know before planning your luxury Golden Triangle journey.
           </p>
         </div>
 
-        {/* ===== FAQ ACCORDION ===== */}
-        <div className="max-w-6xl mx-auto space-y-3">
+        {/* FAQ Items */}
+        <div className="space-y-3">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
 
             return (
               <div
-                key={faq.question}
-                className="border border-[#f0e8dd] rounded-lg overflow-hidden transition-all duration-300 hover:border-[#AF956C]/30"
+                key={index}
+                className="border border-gray-200 rounded-md bg-white overflow-hidden transition-all duration-300"
               >
-                {/* Question Button */}
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="w-full flex items-center justify-between text-left px-5 sm:px-6 py-4 sm:py-4 bg-white hover:bg-[#faf7f3] transition-colors duration-200 group"
+                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left hover:bg-[#faf7f3] transition-colors duration-300"
                 >
-                  <span className="text-[12px] sm:text-[13.5px] text-[#2c2c2c] pr-4 transition-colors duration-200">
+                  <span className="text-[13px] sm:text-[14px] md:text-[15px] text-[#2c2c2c] leading-relaxed">
                     {faq.question}
                   </span>
 
-                  {/* Plus/Minus Icon with Circle */}
-                  <span
-                    className={`
-                      flex-shrink-0
-                      w-7 h-7
-                      rounded-full
-                      flex items-center justify-center
-                      text-white
-                      text-lg
-                      font-light
-                      transition-all duration-300
-                      ${
-                        isOpen
-                          ? "bg-[#AF956C]"
-                          : "bg-[#e7dfd4]/70 group-hover:bg-[#AF956C]/70"
-                      }
-                    `}
-                  >
-                    {isOpen ? "−" : "+"}
-                  </span>
+                  <ChevronDown
+                    size={18}
+                    className={`flex-shrink-0 text-[#AF956C] transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
                 </button>
 
-                {/* Answer with Smooth Animation */}
                 <div
-                  className={`
-                    grid transition-all duration-300 ease-in-out
-                    ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}
-                  `}
+                  className={`grid transition-all duration-300 ease-in-out ${
+                    isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                  }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-5 sm:px-6 py-4 sm:py-5 bg-[#faf7f3] border-t border-[#f0e8dd]">
-                      <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed font-light">
+                    <div className="px-5 pb-5 border-t border-[#f2ede7]">
+                      <p className="pt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
                         {faq.answer}
                       </p>
                     </div>
@@ -84,7 +64,6 @@ export default function FAQSection() {
             );
           })}
         </div>
-        
       </div>
     </section>
   );

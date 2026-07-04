@@ -23,10 +23,10 @@ const blogs = [
   },
   {
     title:
-      "Top Heritage Hotels in India for an Exclusive Stay",
-    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779638017/blog-9_h4aqqf.jpg",
-    date: "Feb 6",
-    slug: "top-heritage-hotel-in-india",
+      "Golden Triangle Tour India: Your Ultimate 2026 Guide for First-Timers",
+    image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779523009/golden-triangle_izyhwq.jpg",
+    date: "June 20",
+    slug: "golden-triangle-tour-india-guide",
   },
 ];
 

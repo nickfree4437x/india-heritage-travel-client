@@ -45,7 +45,7 @@ export default function BlogsGrid({ currentPage }: BlogsGridProps) {
               </div>
 
               {/* Blog Content */}
-              <div className="pt-8">
+              <div className="pt-6">
                 <h3 className="
                   text-[18px] md:text-[20px]
                   leading-[1.22]
@@ -60,7 +60,7 @@ export default function BlogsGrid({ currentPage }: BlogsGridProps) {
                 </h3>
 
                 <p className="
-                  mt-5
+                  mt-3
                   text-[14px] leading-5
                   text-[#5f5f5f]
                   font-light
@@ -68,12 +68,12 @@ export default function BlogsGrid({ currentPage }: BlogsGridProps) {
                   {blog.excerpt}
                 </p>
 
-                <div className="flex items-center gap-5 mt-6 text-[#8a8a8a]">
+                <div className="flex items-center gap-5 mt-4 text-[#8a8a8a]">
                   <div className="flex items-center gap-2">
                     <MessageCircle size={16} strokeWidth={1.7} />
-                    <span className="text-sm">0</span>
+                    <span className="text-[12px] md:text-[13px] font-light">0</span>
                   </div>
-                  <span className="text-sm">{blog.date}</span>
+                  <span className="text-[12px] md:text-[13px] font-light">{blog.date}</span>
                 </div>
               </div>
             </Link>

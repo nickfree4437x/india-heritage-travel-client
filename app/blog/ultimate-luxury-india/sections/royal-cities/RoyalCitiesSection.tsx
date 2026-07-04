@@ -10,12 +10,12 @@ export default function RoyalCitiesSection() {
         {/* DAY 5-6 */}
         <div className="py-8">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Day 5-6: Jaipur – The Royal City of Palaces
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               <span className="font-medium text-[#111]">Jaipur</span>,
@@ -99,12 +99,12 @@ export default function RoyalCitiesSection() {
         {/* DAY 7-8 */}
         <div className="mt-2 md:mt-2">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Day 7-8: Udaipur – The City of Lakes
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               You have possibility to visit Ranakpur Jain Temples on

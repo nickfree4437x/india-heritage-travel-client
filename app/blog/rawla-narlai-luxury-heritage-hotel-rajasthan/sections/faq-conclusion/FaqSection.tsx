@@ -9,13 +9,9 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section
-      id="faqs"
-      className="mb-8 md:py-5"
-    >
+    <section id="faqs" className="mb-8 md:py-5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
-
         <div className="mb-8">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Frequently Asked Questions About Rawla Narlai
@@ -28,7 +24,6 @@ export default function FAQSection() {
         </div>
 
         {/* FAQ Items */}
-
         <div className="space-y-3">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
@@ -36,13 +31,13 @@ export default function FAQSection() {
             return (
               <div
                 key={index}
-                className="border border-[#e7dfd4] rounded-md bg-white overflow-hidden transition-all duration-300"
+                className="border border-gray-200 rounded-md bg-white overflow-hidden transition-all duration-300"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                   className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left hover:bg-[#faf7f3] transition-colors duration-300"
                 >
-                  <span className="text-[13px] sm:text-[14px] md:text-[15px] font-medium text-[#2c2c2c] leading-relaxed">
+                  <span className="text-[13px] sm:text-[14px] md:text-[15px] text-[#2c2c2c] leading-relaxed">
                     {faq.question}
                   </span>
 
@@ -61,7 +56,7 @@ export default function FAQSection() {
                 >
                   <div className="overflow-hidden">
                     <div className="px-5 pb-5 border-t border-[#f2ede7]">
-                      <p className="pt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light">
+                      <p className="pt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
                         {faq.answer}
                       </p>
                     </div>

@@ -13,29 +13,19 @@ const experiences = [
     description:
       "Explore Amber Fort, City Palace, and Jantar Mantar alongside expert historians and private guides who bring centuries of Rajput and Mughal history to life through engaging stories and insider knowledge.",
   },
-  {
-    title: "Royal Dining Experiences",
-    description:
-      "Enjoy multi-course dining experiences within palace courtyards, private royal chambers, or heritage venues where traditional Rajasthani cuisine is accompanied by classical music performances and impeccable service.",
-  },
-  {
-    title: "Shopping with Local Experts",
-    description:
-      "Discover Jaipur's famous markets with a knowledgeable local guide who can help you navigate jewelry boutiques, block-printing workshops, textile stores, and blue pottery studios while ensuring authenticity and quality.",
-  },
 ];
 
 export default function JaipurLuxuryExperiences() {
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="w-full bg-white py-6 sm:py-8">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Header */}
 
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             Luxurious Experiences in Jaipur
           </h2>
 
@@ -51,22 +41,23 @@ export default function JaipurLuxuryExperiences() {
 
         {/* Feature Image */}
 
-        <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[550px] overflow-hidden rounded-sm shadow-md mb-10">
+        <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] overflow-hidden rounded-sm shadow-md">
 
           <Image
             src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782284238/image_5_Rambagh_Palace_Jaipur_pcpedl.jpg"
             alt="Royal dining experience at Rambagh Palace Jaipur during a luxury Golden Triangle tour"
             fill
+            sizes="100vw"
             className="object-cover"
           />
-
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-
         </div>
+        <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+          via pexels
+        </p>
 
         {/* Experience Cards */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4 md:mt-6">
 
           {experiences.map((item) => (
             <div
@@ -74,7 +65,7 @@ export default function JaipurLuxuryExperiences() {
               className="border border-gray-200 bg-white p-5 rounded-md"
             >
 
-              <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-3">
+              <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
                 {item.title}
               </h3>
 
@@ -84,23 +75,6 @@ export default function JaipurLuxuryExperiences() {
 
             </div>
           ))}
-
-        </div>
-
-        {/* Highlight Box */}
-
-        <div className=" bg-[#faf7f3] p-5">
-
-          <span className="inline-block text-[10px] uppercase tracking-[0.25em] text-[#AF956C] mb-2">
-            Signature Luxury Moment
-          </span>
-
-          <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 font-light leading-relaxed">
-            Few travel experiences compare to dining beneath the stars in a
-            former royal palace while traditional Rajasthani musicians perform
-            nearby. Jaipur transforms luxury travel from sightseeing into an
-            immersive royal experience.
-          </p>
 
         </div>
 

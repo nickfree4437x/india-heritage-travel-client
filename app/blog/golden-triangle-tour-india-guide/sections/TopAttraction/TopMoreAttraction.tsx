@@ -28,11 +28,6 @@ export default function IntroSection() {
             apart from the Taj Mahal, and thanks to its hilltop location, it offers stunning views of the Aravalli
             hills.
           </p>
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
-            <strong className="font-semibold">Tips</strong> - It is advisable to get there early since tour buses start coming in numbers after 10:00 AM. If an
-            elephant or jeep ride to the fort entrance is desired, then better arrange it through your guide as
-            opposed to touts who wait at the base.
-          </p>
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             <strong className="font-semibold">Best Time</strong> - Early morning hours between 8:00 - 10:00 AM.
           </p>
@@ -71,11 +66,6 @@ export default function IntroSection() {
             <strong className="font-semibold">Why Visit</strong> - This is one of the most easily recognized buildings in Jaipur, and its honeycomb-like
             façade demonstrates the way Rajput architects brilliantly used architecture to overcome social
             limitations
-          </p>
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
-            <strong className="font-semibold">Visiting Tips</strong> - The best pictures of the façade can be taken from across the street, especially from a
-            rooftop café, because many tourists do not know that inside the building is quite modest compared
-            to its exterior. In the morning, sunlight shines beautifully on the pink sandstone.
           </p>
 
           {/* IMAGE */}
@@ -150,10 +140,6 @@ export default function IntroSection() {
             <strong className="font-semibold">Reasons to Visit</strong> - It is one of the strangest and most scientifically important places in India – it's an
             actual instrument of 18th century astronomy and not just pretty buildings.
             balcony.
-          </p>
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
-            <strong className="font-semibold">Tips for Visitors</strong> - Make sure you arrange a guide to take you through these places as there is no way
-            to understand the purpose of these instruments without a guide.
           </p>
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2">
             <strong className="font-semibold">Best Time</strong> - Late morning when the angle of the sun makes it easier to comprehend the sundial

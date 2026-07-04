@@ -71,15 +71,15 @@ const hotels = [
 
 export default function LuxuryHotelsSection() {
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="w-full bg-white py-2 sm:py-4">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Header */}
 
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             Best Luxury Hotels for a Golden Triangle Tour
           </h2>
 
@@ -94,7 +94,7 @@ export default function LuxuryHotelsSection() {
 
         {/* Feature Image */}
 
-        <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md mb-10">
+        <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
 
           <Image
             src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782284717/f9af2fcd5e08e8d50992b3d20e18d47f0e9ac822-3840x1840_cx3jtg.avif"
@@ -102,12 +102,14 @@ export default function LuxuryHotelsSection() {
             fill
             className="object-cover"
           />
-
         </div>
+        <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+          via pexels
+        </p>
 
         {/* Responsive Table */}
 
-        <div className="overflow-x-auto border border-[#e8dfd2] mb-8">
+        <div className="overflow-x-auto rounded-md mt-4 md:mt-6 mb-6">
 
           <table className="w-full min-w-[900px]">
 
@@ -151,7 +153,7 @@ export default function LuxuryHotelsSection() {
                     {hotel.city}
                   </td>
 
-                  <td className="px-4 py-4 text-[12px] sm:text-[13px] font-medium text-[#2c2c2c] border-b border-r border-[#e8dfd2]">
+                  <td className="px-4 py-4 text-[12px] sm:text-[13px] text-[#2c2c2c] border-b border-r border-[#e8dfd2]">
                     {hotel.hotel}
                   </td>
 
@@ -173,23 +175,6 @@ export default function LuxuryHotelsSection() {
             </tbody>
 
           </table>
-
-        </div>
-
-        {/* Highlight Box */}
-
-        <div className="bg-[#faf7f3] p-5">
-
-          <span className="inline-block text-[10px] uppercase tracking-[0.25em] text-[#AF956C] mb-2">
-            Luxury Travel Tip
-          </span>
-
-          <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 font-light leading-relaxed">
-            If you're looking for the most iconic luxury stay of the entire
-            Golden Triangle, The Oberoi Amarvilas in Agra and Rambagh Palace
-            in Jaipur are widely regarded as two of the finest hotel
-            experiences in India.
-          </p>
 
         </div>
 

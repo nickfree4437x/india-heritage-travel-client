@@ -13,29 +13,19 @@ const transportOptions = [
     description:
       "For travelers seeking additional comfort on longer road journeys, premium SUVs provide extra space, superior ride quality, and enhanced comfort compared to standard sedans.",
   },
-  {
-    title: "Domestic Business Class Flights",
-    description:
-      "For travelers extending their journey beyond the Golden Triangle to destinations such as Udaipur, Jodhpur, Kerala, or Varanasi, domestic business-class flights offer a seamless continuation of the luxury travel experience.",
-  },
-  {
-    title: "Luxury Train Experiences",
-    description:
-      "India offers several premium rail experiences. For Golden Triangle travelers, the Executive Chair Car on the Gatimaan Express between Delhi and Agra provides a fast, comfortable, and efficient alternative to road travel.",
-  },
 ];
 
 export default function LuxuryTransportSection() {
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="w-full bg-white">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Header */}
 
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             Luxury Modes of Transport
           </h2>
 
@@ -83,23 +73,6 @@ export default function LuxuryTransportSection() {
 
             </div>
           ))}
-
-        </div>
-
-        {/* Highlight Box */}
-
-        <div className="bg-[#faf7f3] p-5">
-
-          <span className="inline-block text-[10px] uppercase tracking-[0.25em] text-[#AF956C] mb-2">
-            Recommended Option
-          </span>
-
-          <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 font-light leading-relaxed">
-            For most luxury travelers, a private chauffeur-driven vehicle
-            remains the preferred choice. It offers complete flexibility,
-            personalized service, spontaneous photo stops, and the freedom to
-            explore India at your own pace.
-          </p>
 
         </div>
 

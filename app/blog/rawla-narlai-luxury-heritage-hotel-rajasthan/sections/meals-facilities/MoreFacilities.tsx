@@ -10,13 +10,13 @@ export default function MoreExperiencesSection() {
 
         {/* ELEPHANT HILL */}
 
-        <div className="mb-10">
+        <div className="mb-4 md:mb-6">
 
-          <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-4">
+          <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-2">
             Elephant Hill Expedition
           </h3>
 
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify mb-4">
+          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-4">
             Overlooking Narlai village is a granite hill crowned by an elephant
             statue that is believed to be more than 300 years old. Considered
             one of the most spiritually significant landmarks in the region,
@@ -24,7 +24,7 @@ export default function MoreExperiencesSection() {
             natural beauty.
           </p>
 
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
+          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             The trek involves approximately 750 steps winding past ancient
             temples and sacred sites before opening up to panoramic views of
             Narlai village and the Aravalli landscape. Sunrise and sunset are
@@ -36,9 +36,9 @@ export default function MoreExperiencesSection() {
 
         {/* RURAL JEEP SAFARI */}
 
-        <div className="mb-10">
+        <div className="mb-4 md:mb-6">
 
-          <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-4">
+          <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-2">
             Rural Jeep Safari
           </h3>
 
@@ -55,9 +55,9 @@ export default function MoreExperiencesSection() {
 
         {/* HORSE RIDING */}
 
-        <div className="mb-10">
+        <div className="mb-4 md:mb-6">
 
-          <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-4">
+          <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-2">
             Wilderness Horse Riding
           </h3>
 
@@ -78,9 +78,9 @@ export default function MoreExperiencesSection() {
 
         {/* CHAI BY THE LAKESHORE */}
 
-        <div className="mb-10">
+        <div className="mb-4 md:mb-6">
 
-          <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-4">
+          <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-2">
             Chai by the Lakeshore
           </h3>
 
@@ -93,47 +93,19 @@ export default function MoreExperiencesSection() {
           </p>
 
         </div>
-        <div className="relative mt-6 w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md mb-10">
+        <div className="relative mt-6 w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
                   
         <Image
             src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782209466/23.06.2026_15.33.44_REC_z6fjxg.png"
             alt="Luxury Dining Experience at Rawla Narlai Rajasthan"
             fill
+            sizes="100vw"
             className="object-cover"
         />
-
         </div>
-
-        {/* CULTURAL SECTION */}
-
-        <div className="bg-[#faf7f3] rounded-sm p-6">
-
-          <span className="inline-block text-[10px] uppercase tracking-[0.25em] text-[#AF956C] mb-2">
-            Cultural Experiences
-          </span>
-
-          <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-4">
-            Cultural Performances & Cookery Demonstrations
-          </h3>
-
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify mb-4">
-            Evenings at Rawla Narlai often feature performances by Manganiyar
-            musicians, whose centuries-old musical traditions form an important
-            part of Rajasthan's cultural heritage. Guests may also witness the
-            remarkable Terah Taal dance performed by members of the Kamad
-            community, where multiple cymbals attached to the dancer's body
-            create a captivating rhythmic performance.
-          </p>
-
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
-            For travelers eager to take a taste of Rajasthan home, cookery
-            demonstrations introduce traditional ingredients, regional spices,
-            and culinary techniques behind iconic dishes such as Dal Baati
-            Churma, Ker Sangri, and Ghevar. These interactive experiences offer
-            a deeper appreciation of Rajasthan's rich food culture.
-          </p>
-
-        </div>
+        <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+          via Rawla Narlai
+        </p>
       </div>
 
     </section>

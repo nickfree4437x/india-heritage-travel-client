@@ -13,29 +13,19 @@ const experiences = [
     description:
       "A flexible luxury itinerary allows multiple visits and carefully timed photography opportunities. Capture the Taj Mahal under different lighting conditions and enjoy the freedom to explore the monument at your own pace.",
   },
-  {
-    title: "Luxury Hotels with Taj Mahal Views",
-    description:
-      "Stay at exceptional properties such as The Oberoi Amarvilas, where uninterrupted views of the Taj Mahal become part of your daily experience. Watching the monument change color from your suite or private terrace is unforgettable.",
-  },
-  {
-    title: "Private Cultural Experiences",
-    description:
-      "Meet local artisans and discover the art of pietra dura—the intricate marble inlay technique used in the construction of the Taj Mahal. These private demonstrations offer a fascinating insight into one of India's greatest artistic traditions.",
-  },
 ];
 
 export default function AgraLuxuryExperiences() {
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="w-full bg-white">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Header */}
 
-        <div className="mb-8">
+        <div className="mb-4 md:mb-6">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             Luxurious Experiences in Agra
           </h2>
 
@@ -51,22 +41,23 @@ export default function AgraLuxuryExperiences() {
 
         {/* Feature Image */}
 
-        <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[550px] overflow-hidden rounded-sm shadow-md mb-10">
+        <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] overflow-hidden rounded-sm shadow-md">
 
           <Image
             src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782283923/pexels-axp-photography-500641970-16738840_ckpndw.jpg"
             alt="Luxury Golden Triangle Tour experience at the Taj Mahal during sunrise"
             fill
+            sizes="100vw"
             className="object-cover"
           />
-
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-
         </div>
+        <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+          via pexels
+        </p>
 
         {/* Experience Cards */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4 md:mt-6">
 
           {experiences.map((item) => (
             <div
@@ -74,7 +65,7 @@ export default function AgraLuxuryExperiences() {
               className="border border-gray-200 bg-white p-5 rounded-md"
             >
 
-              <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-3">
+              <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
                 {item.title}
               </h3>
 
@@ -86,25 +77,6 @@ export default function AgraLuxuryExperiences() {
           ))}
 
         </div>
-
-        {/* Luxury Highlight */}
-
-        <div className=" bg-[#faf7f3] p-5">
-
-          <span className="inline-block text-[10px] uppercase tracking-[0.25em] text-[#AF956C] mb-2">
-            Signature Luxury Moment
-          </span>
-
-          <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 font-light leading-relaxed">
-            Imagine watching the Taj Mahal slowly emerge from the morning mist
-            while enjoying uninterrupted views from your luxury suite. It is
-            this combination of access, privacy, and comfort that makes a
-            luxury Golden Triangle tour fundamentally different from a standard
-            visit.
-          </p>
-
-        </div>
-
       </div>
 
     </section>

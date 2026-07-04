@@ -231,7 +231,7 @@ export default function DelhiExtraGuideSection() {
               rounded-md
               bg-[#AF956C]
               px-6
-              py-1.5 md:py-2
+              py-2 md:py-2.5
               text-[12px]
               sm:text-[13px]
               font-light

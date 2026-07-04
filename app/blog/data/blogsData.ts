@@ -186,8 +186,17 @@ export const blogs = [
     slug: "the-complete-taj-mahal-travel-guide",
     title: "The Complete Taj Mahal Travel Guide",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783055150/pexels-ayush-dwivedi-1217090-27374536_wfmxjg.jpg",
-    date: "03 June",
+    date: "03 July",
     excerpt:
       "Everything you need for a Taj Mahal visit done right - history, ticket prices...",
+  },
+  {
+    id: 22,
+    slug: "the-complete-fatehpur-sikri-travel-guide",
+    title: "Fatehpur Sikri Travel Guide",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783145019/pexels-worldwithprasha-37968645_luvncb.jpg",
+    date: "04 July",
+    excerpt:
+      "Some ruins speak. Fatehpur Sikri, at dawn, with the red sandstone glowing li...",
   },
 ];

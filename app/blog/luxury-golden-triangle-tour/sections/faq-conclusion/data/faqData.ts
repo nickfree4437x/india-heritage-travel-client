@@ -34,19 +34,4 @@ export const faqs = [
     answer:
       "Yes. Private dining, palace suite upgrades, and curated romantic experiences are commonly included in honeymoon-focused itineraries.",
   },
-  {
-    question: "Are luxury Golden Triangle tours suitable for families with children?",
-    answer:
-      "Yes. Private vehicles, flexible pacing, and family-friendly luxury experiences make this an excellent option for multi-generational travel.",
-  },
-  {
-    question: "What is the difference between a standard and a luxury Golden Triangle tour?",
-    answer:
-      "A standard tour typically involves shared transport and group schedules, while a luxury tour offers private transport, five-star or palace accommodation, and a fully personalized itinerary.",
-  },
-  {
-    question: "Does India Heritage Travel offer women-friendly luxury tours?",
-    answer:
-      "Yes. India Heritage Travel specializes in women-friendly and solo female travel itineraries, combined with the comfort, privacy, and support of a luxury Golden Triangle experience.",
-  },
 ];
