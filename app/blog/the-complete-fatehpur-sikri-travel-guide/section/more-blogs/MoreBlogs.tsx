@@ -37,14 +37,6 @@ export default function MoreFoodSection() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
         {/* Related Posts Title */}
         <div className="mb-12 sm:mb-14">
-          <h2 className="
-            text-[18px] sm:text-[20px] md:text-[22px]
-            font-semibold
-            text-[#2c2c2c]
-            tracking-wide
-          ">
-            You May Also Like
-          </h2>
         </div>
 
         {/* Blog Grid */}

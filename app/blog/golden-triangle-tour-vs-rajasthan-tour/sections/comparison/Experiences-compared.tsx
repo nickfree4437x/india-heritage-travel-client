@@ -18,28 +18,15 @@ const experiences = [
     description:
       "Perched high above Jaipur, Amber Fort offers one of Rajasthan's most memorable arrivals. Whether you choose a traditional jeep ride or another approved mode of transport, you'll discover magnificent courtyards, royal apartments, and the famous Sheesh Mahal (Hall of Mirrors).",
   },
-  {
-    title: "Fatehpur Sikri",
-    description:
-      "Located about 40 kilometres from Agra, Fatehpur Sikri was Emperor Akbar's magnificent Mughal capital before it was mysteriously abandoned after just fourteen years. Today, its remarkably preserved red sandstone architecture offers a fascinating glimpse into imperial India.",
-  },
-  {
-    title: "Jaipur's Colourful Bazaars",
-    description:
-      "Shopping in Jaipur is an experience in itself. Wander through Johari Bazaar for gemstones and jewellery, Bapu Bazaar for colourful textiles, handcrafted souvenirs, blue pottery, and traditional Rajasthani handicrafts while enjoying the lively atmosphere of the Pink City.",
-  },
 ];
 
 export default function ExperiencesCompared() {
   return (
-    <section className="w-full bg-white py-2 sm:py-2">
-
+    <section className="w-full bg-white py-6 sm:py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
-
         {/* Heading */}
-
         <div className="mb-4">
-          <h2 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c] mb-2">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             What Each Tour Actually Feels Like
           </h2>
 
@@ -51,49 +38,39 @@ export default function ExperiencesCompared() {
             and slower, immersive experiences that reveal a different side of
             the country.
           </p>
-
         </div>
 
         {/* Image */}
-
-        <div className="mb-10">
-
+        <div className="mb-6">
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
-
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782381451/pexels-vaguspuer-2159347817-37837651_tg0mfr.jpg"
               alt="Camel safari at sunset over the Sam Sand Dunes"
               fill
               className="object-cover"
             />
-
           </div>
 
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
             via pexels
           </p>
-
         </div>
 
         {/* Experiences */}
-
         <h3 className="text-[17px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-3">
           Signature Golden Triangle Experiences
         </h3>
 
         <div className="space-y-4">
-
           {experiences.map((item, index) => (
-
             <div
               key={item.title}
               className={`${
                 index !== experiences.length - 1
-                  ? "border-b border-[#ece7de] pb-8"
+                  ? "border-b border-[#ece7de] pb-4"
                   : ""
               }`}
             >
-
               <h4 className="text-[15px] text-gray-700 mb-1">
                 {item.title}
               </h4>
@@ -101,15 +78,10 @@ export default function ExperiencesCompared() {
               <p className="text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light text-justify">
                 {item.description}
               </p>
-
             </div>
-
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }

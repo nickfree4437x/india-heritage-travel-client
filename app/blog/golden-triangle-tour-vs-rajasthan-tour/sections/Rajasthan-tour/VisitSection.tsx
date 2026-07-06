@@ -8,7 +8,7 @@ export default function BestTimeSection() {
         
         {/* Heading */}
         <div className="mb-8 sm:mb-10">
-          <h2 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c]">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c]">
             Best Time to Visit: Golden Triangle vs Rajasthan
           </h2>
           <p className="text-[13px] sm:text-[14px] text-gray-500 mt-2 font-light">
@@ -123,16 +123,16 @@ export default function BestTimeSection() {
         <div className="border-t border-[#ece7de] pt-4 sm:pt-6">
         
         <div className="flex items-center justify-between gap-3 mb-2 flex-wrap">
-            <h3 className="text-[16px] sm:text-[20px] md:text-[22px] font-bold text-[#1a1a1a]">
+            <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide font-semibold text-[#1a1a1a]">
             Can You Combine Both?
             </h3>
-            <span className="text-[12px] sm:text-[13.5px] text-[#b8860b] bg-[#faf7f3] px-4 py-1.5 rounded-full whitespace-nowrap border border-[#ece7de]">
+            <span className="text-[12px] sm:text-[13px] text-[#b8860b] bg-[#faf7f3] px-4 py-1.5 rounded-full whitespace-nowrap border border-[#ece7de]">
             Yes! - and It's Fantastic
             </span>
         </div>
 
         {/* Simple Description */}
-        <p className="text-[14px] sm:text-[15px] text-gray-600 font-light leading-relaxed">
+        <p className="text-[14px] sm:text-[15px] text-gray-600 font-light leading-relaxed mb-4 md:mb-6">
             The two circuits connect naturally at{' '}
             <span className=" text-[#2c2c2c]">Jaipur</span>, making a combined tour of{' '}
             <span className="text-[#b8860b]">10–14 days</span> one of the best India experiences.
@@ -142,15 +142,15 @@ export default function BestTimeSection() {
 
         {/* Itinerary Section */}
 
-        <div className="border-t border-[#ece7de] pt-10 mt-4 md:mt-4">
+        <div className="border-t border-[#ece7de] pt-6 md:pt-6 mt-0 md:mt-2">
 
           <div className="mb-8">
 
-            <h3 className="text-[18px] sm:text-[20px] font-semibold text-[#2c2c2c] mb-3">
+            <h3 className="text-[18px] sm:text-[20px] font-semibold tracking-wide text-[#2c2c2c] mb-2">
               The Classic Combined Itinerary (12–14 Days)
             </h3>
 
-            <p className="text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light max-w-6xl">
+            <p className="text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed text-justify font-light max-w-6xl">
               Starting in Delhi and finishing in Udaipur, this journey combines the
               iconic highlights of the Golden Triangle with Rajasthan's royal cities,
               desert landscapes, heritage hotels, and unforgettable cultural
@@ -159,7 +159,7 @@ export default function BestTimeSection() {
 
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-2 md:space-y-4">
 
             {[
               {
@@ -211,7 +211,7 @@ export default function BestTimeSection() {
 
                 <div>
 
-                  <span className="text0[11px] md:text-[12px] uppercase tracking-wide text-[#AF956C]">
+                  <span className="text-[11px] md:text-[12px] uppercase tracking-wide text-[#AF956C]">
                     {item.days}
                   </span>
 
@@ -234,21 +234,6 @@ export default function BestTimeSection() {
               </div>
 
             ))}
-
-          </div>
-
-          <div className="mt-10 border rounded-md p-5">
-
-            <p className="text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light">
-              This itinerary brings together India's most celebrated monuments,
-              Rajasthan's royal heritage, desert adventures, luxury palace hotels,
-              wildlife, and cultural experiences into one seamless journey. At
-              <span className="font-medium text-[#2c2c2c]">
-                {" "}<a href="https://www.indiaheritagetravel.com" className="hover:underline">India Heritage Travel</a>
-              </span>
-              , every itinerary is fully customized around your interests, travel
-              style, and preferred pace to create a truly memorable holiday.
-            </p>
 
           </div>
 

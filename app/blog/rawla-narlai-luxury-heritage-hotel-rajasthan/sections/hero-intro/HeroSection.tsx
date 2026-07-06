@@ -59,9 +59,9 @@ export default function HeroSection() {
               mx-auto
             "
           >
-            Rawla Narlai Rajasthan: Luxury Heritage
+            Rawla Narlai Rajasthan: Luxury
             <br />
-             Hotel, Suites & Experiences
+             Heritage Hotel, Suites & Experiences
           </h1>
 
           {/* DESCRIPTION */}

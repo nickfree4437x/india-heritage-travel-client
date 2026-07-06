@@ -68,7 +68,7 @@ export default function FAQSection() {
 
         {/* CTA */}
         <div className="mt-10 bg-[#faf8f5] rounded-md p-6 sm:p-8">
-          <h3 className="text-[16px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-2">
+          <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
             Planning a Fatehpur Sikri Journey?
           </h3>
 

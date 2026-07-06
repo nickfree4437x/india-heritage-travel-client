@@ -41,7 +41,7 @@ const budgetData = [
 
 export default function BudgetComparison() {
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="w-full bg-white py-2 sm:py-4">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
@@ -49,7 +49,7 @@ export default function BudgetComparison() {
 
         <div className="mb-4">
 
-          <h2 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c] mb-3">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             Budget Comparison: What Does Each Tour Cost?
           </h2>
 
@@ -119,22 +119,6 @@ export default function BudgetComparison() {
           </table>
 
         </div>
-
-        {/* Content */}
-
-        <div className="mt-8 space-y-5">
-
-          <p className="text-[12px] sm:text-[13px] md:text-[14px] leading-relaxed text-gray-700 font-light text-justify">
-            A Rajasthan Tour generally costs more because it covers greater
-            distances, includes additional destinations, and offers a wider
-            range of premium experiences. From luxury palace hotels and desert
-            camps to exclusive wildlife safaris and heritage dining, the
-            itinerary naturally involves a higher level of service and
-            logistics.
-          </p>
-
-        </div>
-
       </div>
 
     </section>

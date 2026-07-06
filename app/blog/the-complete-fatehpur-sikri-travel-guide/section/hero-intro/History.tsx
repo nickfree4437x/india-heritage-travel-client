@@ -39,12 +39,6 @@ export default function HistorySection() {
             revered Sufi mystic named Sheikh Salim Chishti.
           </p>
 
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-6">
-            The saint gave him a blessing. Soon after that, Akbar's wife gave birth to a healthy son.
-            The emperor, moved beyond words, named the boy Salim, after the saint himself. Later, that
-            same child would take the throne as Emperor Jahangir, one of the great Mughal rulers.
-          </p>
-
           {/* Abandonment */}
           <h3 className="text-[18px] sm:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             The Mysterious Abandonment

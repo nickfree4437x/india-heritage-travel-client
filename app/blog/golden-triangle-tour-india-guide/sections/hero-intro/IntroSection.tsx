@@ -54,12 +54,9 @@ export default function IntroSection() {
         <div className="mb-6 sm:mb-8 lg:mb-8">
           {/* Header with badge */}
           <div className="flex flex-col items-start gap-3 mb-4">
-            <h1 className="text-[16px] sm:text-[20px] md:text-[22px] font-bold tracking-wide text-[#2c2c2c] -mb-2">
+            <h1 className="text-[16px] sm:text-[20px] md:text-[22px] font-bold tracking-wide text-[#2c2c2c] mb-2">
               Welcome to the Golden Triangle
             </h1>
-            <p className="text-gray-500 text-[13px] sm:text-[14px] font-light max-w-2xl">
-              Discover the heart of India through its most iconic cities - Delhi, Agra, and Jaipur
-            </p>
           </div>
 
           {/* Stats Row */}

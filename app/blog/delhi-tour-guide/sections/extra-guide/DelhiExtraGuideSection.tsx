@@ -15,7 +15,7 @@ export default function DelhiExtraGuideSection() {
           {/* CONTENT */}
           <div className="max-w-6xl">
 
-            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
               Plan for Day Trips
               around Delhi
             </h2>
@@ -69,7 +69,7 @@ export default function DelhiExtraGuideSection() {
           {/* CONTENT */}
           <div className="max-w-6xl">
 
-            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
               Explore Delhi’s
               Culture and Festivals
             </h2>
@@ -116,7 +116,7 @@ export default function DelhiExtraGuideSection() {
         {/* SAFETY SECTION */}
         <div className="mb-6 md:mt-8">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Safety Tips:
             First-timer’s guide
             to New Delhi
@@ -190,7 +190,7 @@ export default function DelhiExtraGuideSection() {
         {/* FINAL */}
         <div className="max-w-6xl">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Why Delhi should be
             on Your Bucket List
           </h2>

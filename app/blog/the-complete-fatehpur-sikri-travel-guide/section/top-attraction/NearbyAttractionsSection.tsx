@@ -70,7 +70,7 @@ export default function CityBreakdown() {
                 </p>
 
                 {/* City Name */}
-                <h3 className="text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 flex items-center gap-2">
+                <h3 className="mt-2 md:mt-4 text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 flex items-center gap-2">
                   {city.name}
                 </h3>
 

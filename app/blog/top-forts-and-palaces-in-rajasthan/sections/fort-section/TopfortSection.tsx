@@ -101,8 +101,8 @@ export default function CityBreakdown() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="mb-4 sm:mb-6">
-          <h2 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c]">
+        <div className="mb-2 sm:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c]">
            Top 15 Forts and Palaces in Rajasthan
           </h2>
         </div>

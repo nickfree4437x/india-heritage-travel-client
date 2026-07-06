@@ -49,12 +49,12 @@ const cityData = [
 
 export default function CityBreakdown() {
   return (
-    <section className="w-full bg-white py-8 sm:py-10">
+    <section className="w-full bg-white py-2 sm:py-3">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="mb-4 sm:mb-6">
-          <h2 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c]">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c]">
            Destinations Covered: A City-by-City Breakdown
           </h2>
         </div>

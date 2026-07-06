@@ -24,14 +24,6 @@ export default function MoreExperiencesSection() {
             natural beauty.
           </p>
 
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-            The trek involves approximately 750 steps winding past ancient
-            temples and sacred sites before opening up to panoramic views of
-            Narlai village and the Aravalli landscape. Sunrise and sunset are
-            particularly rewarding times to undertake the climb, when the
-            changing light transforms the surrounding scenery.
-          </p>
-
         </div>
 
         {/* RURAL JEEP SAFARI */}

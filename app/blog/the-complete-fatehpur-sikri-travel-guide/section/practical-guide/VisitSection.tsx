@@ -25,7 +25,7 @@ export default function BudgetAndSeasonSection() {
                 </span>
               </div>
 
-              <h3 className="text-[16px] md:text-[18px] font-semibold text-[#2c2c2c] mb-1">
+              <h3 className="text-[14px] md:text-[16px] font-semibold text-[#2c2c2c] mb-1">
                 ₹600 – ₹1,200
               </h3>
 
@@ -44,7 +44,7 @@ export default function BudgetAndSeasonSection() {
                 </span>
               </div>
 
-              <h3 className="text-[16px] md:text-[18px] font-semibold text-[#2c2c2c] mb-3">
+              <h3 className="text-[14px] md:text-[16px] font-semibold text-[#2c2c2c] mb-3">
                 ₹2,500 – ₹5,000
               </h3>
 
@@ -63,7 +63,7 @@ export default function BudgetAndSeasonSection() {
                 </span>
               </div>
 
-              <h3 className="text-[16px] md:text-[18px] font-semibold text-[#2c2c2c] mb-3">
+              <h3 className="text-[14px] md:text-[16px] font-semibold text-[#2c2c2c] mb-3">
                 ₹8,000 – ₹25,000+
               </h3>
 

@@ -199,4 +199,13 @@ export const blogs = [
     excerpt:
       "Some ruins speak. Fatehpur Sikri, at dawn, with the red sandstone glowing li...",
   },
+  {
+    id: 23,
+    slug: "khajuraho-temples-travel-guide",
+    title: "Khajuraho Temples Travel Guide - India's Most Astonishing....",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783253328/deepak-gupta-w_tW5yW7h4c-unsplash_jzg3e3.jpg",
+    date: "05 July",
+    excerpt:
+      "There is a moment at Khajuraho, usually in the early morning when the light f..",
+  },
 ];

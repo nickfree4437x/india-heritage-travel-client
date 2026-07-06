@@ -78,7 +78,7 @@ export default function DelhiGuideSection() {
         <div className="mb-4 md:mb-6">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Plan your Perfect Itinerary
           </h2>
 
@@ -121,7 +121,7 @@ export default function DelhiGuideSection() {
         <div className="mb-8 md:mb-10">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             How to move around
             the City:
             First-timer’s guide
@@ -134,7 +134,7 @@ export default function DelhiGuideSection() {
             at first, but it’s easier than you think!
             This first-timer’s guide to New Delhi will tell
             you everything you need to know. The best way
-            to get around is Delhi Metro—it’s affordable,
+            to get around is Delhi Metro - t’s affordable,
             air-conditioned, and connects you to almost
             every major attraction. If you want a more
             personalized and comfortable experience,
@@ -206,7 +206,7 @@ export default function DelhiGuideSection() {
         <div className="max-w-6xl">
 
           {/* HEADING */}
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Accommodation Tips:
             Where to Stay in Delhi
           </h2>

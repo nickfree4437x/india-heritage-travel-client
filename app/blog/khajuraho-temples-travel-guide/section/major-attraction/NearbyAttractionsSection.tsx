@@ -1,0 +1,104 @@
+"use client";
+
+import Image from "next/image";
+
+const cityData = [
+  {
+    name: "Panna National Park (30 km)",
+    description:
+      `Just 30 km from Khajuraho, Panna National Park is a top tiger reserve blending heritage with 
+      wildlife. The Ken River adds scenic beauty, and sightings of tigers, leopards, crocodiles, and 
+      birds are common. Jeep safaris are available through India Heritage Travel.`,
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783329756/Peaceful_time_away_from_the_wild_hustle._01_ghwf0d.jpg",
+  },
+  {
+    name: "Orchha (180 km)",
+    description:
+      `Orchha, the Bundela Rajput capital, features 16th–17th century temples, cenotaphs, and palaces
+       along the Betwa. The Ram Raja Temple, where Vishnu receives military honours, is a unique 
+       spiritual experience. India Heritage Travel offers Khajuraho–Orchha packages.`,
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783329959/Courtyard_inside_Raj_Mahal_muj3n2.jpg",
+  },
+  {
+    name: "Varanasi (410 km)",
+    description:
+      `Khajuraho and Varanasi are frequently paired in a central India heritage circuit - temple
+       architecture meets living Hindu tradition on the Ganga. India Heritage Travel offers this 
+       combination for international travellers seeking a profound cultural experience.`,
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783330064/Varanasi__India__Ghats__Cremation_ceremony_in_progress_rd5m3i.jpg",
+  },
+  {
+    name: "Raneh Falls and Ken Gharial Sanctuary (20 km)",
+    description:
+      `The Raneh Falls, 20 km from Khajuraho, is a stunning canyon of multi-coloured granite carved by
+       the Ken River. The adjacent Ken Gharial Sanctuary shelters endangered gharials. The falls are 
+       at their most dramatic during and right after the monsoon.`,
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783329854/Raneh_Falls_suaf4j.jpg",
+  },
+];
+
+export default function CityBreakdown() {
+  return (
+    <section className="w-full bg-white py-4 md:py-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Header */}
+        <div className="mb-3 sm:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c]">
+           Nearby Attractions - What to Combine with Khajuraho
+          </h2>
+        </div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          {cityData.map((city) => (
+            <div
+              key={city.name}
+              className="group overflow-hidden transition-all duration-300"
+            >
+              {/* Image */}
+              <div className="relative w-full h-[200px] sm:h-[260px] bg-[#faf7f3] overflow-hidden">
+                {city.image ? (
+                  <Image
+                    src={city.image}
+                    alt={city.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+                    via wikipedia
+                  </p>
+                )}
+
+                {/* City Name Overlay (Mobile) */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 md:hidden">
+                  <h3 className="text-white text-[18px] font-semibold flex items-center gap-2">
+                    {city.name}
+                  </h3>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="mt-2">
+                <p className="text-[10px] sm:text-[11px] text-gray-600 font-light">
+                    via wikipedia
+                  </p>
+                {/* City Name (Desktop) */}
+                <h3 className="hidden mt-2 md:flex text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 items-center gap-2">
+                  {city.name}
+                </h3>
+
+                {/* Description */}
+                <p className="text-[12px] mt-2 md:mt-0 sm:text-[13px] leading-relaxed text-gray-600 font-light line-clamp-3 md:line-clamp-4">
+                  {city.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+}

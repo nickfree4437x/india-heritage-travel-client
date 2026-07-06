@@ -2,7 +2,7 @@ export const faqs = [
   {
     question: "What is the Golden Triangle Tour in India?",
     answer:
-      "The Golden Triangle Tour connects Delhi, Agra, and Jaipur—India's three most iconic heritage cities. Together they form a triangular route across North India and can be explored comfortably in 5–7 days, although extended itineraries of up to 10 days are also popular.",
+      "The Golden Triangle Tour connects Delhi, Agra, and Jaipur - India's three most iconic heritage cities. Together they form a triangular route across North India and can be explored comfortably in 5–7 days, although extended itineraries of up to 10 days are also popular.",
   },
   {
     question: "How long does a Golden Triangle Tour take?",

@@ -4,57 +4,51 @@ import Link from "next/link";
 
 export default function QuickAnswer() {
   return (
-    <section className="w-full bg-white py-2 sm:py-4">
-
+    <section className="w-full bg-white py-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
-
         {/* Header */}
-
-        <div className="mb-4">
-
-          <h2 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c] leading-tight">
+        <div className="mb-2">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight">
             The Quick Answer: Which Tour Should You Choose?
           </h2>
-
         </div>
 
         {/* Content */}
-
-        <div className="space-y-5">
-
+        <div className="space-y-4">
           <p className="text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light text-justify">
             Every week, this is one of the most common questions we receive at
-            <strong> <a href="https://www.indiaheritagetravel.com" className="hover:underline">India Heritage Travel</a></strong>. 
-            And it is a genuinely
-            important one because the <strong><a href="https://www.indiaheritagetravel.com/tours/majestic-golden-triangle-tour" className="hover:underline">Golden Triangle Tour</a></strong> and
-            a <strong><a href="https://www.indiaheritagetravel.com/tours/rajasthani-heritage-retreat-tour" className="hover:underline">Rajasthan Tour</a></strong> are not simply different versions
-            of the same itinerary. They are completely different journeys,
+            <strong>
+              {" "}
+              <Link href="https://www.indiaheritagetravel.com" className="hover:underline text-[#8b6a3d]">
+                India Heritage Travel
+              </Link>
+            </strong>. 
+            And it is a genuinely important one because the{" "}
+            <strong>
+              <Link href="https://www.indiaheritagetravel.com/tours/majestic-golden-triangle-tour" className="hover:underline text-[#8b6a3d]">
+                Golden Triangle Tour
+              </Link>
+            </strong>{" "}
+            and a{" "}
+            <strong>
+              <Link href="https://www.indiaheritagetravel.com/tours/rajasthani-heritage-retreat-tour" className="hover:underline text-[#8b6a3d]">
+                Rajasthan Tour
+              </Link>
+            </strong>{" "}
+            are not simply different versions of the same itinerary. They are completely different journeys,
             designed for different kinds of travellers, offering different
             landscapes, different experiences, and a very different pace of
             travel.
           </p>
-
-          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light text-justify">
-            If your priority is seeing India's most iconic landmarks in a short
-            amount of time, the Golden Triangle is usually the better choice.
-            If, however, you want to explore royal palaces, desert landscapes,
-            heritage hotels, wildlife, and experience Rajasthan beyond the
-            highlights, then a dedicated Rajasthan itinerary offers a much
-            deeper cultural journey.
-          </p>
-
         </div>
 
         {/* Decision Box */}
-
-        <div className="my-8 rounded-sm">
-
-          <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-3">
+        <div className="my-6 md:my-8 rounded-sm">
+          <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
             Here's the fastest answer:
           </h3>
 
           <div className="space-y-4">
-
             <div>
               <h4 className="text-[14px] text-gray-700 mb-2">
                 Choose the Golden Triangle Tour
@@ -93,13 +87,9 @@ export default function QuickAnswer() {
                 the transition between the two is completely seamless.
               </p>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }
