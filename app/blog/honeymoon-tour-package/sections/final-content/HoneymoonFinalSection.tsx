@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HoneymoonFinalSection() {
   return (
-    <section className="w-full bg-white py-4 lg:py-6">
+    <section className="w-full bg-white py-4 md:py-6 pb-10 md:pb-12">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 xl:px-10">
@@ -13,12 +14,12 @@ export default function HoneymoonFinalSection() {
         <div>
 
           {/* HEADING */}
-          <h2 className="text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] tracking-wide text-[#2c2c2c] font-semibold mb-3 sm:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             Desert Dream in Rajasthan
           </h2>
 
           {/* CONTENT */}
-          <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-light text-justify mb-3 sm:mb-4">
+          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-3 sm:mb-4">
             Let the golden dunes of the desert provide the backdrop
             for romance. Relax in a luxurious tented camp, indulge in
             a private jeep safari, watch a sunset camel ride, and
@@ -45,22 +46,22 @@ export default function HoneymoonFinalSection() {
         </div>
 
         {/* ===== STAND OUT SECTION ===== */}
-        <div className="mt-6 sm:mt-8 md:mt-10">
+        <div className="mt-6 sm:mt-8">
 
           {/* HEADING */}
-          <h2 className="text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] tracking-wide text-[#2c2c2c] font-semibold mb-4 sm:mb-5 md:mb-6">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             What Makes Our India Heritage Honeymoon Tour Packages Stand Out?
           </h2>
 
           {/* ITEMS */}
-          <div className="space-y-5 sm:space-y-6 md:space-y-7">
+          <div className="space-y-4 md:space-y-6">
 
             {/* ITEM 1 */}
             <div>
-              <h3 className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-1.5 sm:mb-2">
+              <h3 className="text-[14px] sm:text-[16px] md:text-[18px] tracking-wide text-[#2c2c2c] font-semibold mb-1.5">
                 Realistic Romantic Immersion
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-light text-justify">
+              <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 Get intimately connected with every place off the beaten
                 path, we incorporate cultural immersion, local
                 interactions, and age-old traditions that deepen your
@@ -70,10 +71,10 @@ export default function HoneymoonFinalSection() {
 
             {/* ITEM 2 */}
             <div>
-              <h3 className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-1.5 sm:mb-2">
+              <h3 className="text-[14px] sm:text-[16px] md:text-[18px] tracking-wide text-[#2c2c2c] font-semibold mb-1.5">
                 Seamless Planning, Zero Stress
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-light text-justify">
+              <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 Let us handle the nitty-gritty. From airfare,
                 private transfers, and VIP requests to surprises,
                 we're here to craft your ideal love adventure.
@@ -82,12 +83,12 @@ export default function HoneymoonFinalSection() {
 
             {/* ITEM 3 */}
             <div>
-              <h3 className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-1.5 sm:mb-2">
+              <h3 className="text-[14px] sm:text-[16px] md:text-[18px] tracking-wide text-[#2c2c2c] font-semibold mb-1.5">
                 Flexible & Transparent Pricing
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-light text-justify">
+              <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 Enjoy complete flexibility, from short retreats to
-                extended escapes—tailored to your preferences.
+                extended escapes tailored to your preferences.
                 We'll design a beautiful experience that aligns with
                 your budget, without compromising on privacy or
                 indulgence.
@@ -96,10 +97,10 @@ export default function HoneymoonFinalSection() {
 
             {/* ITEM 4 */}
             <div>
-              <h3 className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-1.5 sm:mb-2">
+              <h3 className="text-[14px] sm:text-[16px] md:text-[18px] tracking-wide text-[#2c2c2c] font-semibold mb-1.5">
                 Safe, Responsible Travel
               </h3>
-              <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-light text-justify">
+              <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                 We honor local communities, regions, and heritage.
                 Our tours support conservation, responsible tourism,
                 and give back to destinations you'll fall in love with
@@ -115,12 +116,12 @@ export default function HoneymoonFinalSection() {
         <div className="mt-4 sm:mt-6">
 
           {/* HEADING */}
-          <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[26px] font-semibold text-[#2c2c2c] mb-4 sm:mb-5">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c] mb-2">
             Ready to Begin Your Forever Together?
           </h2>
 
           {/* CONTENT */}
-          <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-light text-justify mb-3 sm:mb-4">
+          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-3 sm:mb-4">
             Whether you imagine your honeymoon amidst Rajasthan's royal palaces,
             surrounded by the misty mountains of the Himalayas, relaxing on
             sun-kissed beaches, or escaping to peaceful countryside retreats,
@@ -129,7 +130,7 @@ export default function HoneymoonFinalSection() {
             you arrive.
           </p>
 
-          <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-light text-justify mb-4 sm:mb-5">
+          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-4 sm:mb-5">
             At <span className="font-normal text-[#2c2c2c]">
               <a href="https://www.indiaheritagetravel.com" className="hover:underline">
                 India Heritage Travel
@@ -142,38 +143,40 @@ export default function HoneymoonFinalSection() {
           </p>
 
           {/* CTA BOX */}
-          <div className="bg-[#faf8f5] rounded-md p-5 sm:p-6 md:p-7 lg:p-8">
+          <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
-            <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light mb-5 sm:mb-6">
-              Speak with our honeymoon specialists for a complimentary
-              consultation and let us design a personalised journey crafted
-              exclusively for the two of you.
+            <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+              Looking for the Perfect Honeymoon in India?
+            </h3>
+
+            <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">
+              Your honeymoon should be as unique as your love story. India Heritage Travel designs romantic
+               escapes across India's most enchanting destinations - from palace stays in Rajasthan to 
+               tranquil backwaters in Kerala. Every itinerary is crafted with privacy, luxury, and 
+               unforgettable experiences in mind.
             </p>
 
-            <a
+            <Link
               href="/contact"
               className="
                 inline-flex
                 items-center
                 justify-center
+                rounded-md
                 bg-[#AF956C]
-                hover:bg-[#9c7f54]
-                active:bg-[#8a6f4a]
+                px-6
+                py-2 md:py-2.5
+                text-[12px]
+                sm:text-[13px]
+                font-light
+                text-white
                 transition-colors
                 duration-300
-                text-white
-                text-[13px] sm:text-[14px] md:text-[15px]
-                font-light
-                px-6 sm:px-8
-                py-2.5 sm:py-3
-                rounded-md
-                shadow-sm
-                hover:shadow-md
+                hover:bg-[#9d8157]
               "
             >
               Plan Your Honeymoon
-            </a>
-
+            </Link>
           </div>
 
         </div>

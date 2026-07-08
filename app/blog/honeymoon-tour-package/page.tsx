@@ -20,7 +20,6 @@ import HeroSection from "./sections/hero/HeroSection";
 import HoneymoonContentSection from "./sections/content/HoneymoonContentSection";
 import RomanticEscapesSection from "./sections/romantic-escapes/RomanticEscapesSection";
 import HoneymoonFinalSection from "./sections/final-content/HoneymoonFinalSection";
-import HoneymoonFaqSection from "./sections/faq/HoneymoonFaqSection";
 import Moreblogs from "./sections/more-blogs/MoreBlogs";
 
 // ============================================
@@ -89,7 +88,6 @@ export default function BlogDetailsPage() {
       <HoneymoonContentSection />
       <RomanticEscapesSection />
       <HoneymoonFinalSection />
-      <HoneymoonFaqSection />
       <Moreblogs />
 
       {/* Footer */}

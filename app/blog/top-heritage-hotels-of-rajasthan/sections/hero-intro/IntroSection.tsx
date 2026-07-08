@@ -12,7 +12,7 @@ export default function IntroSection() {
 
         <div className="max-w-6xl">
 
-          <h2 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c] leading-tight mb-6">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight mb-2">
             Heritage Hotels in Rajasthan: Where History Becomes Part of Your Stay
           </h2>
 
@@ -26,17 +26,6 @@ export default function IntroSection() {
             staff behind the reception desk seem remarkably patient - they have
             probably watched countless guests become distracted by the beauty of
             their surroundings before completing the paperwork.
-          </p>
-
-          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-8">
-            What makes the finest heritage hotels in Rajasthan so special is
-            that they are not recreating a royal atmosphere - they are the real
-            thing. These are former palaces, royal residences, hunting lodges,
-            and noble estates where Rajput rulers once lived. The corridors,
-            courtyards, balconies, and suites are not inspired by history; they
-            are history. Staying in one of these remarkable properties changes
-            the way Rajasthan is experienced, making the journey feel far more
-            personal, immersive, and memorable.
           </p>
 
         </div>
@@ -68,11 +57,11 @@ export default function IntroSection() {
 
         <div className="max-w-6xl">
 
-          <h3 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c] mb-2">
+          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             How Does a Heritage Hotel Differ?
           </h3>
 
-          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-4">
+          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify">
             The term <strong>"heritage hotel"</strong> is often used rather
             loosely within India's hospitality industry. A modern hotel built
             recently with marble floors, arches, and traditional décor does not
@@ -81,15 +70,6 @@ export default function IntroSection() {
             residence with authentic historical significance. These buildings
             were originally constructed centuries ago and later adapted for
             modern hospitality while preserving their architectural character.
-          </p>
-
-          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify">
-            The finest heritage hotels achieve something remarkably difficult:
-            they preserve original architecture, artwork, courtyards, frescoes,
-            and historical ambience while simultaneously offering the comfort
-            expected by modern travellers. Balancing authenticity and luxury is
-            what separates a truly exceptional heritage hotel from an ordinary
-            luxury property.
           </p>
 
         </div>

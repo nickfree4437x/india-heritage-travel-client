@@ -4,16 +4,16 @@ import Image from "next/image";
 
 export default function BlogExtraContentSection() {
   return (
-    <section className="w-full bg-white pb-16 md:pb-20">
+    <section className="w-full bg-white">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
         {/* Packages That Fit You */}
         <div className="mt-4 sm:mt-6">
           <h2 className="
-            text-[18px] sm:text-[22px] md:text-[24px]
+            text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Packages That Fit You
           </h2>
@@ -57,16 +57,19 @@ export default function BlogExtraContentSection() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 text-[11px] sm:text-[12px] font-light text-gray-600">
+            Via: unsplash.com
+          </p>
         </div>
 
         {/* Safety Section */}
-        <div className="max-w-6xl mt-6 sm:mt-8">
+        <div className="max-w-6xl mt-4 sm:mt-6">
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Safety, Trust, Backup
           </h2>
@@ -95,7 +98,7 @@ export default function BlogExtraContentSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Smarter Use of Your Money
           </h2>
@@ -128,7 +131,7 @@ export default function BlogExtraContentSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             What Builds Real Confidence
           </h2>

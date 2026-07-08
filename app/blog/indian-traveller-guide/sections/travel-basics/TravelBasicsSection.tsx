@@ -39,7 +39,7 @@ export default function TravelBasicsSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Getting Your Visa Sorted
           </h2>
@@ -97,7 +97,7 @@ export default function TravelBasicsSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Understanding the Weather
           </h2>
@@ -137,7 +137,7 @@ export default function TravelBasicsSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             When Should You Actually Go?
           </h2>

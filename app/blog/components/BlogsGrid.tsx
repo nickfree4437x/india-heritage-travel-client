@@ -97,7 +97,7 @@ export default function BlogsGrid({ currentPage }: BlogsGridProps) {
                 hover:bg-[#8f6d42] hover:text-white hover:border-[#8b6a3d]
               "
             >
-              <ChevronLeft size={20} strokeWidth={1.8} />
+              <ChevronLeft size={18} strokeWidth={1.8} />
             </Link>
           ) : (
             <span className="
@@ -110,7 +110,7 @@ export default function BlogsGrid({ currentPage }: BlogsGridProps) {
               opacity-40
               cursor-not-allowed
             ">
-              <ChevronLeft size={20} strokeWidth={1.8} />
+              <ChevronLeft size={18} strokeWidth={1.8} />
             </span>
           )}
 

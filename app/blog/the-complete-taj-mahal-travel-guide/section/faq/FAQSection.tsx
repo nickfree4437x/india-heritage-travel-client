@@ -68,11 +68,11 @@ export default function FAQSection() {
 
         {/* CTA */}
         <div className="mt-10 bg-[#faf8f5] rounded-md p-6 sm:p-8">
-          <h3 className="text-[16px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-2">
+          <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
             Visit to Taj Mahal - Plan Now!
           </h3>
 
-          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed text-justify font-light mb-6">
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed text-justify font-light mb-4">
             India Heritage Travel designs private chauffeur-driven
             journeys covering the Taj Mahal, Agra, the Golden Triangle,
             and Rajasthan with expert guides, carefully selected hotels,
@@ -81,7 +81,7 @@ export default function FAQSection() {
 
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center rounded-md bg-[#AF956C] px-6 py-2 text-[12px] sm:text-[13px] text-white font-light hover:bg-[#9d8157] transition-colors"
+            className="inline-flex items-center justify-center rounded-md bg-[#AF956C] px-6 py-2 md:py-2.5 text-[12px] sm:text-[13px] text-white font-light hover:bg-[#9d8157] transition-colors"
           >
             Plan My Taj Mahal Tour
           </Link>

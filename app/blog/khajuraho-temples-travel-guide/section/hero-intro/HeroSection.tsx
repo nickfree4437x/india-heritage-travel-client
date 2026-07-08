@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dja5yspwr/image/upload/v1783253328/deepak-gupta-w_tW5yW7h4c-unsplash_jzg3e3.jpg"
-          alt="Discovering the historical and cultural beauty of New Delhi India"
+          alt="Khajuraho Temples UNESCO World Heritage Site with Nagara-style sandstone shikharas"
           fill
           priority
           sizes="100vw"

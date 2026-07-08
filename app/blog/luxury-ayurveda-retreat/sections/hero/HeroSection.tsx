@@ -9,17 +9,15 @@ import { FaWhatsapp, FaPinterestP } from "react-icons/fa";
 
 import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
-// ============================================================
+// ============================================
 // CONSTANTS
-// ============================================================
-
+// ============================================
 const SHARE_URL = "https://indiaheritagetravel.com/blog/luxury-ayurveda-retreat";
 const SHARE_TITLE = "Luxury Ayurveda & Wellness Retreats in India - Your Perfect Escape";
 
-// ============================================================
+// ============================================
 // SHARE LINKS
-// ============================================================
-
+// ============================================
 const shareLinks = [
   {
     name: "Facebook",
@@ -47,19 +45,14 @@ const shareLinks = [
   },
 ];
 
-// ============================================================
+// ============================================
 // COMPONENT
-// ============================================================
-
+// ============================================
 export default function HeroSection() {
   return (
     <section className="w-full bg-white">
-
-      {/* ==========================================
-          HERO IMAGE
-          ========================================== */}
+      {/* Hero Image */}
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
-
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579801053/blog-8_rtahzc.jpg"
           alt="Luxury Ayurveda retreat in India offering holistic wellness and rejuvenation"
@@ -71,24 +64,17 @@ export default function HeroSection() {
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/35" />
-
       </div>
 
-      {/* ==========================================
-          BREADCRUMB
-          ========================================== */}
+      {/* Breadcrumb */}
       <BlogBreadcrumb title="Luxury Ayurveda Retreats in India" />
 
-      {/* ==========================================
-          CONTENT
-          ========================================== */}
+      {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
-
         <div className="py-6 sm:py-8 lg:py-8 text-center">
-
-          {/* ----- Title ----- */}
+          {/* Title */}
           <h1 className="
-            text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px]
+            text-[18px] sm:text-[22px] md:text-[26px]
             tracking-wide
             text-[#2c2c2c]
             font-semibold
@@ -100,7 +86,7 @@ export default function HeroSection() {
             Retreats in India
           </h1>
 
-          {/* ----- Description ----- */}
+          {/* Description */}
           <p className="
             mt-4
             text-[#5f5f5f]
@@ -116,23 +102,21 @@ export default function HeroSection() {
             experiences designed to restore your body and mind.
           </p>
 
-          {/* ----- Divider ----- */}
+          {/* Divider */}
           <div className="w-full h-[1px] bg-[#1f1f1f] mt-4 sm:mt-6" />
 
-          {/* ----- Meta (Author, Date, Comments, Shares) ----- */}
+          {/* Meta Info */}
           <div className="
             mt-4
             flex flex-col gap-4 sm:gap-5
             sm:flex-row sm:items-center sm:justify-between
           ">
-
-            {/* LEFT: Comments + Date + Author */}
+            {/* Left Side - Author Info */}
             <div className="
               flex items-center gap-4 sm:gap-5
               text-[#6a6a6a]
               justify-center sm:justify-start
             ">
-
               {/* Comments */}
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <MessageCircle size={15} strokeWidth={1.7} />
@@ -156,23 +140,18 @@ export default function HeroSection() {
                   By Isha, India Heritage Travel
                 </span>
               </div>
-
             </div>
 
-            {/* RIGHT: Share Buttons */}
+            {/* Right Side - Social Share */}
             <div className="
               flex items-center gap-4 sm:gap-5
               justify-center sm:justify-end
             ">
-
-              {/* Shares Label */}
               <span className="text-[#555] text-[12px] md:text-[13px] font-light">
                 Shares :
               </span>
 
-              {/* Icons */}
               <div className="flex items-center gap-3 sm:gap-4 text-black">
-
                 {shareLinks.map((link) => {
                   const Icon = link.icon;
                   return (
@@ -182,26 +161,17 @@ export default function HeroSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={link.ariaLabel}
-                      className="
-                        hover:text-[#7C5C38]
-                        transition-colors duration-300
-                      "
+                      className="hover:text-[#7C5C38] transition-colors duration-300"
                     >
                       <Icon size={15} />
                     </Link>
                   );
                 })}
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }

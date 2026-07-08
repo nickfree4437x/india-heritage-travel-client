@@ -8,12 +8,12 @@ export default function AndamanSection() {
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* TITLE */}
-        <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+        <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold">
           4. Andaman and Nicobar Islands
         </h2>
 
         {/* IMAGE */}
-        <div className="mt-6">
+        <div className="mt-4 md:mt-6">
 
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
@@ -25,7 +25,7 @@ export default function AndamanSection() {
             />
           </div>
 
-          <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
             via unsplash.com
           </p>
 
@@ -47,7 +47,7 @@ export default function AndamanSection() {
           {/* LOCATIONS */}
           <div className="mt-6">
 
-            <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+            <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
               Top Locations to explore:
             </h3>
 

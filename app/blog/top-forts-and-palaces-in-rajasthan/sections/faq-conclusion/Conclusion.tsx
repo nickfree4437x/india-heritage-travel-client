@@ -12,7 +12,7 @@ export default function ConclusionSection() {
             Ready to Explore Rajasthan's Royal Heritage?
           </h3>
 
-          <p className="max-w-6xl mx-auto text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light text-justify mb-4 md:mb-6">
+          <p className="max-w-6xl mx-auto text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light text-justify mb-4">
             Let India Heritage Travel design a personalised Rajasthan itinerary
             featuring magnificent forts, royal palaces, luxury heritage hotels,
             and unforgettable cultural experiences - all planned around your

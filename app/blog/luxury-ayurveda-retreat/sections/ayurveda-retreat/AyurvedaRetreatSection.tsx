@@ -31,7 +31,7 @@ export default function AyurvedaRetreatSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             1. Ananda in the Himalayas – A Royal Retreat
@@ -63,24 +63,16 @@ export default function AyurvedaRetreatSection() {
           <div
             className="
               relative
-
               mt-4
               sm:mt-6
-
               w-full
-
               h-[280px]
               sm:h-[420px]
               lg:h-[560px]
-
               rounded-sm
-
               overflow-hidden
-
-              shadow-md
-            "
+              shadow-md"
           >
-
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779801783/rohit-tandon-9wg5jCEPBsw-unsplash_ukliri.jpg"
               alt="Ananda in the Himalayas luxury wellness retreat overlooking the Ganges valley with Himalayan peaks"
@@ -88,11 +80,9 @@ export default function AyurvedaRetreatSection() {
               sizes="100vw"
               className="object-cover"
             />
-
           </div>
-
           {/* CREDIT */}
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
             via unsplash.com
           </p>
 
@@ -123,7 +113,7 @@ export default function AyurvedaRetreatSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             2. SwaSwara, Karnataka – A Beachside Escape
@@ -154,24 +144,16 @@ export default function AyurvedaRetreatSection() {
           <div
             className="
               relative
-
               mt-4
               sm:mt-6
-
               w-full
-
               h-[280px]
               sm:h-[420px]
               lg:h-[560px]
-
               rounded-sm
-
               overflow-hidden
-
-              shadow-md
-            "
+              shadow-md"
           >
-
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779802008/mahesh-s-IqDPGXgNRFI-unsplash_osk22w.jpg"
               alt="Wellness retreat at SwaSwara Gokarna Karnataka overlooking the Arabian Sea"
@@ -179,11 +161,9 @@ export default function AyurvedaRetreatSection() {
               sizes="100vw"
               className="object-cover"
             />
-
           </div>
-
           {/* CREDIT */}
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
             via unsplash.com
           </p>
 
@@ -208,7 +188,6 @@ export default function AyurvedaRetreatSection() {
               If you’re planning a Best Ayurveda retreats in India,
               SwaSwara is a great place to be.
             </p>
-
           </div>
 
         </div>

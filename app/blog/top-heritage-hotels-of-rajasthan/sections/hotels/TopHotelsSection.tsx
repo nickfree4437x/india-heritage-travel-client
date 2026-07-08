@@ -57,12 +57,6 @@ const cityData = [
       "A fort-inspired yellow sandstone property in Jaisalmer with jharokhas and carved grilles. It provides space, quiet, and unobstructed desert views - unlike stays inside the crowded fort",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782557340/pexels-navlakha-33667487_bpns2h.jpg",
   },
-  {
-    name: "Suryagarh - Jaisalmer",
-    description:
-      "A 15th-century fort on the Delhi-Jaipur highway, restored since 1991. It terraces down the Aravalli hillside, and the valley zipline is an unexpectedly fun activity.",
-    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782557510/pexels-pramodtiwari-33797766_lbk3oi.jpg",
-  },
 ];
 
 export default function CityBreakdown() {
@@ -71,8 +65,8 @@ export default function CityBreakdown() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="mb-4 sm:mb-6">
-          <h2 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c]">
+        <div className="mb-2 sm:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c]">
            Top Heritage Hotels in Rajasthan
           </h2>
         </div>
@@ -101,7 +95,7 @@ export default function CityBreakdown() {
 
                 {/* City Name Overlay (Mobile) */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 md:hidden">
-                  <h3 className="text-white text-[18px] font-semibold flex items-center gap-2">
+                  <h3 className="text-white text-[16px] font-semibold flex items-center gap-2">
                     {city.name}
                   </h3>
                 </div>
@@ -113,7 +107,7 @@ export default function CityBreakdown() {
                     via unsplash
                   </p>
                 {/* City Name (Desktop) */}
-                <h3 className="hidden mt-2 md:flex text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 items-center gap-2">
+                <h3 className="hidden mt-3 md:flex text-[14px] md:text-[15px] font-bold text-[#2c2c2c] mb-2 items-center gap-2">
                   {city.name}
                 </h3>
 

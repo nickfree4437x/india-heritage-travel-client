@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function HeritageHotelsConclusionSection() {
   return (
     <section className="w-full bg-white pb-10 md:pb-12">
@@ -13,14 +15,14 @@ export default function HeritageHotelsConclusionSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             Why choose a heritage hotel in India?
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-4 sm:mt-6 max-w-6xl space-y-4">
+          <div className="max-w-6xl space-y-4">
 
             <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Staying in a heritage hotel is not just a luxurious
@@ -49,14 +51,14 @@ export default function HeritageHotelsConclusionSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             Book Your Stay with the Best Travel Agency in India
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-4 sm:mt-6 max-w-6xl space-y-4">
+          <div className="max-w-6xl space-y-4">
 
             <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you’re looking for an unforgettable journey through
@@ -72,19 +74,42 @@ export default function HeritageHotelsConclusionSection() {
 
           </div>
 
-          {/* FINAL LINE */}
-          <div className="mt-4 sm:mt-6 max-w-6xl">
+        </div>
 
-            <p
-              className="
-                text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
-              "
-            >
-              Let your next trip be more than just travel - make it a
-              story worth telling!
-            </p>
+        <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
-          </div>
+          <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+            Ready for a Royal Stay at India's Finest Heritage Hotels?
+          </h3>
+
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">
+            India's heritage hotels are more than places to stay - they're living monuments to royal
+            history, architectural grandeur, and timeless hospitality. From palace fortresses and 
+            lakeside retreats to colonial-era mansions, India Heritage Travel curates exclusive stays
+             at the country's most iconic heritage properties, ensuring an unforgettable experience.
+          </p>
+
+          <Link
+            href="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              rounded-md
+              bg-[#AF956C]
+              px-6
+              py-2 md:py-2.5
+              text-[12px]
+              sm:text-[13px]
+              font-light
+              text-white
+              transition-colors
+              duration-300
+              hover:bg-[#9d8157]
+            "
+          >
+            Plan Your Heritage Stay
+          </Link>
 
         </div>
 

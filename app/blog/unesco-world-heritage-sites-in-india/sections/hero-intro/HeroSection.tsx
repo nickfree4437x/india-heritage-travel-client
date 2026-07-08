@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="India UNESCO World Heritage Sites: A Comprehensive Guide for Travelers" />
+      <BlogBreadcrumb title="India UNESCO World Heritage Sites" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">

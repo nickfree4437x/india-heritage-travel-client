@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 
+// Romantic escapes data
 const escapes = [
   {
     title: "Golden Triangle Romance & Taj Mahal",
     description:
-      "Begin with Delhi and the hum of its energy, take a tour and stroll across Agra with the splendor of the Taj Mahal—a legend of love—and then into the magnificent palaces and the luxurious bazaars of Jaipur. Cap it off with a splurging retreat in a centuries-old fort, complete with romantic vistas under starry nights.",
+      "Begin with Delhi and the hum of its energy, take a tour and stroll across Agra with the splendor of the Taj Mahal - a legend of love and then into the magnificent palaces and the luxurious bazaars of Jaipur. Cap it off with a splurging retreat in a centuries-old fort, complete with romantic vistas under starry nights.",
     image:
       "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779650944/pexels-sudipta-1603650-scaled_wzzi6y.jpg",
   },
@@ -32,54 +33,46 @@ const escapes = [
 
 export default function RomanticEscapesSection() {
   return (
-    <section className="w-full bg-white">
-
-      {/* SAME WIDTH AS HERO */}
+    <section className="w-full bg-white py-0 md:py-2">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
-
         <div className="space-y-4 sm:space-y-5">
-
           {escapes.map((item, index) => (
             <div key={index}>
-
-              {/* CONTENT */}
+              {/* Content */}
               <div className="max-w-6xl">
-
-                <h3
-                  className="
-                    text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
-                  "
-                >
+                <h3 className="
+                  text-[16px] sm:text-[20px] md:text-[22px]
+                  tracking-wide
+                  text-[#2c2c2c]
+                  font-semibold
+                  mb-2
+                ">
                   {item.title}
                 </h3>
 
-                <p className="mt-2 text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+                <p className="
+                  mt-2
+                  text-gray-700
+                  text-[13px] sm:text-[14px] md:text-[14.5px]
+                  font-[300]
+                  leading-relaxed
+                  text-justify
+                  mb-4
+                ">
                   {item.description}
                 </p>
-
               </div>
 
-              {/* IMAGE */}
+              {/* Image */}
               <div className="mt-4 sm:mt-6">
-
-                <div
-                  className="
-                    relative
-
-                    w-full
-
-                    h-[280px]
-                    sm:h-[420px]
-                    lg:h-[580px]
-
-                    rounded-sm
-
-                    overflow-hidden
-
-                    shadow-[0_10px_35px_rgba(0,0,0,0.08)]
-                  "
-                >
-
+                <div className="
+                  relative
+                  w-full
+                  h-[280px] sm:h-[420px] lg:h-[580px]
+                  rounded-sm
+                  overflow-hidden
+                  shadow-[0_10px_35px_rgba(0,0,0,0.08)]
+                ">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -87,21 +80,16 @@ export default function RomanticEscapesSection() {
                     sizes="100vw"
                     className="object-cover"
                   />
-
                 </div>
 
-                {/* CREDIT */}
+                {/* Credit */}
                 <p className="mt-2 text-[11px] sm:text-[12px] font-light text-gray-700">
                   via unsplash.com
                 </p>
-
               </div>
-
             </div>
           ))}
-
         </div>
-
       </div>
     </section>
   );

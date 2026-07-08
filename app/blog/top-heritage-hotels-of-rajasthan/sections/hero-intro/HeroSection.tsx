@@ -46,9 +46,7 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            Top Heritage Hotels of Rajasthan:
-            <br />
-            Where Rich History Meets Luxury
+            Top Heritage Hotels of Rajasthan
           </h1>
 
           {/* Description */}

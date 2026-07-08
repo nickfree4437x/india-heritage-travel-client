@@ -5,16 +5,16 @@ import Link from "next/link";
 
 export default function BlogFinalSection() {
   return (
-    <section className="w-full bg-white -mt-10 md:pb-12 pb-4">
+    <section className="w-full bg-white py-4 md:py-8 pb-10 md:pb-12">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
         {/* Top Section */}
         <div>
           <h2 className="
-            text-[18px] sm:text-[22px] md:text-[24px]
+            text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             What to Look for in a Travel Partner
           </h2>
@@ -57,7 +57,7 @@ export default function BlogFinalSection() {
 
             <li className="flex items-start gap-4">
               <div className="w-2.5 h-2.5 rounded-full bg-[#8b6d52] mt-2" />
-              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+              <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
                 Do they promise 24/7 support when you're travelling?
               </p>
             </li>
@@ -94,7 +94,7 @@ export default function BlogFinalSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Imagine This Trip
           </h2>
@@ -128,7 +128,7 @@ export default function BlogFinalSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Final Thought
           </h2>
@@ -160,18 +160,42 @@ export default function BlogFinalSection() {
               For years, they've helped travellers tailor trips that
               feel authentic, not templated.
             </p>
-
-            <p className="text-[16px] sm:text-[18px] text-[#111111]">
-              Visit{" "}
-              <Link
-                href="https://www.indiaheritagetravel.com/"
-                className="text-[#8b6d52] hover:underline"
-              >
-                indiaheritagetravel.com
-              </Link>{" "}
-              to see how your journey could begin.
-            </p>
           </div>
+        </div>
+
+        <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
+
+          <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+            How the Right India Travel Agency Can Transform Your Journey
+          </h3>
+
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">
+            The right travel agency does more than book hotels - it opens doors to authentic experiences, 
+            handles the logistics, and ensures your safety and comfort at every step. India Heritage Travel
+             combines local expertise, trusted networks, and personalised attention to turn your India trip
+            into a truly transformative journey.
+          </p>
+          <Link
+            href="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              rounded-md
+              bg-[#AF956C]
+              px-6
+              py-2 md:py-2.5
+              text-[12px]
+              sm:text-[13px]
+              font-light
+              text-white
+              transition-colors
+              duration-300
+              hover:bg-[#9d8157]
+            "
+          >
+            Plan Your India Journey
+          </Link>
         </div>
       </div>
     </section>

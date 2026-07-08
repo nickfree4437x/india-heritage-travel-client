@@ -3,6 +3,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SlowTravelIntroSection() {
   return (
@@ -19,7 +20,7 @@ export default function SlowTravelIntroSection() {
               text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify
             "
           >
-            Slow travel is simple. You stay put.
+            Solo travel is simple. You stay put.
             You breathe. You allow places to reveal
             themselves to you.
           </p>
@@ -41,7 +42,7 @@ export default function SlowTravelIntroSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             Why India Works So Well
@@ -66,7 +67,7 @@ export default function SlowTravelIntroSection() {
             </p>
 
             <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-              <a href="/solo-women-travel" className="hover:underline font-[400]">Solo female travel in India</a> mellows out as well.
+              <Link href="/solo-women-travel" className="hover:underline font-[400]">Solo female travel in India</Link> mellows out as well.
               There’s familiarity in faces and schedules,
               there’s predictability, and all of that makes
               the whole experience feel safer.
@@ -77,22 +78,15 @@ export default function SlowTravelIntroSection() {
           <div
             className="
               relative
-
               mt-4
               sm:mt-6
-
               w-full
-
               h-[280px]
               sm:h-[420px]
               lg:h-[560px]
-
               rounded-sm
-
-              overflow-hidden
-            "
+              overflow-hidden"
           >
-
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641965/solo_znipyv.jpg"
               alt="Solo traveler discovering authentic cultural experiences and hidden gems in India"
@@ -101,14 +95,17 @@ export default function SlowTravelIntroSection() {
               className="object-cover"
             />
           </div>
+          <p className="mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
+            via unsplash
+          </p>
         </div>
 
         {/* CULTURAL MOMENTS */}
-        <div className="max-w-5xl mt-6 sm:mt-8">
+        <div className="max-w-6xl mt-4 sm:mt-6">
 
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             Cultural Moments That Feel Real

@@ -1,5 +1,3 @@
-// app/blogs/india-food-guide/components/MoreFoodSection.tsx
-
 "use client";
 
 import Image from "next/image";

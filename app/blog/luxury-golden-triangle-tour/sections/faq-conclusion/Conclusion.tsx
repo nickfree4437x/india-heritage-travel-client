@@ -12,7 +12,7 @@ export default function ConclusionSection() {
 
         <div className="bg-gradient-to-r from-[#faf7f3] to-[#f5f0e9] rounded-md p-6 sm:p-8">
 
-          <h3 className="text-[16px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-2">
+          <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
             Ready to Experience the Golden Triangle in True Luxury?
           </h3>
 

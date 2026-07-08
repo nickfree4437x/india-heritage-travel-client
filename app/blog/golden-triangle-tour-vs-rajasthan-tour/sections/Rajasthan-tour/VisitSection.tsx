@@ -123,7 +123,7 @@ export default function BestTimeSection() {
         <div className="border-t border-[#ece7de] pt-4 sm:pt-6">
         
         <div className="flex items-center justify-between gap-3 mb-2 flex-wrap">
-            <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide font-semibold text-[#1a1a1a]">
+            <h3 className="text-[16px] sm:text-[20px]  tracking-wide font-semibold text-[#1a1a1a]">
             Can You Combine Both?
             </h3>
             <span className="text-[12px] sm:text-[13px] text-[#b8860b] bg-[#faf7f3] px-4 py-1.5 rounded-full whitespace-nowrap border border-[#ece7de]">

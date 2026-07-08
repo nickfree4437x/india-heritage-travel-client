@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LuxuryRetreatFinalSection() {
   return (
@@ -15,7 +16,7 @@ export default function LuxuryRetreatFinalSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             6. The Leela Kovalam, Kerala – Cliffside Wellness Escape
@@ -48,24 +49,16 @@ export default function LuxuryRetreatFinalSection() {
           <div
             className="
               relative
-
               mt-4
               sm:mt-6
-
               w-full
-
               h-[280px]
               sm:h-[420px]
               lg:h-[560px]
-
               rounded-sm
-
               overflow-hidden
-
-              shadow-md
-            "
+              shadow-md"
           >
-
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779802348/dileesh-kumar-HAXToq7OVG8-unsplash_hudevd.jpg"
               alt="Clifftop view of The Leela Kovalam Beach Kerala overlooking the Arabian Sea"
@@ -73,11 +66,9 @@ export default function LuxuryRetreatFinalSection() {
               sizes="100vw"
               className="object-cover"
             />
-
           </div>
-
           {/* CREDIT */}
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
             via unsplash.com
           </p>
 
@@ -100,7 +91,6 @@ export default function LuxuryRetreatFinalSection() {
               This is an amazing choice if you’re looking for a Best
               Ayurveda retreats in India with a touch of luxury.
             </p>
-
           </div>
 
         </div>
@@ -111,7 +101,7 @@ export default function LuxuryRetreatFinalSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             7. Carnoustie Ayurveda & Wellness Resort, Kerala – A Celebrity Favorite
@@ -144,24 +134,16 @@ export default function LuxuryRetreatFinalSection() {
           <div
             className="
               relative
-
               mt-4
               sm:mt-6
-
               w-full
-
               h-[280px]
               sm:h-[420px]
               lg:h-[560px]
-
               rounded-sm
-
               overflow-hidden
-
-              shadow-md
-            "
+              shadow-md"
           >
-
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779802545/26.05.2026_19.04.49_REC_e25qyr.png"
               alt="Luxury Ayurveda and wellness retreat at Carnoustie Ayurveda Resort Kerala"
@@ -169,11 +151,10 @@ export default function LuxuryRetreatFinalSection() {
               sizes="100vw"
               className="object-cover"
             />
-
           </div>
 
           {/* CREDIT */}
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
             via carnoustieresorts.com
           </p>
 
@@ -207,7 +188,7 @@ export default function LuxuryRetreatFinalSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             Why Choose an Ayurveda Retreat in India?
@@ -251,7 +232,7 @@ export default function LuxuryRetreatFinalSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             Book Your Wellness Retreat with India Heritage Travel
@@ -269,14 +250,43 @@ export default function LuxuryRetreatFinalSection() {
               From customized travel packages to luxury retreats, we
               create experiences that will help you relax and heal.
             </p>
-
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-              Let your next trip be more than just travel—make it a
-              journey to wellness!
-            </p>
-
           </div>
+        </div>
 
+        <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
+
+          <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+            Ready to Begin Your Wellness Journey in India?
+          </h3>
+
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">
+            India is the birthplace of Ayurveda - and home to some of the world's most luxurious 
+            wellness retreats. From Himalayan sanctuaries and Kerala's backwaters to Rajasthan's 
+            royal spas, India Heritage Travel handpicks the finest Ayurveda escapes, combining 
+            authentic healing with world-class comfort.
+          </p>
+
+          <Link
+            href="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              rounded-md
+              bg-[#AF956C]
+              px-6
+              py-2 md:py-2.5
+              text-[12px]
+              sm:text-[13px]
+              font-light
+              text-white
+              transition-colors
+              duration-300
+              hover:bg-[#9d8157]
+            "
+          >
+            Plan Your Wellness Retreat
+          </Link>
         </div>
 
       </div>

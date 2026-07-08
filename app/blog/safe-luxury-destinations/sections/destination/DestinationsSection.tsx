@@ -15,7 +15,7 @@ export default function DestinationsSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Udaipur, Rajasthan
           </h2>

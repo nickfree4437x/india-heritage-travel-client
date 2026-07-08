@@ -208,4 +208,13 @@ export const blogs = [
     excerpt:
       "There is a moment at Khajuraho, usually in the early morning when the light f..",
   },
+  {
+    id: 24,
+    slug: "hampi-travel-guide",
+    title: "Hampi Travel Guide: The Complete 2025 Handbook for India's....",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783496231/pavan-kumaar-9eZ7rB42xow-unsplash_xfmove.jpg",
+    date: "07 July",
+    excerpt:
+      "Hampi is a UNESCO World Heritage Site in Karnataka, sort of those Vijayanagara...",
+  },
 ];

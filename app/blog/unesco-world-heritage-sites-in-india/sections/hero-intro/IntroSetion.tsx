@@ -12,7 +12,7 @@ export default function IntroSection() {
 
         <div className="max-w-6xl">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-relaxed mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-relaxed mb-2">
             Discover India's Most Extraordinary UNESCO World Heritage Sites
           </h2>
 
@@ -23,16 +23,6 @@ export default function IntroSection() {
             railways, and breathtaking national parks, the country's UNESCO
             World Heritage Sites represent thousands of years of human
             achievement, artistic excellence, and living traditions.
-          </p>
-
-          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-8">
-            These sites are more than simply famous landmarks. They are places
-            recognised for their outstanding universal value locations whose
-            cultural, architectural, historical, or environmental significance
-            is considered important not only to India but to humanity as a
-            whole. Whether it is your first visit to India or your tenth,
-            exploring UNESCO-listed destinations offers one of the most
-            rewarding ways to understand the country's extraordinary diversity.
           </p>
 
         </div>
@@ -64,7 +54,7 @@ export default function IntroSection() {
 
         <div className="max-w-6xl">
 
-          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-5">
+          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             What You'll Discover in This Guide
           </h3>
 

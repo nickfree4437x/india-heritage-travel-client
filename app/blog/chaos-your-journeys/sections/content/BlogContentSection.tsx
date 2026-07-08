@@ -25,11 +25,11 @@ export default function BlogContentSection() {
         {/* First Section */}
         <div className="mt-6 sm:mt-8">
           <h2 className="
-            text-[18px] sm:text-[24px] md:text-[24px]
+            text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             When You Try It Alone
           </h2>
@@ -72,19 +72,19 @@ export default function BlogContentSection() {
           </div>
 
           {/* Image Credit */}
-          <p className="mt-3 text-[11px] sm:text-[12px] font-light text-gray-700">
-            Photo Via: unsplash.com
+          <p className="mt-2 text-[11px] sm:text-[12px] font-light text-gray-600">
+            Via: unsplash.com
           </p>
         </div>
 
         {/* Second Section */}
-        <div className="max-w-6xl mt-6 sm:mt-8">
+        <div className="max-w-6xl mt-4 sm:mt-6">
           <h2 className="
-            text-[18px] sm:text-[22px] md:text-[24px]
+            text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             What a Good Agency Brings to the Table
           </h2>
@@ -120,7 +120,7 @@ export default function BlogContentSection() {
               </li>
             </ul>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+            <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
               As a result, your trip is smoother. You stop juggling logistics.
               You begin to absorb what's around you.
             </p>

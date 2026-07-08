@@ -8,7 +8,7 @@ export default function BestTimeSection() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <h2 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c] leading-tight mb-6">
+        <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight mb-2">
           Best Time to Stay in Rajasthan's Heritage Hotels
         </h2>
 
@@ -21,17 +21,6 @@ export default function BestTimeSection() {
           differently to heat than modern buildings, making the cooler months
           far more comfortable for exploring courtyards, terraces, gardens,
           and outdoor dining spaces.
-        </p>
-
-        <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify">
-          Many experienced travellers prefer the months of
-          <strong> February and March</strong>. The weather remains excellent,
-          visitor numbers begin to decline, and room availability becomes
-          noticeably better. In destinations such as Jaisalmer, the softer
-          desert light during late winter creates particularly beautiful
-          conditions for photography, while heritage hotels often offer a
-          slightly quieter and more relaxed experience than during the height
-          of the season.
         </p>
         {/* Image */}
         <div className="

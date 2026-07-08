@@ -13,7 +13,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="w-full bg-white py-4 sm:py-6 pb-10 md:pb-12">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -21,7 +21,7 @@ export default function FAQSection() {
 
         <div className="mb-4">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             Frequently Asked Questions
           </h2>
 
@@ -104,7 +104,7 @@ export default function FAQSection() {
 
         <div className="mt-4 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
-          <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-1">
+          <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
             Ready to Explore India's UNESCO Heritage?
           </h3>
 

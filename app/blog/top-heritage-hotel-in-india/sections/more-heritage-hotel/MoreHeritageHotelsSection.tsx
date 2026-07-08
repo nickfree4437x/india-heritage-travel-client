@@ -17,14 +17,14 @@ export default function MoreHeritageHotelsSection() {
             className="
               text-[16px] sm:text-[20px] md:text-[22px]
               tracking-wide text-[#2c2c2c]
-              font-semibold mb-4
+              font-semibold mb-2
             "
           >
             3. Mandawa Kothi, Mandawa – The Hidden Gem of Shekhawati
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-4 space-y-2">
+          <div className="space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Mandawa Kothi is a boutique heritage hotel situated
@@ -63,7 +63,7 @@ export default function MoreHeritageHotelsSection() {
 
             </div>
 
-            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
               via Tripadvisor
             </p>
 
@@ -72,21 +72,21 @@ export default function MoreHeritageHotelsSection() {
         </div>
 
         {/* SECTION 4 */}
-        <div className="mt-4 sm:mt-4">
+        <div className="mt-2 sm:mt-2">
 
           {/* HEADING */}
           <h2
             className="
               text-[16px] sm:text-[20px] md:text-[22px]
               tracking-wide text-[#2c2c2c]
-              font-semibold mb-4
+              font-semibold mb-2
             "
           >
             4. The Oberoi Grand, Kolkata - Colonial Charm at Its Best
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-4 space-y-2">
+          <div className="space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               The Oberoi Grand in Kolkata is a perfect heritage hotel
@@ -122,7 +122,7 @@ export default function MoreHeritageHotelsSection() {
 
             </div>
 
-            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
               via Tripadvisor
             </p>
 
@@ -148,14 +148,14 @@ export default function MoreHeritageHotelsSection() {
             className="
               text-[16px] sm:text-[20px] md:text-[22px]
               tracking-wide text-[#2c2c2c]
-              font-semibold mb-4
+              font-semibold mb-2
             "
           >
             5. Rambagh Palace, Jaipur – The Jewel of Rajasthan
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-4 space-y-2">
+          <div className="space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               A masterpiece of Rajput architecture, Rambagh Palace a
@@ -191,7 +191,7 @@ export default function MoreHeritageHotelsSection() {
 
             </div>
 
-            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
               via taj hotels
             </p>
 

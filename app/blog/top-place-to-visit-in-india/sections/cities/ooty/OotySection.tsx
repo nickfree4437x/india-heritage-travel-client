@@ -13,7 +13,7 @@ export default function OotySection() {
         </h2>
 
         {/* IMAGE */}
-        <div className="mt-6">
+        <div className="mt-4 md:mt-6">
 
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
@@ -25,7 +25,7 @@ export default function OotySection() {
             />
           </div>
 
-          <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
             via unsplash.com
           </p>
 

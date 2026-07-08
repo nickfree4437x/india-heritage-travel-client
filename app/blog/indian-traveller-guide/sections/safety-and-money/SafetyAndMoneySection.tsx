@@ -15,7 +15,7 @@ export default function SafetyAndMoneySection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Cultural Stuff Worth Knowing
           </h2>
@@ -56,7 +56,7 @@ export default function SafetyAndMoneySection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Staying Safe (Especially for Solo Women)
           </h2>
@@ -68,42 +68,42 @@ export default function SafetyAndMoneySection() {
             </p>
 
             <div className="space-y-4">
-              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300]">
                 • Book hotels with solid, recent reviews.
               </p>
 
-              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300]">
                 • Avoid night trains and night buses when alone.
               </p>
 
-              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300]">
                 • Stick to licensed guides from known India
                 travel agencies.
               </p>
 
-              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300]">
                 • Stay in busy areas after dark.
               </p>
 
-              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300]">
                 • Lock your room properly.
                 Avoid ground-floor rooms.
               </p>
 
-              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300]">
                 • Keep your phone charged.
               </p>
 
-              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300]">
                 • Use women-only train coaches when available.
               </p>
 
-              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+              <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300]">
                 • Keep your bag in front of you in crowds.
               </p>
             </div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify mt-8">
+            <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify mt-4">
               Common scams include taxi overcharging and fake
               guides and drivers who take you to commission-based
               shops. Booking structured India travel packages
@@ -137,7 +137,7 @@ export default function SafetyAndMoneySection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Money Matters
           </h2>
@@ -180,7 +180,7 @@ export default function SafetyAndMoneySection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Getting a SIM Card
           </h2>
@@ -193,7 +193,7 @@ export default function SafetyAndMoneySection() {
             One month of data runs about $15.
           </p>
 
-          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
+          <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             A local SIM is useful for maps, cab bookings
             and for keeping in touch.
           </p>

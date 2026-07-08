@@ -49,7 +49,7 @@ export default function SafetyIntroSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             What Makes a Place Feel Safe for Solo Women
           </h2>

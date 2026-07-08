@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function MoreWellnessRetreatsSection() {
   return (
-    <section className="w-full bg-white py-8">
+    <section className="w-full bg-white py-6 md:py-8">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -15,7 +15,7 @@ export default function MoreWellnessRetreatsSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             3. Vana Retreat, Uttarakhand – A Healing Hideaway
@@ -70,7 +70,7 @@ export default function MoreWellnessRetreatsSection() {
           </div>
 
           {/* CREDIT */}
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
             via unsplash.com
           </p>
 
@@ -94,7 +94,7 @@ export default function MoreWellnessRetreatsSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             4. Somatheeram Ayurveda Village, Kerala - The Home of Ayurveda
@@ -153,7 +153,7 @@ export default function MoreWellnessRetreatsSection() {
           </div>
 
           {/* CREDIT */}
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
             via somatheeram.net
           </p>
 
@@ -188,7 +188,7 @@ export default function MoreWellnessRetreatsSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             5. Kumarakom Lake Resort, Kerala - A Luxury Ayurveda Experience
@@ -245,7 +245,7 @@ export default function MoreWellnessRetreatsSection() {
           </div>
 
           {/* CREDIT */}
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
             via kumarakomlakeresort.in
           </p>
 

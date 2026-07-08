@@ -23,16 +23,6 @@ const architectureFeatures = [
     description:
       "Ceilings, pillars, and interior walls are richly decorated with floral motifs, bracket figures, sacred imagery, and intricate ornamental details.",
   },
-  {
-    title: "Jagati Platform",
-    description:
-      "Every temple stands on a raised platform, physically and symbolically elevating the sacred structure above the ordinary world.",
-  },
-  {
-    title: "Garbhagriha",
-    description:
-      "The innermost sanctum, or 'womb chamber,' houses the principal deity in a dark and intimate sacred space designed for spiritual focus.",
-  },
 ];
 
 export default function ArchitectureSection() {

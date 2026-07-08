@@ -14,13 +14,13 @@ export default function WellnessSection() {
           tracking-wide
           text-[#2c2c2c]
           font-semibold
-          mb-4
+          mb-2
         ">
           Wellness Without the Noise
         </h2>
 
         {/* Content */}
-        <div className="max-w-5xl">
+        <div className="max-w-6xl">
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
             Rishikesh is the obvious pick, but small towns
             offer more peace. The slower the place,
@@ -70,6 +70,9 @@ export default function WellnessSection() {
             className="object-cover"
           />
         </div>
+        <p className="mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
+          via unsplash
+        </p>
       </div>
     </section>
   );

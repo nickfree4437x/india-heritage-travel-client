@@ -79,11 +79,11 @@ const cityData = [
 
 export default function CityBreakdown() {
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="w-full bg-white py-5 sm:py-7">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="mb-4 sm:mb-6">
+        <div className="mb-2 sm:mb-4">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c]">
            List of Top UNESCO World Heritage Sites in India
           </h2>
@@ -113,7 +113,7 @@ export default function CityBreakdown() {
 
                 {/* City Name Overlay (Mobile) */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 md:hidden">
-                  <h3 className="text-white text-[18px] font-semibold flex items-center gap-2">
+                  <h3 className="text-white text-[16px] font-semibold flex items-center gap-2">
                     {city.name}
                   </h3>
                 </div>
@@ -125,7 +125,7 @@ export default function CityBreakdown() {
                     via pexels
                   </p>
                 {/* City Name (Desktop) */}
-                <h3 className="hidden mt-2 md:flex text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 items-center gap-2">
+                <h3 className="hidden mt-3 md:flex text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 items-center gap-2">
                   {city.name}
                 </h3>
 

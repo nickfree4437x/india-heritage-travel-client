@@ -16,7 +16,7 @@ export default function MoreDestinationsSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Rishikesh, Uttarakhand
           </h2>
@@ -65,7 +65,7 @@ export default function MoreDestinationsSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Pondicherry
           </h2>
@@ -115,7 +115,7 @@ export default function MoreDestinationsSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Varanasi with Guided Support
           </h2>
@@ -170,7 +170,7 @@ export default function MoreDestinationsSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Kerala, including Kochi, Alleppey, and Munnar
           </h2>
@@ -223,7 +223,7 @@ export default function MoreDestinationsSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             South Goa Resorts
           </h2>
@@ -267,7 +267,7 @@ export default function MoreDestinationsSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Practical Safety Tips for Solo Women
           </h2>
@@ -298,11 +298,11 @@ export default function MoreDestinationsSection() {
         </div>
         <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
-          <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+          <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
             Looking for a Safe Luxury Destination?
           </h3>
 
-          <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light mb-4">
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light mb-4">
             India Heritage Travel designs personalised journeys that combine luxury, safety, and comfort with authentic cultural experiences, trusted local recommendations, and expert travel guidance throughout your trip.
           </p>
 

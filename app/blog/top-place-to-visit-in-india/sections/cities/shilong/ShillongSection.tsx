@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ShillongSection() {
   return (
-    <section className="w-full bg-white py-10 pb-10 md:pb-12">
+    <section className="w-full bg-white py-6 md:py-8 pb-10 md:pb-12">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* TITLE */}
@@ -13,7 +14,7 @@ export default function ShillongSection() {
         </h2>
 
         {/* IMAGE */}
-        <div className="mt-6">
+        <div className="mt-4 md:mt-6">
 
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
@@ -25,7 +26,7 @@ export default function ShillongSection() {
             />
           </div>
 
-          <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
             via unsplash.com
           </p>
 
@@ -115,6 +116,41 @@ export default function ShillongSection() {
 
           </div>
 
+        </div>
+
+        <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
+
+          <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+            Planning Your Summer Escape to India?
+          </h3>
+
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">
+            From cool hill stations and misty mountains to coastal retreats and lush valleys - India
+            offers incredible summer getaways for every traveller. India Heritage Travel designs 
+            custom itineraries to the top 10 summer destinations, combining comfort, local insights,
+            and seamless travel experiences.
+          </p>
+          <Link
+            href="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              rounded-md
+              bg-[#AF956C]
+              px-6
+              py-2 md:py-2.5
+              text-[12px]
+              sm:text-[13px]
+              font-light
+              text-white
+              transition-colors
+              duration-300
+              hover:bg-[#9d8157]
+            "
+          >
+            Plan Your Summer Escape
+          </Link>
         </div>
 
       </div>

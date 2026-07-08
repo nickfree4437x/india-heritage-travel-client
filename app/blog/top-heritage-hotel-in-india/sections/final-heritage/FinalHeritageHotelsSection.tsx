@@ -15,7 +15,7 @@ export default function FinalHeritageHotelsSection() {
           {/* HEADING */}
           <h2
             className="
-               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             6. Taj Falaknuma Palace, Hyderabad – A Palace Among the Clouds
@@ -59,7 +59,7 @@ export default function FinalHeritageHotelsSection() {
           </div>
 
           {/* CREDIT */}
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] sm:text-[12px] The Oberoi Grand">
             via taj hotels
           </p>
 
@@ -81,12 +81,12 @@ export default function FinalHeritageHotelsSection() {
         </div>
 
         {/* SECTION 7 */}
-        <div className="mt-4">
+        <div className="">
 
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             7. Neemrana Fort Palace, Alwar: The Marvel History
@@ -132,7 +132,7 @@ export default function FinalHeritageHotelsSection() {
           </div>
 
           {/* CREDIT */}
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] sm:text-[12px] The Oberoi Grand">
             via unsplash.com
           </p>
 
@@ -154,7 +154,7 @@ export default function FinalHeritageHotelsSection() {
           {/* HEADING */}
           <h2
             className="
-              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4
+              text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
             8. Glenburn Tea Estate, Darjeeling – A Heritage Retreat in the Hills
@@ -201,7 +201,7 @@ export default function FinalHeritageHotelsSection() {
           </div>
 
           {/* CREDIT */}
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+          <p className="mt-2 text-[11px] sm:text-[12px] The Oberoi Grand">
             via glenburnteaestate.com
           </p>
 

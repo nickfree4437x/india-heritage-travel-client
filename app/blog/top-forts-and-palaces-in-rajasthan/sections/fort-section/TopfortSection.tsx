@@ -131,7 +131,7 @@ export default function CityBreakdown() {
 
                 {/* City Name Overlay (Mobile) */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 md:hidden">
-                  <h3 className="text-white text-[18px] font-semibold flex items-center gap-2">
+                  <h3 className="text-white text-[16px] font-semibold flex items-center gap-2">
                     {city.name}
                   </h3>
                 </div>
@@ -143,7 +143,7 @@ export default function CityBreakdown() {
                     via unsplash
                   </p>
                 {/* City Name (Desktop) */}
-                <h3 className="hidden mt-2 md:flex text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 items-center gap-2">
+                <h3 className="hidden mt-3 md:flex text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 items-center gap-2">
                   {city.name}
                 </h3>
 

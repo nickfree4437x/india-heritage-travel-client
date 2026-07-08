@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function PlanningSection() {
   return (
-    <section className="w-full bg-white -mt-6">
+    <section className="w-full bg-white -mt-6 pb-10 md:pb-12">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
         {/* Heading */}
         <h2 className="
@@ -15,7 +15,7 @@ export default function PlanningSection() {
           tracking-wide
           text-[#2c2c2c]
           font-semibold
-          mb-4
+          mb-2
         ">
           How to Plan a Solo Trip
         </h2>
@@ -83,15 +83,18 @@ export default function PlanningSection() {
             className="object-cover"
           />
         </div>
+        <p className="mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
+          via unsplash
+        </p>
 
         {/* Bottom Content */}
-        <div className="max-w-5xl mt-6 sm:mt-8 pb-12">
+        <div className="max-w-5xl mt-4 sm:mt-6">
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             The Part That Stays With You
           </h2>
@@ -125,6 +128,38 @@ export default function PlanningSection() {
             give your time and attention to the country
             itself, not the logistics.
           </p>
+        </div>
+
+        <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
+
+          <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+            Traveling Solo in India?
+          </h3>
+
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">
+            Solo travel in India can be transformative - and we make it safe, seamless, and deeply rewarding. India Heritage Travel designs solo-friendly itineraries with trusted guides, carefully vetted stays, and local connections that let you explore with confidence and freedom.
+          </p>
+          <Link
+            href="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              rounded-md
+              bg-[#AF956C]
+              px-6
+              py-2 md:py-2.5
+              text-[12px]
+              sm:text-[13px]
+              font-light
+              text-white
+              transition-colors
+              duration-300
+              hover:bg-[#9d8157]
+            "
+          >
+            Plan Your Solo Journey
+          </Link>
         </div>
       </div>
     </section>

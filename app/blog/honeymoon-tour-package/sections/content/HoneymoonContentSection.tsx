@@ -35,11 +35,11 @@ export default function HoneymoonContentSection() {
         {/* Why Section */}
         <div className="mt-6 sm:mt-8">
           <h2 className="
-            text-[18px] sm:text-[22px] md:text-[24px]
+            text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Why Our Honeymoon Tour Packages?
           </h2>
@@ -49,7 +49,7 @@ export default function HoneymoonContentSection() {
             {/* Item 1 */}
             <div className="max-w-6xl">
               <h3 className="
-                text-[16px] sm:text-[20px] md:text-[22px]
+                text-[14px] sm:text-[16px] md:text-[18px]
                 tracking-wide
                 text-[#2c2c2c]
                 font-semibold
@@ -70,7 +70,7 @@ export default function HoneymoonContentSection() {
             {/* Item 2 */}
             <div className="max-w-6xl">
               <h3 className="
-                text-[16px] sm:text-[18px] md:text-[20px]
+                text-[14px] sm:text-[16px] md:text-[18px]
                 tracking-wide
                 text-[#2c2c2c]
                 font-semibold
@@ -91,7 +91,7 @@ export default function HoneymoonContentSection() {
             {/* Item 3 */}
             <div className="max-w-6xl">
               <h3 className="
-                text-[16px] sm:text-[18px] md:text-[20px]
+                text-[14px] sm:text-[16px] md:text-[18px]
                 tracking-wide
                 text-[#2c2c2c]
                 font-semibold
@@ -112,7 +112,7 @@ export default function HoneymoonContentSection() {
             {/* Item 4 */}
             <div className="max-w-6xl">
               <h3 className="
-                text-[16px] sm:text-[18px] md:text-[20px]
+                text-[14px] sm:text-[16px] md:text-[18px]
                 tracking-wide
                 text-[#2c2c2c]
                 font-semibold
@@ -136,7 +136,7 @@ export default function HoneymoonContentSection() {
             {/* Item 5 */}
             <div className="max-w-6xl">
               <h3 className="
-                text-[16px] sm:text-[18px] md:text-[20px]
+                text-[14px] sm:text-[16px] md:text-[18px]
                 tracking-wide
                 text-[#2c2c2c]
                 font-semibold

@@ -4,7 +4,7 @@
 
 export default function HiddenPlacesSection() {
   return (
-    <section className="w-full bg-white py-10">
+    <section className="w-full bg-white py-4 md:py-6">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
         <div className="max-w-6xl">
           {/* Heading */}
@@ -13,7 +13,7 @@ export default function HiddenPlacesSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            mb-4
+            mb-2
           ">
             Places People Rarely Talk About
           </h2>

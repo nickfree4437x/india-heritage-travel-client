@@ -58,7 +58,7 @@ export default function TravelTipsSection() {
 
         <div className="mb-6">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight mb-2">
             Practical Tips for Visiting UNESCO World Heritage Sites in India
           </h2>
 

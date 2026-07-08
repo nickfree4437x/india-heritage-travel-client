@@ -8,7 +8,7 @@ export default function ConclusionSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* CTA Box */}
         <div className="max-w-6xl mx-auto bg-gradient-to-r from-[#faf7f3] to-[#f5f0e9] rounded-md p-6 sm:p-8">
-          <h3 className="text-[16px] sm:text-[18px] md:text-[18px] font-semibold text-[#2c2c2c] mb-2">
+          <h3 className="text-[14px] sm:text-[16px] md:text-[16px] font-semibold text-[#2c2c2c] mb-2">
             Ready to Experience Rawla Narlai?
           </h3>
 

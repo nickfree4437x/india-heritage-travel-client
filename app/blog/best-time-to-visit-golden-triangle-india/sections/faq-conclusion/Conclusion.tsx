@@ -9,7 +9,7 @@ export default function Conclusion() {
         {/* CTA Section */}
         <div className="bg-gradient-to-br from-[#faf7f3] to-[#f4efe8] rounded-md overflow-hidden mb-12">
           <div className="border-[#AF956C] p-6 sm:p-8">
-            <h3 className="text-[16px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-4">
+            <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
               Ready to Explore the Golden Triangle?
             </h3>
 

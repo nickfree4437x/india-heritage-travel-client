@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeritageHotelsSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white py-2">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -17,14 +17,14 @@ export default function HeritageHotelsSection() {
             have been transformed into luxurious heritage hotels.
           </p>
 
-          <p className="mt-8 text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className=" text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             If your dream is to live in a royal palace then these hotels
             offer a experience like no other. We’ll take you through
             exclusive heritage stays, be it Rajasthan’s regal charm or
             unwinding in a lakeside palace via this India Travel Guide.
           </p>
 
-          <p className="mt-8 text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className=" text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Let’s dive into the magic of history, comfort, and
             extraordinary hospitality!
           </p>
@@ -46,7 +46,7 @@ export default function HeritageHotelsSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-4 space-y-2">
+          <div className="space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Have you ever imagined surrounded by breathtaking
@@ -81,7 +81,7 @@ export default function HeritageHotelsSection() {
 
             </div>
 
-            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
               via unsplash.com
             </p>
 
@@ -109,14 +109,14 @@ export default function HeritageHotelsSection() {
             className="
               text-[16px] sm:text-[20px] md:text-[22px]
               tracking-wide text-[#2c2c2c]
-              font-semibold mb-4
+              font-semibold mb-2
             "
           >
             2. Umaid Bhawan Palace, Jodhpur – Where Royalty Resides
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-4 space-y-2">
+          <div className="space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               A amazing mixture of Art Deco and Rajasthani
@@ -152,7 +152,7 @@ export default function HeritageHotelsSection() {
 
             </div>
 
-            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700">
+            <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
               via unsplash.com
             </p>
 

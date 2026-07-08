@@ -13,9 +13,9 @@ export default function ConclusionCTA() {
             {/* Background Accent */}
 
 
-            <div className="p-6 sm:p-8 md:p-10">
+            <div className="p-6 sm:p-8">
 
-            <h3 className="text-[16px] md:text-[18px] font-semibold text-[#2c2c2c] mb-2 leading-tight">
+            <h3 className="text-[14px] md:text-[16px] font-semibold text-[#2c2c2c] mb-2 leading-tight">
                 Ready to Experience the Golden Triangle?
             </h3>
 

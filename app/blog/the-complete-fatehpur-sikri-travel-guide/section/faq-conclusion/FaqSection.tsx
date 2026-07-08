@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 import { faqs } from "./data/faqData";
 
@@ -9,7 +10,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="w-full bg-white py-6 sm:py-8 pb-10 md:pb-12">
+    <section className="w-full bg-white py-2 sm:py-4 pb-10 md:pb-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mb-4 md:mb-6">
@@ -79,12 +80,12 @@ export default function FAQSection() {
             journeys guided by local experts.
           </p>
 
-          <a
+          <Link
             href="/contact"
             className="inline-flex items-center justify-center rounded-md bg-[#AF956C] px-6 py-2 md:py-2.5 text-[12px] sm:text-[13px] font-light text-white transition-colors duration-300 hover:bg-[#9d8157]"
           >
             Plan My Heritage Tour
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -14,7 +14,7 @@ export default function FAQSection() {
         <div className="mb-3 sm:mb-4">
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
-            font-bold
+            font-semibold
             text-[#2c2c2c]
             tracking-wide
           ">
