@@ -18,6 +18,7 @@ type FestivalSeo = {
   title: string;
   description: string;
   image: string;
+  keywords?: string[];
 };
 
 export async function generateMetadata({
