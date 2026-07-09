@@ -20,11 +20,56 @@ import Recommended from "./sections/recommended-tours/Recommended";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "Yoga Retreat Tour India | Wellness, Meditation & Spiritual Experiences",
+  title:
+    "Yoga Retreat India | Yoga, Meditation & Wellness Experiences",
+
   description:
-    "Experience a Yoga Retreat Tour India with yoga sessions, meditation practices, wellness retreats, spiritual experiences, and peaceful journeys across India.",
+    "Join a Yoga Retreat India experience featuring daily yoga sessions, meditation practices, spiritual wellness programs, mindful living, and rejuvenating journeys across India's most peaceful destinations.",
+
+  keywords: [
+    "Yoga Retreat India",
+    "Yoga Tour India",
+    "Yoga Retreat Tour India",
+    "Yoga and Meditation Retreat India",
+    "Wellness Retreat India",
+    "Spiritual Retreat India",
+    "Yoga Holiday India",
+    "Yoga Vacation India",
+    "Meditation Retreat India",
+    "Yoga Wellness Tour",
+    "India Yoga Retreat",
+    "Luxury Yoga Retreat India",
+    "Yoga Travel India",
+    "Yoga Retreat Package India",
+    "Mindfulness Retreat India",
+    "Yoga and Wellness Retreat",
+    "Best Yoga Retreat India",
+    "Yoga Spiritual Journey India",
+    "Yoga Experience India",
+    "Holistic Wellness Retreat India",
+  ],
+
   alternates: {
     canonical: "/tours/yoga-escapes-tour",
+  },
+
+  openGraph: {
+    title:
+      "Yoga Retreat India | Yoga, Meditation & Wellness Experiences",
+    description:
+      "Experience yoga, meditation, spiritual wellness, mindful living, and rejuvenating retreats across India's most peaceful destinations.",
+    url:
+      "https://indiaheritagetravel.com/tours/yoga-escapes-tour",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Yoga Retreat India | Yoga, Meditation & Wellness Experiences",
+    description:
+      "Discover yoga retreats, meditation programs, wellness journeys, and spiritual experiences across India.",
   },
 };
 
@@ -54,7 +99,7 @@ export default function YogaEscapesPage() {
 
       {/* Tour Schema - SEO */}
       <TourSchema
-        name="Yoga Escapes Tour"
+        name="Yoga Retreat India"
         description="Reconnect your mind and body through yoga sessions, meditation practices, wellness retreats, spiritual experiences, and peaceful journeys across India."
         url="https://indiaheritagetravel.com/tours/yoga-escapes-tour"
       />

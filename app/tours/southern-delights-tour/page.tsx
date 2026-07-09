@@ -19,11 +19,56 @@ import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "Southern Delights Tour India | Temples, Culture & South India Experiences",
+  title:
+    "South India Cultural Tour | Temples, Heritage & Local Experiences",
+
   description:
-    "Explore the cultural richness of South India through historic temples, scenic landscapes, local traditions, authentic cuisine, and unforgettable travel experiences.",
+    "Discover South India's rich culture through historic temples, heritage sites, scenic landscapes, local traditions, authentic cuisine, and unforgettable travel experiences across iconic destinations.",
+
+  keywords: [
+    "South India Cultural Tour",
+    "South India Tour Package",
+    "South India Temple Tour",
+    "South India Heritage Tour",
+    "South India Holiday Package",
+    "South India Travel Package",
+    "South India Sightseeing Tour",
+    "South India Spiritual Tour",
+    "South India Cultural Holiday",
+    "South India Tourism",
+    "Temple Tour India",
+    "South India Vacation Package",
+    "South India Family Tour",
+    "South India Heritage Travel",
+    "South India Cultural Experience",
+    "Best South India Tour Package",
+    "South India Traditional Tour",
+    "South India Historical Tour",
+    "South India Religious Tour",
+    "South India Travel",
+  ],
+
   alternates: {
     canonical: "/tours/southern-delights-tour",
+  },
+
+  openGraph: {
+    title:
+      "South India Cultural Tour | Temples, Heritage & Local Experiences",
+    description:
+      "Explore South India's temples, heritage sites, local traditions, authentic cuisine, and cultural experiences through an unforgettable journey.",
+    url:
+      "https://indiaheritagetravel.com/tours/southern-delights-tour",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "South India Cultural Tour | Temples, Heritage & Local Experiences",
+    description:
+      "Discover South India's rich culture, historic temples, local traditions, scenic beauty, and authentic travel experiences.",
   },
 };
 
@@ -53,7 +98,7 @@ export default function RoyalRajasthanPage() {
 
       {/* Tour Schema - SEO */}
       <TourSchema
-        name="Southern Delights Tour"
+        name="South India Cultural Tour"
         description="Explore the cultural richness of South India through historic temples, scenic landscapes, local traditions, authentic cuisine, and unforgettable travel experiences."
         url="https://indiaheritagetravel.com/tours/southern-delights-tour"
       />

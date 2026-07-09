@@ -20,11 +20,56 @@ import RecommendedTours from "../divine-kashmir-and-exciting-ladakh/sections/rec
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "Spiti Valley Tour Package | Himalayan Trek & Adventure",
+  title:
+    "Spiti Valley Tour Package | Monasteries, Villages & Himalayan Adventure",
+
   description:
-    "Experience the rugged beauty of Spiti Valley through scenic treks, mountain villages, monasteries, dramatic landscapes, and unforgettable Himalayan adventures.",
+    "Book the best Spiti Valley Tour Package and explore ancient monasteries, high-altitude villages, dramatic mountain landscapes, scenic treks, and unforgettable Himalayan adventures in Himachal Pradesh.",
+
+  keywords: [
+    "Spiti Valley Tour Package",
+    "Spiti Valley Tour",
+    "Spiti Valley Trip",
+    "Spiti Valley Travel Package",
+    "Spiti Valley Trek",
+    "Spiti Valley Adventure Tour",
+    "Spiti Valley Holiday Package",
+    "Himachal Pradesh Tour Package",
+    "Spiti Valley Road Trip",
+    "Spiti Valley Monastery Tour",
+    "Kaza Spiti Tour",
+    "Spiti Valley Sightseeing Tour",
+    "Spiti Valley Travel",
+    "Best Spiti Valley Tour Package",
+    "Spiti Valley Family Tour",
+    "Spiti Valley Vacation Package",
+    "Himalayan Adventure Tour",
+    "Spiti Valley Itinerary",
+    "Spiti Valley Tourism",
+    "High Altitude Tour India",
+  ],
+
   alternates: {
     canonical: "/tours/spiti-valley-trek-and-tour",
+  },
+
+  openGraph: {
+    title:
+      "Spiti Valley Tour Package | Monasteries, Villages & Himalayan Adventure",
+    description:
+      "Discover Spiti Valley through ancient monasteries, mountain villages, rugged landscapes, scenic treks, and unforgettable Himalayan experiences.",
+    url:
+      "https://indiaheritagetravel.com/tours/spiti-valley-trek-and-tour",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Spiti Valley Tour Package | Monasteries, Villages & Himalayan Adventure",
+    description:
+      "Explore Spiti Valley's monasteries, villages, mountain landscapes, and breathtaking Himalayan adventures.",
   },
 };
 

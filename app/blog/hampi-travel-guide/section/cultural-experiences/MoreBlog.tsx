@@ -19,7 +19,7 @@ const blogs = [
     title:
       "Khajuraho Temples Travel Guide - India's Most Astonishing....",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783253328/deepak-gupta-w_tW5yW7h4c-unsplash_jzg3e3.jpg",
-    date: "6 Feb",
+    date: "5 July",
     slug: "khajuraho-temples-travel-guide",
   },
   {

@@ -19,11 +19,55 @@ import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "Heritage Odyssey Tour India | Royal Palaces, Culture & Historic Landmarks",
+  title:
+    "India Heritage Tour | Palaces, Forts, Culture & Historic Landmarks",
+
   description:
-    "Experience the Heritage Odyssey Tour India featuring royal palaces, historic landmarks, cultural traditions, architectural wonders, and unforgettable heritage journeys across iconic destinations.",
+    "Explore India's rich history on an India Heritage Tour featuring magnificent palaces, ancient forts, UNESCO World Heritage Sites, cultural traditions, architectural wonders, and unforgettable journeys across iconic destinations.",
+
+  keywords: [
+    "India Heritage Tour",
+    "Heritage Tour India",
+    "India Cultural Tour",
+    "Cultural Heritage Tour India",
+    "Historical Tour India",
+    "India History Tour",
+    "India Palace Tour",
+    "India Forts Tour",
+    "UNESCO Heritage Tour India",
+    "India Heritage Travel",
+    "Royal Heritage Tour India",
+    "India Cultural Holiday",
+    "Historical Places Tour India",
+    "Indian Heritage Sites Tour",
+    "Architecture Tour India",
+    "Luxury Heritage Tour India",
+    "North India Heritage Tour",
+    "India Heritage Vacation",
+    "India Monuments Tour",
+    "Best Heritage Tour India",
+  ],
+
   alternates: {
     canonical: "/tours/heritage-odyssey-tour",
+  },
+
+  openGraph: {
+    title:
+      "India Heritage Tour | Palaces, Forts, Culture & Historic Landmarks",
+    description:
+      "Discover India's heritage through royal palaces, ancient forts, UNESCO sites, cultural traditions, and remarkable architectural wonders.",
+    url: "https://indiaheritagetravel.com/tours/heritage-odyssey-tour",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "India Heritage Tour | Palaces, Forts, Culture & Historic Landmarks",
+    description:
+      "Experience India's royal heritage, historic monuments, cultural traditions, forts, palaces, and UNESCO World Heritage Sites.",
   },
 };
 

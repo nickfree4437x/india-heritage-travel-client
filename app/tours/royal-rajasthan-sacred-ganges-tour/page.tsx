@@ -24,11 +24,56 @@ import ItinerarySection from "./sections/itinerary/ItinerarySection";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "Royal Rajasthan & Sacred Ganges Tour | Rajasthan, Ganges & Cultural Heritage Journey",
+  title:
+    "Rajasthan & Varanasi Tour Package | Royal Heritage & Sacred Ganges",
+
   description:
-    "Experience the royal heritage of Rajasthan and the spiritual beauty of the sacred Ganges through cultural landmarks, historic cities, local traditions, and unforgettable journeys across India.",
+    "Explore Rajasthan and Varanasi on a cultural journey featuring royal palaces, historic forts, sacred Ganges experiences, spiritual traditions, heritage landmarks, and unforgettable travel experiences across India.",
+
+  keywords: [
+    "Rajasthan and Varanasi Tour",
+    "Rajasthan Varanasi Tour Package",
+    "Rajasthan Tour Package",
+    "Varanasi Tour Package",
+    "Royal Rajasthan Tour",
+    "Sacred Ganges Tour",
+    "Rajasthan Heritage Tour",
+    "Rajasthan Cultural Tour",
+    "Varanasi Cultural Tour",
+    "India Spiritual Tour",
+    "Rajasthan and Ganges Tour",
+    "North India Heritage Tour",
+    "Varanasi Ganga Aarti Tour",
+    "Rajasthan Holiday Package",
+    "Rajasthan Spiritual Tour",
+    "Heritage and Spiritual Tour India",
+    "Best Rajasthan and Varanasi Tour",
+    "India Cultural Heritage Tour",
+    "Royal Rajasthan and Ganges Journey",
+    "Rajasthan Travel Package",
+  ],
+
   alternates: {
     canonical: "/tours/royal-rajasthan-sacred-ganges-tour",
+  },
+
+  openGraph: {
+    title:
+      "Rajasthan & Varanasi Tour Package | Royal Heritage & Sacred Ganges",
+    description:
+      "Experience Rajasthan's royal heritage and Varanasi's spiritual charm through palaces, forts, sacred Ganges rituals, and unforgettable cultural journeys.",
+    url:
+      "https://indiaheritagetravel.com/tours/royal-rajasthan-sacred-ganges-tour",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Rajasthan & Varanasi Tour Package | Royal Heritage & Sacred Ganges",
+    description:
+      "Discover Rajasthan's palaces and forts alongside Varanasi's sacred Ganges traditions and spiritual experiences.",
   },
 };
 
@@ -58,7 +103,7 @@ export default function RoyalRajasthanPage() {
 
       {/* Tour Schema - SEO */}
       <TourSchema
-        name="Royal Rajasthan & Sacred Ganges Tour"
+        name="Rajasthan & Varanasi Tour Package"
         description="Experience the royal heritage of Rajasthan and the spiritual beauty of the sacred Ganges through cultural landmarks, historic cities, local traditions, and unforgettable journeys across India."
         url="https://indiaheritagetravel.com/tours/royal-rajasthan-sacred-ganges-tour"
       />

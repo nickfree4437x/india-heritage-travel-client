@@ -96,7 +96,7 @@ export default function FAQSection() {
           __html: JSON.stringify(faqSchema),
         }}
      />
-     <section className="py-8 md:py-8 bg-white scroll-mt-20 md:scroll-mt-28" id="faq">
+     <section className="py-8 md:py-6 bg-white scroll-mt-20 md:scroll-mt-28" id="faq">
       <div className="max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}

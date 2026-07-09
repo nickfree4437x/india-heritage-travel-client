@@ -25,11 +25,56 @@ import HightlightSection from "./sections/hightlights/HightlightSection";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "South India Heritage Tour Package | Southern Splendors",
+  title:
+    "South India Heritage Tour | Temples, Culture & Historic Landmarks",
+
   description:
-    "Explore South India's heritage, ancient temples, scenic landscapes, and vibrant culture on our Southern Splendors Tour. Enjoy a carefully crafted South India heritage tour with authentic local experiences.",
+    "Discover the best South India Heritage Tour featuring ancient temples, UNESCO heritage sites, cultural landmarks, traditional architecture, scenic landscapes, and authentic local experiences across South India.",
+
+  keywords: [
+    "South India Heritage Tour",
+    "South India Heritage Tour Package",
+    "South India Temple Tour",
+    "South India Cultural Heritage Tour",
+    "South India Historical Tour",
+    "South India Tour Package",
+    "South India Cultural Tour",
+    "South India Travel Package",
+    "South India Heritage Travel",
+    "Ancient Temples South India",
+    "South India Holiday Package",
+    "South India Sightseeing Tour",
+    "South India Architecture Tour",
+    "South India Religious Tour",
+    "South India Tourism",
+    "UNESCO Heritage Tour India",
+    "South India Family Tour",
+    "Best South India Heritage Tour",
+    "Traditional South India Tour",
+    "South India Vacation Package",
+  ],
+
   alternates: {
     canonical: "/tours/southern-splendors-tour",
+  },
+
+  openGraph: {
+    title:
+      "South India Heritage Tour | Temples, Culture & Historic Landmarks",
+    description:
+      "Explore South India's ancient temples, heritage sites, cultural traditions, historic landmarks, and authentic local experiences.",
+    url:
+      "https://indiaheritagetravel.com/tours/southern-splendors-tour",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "South India Heritage Tour | Temples, Culture & Historic Landmarks",
+    description:
+      "Discover South India's heritage through ancient temples, cultural landmarks, architecture, traditions, and unforgettable journeys.",
   },
 };
 
@@ -59,7 +104,7 @@ export default function SouthernSplendorsPage() {
 
       {/* Tour Schema - SEO */}
       <TourSchema
-        name="South India Heritage Tour - Southern Splendors"
+        name="South India Heritage Tour"
         description="Explore South India on a heritage tour featuring ancient temples, cultural landmarks, scenic landscapes, authentic local experiences, and carefully planned itineraries."
         url="https://indiaheritagetravel.com/tours/southern-splendors-tour"
       />

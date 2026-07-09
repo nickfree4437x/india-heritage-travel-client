@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import HoliDetails from "@/src/sections/festivals/festivalDetails/holi/pages/page";
+import HoliDetails from "@/src/sections/festivals/festivalDetails/holi/page";
 import DiwaliDetails from "@/src/sections/festivals/festivalDetails/diwali/page";
-import PushkarDetails from "@/src/sections/festivals/festivalDetails/pushkar/PushkarDetails";
-import KumbhDetails from "@/src/sections/festivals/festivalDetails/kumbh/KumbhDetails";
+import PushkarDetails from "@/src/sections/festivals/festivalDetails/pushkar/page";
+import KumbhDetails from "@/src/sections/festivals/festivalDetails/kumbh/page";
 
 import { festivalSeoData } from "@/src/sections/festivals/data/seoData";
 

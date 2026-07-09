@@ -20,11 +20,55 @@ import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "Ayurveda Tour India | Authentic Wellness & Healing Retreats",
+  title:
+    "Ayurveda Tour India | Authentic Ayurveda Wellness Retreats & Healing Journeys",
+
   description:
-    "Experience authentic Ayurveda Tour India with holistic healing, wellness therapies, yoga, meditation, and rejuvenation retreats. Discover your path to balance and well-being.",
+    "Experience an authentic Ayurveda Tour India with traditional Ayurvedic therapies, wellness retreats, yoga, meditation, Panchakarma treatments, and holistic healing experiences. Rejuvenate your body, mind, and spirit through India's ancient wellness traditions.",
+
+  keywords: [
+    "Ayurveda Tour India",
+    "Ayurveda Wellness Tour India",
+    "Ayurveda Retreat India",
+    "Wellness Tour India",
+    "Ayurvedic Healing Tour India",
+    "Ayurveda Holiday India",
+    "Yoga and Ayurveda Tour India",
+    "Holistic Wellness Tour India",
+    "Ayurveda Rejuvenation Tour",
+    "Ayurvedic Therapy Tour India",
+    "Panchakarma Retreat India",
+    "Traditional Ayurveda Treatments",
+    "Luxury Ayurveda Retreat India",
+    "Wellness Retreat India",
+    "Healing Retreat India",
+    "Kerala Ayurveda Tour",
+    "Ayurveda Detox Retreat",
+    "Yoga Meditation Retreat India",
+    "Ayurvedic Wellness Holidays",
+    "India Wellness Travel",
+  ],
+
   alternates: {
     canonical: "/tours/ayurveda-journey-tour",
+  },
+
+  openGraph: {
+    title:
+      "Ayurveda Tour India | Authentic Ayurveda Wellness Retreats & Healing Journeys",
+    description:
+      "Discover authentic Ayurveda wellness experiences in India with Ayurvedic therapies, yoga, meditation, Panchakarma treatments, and holistic healing retreats designed for complete rejuvenation.",
+    url: "https://indiaheritagetravel.com/tours/ayurveda-journey-tour",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Ayurveda Tour India | Authentic Ayurveda Wellness Retreats & Healing Journeys",
+    description:
+      "Experience Ayurveda wellness retreats, yoga, meditation, Panchakarma therapies, and holistic healing journeys across India.",
   },
 };
 

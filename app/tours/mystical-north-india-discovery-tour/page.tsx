@@ -25,11 +25,56 @@ import TourLayout from "./layout/TourLayout";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "North India Tour Package | Heritage, Culture & Spiritual Experiences",
+  title:
+    "North India Tour Package | Delhi, Agra, Jaipur, Varanasi & More",
+
   description:
-    "Explore North India through heritage landmarks, spiritual destinations, cultural experiences, historic cities, and unforgettable journeys across India's most iconic attractions.",
+    "Explore the best North India Tour Package featuring Delhi, Agra, Jaipur, Varanasi, heritage landmarks, spiritual destinations, cultural experiences, historic cities, and unforgettable travel journeys.",
+
+  keywords: [
+    "North India Tour Package",
+    "North India Tour",
+    "North India Travel Package",
+    "North India Holiday Package",
+    "North India Cultural Tour",
+    "North India Heritage Tour",
+    "North India Spiritual Tour",
+    "North India Sightseeing Tour",
+    "North India Vacation Package",
+    "North India Trip",
+    "Delhi Agra Jaipur Varanasi Tour",
+    "India Cultural Tour",
+    "India Heritage Tour",
+    "North India Family Tour",
+    "North India Tourism",
+    "Best North India Tour Package",
+    "Golden Triangle and Varanasi Tour",
+    "North India Historical Tour",
+    "Luxury North India Tour",
+    "North India Travel",
+  ],
+
   alternates: {
     canonical: "/tours/mystical-north-india-discovery-tour",
+  },
+
+  openGraph: {
+    title:
+      "North India Tour Package | Delhi, Agra, Jaipur, Varanasi & More",
+    description:
+      "Discover North India's heritage, spirituality, culture, historic cities, and iconic attractions through an unforgettable travel experience.",
+    url:
+      "https://indiaheritagetravel.com/tours/mystical-north-india-discovery-tour",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "North India Tour Package | Delhi, Agra, Jaipur, Varanasi & More",
+    description:
+      "Explore North India's cultural heritage, spiritual destinations, historic landmarks, and unforgettable travel experiences.",
   },
 };
 
@@ -59,7 +104,7 @@ export default function Page() {
 
       {/* Tour Schema - SEO */}
       <TourSchema
-        name="Mystical North India Discovery Tour"
+        name="North India Tour Package"
         description="Discover the cultural, spiritual, and historical wonders of North India through heritage landmarks, local traditions, iconic destinations, and immersive travel experiences."
         url="https://indiaheritagetravel.com/tours/mystical-north-india-discovery-tour"
       />

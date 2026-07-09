@@ -213,8 +213,17 @@ export const blogs = [
     slug: "hampi-travel-guide",
     title: "Hampi Travel Guide: The Complete 2025 Handbook for India's....",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783496231/pavan-kumaar-9eZ7rB42xow-unsplash_xfmove.jpg",
-    date: "07 July",
+    date: "08 July",
     excerpt:
       "Hampi is a UNESCO World Heritage Site in Karnataka, sort of those Vijayanagara...",
+  },
+  {
+    id: 25,
+    slug: "ajanta-and-ellora-caves-guide",
+    title: "The Complete Guide to the Ajanta and Ellora Caves",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783592350/pexels-roman-saienko-1867764487-36098238_kouz4s.jpg",
+    date: "09 July",
+    excerpt:
+      "A quick mix of History, UNESCO heritage, architecture and travel tips for Indi....",
   },
 ];

@@ -16,11 +16,56 @@ import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 import TourSchema from "@/src/common/seo/TourSchema";
 
 export const metadata: Metadata = {
-  title: "Golden Triangle Tour India | Delhi Agra Jaipur Heritage Tour Package",
+  title:
+    "Golden Triangle Tour India | Delhi Agra Jaipur Tour Package",
+
   description:
-    "Explore Delhi, Agra, and Jaipur on a Golden Triangle Tour India featuring the Taj Mahal, Amber Fort, heritage landmarks, cultural experiences, and unforgettable travel experiences.",
+    "Book the best Golden Triangle Tour India and explore Delhi, Agra, and Jaipur. Visit the Taj Mahal, Amber Fort, City Palace, and iconic heritage landmarks on an unforgettable cultural journey through India.",
+
+  keywords: [
+    "Golden Triangle Tour India",
+    "Golden Triangle Tour",
+    "Delhi Agra Jaipur Tour",
+    "Golden Triangle Tour Package",
+    "India Golden Triangle Tour",
+    "Golden Triangle Holiday Package",
+    "Delhi Agra Jaipur Tour Package",
+    "Golden Triangle Travel India",
+    "Private Golden Triangle Tour",
+    "Luxury Golden Triangle Tour",
+    "Golden Triangle Sightseeing Tour",
+    "Taj Mahal Tour Package",
+    "North India Heritage Tour",
+    "Golden Triangle Family Tour",
+    "Golden Triangle Vacation Package",
+    "Best Golden Triangle Tour India",
+    "Golden Triangle Cultural Tour",
+    "India Heritage Tour",
+    "Delhi Jaipur Agra Trip",
+    "Golden Triangle Tourism India",
+  ],
+
   alternates: {
     canonical: "/tours/majestic-golden-triangle-tour",
+  },
+
+  openGraph: {
+    title:
+      "Golden Triangle Tour India | Delhi Agra Jaipur Tour Package",
+    description:
+      "Explore Delhi, Agra, and Jaipur on India's most popular Golden Triangle Tour featuring the Taj Mahal, Amber Fort, heritage sites, and cultural experiences.",
+    url:
+      "https://indiaheritagetravel.com/tours/majestic-golden-triangle-tour",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Golden Triangle Tour India | Delhi Agra Jaipur Tour Package",
+    description:
+      "Discover Delhi, Agra, Jaipur, the Taj Mahal, Amber Fort, and India's rich cultural heritage on a memorable Golden Triangle journey.",
   },
 };
 
@@ -55,7 +100,7 @@ export default function Page() {
       />
 
       <TourSchema
-        name="Majestic Golden Triangle Tour"
+        name="Golden Triangle Tour India"
         description="Explore Delhi, Agra, and Jaipur through a personalized Golden Triangle Tour featuring iconic landmarks, cultural experiences, heritage sites, and unforgettable journeys across India"
         url="https://indiaheritagetravel.com/tours/majestic-golden-triangle-tour"
       />

@@ -22,11 +22,56 @@ import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "Kashmir & Ladakh Tour Package | Mountains, Lakes & Himalayan Adventures",
+  title:
+    "Kashmir & Ladakh Tour Package | Srinagar, Leh, Lakes & Himalayan Adventures",
+
   description:
-    "Explore a Kashmir & Ladakh Tour Package featuring scenic valleys, Himalayan mountains, monasteries, pristine lakes, cultural experiences, and unforgettable adventures.",
+    "Book a Kashmir & Ladakh Tour Package and explore Srinagar, Leh, Pangong Lake, Nubra Valley, Himalayan monasteries, scenic valleys, mountain landscapes, and unforgettable cultural adventures.",
+
+  keywords: [
+    "Kashmir Tour Package",
+    "Ladakh Tour Package",
+    "Kashmir and Ladakh Tour",
+    "Kashmir Ladakh Trip",
+    "Leh Ladakh Tour Package",
+    "Kashmir Holiday Package",
+    "Ladakh Holiday Package",
+    "Kashmir Travel Package",
+    "Ladakh Travel Package",
+    "Srinagar Leh Tour",
+    "Pangong Lake Tour",
+    "Nubra Valley Tour",
+    "Himalayan Tour India",
+    "Kashmir Sightseeing Tour",
+    "Ladakh Adventure Tour",
+    "Best Kashmir Ladakh Tour Package",
+    "Kashmir Family Tour",
+    "Ladakh Road Trip",
+    "Kashmir Mountains Tour",
+    "India Himalayan Tour",
+  ],
+
   alternates: {
     canonical: "/tours/divine-kashmir-and-exciting-ladakh-tour",
+  },
+
+  openGraph: {
+    title:
+      "Kashmir & Ladakh Tour Package | Srinagar, Leh, Lakes & Himalayan Adventures",
+    description:
+      "Discover Kashmir and Ladakh through scenic valleys, Pangong Lake, Nubra Valley, Himalayan monasteries, mountain landscapes, and unforgettable cultural experiences.",
+    url:
+      "https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh-tour",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Kashmir & Ladakh Tour Package | Srinagar, Leh, Lakes & Himalayan Adventures",
+    description:
+      "Explore Kashmir and Ladakh with stunning valleys, lakes, monasteries, Himalayan adventures, and breathtaking mountain landscapes.",
   },
 };
 

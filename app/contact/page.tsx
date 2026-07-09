@@ -12,11 +12,50 @@ import ContactSection from "./sections/contact-form/ContactForm";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "Contact India Heritage Travel | Plan Your India Journey",
+  title:
+    "Contact India Heritage Travel | India Tour Planning & Travel Experts",
+
   description:
-    "Contact India Heritage Travel to plan customized India tours, Rajasthan journeys, Golden Triangle trips, cultural experiences, festival tours, and private travel itineraries.",
+    "Get in touch with India Heritage Travel for customized India tours, private itineraries, cultural journeys, Rajasthan holidays, Golden Triangle tours, wellness retreats, and travel planning assistance.",
+
+  keywords: [
+    "Contact India Heritage Travel",
+    "India Heritage Travel Contact",
+    "India Tour Planning",
+    "India Travel Experts",
+    "India Tour Operator Contact",
+    "Custom India Tours",
+    "Private India Tours",
+    "India Travel Agency",
+    "Travel Consultant India",
+    "India Holiday Planning",
+    "Rajasthan Tour Planning",
+    "Golden Triangle Tour Contact",
+    "India Travel Assistance",
+    "India Tour Specialists",
+    "Travel Experts India",
+  ],
+
   alternates: {
     canonical: "/contact",
+  },
+
+  openGraph: {
+    title:
+      "Contact India Heritage Travel | India Tour Planning & Travel Experts",
+    description:
+      "Contact our travel specialists for customized India tours, private itineraries, cultural journeys, Rajasthan holidays, and personalized travel experiences.",
+    url: "https://indiaheritagetravel.com/contact",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Contact India Heritage Travel | India Tour Planning & Travel Experts",
+    description:
+      "Reach out to our team for customized India travel planning, private tours, and unforgettable cultural experiences.",
   },
 };
 

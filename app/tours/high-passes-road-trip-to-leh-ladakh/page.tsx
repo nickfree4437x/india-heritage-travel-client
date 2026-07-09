@@ -20,11 +20,56 @@ import RecommendedTours from "../divine-kashmir-and-exciting-ladakh/sections/rec
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "Leh Ladakh Road Trip | High Mountain Passes & Himalayan Adventure",
+  title:
+    "Leh Ladakh Tour Package | Road Trip, Pangong Lake & Himalayan Adventure",
+
   description:
-    "Embark on an unforgettable Leh Ladakh Road Trip Tour featuring high mountain passes, breathtaking landscapes, monasteries, remote villages, scenic valleys, and thrilling Himalayan adventures.",
+    "Book a Leh Ladakh Tour Package and experience thrilling road trips, Pangong Lake, Nubra Valley, Khardung La Pass, Himalayan monasteries, breathtaking landscapes, and unforgettable adventure travel experiences.",
+
+  keywords: [
+    "Leh Ladakh Tour Package",
+    "Leh Ladakh Road Trip",
+    "Ladakh Tour Package",
+    "Leh Ladakh Trip",
+    "Leh Ladakh Adventure Tour",
+    "Ladakh Road Trip",
+    "Pangong Lake Tour",
+    "Nubra Valley Tour",
+    "Khardung La Pass Tour",
+    "Leh Tour Package",
+    "Ladakh Holiday Package",
+    "Ladakh Travel Package",
+    "Leh Ladakh Bike Trip",
+    "Ladakh Motorcycle Tour",
+    "Himalayan Road Trip India",
+    "Leh Ladakh Sightseeing Tour",
+    "Best Leh Ladakh Tour Package",
+    "Leh Ladakh Family Tour",
+    "Ladakh Mountain Tour",
+    "Adventure Tour India",
+  ],
+
   alternates: {
     canonical: "/tours/high-passes-road-trip-to-leh-ladakh",
+  },
+
+  openGraph: {
+    title:
+      "Leh Ladakh Tour Package | Road Trip, Pangong Lake & Himalayan Adventure",
+    description:
+      "Explore Leh Ladakh through breathtaking road trips, Pangong Lake, Nubra Valley, Khardung La Pass, monasteries, and unforgettable Himalayan adventures.",
+    url:
+      "https://indiaheritagetravel.com/tours/high-passes-road-trip-to-leh-ladakh",
+    siteName: "India Heritage Travel",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Leh Ladakh Tour Package | Road Trip, Pangong Lake & Himalayan Adventure",
+    description:
+      "Discover Ladakh's stunning landscapes, mountain passes, lakes, monasteries, and thrilling Himalayan road trip experiences.",
   },
 };
 

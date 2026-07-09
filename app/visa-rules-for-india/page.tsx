@@ -2,11 +2,55 @@ import type { Metadata } from "next";
 import Footer from "@/src/sections/footer/Footer";
 
 export const metadata: Metadata = {
-  title: "India Visa Requirements & Travel Information | India Heritage Travel",
+  title:
+    "India Visa Requirements | Tourist Visa & Entry Requirements Guide",
+
   description:
-    "Learn about India visa requirements, tourist visas, travel permits, passport validity, and important travel information before planning your trip to India.",
+    "Learn about India visa requirements, tourist visas, passport validity, entry rules, travel permits, e-Visa options, and essential travel information for planning your trip to India.",
+
+  keywords: [
+    "India Visa Requirements",
+    "India Tourist Visa",
+    "India Visa Guide",
+    "India eVisa",
+    "India Travel Requirements",
+    "India Entry Requirements",
+    "Tourist Visa India",
+    "India Travel Documents",
+    "India Visa Information",
+    "India Visa Application",
+    "India Visa for Tourists",
+    "India Travel Permit",
+    "Passport Requirements India",
+    "India Tourist Entry Rules",
+    "India Visa Process",
+    "India Travel Guide",
+    "India Immigration Requirements",
+    "Visit India Visa",
+    "India Travel Planning",
+    "India Tourism Visa",
+  ],
+
   alternates: {
     canonical: "/visa-rules-for-india",
+  },
+
+  openGraph: {
+    title:
+      "India Visa Requirements | Tourist Visa & Entry Requirements Guide",
+    description:
+      "Find everything you need to know about India tourist visas, e-Visas, passport requirements, entry rules, and travel documentation before visiting India.",
+    url: "https://indiaheritagetravel.com/visa-rules-for-india",
+    siteName: "India Heritage Travel",
+    type: "article",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "India Visa Requirements | Tourist Visa & Entry Requirements Guide",
+    description:
+      "Understand India visa requirements, e-Visa options, passport validity rules, and essential travel documentation for your India trip.",
   },
 };
 
