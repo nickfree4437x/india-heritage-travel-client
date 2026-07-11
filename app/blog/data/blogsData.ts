@@ -226,4 +226,13 @@ export const blogs = [
     excerpt:
       "A quick mix of History, UNESCO heritage, architecture and travel tips for Indi....",
   },
+  {
+    id: 26,
+    slug: "konark-sun-temple-guide",
+    title: "The Complete Konark Sun Temple Guide",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783746654/pexels-pkpexels-32888176_battih.jpg",
+    date: "11 July",
+    excerpt:
+      "History, Architecture, Tickets & Travel Tips for Odisha's Legendary Sun Shrine....",
+  },
 ];
