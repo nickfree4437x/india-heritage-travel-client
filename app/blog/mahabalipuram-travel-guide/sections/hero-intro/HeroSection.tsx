@@ -42,12 +42,12 @@ export default function HeroSection() {
             tracking-wide
             text-[#2c2c2c]
             font-semibold
-            max-w-5xl
+            max-w-6xl
             mx-auto
           ">
-            Mahabalipuram Travel Guide: Inside India's 
+            Mahabalipuram Travel Guide:  
             <br/>
-            Coastal City of Stone
+            Inside India's Coastal City of Stone
           </h1>
 
           {/* Description */}

@@ -50,7 +50,7 @@ export default function BudgetAndSeasonSection() {
         </div>
 
         {/* Budget Estimates */}
-        <div className="mb-4 md:mb-6 mt-4 md:mt-6">
+        <div className="mb-4 md:mb-6 mt-5 md:mt-6">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c] mb-2">
             Budget Estimates
           </h2>
