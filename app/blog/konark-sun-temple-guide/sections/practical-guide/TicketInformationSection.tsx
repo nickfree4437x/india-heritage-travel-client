@@ -22,10 +22,6 @@ export default function PracticalGuideSection() {
       category: "Timings",
       price: "Sunrise to sunset, 7 days a week",
     },
-    {
-      category: "Separate camera fee",
-      price: "₹25 (still camera); ₹500 (video camera)",
-    },
   ];
 
   return (

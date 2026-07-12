@@ -235,4 +235,13 @@ export const blogs = [
     excerpt:
       "History, Architecture, Tickets & Travel Tips for Odisha's Legendary Sun Shrine....",
   },
+  {
+    id: 27,
+    slug: "mahabalipuram-travel-guide",
+    title: "Mahabalipuram Travel Guide: Inside India's Coastal City of Stone",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783855518/brijender-dua-OFSaSqZTC4g-unsplash_yvgbwj.jpg",
+    date: "12 July",
+    excerpt:
+      "This This Mahabalipuram travel guide is kinda made for travelers who want more....",
+  },
 ];
