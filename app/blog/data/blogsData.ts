@@ -251,6 +251,15 @@ export const blogs = [
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784089284/ameena-tasneem-uT3yN3WqHnM-unsplash_eg4h4n.jpg",
     date: "15 July",
     excerpt:
-      "•	Sanchi Stupa, it’s like Stupa No. 1, is among the oldest stone structures in....",
+      "Sanchi Stupa, it’s like Stupa No. 1, is among the oldest stone structures in....",
+  },
+  {
+    id: 29,
+    slug: "qutub-minar-travel-guide",
+    title: "Qutub Minar Travel Guide - Delhi's Iconic Victory Tower",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784173008/daniel-dara--sJRd0qmQJk-unsplash_cvt7ek.jpg",
+    date: "16 July",
+    excerpt:
+      "Qutub Minar is sort of the world’s tallest brick minaret , at 72.5 metres (23....",
   },
 ];
