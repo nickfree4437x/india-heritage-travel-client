@@ -244,4 +244,13 @@ export const blogs = [
     excerpt:
       "This This Mahabalipuram travel guide is kinda made for travelers who want more....",
   },
+  {
+    id: 28,
+    slug: "sanchi-stupa-travel-guide",
+    title: "Sanchi Stupa Travel Guide Ashoka's Buddhist Legacy",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784089284/ameena-tasneem-uT3yN3WqHnM-unsplash_eg4h4n.jpg",
+    date: "15 July",
+    excerpt:
+      "•	Sanchi Stupa, it’s like Stupa No. 1, is among the oldest stone structures in....",
+  },
 ];
