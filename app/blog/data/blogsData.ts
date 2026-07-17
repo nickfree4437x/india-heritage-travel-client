@@ -262,4 +262,13 @@ export const blogs = [
     excerpt:
       "Qutub Minar is sort of the world’s tallest brick minaret , at 72.5 metres (23....",
   },
+  {
+    id: 30,
+    slug: "red-fort-travel-guide",
+    title: "Red Fort Travel Guide: Delhi's Mughal Seat of Power",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784270425/pexels-varan-6776755_i3hlhj.jpg",
+    date: "17 July",
+    excerpt:
+      "This Red Fort travel guide is for travelers who want to really understand L....",
+  },
 ];
