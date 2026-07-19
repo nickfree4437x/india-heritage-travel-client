@@ -271,4 +271,13 @@ export const blogs = [
     excerpt:
       "This Red Fort travel guide is for travelers who want to really understand L....",
   },
+  {
+    id: 31,
+    slug: "india-wildlife-safari-guide",
+    title: "India Wildlife Safari Guide: Best National Parks & Tiger Safaris",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784377287/gautam-arora-dCnHbVhM2w8-unsplash_kwmu2r.jpg",
+    date: "18 July",
+    excerpt:
+      "Discover the ultimate India Wildlife Safari Guide with the best national pa....",
+  },
 ];
