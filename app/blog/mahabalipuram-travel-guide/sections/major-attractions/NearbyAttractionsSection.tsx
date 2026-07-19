@@ -42,7 +42,7 @@ const cityData = [
 
 export default function CityBreakdown() {
   return (
-    <section className="w-full bg-white py-2 md:py-4">
+    <section className="w-full bg-white py-2 md:py-3">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

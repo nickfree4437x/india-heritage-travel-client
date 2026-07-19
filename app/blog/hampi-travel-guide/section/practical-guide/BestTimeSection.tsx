@@ -64,7 +64,7 @@ export default function BudgetAndSeasonSection() {
         </div>
 
         {/* Best Time To Visit */}
-        <div className="py-3 md:py-4">
+        <div className="py-2 md:py-2">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c] mb-2">
             Best Time to Visit
           </h2>

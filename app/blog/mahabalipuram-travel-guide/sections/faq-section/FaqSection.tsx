@@ -10,7 +10,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="w-full bg-white py-2 sm:py-2 pb-10 md:pb-12">
+    <section className="w-full bg-white pb-10 md:pb-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-2 md:mb-4">

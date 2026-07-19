@@ -29,7 +29,7 @@ export default function PracticalGuideSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Ticket Prices Section */}
-        <div className="mb-2 md:mb-5">
+        <div className="">
           <h3 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c] mb-2">
             Ticket & Entry Information
           </h3>

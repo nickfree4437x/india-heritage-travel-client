@@ -280,4 +280,13 @@ export const blogs = [
     excerpt:
       "Discover the ultimate India Wildlife Safari Guide with the best national pa....",
   },
+  {
+    id: 32,
+    slug: "humayun-tomb-guide",
+    title: "Humayun's Tomb Guide: Delhi's First Great Mughal Garden-Tomb",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784445556/pexels-miheertewari-13256094_nhkdrh.jpg",
+    date: "19 July",
+    excerpt:
+      "This This Humayun's Tomb guide is meant for travelers who want to get at th....",
+  },
 ];

@@ -49,27 +49,16 @@ export default function WhyChooseSection() {
               className="
                 group
                 flex items-start gap-3 sm:gap-4
-                p-4 sm:p-5
+                p-3 sm:p-3
                 bg-white
                 rounded-lg
                 border border-gray-200
                 transition-all duration-300
               "
             >
-              <div className="
-                flex-shrink-0
-                w-5 h-5 sm:w-6 sm:h-6
-                mt-0.5
-                text-[#AF956C]
-                bg-[#AF956C]/10
-                rounded-full
-                flex items-center justify-center
-              ">
-                <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-              </div>
               
               <p className="
-                text-[12px] sm:text-[14px]
+                text-[12px] sm:text-[13px]
                 text-gray-600
                 leading-relaxed
                 font-light
