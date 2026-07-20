@@ -289,4 +289,13 @@ export const blogs = [
     excerpt:
       "This This Humayun's Tomb guide is meant for travelers who want to get at th....",
   },
+  {
+    id: 33,
+    slug: "top-heritage-sites-in-north-india",
+    title: "Top Heritage Sites in North India: A Traveler's Guide to Top Monuments",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784526694/pexels-absoluteabhi-37967925_ousrlv.jpg",
+    date: "20 July",
+    excerpt:
+      "This This guide for the best heritage sites across North India sort of assu....",
+  },
 ];
