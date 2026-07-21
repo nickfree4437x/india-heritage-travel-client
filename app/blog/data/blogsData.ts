@@ -298,4 +298,13 @@ export const blogs = [
     excerpt:
       "This This guide for the best heritage sites across North India sort of assu....",
   },
+  {
+    id: 34,
+    slug: "top-heritage-sites-in-south-india",
+    title: "Top Heritage Sites in South India: South India's Finest Temples & Ruins",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784608332/parul-gupta-UuyMc40kpv8-unsplash_svf2mh.jpg",
+    date: "21 July",
+    excerpt:
+      "This guide on the best heritage places in South India is kinda for traveler....",
+  },
 ];

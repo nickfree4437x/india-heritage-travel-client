@@ -1,0 +1,84 @@
+"use client";
+
+import Image from "next/image";
+
+const cityData = [
+  {
+    name: "Golden Temple, Amritsar",
+    description:
+      `Harmandir Sahib - the Golden Temple - is Sikhism's most sacred site, set within a holy pool and crowned with gold. Its langar serves free meals to all visitors, making it as much about welcome as architecture. Read our full Golden Temple Travel Guide.`,
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784524739/pexels-aj4xo-29429174_w9sxuj.jpg",
+  },
+  {
+    name: "Varanasi Ghats",
+    description: 
+      `Varanasi, one of the world's oldest living cities, lines the Ganges with ghats for ritual bathing, cremation, and worship. Watching the evening Aarti from the river is unforgettable - heritage that's still alive. Visit our Varanasi Travel Guide.`,
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784526694/pexels-absoluteabhi-37967925_ousrlv.jpg",
+  },
+];
+
+export default function CityBreakdown() {
+  return (
+    <section className="w-full bg-white py-1 md:py-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Header */}
+        <div className="mb-3 sm:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c]">
+           Religious and Spiritual Heritage Sites
+          </h2>
+        </div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          {cityData.map((city) => (
+            <div
+              key={city.name}
+              className="group overflow-hidden transition-all duration-300"
+            >
+              {/* Image */}
+              <div className="relative w-full h-[200px] sm:h-[260px] bg-[#faf7f3] overflow-hidden">
+                {city.image ? (
+                  <Image
+                    src={city.image}
+                    alt={city.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+                    via pexels
+                  </p>
+                )}
+
+                {/* City Name Overlay (Mobile) */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 md:hidden">
+                  <h3 className="text-white text-[16px] font-semibold flex items-center gap-2">
+                    {city.name}
+                  </h3>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="mt-2">
+                <p className="text-[10px] sm:text-[11px] text-gray-600 font-light">
+                    via pexels
+                  </p>
+                {/* City Name (Desktop) */}
+                <h3 className="hidden mt-3 md:flex text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 items-center gap-2">
+                  {city.name}
+                </h3>
+
+                {/* Description */}
+                <p className="text-[12px] mt-2 md:mt-0 sm:text-[13px] leading-relaxed text-gray-600 font-light line-clamp-3 md:line-clamp-4">
+                  {city.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+}
