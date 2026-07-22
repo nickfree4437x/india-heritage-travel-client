@@ -307,4 +307,13 @@ export const blogs = [
     excerpt:
       "This guide on the best heritage places in South India is kinda for traveler....",
   },
+  {
+    id: 35,
+    slug: "hidden-unesco-heritage-sites-in-india",
+    title: "Hidden UNESCO Heritage Sites in India",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784723097/Entry_to__Auditorium_Cave__vdskzu.jpg",
+    date: "22 July",
+    excerpt:
+      "India has 44 UNESCO World Heritage Sites, but most travelers kinda end up s....",
+  }
 ];
