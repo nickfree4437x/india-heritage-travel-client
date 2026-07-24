@@ -315,5 +315,14 @@ export const blogs = [
     date: "22 July",
     excerpt:
       "India has 44 UNESCO World Heritage Sites, but most travelers kinda end up s....",
+  },
+  {
+    id: 36,
+    slug: "women-only-heritage-tours-india",
+    title: "Women-Only Heritage Tours in India: What to Expect & How to Prepare",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1784898459/pexels-jaiveer-2452265_rwouvl.jpg",
+    date: "24 July",
+    excerpt:
+      "Women-only heritage tours across India sort of pair small curated groups....",
   }
 ];

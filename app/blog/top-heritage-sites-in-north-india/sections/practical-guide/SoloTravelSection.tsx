@@ -24,7 +24,7 @@ export default function HistorySection() {
               className="object-cover"
             />
           </div>
-          <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
+          <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
             via pexels
           </p>
         </div>
