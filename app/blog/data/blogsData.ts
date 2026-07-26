@@ -324,5 +324,14 @@ export const blogs = [
     date: "24 July",
     excerpt:
       "Women-only heritage tours across India sort of pair small curated groups....",
+  },
+  {
+    id: 37,
+    slug: "is-india-safe-for-female-travellers",
+    title: "Is India Safe for Female Travellers?",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785038986/pexels-ajaybhargavguduru-939722_doeur2.jpg",
+    date: "26 July",
+    excerpt:
+      "India is safe for female travellers in 2026, if you plan around destinati....",
   }
 ];

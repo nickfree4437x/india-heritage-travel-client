@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function FinalThoughtsSection() {
   return (
-    <section className="w-full bg-white py-8 md:py-8 pb:10 md:pb-14">
+    <section className="w-full bg-white py-8 md:py-8 pb:10 md:pb-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Solo Female Travellers */}
         <div className="max-w-6xl">

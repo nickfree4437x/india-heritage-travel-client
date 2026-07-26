@@ -88,7 +88,7 @@ export default function HeroSection() {
 
           {/* Description */}
           <p className="
-            mt-4
+            mt-2
             text-[#5f5f5f]
             text-[12px] sm:text-[13px] md:text-[14px]
             leading-5 sm:leading-6

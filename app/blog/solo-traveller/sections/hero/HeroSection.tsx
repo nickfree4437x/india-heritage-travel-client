@@ -72,7 +72,7 @@ export default function HeroSection() {
 
           {/* Meta Info */}
           <div className="
-            mt-4
+            mt-2
             flex flex-col gap-5
             sm:flex-row sm:items-center sm:justify-between
           ">
