@@ -333,5 +333,14 @@ export const blogs = [
     date: "26 July",
     excerpt:
       "India is safe for female travellers in 2026, if you plan around destinati....",
+  },
+  {
+    id: 38,
+    slug: "best-destinations-for-women-travellers-india",
+    title: "Best Destinations for Women Travellers in India (2026 Guide)",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785123229/pexels-sunaina-ravikumar-1597491343-27403390_ce8irk.jpg",
+    date: "27 July",
+    excerpt:
+      "•	India’s best destinations for women travellers sorta blend strong tra....",
   }
 ];
