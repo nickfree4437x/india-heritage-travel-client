@@ -341,6 +341,15 @@ export const blogs = [
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785123229/pexels-sunaina-ravikumar-1597491343-27403390_ce8irk.jpg",
     date: "27 July",
     excerpt:
-      "•	India’s best destinations for women travellers sorta blend strong tra....",
-  }
+      "India’s best destinations for women travellers sorta blend strong tra....",
+  },
+  {
+    id: 39,
+    slug: "female-travel-safety-guide-india",
+    title: "Female Travel Safety Guide for India",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785243228/pexels-rani-sahu-16096244_n44hwj.jpg",
+    date: "28 July",
+    excerpt:
+      "A good travel safety guide for a woman starts before you even depart....",
+  },
 ];
