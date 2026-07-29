@@ -352,4 +352,13 @@ export const blogs = [
     excerpt:
       "A good travel safety guide for a woman starts before you even depart....",
   },
+  {
+    id: 40,
+    slug: "cultural-etiquette-for-women-travellers-india",
+    title: "Cultural Etiquette for Women Travellers in India (2026 Guide)",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785302031/pexels-dropshado-28489406_jibijp.jpg",
+    date: "29 July",
+    excerpt:
+      "Cultural etiquette for women travellers in India kind of sorta re....",
+  },
 ];
