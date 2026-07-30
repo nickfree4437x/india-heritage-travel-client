@@ -361,4 +361,13 @@ export const blogs = [
     excerpt:
       "Cultural etiquette for women travellers in India kind of sorta re....",
   },
+  {
+    id: 41,
+    slug: "womens-luxury-tours-in-india",
+    title: "Women's Luxury Tours India: 2026 Guide for Solo & Discerning Travellers",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785386517/pexels-yankrukov-5215461_a8htsd.jpg",
+    date: "30 July",
+    excerpt:
+      "Women’s luxury tours across India kind of stitch together private chauffeur-led ....",
+  },
 ];
