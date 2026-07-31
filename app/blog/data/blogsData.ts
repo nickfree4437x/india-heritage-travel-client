@@ -370,4 +370,13 @@ export const blogs = [
     excerpt:
       "Women’s luxury tours across India kind of stitch together private chauffeur-led ....",
   },
+  {
+    id: 42,
+    slug: "travel-insurance-for-india",
+    title: "Travel Insurance for India: The Complete 2026 Guide for International Travellers",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785471996/dino-reichmuth-A5rCN8626Ck-unsplash_fp1z81.jpg",
+    date: "31 July",
+    excerpt:
+      "Travel insurance is usually not legally mandatory for most e-Tourist Visa....",
+  },
 ];
