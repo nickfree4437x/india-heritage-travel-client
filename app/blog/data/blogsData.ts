@@ -379,4 +379,13 @@ export const blogs = [
     excerpt:
       "Travel insurance is usually not legally mandatory for most e-Tourist Visa....",
   },
+  {
+    id: 43,
+    slug: "internet-sim-card-guide-india",
+    title: "The Complete Internet & Sim Card Guide For Tourists In India - 2026",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785558039/pexels-ulrick-t-15407743_vugq2b.jpg",
+    date: "01 Auguest",
+    excerpt:
+      "Tourists in India get online through three main routes: a physical prepai....",
+  },
 ];

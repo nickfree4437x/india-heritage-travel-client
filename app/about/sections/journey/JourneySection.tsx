@@ -1,205 +1,302 @@
 "use client";
 
-import PersonSchema from "@/src/common/seo/PersonSchema";
 import { useState } from "react";
-import Image from "next/image";
 
 export default function JourneySection() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <section id="journey" className="space-y-10">
-
-      <PersonSchema
-        name="Piyush Singh"
-        jobTitle="Founder"
-        image="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto,w_800/v1779618257/profile_fankpm.jpg"
-      />
+    <section id="journey" className="space-y-2 md:space-y-3">
 
       {/* TOP PART */}
-      <div className="space-y-6">
+      <div className="space-y-1 md:space-y-2">
 
         {/* Heading */}
-        <h2 className="text-[22px] sm:text-[26px] md:text-[28px]
+        <h2 className="text-[18px] sm:text-[20px] md:text-[24px]
               font-semibold
               text-[#8b6a3d]
-              tracking-wide
-              mb-2">
-          My personal journey
+              tracking-wide">
+          We Didn't Set Out to Build a Travel Company.
         </h2>
 
-        {/* Quote */}
-        <p className="italic text-[#5f6b7a] text-[15px] md:text-[16px] font-light leading-[1.9] tracking-[0.2px]">
-          “I started with nothing but a dream and determination.
-          The road was tough, but every difficulty made me stronger
-          and more resilient.”
-        </p>
-
-        {/* Author */}
-        <p className="mt-5 text-right text-[#9c6b2f] text-[15px] md:text-[16px] font-medium tracking-[0.4px]">
-          - Piyush Singh
-        </p>
-
-        {/* Profile Image */}
-        <div className="flex justify-center">
-          <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden">
-            <Image
-              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto,w_800/v1779618257/profile_fankpm.jpg"
-              alt="Piyush Singh, Founder of India Heritage Travel"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-        </div>
+        <h3 className="text-[14px] sm:text-[16px] md:text-[18px]
+              tracking-wide font-light">
+          We Set Out to Do Travel Differently.
+        </h3>
 
       </div>
 
       {/* STORY CONTENT */}
-      <div className="text-[#5f5f5f] mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
+      <div className="text-[#5f5f5f] mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
 
         {/* ALWAYS VISIBLE */}
+        <p className="font-[450] text-gray-700">
+          Hello, we are Isha and Piyush.
+        </p>
         <p>
-          I was born in a small town near Jodhpur and my life’s journey took many unexpected turns. 
-          As a child, my father sent me to live with his big brother’s house in Jaipur. 
-          I was brought up there & my entire childhood spent with them. He was a doctor in a big hospital an 
-          incredibly kind man who always helped others. He taught me patience, honesty, and the strength to 
-          face challenges with a smile. His wisdom shaped who I am today.
+          And if you ask us how India Heritage Travel began, the honest answer is - we didn't really plan 
+          to start a travel company.
         </p>
 
-        <p className="mt-6">
-          But life changed when I had to return to my real home due to some family reasons when I was 
-          13 years old. It wasn’t easy to adjust, and I struggled with the transition. 
-          After completing my 10th grade, I moved to a hostel and avoided coming home even during holidays. 
-          By the time I finished 12th, I had no choice but to live with my parents again. The adjustment was difficult, and I felt a growing mental pressure.
+        <p className="mt-2 md:mt-3">
+          We simply wanted to fix something we felt was missing.
+        </p>
+
+        <p className="mt-2 md:mt-3">
+          Growing up in India, I had travel and hospitality around me from the very beginning. I watched 
+          my uncle build and run his travel company, and I was always fascinated by the people who came 
+          through it -where they came from, what brought them to India, and what they hoped to discover 
+          here.
+        </p>
+
+        <p className="mt-2 md:mt-3">
+          I was naturally curious. I loved meeting new people, hearing their stories, and travelling 
+          across India myself.
+        </p>
+
+        <p className="mt-2 md:mt-3">
+          And the more I travelled, the more I started to notice something.
         </p>
 
         {/* 🔥 EXPANDABLE CONTENT */}
         {expanded && (
           <>
-            <p className="mt-6">
-              At just 16 years old, due to family issues, I had to stay away from home. 
-              While attending college I had no option but to survive. So after a few days of struggle, 
-              I decided to find a job. I worked for one day before realizing I wasn’t meant for employment I 
-              was meant to build something on my own.
+            <p className="mt-2 md:mt-3">
+              So many journeys followed the same pattern.
             </p>
 
-            <p className="mt-6">
-              So, I started my first business with a friend. Within a year, it was doing well, 
-              and I was earning good money. But life tested me again my business partner betrayed me. 
-              I had a choice: fight for the business or walk away with my dignity. I chose the latter, 
-              leaving with a positive attitude.
+            <p className="mt-2 md:mt-3">
+              The same cities. The same monuments. The same sightseeing.
             </p>
 
-            <p className="mt-6">
-              My college was over & I moved to Jodhpur, where I spent six months learning the wholesale 
-              trading business tea, sugar, oil, and essentials from my cousin. Soon, I started my own trading 
-              business, and within a year, I was financially stable. But then came the biggest challenge COVID-19
-              . The market collapsed, businesses shut down, and I lost everything. 
-              The next six months were some of the hardest of my life.
+            <p className="mt-2 md:mt-3">
+              Of course, India has incredible places that everyone should see. But I kept wondering -what 
+              if we could show people something more?
             </p>
 
-            <p className="mt-6">
-              After COVID, I returned to Jaipur with nothing in my hands. I was struggling again, trying to start something new. 
-              There was no one to support me no good friends, no guidance just me against the world.
+            <p className="mt-2 md:mt-3">
+              What if a traveler could go beyond simply seeing India and actually experience it?
             </p>
 
-            <p className="mt-6">
-              Alongside my studies, I opened my own office and started doing accounting work. 
-              This gave me financial stability, and soon, I was earning a good amount of money again. 
-              Life was going smoothly my studies, my work, and my earnings were all aligned.
+            <p className="mt-2 md:mt-3">
+             Meet the people.
             </p>
 
-            <p className="mt-6">
-              Then, one night, I got a call that changed everything.
+            <p className="mt-2 md:mt-3">
+              Share a meal.
             </p>
 
-            <p className="mt-6">
-              A very good friend of mine- who is more like a brother called me at midnight. 
-              He was in trouble and needed my help. He asked me to come to Mandawa to manage his property, 
-              Mandawa Kothi. I was at a crossroads I had a stable career, a growing business, and financial 
-              security. But on the other hand, my friend needed me.
+            <p className="mt-2 md:mt-3">
+              Walk through a local market.
             </p>
 
-            <p className="mt-6">
-              I didn’t think twice. Something inside me told me to go. Without a second thought, 
-              I left everything behind and moved to Mandawa.
+            <p className="mt-2 md:mt-3">
+              Discover a quiet village.
             </p>
 
-            <p className="mt-6">
-              I arrived in Mandawa with no experience in the hotel industry. 
-              I had no idea how things were managed, how bookings were handled, or how to interact with 
-              travelers. But I didn’t let that stop me. I observed everything, learning slowly and gradually. Every day was a new experience, a new lesson.
+            <p className="mt-2 md:mt-3">
+              Stay somewhere with a story.
             </p>
 
-            <p className="mt-6">
-              Over time, I became confident in managing the hotel.
+            <p className="mt-2 md:mt-3">
+              Experience the India that exists between the famous places.
             </p>
 
-            <p className="mt-6">
-              Mandawa Kothi welcomed many foreign travelers. As I managed the property, I met new people from different parts of the world. 
-              At first, it was just work but then, I realized something.
+            <p className="mt-2 md:mt-3">
+              That question stayed with me.
             </p>
 
-            <p className="mt-6">
-              I loved interacting with these travelers. I enjoyed listening to their experiences, 
-              understanding their perspectives, and learning what they loved about India and what they 
-              struggled with. I started spending time with them, sitting and talking, understanding their 
-              journeys.
+            <p className="mt-2 md:mt-3">
+              And then I met Isha
+            </p>
+            <p className="mt-2 md:mt-3">
+              She brought another perspective to the story -one that was deeply personal.
+            </p>
+            <p className="mt-2 md:mt-3">
+              As a woman, she understood the concerns that many women have when they think about travelling 
+              alone, especially to a country that feels unfamiliar. She had experienced situations herself 
+              that made her think about something very important:
+            </p>
+            <p className="mt-2 md:mt-3 font-[450] text-gray-700">
+              If we, as people who know India, sometimes have these concerns, how must a woman travelling 
+              here alone from another country feel?
+            </p>
+            <p className="mt-2 md:mt-3">
+              That question changed the way we looked at travel.
+            </p>
+            <p className="mt-2 md:mt-3">
+              We didn't want our travelers to simply have a driver, a guide, and an itinerary waiting for them.
+            </p>
+            <p className="mt-2 md:mt-3">
+              We wanted them to have someone here.
+            </p>
+            <p className="mt-2 md:mt-3"> 
+              Someone they could talk to.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Someone who would listen.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Someone who knew their journey personally.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Someone they could call when they had a question, felt unsure, or simply wanted advice.
+            </p>
+            <p className="mt-2 md:mt-3">
+              We wanted them to feel that, even though they were thousands of miles away from home, they 
+              had a home in India.
+            </p>
+            <p className="mt-2 md:mt-3">
+              And that's when India Heritage Travel slowly began to take shape.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Not as a big travel company.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Not as a business built around numbers and bookings.
+            </p>
+            <p className="mt-2 md:mt-3">
+              But as a small, boutique travel company built around people.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Today, we personally stay connected with our travelers from the first conversation until the 
+              moment they leave India. We take the time to understand who they are, what they love, what 
+              makes them curious, and what they hope to feel during their time here.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Every journey is built around the person -not around a standard package.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Every hotel is thoughtfully chosen.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Every guide is personally selected.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Every experience has a reason for being there.
+            </p>
+            <p className="mt-2 md:mt-3">
+              And if something doesn't feel right, we change it.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Because we don't believe there is one perfect way to travel through India..
+            </p>
+            <p className="mt-2 md:mt-3">
+              There is only your way.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Maybe you want to explore grand palaces and ancient cities. Maybe you want to sit with a local 
+              family and share a meal. Maybe you want wildlife, spirituality, art, food, wellness, adventure 
+              -or simply a few quiet days to breathe.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Whatever brings you here, we listen first.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Then we curate.
+            </p>
+            <p className="mt-2 md:mt-3">
+              And we stay with you.
             </p>
 
-            <p className="mt-6">
-              I found myself drawn to tourism not just as a business, but as a passion. I became deeply interested in the places people visited, the culture they experienced, 
-              and how I could make their journey in India even better.
+
+            <p className="mt-2 md:mt-4">
+              Our promise is simple:
+            </p>
+            <p className="mt-2 md:mt-3 font-[450] text-gray-700">
+              We listen to you.
+            </p>
+            <p className="font-[450] text-gray-700">
+              We curate without compromise.
+            </p>
+            <p className="font-[450] text-gray-700">
+              We care about your comfort and safety.
+            </p>
+            <p className="font-[450] text-gray-700">
+              We stay connected throughout your journey.
+            </p>
+            <p className="font-[450] text-gray-700">
+              And we design your India around you -not around what a typical India tour is supposed to look 
+              like.
             </p>
 
-            <p className="mt-6">
-              That’s when my uncle helped me. He had been in the travel industry since 1995. I started sitting with him, learning from his experience. He shared his knowledge, taught me how tourism works, 
-              and helped me understand why he had been so dedicated to it for so many years.
+            <p className="mt-2 md:mt-3">
+              Because for us, travel has never been just about destinations.
+            </p>
+            <p className="mt-2 md:mt-3">
+              It's about how you are welcomed.
+            </p>
+            <p className="mt-2 md:mt-3">
+              How you are looked after.
+            </p>
+            <p className="mt-2 md:mt-3">
+              The conversations you have.
+            </p>
+            <p className="mt-2 md:mt-3">
+              The people you meet.
+            </p>
+            <p className="mt-2 md:mt-3">
+              The little moments you never expected.
+            </p>
+            <p className="mt-2 md:mt-3">
+              And the feeling you carry home with you.
+            </p>
+            <p className="mt-2 md:mt-3">
+              We started India Heritage Travel because we wanted to show people India through our eyes -the 
+              India we know, the India we love, and the India that exists beyond the usual tourist trail.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Today, we are still a small team by choice.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Because being small allows us to stay close.
+            </p>
+            <p className="mt-2 md:mt-3">
+              To know every traveler.
+            </p>
+            <p className="mt-2 md:mt-3">
+              To answer every message.
+            </p>
+            <p className="mt-2 md:mt-3">
+              To notice the little things.
+            </p>
+            <p className="mt-2 md:mt-3">
+              And to care.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Over the years, many people who came to India as our travelers have become our friends. Some 
+              have become like fam ily. And perhaps that is the greatest reward of what we do.
+            </p>
+            <p className="mt-2 md:mt-3">
+              So, if you are thinking about coming to India, we hope you don't just come to see our country.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Come to experience it.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Come with your curiosity.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Come with your questions.
+            </p>
+            <p className="mt-2 md:mt-3">
+              Come as you are.
+            </p>
+            <p className="mt-2 md:mt-3">
+              And let us help you discover an India that feels personal, meaningful, and truly yours.
             </p>
 
-            <p className="mt-6">
-              And then, everything made sense. I understood why he loved this industry because I was starting to feel the same way. I realized this was more than just a profession. It was a way to connect with people, 
-              to share the beauty of India, and to help travelers experience something unique.
+
+            <p className="mt-2 md:mt-4 font-[450] text-gray-700">
+              Welcome to India.
             </p>
-            <p className="mt-6">
-              As time passed, I became sure this was my path. I had found peace in tourism.
+            <p className="font-[450] text-gray-700">
+              Welcome to our way of travelling.
             </p>
-            <p className="mt-6">
-              I wanted to show people India through my own eyes not just the popular destinations, but the hidden gems, the untold stories, and the deep cultural experiences.
+            <p className="font-[450] text-gray-700">
+              And most importantly, welcome to our home.
             </p>
-            <p className="mt-6">
-              While managing the hotel during the 8-9 months of the travel season, I continued interacting with travellers. I decided that if I wanted to make a difference in tourism, I needed to see these places myself. So, every year, during the off-season, I started traveling across India exploring unique destinations, discovering offbeat hotels, and building local connections. 
-              Through these travels, I gathered deep knowledge of the industry, and my passion only grew stronger.
-            </p>
-            <p className="mt-6">
-              At this point, I knew I wanted to start something of my own something that truly reflected my vision of travel.
-            </p>
-            <p className="mt-6">
-              I needed a name that captured my love for heritage, culture, and authentic experiences. That’s when I decided to create India Heritage Travel a company dedicated to showing travellers India through my eyes, 
-              offering them experiences they wouldn’t find anywhere else.
-            </p>
-            <p className="mt-6">
-              Now, I have reached a point where I know this is my destiny.
-            </p>
-            <p className="mt-6"> 
-              This is where I find peace, this is what I love, and this is where I belong.
-            </p>
-            <p className="mt-6">
-              Looking back, this was just a dream a few years ago. But today, I am living that dream.
-            </p>
-            <p className="mt-6">
-              I am deeply grateful to everyone who has been a part of my journey my uncle, who guided me, my friend, and my partner Isha, whose unwavering support helped me build this empire, who motivated me every time & whatever I’m today is because of her equally being with me throughout. 
-              Most of all, I am grateful to God for leading me to this path.
-            </p>
-            <p className="mt-6">
-              Now, my purpose is clearto help travellers experience India in the most authentic way, to make their journeys smooth and unforgettable, 
-              and to show them the beauty of India through my eyes.
-            </p>
-            <p className="mt-6">
-              This is my journey. Every struggle, every loss, and every challenge has led me here. And now, through India Heritage Travel, 
-              I am ready to share my love for India with the world.
-            </p>
+
           </>
         )}
 

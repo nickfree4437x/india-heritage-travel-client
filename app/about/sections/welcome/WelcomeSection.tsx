@@ -4,24 +4,23 @@ import Image from "next/image";
 
 export default function WelcomeSection() {
   return (
-    <section id="welcome" className="space-y-16">
+    <section id="welcome" className="space-y-6 md:space-y-8">
       {/* Text Content */}
       <div className="max-w-4xl">
         <h2 className="
-          text-[22px] sm:text-[26px] md:text-[28px]
+          text-[18px] sm:text-[20px] md:text-[24px]
           font-semibold
           text-[#8b6a3d]
           tracking-wide
-          mb-4
+          mb-1
         ">
           Welcome to India Heritage Travel!
         </h2>
 
         <h3 className="
-          text-[20px] sm:text-[24px] md:text-[26px]
+          text-[14px] sm:text-[16px] md:text-[18px]
           text-gray-600
           font-[300]
-          mb-3
         ">
           Namaste!
         </h3>
@@ -41,13 +40,13 @@ export default function WelcomeSection() {
             waiting to be experienced.
           </p>
 
-          <p className="mt-6">
+          <p className="mt-2 md:mt-3">
             Here, travel is more than just exploring - it's about finding your soul in India's spiritualism. 
             Feel the energy of sacred ceremonies, meditate by tranquil rivers, and connect with a way of 
             life that brings peace and meaning.
           </p>
 
-          <p className="mt-6">
+          <p className="mt-2 md:mt-3">
             With a passion for authenticity and years of expertise, we craft personalized journeys that go 
             beyond the usual tourist trails. Whether you seek royal grandeur, cultural depth, or an offbeat
             escape, we bring you experiences that make every journey unforgettable.
@@ -55,8 +54,8 @@ export default function WelcomeSection() {
         </div>
 
         {/* Bottom Right Line */}
-        <div className="mt-5 text-right">
-          <p className="text-[#9c6b2f] font-medium text-lg">
+        <div className="mt-2 md:mt-3 text-right">
+          <p className="text-[#9c6b2f] font-medium text-[14px] sm:text-[15px] md:text-[16px]">
             Come, find your soul in India! ✨
           </p>
         </div>

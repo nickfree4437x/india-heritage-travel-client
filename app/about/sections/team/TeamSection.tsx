@@ -23,7 +23,7 @@ const teamMembers = [
   {
     name: "Monu Sharma",
     role: "Creative & Design Expert",
-    image: "/about/monu.jpg",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785646981/WhatsApp_Image_2026-08-01_at_12.56.22_AM_qwxgrt.jpg",
     alt: "Monu Sharma creative and design expert at India Heritage Travel",
     description:
       "Shaping the visual identity and boutique aesthetic of India Heritage Travel.",
@@ -61,7 +61,7 @@ export default function TeamSection() {
         {/* Section Header */}
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="
-            text-[22px] sm:text-[26px] md:text-[28px]
+            text-[18px] sm:text-[20px] md:text-[24px]
             font-semibold
             text-[#8b6a3d]
             tracking-wide
@@ -77,14 +77,14 @@ export default function TeamSection() {
             leading-relaxed
             mb-6
           ">
-            At India Heritage Travel, we are not just a team — we are travelers,
+            At India Heritage Travel, we are not just a team - we are travelers,
             creators, storytellers, and passionate people who genuinely love
             showing the beauty of India in a meaningful way.
           </p>
         </div>
 
-        {/* Team Introduction */}
-        <div className="max-w-5xl mx-auto mt-10 space-y-6">
+        {/* Bottom Content */}
+        <div className="max-w-5xl mx-auto space-y-6">
           <p className="
             text-[#5f5f5f]
             text-[12px] sm:text-[13px] md:text-[14px]
@@ -92,9 +92,10 @@ export default function TeamSection() {
             leading-relaxed
             text-justify
           ">
-            Each member of our team brings a different vision, personality, and
-            expertise, which helps us carefully create journeys that feel
-            personal, authentic, and unforgettable.
+            Together, we spend time exploring different parts of India to
+            discover unique boutique properties, hidden heritage stays,
+            meaningful cultural experiences, and carefully selected luxury
+            hotels that truly reflect the spirit of each destination.
           </p>
 
           <p className="
@@ -104,12 +105,7 @@ export default function TeamSection() {
             leading-relaxed
             text-justify
           ">
-            <strong className="text-[#8b6a3d] font-semibold">Piyush</strong> is the
-            creative mind behind many of the experiences we design. From curating
-            boutique stays and luxury experiences to personally working behind
-            the scenes on every itinerary, he focuses on creating journeys that
-            balance heritage, culture, comfort, and authenticity in every
-            destination across India.
+            Our goal has never been simply to plan trips.
           </p>
 
           <p className="
@@ -119,39 +115,10 @@ export default function TeamSection() {
             leading-relaxed
             text-justify
           ">
-            <strong className="text-[#8b6a3d] font-semibold">Isha</strong> is the
-            soul and strength of India Heritage Travel. Her vision, creativity,
-            and understanding of luxury hospitality help shape experiences that
-            feel elegant, warm, and deeply personal. She believes travel should
-            not only be beautiful, but also emotional and memorable.
-          </p>
-
-          <p className="
-            text-[#5f5f5f]
-            text-[12px] sm:text-[13px] md:text-[14px]
-            font-light
-            leading-relaxed
-            text-justify
-          ">
-            <strong className="text-[#8b6a3d] font-semibold">Monu Sharma</strong> brings 
-            artistic vision and design aesthetics into the brand. With a
-            strong sense of creativity and boutique-style detailing, he helps
-            shape the visual identity, concepts, and overall presentation of our
-            experiences and brand philosophy.
-          </p>
-
-          <p className="
-            text-[#5f5f5f]
-            text-[12px] sm:text-[13px] md:text-[14px]
-            font-light
-            leading-relaxed
-            text-justify
-          ">
-            <strong className="text-[#8b6a3d] font-semibold">Bharat</strong> plays
-            an important role in operations and guest management. His calm nature,
-            dedication, and attention to detail help ensure every journey runs
-            smoothly and every traveler feels comfortable and cared for throughout
-            their experience.
+            We believe in creating journeys that feel thoughtfully designed,
+            deeply personal, and connected to the real soul of India — where
+            every traveler can experience a perfect balance of heritage,
+            culture, boutique luxury, comfort, and human connection.
           </p>
         </div>
 
@@ -229,7 +196,16 @@ export default function TeamSection() {
         </div>
 
         {/* Bottom Content */}
-        <div className="max-w-5xl mx-auto mt-20 space-y-6">
+        <div className="max-w-5xl mx-auto mt-8 space-y-2">
+          <h3 className="
+            text-[16px] sm:text-[20px] md:text-[22px]
+          font-semibold
+          text-[#2f2f2f]
+          tracking-wide
+          ">
+            Your India Story Starts Here
+          </h3>
+
           <p className="
             text-[#5f5f5f]
             text-[12px] sm:text-[13px] md:text-[14px]
@@ -237,10 +213,7 @@ export default function TeamSection() {
             leading-relaxed
             text-justify
           ">
-            Together, we spend time exploring different parts of India to
-            discover unique boutique properties, hidden heritage stays,
-            meaningful cultural experiences, and carefully selected luxury
-            hotels that truly reflect the spirit of each destination.
+           You’re just one step away from experiencing India in a way that feels truly yours.
           </p>
 
           <p className="
@@ -250,20 +223,16 @@ export default function TeamSection() {
             leading-relaxed
             text-justify
           ">
-            Our goal has never been simply to plan trips.
+            Tell us what you’re dreaming of, and let’s create a journey that you’ll carry with you long 
+            after you leave.
           </p>
-
-          <p className="
-            text-[#5f5f5f]
-            text-[12px] sm:text-[13px] md:text-[14px]
-            font-light
-            leading-relaxed
-            text-justify
-          ">
-            We believe in creating journeys that feel thoughtfully designed,
-            deeply personal, and connected to the real soul of India — where
-            every traveler can experience a perfect balance of heritage,
-            culture, boutique luxury, comfort, and human connection.
+          <p className="mt-2 md:mt-4 text-[14px] md:font-[18px]"
+           style={{
+                  fontFamily: 'Georgia, "Times New Roman", Times, serif',
+                  fontStyle: "italic",
+                  letterSpacing: "0.9px",
+                }}>
+            Let’s plan your India journey together.
           </p>
         </div>
       </div>
