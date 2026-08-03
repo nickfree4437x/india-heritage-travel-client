@@ -1,15 +1,15 @@
 "use client";
 
-import WelcomeSection from "../welcome/WelcomeSection";
-import WorkSection from "../work/WorkSection";
 import JourneySection from "../journey/JourneySection";
+import WorkSection from "../work/WorkSection";
 import TeamSection from "../team/TeamSection";
 
 export default function AboutContent() {
   return (
-    <div className="md:col-span-2 space-y-10 md:space-y-12">
-      <WelcomeSection />
-      <JourneySection />
+    <div className="space-y-8 md:space-y-10">
+      <div className="-mt-6">
+        <JourneySection />
+      </div>
       <WorkSection />
       <TeamSection />
     </div>

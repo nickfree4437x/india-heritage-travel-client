@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background Image with Zoom Animation */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto,w_1600/v1779616418/about-hero_phk0dm.jpg"
+          src="https://res.cloudinary.com/dja5yspwr/image/upload/v1785733983/satyam-bhardwaj-qnO1zuuRN7Q-unsplash_fmngdp.jpg"
           alt="Founders and team behind India Heritage Travel"
           fill
           priority
@@ -19,12 +19,12 @@ export default function Hero() {
       </div>
 
       {/* Gradient Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/55" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/55" />
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
         <h1 className="
-          max-w-[700px]
+          max-w-[500px]
           text-3xl md:text-4xl
           font-[600]
           leading-[1.1]

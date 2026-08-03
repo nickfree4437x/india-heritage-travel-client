@@ -1,19 +1,23 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Crown } from "lucide-react";
+import { 
+  Compass, 
+  Settings, 
+  Users,
+  ChevronRight
+} from "lucide-react";
 
 const sections = [
-  { id: "welcome", title: "Welcome Letter!" },
-  { id: "work", title: "How we work" },
-  { id: "journey", title: "My Journey" },
-  { id: "team", title: "Our Team" },
+  { id: "journey", title: "Our Journey", icon: Compass },
+  { id: "work", title: "How We Work", icon: Settings },
+  { id: "team", title: "Meet Our Team", icon: Users },
 ];
 
 export default function AboutSidebar() {
-  const [active, setActive] = useState("welcome");
+  const [active, setActive] = useState("journey");
 
-  // Scroll Spy - Track which section is currently in view
+  // Scroll Spy
   useEffect(() => {
     const handleScroll = () => {
       let current = sections[0].id;
@@ -35,71 +39,47 @@ export default function AboutSidebar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
-
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Smooth scroll to section
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
       const y = el.getBoundingClientRect().top + window.pageYOffset - 120;
-      window.scrollTo({
-        top: y,
-        behavior: "smooth",
-      });
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
   return (
-    <div className="md:sticky top-28 h-fit md:-ml-5">
-      <ul className="space-y-4">
-        {sections.map((item) => (
-          <li
-            key={item.id}
-            onClick={() => scrollToSection(item.id)}
-            className={`
-              group flex items-center gap-4 cursor-pointer
-              text-lg rounded-2xl
-              px-4 py-3
-              transition-all duration-300
-              ${active === item.id
-                ? "bg-[#ebe4d9] text-[#A67C3D]"
-                : "text-gray-600 hover:bg-[#efe6da]"
-              }
-            `}
-          >
-            {/* Icon Circle */}
-            <div className={`
-              w-7 h-7 rounded-full
-              flex items-center justify-center
-              transition-all duration-300
-              ${active === item.id
-                ? "bg-[#c8b08b]"
-                : "bg-[#f3eee7] group-hover:bg-[#ebe1d3]"
-              }
-            `}>
-              <Crown
-                size={13}
-                fill="currentColor"
+    <div className="hidden md:block md:sticky top-28">
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-2 w-64">
+        <div className="p-1">
+          {sections.map((item) => {
+            const Icon = item.icon;
+            const isActive = active === item.id;
+
+            return (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
                 className={`
-                  transition-all duration-300
-                  ${active === item.id
-                    ? "text-white"
-                    : "text-[#c8b08b]"
+                  w-full flex items-center gap-3 px-3 py-2.5 rounded-xl
+                  transition-all duration-200
+                  ${isActive
+                    ? "bg-[#A67C3D] text-white"
+                    : "text-gray-600 hover:bg-gray-50"
                   }
                 `}
-              />
-            </div>
-
-            {/* Title */}
-            <span className="text-[16px] leading-none">
-              {item.title}
-            </span>
-          </li>
-        ))}
-      </ul>
+              >
+                <Icon size={16} className={isActive ? "text-white" : "text-gray-400"} />
+                <span className="text-sm font-medium">{item.title}</span>
+                {isActive && <ChevronRight size={14} className="ml-auto" />}
+              </button>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }
