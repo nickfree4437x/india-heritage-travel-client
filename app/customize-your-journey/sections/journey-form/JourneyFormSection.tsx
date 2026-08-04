@@ -78,7 +78,7 @@ export default function JourneyFormSection() {
   };
 
   return (
-    <section id="customize-form" className="w-full bg-[#f8f6f2] pt-4 pb-14 sm:pb-16">
+    <section id="customize-form" className="w-full bg-[#f8f6f2] pt-8 pb-14 sm:pb-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center">

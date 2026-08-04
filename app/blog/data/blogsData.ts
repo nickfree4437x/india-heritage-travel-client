@@ -388,4 +388,13 @@ export const blogs = [
     excerpt:
       "Tourists in India get online through three main routes: a physical prepai....",
   },
+  {
+    id: 44,
+    slug: "india-currency-guide",
+    title: "India Currency Guide 2026: Cash, Cards, ATMs & UPI for Tourists",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785760139/pexels-ravi-roshan-2875998-14907379_qpa43m.jpg",
+    date: "03 Auguest",
+    excerpt:
+      "The Indian Rupee (₹, INR) is basically India’s only legal tender, and ye....",
+  },
 ];

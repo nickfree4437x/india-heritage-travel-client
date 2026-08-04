@@ -5,7 +5,6 @@ import Footer from "@/src/sections/footer/Footer";
 
 // Page sections
 import HeroSection from "./sections/hero/HeroSection";
-import RegionsSection from "./sections/regions/RegionsSection";
 import JourneyFormSection from "./sections/journey-form/JourneyFormSection";
 
 // ============================================
@@ -71,7 +70,6 @@ export default function CustomizeJourneyPage() {
   return (
     <>
       <HeroSection />
-      <RegionsSection />
       <JourneyFormSection />
       <Footer />
     </>

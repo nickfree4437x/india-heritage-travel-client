@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { 
   Heart, 
-  MapPin, 
   Star, 
 } from "lucide-react";
 
@@ -54,28 +53,32 @@ export default function TeamSection() {
     <section id="team" className="relative py-2 md:py-4 bg-white">
       
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-6xl mx-auto px-0 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-4xl mx-auto text-center mb-4 md:mb-6">
+        <div className="max-w-4xl mx-auto text-justify mb-4 md:mb-6">
           
           <h2 className="text-[18px] sm:text-[20px] md:text-[26px] font-semibold tracking-wide text-[#8b6a3d] mb-2">
             Meet the Team Behind India Heritage Travel
             <br />
           </h2>
 
-          <div className="flex items-center justify-center gap-4 mt-4">
-            <span className="w-8 h-px bg-[#8b6a3d]/20" />
-            <p className="text-[#8b6a3d]/60 text-sm tracking-widest uppercase font-light">
-              The People Behind the Journey
-            </p>
-            <span className="w-8 h-px bg-[#8b6a3d]/20" />
-          </div>
-
-          <p className="mt-6 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light max-w-6xl mx-auto">
-            At India Heritage Travel, we are not just a team - we are travelers,
-            creators, storytellers, and passionate people who genuinely love
-            showing the beauty of India in a meaningful way.
+          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light ">
+            At India Heritage Travel, we are not just a team - we are travelers, creators, storytellers, and 
+            passionate people who genuinely love showing the beauty of India in a meaningful way.
+          </p>
+          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light ">
+            Together, we spend time exploring different parts of India to discover unique boutique 
+            properties, hidden heritage stays, meaningful cultural experiences, and carefully selected 
+            luxury hotels that truly reflect the spirit of each destination.
+          </p>
+          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light ">
+            Our goal has never been simply to plan trips.
+          </p>
+          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light ">
+            We believe in creating journeys that feel thoughtfully designed, deeply personal, and connected 
+            to the real soul of India -where every traveler can experience a perfect balance of heritage, 
+            culture, boutique luxury, comfort, and human connection.
           </p>
         </div>
 
@@ -84,7 +87,7 @@ export default function TeamSection() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative bg-white rounded-2xl border border-[#f0e4d4] overflow-hidden"
+              className="group relative bg-white rounded-xl border border-[#f0e4d4] overflow-hidden"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -127,45 +130,8 @@ export default function TeamSection() {
           ))}
         </div>
 
-        {/* Content Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
-          {/* Card 1 - What We Do */}
-          <div className="bg-white rounded-xl border border-[#f0e4d4] p-6 sm:p-8 shadow-sm">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#8b6a3d]/5 flex items-center justify-center">
-                <MapPin className="w-4 h-4 text-[#8b6a3d]" />
-              </div>
-              <div>
-                <h4 className="text-[#8b6a3d] font-medium text-sm sm:text-base mb-2">What We Do</h4>
-                <p className="text-gray-700 text-[12px] sm:text-[13px] md:text-[13.5px] font-light leading-relaxed text-justify">
-                  Together, we spend time exploring different parts of India to discover unique boutique 
-                  properties, hidden heritage stays, meaningful cultural experiences, and carefully selected 
-                  luxury hotels that truly reflect the spirit of each destination.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2 - Our Philosophy */}
-          <div className="bg-white rounded-xl border border-[#f0e4d4] p-6 sm:p-8 shadow-sm">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#8b6a3d]/5 flex items-center justify-center">
-                <Heart className="w-4 h-4 text-[#8b6a3d]" />
-              </div>
-              <div>
-                <h4 className="text-[#8b6a3d] font-medium text-sm sm:text-base mb-2">Our Philosophy</h4>
-                <p className="text-gray-700 text-[12px] sm:text-[13px] md:text-[13.5px] font-light leading-relaxed text-justify">
-                  We believe in creating journeys that feel thoughtfully designed, deeply personal, and 
-                  connected to the real soul of India - where every traveler can experience a perfect balance 
-                  of heritage, culture, boutique luxury, comfort, and human connection.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Bottom CTA Section */}
-        <div className="max-w-4xl mx-auto text-center bg-gradient-to-br from-[#8b6a3d]/5 to-[#8b6a3d]/10 rounded-xl p-8 sm:p-10 md:p-12 border border-[#8b6a3d]/10 relative overflow-hidden">
+        <div className="max-w-4xl mx-auto text-center bg-gradient-to-br from-[#8b6a3d]/5 to-[#8b6a3d]/10 rounded-lg p-8 sm:p-10 md:p-12 border border-[#8b6a3d]/10 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#8b6a3d]/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#8b6a3d]/5 rounded-full blur-3xl" />
           
@@ -176,11 +142,11 @@ export default function TeamSection() {
               <span className="w-8 h-px bg-[#8b6a3d]/20" />
             </div>
             
-            <h3 className="font-serif text-[#8b6a3d] text-2xl sm:text-3xl md:text-4xl tracking-wide mb-4">
+            <h3 className="font-serif text-[#8b6a3d] text-[14px] md:text-[16px] tracking-wide mb-2">
               Your India Story Starts Here
             </h3>
             
-            <div className="space-y-3 max-w-2xl mx-auto">
+            <div className="space-y-2 max-w-2xl mx-auto">
               <p className="text-gray-700 text-[12px] sm:text-[13px] md:text-[13.5px] font-light leading-relaxed text-center">
                 You're just one step away from experiencing India in a way that feels truly yours.
               </p>
@@ -190,13 +156,13 @@ export default function TeamSection() {
               </p>
             </div>
             
-            <div className="mt-6">
+            <div className="mt-2 md:mt-4">
               <p className="font-serif text-[#8b6a3d] text-lg sm:text-xl md:text-2xl italic">
                 "Let's plan your India journey together."
               </p>
             </div>
             
-            <div className="mt-6 flex items-center justify-center gap-2">
+            <div className="mt-2 md:mt-4 flex items-center justify-center gap-2">
               <span className="w-12 h-px bg-[#8b6a3d]/20" />
               <Heart className="w-4 h-4 text-[#8b6a3d]/20" />
               <span className="w-12 h-px bg-[#8b6a3d]/20" />
