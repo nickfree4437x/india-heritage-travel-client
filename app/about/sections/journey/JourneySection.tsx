@@ -129,33 +129,29 @@ export default function JourneySection() {
                 <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
                   What if a traveler could go beyond simply seeing India and actually <span className="italic">experience</span> it?
                 </p>
-
-                {/* Highlights Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 my-6">
-                  {journeyHighlights.map((item, index) => (
-                    <div 
-                      key={index}
-                      className={` relative bg-gradient-to-br ${item.color} rounded-lg p-4`}
-                      style={{ animationDelay: `${index * 100}ms` }}
-                    >
-                      <div className="absolute inset-0 bg-white/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <div className="relative flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-white/70 flex items-center justify-center flex-shrink-0">
-                          <item.icon className="w-4 h-4 text-[#8b6a3d]" />
-                        </div>
-                        <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[13.5px] font-light">{item.text}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+                  Meet the people.
+                </p>
+                <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+                  Share a meal.
+                </p>
+                <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+                  Walk through a local market.
+                </p>
+                <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+                  Discover a quiet village
+                </p>
+                <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+                  Stay somewhere with a story.
+                </p>
+                <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+                  Experience the India that exists between the famous places.
+                </p>
 
                 {/* Quote Block */}
-                <div className="relative bg-gradient-to-br from-[#8b6a3d]/5 to-[#8b6a3d]/10 rounded-md p-3 sm:p-4">
-                  <Quote className="absolute top-4 right-4 w-6 h-6 text-[#8b6a3d]/10" />
-                  <p className="font-light text-[#8b6a3d] text-[14px] md:text-[16px]">
-                    "That question stayed with me."
-                  </p>
-                </div>
+                <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+                 That question stayed with me.
+                </p>
 
                 {/* Isha Section */}
                 <div className="space-y-2">
@@ -269,7 +265,7 @@ export default function JourneySection() {
                     <p className="font-[450] text-[#2c2c2c] text-[12px] md:text-[14px]">Our promise is simple:</p>
 
                     {/* Hero Quote */}
-                    <div className="relative bg-gradient-to-r from-[#8b6a3d]/5 via-[#8b6a3d]/10 to-[#8b6a3d]/5 rounded-lg p-4 sm:p-6 border border-[#8b6a3d]/10">
+                    <div className="relative bg-gradient-to-r from-[#8b6a3d]/5 via-[#8b6a3d]/10 to-[#8b6a3d]/5 rounded-lg p-4 sm:p-6">
                       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent via-[#8b6a3d]/30 to-transparent" />
                       <p className="font-light text-[#8b6a3d] text-[10px] md:text-[14px]">
                         We listen to you. 
