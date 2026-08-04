@@ -3,8 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { 
   ChevronDown, 
-  ChevronUp, 
-  Quote,  
+  ChevronUp,   
   Users, 
   Home, 
   MapPin, 
@@ -35,15 +34,6 @@ export default function JourneySection() {
     return () => observer.disconnect();
   }, []);
 
-  const journeyHighlights = [
-    { icon: Users, text: "Meet the people", color: "bg-gray-50" },
-    { icon: Utensils, text: "Share a meal", color: "bg-gray-50" },
-    { icon: MapPin, text: "Walk through local markets", color: "bg-gray-50" },
-    { icon: TreePine, text: "Discover quiet villages", color: "bg-gray-50" },
-    { icon: Home, text: "Stay somewhere with a story", color: "bg-gray-50" },
-    { icon: Mountain, text: "Experience the real India", color: "bg-gray-50" },
-  ];
-
   return (
     <section 
       ref={sectionRef}
@@ -54,7 +44,7 @@ export default function JourneySection() {
       <div className="relative mx-auto w-full max-w-6xl lg:px-8">
         
         {/* Header Section */}
-        <div className={`text-center mb-4 md:mb-6 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <div className={`text-center mb-4 md:mb-10 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           
           <h2 className="text-[18px] sm:text-[20px] md:text-[26px] font-semibold tracking-wide text-[#8b6a3d] mb-2">
             We Didn't Set Out to Build a Travel Company.
@@ -69,39 +59,34 @@ export default function JourneySection() {
 
         {/* Main Story Card */}
         <div className={`relative transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <div className="relative w-full max-w-6xl mx-auto">
+          <div className="relative w-full max-w-5xl mx-auto">
             
             {/* Card decorative gradient */}
             <div className="absolute top-0 left-0 right-0 h-1" />
             
-            <div className="p-0 sm:p-4 md:p-8 lg:p-10">
+            <div>
               
               {/* Story Content */}
               <div className="space-y-2 md:space-y-3 lg:space-y-3 text-[#5f5f5f] text-sm sm:text-base lg:text-lg leading-relaxed">
                 
                 {/* Opening */}
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="w-8 h-8 rounded-full bg-[#8b6a3d]/10 flex items-center justify-center">
-                      <Quote className="w-3 h-3 text-[#8b6a3d]/60" />
-                    </div>
-                  </div>
                   <div className="flex-1">
-                    <p className="font-serif text-[#8b6a3d] text-[16px] md:text-[18px]">
+                    <p className="font-serif text-[#2c2c2c] text-[16px] md:text-[18px]">
                       Hello, we are Isha and Piyush.
                     </p>
-                    <p className="mt-1 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+                    <p className="mt-2 md:mt-3 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
                       And if you ask us how India Heritage Travel began, the honest answer is - we didn't really plan 
                       to start a travel company.
                     </p>
                   </div>
                 </div>
 
-                <p className="pl-0 sm:pl-12 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
+                <p className=" text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
                   We simply wanted to fix something we felt was missing.
                 </p>
 
-                <div className="relative pl-0 sm:pl-8 md:pl-12  border-[#8b6a3d]/20">
+                <div className="relative  border-[#8b6a3d]/20">
                   <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
                     Growing up in India, I had travel and hospitality around me from the very beginning. I watched 
                     my uncle build and run his travel company, and I was always fascinated by the people who came 
@@ -169,14 +154,11 @@ export default function JourneySection() {
                 </div>
 
                 {/* Highlight Box */}
-                <div className="relative bg-gradient-to-r from-[#8b6a3d]/5 via-[#8b6a3d]/10 to-[#8b6a3d]/5 rounded-md p-4 sm:p-6">
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent via-[#8b6a3d]/30 to-transparent" />
-                  <p className="font-light text-[#8b6a3d] text-[10px] md:text-[15px] text-center">
-                    "If we, as people who know India, sometimes have these concerns, 
-                    <br className="hidden sm:block" />
-                    how must a woman travelling here alone from another country feel?"
-                  </p>
-                </div>
+                <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-[450]">
+                  "If we, as people who know India, sometimes have these concerns, 
+                  <br />
+                  how must a woman travelling here alone from another country feel?"
+                </p>
 
                 {/* EXPANDABLE CONTENT */}
                 {expanded && (
@@ -372,25 +354,19 @@ export default function JourneySection() {
                 <div className="flex justify-center pt-4">
                   <button
                     onClick={() => setExpanded(!expanded)}
-                    className="group relative inline-flex items-center gap-4 px-6 py-2 bg-white rounded-full border-2 border-[#8b6a3d]/20 shadow-sm transition-all duration-300 overflow-hidden"
+                    className="group relative inline-flex items-center gap-4 px-6 py-2  overflow-hidden"
                   >
-                    <span className="absolute inset-0 bg-gradient-to-r from-[#8b6a3d]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <span className="absolute inset-0 bg-gradient-to-r from-[#8b6a3d]/5 to-transparent opacity-0 transition-opacity duration-300" />
                     
-                    <span className="relative flex items-center gap-3">
-                      <span className="text-[#8b6a3d] tracking-wide text-[12px] md:text-[14px] font-light">
-                        {expanded ? "Show less" : "No more about"}
+                    <span className="relative flex items-center gap-1">
+                      <span className="text-[#8b6a3d] tracking-wide text-[12px] md:text-[14px] hover:underline font-light">
+                        {expanded ? "Show less" : "Know More About Our Journey"}
                       </span>
                       {expanded ? (
                         <ChevronUp className="w-4 h-4 text-[#8b6a3d] transition-transform duration-300" />
                       ) : (
-                        <ChevronDown className="w-4 h-4 text-[#8b6a3d] transition-transform duration-300 group-hover:translate-y-0.5" />
+                        <ChevronDown className="w-4 h-4 text-[#8b6a3d] transition-transform duration-300" />
                       )}
-                    </span>
-                    
-                    <span className="relative w-px h-6 bg-[#8b6a3d]/20" />
-                    
-                    <span className="relative flex items-center gap-2 text-[#8b6a3d]/60 text-[12px] md:text-[14px] font-light tracking-wider">
-                      Our Journey
                     </span>
                   </button>
                 </div>

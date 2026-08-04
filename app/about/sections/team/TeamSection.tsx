@@ -56,26 +56,26 @@ export default function TeamSection() {
       <div className="relative max-w-6xl mx-auto px-0 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-4xl mx-auto text-justify mb-4 md:mb-6">
+        <div className="max-w-4xl mx-auto mb-4 md:mb-6">
           
           <h2 className="text-[18px] sm:text-[20px] md:text-[26px] font-semibold tracking-wide text-[#8b6a3d] mb-2">
             Meet the Team Behind India Heritage Travel
             <br />
           </h2>
 
-          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light ">
+          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             At India Heritage Travel, we are not just a team - we are travelers, creators, storytellers, and 
             passionate people who genuinely love showing the beauty of India in a meaningful way.
           </p>
-          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light ">
+          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Together, we spend time exploring different parts of India to discover unique boutique 
             properties, hidden heritage stays, meaningful cultural experiences, and carefully selected 
             luxury hotels that truly reflect the spirit of each destination.
           </p>
-          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light ">
+          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Our goal has never been simply to plan trips.
           </p>
-          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light ">
+          <p className="mt-2 md:mt-4 text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             We believe in creating journeys that feel thoughtfully designed, deeply personal, and connected 
             to the real soul of India -where every traveler can experience a perfect balance of heritage, 
             culture, boutique luxury, comfort, and human connection.
