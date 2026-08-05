@@ -1,32 +1,32 @@
 export const faqs = [
   {
-    question: "Can I use US dollars or euros directly in India?",
+    question: "What are the best Indian festivals for tourists to attend?",
     answer:
-      "No. The Indian Rupee is the only legal tender, and shops, taxis and most vendors will not accept foreign currency directly. You'll need to exchange or withdraw INR.",
+      "Holi, Diwali, Durga Puja, the Pushkar Camel Fair, Navratri and Garba, Onam, Pongal, the Hornbill Festival, the Jaisalmer Desert Festival, and the Kumbh Mela are widely considered the ten best Indian festivals for tourists, chosen for their cultural depth and visual scale.",
   },
   {
-    question: "Is UPI available to foreign tourists in 2026?",
+    question: "What is the best time to visit India for festivals?",
     answer:
-      "Yes. Through the UPI One World framework, foreign tourists can set up a prepaid wallet using their passport and visa and pay via UPI QR codes without an Indian bank account.",
+      "October to March is the most festival-dense and weather-comfortable window, covering Navratri, Durga Puja, Diwali, Pushkar, Hornbill, the Desert Festival, and Pongal; Holi follows in March.",
   },
   {
-    question: "Are international credit and debit cards widely accepted in India?",
+    question: "Is it safe for solo female travelers to attend Indian festivals?",
     answer:
-      "Widely accepted in cities at hotels, malls, and larger restaurants, but far less common at local markets, street stalls, and rural areas, where cash or UPI is expected.",
+      "Yes, with the right preparation. Booking women-only tours, using pre-arranged transport, dressing modestly near temples, and traveling with a local guide make festivals like Holi and Durga Puja very manageable for solo women.",
   },
   {
-    question: "WWhat is the ATM withdrawal limit for foreign cards in India?",
+    question: "Do I need tickets for Indian festivals like Holi or Diwali?",
     answer:
-      "Most Indian ATMs cap a single withdrawal on a foreign card between roughly ₹10,000 and ₹20,000, depending on the bank, with additional withdrawals possible for a fee.",
+      "Most street celebrations are free and open to the public. Curated events, premium viewing areas, and the Hornbill Festival require advance tickets, which a tour operator can arrange.",
   },
   {
-    question: "How much cash can I bring into India as a tourist?",
+    question: "Which Indian festival is best for families with children?",
     answer:
-      "You can bring unlimited foreign currency, but amounts over USD 5,000 in cash, or USD 10,000 combined with travelers' cheques, must be declared on a Currency Declaration Form at customs.",
+      "Diwali and Pongal are considered the most family-friendly, with daytime activities, food, and craft traditions suitable for all ages.",
   },
   {
-    question: "Should I exchange money at the airport or in the city?",
+    question: "What should I wear to Indian festivals?",
     answer:
-      "Airport counters are convenient for a small initial amount, but city banks, RBI-authorized money changers, and hotel desks typically offer better rates for the bulk of your exchange.",
+      "Modest, breathable cotton clothing is appropriate for most festivals and temple visits; for Holi, wear old clothes you don't mind staining, and for cooler winter festivals like Hornbill or the Desert Festival, pack a warm layer for evenings.",
   },
 ];

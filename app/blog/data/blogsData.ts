@@ -397,4 +397,13 @@ export const blogs = [
     excerpt:
       "The Indian Rupee (₹, INR) is basically India’s only legal tender, and ye....",
   },
+  {
+    id: 45,
+    slug: "best-indian-festivals-for-tourists",
+    title: "Best Indian Festivals for Tourists",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1785903404/pexels-yankrukov-8819845_azck8i.jpg",
+    date: "05 Auguest",
+    excerpt:
+      "India has thousands of festivals all year long, but like ten of them re....",
+  },
 ];
