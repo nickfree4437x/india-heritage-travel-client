@@ -4,12 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import { 
   ChevronDown, 
   ChevronUp,   
-  Users, 
-  Home, 
-  MapPin, 
-  TreePine,
-  Mountain,
-  Utensils,
 } from "lucide-react";
 
 export default function JourneySection() {
@@ -354,20 +348,17 @@ export default function JourneySection() {
                 <div className="flex justify-center pt-4">
                   <button
                     onClick={() => setExpanded(!expanded)}
-                    className="group relative inline-flex items-center gap-4 px-6 py-2  overflow-hidden"
+                    className="group inline-flex items-center gap-2 rounded-full border border-[#d9c8ad] bg-white px-6 py-1.5 text-[#8b6a3d] transition-all duration-300 hover:bg-[#faf8f5] hover:shadow-sm"
                   >
-                    <span className="absolute inset-0 bg-gradient-to-r from-[#8b6a3d]/5 to-transparent opacity-0 transition-opacity duration-300" />
-                    
-                    <span className="relative flex items-center gap-1">
-                      <span className="text-[#8b6a3d] tracking-wide text-[12px] md:text-[14px] hover:underline font-light">
-                        {expanded ? "Show less" : "Know More About Our Journey"}
-                      </span>
-                      {expanded ? (
-                        <ChevronUp className="w-4 h-4 text-[#8b6a3d] transition-transform duration-300" />
-                      ) : (
-                        <ChevronDown className="w-4 h-4 text-[#8b6a3d] transition-transform duration-300" />
-                      )}
+                    <span className="text-[12px] md:text-[14px] tracking-wide">
+                      {expanded ? "Show Less" : "Know More About Our Journey"}
                     </span>
+
+                    {expanded ? (
+                      <ChevronUp className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
+                    ) : (
+                      <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
+                    )}
                   </button>
                 </div>
 
