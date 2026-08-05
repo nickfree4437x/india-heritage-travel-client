@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background Image with Zoom Animation */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779611920/pangong-lake-main_bgfsn6.jpg"
+          src="https://res.cloudinary.com/dja5yspwr/image/upload/v1785949838/photo-1501144600699-729d204d332b_wrz9dv.avif"
           alt="Contact India Heritage Travel for luxury tours custom itineraries and travel assistance"
           fill
           priority

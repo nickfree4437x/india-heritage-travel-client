@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Desktop Image */}
       <div className="absolute inset-0 hidden md:block scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="https://res.cloudinary.com/dja5yspwr/image/upload/v1785733983/satyam-bhardwaj-qnO1zuuRN7Q-unsplash_fmngdp.jpg"
+          src="https://res.cloudinary.com/dja5yspwr/image/upload/v1785949739/148919695-56a3bf1e3df78cf7727f0149.jpg_yyep62.jpg"
           alt="Founders and team behind India Heritage Travel"
           fill
           priority
