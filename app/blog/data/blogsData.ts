@@ -406,4 +406,13 @@ export const blogs = [
     excerpt:
       "India has thousands of festivals all year long, but like ten of them re....",
   },
+  {
+    id: 46,
+    slug: "how-to-plan-a-trip-to-india",
+    title: "How to Plan a Trip to India: 2026 Guide for First-Time & Luxury Travelers",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786161165/pexels-a-g-47132025-37168988_ju9gfy.jpg",
+    date: "08 Auguest",
+    excerpt:
+      "Most of India is best in the window from November to March, and yeah  the....",
+  },
 ];
