@@ -415,4 +415,13 @@ export const blogs = [
     excerpt:
       "Most of India is best in the window from November to March, and yeah  the....",
   },
+  {
+    id: 47,
+    slug: "india-weather-by-month",
+    title: "India Weather by Month: A Complete Season-by-Season Travel Guide",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786251676/jk-gJhev0YgUcE-unsplash_iprvrx.jpg",
+    date: "09 Auguest",
+    excerpt:
+      "India kind of has four broad seasons, winter, summer, monsoon and post-m....",
+  },
 ];
