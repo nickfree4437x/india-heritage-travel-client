@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 const BASE_URL = "https://indiaheritagetravel.com";
 const BLOG_URL = `${BASE_URL}/blog/india-weather-by-month`;
 const IMAGE_URL =
-  "https://res.cloudinary.com/dja5yspwr/image/upload/v1786161165/pexels-a-g-47132025-37168988_ju9gfy.jpg";
+  "https://res.cloudinary.com/dja5yspwr/image/upload/v1786251676/jk-gJhev0YgUcE-unsplash_iprvrx.jpg";
 
 // ============================================
 // INDIA WEATHER BY MONTH - SEO METADATA

@@ -424,4 +424,13 @@ export const blogs = [
     excerpt:
       "India kind of has four broad seasons, winter, summer, monsoon and post-m....",
   },
+  {
+    id: 48,
+    slug: "best-time-to-visit-india",
+    title: "Best Time to Visit India (2026)",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786331966/monthaye-b1Ywo-ZKtTs-unsplash_d5rlup.jpg",
+    date: "10 Auguest",
+    excerpt:
+      "Honestly the best time to visit India overall tends to be October to Mar....",
+  },
 ];
