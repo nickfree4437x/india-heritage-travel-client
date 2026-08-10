@@ -98,10 +98,6 @@ export default function CityBreakdown() {
                   <td className="px-6 py-3 text-[12px] md:text-[13px] font-light text-gray-700 whitespace-nowrap">
                     {item.foreign}
                   </td>
-
-                  <td className="px-6 py-3 text-[12px] md:text-[13px] font-light text-gray-700 whitespace-nowrap">
-                    {item.best}
-                  </td>
                 </tr>
               ))}
             </tbody>
