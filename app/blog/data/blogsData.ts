@@ -433,4 +433,13 @@ export const blogs = [
     excerpt:
       "Honestly the best time to visit India overall tends to be October to Mar....",
   },
+  {
+    id: 49,
+    slug: "india-travel-cost-guide",
+    title: "India Travel Cost Guide: What a Trip to India Really Costs in 2026",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786420508/c-rayban-CIXoFys3gsw-unsplash_cewrpk.jpg",
+    date: "11 Auguest",
+    excerpt:
+      "India Travel Cost Guide: What a Trip to India Really Costs in 2026....",
+  },
 ];
