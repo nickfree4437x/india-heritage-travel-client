@@ -442,4 +442,13 @@ export const blogs = [
     excerpt:
       "India Travel Cost Guide: What a Trip to India Really Costs in 2026....",
   },
+  {
+    id: 50,
+    slug: "india-visa-guide-for-foreign-tourists",
+    title: "India Visa Guide for Foreign Tourists (2026)",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786508346/global-residence-index-LPdaW746WAw-unsplash_ou5fdg.jpg",
+    date: "12 Auguest",
+    excerpt:
+      "Most travellers from 170+ eligible countries can apply for an Indi....",
+  },
 ];
