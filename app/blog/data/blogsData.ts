@@ -451,4 +451,13 @@ export const blogs = [
     excerpt:
       "Most travellers from 170+ eligible countries can apply for an Indi....",
   },
+  {
+    id: 51,
+    slug: "udaipur-travel-guide-city-of-lakes",
+    title: "Udaipur Travel Guide: The City of Lakes",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786681413/jainam-mehta-AVFjDGbqiqE-unsplash_yyofaq.jpg",
+    date: "14 Auguest",
+    excerpt:
+      "Udaipur , the “City of Lakes” somehow ends up being Rajasthan’s most....",
+  },
 ];
