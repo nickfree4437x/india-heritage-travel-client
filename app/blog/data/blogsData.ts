@@ -460,4 +460,13 @@ export const blogs = [
     excerpt:
       "Udaipur , the “City of Lakes” somehow ends up being Rajasthan’s most....",
   },
+  {
+    id: 52,
+    slug: "jodhpur-travel-guide-blue-city",
+    title: "Jodhpur Travel Guide: The Blue City",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786763699/makm-photography-u0irC_UnbOk-unsplash_m0rqt5.jpg",
+    date: "15 Auguest",
+    excerpt:
+      "Second most populous city in Rajasthan is called Blue City of Jodhpur....",
+  },
 ];
