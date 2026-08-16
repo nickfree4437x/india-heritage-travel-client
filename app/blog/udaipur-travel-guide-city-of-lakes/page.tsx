@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-
 // ============================================
 // SEO METADATA
 // ============================================
@@ -99,46 +97,20 @@ export default function UdaipurTravelGuidePage() {
       {/* Main Blog Content */}
       <main>
         <IntroSection />
-
-        {/* 1. Overview */}
         <OverviewSection />
-
-        {/* 2. History */}
         <HistorySection />
-
-        {/* 3. Architecture */}
         <ArchitectureSection />
-
-        {/* 4. Major Attractions */}
         <MajorAttractionsSection />
-
-        {/* 5. Best Experiences */}
         <ExperiencesSection />
-
-        {/* 6. Food & Local Cuisine */}
         <FoodSection />
-
-        {/* 7. Nearby Attractions / Day Trips */}
         <NearbyAttractionsSection />
-
-        {/* 8. Luxury Travel Tips */}
         <LuxuryTravelSection />
-
-        {/* 9. Practical Travel Guide */}
         <PracticalGuideSection />
-
-        {/* 10. Suggested Udaipur Itinerary */}
         <ItinerarySection />
-
-        {/* 11. Why Choose India Heritage Travel */}
         <div className="-mt-3">
           <WhyChooseSection />
         </div>
-
-        {/* 12. Frequently Asked Questions */}
         <FAQSection />
-
-        {/* 13. Related Blogs */}
         <MoreBlogs />
       </main>
 

@@ -469,4 +469,13 @@ export const blogs = [
     excerpt:
       "Second most populous city in Rajasthan is called Blue City of Jodhpur....",
   },
+  {
+    id: 53,
+    slug: "jaisalmer-travel-guide-golden-city",
+    title: "Jaisalmer Travel Guide: The Golden City",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786850130/hotel-lal-garh-fort-and-palace-9hz-7Qpg5wc-unsplash_z3rlbe.jpg",
+    date: "16 Auguest",
+    excerpt:
+      "Jaisalmer , the “Golden City” is built mostly from honey coloured sandstone....",
+  },
 ];
