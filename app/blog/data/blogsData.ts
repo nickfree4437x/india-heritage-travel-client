@@ -478,4 +478,13 @@ export const blogs = [
     excerpt:
       "Jaisalmer , the “Golden City” is built mostly from honey coloured sandstone....",
   },
+  {
+    id: 54,
+    slug: "bikaner-travel-guide",
+    title: "Bikaner Travel Guide: Forts, Palaces & Luxury Desert Tours",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786948187/salil-cZVUoTtGAlU-unsplash_zafycv.jpg",
+    date: "17 Auguest",
+    excerpt:
+      "Bikaner was founded in 1488 CE by Rao Bika , he was a Rathore Rajput prince....",
+  },
 ];
