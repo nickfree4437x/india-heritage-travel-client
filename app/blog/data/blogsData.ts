@@ -487,4 +487,13 @@ export const blogs = [
     excerpt:
       "Bikaner was founded in 1488 CE by Rao Bika , he was a Rathore Rajput prince....",
   },
+  {
+    id: 55,
+    slug: "pushkar-travel-guide-sacred-lake-city",
+    title: "Pushkar Travel Guide: The Sacred Lake City",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1787110091/austin-curtis-cN1mrrdZ0V4-unsplash_v3emoq.jpg",
+    date: "19 Auguest",
+    excerpt:
+      "Pushkar travel guide to Rajasthan's sacred lake city: Brahma Temple, 52 gha....",
+  },
 ];
