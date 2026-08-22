@@ -496,4 +496,13 @@ export const blogs = [
     excerpt:
       "Pushkar travel guide to Rajasthan's sacred lake city: Brahma Temple, 52 gha....",
   },
+  {
+    id: 56,
+    slug: "nagaur-travel-guide-forts-ranvas-rajasthan",
+    title: "Nagaur Travel Guide: Forts, Royal Stories & Ranvas Palace",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1787368911/pexels-mukund-patel-1264723-2409361_as2tei.jpg",
+    date: "22 Auguest",
+    excerpt:
+      "Discover Nagaur's Ahhichatragarh Fort, Ranvas Palace, Sufi heritage, Cattle....",
+  },
 ];
