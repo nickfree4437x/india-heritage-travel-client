@@ -505,4 +505,13 @@ export const blogs = [
     excerpt:
       "Discover Nagaur's Ahhichatragarh Fort, Ranvas Palace, Sufi heritage, Cattle....",
   },
+  {
+    id: 57,
+    slug: "jawai-travel-guide-leopard-country-rajasthan",
+    title: "Jawai Travel Guide: Where Luxury Meets Leopard Country",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1787455333/advik-mehta-J7g4hCd8oDo-unsplash_iouelw.jpg",
+    date: "23 Auguest",
+    excerpt:
+      "Explore Jawai's leopard country, granite hills, Rabari culture, wildlife safaris....",
+  },
 ];
