@@ -514,4 +514,13 @@ export const blogs = [
     excerpt:
       "Explore Jawai's leopard country, granite hills, Rabari culture, wildlife safaris....",
   },
+  {
+    id: 58,
+    slug: "devgarh-travel-guide-palace-living-rural-rajasthan",
+    title: "Devgarh Travel Guide: Palace Living in Rural Rajasthan",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1787540855/794597_fd4032cb16f84cbab9b5f5000e911a33_mv2_im009v.avif",
+    date: "24 Auguest",
+    excerpt:
+      "Explore Deogarh Mahal, rural Rajasthan, Aravalli safaris, village life, Mewari cu....",
+  },
 ];

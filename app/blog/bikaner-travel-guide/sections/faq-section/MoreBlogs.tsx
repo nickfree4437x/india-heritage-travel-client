@@ -24,7 +24,7 @@ const blogs = [
   },
   {
     title:
-      "GUdaipur Travel Guide: The City of Lakes",
+      "Udaipur Travel Guide: The City of Lakes",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786681413/jainam-mehta-AVFjDGbqiqE-unsplash_yyofaq.jpg",
     date: "14 Auguest",
     slug: "udaipur-travel-guide-city-of-lakes",
