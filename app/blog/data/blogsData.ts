@@ -523,4 +523,13 @@ export const blogs = [
     excerpt:
       "Explore Deogarh Mahal, rural Rajasthan, Aravalli safaris, village life, Mewari cu....",
   },
+  {
+    id: 59,
+    slug: "rohet-travel-guide",
+    title: "Rohet Travel Guide: Palace Life & Bishnoi Village Experiences",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1787710578/rohet-garh-swimming-pool_qtieun.webp",
+    date: "26 Auguest",
+    excerpt:
+      "Rohet is this calm, desert-lake village, more or less 45–75 minutes to the south....",
+  },
 ];
