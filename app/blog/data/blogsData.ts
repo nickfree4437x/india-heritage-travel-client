@@ -532,4 +532,13 @@ export const blogs = [
     excerpt:
       "Rohet is this calm, desert-lake village, more or less 45–75 minutes to the south....",
   },
+  {
+    id: 60,
+    slug: "khejarla-travel-guide-sleeping-inside-desert-fort",
+    title: "Khejarla Travel Guide: Sleeping Inside a Desert Fort in Rajasthan",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1787836159/17_ykuc89.jpg",
+    date: "27 Auguest",
+    excerpt:
+      "Our Khejarla travel guide covers the 400-year-old fort's history, safaris, food....",
+  },
 ];
