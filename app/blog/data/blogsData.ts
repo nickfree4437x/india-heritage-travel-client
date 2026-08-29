@@ -541,4 +541,13 @@ export const blogs = [
     excerpt:
       "Our Khejarla travel guide covers the 400-year-old fort's history, safaris, food....",
   },
+  {
+    id: 61,
+    slug: "bundi-travel-guide-blue-city-rajasthan",
+    title: "Bundi Travel Guide: The Forgotten Blue Kingdom of Rajasthan",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1788000847/sanya-kakkar-fji2eOJ2ugk-unsplash_tvzs9n.jpg",
+    date: "29 Auguest",
+    excerpt:
+      "Explore Bundi's blue city, Taragarh Fort, stepwells, miniature paintings, lakes and....",
+  },
 ];
