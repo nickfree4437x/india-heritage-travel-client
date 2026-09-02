@@ -550,4 +550,13 @@ export const blogs = [
     excerpt:
       "Explore Bundi's blue city, Taragarh Fort, stepwells, miniature paintings, lakes and....",
   },
+  {
+    id: 62,
+    slug: "kumbhalgarh-travel-guide-forts-forests-mountain-luxury",
+    title: "Kumbhalgarh Travel Guide: Forts, Forests & Mountain Luxury",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1788322253/shail-sharma-eQpmAVF6IH8-unsplash_nawofx.jpg",
+    date: "02 September",
+    excerpt:
+      "Explore Kumbhalgarh Fort, its 36-km wall, wildlife sanctuary, hidden gems, luxury stays....",
+  },
 ];

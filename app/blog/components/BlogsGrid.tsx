@@ -10,11 +10,53 @@ type BlogsGridProps = {
   currentPage: number;
 };
 
+type PaginationItem = number | "ellipsis";
+
 export default function BlogsGrid({ currentPage }: BlogsGridProps) {
   const totalPages = Math.ceil(blogs.length / BLOGS_PER_PAGE);
-  const validCurrentPage = Math.min(Math.max(currentPage, 1), totalPages);
+  const validCurrentPage = Math.min(
+    Math.max(currentPage, 1),
+    Math.max(totalPages, 1)
+  );
   const startIndex = (validCurrentPage - 1) * BLOGS_PER_PAGE;
   const currentBlogs = blogs.slice(startIndex, startIndex + BLOGS_PER_PAGE);
+
+  // Desktop pagination logic
+  const getDesktopPagination = (): PaginationItem[] => {
+    if (totalPages <= 5) {
+      return Array.from({ length: totalPages }, (_, index) => index + 1);
+    }
+
+    if (validCurrentPage <= 3) {
+      return [1, 2, 3, 4, "ellipsis", totalPages];
+    }
+
+    if (validCurrentPage >= totalPages - 2) {
+      return [1, "ellipsis", totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+    }
+
+    return [1, "ellipsis", validCurrentPage - 1, validCurrentPage, validCurrentPage + 1, "ellipsis", totalPages];
+  };
+
+  // Mobile pagination logic (max 3 pages)
+  const getMobilePagination = (): number[] => {
+    if (totalPages <= 3) {
+      return Array.from({ length: totalPages }, (_, index) => index + 1);
+    }
+
+    if (validCurrentPage === 1) {
+      return [1, 2, 3];
+    }
+
+    if (validCurrentPage === totalPages) {
+      return [totalPages - 2, totalPages - 1, totalPages];
+    }
+
+    return [validCurrentPage - 1, validCurrentPage, validCurrentPage + 1];
+  };
+
+  const desktopPagination = getDesktopPagination();
+  const mobilePagination = getMobilePagination();
 
   return (
     <section className="py-14 sm:py-16 xl:py-24 bg-white">
@@ -49,8 +91,7 @@ export default function BlogsGrid({ currentPage }: BlogsGridProps) {
                 <h3 className="
                   text-[18px] md:text-[20px]
                   leading-[1.22]
-                  font-normal
-                  tracking-normal
+                  font-normal tracking-normal
                   text-[#111]
                   break-words
                   transition-colors duration-300
@@ -59,12 +100,7 @@ export default function BlogsGrid({ currentPage }: BlogsGridProps) {
                   {blog.title}
                 </h3>
 
-                <p className="
-                  mt-3
-                  text-[14px] leading-5
-                  text-[#5f5f5f]
-                  font-light
-                ">
+                <p className="mt-3 text-[14px] leading-5 text-[#5f5f5f] font-light">
                   {blog.excerpt}
                 </p>
 
@@ -73,7 +109,9 @@ export default function BlogsGrid({ currentPage }: BlogsGridProps) {
                     <MessageCircle size={16} strokeWidth={1.7} />
                     <span className="text-[12px] md:text-[13px] font-light">0</span>
                   </div>
-                  <span className="text-[12px] md:text-[13px] font-light">{blog.date}</span>
+                  <span className="text-[12px] md:text-[13px] font-light">
+                    {blog.date}
+                  </span>
                 </div>
               </div>
             </Link>
@@ -81,107 +119,221 @@ export default function BlogsGrid({ currentPage }: BlogsGridProps) {
         </div>
 
         {/* Pagination */}
-        <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 mt-16 sm:mt-20">
-          {/* Previous Button */}
-          {validCurrentPage > 1 ? (
-            <Link
-              href={`/blog?page=${validCurrentPage - 1}`}
-              className="
-                w-[44px] h-[44px]
-                flex items-center justify-center
-                rounded-xl
-                border border-[#e8dfd3]
-                bg-white
-                text-[#8b6a3d]
-                transition-all duration-300
-                hover:bg-[#8f6d42] hover:text-white hover:border-[#8b6a3d]
-              "
-            >
-              <ChevronLeft size={18} strokeWidth={1.8} />
-            </Link>
-          ) : (
-            <span className="
-              w-[44px] h-[44px]
-              flex items-center justify-center
-              rounded-xl
-              border border-[#e8dfd3]
-              bg-white
-              text-[#8b6a3d]
-              opacity-40
-              cursor-not-allowed
-            ">
-              <ChevronLeft size={18} strokeWidth={1.8} />
-            </span>
-          )}
-
-          {/* Page Numbers */}
-          <div className="flex items-center gap-2 sm:gap-3">
-            {Array.from({ length: totalPages }).map((_, index) => {
-              const pageNumber = index + 1;
-              return (
+        {totalPages > 1 && (
+          <div className="mt-16 sm:mt-20">
+            {/* Desktop / Tablet Pagination */}
+            <div className="hidden sm:flex justify-center items-center gap-2 md:gap-3">
+              {/* Previous Button */}
+              {validCurrentPage > 1 ? (
                 <Link
-                  key={pageNumber}
-                  href={`/blog?page=${pageNumber}`}
-                  className={`
-                    relative
-                    min-w-[44px] h-[44px]
+                  href={`/blog?page=${validCurrentPage - 1}`}
+                  aria-label="Previous page"
+                  className="
+                    w-10 h-10 md:w-11 md:h-11 shrink-0
                     flex items-center justify-center
                     rounded-xl
-                    text-[13px] font-medium
+                    border border-[#e8dfd3] bg-white
+                    text-[#8b6a3d]
                     transition-all duration-300
-                    ${
-                      validCurrentPage === pageNumber
-                        ? `
-                          bg-[#8f6d42] text-white
-                          shadow-sm
-                          scale-[1.04]
-                        `
-                        : `
-                          bg-white text-[#8b6a3d]
-                          border border-[#e8dfd3]
-                          hover:bg-[#8f6d42] hover:text-white hover:border-[#8b6a3d]
-                        `
-                    }
-                  `}
+                    hover:bg-[#8f6d42] hover:text-white hover:border-[#8b6a3d]
+                  "
                 >
-                  {pageNumber}
+                  <ChevronLeft size={18} strokeWidth={1.8} />
                 </Link>
-              );
-            })}
-          </div>
+              ) : (
+                <span
+                  aria-disabled="true"
+                  className="
+                    w-10 h-10 md:w-11 md:h-11 shrink-0
+                    flex items-center justify-center
+                    rounded-xl
+                    border border-[#e8dfd3] bg-white
+                    text-[#8b6a3d]
+                    opacity-40 cursor-not-allowed
+                  "
+                >
+                  <ChevronLeft size={18} strokeWidth={1.8} />
+                </span>
+              )}
 
-          {/* Next Button */}
-          {validCurrentPage < totalPages ? (
-            <Link
-              href={`/blog?page=${validCurrentPage + 1}`}
-              className="
-                w-[44px] h-[44px]
-                flex items-center justify-center
-                rounded-xl
-                border border-[#e8dfd3]
-                bg-white
-                text-[#8b6a3d]
-                transition-all duration-300
-                hover:bg-[#8f6d42] hover:text-white hover:border-[#8b6a3d]
-              "
-            >
-              <ChevronRight size={20} strokeWidth={1.8} />
-            </Link>
-          ) : (
-            <span className="
-              w-[44px] h-[44px]
-              flex items-center justify-center
-              rounded-xl
-              border border-[#e8dfd3]
-              bg-white
-              text-[#8b6a3d]
-              opacity-40
-              cursor-not-allowed
-            ">
-              <ChevronRight size={20} strokeWidth={1.8} />
-            </span>
-          )}
-        </div>
+              {/* Desktop Page Numbers */}
+              <div className="flex items-center gap-2 md:gap-3">
+                {desktopPagination.map((page, index) => {
+                  if (page === "ellipsis") {
+                    return (
+                      <span
+                        key={`desktop-ellipsis-${index}`}
+                        aria-hidden="true"
+                        className="
+                          w-6 h-10 md:h-11
+                          flex items-center justify-center
+                          text-[13px] font-medium text-[#8b6a3d]
+                        "
+                      >
+                        ...
+                      </span>
+                    );
+                  }
+
+                  const isActive = validCurrentPage === page;
+
+                  return (
+                    <Link
+                      key={page}
+                      href={`/blog?page=${page}`}
+                      aria-current={isActive ? "page" : undefined}
+                      aria-label={`Go to page ${page}`}
+                      className={`
+                        min-w-10 h-10 md:min-w-11 md:h-11 shrink-0
+                        flex items-center justify-center
+                        rounded-xl
+                        text-[13px] font-medium
+                        transition-all duration-300
+                        ${isActive
+                          ? "bg-[#8f6d42] text-white shadow-sm scale-[1.03]"
+                          : "bg-white text-[#8b6a3d] border border-[#e8dfd3] hover:bg-[#8f6d42] hover:text-white hover:border-[#8b6a3d]"
+                        }
+                      `}
+                    >
+                      {page}
+                    </Link>
+                  );
+                })}
+              </div>
+
+              {/* Next Button */}
+              {validCurrentPage < totalPages ? (
+                <Link
+                  href={`/blog?page=${validCurrentPage + 1}`}
+                  aria-label="Next page"
+                  className="
+                    w-10 h-10 md:w-11 md:h-11 shrink-0
+                    flex items-center justify-center
+                    rounded-xl
+                    border border-[#e8dfd3] bg-white
+                    text-[#8b6a3d]
+                    transition-all duration-300
+                    hover:bg-[#8f6d42] hover:text-white hover:border-[#8b6a3d]
+                  "
+                >
+                  <ChevronRight size={19} strokeWidth={1.8} />
+                </Link>
+              ) : (
+                <span
+                  aria-disabled="true"
+                  className="
+                    w-10 h-10 md:w-11 md:h-11 shrink-0
+                    flex items-center justify-center
+                    rounded-xl
+                    border border-[#e8dfd3] bg-white
+                    text-[#8b6a3d]
+                    opacity-40 cursor-not-allowed
+                  "
+                >
+                  <ChevronRight size={19} strokeWidth={1.8} />
+                </span>
+              )}
+            </div>
+
+            {/* Mobile Pagination */}
+            <div className="flex sm:hidden w-full items-center justify-center gap-2">
+              {/* Previous Button */}
+              {validCurrentPage > 1 ? (
+                <Link
+                  href={`/blog?page=${validCurrentPage - 1}`}
+                  aria-label="Previous page"
+                  className="
+                    w-10 h-10 shrink-0
+                    flex items-center justify-center
+                    rounded-xl
+                    border border-[#e8dfd3] bg-white
+                    text-[#8b6a3d]
+                    transition-all duration-300
+                    hover:bg-[#8f6d42] hover:text-white
+                  "
+                >
+                  <ChevronLeft size={17} strokeWidth={1.8} />
+                </Link>
+              ) : (
+                <span
+                  aria-disabled="true"
+                  className="
+                    w-10 h-10 shrink-0
+                    flex items-center justify-center
+                    rounded-xl
+                    border border-[#e8dfd3] bg-white
+                    text-[#8b6a3d]
+                    opacity-40 cursor-not-allowed
+                  "
+                >
+                  <ChevronLeft size={17} strokeWidth={1.8} />
+                </span>
+              )}
+
+              {/* Mobile Page Numbers */}
+              <div className="flex items-center gap-2">
+                {mobilePagination.map((page) => {
+                  const isActive = validCurrentPage === page;
+
+                  return (
+                    <Link
+                      key={page}
+                      href={`/blog?page=${page}`}
+                      aria-current={isActive ? "page" : undefined}
+                      aria-label={`Go to page ${page}`}
+                      className={`
+                        w-10 h-10 shrink-0
+                        flex items-center justify-center
+                        rounded-xl
+                        text-[12px] font-medium
+                        transition-all duration-300
+                        ${isActive
+                          ? "bg-[#8f6d42] text-white shadow-sm"
+                          : "bg-white text-[#8b6a3d] border border-[#e8dfd3] hover:bg-[#8f6d42] hover:text-white"
+                        }
+                      `}
+                    >
+                      {page}
+                    </Link>
+                  );
+                })}
+              </div>
+
+              {/* Next Button */}
+              {validCurrentPage < totalPages ? (
+                <Link
+                  href={`/blog?page=${validCurrentPage + 1}`}
+                  aria-label="Next page"
+                  className="
+                    w-10 h-10 shrink-0
+                    flex items-center justify-center
+                    rounded-xl
+                    border border-[#e8dfd3] bg-white
+                    text-[#8b6a3d]
+                    transition-all duration-300
+                    hover:bg-[#8f6d42] hover:text-white
+                  "
+                >
+                  <ChevronRight size={18} strokeWidth={1.8} />
+                </Link>
+              ) : (
+                <span
+                  aria-disabled="true"
+                  className="
+                    w-10 h-10 shrink-0
+                    flex items-center justify-center
+                    rounded-xl
+                    border border-[#e8dfd3] bg-white
+                    text-[#8b6a3d]
+                    opacity-40 cursor-not-allowed
+                  "
+                >
+                  <ChevronRight size={18} strokeWidth={1.8} />
+                </span>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
