@@ -37,7 +37,7 @@ export default function RightBookingCard() {
       <div className="p-3 sm:p-4 md:p-5">
         {/* Tour Title */}
         <h3 className="
-          text-[13px] sm:text-[14px] md:text-[15px]
+          text-[13px] sm:text-[14px] md:text-[14px]
           text-center
           font-medium
           text-[#AF956C]

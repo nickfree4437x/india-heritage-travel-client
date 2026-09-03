@@ -17,13 +17,13 @@ export default function JaipurSection() {
       </p>
 
       {/* Image */}
-      <div className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden shadow-md">
+      <div className="w-full rounded-md overflow-hidden shadow-md -mb-2 md:mb-0">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528205/jaipur_zt77vw.jpg"
           alt="Amber Fort Jaipur in Rajasthani Heritage Tour Package by India Heritage Travel"
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+          width={1200}
+          height={800}
+          className="w-full h-auto max-h-[500px] object-cover"
         />
       </div>
 

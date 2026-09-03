@@ -20,14 +20,14 @@ const blogs = [
       "The Ultimate First-Time Traveler's Guide to India",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782540276/pexels-soubhagya23-17685500_tihzeu.jpg",
     date: "Dec 10",
-    slug: "indian-traveler-guide",
+    slug: "indian-traveller-guide",
   },
   {
     title:
       "Top Heritage Hotels in India for an Exclusive Stay",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779638017/blog-9_h4aqqf.jpg",
     date: "Feb 6",
-    slug: "top-heritage-hotel",
+    slug: "top-heritage-hotel-in-india",
   },
 ];
 

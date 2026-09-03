@@ -1,4 +1,4 @@
-// app/blogs/indian-traveler-guide/components/SafetyAndMoneySection.tsx
+// app/blogs/indian-traveller-guide/components/SafetyAndMoneySection.tsx
 
 "use client";
 

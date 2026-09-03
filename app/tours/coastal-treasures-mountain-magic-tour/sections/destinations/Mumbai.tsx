@@ -43,18 +43,14 @@ export default function Mumbai() {
 
       {/* Image */}
       <div className="
-        relative
-        w-full
-        aspect-[16/9]
-        rounded-md
-        overflow-hidden
-        shadow-md
+        w-full rounded-md overflow-hidden shadow-md -mb-2 md:mb-0
       ">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529329/mumbai_cgurku.jpg"
           alt="Mumbai city skyline featuring Gateway of India, Marine Drive and cultural landmarks during South India tour package"
-          fill
-          className="object-cover object-center"
+          width={1200}
+          height={800}
+          className="w-full h-auto max-h-[500px] object-cover"
         />
       </div>
     </div>

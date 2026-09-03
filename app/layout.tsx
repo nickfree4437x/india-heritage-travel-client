@@ -41,12 +41,62 @@ const caveatBrush = Caveat_Brush({
 // ============================================
 // SCHEMA DATA (JSON-LD)
 // ============================================
+
+// ============================================
+// ORGANIZATION ENTITY SCHEMA
+// Point #1 — Brand Identity Foundation — DONE
+// ============================================
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://indiaheritagetravel.com/#organization",
+
+  // Official brand name
   name: "India Heritage Travel",
+
+  // Legal entity name as specified in the SEO blueprint
+  legalName: "India Heritage Travel Pvt. Ltd.",
+
+  // Official website
   url: "https://indiaheritagetravel.com",
-  logo: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png",
+
+  // Official logo
+  logo: {
+    "@type": "ImageObject",
+    url: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png",
+  },
+
+  // Explicit brand entity
+  brand: {
+    "@type": "Brand",
+    "@id": "https://indiaheritagetravel.com/#brand",
+    name: "India Heritage Travel",
+    url: "https://indiaheritagetravel.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png",
+    },
+  },
+
+  // Official business address
+  address: {
+    "@type": "PostalAddress",
+    streetAddress:
+      "15-16-17 Maa Shakambhari Nagar-D Block, Near Silver Stream World School, Gandhi Path Road",
+    addressLocality: "Jaipur",
+    addressRegion: "Rajasthan",
+    postalCode: "302021",
+    addressCountry: "IN",
+  },
+
+  // Exact official business location coordinates
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "26.897843",
+    longitude: "75.7053949",
+  },
+
+  // Official customer contact information
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+91-7062101914",
@@ -54,26 +104,46 @@ const organizationSchema = {
     areaServed: "IN",
     availableLanguage: ["English"],
   },
+
+  // Verified/canonical social entity signals
   sameAs: [
     "https://www.facebook.com/profile.php?id=61559592375914",
-    "https://www.instagram.com/indiaheritagetravel",
-    "https://youtube.com/@indiaheritagetravel?si=vFEfLrYnv_1DWHqM",
+    "https://www.instagram.com/indiaheritagetravel/",
+    "https://www.youtube.com/@indiaheritagetravel",
     "https://pin.it/3kPXLj6Jk",
   ],
 };
 
+// ============================================
+// WEBSITE ENTITY SCHEMA
+// Point #2 — Website Entity Architecture
+// ============================================
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://indiaheritagetravel.com/#website",
+
+  // Official website identity
   name: "India Heritage Travel",
   url: "https://indiaheritagetravel.com",
+
+  // Website description
   description:
     "India Heritage Travel offers personalized heritage, cultural, wellness, festival, and luxury tours across India.",
-  inLanguage: "en",
+
+  // Targeted international language variants
+  inLanguage: ["en-US", "en-GB"],
+
+  // Publisher explicitly connected to Organization Entity
   publisher: {
     "@type": "Organization",
-    name: "India Heritage Travel",
-    url: "https://indiaheritagetravel.com",
+    "@id": "https://indiaheritagetravel.com/#organization",
+  },
+
+  // Copyright holder explicitly connected to Organization Entity
+  copyrightHolder: {
+    "@type": "Organization",
+    "@id": "https://indiaheritagetravel.com/#organization",
   },
 };
 
@@ -82,11 +152,14 @@ const websiteSchema = {
 // ============================================
 export const metadata: Metadata = {
   metadataBase: new URL("https://indiaheritagetravel.com"),
+
   title: {
     default: "India Heritage Travel",
     template: "%s | India Heritage Travel",
   },
+
   description: "Explore Incredible India Journeys",
+
   alternates: {
     canonical: "https://indiaheritagetravel.com",
   },
@@ -103,9 +176,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preconnect for Performance */}
-        <link rel="preconnect" href="https://res.cloudinary.com" />
-        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+        {/* ============================================
+            PRECONNECT FOR PERFORMANCE
+        ============================================ */}
+        <link
+          rel="preconnect"
+          href="https://res.cloudinary.com"
+        />
+
+        <link
+          rel="dns-prefetch"
+          href="https://res.cloudinary.com"
+        />
       </head>
 
       <body
@@ -117,10 +199,16 @@ export default function RootLayout({
           antialiased
         `}
       >
-        {/* Google Tag Manager */}
+        {/* ============================================
+            GOOGLE TAG MANAGER
+        ============================================ */}
         <GoogleTagManager gtmId="GTM-T2N885VS" />
 
-        {/* Organization Schema - JSON-LD */}
+        {/* ============================================
+            ORGANIZATION ENTITY SCHEMA
+            Global Root-Level JSON-LD
+            Point #1 — DONE
+        ============================================ */}
         <Script
           id="organization-schema"
           type="application/ld+json"
@@ -129,7 +217,11 @@ export default function RootLayout({
           }}
         />
 
-        {/* Website Schema - JSON-LD */}
+        {/* ============================================
+            WEBSITE ENTITY SCHEMA
+            Global Root-Level JSON-LD
+            Point #2 — PARTIALLY IMPLEMENTED
+        ============================================ */}
         <Script
           id="website-schema"
           type="application/ld+json"
@@ -138,23 +230,34 @@ export default function RootLayout({
           }}
         />
 
-        {/* Navbar */}
+        {/* ============================================
+            NAVBAR
+        ============================================ */}
         <Navbar />
 
-        {/* Page Content */}
+        {/* ============================================
+            PAGE CONTENT
+        ============================================ */}
         <main>{children}</main>
 
-        {/* Sticky Plan Your Trip Button */}
+        {/* ============================================
+            STICKY PLAN YOUR TRIP BUTTON
+        ============================================ */}
         <StickyPlanButton />
 
-        {/* WhatsApp Support */}
+        {/* ============================================
+            WHATSAPP SUPPORT
+        ============================================ */}
         <WhatsAppSupport />
 
-        {/* React Hot Toast */}
+        {/* ============================================
+            REACT HOT TOAST
+        ============================================ */}
         <Toaster
           position="top-center"
           toastOptions={{
             duration: 4000,
+
             style: {
               background: "#fff",
               color: "#333",
@@ -163,11 +266,13 @@ export default function RootLayout({
               fontSize: "13px",
               borderRadius: "12px",
             },
+
             success: {
               style: {
                 border: "1px solid white",
               },
             },
+
             error: {
               style: {
                 border: "1px solid white",
@@ -176,7 +281,9 @@ export default function RootLayout({
           }}
         />
 
-        {/* Google Translate Init */}
+        {/* ============================================
+            GOOGLE TRANSLATE INITIALIZATION
+        ============================================ */}
         <Script
           id="google-translate-init"
           strategy="afterInteractive"
@@ -191,23 +298,31 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Translate Library */}
+        {/* ============================================
+            GOOGLE TRANSLATE LIBRARY
+        ============================================ */}
         <Script
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
         />
 
-        {/* Fix Google Translate Banner */}
+        {/* ============================================
+            FIX GOOGLE TRANSLATE BANNER
+        ============================================ */}
         <Script
           id="google-translate-fix"
           strategy="lazyOnload"
         >
           {`
             const removeBanner = () => {
-              const banner = document.querySelector('.goog-te-banner-frame');
+              const banner = document.querySelector(
+                '.goog-te-banner-frame'
+              );
+
               if (banner) {
                 banner.remove();
               }
+
               document.body.style.top = '0px';
             };
 

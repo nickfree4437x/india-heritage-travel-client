@@ -34,20 +34,22 @@ export default function Hero() {
       {/* ====================================================================
           CONTENT SECTION WITH FADE UP ANIMATION
       ==================================================================== */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 sm:px-6 text-center text-white">
         <h1
           className="
-            max-w-[700px]
-            text-3xl md:text-4xl
+            max-w-[90%] sm:max-w-[650px] md:max-w-[700px]
+            text-2xl sm:text-3xl md:text-4xl
             font-[600]
-            leading-[1.1]
-            tracking-[0.04em]
+            leading-[1.15]
+            tracking-[0.02em] sm:tracking-[0.03em] md:tracking-[0.04em]
             mb-4
             opacity-0 translate-y-10
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Golden Triangle Tour <br />
+          Golden Triangle Tour
+          <br className="hidden sm:block" />
+          <span className="sm:hidden"> </span>
           Package India
         </h1>
       </div>

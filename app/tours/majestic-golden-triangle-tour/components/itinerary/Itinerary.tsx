@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Itinerary() {
   return (
-    <section className="py-4">
+    <section className="py-0 md:py-2">
 
       {/* 🔥 SAME WIDTH AS CITY SECTION */}
       <div className="max-w-5xl mx-auto">

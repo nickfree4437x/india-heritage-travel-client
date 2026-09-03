@@ -46,16 +46,6 @@ const reasons = [
 export default function WhyChooseSection() {
   return (
     <section className="max-w-5xl mx-auto">
-      <h2 className="
-        text-[18px] md:text-[20px]
-        font-medium
-        text-center
-        tracking-[0.02em]
-        text-[#2c2c2c]
-        mb-6
-      ">
-        Why Choose This Tour
-      </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {reasons.map((item, index) => {
@@ -77,7 +67,7 @@ export default function WhyChooseSection() {
                 text-[14px]
                 font-medium
                 text-[#2c2c2c]
-                mb-2
+                mb-1
               ">
                 {item.title}
               </h3>

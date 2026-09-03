@@ -106,7 +106,7 @@ export default function BookingStepsSection() {
                   text-justify
                   max-w-xl
                 ">
-                  Let us know how you would like your India Stories to be —
+                  Let us know how you would like your India Stories to be -
                   around food, architecture, luxury hotels and stays,
                   art & crafts adventure or a fusion of all of these.
                 </p>

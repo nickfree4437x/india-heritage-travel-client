@@ -51,7 +51,7 @@ export default function CitySection({
         w-full rounded-md
         overflow-hidden
         shadow-md
-        -mb-6 md:mb-0
+        -mb-2 md:mb-0
         opacity-0 translate-y-10
         animate-[fadeUp_1.6s_ease-out_0.6s_forwards]
       ">

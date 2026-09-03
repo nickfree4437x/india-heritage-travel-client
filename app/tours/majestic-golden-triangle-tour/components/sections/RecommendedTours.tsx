@@ -41,7 +41,7 @@ export default function RecommendedTours() {
   // ==========================================================================
 
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-12">
+    <section className="max-w-[1400px] mx-auto px-6 py-8 md:py-12">
       {/* ====================================================================
           SECTION HEADING
       ==================================================================== */}

@@ -20,7 +20,7 @@ const blogs = [
       "The Ultimate First-Time Traveler's Guide to India",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782540276/pexels-soubhagya23-17685500_tihzeu.jpg",
     date: "Dec 10",
-    slug: "indian-traveler-guide",
+    slug: "indian-traveller-guide",
   },
   {
     title:

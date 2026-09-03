@@ -559,4 +559,13 @@ export const blogs = [
     excerpt:
       "Explore Kumbhalgarh Fort, its 36-km wall, wildlife sanctuary, hidden gems, luxury stays....",
   },
+  {
+    id: 63,
+    slug: "ranakpur-travel-guide-sacred-heritage-aravalli-mountains",
+    title: "Ranakpur Travel Guide: Sacred Heritage in the Aravalli Mountains",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1788413511/alexander-schimmeck-VSsoSC6a1Gw-unsplash_l6mzem.jpg",
+    date: "03 September",
+    excerpt:
+      "The complete Ranakpur Travel Guide: explore the 15th-century Chaumukha Jain Temple, Aravalli wildlife....",
+  },
 ];
