@@ -1,0 +1,92 @@
+name: IndexNow URL Submission
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "app/**"
+      - "src/**"
+      - "public/**"
+      - "scripts/**"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "IndexNow submission mode"
+        required: true
+        default: "diff"
+        type: choice
+        options:
+          - "diff"
+          - "all"
+          - "custom"
+      custom_urls:
+        description: "Comma-separated URLs (required if mode is 'custom')"
+        required: false
+        default: ""
+        type: string
+      dry_run:
+        description: "Perform dry run (simulate without sending to search engines)"
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  indexnow:
+    name: Submit URLs to IndexNow
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run IndexNow Notification
+        id: indexnow_step
+        env:
+          INDEXNOW_API_KEY: ${{ secrets.INDEXNOW_API_KEY }}
+          EVENT_BEFORE: ${{ github.event.before }}
+          EVENT_AFTER: ${{ github.sha }}
+        run: |
+          set -e
+          
+          CMD="node scripts/indexnow.mjs"
+          
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ "${{ inputs.dry_run }}" = "true" ]; then
+              CMD="$CMD --dry-run"
+            fi
+            
+            if [ "${{ inputs.mode }}" = "all" ]; then
+              CMD="$CMD --all"
+            elif [ "${{ inputs.mode }}" = "custom" ]; then
+              if [ -z "${{ inputs.custom_urls }}" ]; then
+                echo "Error: custom_urls input is required when mode is 'custom'"
+                exit 1
+              fi
+              CMD="$CMD --urls=${{ inputs.custom_urls }}"
+            else
+              # Diff mode on manual dispatch
+              CMD="$CMD --from=HEAD~1 --to=HEAD"
+            fi
+          else
+            # Push event
+            if [ -n "$EVENT_BEFORE" ] && [ "$EVENT_BEFORE" != "0000000000000000000000000000000000000000" ]; then
+              CMD="$CMD --from=$EVENT_BEFORE --to=$EVENT_AFTER"
+            else
+              CMD="$CMD --from=HEAD~1 --to=HEAD"
+            fi
+          fi
+          
+          echo "Executing: $CMD"
+          $CMD
