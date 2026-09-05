@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function ItinerarySection() {
   return (
-    <section className="space-y-12 py-6">
+    <section className="space-y-12 md:py-4">
 
       <h2 className="text-[16px] sm:text-[20px] md:text-[24px]
             font-semibold
-            text-center -mb-6
+            text-center -mb-10
             text-[#2c2c2c]
             tracking-wide">
         Detailed Itinerary

@@ -25,20 +25,40 @@ export default function HeroSection() {
 
         {/* Heading */}
         <h1
-          className="
-            max-w-[700px]
-            text-3xl md:text-4xl
-            font-[600]
-            leading-[1.1]
-            tracking-[0.04em]
-            mb-4
+  className="
+    w-full
+    max-w-[90%]
+    sm:max-w-[600px]
+    md:max-w-[700px]
 
-            opacity-0 translate-y-10
-            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
-          "
-        >
-          Royal Triangle Odyssey <br/> Tour India
-        </h1>
+    px-2 sm:px-4
+
+    text-2xl
+    sm:text-3xl
+    md:text-4xl
+
+    font-[600]
+    leading-[1.15]
+
+    tracking-[0.02em]
+    sm:tracking-[0.03em]
+    md:tracking-[0.04em]
+
+    mb-4
+    text-center
+
+    opacity-0
+    translate-y-10
+    animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
+  "
+>
+  <span className="block">
+    Royal Triangle Odyssey
+  </span>
+  <span className="block">
+    Tour India
+  </span>
+</h1>
 
       </div>
 

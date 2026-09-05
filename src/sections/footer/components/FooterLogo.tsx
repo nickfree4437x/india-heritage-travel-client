@@ -14,10 +14,10 @@ export default function FooterLogo() {
       <Image
         src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png"
         alt="India Heritage Travel logo"
-        width={200}
-        height={90}
+        width={220}
+        height={100}
         className="mb-6 w-auto h-auto"
-        style={{ maxWidth: "220px" }}
+        style={{ maxWidth: "250px" }}
         priority
       />
     </div>

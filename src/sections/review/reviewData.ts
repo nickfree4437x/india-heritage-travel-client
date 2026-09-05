@@ -99,4 +99,51 @@ export const reviews = [
       work with your budget to which really helped when I’m trying to do a lot of travel this year.`,
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779654554/25.05.2026_01.57.05_REC_hqizjy.png",
   },
+  {
+    id: 8,
+    name: "Sarah Massey",
+    type: "family",
+    rating: 5,
+    short: "India has my hart ♥️After my first visit in 2024, I wanted to go back with my 2 daughters and show them beautiful, loving India. As I wanted to show them more then just the touristic places, I was looking for a private driver and company that was willing to do detour from the the touristic route.",
+    full:
+      `India has my hart ♥️
+      After my first visit in 2024, I wanted to go back with my 2 daughters and show them beautiful, loving India.
+      As I wanted to show them more then just the touristic places, I was looking for a private driver and company that was willing to do detour from the the touristic route.
+      For Isha from India heritage travel this was absolutely no problem!
+      After our arrival in Delhi we travelled to Punjab in a comfortable SUV and a great friendly English speaking driver.
+      A 6 to 7 hour drive felt like 2 hours a it al went smoothly.
+      Because of the detour we were able to visit my grandparents birthplaces.
+      That was really meaningful, I am thankful for India heritage travel to make this possible 🙏🏽
+      After our days in Punjab we travelled back to Delhi and started our Golden triangle tour after a few days in Delhi.
+      Everything went so smoothly well organised, we absolutely loved our stays, when we thought this is the most beautiful stay, the next one was even more beautiful we kept on being pleasantly surprised.
+      In Jaipur we stayed a little longer to do more exploring of the city and enjoy all the creative workshops etcetera!:)
+      When your there don’t miss a movie night!
+      My girls loved it!
+      After Jaipur we left to beautiful peaceful Pushkar and followed the the silkroute hack to Delhi.
+      We saw green and beautiful nature mountains, desert and so much more.
+      We had great and good guides who could tell us more about history architecture and new the good places for the best food 🥰
+      Did i mention that India has the most sweet loving kind people?
+      Are you doubting to visit India?
+      Don’t! Go see experience, taste and feel for yourself.
+      I am sure you will fall in love with India too!
+      Be sure to book your journey right and contact Isha from heritage travel to personalise your journey and your wishes ♥️
+      From A to Z perfect!`,
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1788425101/unnamed_pd1sca.webp",
+  },
+  {
+    id: 9,
+    name: "Yuliya Haimel",
+    type: "Solo",
+    rating: 5,
+    short: "When I told my friends and family that I was going to India by myself, everyone was shocked 😂 “By yourself? That far? Aren’t you scared?” I just laughed and answered, “No, I’m not scared! I’ll have Isha to help me and I trust her.”",
+    full:
+      `When I told my friends and family that I was going to India by myself, everyone was shocked 😂 “By yourself? That far? Aren’t you scared?”
+      I just laughed and answered, “No, I’m not scared! I’ll have Isha to help me and I trust her.” 💞
+      And that was one of the best decisions I’ve ever made, because everything turned out even better than I expected!
+      I flew to Udaipur to celebrate my birthday. I wanted to start the day with Shiva’s blessings at the Eklingji Temple. My driver, Jagdish Prasad, was already waiting for me at five in the morning! Always punctual, with a wonderful sense of humor and a sincere heart - we were on the same wavelength 🥰 I told him about my love for Shiva, and he said, “I know exactly which temple to take you to tomorrow!” 😌 On the way, I thought, “Yuliya, you’re really crazy! In a foreign country, with strangers, not knowing where they’re taking you…” but at the same time, I knew everything would be fine…! Because for me, India is always about an open heart, open Mind, Love, Trust and about God ✨
+      I also had a wonderful guide, Mithas, who introduced me to the history of Udaipur. Unfortunately I didn’t have enough time to dive even deeper into the magical vibe of this city. I guess I’ll have to come back again 😉
+      Dear Isha, I sincerely thank you for helping make my trip so easy, heartfelt, full of pleasant surprises, and surrounded by wonderful people!
+      I hope we’ll meet someday over a cup of coffee 😍❤️`,
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1788425347/unnamed_1_olhfkh.webp",
+  },
 ];

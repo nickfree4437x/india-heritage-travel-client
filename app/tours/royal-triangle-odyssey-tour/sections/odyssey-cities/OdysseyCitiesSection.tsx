@@ -43,7 +43,7 @@ export default function OdysseyCitiesSection() {
   ];
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-8 md:space-y-12">
 
       <WhyChooseSection/>
 
@@ -61,7 +61,7 @@ export default function OdysseyCitiesSection() {
           </p>
 
           {/* IMAGE */}
-          <div className="relative w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
+          <div className="relative w-full rounded-md overflow-hidden shadow-md -mb-2 md:mb-0">
             <Image
               src={item.img}
               alt={item.alt}
