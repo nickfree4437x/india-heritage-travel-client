@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // =====================================================
 // ROHET TRAVEL GUIDE SCHEMA
 // =====================================================
@@ -21,11 +23,7 @@ export const rohetTravelGuideSchema = {
     "@type": "WebPage",
     "@id": BLOG_URL,
   },
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: SITE_URL,
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

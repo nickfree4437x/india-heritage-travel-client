@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,10 +49,7 @@ export const articleSchema = {
   description:
     "Discover the finest heritage sites across South India including Hampi, Mahabalipuram, Great Living Chola Temples, Kerala, Hyderabad, and more with travel tips, ticket prices, and itineraries.",
   image: IMAGE_URL,
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

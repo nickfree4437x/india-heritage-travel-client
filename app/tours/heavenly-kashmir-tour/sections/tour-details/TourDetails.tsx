@@ -33,7 +33,7 @@ export default function TourDetails() {
   ];
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-8 md:space-y-12">
 
       <WhyChooseSection/>
 
@@ -55,7 +55,7 @@ export default function TourDetails() {
           </p>
 
           {/* IMAGE */}
-          <div className="relative w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
+          <div className="relative w-full rounded-md overflow-hidden shadow-md -mb-2 md:mb-0">
             <Image
               src={city.img}
               alt={city.alt}

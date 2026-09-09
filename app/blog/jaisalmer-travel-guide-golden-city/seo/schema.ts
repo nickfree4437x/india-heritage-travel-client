@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,11 +49,7 @@ export const articleSchema = {
   description:
     "Complete Jaisalmer Travel Guide covering the Golden City, Jaisalmer Fort, historic havelis, Gadisar Lake, Sam Sand Dunes, luxury desert camps, itineraries, practical travel tips and more.",
   image: [IMAGE_URL],
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

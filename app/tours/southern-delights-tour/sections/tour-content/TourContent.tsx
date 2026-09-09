@@ -9,7 +9,7 @@ import WhyChooseSection from "@/src/tours/why-choose/WhyChooseSection";
 
 export default function TourContent() {
   return (
-    <div className="space-y-12 w-full">
+    <div className="space-y-8 md:space-y-12 w-full">
 
       <WhyChooseSection/>
 

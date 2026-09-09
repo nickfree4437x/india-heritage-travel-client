@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,10 +49,7 @@ export const articleSchema = {
   description:
     "Plan your New Delhi trip with this complete travel guide covering iconic attractions, local experiences, cultural insights, food recommendations, safety tips, and practical advice for first-time visitors.",
   image: IMAGE_URL,
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

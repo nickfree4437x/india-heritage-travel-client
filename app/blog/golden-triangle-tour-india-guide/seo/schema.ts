@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,10 +49,7 @@ export const articleSchema = {
   description:
     "Plan your Golden Triangle Tour India with this complete 2026 guide covering Delhi, Agra, and Jaipur. Discover itineraries, travel tips, costs, attractions, and the best time to visit.",
   image: IMAGE_URL,
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

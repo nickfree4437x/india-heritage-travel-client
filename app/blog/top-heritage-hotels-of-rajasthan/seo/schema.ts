@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,10 +49,7 @@ export const articleSchema = {
   description:
     "Discover the best heritage hotels in Rajasthan, including Rambagh Palace, Taj Lake Palace, Umaid Bhawan Palace, Samode Palace, and luxury royal stays across Jaipur, Udaipur, Jodhpur, and Jaisalmer.",
   image: IMAGE_URL,
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

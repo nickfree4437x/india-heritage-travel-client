@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,11 +49,7 @@ export const articleSchema = {
   description:
     "How much does a trip to India cost in 2026? Explore realistic India travel costs for budget, mid-range and luxury travellers, including visas, hotels, food, transport, attraction fees, regional costs and a 7-day Golden Triangle budget.",
   image: [IMAGE_URL],
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

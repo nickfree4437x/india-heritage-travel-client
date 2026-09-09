@@ -1,10 +1,15 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
 const BASE_URL = "https://indiaheritagetravel.com";
+
 const BLOG_URL = `${BASE_URL}/blog/bikaner-travel-guide`;
+
 const IMAGE_URL =
   "https://res.cloudinary.com/dja5yspwr/image/upload/v1786948187/salil-cZVUoTtGAlU-unsplash_zafycv.jpg";
+
 const LOGO_URL =
   "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
 
@@ -14,6 +19,7 @@ const LOGO_URL =
 export const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+
   itemListElement: [
     {
       "@type": "ListItem",
@@ -42,16 +48,23 @@ export const breadcrumbSchema = {
 export const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
+
   headline:
     "Bikaner Travel Guide 2026 | Forts, Palaces & Luxury Desert Tours",
+
   description:
     "Complete Bikaner Travel Guide covering Junagarh Fort, Lalgarh Palace, Karni Mata Temple, Rampuria Havelis, Gajner Palace, desert experiences, food, itineraries, practical travel tips and luxury tours.",
+
   image: [IMAGE_URL],
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-  },
+
+  // ==========================================
+  // AUTHOR
+  // ==========================================
+  author: BLOG_AUTHORS.isha,
+
+  // ==========================================
+  // PUBLISHER
+  // ==========================================
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",
@@ -61,12 +74,16 @@ export const articleSchema = {
       url: LOGO_URL,
     },
   },
+
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": BLOG_URL,
   },
+
   url: BLOG_URL,
+
   inLanguage: "en",
+
   isPartOf: {
     "@type": "Blog",
     name: "India Heritage Travel Blog",
@@ -80,20 +97,28 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+
   name: "Bikaner Travel Guide",
+
   description:
     "A complete Bikaner travel guide covering Junagarh Fort, Lalgarh Palace, Rampuria Havelis, Karni Mata Temple, Gajner Palace and Lake, desert experiences, local food, shopping, nearby attractions, itineraries and practical travel advice.",
+
   url: BLOG_URL,
+
   image: IMAGE_URL,
+
   inLanguage: "en",
+
   isPartOf: {
     "@type": "WebSite",
     name: "India Heritage Travel",
     url: BASE_URL,
   },
+
   about: {
     "@type": "Place",
     name: "Bikaner",
+
     address: {
       "@type": "PostalAddress",
       addressLocality: "Bikaner",
@@ -109,8 +134,11 @@ export const webPageSchema = {
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+
   name: "India Heritage Travel",
+
   url: BASE_URL,
+
   logo: {
     "@type": "ImageObject",
     url: LOGO_URL,

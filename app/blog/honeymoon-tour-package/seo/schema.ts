@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,10 +49,7 @@ export const articleSchema = {
   description:
     "Discover the best honeymoon tour packages in India featuring luxury resorts, heritage hotels, romantic escapes, cultural experiences, scenic destinations, and personalized itineraries for unforgettable memories.",
   image: IMAGE_URL,
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

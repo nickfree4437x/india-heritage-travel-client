@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,11 +49,7 @@ export const articleSchema = {
   description:
     "Complete India Visa Guide for foreign tourists covering e-Visa eligibility, visa types, fees, passport requirements, application process, processing time, entry points, visa extensions and practical travel tips for 2026.",
   image: [IMAGE_URL],
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

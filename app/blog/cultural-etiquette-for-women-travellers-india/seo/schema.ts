@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,10 +49,8 @@ export const articleSchema = {
   description:
     "Learn cultural etiquette for women travelling in India including dress codes, temple etiquette, greetings, dining customs, photography rules, shopping tips, and practical travel advice.",
   image: IMAGE_URL,
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-  },
+  author: BLOG_AUTHORS.isha,
+  
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",
@@ -64,6 +64,7 @@ export const articleSchema = {
     "@id": BLOG_URL,
   },
 };
+
 
 // ============================================
 // WEBPAGE SCHEMA

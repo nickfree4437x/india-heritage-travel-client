@@ -82,7 +82,7 @@ const places = [
 
 export default function TourLeft() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-8 md:space-y-12">
 
       <WhyChooseSection/>
 
@@ -93,16 +93,16 @@ export default function TourLeft() {
           className="scroll-mt-24 space-y-6"
         >
           {/* Title */}
-          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
+          <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
             {place.title}
           </h3>
           {/* Description */}
-          <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14px] text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] font-[300] md:text-[14px] text-justify">
             {place.description}
           </p>
 
           {/* Image */}
-          <div className="relative w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
+          <div className="relative w-full rounded-md overflow-hidden shadow-md -mb-2 md:mb-0">
             <Image
               src={place.image}
               alt={place.alt}

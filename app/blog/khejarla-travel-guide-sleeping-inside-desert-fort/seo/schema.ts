@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // =====================================================
 // KHEJARLA TRAVEL GUIDE SCHEMA
 // =====================================================
@@ -31,11 +33,7 @@ export const khejarlaTravelGuideSchema = {
     "@id": BLOG_URL,
   },
 
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: SITE_URL,
-  },
+  author: BLOG_AUTHORS.isha,
 
   publisher: {
     "@type": "Organization",

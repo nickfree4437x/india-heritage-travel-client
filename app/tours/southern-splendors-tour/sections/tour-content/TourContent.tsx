@@ -66,7 +66,7 @@ const places = [
 
 export default function TourContent() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-8 md:space-y-12">
 
       <WhyChooseSection/>
 

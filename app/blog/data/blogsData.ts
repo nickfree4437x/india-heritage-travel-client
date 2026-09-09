@@ -568,4 +568,13 @@ export const blogs = [
     excerpt:
       "The complete Ranakpur Travel Guide: explore the 15th-century Chaumukha Jain Temple, Aravalli wildlife....",
   },
+  {
+    id: 64,
+    slug: "mandawa-heritage-haveli-stay-painted-havelis-guide",
+    title: "Mandawa Heritage Haveli Stay: A Luxury Guide to Rajasthan's Painted Havelis",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1788952338/vikram-chouhan-udaipur-web-designer-I8Zlcv5Sbno-unsplash_kpapkm.jpg",
+    date: "09 September",
+    excerpt:
+      "Discover the perfect Mandawa Heritage Haveli Stay frescoed forts, hidden havelis, and luxury Shekha....",
+  },
 ];

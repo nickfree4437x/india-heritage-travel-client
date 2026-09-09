@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -58,11 +60,7 @@ export const articleSchema = {
     width: 1200,
     height: 630,
   },
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

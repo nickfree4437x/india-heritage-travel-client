@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,11 +49,7 @@ export const articleSchema = {
   description:
     "Pushkar travel guide to Rajasthan's sacred lake city covering Pushkar Lake, 52 sacred ghats, Brahma Temple, Pushkar Camel Fair, temples, bazaars, desert experiences, luxury stays, practical travel tips and a 2-day itinerary.",
   image: [IMAGE_URL],
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",

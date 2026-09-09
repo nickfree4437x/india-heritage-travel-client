@@ -2,6 +2,8 @@
 // SCHEMA.ORG - JSON-LD STRUCTURED DATA
 // ============================================================
 
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ----- ARTICLE SCHEMA -----
 export const articleSchema = {
   "@context": "https://schema.org",
@@ -16,10 +18,7 @@ export const articleSchema = {
   image:
     "https://res.cloudinary.com/dja5yspwr/image/upload/v1783592350/pexels-roman-saienko-1867764487-36098238_kouz4s.jpg",
 
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-  },
+  author: BLOG_AUTHORS.isha,
 
   publisher: {
     "@type": "Organization",
@@ -32,7 +31,8 @@ export const articleSchema = {
 
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://indiaheritagetravel.com/blog/ajanta-ellora-caves-guide",
+    "@id":
+      "https://indiaheritagetravel.com/blog/ajanta-ellora-caves-guide",
   },
 };
 
@@ -42,6 +42,7 @@ export const webPageSchema = {
   "@type": "WebPage",
 
   name: "Ajanta & Ellora Caves Guide",
+
   description:
     "A complete guide to Ajanta and Ellora Caves covering history, architecture, UNESCO significance, Kailasa Temple, travel planning, and visitor information.",
 
@@ -55,5 +56,6 @@ export const organizationSchema = {
 
   name: "India Heritage Travel",
   url: "https://indiaheritagetravel.com",
+
   logo: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png",
 };

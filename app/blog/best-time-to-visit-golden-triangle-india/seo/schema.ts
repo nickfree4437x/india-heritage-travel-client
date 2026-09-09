@@ -1,10 +1,15 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
 const BASE_URL = "https://indiaheritagetravel.com";
+
 const BLOG_URL = `${BASE_URL}/blog/best-time-to-visit-golden-triangle-india`;
+
 const IMAGE_URL =
   "https://res.cloudinary.com/dja5yspwr/image/upload/v1782104429/nils-huenerfuerst-T8X8vgj0Ink-unsplash_ayktot.jpg";
+
 const LOGO_URL =
   "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
 
@@ -14,6 +19,7 @@ const LOGO_URL =
 export const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+
   itemListElement: [
     {
       "@type": "ListItem",
@@ -42,15 +48,19 @@ export const breadcrumbSchema = {
 export const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
+
   headline:
     "Best Time to Visit the Golden Triangle India: Weather, Seasons & Travel Tips",
+
   description:
     "Discover the best time to visit the Golden Triangle India with detailed weather insights, seasonal travel advice, festivals, crowd levels, and expert tips for Delhi, Agra, and Jaipur.",
+
   image: IMAGE_URL,
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-  },
+
+  // Real person author
+  author: BLOG_AUTHORS.isha,
+
+  // Publisher remains the organization
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",
@@ -59,6 +69,7 @@ export const articleSchema = {
       url: LOGO_URL,
     },
   },
+
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": BLOG_URL,
@@ -71,9 +82,12 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+
   name: "Best Time to Visit the Golden Triangle India",
+
   description:
     "Explore seasonal weather patterns, festivals, travel conditions, crowd levels, and expert recommendations for visiting Delhi, Agra, and Jaipur.",
+
   url: BLOG_URL,
 };
 
@@ -83,6 +97,7 @@ export const webPageSchema = {
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+
   name: "India Heritage Travel",
   url: BASE_URL,
   logo: LOGO_URL,

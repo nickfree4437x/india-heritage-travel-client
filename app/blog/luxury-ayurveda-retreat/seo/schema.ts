@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================================
 // SCHEMA.ORG - JSON-LD STRUCTURED DATA
 // ============================================================
@@ -16,10 +18,7 @@ export const articleSchema = {
   image:
     "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779801053/blog-8_rtahzc.jpg",
 
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-  },
+  author: BLOG_AUTHORS.isha,
 
   publisher: {
     "@type": "Organization",

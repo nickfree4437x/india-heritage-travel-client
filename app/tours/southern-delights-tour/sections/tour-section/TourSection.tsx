@@ -28,7 +28,7 @@ export default function TourSection({
         {description}
       </p>
 
-      <div className="w-full rounded-md overflow-hidden shadow-md -mb-6 md:mb-0">
+      <div className="w-full rounded-md overflow-hidden shadow-md -mb-2 md:mb-0">
         <Image
           src={image}
           alt={`${title} in Southern Delights Tour India`}

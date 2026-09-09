@@ -1,3 +1,5 @@
+import { BLOG_AUTHORS } from "@/src/common/seo/authors";
+
 // ============================================
 // CONSTANTS
 // ============================================
@@ -47,11 +49,7 @@ export const articleSchema = {
   description:
     "Explore Jodhpur, the Blue City of Rajasthan, with this complete travel guide covering Mehrangarh Fort, Jaswant Thada, Umaid Bhawan Palace, old-city markets, food, luxury stays, desert experiences, itineraries and practical travel tips.",
   image: [IMAGE_URL],
-  author: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-  },
+  author: BLOG_AUTHORS.isha,
   publisher: {
     "@type": "Organization",
     name: "India Heritage Travel",
