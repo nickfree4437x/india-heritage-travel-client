@@ -577,4 +577,13 @@ export const blogs = [
     excerpt:
       "Discover the perfect Mandawa Heritage Haveli Stay frescoed forts, hidden havelis, and luxury Shekha....",
   },
+  {
+    id: 65,
+    slug: "nawalgarh-heritage-haveli-stays-shekhawati-guide",
+    title: "Nawalgarh Heritage Haveli Stays: The Complete Guide to Shekhawati's Painted Mansions",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1789029314/ancient-well-nawalgarh-12793400_rwv6kx.webp",
+    date: "10 September",
+    excerpt:
+      "Discover Nawalgarh Heritage Haveli Stays in Shekhawati frescoed mansions, boutique havelis....",
+  },
 ];
