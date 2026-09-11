@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 const SITE_URL = "https://indiaheritagetravel.com";
 const BLOG_PATH = "/blog/mandawa-heritage-haveli-stay-painted-havelis-guide";
 const BLOG_URL = `${SITE_URL}${BLOG_PATH}`;
-const HERO_IMAGE = `${SITE_URL}https://res.cloudinary.com/dja5yspwr/image/upload/v1788954498/vikram-chouhan-udaipur-web-designer-N-3yaHfspfo-unsplash_kq76qe.jpg`;
+const HERO_IMAGE = `${SITE_URL}/https://res.cloudinary.com/dja5yspwr/image/upload/v1788954498/vikram-chouhan-udaipur-web-designer-N-3yaHfspfo-unsplash_kq76qe.jpg`;
 const BLOG_TITLE =
   "Mandawa Heritage Haveli Stay: A Luxury Guide to Rajasthan's Painted Havelis";
 const BLOG_DESCRIPTION =

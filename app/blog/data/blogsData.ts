@@ -586,4 +586,13 @@ export const blogs = [
     excerpt:
       "Discover Nawalgarh Heritage Haveli Stays in Shekhawati frescoed mansions, boutique havelis....",
   },
+  {
+    id: 66,
+    slug: "chettinad-heritage-mansion-hotels",
+    title: "Chettinad Heritage Mansion Hotels: India's Forgotten Palaces of Luxury Travel",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1789118638/nakkeeran-raveendran-c6SNid8b-nQ-unsplash_s6near.jpg",
+    date: "11 September",
+    excerpt:
+      "Discover Chettinad heritage mansion hotels the crumbling merchant palaces of Tamil Nadu r....",
+  },
 ];

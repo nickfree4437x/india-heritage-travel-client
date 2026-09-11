@@ -150,7 +150,7 @@ export default function FAQSection() {
                 <div
                   className="px-4 sm:px-5 md:px-6 pb-4 sm:pb-5 md:pb-6 pt-3 sm:pt-4 text-justify bg-white
                             text-gray-600 text-[12px] sm:text-[13px] md:text-[13px] font-light
-                            leading-6 sm:leading-7 tracking-[0.02em]
+                            leading-5 sm:leading-6 tracking-[0.02em]
                             border-t border-[#eee7dd]"
                 >
                   {item.a}

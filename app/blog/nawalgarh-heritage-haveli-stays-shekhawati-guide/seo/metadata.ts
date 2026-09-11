@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 // CONSTANTS
 // ============================================
 const SITE_URL = "https://indiaheritagetravel.com";
-const BLOG_PATH = "https://res.cloudinary.com/dja5yspwr/image/upload/v1788954498/vikram-chouhan-udaipur-web-designer-N-3yaHfspfo-unsplash_kq76qe.jpg";
+const BLOG_PATH = "/blog/nawalgarh-heritage-haveli-stays-shekhawati-guide";
 const BLOG_URL = `${SITE_URL}${BLOG_PATH}`;
-const HERO_IMAGE = `${SITE_URL}/images/blogs/nawalgarh/nawalgarh-haveli-facade-fresco.jpg`;
+const HERO_IMAGE = `${SITE_URL}/https://res.cloudinary.com/dja5yspwr/image/upload/v1788954498/vikram-chouhan-udaipur-web-designer-N-3yaHfspfo-unsplash_kq76qe.jpg`;
 const BLOG_TITLE =
   "Nawalgarh Heritage Haveli Stays: The Complete Guide to Shekhawati's Painted Mansions";
 const BLOG_DESCRIPTION =
