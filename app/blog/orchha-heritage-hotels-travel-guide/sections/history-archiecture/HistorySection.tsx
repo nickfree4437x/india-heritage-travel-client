@@ -38,7 +38,7 @@ export default function HistorySection() {
         <div className="mb-1">
           <div className="relative h-[280px] md:h-[420px] lg:h-[600px] overflow-hidden rounded-sm">
             <Image
-              src="https://res.cloudinary.com/dja5yspwr/image/upload/v1789311989/pexels-thebioscopeguy-20000876_zzxvnj.jpg"
+              src="https://res.cloudinary.com/dja5yspwr/image/upload/v1789322531/pexels-hellochemo-4177508_nznqut.jpg"
               alt="Sandstone palaces of Orchha, a hidden kingdom on the Betwa River"
               fill
               sizes="100vw"

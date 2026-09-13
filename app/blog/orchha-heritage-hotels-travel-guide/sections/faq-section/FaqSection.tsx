@@ -67,18 +67,18 @@ export default function FAQSection() {
         {/* CTA */}
         <div className="mt-10 bg-[#faf8f5] rounded-md p-6 sm:p-8">
           <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
-            Planning a Nawalgarh Heritage Stay?
+            Planning an Orchha Heritage Stay?
           </h3>
 
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 font-light text-justify mb-3 md:mb-4">
-            India Heritage Travel crafts private Rajasthan itineraries featuring Nawalgarh's painted havelis, fresco walks, and Shekhawati heritage — combined with Mandawa, Jaipur, and Bikaner.
+            India Heritage Travel crafts private Madhya Pradesh itineraries featuring Orchha's Bundela palaces, cenotaphs, and Betwa riverfront combined with Khajuraho, Gwalior, and Varanasi.
           </p>
 
           <Link
             href="/contact"
             className="inline-flex items-center justify-center rounded-md bg-[#AF956C] px-6 py-2 md:py-2.5 text-[12px] sm:text-[13px] font-light text-white transition-colors duration-300 hover:bg-[#9d8157]"
           >
-            Plan My Nawalgarh Heritage Stay
+            Plan My Orchha Heritage Stay
           </Link>
         </div>
       </div>

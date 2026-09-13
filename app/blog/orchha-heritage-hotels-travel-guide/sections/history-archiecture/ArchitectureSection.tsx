@@ -34,7 +34,7 @@ export default function ArchitectureSection() {
         </div>
 
         {/* Image */}
-        <div className="mb-2 md:mb-3">
+        <div className="">
           <div className="relative h-[280px] md:h-[420px] lg:h-[600px] overflow-hidden rounded-sm">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1789314116/pexels-rsapmech-11473544_sreao0.jpg"

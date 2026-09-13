@@ -2,7 +2,7 @@
 
 export default function NearbyAttractions() {
   return (
-    <section className="w-full bg-white py-1 md:py-2">
+    <section className="w-full bg-white py-1 md:py-2.5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Heading */}

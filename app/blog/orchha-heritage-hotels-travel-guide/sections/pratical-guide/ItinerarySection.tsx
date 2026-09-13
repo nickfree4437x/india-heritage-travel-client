@@ -2,7 +2,7 @@
 
 export default function IntroSection() {
   return (
-    <section className="w-full bg-white py-0 -mt-2 md:mt-0 md:py-2">
+    <section className="w-full bg-white py-0 -mt-2 md:mt-0 md:py-0">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}

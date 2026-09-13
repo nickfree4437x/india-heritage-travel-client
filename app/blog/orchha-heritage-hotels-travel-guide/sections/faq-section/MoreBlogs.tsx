@@ -1,5 +1,4 @@
 // app/blogs/india-food-guide/components/MoreFoodSection.tsx
-
 "use client";
 
 import Image from "next/image";
@@ -10,10 +9,10 @@ import { MessageCircle } from "lucide-react";
 const blogs = [
   {
     title:
-      "Mandawa Heritage Haveli Stay: A Luxury Guide to Rajasthan's Painted Havelis",
-    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1788952338/vikram-chouhan-udaipur-web-designer-I8Zlcv5Sbno-unsplash_kpapkm.jpg",
-    date: "09 September",
-    slug: "mandawa-heritage-haveli-stay-painted-havelis-guide",
+      "Jawai Travel Guide: Where Luxury Meets Leopard Country",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1787455333/advik-mehta-J7g4hCd8oDo-unsplash_iouelw.jpg",
+    date: "23 Auguest",
+    slug: "jawai-travel-guide-leopard-country-rajasthan",
   },
   {
     title:
@@ -24,10 +23,10 @@ const blogs = [
   },
   {
     title:
-      "Ranakpur Travel Guide: Sacred Heritage in the Aravalli Mountains",
-    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1788413511/alexander-schimmeck-VSsoSC6a1Gw-unsplash_l6mzem.jpg",
-    date: "03 September",
-    slug: "ranakpur-travel-guide-sacred-heritage-aravalli-mountains",
+      "Nawalgarh Heritage Haveli Stays: The Complete Guide to Shekhawati's Painted Mansions",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1789029314/ancient-well-nawalgarh-12793400_rwv6kx.webp",
+    date: "10 September",
+    slug: "nawalgarh-heritage-haveli-stays-shekhawati-guide",
   },
 ];
 
