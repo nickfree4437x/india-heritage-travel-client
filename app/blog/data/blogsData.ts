@@ -595,4 +595,13 @@ export const blogs = [
     excerpt:
       "Discover Chettinad heritage mansion hotels the crumbling merchant palaces of Tamil Nadu r....",
   },
+  {
+    id: 67,
+    slug: "orchha-heritage-hotels-travel-guide",
+    title: "Orchha Heritage Hotels: A Forgotten Kingdom Travel Guide",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1789311345/pexels-thebioscopeguy-20000870_srtgjy.jpg",
+    date: "13 September",
+    excerpt:
+      "Discover Orchha Heritage Hotels and the untouched Bundela capital on the Betwa River....",
+  },
 ];
