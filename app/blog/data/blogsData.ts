@@ -604,4 +604,13 @@ export const blogs = [
     excerpt:
       "Discover Orchha Heritage Hotels and the untouched Bundela capital on the Betwa River....",
   },
+  {
+    id: 68,
+    slug: "mandu-luxury-heritage-stays-romantic-guide",
+    title: "Mandu Luxury Heritage Stays: Romantic Luxury Among Medieval Ruins",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1789368460/aakansha-agrawal-fipoV_f13Zw-unsplash_ghphxi.jpg",
+    date: "14 September",
+    excerpt:
+      "Discover Mandu luxury heritage stays amid India's most romantic medieval ruins. A complete guide to....",
+  },
 ];
