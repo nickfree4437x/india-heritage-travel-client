@@ -613,4 +613,13 @@ export const blogs = [
     excerpt:
       "Discover Mandu luxury heritage stays amid India's most romantic medieval ruins. A complete guide to....",
   },
+  {
+    id: 69,
+    slug: "maheshwar-heritage-travel-guide",
+    title: "Maheshwar Heritage Travel Guide: Royal Palaces, Narmada Ghats & Timeless Culture",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1789547607/pexels-arvind-aditya-253087253-13214083_mecr3u.jpg",
+    date: "16 September",
+    excerpt:
+      "Plan the perfect Maheshwar heritage travel experience: explore Ahilya Fort, the sacred....",
+  },
 ];
