@@ -622,4 +622,13 @@ export const blogs = [
     excerpt:
       "Plan the perfect Maheshwar heritage travel experience: explore Ahilya Fort, the sacred....",
   },
+  {
+    id: 70,
+    slug: "fort-kochi-boutique-hotels",
+    title: "Fort Kochi Boutique Hotels: Colonial History & Boutique Luxury",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1789727256/pexels-santram-gayakvad-1342424125-31288326_jfm83t.jpg",
+    date: "18 September",
+    excerpt:
+      "Discover Fort Kochi's colonial history, heritage architecture, boutique hotels, cultural....",
+  },
 ];
