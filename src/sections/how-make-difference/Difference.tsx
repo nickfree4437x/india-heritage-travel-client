@@ -35,7 +35,7 @@ export default function Difference() {
     },
     {
       icon: <Route size={55} />,
-      text: "Expertly Curated Travel Itineraries",
+      text: "Expertly Curated Heritage Tours",
     },
   ];
 

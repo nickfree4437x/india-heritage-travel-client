@@ -87,11 +87,11 @@ export default function ReviewsSection() {
         {/* ===== HEADER ===== */}
         <div className="text-center mb-12 sm:mb-16 px-2">
           <h2 className="text-[20px] sm:text-[24px] md:text-[28px] font-semibold tracking-wide mb-2 leading-snug md:whitespace-nowrap text-[#8b6a3d]">
-            Reviews from Travellers
+            Reviews from Travellers on India Heritage Tours
           </h2>
 
           <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed tracking-wide max-w-[580px] mx-auto text-[#8b6a3d]">
-            Discover authentic travel stories and unforgettable experiences across India.
+            Discover authentic travel stories and unforgettable experiences from travellers exploring India's heritage and culture.
           </p>
 
           {/* Rating */}

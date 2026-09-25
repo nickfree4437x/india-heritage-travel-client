@@ -31,7 +31,7 @@ export default function HeroContent({
             </span>
 
             <span className="block text-xl sm:text-3xl md:text-4xl mt-2 sm:mt-3">
-              Curated Heritage Journeys
+              Curated Heritage Tours in India
             </span>
 
           </h1>

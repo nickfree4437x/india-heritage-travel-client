@@ -55,11 +55,10 @@ export default function ChooseAdventure() {
           {/* ===== SECTION HEADER ===== */}
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-[20px] sm:text-[24px] md:text-[28px] font-semibold tracking-wide mb-2 leading-snug md:whitespace-nowrap text-[#8b6a3d]">
-              Choose Your Adventure
+              Explore Our Heritage Tours Across India
             </h2>
             <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed tracking-wide max-w-[580px] mx-auto text-[#8b6a3d]">
-              Experience The Beauty and Diversity of India with Our
-              Unforgettable Tours!
+              Experience India's rich culture, history, and diverse destinations through thoughtfully curated tours.
             </p>
           </div>
 

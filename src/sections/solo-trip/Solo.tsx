@@ -16,7 +16,7 @@ export default function SoloTravelSection() {
           {/* LEFT CONTENT */}
           <div className="max-w-xl w-full">
             <h3 className="text-[16px] font-medium text-gray-800 mb-6 leading-relaxed">
-              Thinking of coming to India... but not sure how it will feel
+              Thinking of exploring India's heritage... but not sure how it will feel
               doing it alone?
             </h3>
 

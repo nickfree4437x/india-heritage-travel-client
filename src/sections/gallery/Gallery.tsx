@@ -80,7 +80,7 @@ export default function GallerySection() {
         {/* HEADER */}
         <div className="text-center mb-10 sm:mb-14 md:mb-16">
           <h2 className="text-[20px] sm:text-[24px] md:text-[28px] font-semibold tracking-wide mb-2 leading-snug md:whitespace-nowrap text-[#8b6a3d]">
-            Our Gallery
+            India Heritage Travel Experiences
           </h2>
 
           <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed tracking-wide max-w-[580px] mx-auto text-[#8b6a3d]">

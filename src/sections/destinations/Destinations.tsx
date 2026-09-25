@@ -23,11 +23,11 @@ export default function PopularDestinations() {
         ==================================================================== */}
         <div className="text-center mb-10 sm:mb-12 md:mb-14 max-w-2xl mx-auto">
           <h2 className="font-heading text-[20px] sm:text-[24px] md:text-[28px] font-semibold tracking-wide text-white mb-2 leading-snug md:whitespace-nowrap">
-            Explore India's Most Popular Travel Destinations
+            Explore India's Most Popular Heritage Destinations
           </h2>
 
           <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed text-white/90 tracking-wide max-w-[580px] mx-auto">
-            Our Best-Loved Routes Across India's Cultural Landscape.
+            Discover India's iconic heritage destinations through thoughtfully curated journeys.
           </p>
         </div>
 
