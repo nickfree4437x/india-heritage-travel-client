@@ -8,7 +8,7 @@ export default function PushkarSection() {
 
       {/* Heading */}
       <h2 className="text-[16px] sm:text-[20px] md:text-[20px] lg:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2 sm:mb-3">
-        Pushkar – Where Desert Charm Meets Holy Peace
+        Pushkar – Spiritual Heritage & Camel Fair
       </h2>
 
       {/* Description */}
@@ -25,7 +25,7 @@ export default function PushkarSection() {
       <div className="w-full rounded-md overflow-hidden shadow-md -mb-2 md:mb-0">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528390/pushkar_dfkyko.jpg"
-          alt="Pushkar Lake and Brahma Temple in Rajasthani Heritage Tour Package by India Heritage Travel"
+          alt="Pushkar Lake and Brahma Temple with spiritual heritage in Rajasthan"
           width={1200}
           height={800}
           className="w-full h-auto max-h-[500px] object-cover"

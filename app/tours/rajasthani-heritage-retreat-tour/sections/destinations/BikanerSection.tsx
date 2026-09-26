@@ -8,12 +8,12 @@ export default function BikanerSection() {
 
       {/* Heading */}
       <h2 className="text-[16px] sm:text-[20px] md:text-[20px] lg:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2 sm:mb-3">
-        Bikaner – A Desert Oasis Of History And Camels
+        Bikaner – Desert Heritage & Camel Culture
       </h2>
 
       {/* Description */}
       <p className="text-gray-700 mb-4 sm:mb-5 md:mb-6 leading-relaxed font-[300] text-[12px] sm:text-[13px] md:text-[14px] text-justify">
-        Bikaner is a desert gem with history twisted into its castles and palaces, promises a captivating journey through Rajasthan’s northeast. It is known as Camel Country, it’s a place where camels gracefully pass over the landscape, making the city more attractive.
+        Discover Bikaner's rich desert heritage, historic forts, grand palaces, and distinctive camel culture. Explore this fascinating city in Rajasthan's Thar Desert and experience its unique history, architecture, and traditions.
       </p>
 
       {/* Image */}

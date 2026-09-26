@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // ============================================================================
-// DATA - Recommended Tours
+// DATA - Explore More India Heritage Tours
 // ============================================================================
 
 const tours = [
@@ -55,7 +55,7 @@ export default function RecommendedTours() {
           tracking-wide
         "
       >
-        Recommended Tours
+        Explore More India Heritage Tours
       </h2>
 
       {/* ====================================================================

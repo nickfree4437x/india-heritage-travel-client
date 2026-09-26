@@ -11,7 +11,7 @@ export default function BookNowHeader() {
         tracking-wide
         mb-4 sm:mb-2
       ">
-        Plan Your Journey
+        Your Journey Starts Here
       </h2>
 
       <p className="

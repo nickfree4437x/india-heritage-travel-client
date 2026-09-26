@@ -122,7 +122,7 @@ export default function Itinerary() {
               Next stop: Jaipur
             </p>
             <p className="text-[12px] sm:text-[12px] font-[300] text-gray-700">
-              Just 3 hours’ drive (175 km) from Mandawa
+              Just 4-4.5 hours’ drive (240 km) from Agra
             </p>
           </div>
 
@@ -193,7 +193,7 @@ export default function Itinerary() {
                 <div className="relative h-[220px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779525977/delhi2_a4reej.jpg"
-                    alt="Jaipur Pink City tour featuring Amber Fort Hawa Mahal and Rajasthan heritage attractions"
+                    alt="Delhi sightseeing and cultural experiences during the Golden Triangle Tour"
                     fill
                     className="object-cover object-center"
                   />

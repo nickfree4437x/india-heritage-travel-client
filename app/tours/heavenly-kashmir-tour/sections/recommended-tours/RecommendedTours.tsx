@@ -43,7 +43,7 @@ export default function RecommendedTours() {
           tracking-wide
         "
       >
-        Recommended Tours
+        Explore More India Heritage Tours
       </h2>
 
       {/* 🔹 CARDS GRID */}

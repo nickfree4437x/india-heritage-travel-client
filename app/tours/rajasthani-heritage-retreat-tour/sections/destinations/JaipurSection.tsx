@@ -8,19 +8,19 @@ export default function JaipurSection() {
 
       {/* Heading */}
       <h2 className="text-[16px] sm:text-[20px] md:text-[20px] lg:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2 sm:mb-3">
-        Jaipur – The Pink City & Heart of Rajasthan
+        Jaipur – The Pink City & Royal Heritage
       </h2>
 
       {/* Description */}
       <p className="text-gray-700 mb-4 sm:mb-5 md:mb-6 leading-relaxed font-[300] text-[12px] sm:text-[13px] md:text-[14px] text-justify">
-        Jaipur is known as the heart of Rajasthan & a UNESCO world heritage city. It is among one of the most visited tourist destinations in Rajasthan. Jaipur is famous for its grand forts and palaces, local cuisines, adventure tourism, pilgrimage sites and local shopping.
+        Discover Jaipur, the Pink City and one of Rajasthan's most iconic heritage destinations. Explore magnificent forts and palaces, vibrant markets, local cuisine, cultural traditions, and the architectural legacy of this historic city.
       </p>
 
       {/* Image */}
       <div className="w-full rounded-md overflow-hidden shadow-md -mb-2 md:mb-0">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528205/jaipur_zt77vw.jpg"
-          alt="Amber Fort Jaipur in Rajasthani Heritage Tour Package by India Heritage Travel"
+          alt="Amber Fort and royal heritage of Jaipur, Rajasthan"
           width={1200}
           height={800}
           className="w-full h-auto max-h-[500px] object-cover"

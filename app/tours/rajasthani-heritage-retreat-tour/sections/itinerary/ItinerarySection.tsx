@@ -47,7 +47,7 @@ export default function ItinerarySection() {
           <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528504/delhi_imc7m0.png"
-              alt="Old Delhi heritage landmarks in Rajasthani Heritage Tour Package by India Heritage Travel"
+              alt="Old Delhi heritage landmarks and cultural attractions in Delhi, India"
               fill
               className="object-cover object-center"
             />
@@ -92,7 +92,7 @@ export default function ItinerarySection() {
             <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528543/mandawa_waoq9v.png"
-                alt="Mandawa heritage havelis in Rajasthani Heritage Tour Package by India Heritage Travel"
+                alt="Historic havelis and frescoes in Mandawa, Rajasthan"
                 fill
                 className="object-cover object-center"
               />
@@ -147,7 +147,7 @@ export default function ItinerarySection() {
           <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528618/bikaner_fkzvym.png"
-              alt="Bikaner desert heritage and camel culture in Rajasthani Heritage Tour Package by India Heritage Travel"
+              alt="Bikaner heritage landmarks and camel culture in Rajasthan"
               fill
               className="object-cover object-center"
             />
@@ -197,7 +197,7 @@ export default function ItinerarySection() {
           <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528648/jaisalmer-itinerary_dchx91.jpg"
-              alt="Jaisalmer Fort and Thar Desert experience in Rajasthani Heritage Tour Package by India Heritage Travel"
+              alt="Jaisalmer Fort and Thar Desert experience in Rajasthan"
               fill
               className="object-cover object-center"
             />
@@ -246,7 +246,7 @@ export default function ItinerarySection() {
             <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528696/jodhpur_o0ubhd.png"
-                alt="Mehrangarh Fort Jodhpur in Rajasthani Heritage Tour Package by India Heritage Travel"
+                alt="Mehrangarh Fort and Blue City heritage of Jodhpur, Rajasthan"
                 fill
                 className="object-cover object-center"
               />
@@ -295,7 +295,7 @@ export default function ItinerarySection() {
               <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                 <Image
                   src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528752/udaipur-1_rbvc6x.jpg"
-                  alt="Lake Pichola Udaipur in Rajasthani Heritage Tour Package by India Heritage Travel"
+                  alt="Lake Pichola and royal heritage of Udaipur, Rajasthan"
                   fill
                   className="object-cover object-center"
                 />
@@ -344,7 +344,7 @@ export default function ItinerarySection() {
             <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528798/pushkar-1_lkjlax.png"
-                alt="Pushkar Lake and Brahma Temple in Rajasthani Heritage Tour Package by India Heritage Travel"
+                alt="Pushkar Lake and Brahma Temple in Rajasthan"
                 fill
                 className="object-cover object-center"
               />
@@ -392,7 +392,7 @@ export default function ItinerarySection() {
             <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528855/judaipur-1_fhzlur.png"
-                alt="Amber Fort Jaipur in Rajasthani Heritage Tour Package by India Heritage Travel"
+                alt="Amber Fort and royal heritage of Jaipur, Rajasthan"
                 fill
                 className="object-cover object-center"
               />
@@ -440,7 +440,7 @@ export default function ItinerarySection() {
           <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528926/agra-1_diz5ov.png"
-              alt="Taj Mahal Agra in Rajasthani Heritage Tour Package by India Heritage Travel"
+              alt="Delhi cultural landmarks and heritage attractions in India"
               fill
               className="object-cover object-center"
             />
@@ -488,7 +488,7 @@ export default function ItinerarySection() {
             <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528974/delhi-2_zlbh3s.png"
-                alt="Delhi cultural landmarks in Rajasthani Heritage Tour Package by India Heritage Travel"
+                alt="Delhi cultural landmarks and heritage attractions in India"
                 fill
                 className="object-cover object-center"
               />
@@ -530,7 +530,7 @@ export default function ItinerarySection() {
             <div className="relative h-[220px] md:h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779526015/farewal_quhndt.jpg"
-                alt="Farewell departure after Rajasthani Heritage Tour Package in India"
+                alt="Farewell departure after a Rajasthan heritage tour in India"
                 fill
                 className="object-cover object-center"
               />

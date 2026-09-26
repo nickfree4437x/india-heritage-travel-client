@@ -8,12 +8,12 @@ export default function AgraSection() {
 
       {/* Heading */}
       <h2 className="text-[16px] sm:text-[20px] md:text-[20px] lg:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2 sm:mb-3">
-        Agra – Where History Rules Supreme
+        Agra – Taj Mahal & Mughal Heritage
       </h2>
 
       {/* Description */}
       <p className="text-gray-700 mb-4 sm:mb-5 md:mb-6 leading-relaxed font-[300] text-[12px] sm:text-[13px] md:text-[14px] text-justify">
-        A world where the echoes of the Mughal empire still linger, and uncover a marvel born from a timeless love tale: The Taj Mahal. Explore beautiful tombs, stately forts, and vibrant marketplaces that eagerly await your presence.
+        Discover Agra's rich Mughal heritage and the iconic Taj Mahal, one of India's most celebrated landmarks. Explore magnificent tombs, historic forts, and vibrant marketplaces while experiencing the city's timeless history and culture.
       </p>
 
       {/* Image */}

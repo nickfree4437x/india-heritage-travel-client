@@ -50,7 +50,7 @@ export default function Hero() {
           Golden Triangle Tour
           <br className="hidden sm:block" />
           <span className="sm:hidden"> </span>
-          Package India
+           India
         </h1>
       </div>
     </section>

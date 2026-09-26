@@ -59,7 +59,7 @@ export default function BookingCard() {
       <div className="p-3 sm:p-4 md:p-5">
         {/* Tour Title */}
         <h3 className="text-[13px] sm:text-[14px] md:text-[15px] text-center font-medium text-[#AF956C] mb-2 leading-snug tracking-[0.01em]">
-          Majestic Golden Triangle Tour
+          Golden Triangle Tour India
         </h3>
 
         {/* Price Label */}

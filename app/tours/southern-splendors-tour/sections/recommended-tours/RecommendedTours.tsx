@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// Recommended tours data
+// Explore More India Heritage Tours data
 const tours = [
   {
     title: "The Royal Heritage Trail Tour",
@@ -33,7 +33,7 @@ export default function RecommendedTours() {
     <section className="mt-20 px-4 py-16 bg-[#f9f9f9]">
       {/* Section Heading */}
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        Recommended Tours
+        Explore More India Heritage Tours
       </h2>
 
       {/* Tour Cards */}

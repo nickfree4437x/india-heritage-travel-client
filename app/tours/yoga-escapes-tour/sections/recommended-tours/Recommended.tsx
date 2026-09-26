@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// Recommended tours data
+// Explore More India Heritage Tours data
 const tours = [
   {
     title: "Ayurveda Wellness Tour India",
@@ -26,7 +26,7 @@ export default function RecommendedTours() {
         tracking-wide
         mb-6 sm:mb-8
       ">
-        Recommended Tours
+        Explore More India Heritage Tours
       </h2>
 
       {/* Tour Cards */}

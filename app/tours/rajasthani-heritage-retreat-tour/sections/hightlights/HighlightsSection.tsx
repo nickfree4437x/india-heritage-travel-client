@@ -17,7 +17,7 @@ export default function HighlightsSection() {
   const highlights = [
     "Explore the vibrant heritage of Delhi and Old Delhi.",
     "Discover fresco-painted havelis in Mandawa.",
-    "Experience Bikaner's desert culture and camel heritage.",
+    "Experience Rajasthan's desert culture and camel heritage in Bikaner.",
     "Visit the Golden City of Jaisalmer and its magnificent fort.",
     "Explore Jodhpur's royal palaces and blue city charm.",
     "Enjoy the lakes and palaces of romantic Udaipur.",
