@@ -6,7 +6,7 @@ import Link from "next/link";
 // Explore More India Heritage Tours data
 const tours = [
   {
-    title: "Yoga Escapes: Discover Balance & Rejuvenate",
+    title: "Yoga Escapes Tour India – Discover Balance & Rejuvenate",
     desc: "Yoga is an ancient and intricate practice deeply rooted in Indian philosophy. It originally served as a spiritual discipline but has evolved into a popular approach for enhancing physical and mental well-being.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546495/recom_b3tnbe.jpg",
     slug: "/tours/yoga-escapes-tour",
@@ -26,7 +26,7 @@ export default function RecommendedTours() {
         tracking-wide
         mb-6 sm:mb-8
       ">
-        Explore More India Heritage Tours
+        Explore More India Heritage Tour
       </h2>
 
       {/* Tour Cards */}

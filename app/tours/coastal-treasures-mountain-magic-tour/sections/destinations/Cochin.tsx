@@ -13,7 +13,7 @@ export default function Cochin() {
         font-semibold
         mb-4 sm:mb-3
       ">
-        Cochin – Where Commerce And History Meets
+        Cochin – Historic Heritage & Coastal Culture of Kerala
       </h3>
 
       {/* Description */}

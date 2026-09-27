@@ -96,7 +96,7 @@ export default function SuitableFor() {
       </div>
 
       {/* Breadcrumb */}
-      <Breadcrumb title="Coastal Treasures & Mountain Magic Tour" />
+      <Breadcrumb title="South India Tour Package" />
 
       {/* Main Section */}
       <section

@@ -13,7 +13,7 @@ export default function Mumbai() {
         font-semibold
         mb-4 sm:mb-3
       ">
-        Mumbai – A City Of Dreams
+        Mumbai – Gateway of India & Cultural Heritage
       </h3>
 
       {/* Description */}

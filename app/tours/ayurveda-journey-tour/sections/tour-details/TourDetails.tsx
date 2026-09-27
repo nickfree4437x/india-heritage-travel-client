@@ -8,7 +8,7 @@ export default function TourDetails() {
     {
       id: "mumbai",
       title: "Mumbai",
-      desc: "Mumbai, often referred to as Bombay, is the heartbeat of India’s urban landscape. This bustling metropolis on the western coast is a captivating fusion of diverse cultures and pulsating energy. With its iconic landmarks like the Gateway of India, a rich cosmopolitan lifestyle, and an endless array of experiences, Mumbai is a city that never ceases to amaze, inviting you to explore its vibrant soul.",
+      desc: "Mumbai, often referred to as Bombay, is the heartbeat of India's urban landscape. This bustling metropolis on the western coast offers a captivating blend of diverse cultures, iconic landmarks, and vibrant local experiences. During your Ayurveda wellness journey, Mumbai provides an engaging introduction to India's culture and modern urban life before continuing to Kerala.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779546553/mumbai_osonyi.jpg",
       alt: "Mumbai sightseeing destination during Ayurveda wellness tour in India featuring cultural landmarks and local experiences"
     },

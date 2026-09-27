@@ -58,7 +58,7 @@ export default function BookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          Coastal Treasures & Mountain Magic
+          South India Tour Package – Coastal Treasures & Mountain Magic
         </h3>
 
         {/* Price Label */}

@@ -29,7 +29,7 @@ export default function DetailedItinerary() {
 
             {/* TOP CONTENT */}
             <p className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
-              When you arrive at Cochin Airport, our team will ensure your warm welcome with a sign board, ensuring your smooth journey.
+              When you arrive at Cochin Airport, our team will warmly welcome you with a signboard and assist you with a smooth start to your South India journey.
             </p>
 
             {/* IMAGE + TEXT */}
@@ -48,9 +48,9 @@ export default function DetailedItinerary() {
 
               <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
-                  For those who are arriving early, they have 2 options to explore coachin. Head to local sightseeing tour of Kochi. You can begin by Sain Francis Church, an amazing monuments of Kochi. Then you can visit Old Paradise Synagogue which is the oldest active synagogue in the Commonwealth of Nations. Then you can visit Mattancherry Palace, which is a Portuguese palace popularly known as Dutch palace.
+                  For those arriving early, you can explore Kochi through a local sightseeing tour. Begin with St. Francis Church, one of the historic landmarks of Fort Kochi. Then visit the Paradesi Synagogue, one of the oldest active synagogues in the Commonwealth of Nations, followed by Mattancherry Palace, a Portuguese-built palace popularly known as the Dutch Palace.
                   <br></br>
-                  Overnight stay will be at hotel in Kochi.
+                  Overnight stay will be at a hotel in Kochi.
                 </p>
               </div>
 
@@ -79,7 +79,7 @@ export default function DetailedItinerary() {
                 <div className="relative h-[240px] w-full md:w-full rounded-md overflow-hidden shadow-sm bg-[#f8f5f0]">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529537/i2_ca59ye.jpg"
-                    alt="Alleppey"
+                    alt="Alleppey Kerala backwaters and traditional houseboat during a South India tour"
                     fill
                     className="object-cover"
                   />
@@ -88,11 +88,10 @@ export default function DetailedItinerary() {
 
               <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
-                  Reach Alleppey by noon & check-in a well-booked beautiful houseboat. Enjoy boat cruise through mesmerising Vembanad Lake enjoying experience of backwater cruising.
+                  Reach Alleppey by noon and check in to a beautiful houseboat. Enjoy a boat cruise through mesmerising Vembanad Lake and experience the peaceful backwaters of Kerala.
                 </p>
                 <p>
-                  As you travel narrow strips of land you can witness amazing life of livelihoods of fishing communities, women immersed in their daily lives & children swimming.
-                  You’ll witness amazing spots along the way, feel free to explore them.
+                  As you travel along the narrow strips of land, you can witness the daily lives of local fishing communities, women engaged in their routines, and children enjoying the backwaters. You will also see beautiful villages and landscapes along the way.
                 </p>
               </div>
 
@@ -116,7 +115,7 @@ export default function DetailedItinerary() {
 
             {/* TOP CONTENT */}
             <p className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
-               Early morning you can go on a guided jungle hike & bamboo rafting at Periyar National Park. This will take around 6 hours & visiting there means exploring nature around & enjoying peaceful nature. There are many chances you get to witness the elephant herd in the jungle while hiking. After that you can enjoy Bamboo rafting on the Periyar Lake, where also you’ll have the chance to see wildlife and explore one of India’s exceptional animal sanctuaries.
+               In the early morning, you can enjoy a guided jungle hike and bamboo rafting experience in the Periyar region. The experience takes around 6 hours and offers an opportunity to explore the area's natural surroundings. Wildlife sightings may include elephants and other species found in the region.
             </p>
 
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
@@ -134,12 +133,12 @@ export default function DetailedItinerary() {
 
               <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
-                  You can also see fragrant spice market which has cinnamon, pepper & cardamom.
+                  You can also explore the fragrant spice markets, featuring spices such as cinnamon, pepper, and cardamom.
                 </p>
                 <p>
                   Venture into the fragrant spice plantations, where cardamom, cinnamon, pepper, and coffee thrive.
                 </p>
-                <p>At evening you can see kathakali Dance which is very famous for of Indian classical dance.</p>
+                <p>In the evening, you can enjoy a Kathakali dance performance, a traditional classical dance form of Kerala.</p>
               </div>
 
             </div>
@@ -162,9 +161,9 @@ export default function DetailedItinerary() {
 
             {/* TOP CONTENT */}
             <p className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
-               Entering Munnar on the way you can witness world’s largest tea-growing region. After reaching you can go to see Kalaripayattu show which is an ancient martial art that originated in Kerala.
+               As you enter Munnar, you can enjoy views of its extensive tea-growing landscapes. After reaching Munnar, you can experience a Kalaripayattu show, an ancient martial art that originated in Kerala.
                <br></br>
-               Next day morning you can go to guided trek tour which will be 3-hour trekking tour covering 9km of walking which include grassland, tea plantations & rocks. 
+               The following morning, you can join a guided trekking experience covering approximately 9 km through grasslands, tea plantations, and rocky landscapes. 
             </p>
 
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
@@ -182,10 +181,10 @@ export default function DetailedItinerary() {
 
               <div className="space-y-3 text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
-                   Next you can visit Munnar Tea Museum which preserve the aspects of the origin of tea plantation.
+                  Next, visit the Munnar Tea Museum, which preserves the history and development of tea plantations in the region.
                 </p>
                 <p>
-                  Next you can also visit Pothamedu Viewpoint,a amazing spot which offers panoramic view of valley. You can also visit Muthirapuzha River & Idukki Dam, the view from there is impressive which offers hill slopes view.
+                  You can also visit Pothamedu Viewpoint, a scenic spot offering panoramic views of the surrounding valleys. Other nearby attractions include the Muthirapuzha River and Idukki Dam, with impressive views of the surrounding hills.
                 </p>
               </div>
 
@@ -222,7 +221,9 @@ export default function DetailedItinerary() {
 
               <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
                 <p>
-                  Dive in Mumbai’s busy life. Visit Gateway of India, which is the most famous tourist attraction. Next you can head to Taj Mahal Palace Hotel followed by Victoria Terminus station. It is a world heritage site & historic railway station. It has great artwork of Victorian-Gothic style of architecture. You can also visit Mani Bhawan, Haji Ali & Jain temple. You can alsi visit Dharavi, an area where famous movie shoot happens including Oscar-winning “Slumdog Millionaire”.
+                  Explore the vibrant city of Mumbai and visit the Gateway of India, one of its most famous landmarks. Continue to the Taj Mahal Palace Hotel and Chhatrapati Shivaji Maharaj Terminus, a UNESCO World Heritage Site known for its Victorian Gothic architecture.
+                  <br/>
+                  You can also visit Mani Bhavan, Haji Ali, and a Jain temple. Dharavi can also be explored as part of Mumbai's diverse urban landscape and cultural experiences.
                 </p>
               </div>
 
@@ -234,7 +235,7 @@ export default function DetailedItinerary() {
           <div className="bg-white rounded-md shadow-sm border border-[#eee7dd] p-6 space-y-5">
 
             <h3 className="text-[17px] font-semibold text-red-500">
-              Day 10: Farewell And Departure
+              Day 10: Farewell & Departure
             </h3>
 
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-5 md:gap-6 items-start">
@@ -251,8 +252,8 @@ export default function DetailedItinerary() {
               </div>
 
               <p className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
-                After discovering & exploring & taking back the beautiful memories from India, you’re all set ready for your journey back to your home. Your dedicated driver will ensure you reach the airport promptly on time, in accordance with your flight schedule.
-                 Safe travels!
+                After discovering and exploring India and creating beautiful memories, you will be ready for your journey back home. Your dedicated driver will ensure you reach the airport on time according to your flight schedule.
+                Safe travels!
               </p>
 
             </div>

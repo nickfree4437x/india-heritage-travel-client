@@ -8,7 +8,7 @@ export default function Munnar() {
 
       {/* Heading */}
       <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold sm:mb-3 mb-4">
-        Munnar – South India's Alpine Haven
+        Munnar – Tea Gardens & Hill Station Beauty of Kerala
       </h3>
 
       {/* Description */}
@@ -23,7 +23,7 @@ export default function Munnar() {
       <div className="w-full rounded-md overflow-hidden shadow-md -mb-2 md:mb-0">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529356/munnar_lrkkjk.jpg"
-          alt="Munnar tea plantations and rolling hills in the Western Ghats of Kerala India"
+          alt="Munnar tea plantations and scenic hill landscapes in Kerala during a South India tour"
           width={1200}
           height={800}
           className="w-full h-auto max-h-[500px] object-cover"

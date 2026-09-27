@@ -8,21 +8,21 @@ export default function RecommendedTours() {
   const tours = [
     {
       title: "The Royal Heritage Trail Tour",
-      desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
+      desc: "An 8-day heritage journey through Delhi, Mandawa, Jaipur, and Agra, featuring historic forts, royal palaces, vibrant culture, and timeless architectural heritage.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529731/r1_urhezn.jpg",
       alt: "Rajasthan heritage tour featuring royal palaces historic forts and cultural landmarks",
       slug: "/tours/the-royal-heritage-trail-tour",
     },
     {
       title: "Mystical North India Discovery Tour",
-      desc: "An 8-day journey through Delhi, Mandawa, Jaipur, and Agra, immersing you in a captivating blend of history, timeless heritage, regal splendor, and historical grandeur.",
+      desc: "An 8-day North India journey through Delhi, Mandawa, Jaipur, and Agra, combining historic landmarks, cultural traditions, royal heritage, and iconic architectural experiences.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529759/r2_ijxsvn.jpg",
       alt: "North India cultural tour featuring Delhi Agra Jaipur and historic heritage attractions",
       slug: "/tours/mystical-north-india-discovery-tour",
     },
     {
       title: "Heritage Odyssey: North To South India Tour",
-      desc: "Discover the essence of Southern India on the 'Southern Delights' 17-day tour, from Cochin's history to Mumbai's vibrant dreams, with coastal delights, natural majesty, and timeless wonders in between.",
+      desc: "Discover South India through a 17-day journey featuring Cochin's heritage, Alleppey's backwaters, Thekkady's natural landscapes, Munnar's tea plantations, and Mumbai's cultural landmarks.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529784/r3_wapfho.webp",
       alt: "India heritage tour featuring cultural landmarks Kerala backwaters and historic destinations",
       slug: "/tours/heritage-odyssey-tour",

@@ -45,7 +45,7 @@ export default function BookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          Ayurveda Journey: Explore the Science of Wellness
+          Ayurveda Tour India – Wellness & Rejuvenation Journey
         </h3>
 
         {/* Price Label */}

@@ -15,11 +15,11 @@ import {
 export default function HighlightsInclusions() {
   // Highlights data
   const highlights = [
-    "South India's scenic backwaters and coastal beauty",
-    "Explore Munnar's tea plantations and hill stations",
-    "Wildlife experiences in Thekkady and Periyar region",
-    "Cultural heritage, local traditions, and historic landmarks",
-    "Authentic South India travel experiences across Kerala and Mumbai",
+    "Experience South India's scenic backwaters and coastal landscapes",
+    "Explore Munnar's tea plantations and beautiful hill station landscapes",
+    "Discover wildlife and nature around Thekkady and Periyar",
+    "Experience Kerala's cultural heritage, local traditions, and historic landmarks",
+    "Explore South India through Kerala's coastal, natural, and cultural highlights",
   ];
 
   // Inclusions data with icons

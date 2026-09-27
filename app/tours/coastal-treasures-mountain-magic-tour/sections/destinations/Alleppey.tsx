@@ -13,7 +13,7 @@ export default function Alleppey() {
         font-semibold
         mb-4 sm:mb-3
       ">
-        Alleppey - World Of Coastal Delights
+        Alleppey – Kerala Backwaters & Coastal Heritage
       </h3>
 
       {/* Description */}
@@ -44,7 +44,7 @@ export default function Alleppey() {
       ">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529254/alleppey_uqguvc.jpg"
-          alt="Alleppey Kerala backwaters with traditional houseboats during South India tour package"
+          alt="Alleppey Kerala backwaters and traditional houseboats during a South India tour"
           width={1200}
           height={800}
           className="w-full h-auto max-h-[500px] object-cover"

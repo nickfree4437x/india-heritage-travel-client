@@ -32,7 +32,6 @@ export default function HighlightsInclusions() {
     { icon: Wifi, text: "In Car Wi-fi" },
     { icon: CookingPot, text: "Cooking classes, dinner" },
     { icon: Plane, text: "Airport transfer" },
-    { icon: Bus, text: "Delhi rickshaw" },
   ];
 
   return (
