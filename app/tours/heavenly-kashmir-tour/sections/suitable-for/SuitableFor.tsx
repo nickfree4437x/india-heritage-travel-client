@@ -48,7 +48,7 @@ export default function SuitableFor() {
       </div>
 
       <Breadcrumb
-        title="Heavenly Kashmir Tour"
+        title="Kashmir Tour Package"
       />
 
       {/* 🎯 MAIN SECTION */}

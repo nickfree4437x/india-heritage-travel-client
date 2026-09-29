@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RoyalRajasthanPage() {
+export default function HeavenlyKashmirTourPage() {
   return (
     <div>
 
@@ -80,15 +80,15 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours",
           },
           {
-            name: "Heavenly Kashmir Tour",
+            name: "Kashmir Tour Package",
             url: "https://indiaheritagetravel.com/tours/heavenly-kashmir-tour",
           },
         ]}
       />
 
       <TourSchema
-        name="Heavenly Kashmir Tour"
-        description="Discover the beauty of Kashmir through peaceful lakes, lush valleys, mountain views, local culture, and unforgettable travel experiences in one of India's most stunning destinations."
+        name="Kashmir Tour Package"
+        description="Explore Kashmir through Srinagar, Gulmarg, Pahalgam, Sonmarg, Dal Lake, scenic valleys, mountain landscapes, houseboat stays, and unforgettable cultural experiences."
         url="https://indiaheritagetravel.com/tours/heavenly-kashmir-tour"
       />
 

@@ -28,7 +28,7 @@ export default function BookingCard() {
       <div className="rounded-t-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541209/map_kdtonl.png"
-          alt="Mystical North India Discovery Tour route map featuring Delhi Agra Jaipur and cultural destinations"
+          alt="Kashmir and Ladakh tour route map featuring Srinagar Leh and Himalayan destinations"
           width={400}
           height={250}
           className="w-full object-cover"
@@ -47,7 +47,7 @@ export default function BookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          Mystical North India Discovery Tour
+          Kashmir & Ladakh Tour Package
         </h3>
 
         {/* Price Label */}

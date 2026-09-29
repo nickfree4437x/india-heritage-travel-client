@@ -15,12 +15,12 @@ import {
 export default function HighlightsInclusions() {
   // Highlights data
   const highlights = [
-    "Explore Jaipur's royal palaces, forts, and Pink City heritage.",
+    "Explore Jaipur's royal palaces, historic forts, and Pink City heritage.",
     "Witness the timeless beauty of the Taj Mahal in Agra.",
-    "Discover the UNESCO-listed Ajanta & Ellora Caves.",
-    "Experience Mumbai's iconic landmarks and vibrant culture.",
-    "Explore Thekkady's wildlife sanctuary and spice plantations.",
-    "Enjoy Munnar's tea gardens, hills, and scenic landscapes.",
+    "Discover the UNESCO-listed Ajanta & Ellora Caves and their remarkable heritage.",
+    "Experience Mumbai's iconic landmarks and vibrant cultural heritage.",
+    "Explore Thekkady's wildlife sanctuary and scenic spice plantations.",
+    "Enjoy Munnar's tea gardens, rolling hills, and scenic landscapes.",
   ];
 
   // Inclusions data with icons
@@ -29,7 +29,7 @@ export default function HighlightsInclusions() {
     { icon: Car, text: "Local driver, guide" },
     { icon: Utensils, text: "Daily breakfast" },
     { icon: CreditCard, text: "All costs covered" },
-    { icon: Wifi, text: "In Car Wi-fi" },
+    { icon: Wifi, text: "In-car Wi-Fi" },
     { icon: ChefHat, text: "Cooking classes, dinner" },
     { icon: Plane, text: "Airport transfer" },
     { icon: Bus, text: "Local heritage experiences" },

@@ -24,7 +24,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541393/map_yzrzoc.png"
-          alt="Mystical North India Discovery Tour route map featuring Delhi Mandawa Jaipur and Agra"
+          alt="Kashmir tour route map featuring Srinagar Gulmarg Pahalgam and Sonmarg"
           width={400}
           height={250}
           className="w-full object-cover"
@@ -33,7 +33,7 @@ export default function BookingCard() {
     <div className="p-5">
         {/* Title */}
         <h3 className="text-[13px] sm:text-[14px] md:text-[15px] text-center font-medium text-[#AF956C] mb-2 leading-snug tracking-[0.01em]">
-          Mystical North India Discovery Tour
+          Kashmir Tour Package
         </h3>
 
         {/* Label */}

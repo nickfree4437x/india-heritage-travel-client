@@ -74,7 +74,7 @@ export const metadata: Metadata = {
 // ============================================
 // PAGE COMPONENT
 // ============================================
-export default function RoyalRajasthanPage() {
+export default function HeritageOdysseyPage() {
   return (
     <div>
       {/* Breadcrumb Schema - SEO */}

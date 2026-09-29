@@ -80,7 +80,7 @@ export default function Suitable() {
       </div>
 
       {/* Breadcrumb */}
-      <Breadcrumb title="Divine Kashmir & Exciting Ladakh" />
+      <Breadcrumb title="Kashmir & Ladakh Tour Package" />
 
       {/* Main Section */}
       <section className="bg-white pt-8 sm:pt-8 pb-8 sm:pb-10 px-4 sm:px-6">

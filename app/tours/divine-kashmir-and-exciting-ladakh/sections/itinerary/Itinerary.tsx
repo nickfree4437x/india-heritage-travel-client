@@ -33,7 +33,7 @@ export default function Itinerary() {
                Whenever you reach at the Srinagar Airport, we’ll welcome you with a sign board and take you to your well-prepared hotel for a comfortable stay.
               </p>
               <p className="mt-2">
-                Famous as ‘Heaven on Earth’, Srinagar is the summer capital of Jammu & Kashmir. It is situated in banks of Jhelum river. It has amazing houseboats, colorful Shikararas on Dal Lake & exquisite Mughal gardens.
+                Famous as ‘Heaven on Earth’, Srinagar is the summer capital of Jammu & Kashmir. It is situated on the banks of the Jhelum River.
               </p>
               <p className="mt-2">
                 Head for a daytrip to Sonamarg, known as “Meadow of Gold,” is an amazing hill station in Jammu & Kashmir. It is located at an altitude of 2,800 meters which gives stunning view of breathtaking alpine scenery, snow-covered mountains & lush green meadows.
