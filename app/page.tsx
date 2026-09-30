@@ -31,6 +31,10 @@ const ReviewsSection = dynamic(
   () => import("@/src/sections/review/Reviews")
 );
 
+const LatestBlogsSection = dynamic(
+  () => import("@/src/sections/blog-section/LatestBlogsSection")
+);
+
 const GallerySection = dynamic(
   () => import("@/src/sections/gallery/Gallery")
 );
@@ -94,6 +98,7 @@ export default function Home() {
       <Adventure />
       <Festival />
       <ReviewsSection />
+      <LatestBlogsSection/>
       <GallerySection />
       <CotactSection />
       <Footer />

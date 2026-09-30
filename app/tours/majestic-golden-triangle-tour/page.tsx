@@ -93,7 +93,7 @@ export default function Page() {
             url: "https://indiaheritagetravel.com/tours",
           },
           {
-            name: "Majestic Golden Triangle Tour",
+            name: "Golden Triangle Tour India",
             url: "https://indiaheritagetravel.com/tours/majestic-golden-triangle-tour",
           },
         ]}

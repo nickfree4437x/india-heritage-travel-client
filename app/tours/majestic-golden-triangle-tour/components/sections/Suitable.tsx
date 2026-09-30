@@ -34,7 +34,7 @@ export default function Suitable() {
       </div>
 
       <Breadcrumb
-        title="Majestic Golden Triangle Tour"
+        title="Golden Triangle Tour"
       />
 
       {/* ====================================================================

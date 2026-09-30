@@ -45,7 +45,7 @@ export default function RightBookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          A Journey Through Heritage & Wildlife
+          India Wildlife & Heritage Tour
         </h3>
 
         {/* Price Label */}

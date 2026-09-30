@@ -22,11 +22,11 @@ export default function HighlightsInclusions() {
   // ==========================================================================
 
   const highlightsList = [
-    "Explore Delhi's iconic landmarks including Red Fort and Qutub Minar",
-    "Witness the timeless beauty of the Taj Mahal in Agra",
-    "Discover Jaipur's magnificent forts, palaces, and royal heritage",
-    "Experience India's famous Golden Triangle cultural circuit",
-    "Enjoy comfortable travel with guided sightseeing experiences",
+    "Explore Delhi's iconic landmarks, including the Red Fort and Qutub Minar.",
+    "Witness the timeless beauty of the Taj Mahal in Agra.",
+    "Discover Jaipur's magnificent forts, palaces, and royal heritage.",
+    "Experience India's iconic Golden Triangle cultural circuit.",
+    "Enjoy comfortable travel with guided sightseeing experiences.",
   ];
 
   // ==========================================================================
@@ -38,7 +38,7 @@ export default function HighlightsInclusions() {
     { icon: Car, text: "Local driver, guide" },
     { icon: Utensils, text: "Daily breakfast" },
     { icon: CreditCard, text: "All costs covered" },
-    { icon: Wifi, text: "In Car Wi-fi" },
+    { icon: Wifi, text: "In car Wi-fi" },
     { icon: ChefHat, text: "Cooking classes, dinner" },
     { icon: Plane, text: "Airport transfer" },
     { icon: Bus, text: "Delhi rickshaw" },

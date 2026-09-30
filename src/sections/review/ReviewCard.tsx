@@ -76,7 +76,7 @@ export default function ReviewCard({ reviews, index, visibleCards }: Props) {
             >
               <div
                 onClick={() => setSelected(review)}
-                className="group isolate relative bg-white sm:rounded-sm overflow-hidden cursor-pointer
+                className="group isolate relative bg-white rounded-md overflow-hidden cursor-pointer
                            transition-all duration-300 shadow-sm 
                            border border-gray-100 mx-0 sm:mx-0"
               >

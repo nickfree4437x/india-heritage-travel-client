@@ -22,14 +22,16 @@ export default function ReviewsSection() {
   useEffect(() => {
     const handleResize = (): void => {
       const width = window.innerWidth;
-      if (width < 480) setVisibleCards(1); // Chhoti screens par 1
-      else if (width < 640) setVisibleCards(1); // 👈 YAHAN CHANGE KIYA - Mobile par 1 card (pehle 2 tha)
-      else if (width < 1024) setVisibleCards(2); // Tablet par 2
-      else setVisibleCards(3); // Desktop par 3
+
+      if (width < 480) setVisibleCards(1);
+      else if (width < 640) setVisibleCards(1);
+      else if (width < 1024) setVisibleCards(2);
+      else setVisibleCards(3);
     };
 
     handleResize();
     window.addEventListener("resize", handleResize);
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -53,21 +55,26 @@ export default function ReviewsSection() {
   // ===== HANDLERS =====
   const next = useCallback((): void => {
     if (maxIndex <= 0) return;
+
     setIsAutoPlaying(false);
     setIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+
     setTimeout(() => setIsAutoPlaying(true), 8000);
   }, [maxIndex]);
 
   const prev = useCallback((): void => {
     if (maxIndex <= 0) return;
+
     setIsAutoPlaying(false);
     setIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+
     setTimeout(() => setIsAutoPlaying(true), 8000);
   }, [maxIndex]);
 
   const goToSlide = useCallback((slideIndex: number): void => {
     setIsAutoPlaying(false);
     setIndex(slideIndex);
+
     setTimeout(() => setIsAutoPlaying(true), 8000);
   }, []);
 
@@ -91,7 +98,8 @@ export default function ReviewsSection() {
           </h2>
 
           <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed tracking-wide max-w-[580px] mx-auto text-[#8b6a3d]">
-            Discover authentic travel stories and unforgettable experiences from travellers exploring India's heritage and culture.
+            Discover authentic travel stories and unforgettable experiences from
+            travellers exploring India's heritage and culture.
           </p>
 
           {/* Rating */}
@@ -104,6 +112,7 @@ export default function ReviewsSection() {
                   className="text-[#c9a45c] fill-[#c9a45c]"
                 />
               ))}
+
               <span className="font-semibold text-sm sm:text-base">
                 {averageRating.toFixed(1)}
               </span>
@@ -117,33 +126,62 @@ export default function ReviewsSection() {
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
-          {/* Left Arrow - Always Visible */}
+          {/* ============================================================
+              DESKTOP / TABLET LEFT ARROW
+              Hidden on mobile
+          ============================================================ */}
           {maxIndex > 0 && (
             <button
               onClick={prev}
               aria-label="Previous reviews"
               className="
-                absolute left-0 sm:-left-4 md:-left-6 top-1/2 -translate-y-1/2 z-10
-                w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12
-                flex items-center justify-center
+                hidden sm:flex
+
+                absolute
+                left-0
+                sm:-left-4
+                md:-left-6
+                top-1/2
+                -translate-y-1/2
+                z-10
+
+                w-10 h-10
+                md:w-12 md:h-12
+
+                items-center justify-center
                 rounded-full
-                bg-white/90 backdrop-blur-md
+                bg-white/90
+                backdrop-blur-md
                 shadow-sm
                 border border-gray-200/50
                 text-[#8b6a3d]
-                hover:bg-[#c9a45c] hover:text-white hover:border-[#c9a45c]
+
+                hover:bg-[#c9a45c]
+                hover:text-white
+                hover:border-[#c9a45c]
+
                 active:scale-95
                 transition-all duration-300
-                disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-white/90 disabled:hover:text-[#8b6a3d]
+
+                disabled:opacity-30
+                disabled:cursor-not-allowed
+                disabled:hover:bg-white/90
+                disabled:hover:text-[#8b6a3d]
               "
               disabled={maxIndex <= 0}
             >
-              <ChevronLeft size={16} strokeWidth={2} className="sm:w-[18px] sm:h-[18px] md:w-[20px] md:h-[20px]" />
+              <ChevronLeft
+                size={18}
+                strokeWidth={2}
+                className="md:w-[20px] md:h-[20px]"
+              />
             </button>
           )}
 
-          {/* Cards */}
-          <div className="px-0 sm:px-8 md:px-12"> {/* 👈 Mobile par 0 padding (pehle px-4 tha) */}
+          {/* ============================================================
+              REVIEW CARDS
+          ============================================================ */}
+          <div className="px-0 sm:px-8 md:px-12">
             <ReviewCard
               reviews={reviews}
               index={index}
@@ -151,35 +189,138 @@ export default function ReviewsSection() {
             />
           </div>
 
-          {/* Right Arrow - Always Visible */}
+          {/* ============================================================
+              DESKTOP / TABLET RIGHT ARROW
+              Hidden on mobile
+          ============================================================ */}
           {maxIndex > 0 && (
             <button
               onClick={next}
               aria-label="Next reviews"
               className="
-                absolute right-0 sm:-right-4 md:-right-6 top-1/2 -translate-y-1/2 z-10
-                w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12
-                flex items-center justify-center
+                hidden sm:flex
+
+                absolute
+                right-0
+                sm:-right-4
+                md:-right-6
+                top-1/2
+                -translate-y-1/2
+                z-10
+
+                w-10 h-10
+                md:w-12 md:h-12
+
+                items-center justify-center
                 rounded-full
-                bg-white/90 backdrop-blur-md
+                bg-white/90
+                backdrop-blur-md
                 shadow-sm
                 border border-gray-200/50
                 text-[#8b6a3d]
-                hover:bg-[#c9a45c] hover:text-white hover:border-[#c9a45c]
+
+                hover:bg-[#c9a45c]
+                hover:text-white
+                hover:border-[#c9a45c]
+
                 active:scale-95
                 transition-all duration-300
-                disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-white/90 disabled:hover:text-[#8b6a3d]
+
+                disabled:opacity-30
+                disabled:cursor-not-allowed
+                disabled:hover:bg-white/90
+                disabled:hover:text-[#8b6a3d]
               "
               disabled={maxIndex <= 0}
             >
-              <ChevronRight size={16} strokeWidth={2} className="sm:w-[18px] sm:h-[18px] md:w-[20px] md:h-[20px]" />
+              <ChevronRight
+                size={18}
+                strokeWidth={2}
+                className="md:w-[20px] md:h-[20px]"
+              />
             </button>
+          )}
+
+          {/* ============================================================
+              MOBILE ARROWS
+              Positioned directly below cards and centered
+          ============================================================ */}
+          {maxIndex > 0 && (
+            <div className="flex sm:hidden justify-center items-center gap-3 mt-3">
+              {/* Mobile Previous */}
+              <button
+                onClick={prev}
+                aria-label="Previous reviews"
+                className="
+                  w-8 h-8
+                  flex items-center justify-center
+                  rounded-full
+                  bg-white/90
+                  backdrop-blur-md
+                  shadow-sm
+                  border border-gray-200/50
+                  text-[#8b6a3d]
+
+                  hover:bg-[#c9a45c]
+                  hover:text-white
+                  hover:border-[#c9a45c]
+
+                  active:scale-95
+                  transition-all duration-300
+
+                  disabled:opacity-30
+                  disabled:cursor-not-allowed
+                  disabled:hover:bg-white/90
+                  disabled:hover:text-[#8b6a3d]
+                "
+                disabled={maxIndex <= 0}
+              >
+                <ChevronLeft
+                  size={16}
+                  strokeWidth={2}
+                />
+              </button>
+
+              {/* Mobile Next */}
+              <button
+                onClick={next}
+                aria-label="Next reviews"
+                className="
+                  w-8 h-8
+                  flex items-center justify-center
+                  rounded-full
+                  bg-white/90
+                  backdrop-blur-md
+                  shadow-sm
+                  border border-gray-200/50
+                  text-[#8b6a3d]
+
+                  hover:bg-[#c9a45c]
+                  hover:text-white
+                  hover:border-[#c9a45c]
+
+                  active:scale-95
+                  transition-all duration-300
+
+                  disabled:opacity-30
+                  disabled:cursor-not-allowed
+                  disabled:hover:bg-white/90
+                  disabled:hover:text-[#8b6a3d]
+                "
+                disabled={maxIndex <= 0}
+              >
+                <ChevronRight
+                  size={16}
+                  strokeWidth={2}
+                />
+              </button>
+            </div>
           )}
         </div>
 
         {/* ===== DOTS ===== */}
         {maxIndex > 0 && (
-          <div className="flex justify-center gap-2 mt-6 sm:mt-8 mb-8">
+          <div className="flex justify-center gap-2 mt-6 sm:mt-9 mb-0 md:mb-4">
             {Array.from({ length: maxIndex + 1 }, (_, i) => (
               <button
                 key={i}

@@ -24,18 +24,33 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
         <h1
           className="
-            max-w-[700px]
-            text-3xl md:text-4xl
+            w-full
+            max-w-[340px]
+            sm:max-w-[600px]
+            md:max-w-[700px]
+            mx-auto
+            px-2
+            text-center
+            text-[23px]
+            sm:text-[30px]
+            md:text-4xl
             font-[600]
             leading-[1.1]
-            tracking-[0.04em]
+            tracking-[0.01em]
             mb-4
+            break-words
 
             opacity-0 translate-y-10
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Leh Ladakh Road <br/> Trip Package
+          <span className="block">
+            Leh Ladakh Tour Package
+          </span>
+
+          <span className="block">
+            Road Trip & Himalayan Adventure
+          </span>
         </h1>
       </div>
 

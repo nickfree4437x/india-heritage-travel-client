@@ -30,7 +30,7 @@ export default function HighlightsInclusions() {
     { icon: Car, text: "Local driver, guide" },
     { icon: Utensils, text: "Daily breakfast" },
     { icon: CreditCard, text: "All costs covered" },
-    { icon: Wifi, text: "In Car Wi-fi" },
+    { icon: Wifi, text: "In car Wi-fi" },
     { icon: CookingPot, text: "Cooking classes, dinner" },
     { icon: Plane, text: "Airport transfer" },
     { icon: Bus, text: "Local travel experiences" },

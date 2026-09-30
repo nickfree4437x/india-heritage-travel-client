@@ -15,13 +15,13 @@ import {
 export default function HighlightsInclusions() {
   // Highlights data
   const highlights = [
-    "Explore Delhi's iconic landmarks including Red Fort and Qutub Minar.",
-    "Discover Mandawa's historic havelis and fresco-painted architecture.",
-    "Experience the spiritual atmosphere of Pushkar and the Brahma Temple.",
-    "Visit Bundi's historic palaces, stepwells, and blue streets.",
+    "Explore Delhi's iconic landmarks, including the Red Fort and Qutub Minar.",
+    "Discover Mandawa's historic havelis and beautiful fresco-painted architecture.",
+    "Experience Pushkar's spiritual atmosphere, sacred lake, and Brahma Temple.",
+    "Explore Bundi's historic palaces, intricate stepwells, and distinctive blue streets.",
     "Enjoy thrilling wildlife safaris in Ranthambore National Park.",
-    "Explore Jaipur's magnificent forts, palaces, and Pink City heritage.",
-    "Witness the timeless beauty of the Taj Mahal in Agra.",
+    "Explore Jaipur's magnificent forts, palaces, and vibrant Pink City heritage.",
+    "Witness the timeless beauty of the Taj Mahal and Agra's Mughal heritage.",
   ];
 
   // Inclusions data with icons
@@ -30,7 +30,7 @@ export default function HighlightsInclusions() {
     { icon: Car, text: "Local driver, guide" },
     { icon: Utensils, text: "Daily breakfast" },
     { icon: CreditCard, text: "All costs covered" },
-    { icon: Wifi, text: "In Car Wi-fi" },
+    { icon: Wifi, text: "In car Wi-fi" },
     { icon: ChefHat, text: "Cooking classes, dinner" },
     { icon: Plane, text: "Airport transfer" },
     { icon: Bus, text: "Local cultural experiences" },

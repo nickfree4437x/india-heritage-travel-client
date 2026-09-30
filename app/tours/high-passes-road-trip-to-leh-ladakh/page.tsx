@@ -76,7 +76,7 @@ export const metadata: Metadata = {
 // ============================================
 // PAGE COMPONENT
 // ============================================
-export default function RoyalRajasthanPage() {
+export default function HighPassesLehLadakhPage() {
   return (
     <div>
       {/* Breadcrumb Schema - SEO */}
@@ -91,7 +91,7 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours",
           },
           {
-            name: "Leh Ladakh Road Trip Tour",
+            name: "Leh Ladakh Tour Package",
             url: "https://indiaheritagetravel.com/tours/high-passes-road-trip-to-leh-ladakh",
           },
         ]}
@@ -99,8 +99,8 @@ export default function RoyalRajasthanPage() {
 
       {/* Tour Schema - SEO */}
       <TourSchema
-        name="Leh Ladakh Road Trip Tour"
-        description="Embark on an unforgettable Leh Ladakh road trip featuring high mountain passes, breathtaking landscapes, monasteries, remote villages, and thrilling Himalayan experiences."
+        name="Leh Ladakh Tour Package"
+        description="Explore Leh Ladakh through high mountain passes, breathtaking Himalayan landscapes, monasteries, remote villages, Pangong Lake, Nubra Valley, and unforgettable road trip experiences."
         url="https://indiaheritagetravel.com/tours/high-passes-road-trip-to-leh-ladakh"
       />
 

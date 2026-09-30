@@ -30,7 +30,7 @@ export default function Itinerary() {
 
             <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p>
-               Whenever you reach at the Delhi Airport, we’ll welcome you with a sign board and take you to your well-prepared hotel for a comfortable stay.
+                Upon arrival at Delhi Airport, we’ll welcome you with a signboard and transfer you to your hotel for a comfortable stay.
               </p>
               <p className="mt-4">
                 If you prefer to wake up early, you can explore more into Delhi’s rich history, politics, and spirituality. Explore everything from iconic landmarks such as India Gate, the President’s House, and Parliament House to the city’s major role in the Freedom Struggle.

@@ -80,7 +80,7 @@ export const metadata: Metadata = {
 // ============================================
 // PAGE COMPONENT
 // ============================================
-export default function RoyalRajasthanPage() {
+export default function HeritageWildlifeTourPage() {
   return (
     <div>
       {/* Breadcrumb Schema - SEO */}
@@ -95,7 +95,7 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours",
           },
           {
-            name: "Journey Through Heritage & Wildlife Tour",
+            name: "India Wildlife & Heritage Tour",
             url: "https://indiaheritagetravel.com/tours/journey-through-heritage-wildlife",
           },
         ]}
@@ -103,7 +103,7 @@ export default function RoyalRajasthanPage() {
 
       {/* Tour Schema - SEO */}
       <TourSchema
-        name="India Wildlife Tour"
+        name="India Wildlife & Heritage Tour"
         description="Experience India's wildlife and cultural heritage through tiger safaris, national parks, UNESCO heritage sites, historic landmarks, natural landscapes, and unforgettable travel experiences."
         url="https://indiaheritagetravel.com/tours/journey-through-heritage-wildlife"
       />

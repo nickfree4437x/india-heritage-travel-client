@@ -27,7 +27,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779543141/map_b6wzbq.png"
-          alt="Mystical North India Discovery Tour route map covering Delhi Agra Jaipur Varanasi and heritage destinations"
+          alt="Leh Ladakh tour route map featuring high mountain passes Pangong Lake Nubra Valley and Himalayan destinations"
           width={400}
           height={250}
           className="w-full object-cover"
@@ -45,7 +45,7 @@ export default function BookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          Mystical North India Discovery Tour
+          Leh Ladakh Tour Package
         </h3>
 
         {/* Price Label */}
