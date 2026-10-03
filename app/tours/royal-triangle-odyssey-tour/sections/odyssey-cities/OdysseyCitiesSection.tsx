@@ -7,38 +7,38 @@ export default function OdysseyCitiesSection() {
   const cities = [
     {
       id: "delhi",
-      title: "Delhi – A Blend Of History & Royalty",
+      title: "Delhi – History, Heritage & Modern Culture",
       desc: "Discover Delhi, which is the mixture of history and modernity with Vibrant, contemporary, and bursting colours. In Old Delhi, you’ll experience the rich colours of humanity in all its shades and sensations.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535347/delhi_zvevyd.jpg",
-      alt: "Old Delhi heritage landmarks in Royal Triangle Odyssey Tour India by India Heritage Travel"
+      alt: "Delhi heritage landmarks and historic sites in India"
     },
     {
       id: "mandawa",
-      title: "Mandawa – A Town Of Timeless Heritage And Beauty",
+      title: "Mandawa – Timeless Heritage & Frescoed Havelis",
       desc: "This Rajasthani gem has streets lined with beautifully painted frescoes and historic havelis, each reflecting centuries of art, culture, and architectural brilliance. This is a living gallery of Rajasthan’s architectural magnificence and the stories echoes on its walls.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535380/mandawa_knhwkt.jpg",
-      alt: "Mandawa heritage havelis in Royal Triangle Odyssey Tour India by India Heritage Travel"
+      alt: "Mandawa frescoed havelis and Rajasthan heritage architecture"
     },
     {
       id: "jaipur",
-      title: "Jaipur – The Pink City",
+      title: "Jaipur – The Pink City & Royal Heritage",
       desc: "Jaipur is the heart of Rajasthan and a UNESCO World Heritage City. Known as the Pink City, it is famous for its magnificent forts, royal palaces, vibrant bazaars, traditional crafts, and rich cultural heritage. Jaipur offers a perfect blend of history, architecture, local cuisine, and authentic Rajasthani experiences.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535421/jaipur_eplhjn.jpg",
-      alt: "Amber Fort Jaipur in Royal Triangle Odyssey Tour India by India Heritage Travel"
+      alt: "Jaipur Pink City and Amber Fort in Rajasthan"
     },
     {
       id: "agra",
-      title: "Agra – Where History Rules Supreme",
+      title: "Agra – Taj Mahal & Mughal Heritage",
       desc: "Agra is home to the iconic Taj Mahal, one of the Seven Wonders of the World and a UNESCO World Heritage Site. Discover the grandeur of the Mughal Empire through magnificent monuments, historic forts, beautiful gardens, and bustling local markets that reflect the city's rich cultural legacy.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535453/agra_cgybs3.jpg",
-      alt: "Taj Mahal Agra in Royal Triangle Odyssey Tour India by India Heritage Travel"
+      alt: "Agra Taj Mahal and Mughal heritage architecture"
     },
     {
       id: "varanasi",
-      title: "Varanasi – The Spiritual Heart Of India",
+      title: "Varanasi – Spiritual Heritage & Ganga Ghats",
       desc: "Varanasi, the land is ultimate spot of pilgrimage. It is also known as the oldest living cities in the world. Also Varanasi cannot be missed without a visit to Ganga Ghats. Varanasi throughout the ages, held historical significance. Also it has been centre of learning, spirituality, experiencing inner divine, culture, pilgrimage.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535511/varanasi_djb6cb.jpg",
-      alt: "Varanasi riverside in Royal Triangle Odyssey Tour India by India Heritage Travel"
+      alt: "Varanasi Ganges ghats and spiritual heritage in India"
     },
   ];
 

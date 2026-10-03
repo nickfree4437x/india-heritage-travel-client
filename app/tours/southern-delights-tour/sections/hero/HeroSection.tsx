@@ -24,23 +24,22 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">
 
         <h1
-  className="
-    w-full
-    max-w-[90%] sm:max-w-[600px] md:max-w-[700px]
-    px-2 sm:px-4
-    text-2xl sm:text-3xl md:text-4xl
-    font-[600]
-    leading-[1.15]
-    tracking-[0.02em] sm:tracking-[0.03em] md:tracking-[0.04em]
-    mb-4
-    text-center
-    opacity-0 translate-y-10
-    animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
-  "
->
-  <span className="block">South India Heritage</span>
-  <span className="block">Tour Package</span>
-</h1>
+          className="
+            w-full
+            max-w-[90%] sm:max-w-[600px] md:max-w-[700px]
+            px-2 sm:px-4
+            text-2xl sm:text-3xl md:text-4xl
+            font-[600]
+            leading-[1.15]
+            tracking-[0.02em] sm:tracking-[0.03em] md:tracking-[0.04em]
+            mb-4
+            text-center
+            opacity-0 translate-y-10
+            animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
+          "
+        >
+          <span className="block">South India Cultural Tour</span>
+        </h1>
 
       </div>
 

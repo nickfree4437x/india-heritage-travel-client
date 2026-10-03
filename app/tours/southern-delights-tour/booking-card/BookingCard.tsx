@@ -27,7 +27,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779536554/map_txdsbb.png"
-          alt="Route map of Southern Delights A Journey Through Time Tour by India Heritage Travel"
+          alt="South India tour route map featuring temples, heritage sites and cultural destinations"
           width={400}
           height={250}
           className="w-full object-cover"
@@ -45,7 +45,7 @@ export default function BookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          Southern Delights: A Journey Through Time Tour
+          South India Cultural Tour
         </h3>
 
         {/* Price Label */}

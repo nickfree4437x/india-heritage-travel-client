@@ -27,7 +27,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529975/map_slfy0l.png"
-          alt="Route map of Mystical North India Discovery Tour by India Heritage Travel"
+          alt="North India tour route map featuring Delhi, Agra, Jaipur and Varanasi"
           width={400}
           height={250}
           className="w-full object-cover"
@@ -45,7 +45,7 @@ export default function BookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          Mystical North India Discovery Tour
+          North India Tour Package
         </h3>
 
         {/* Price Label */}

@@ -81,7 +81,7 @@ export const metadata: Metadata = {
 // ============================================
 // PAGE COMPONENT
 // ============================================
-export default function RoyalRajasthanPage() {
+export default function GoldenTriangleVaranasiTourPage() {
   return (
     <div>
       {/* Breadcrumb Schema - SEO */}
@@ -96,7 +96,7 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours",
           },
           {
-            name: "Royal Triangle Odyssey Tour",
+            name: "The Royal Heritage Trail Tour",
             url: "https://indiaheritagetravel.com/tours/royal-triangle-odyssey-tour",
           },
         ]}

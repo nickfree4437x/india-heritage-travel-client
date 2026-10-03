@@ -27,7 +27,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779537182/map_dkqfxg.png"
-          alt="Southern Splendors Culture and Nature Trail Tour route map by India Heritage Travel"
+          alt="South India heritage tour route map featuring temples, cultural landmarks and heritage destinations"
           width={400}
           height={250}
           className="w-full object-cover"
@@ -45,7 +45,7 @@ export default function BookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          Southern Splendors: Culture & Nature Trail Tour
+          South India Heritage Tour
         </h3>
 
         {/* Price Label */}

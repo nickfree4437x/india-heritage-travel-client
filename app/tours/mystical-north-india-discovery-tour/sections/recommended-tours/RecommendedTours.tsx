@@ -6,22 +6,22 @@ import Link from "next/link";
 // Explore More India Heritage Tours data
 const tours = [
   {
-    title: "A Journey Through Heritage & Wildlife",
-    desc: "Embark on a 13-day odyssey through heritage and wildlife on the 'A Journey Through Heritage & Wildlife' tour, from the captivating blend of history in Delhi to the wildlife wonders of Ranthambore, all amidst timeless heritage, desert charm, and regal splendor.",
+    title: "India Wildlife Tour – Heritage & Wildlife Experience",
+    desc: "Explore India's heritage and wildlife on a journey covering Delhi, Rajasthan, Jaipur, Agra, and Ranthambore. Discover historic landmarks, royal heritage, cultural experiences, and thrilling wildlife adventures.",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530718/tour1_sptbbx.webp",
     alt: "Ranthambore tiger safari and Rajasthan heritage attractions tour",
     slug: "/tours/journey-through-heritage-wildlife",
   },
   {
-    title: "Royal Triangle Odyssey Tour",
-    desc: "Experience a 10-day 'Royal Triangle Odyssey' from the kaleidoscope of culture in Delhi to the spiritual heart of Varanasi, with enchanting heritage in Mandawa, regal splendor in Jaipur, and the historical magnificence of Agra in between.",
+    title: "Golden Triangle & Varanasi Tour",
+    desc: "Experience Delhi, Jaipur, Agra, and Varanasi on a memorable North India journey featuring iconic heritage landmarks, the Taj Mahal, royal architecture, spiritual traditions, and rich cultural experiences.",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530743/tour2_peepxe.webp",
     alt: "Delhi Jaipur Agra and Varanasi heritage tour across North India",
     slug: "/tours/royal-triangle-odyssey-tour",
   },
   {
-    title: "Heritage Odyssey: North To South India",
-    desc: "Explore North to South India in 16 days on the 'Heritage Odyssey' tour. From Delhi's history to Ajanta's ancient rock art and Mumbai's vibrant charm, experience a rich tapestry of heritage and culture along the way.",
+    title: "India Heritage Tour – North to South",
+    desc: "Travel across India from North to South, exploring Delhi's historic landmarks, Ajanta's ancient rock-cut heritage, Mumbai's cultural attractions, and diverse traditions along the way.",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779530772/tour3_vliois.webp",
     alt: "North to South India tour featuring Ajanta Caves Mumbai and cultural landmarks",
     slug: "/tours/heritage-odyssey-tour",
@@ -32,14 +32,16 @@ export default function RecommendedTours() {
   return (
     <section className="max-w-[1400px] mx-auto px-8 py-12">
       {/* Section Heading */}
-      <h2 className="
-        text-[20px] sm:text-[24px] md:text-[28px]
-        font-semibold
-        text-center
-        text-[#2c2c2c]
-        tracking-wide
-        mb-6 sm:mb-8
-      ">
+      <h2
+        className="
+          text-[20px] sm:text-[24px] md:text-[28px]
+          font-semibold
+          text-center
+          text-[#2c2c2c]
+          tracking-wide
+          mb-6 sm:mb-8
+        "
+      >
         Explore More India Heritage Tours
       </h2>
 
@@ -51,15 +53,17 @@ export default function RecommendedTours() {
             href={tour.slug}
             className="block group"
           >
-            <div className="
-              bg-white rounded-sm
-              shadow-sm
-              border border-[#eee7dd]
-              overflow-hidden
-              transition-all duration-500
-              hover:shadow-md
-              hover:-translate-y-2
-            ">
+            <div
+              className="
+                bg-white rounded-sm
+                shadow-sm
+                border border-[#eee7dd]
+                overflow-hidden
+                transition-all duration-500
+                hover:shadow-md
+                hover:-translate-y-2
+              "
+            >
               {/* Tour Image */}
               <div className="relative h-[240px] w-full overflow-hidden">
                 <Image
@@ -70,34 +74,40 @@ export default function RecommendedTours() {
                 />
 
                 {/* Image Overlay */}
-                <div className="
-                  absolute inset-0
-                  bg-black/10
-                  opacity-0
-                  group-hover:opacity-100
-                  transition
-                " />
+                <div
+                  className="
+                    absolute inset-0
+                    bg-black/10
+                    opacity-0
+                    group-hover:opacity-100
+                    transition
+                  "
+                />
               </div>
 
               {/* Tour Content */}
               <div className="p-6 space-y-3">
-                <h3 className="
-                  text-[17px]
-                  font-semibold
-                  text-red-500
-                  leading-snug
-                  group-hover:underline
-                ">
+                <h3
+                  className="
+                    text-[17px]
+                    font-semibold
+                    text-red-500
+                    leading-snug
+                    group-hover:underline
+                  "
+                >
                   {tour.title}
                 </h3>
 
-                <p className="
-                  text-gray-700
-                  text-[13px]
-                  font-light
-                  leading-relaxed
-                  line-clamp-4
-                ">
+                <p
+                  className="
+                    text-gray-700
+                    text-[13px]
+                    font-light
+                    leading-relaxed
+                    line-clamp-4
+                  "
+                >
                   {tour.desc}
                 </p>
               </div>

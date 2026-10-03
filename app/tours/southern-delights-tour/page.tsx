@@ -75,7 +75,7 @@ export const metadata: Metadata = {
 // ============================================
 // PAGE COMPONENT
 // ============================================
-export default function RoyalRajasthanPage() {
+export default function SouthIndiaCulturalTourPage() {
   return (
     <div>
       {/* Breadcrumb Schema - SEO */}
@@ -90,7 +90,7 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours",
           },
           {
-            name: "Southern Delights Tour",
+            name: "South India Cultural Tour",
             url: "https://indiaheritagetravel.com/tours/southern-delights-tour",
           },
         ]}
@@ -99,7 +99,7 @@ export default function RoyalRajasthanPage() {
       {/* Tour Schema - SEO */}
       <TourSchema
         name="South India Cultural Tour"
-        description="Explore the cultural richness of South India through historic temples, scenic landscapes, local traditions, authentic cuisine, and unforgettable travel experiences."
+        description="Explore South India through historic temples, heritage sites, scenic landscapes, local traditions, authentic cuisine, and unforgettable cultural experiences across iconic destinations."
         url="https://indiaheritagetravel.com/tours/southern-delights-tour"
       />
 

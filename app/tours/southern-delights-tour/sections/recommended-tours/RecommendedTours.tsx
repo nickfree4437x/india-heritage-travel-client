@@ -13,7 +13,7 @@ const tours = [
     slug: "/tours/the-royal-heritage-trail-tour",
   },
   {
-    title: "A Journey Through Heritage & Wildlife",
+    title: "India Wildlife & Heritage Tour",
     desc: "Embark on a 13-day odyssey through heritage and wildlife on the 'A Journey Through Heritage & Wildlife' tour, from the captivating blend of history in Delhi to the wildlife wonders of Ranthambore, desert charm, and regal splendor.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779532950/hero_xrxpym.jpg",
     alt: "A Journey Through Heritage and Wildlife tour package by India Heritage Travel",

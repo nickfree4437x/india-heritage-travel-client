@@ -27,7 +27,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531381/map_nc9xhj.png"
-          alt="Route map of Royal Rajasthan and Sacred Ganges Tour by India Heritage Travel"
+          alt="Rajasthan and Varanasi tour route map featuring royal heritage and sacred Ganges destinations"
           width={400}
           height={250}
           className="w-full object-cover"
@@ -47,7 +47,7 @@ export default function BookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          Royal Rajasthan & Sacred Ganges Tour
+          Rajasthan & Varanasi Tour Package
         </h3>
 
         {/* Price Label */}

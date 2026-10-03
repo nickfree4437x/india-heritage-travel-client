@@ -96,7 +96,7 @@ export default function SouthernSplendorsPage() {
             url: "https://indiaheritagetravel.com/tours",
           },
           {
-            name: "Southern Splendors Tour",
+            name: "South India Heritage Tour",
             url: "https://indiaheritagetravel.com/tours/southern-splendors-tour",
           },
         ]}

@@ -13,8 +13,8 @@ const tours = [
     slug: "/tours/the-royal-heritage-trail-tour",
   },
   {
-    title: "Mystical North India Discovery",
-    desc: "Discover the mystical North India in 12 days with 'Mystical North India Discovery,' from Delhi to Varanasi, with timeless heritage and sculpted wonders in between.",
+    title: "North India Tour Package",
+    desc: "Discover North India from Delhi to Varanasi, exploring historic cities, heritage landmarks, cultural traditions, and spiritual experiences along the way.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779529935/hero_vfhtr5.jpg",
     alt: "Mystical North India Discovery Tour covering Delhi Agra Khajuraho and Varanasi",
     slug: "/tours/mystical-north-india-discovery-tour",

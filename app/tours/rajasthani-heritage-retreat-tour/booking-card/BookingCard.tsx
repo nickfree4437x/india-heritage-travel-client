@@ -27,7 +27,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779528132/map_vhzw0g.webp"
-          alt="Route map of Rajasthani Heritage Retreat Tour by India Heritage Travel"
+          alt="Rajasthan tour route map featuring Jaipur Udaipur Jodhpur and Jaisalmer"
           width={400}
           height={250}
           priority

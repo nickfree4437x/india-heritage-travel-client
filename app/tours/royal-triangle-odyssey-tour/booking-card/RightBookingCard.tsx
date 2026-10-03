@@ -27,7 +27,7 @@ export default function RightBookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779535120/map_dcby42.png"
-          alt="Route map of The Royal Heritage Trail Tour by India Heritage Travel"
+          alt="Golden Triangle with Varanasi tour route map featuring Delhi, Agra, Jaipur, Mandawa and Varanasi"
           width={400}
           height={250}
           className="w-full object-cover"
