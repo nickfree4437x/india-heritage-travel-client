@@ -27,7 +27,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542106/map_dbu3gu.png"
-          alt="Mystical North India Discovery Tour route map by India Heritage Travel"
+          alt="Spiti Valley tour route map featuring Himalayan villages, monasteries and mountain landscapes"
           width={400}
           height={250}
           className="w-full object-cover"
@@ -45,7 +45,7 @@ export default function BookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          Mystical North India Discovery Tour
+          Spiti Valley Tour Package
         </h3>
 
         {/* Price Label */}

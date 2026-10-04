@@ -76,7 +76,7 @@ export const metadata: Metadata = {
 // ============================================
 // PAGE COMPONENT
 // ============================================
-export default function SpitiValleyTrekAndTourPage() {
+export default function SpitiValleyTourPackagePage() {
   return (
     <div>
       {/* Breadcrumb Schema - SEO */}
@@ -91,7 +91,7 @@ export default function SpitiValleyTrekAndTourPage() {
             url: "https://indiaheritagetravel.com/tours",
           },
           {
-            name: "Spiti Valley Trek & Tour",
+            name: "Spiti Valley Tour Package",
             url: "https://indiaheritagetravel.com/tours/spiti-valley-trek-and-tour",
           },
         ]}
@@ -100,7 +100,7 @@ export default function SpitiValleyTrekAndTourPage() {
       {/* Tour Schema - SEO */}
       <TourSchema
         name="Spiti Valley Tour Package"
-        description="Experience the rugged beauty of Spiti Valley through scenic treks, mountain villages, monasteries, dramatic landscapes, and unforgettable Himalayan adventures."
+        description="Explore Spiti Valley through ancient monasteries, high-altitude villages, dramatic Himalayan landscapes, scenic treks, and unforgettable adventure experiences."
         url="https://indiaheritagetravel.com/tours/spiti-valley-trek-and-tour"
       />
 

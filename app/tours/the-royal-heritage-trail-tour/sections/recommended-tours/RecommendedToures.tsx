@@ -12,13 +12,13 @@ const tours = [
     slug: "/tours/royal-triangle-odyssey-tour",
   },
   {
-    title: "Rajasthani Heritage Retreat",
+    title: "Rajasthani Heritage Retreat Tour",
     desc: "Indulge in a 16-day 'Rajasthani Heritage Retreat' through Delhi's history, timeless beauty in Mandawa, desert tales in Jaisalmer, and a journey of romance and regal splendor in Udaipur, all while exploring the rich heritage of Rajasthan.",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779527998/heritage_b4eaqj.jpg",
     slug: "/tours/rajasthani-heritage-retreat-tour",
   },
   {
-    title: "Coastal Treasures & Mountain Magic",
+    title: "South India Cultural Tour",
     desc: "Experience a 10-day journey of 'Coastal Treasures & Mountain Magic' from Cochin's historical charm to the lush greenery of Munnar, all while enjoying coastal delights, the majesty of nature in Thekkady, and the vibrant mosaic of life and dreams in Mumbai.",
     img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779523352/coastal_uysoj5.jpg",
     slug: "/tours/coastal-treasures-mountain-magic-tour",

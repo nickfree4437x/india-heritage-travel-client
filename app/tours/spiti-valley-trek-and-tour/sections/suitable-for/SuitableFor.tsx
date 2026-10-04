@@ -87,7 +87,7 @@ export default function SuitableFor() {
       </div>
 
       {/* Breadcrumb */}
-      <Breadcrumb title="Spiti Valley Trek & Tour" />
+      <Breadcrumb title="Spiti Valley Tour Package" />
 
       {/* Main Section */}
       <section className="bg-white pt-8 sm:pt-8 pb-8 sm:pb-10 px-4 sm:px-6">

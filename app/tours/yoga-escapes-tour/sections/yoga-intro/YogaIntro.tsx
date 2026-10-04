@@ -12,7 +12,7 @@ export default function YogaIntro() {
             mb-2 sm:mb-4
             text-[#2c2c2c]
             tracking-wide">
-          Discover Peace Through Yoga Retreats in India
+          Yoga Retreat India – Yoga, Meditation & Wellness
         </h2>
 
         {/* Content */}

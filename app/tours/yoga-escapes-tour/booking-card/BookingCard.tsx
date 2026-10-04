@@ -27,7 +27,7 @@ export default function BookingCard() {
       <div className="rounded-md overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779544771/map_zaegus.png"
-          alt="Yoga escapes tour route map in India"
+          alt="Yoga Retreat India route map featuring yoga, meditation and wellness destinations"
           width={400}
           height={250}
           className="w-full object-cover"
@@ -45,7 +45,7 @@ export default function BookingCard() {
           leading-snug
           tracking-[0.01em]
         ">
-          Yoga Escapes: Discover Balance & Rejuvenate
+          Yoga Escapes Tour
         </h3>
 
         {/* Price Label */}

@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779544853/yoga_qbjzyi.webp"
-          alt="Yoga retreat tour in India featuring meditation, wellness experiences and spiritual rejuvenation"
+          alt="Yoga Retreat India featuring yoga, meditation, wellness and spiritual experiences"
           fill
           priority
           className="object-cover object-center will-change-transform"

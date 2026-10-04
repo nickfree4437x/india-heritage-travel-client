@@ -11,26 +11,26 @@ export default function TourDetails() {
   const cities = [
     {
       id: "delhi",
-      title: "Delhi- A Blend Of History & Royalty",
-      desc: "Discover Delhi, which is the mixture of history and modernity with Vibrant, contemporary, and bursting colours. In Old Delhi, you’ll experience the rich colours of humanity in all its shades and sensations.",
+      title: "Delhi – History, Heritage & Modern Culture",
+      desc: "Discover Delhi, India's capital city, where historic landmarks, vibrant local culture, and modern life come together. Explore Old Delhi and experience the city's rich history, diverse traditions, and architectural heritage as part of your Spiti Valley Tour Package.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542152/delhi_x74w1o.jpg",
     },
     {
       id: "chandigarh",
-      title: "Chandigarh- Urban & Modern City​",
-      desc: "Chandigarh is located on the foothills of Shivaliks & is famous as one of the best in urban planning & modern architecture. It is the dream city of India’s 1st prime Minister, Sh. Jawahar Lal Nehru & is planned by famous French architect Le Cobuiser.",
+      title: "Chandigarh – Modern Architecture & Urban Heritage",
+      desc: "Chandigarh is known for its modern urban planning, distinctive architecture, and location at the foothills of the Shivalik Hills. Designed with a focus on planned development and contemporary architecture, the city offers a unique contrast before your journey into the Himalayan landscapes of Spiti Valley.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542249/chandigarh_dtlwll.jpg",
     },
     {
       id: "manali",
-      title: "Manali- A Picturesque Hill Station​",
+      title: "Manali – Himalayan Landscapes & Adventure",
       desc: "It is a popular tourist destination which serves a gateway to Lahaul & spiti district as well as Leh Ladakh. This has beautiful place which has amazing views, greenery, snow0kissed peaks, lush valleys.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542288/manali_a5vjkq.jpg",
     },
     {
       id: "chandratal",
       title: "Chandratal- Moon Lake Of Himachal",
-      desc: "Also known as ‘Moon-Lake’, it is high altitude lake located in Spiti valley of Himachal Pradesh. Famous for crystal waters & crescent shape, stunning landscapes.",
+      desc: "Chandratal, meaning Moon Lake, is a high-altitude lake in Spiti Valley known for its crescent shape, clear waters, and dramatic Himalayan surroundings. Its remote setting and striking landscapes make it one of the memorable highlights of a Spiti Valley Tour.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542330/chandratal_wbcvan.jpg",
     },
     {

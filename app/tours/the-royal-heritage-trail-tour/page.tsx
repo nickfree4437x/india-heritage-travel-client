@@ -96,7 +96,7 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com/tours",
           },
           {
-            name: "Royal Rajasthan Tour",
+            name: "The Royal Heritage Trail Tour",
             url: "https://indiaheritagetravel.com/tours/the-royal-heritage-trail-tour",
           },
         ]}

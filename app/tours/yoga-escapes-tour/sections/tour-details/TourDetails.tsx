@@ -7,25 +7,25 @@ export default function TourDetails() {
   const cities = [
     {
       id: "delhi",
-      title: "Delhi",
+      title: "Delhi – History, Heritage & Modern Culture",
       desc: "Discover Delhi, where history and modernity intertwine in a captivating dance. Vibrant, contemporary, and bursting with colors. In Old Delhi, you’ll experience the rich tapestry of humanity in all its hues and sensations.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779545616/delhi_pls0k0.jpg",
     },
     {
       id: "agra",
-      title: "Agra",
+      title: "Agra – Taj Mahal & Mughal Heritage",
       desc: "Enter a realm where the echoes of the Mughal empire still linger, and uncover a marvel born from a timeless love tale: The Taj Mahal. Explore intriguing tombs, stately forts, and vibrant marketplaces that eagerly await your presence",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779545653/agra_f9nytr.webp",
     },
     {
       id: "jaipur",
-      title: "Jaipur",
+      title: "Jaipur – The Pink City & Royal Heritage",
       desc: "Discover the heart of Rajasthan, where the historical and vibrant Pink City, once home to the Jaipur Royal Family, seamlessly blends the past with the present in a truly unique experience.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779545725/jaipur_br1zcy.jpg",
     },
     {
       id: "rishikesh",
-      title: "Rishikesh",
+      title: "Rishikesh – Yoga, Meditation & Spiritual Wellness",
       desc: "Rishikesh is a serene town in northern India, nestled in the Himalayan foothills. It’s renowned as the “Yoga Capital of the World,” attracting yoga enthusiasts and spiritual seekers. Situated along the sacred Ganges River, it’s also a hub for adventure tourism, offering activities like white-water rafting and trekking. The city’s spiritual significance and breathtaking natural beauty make it a popular destination for those seeking both inner peace and outdoor adventure",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779545778/rishikesh_bgk7ym.webp",
     },

@@ -26,7 +26,7 @@ export default function RecommendedTours() {
         tracking-wide
         mb-6 sm:mb-8
       ">
-        Explore More India Heritage Tours
+        Explore More India Wellness Tours
       </h2>
 
       {/* Tour Cards */}

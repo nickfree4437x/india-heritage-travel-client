@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779534877/trail-tour_ypzior.png"
-          alt="Royal Rajasthan Tour featuring historic forts, palaces, and cultural heritage"
+          alt="Golden Triangle with Mandawa tour featuring Delhi, Agra, Jaipur and Mandawa heritage landmarks"
           fill
           priority
           className="object-cover object-center will-change-transform"
@@ -37,7 +37,7 @@ export default function HeroSection() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Royal Heritage <br/> Tour
+          The Royal Heritage <br/> Tour
         </h1>
 
       </div>
