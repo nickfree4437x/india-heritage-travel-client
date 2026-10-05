@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547846/kumbh_arulyq.jpg"
-          alt="Kumbh Mela Tour India with sacred rituals, holy river ceremonies, spiritual pilgrims, and cultural traditions in Prayagraj"
+          alt="Kumbh Mela Tour India featuring sacred rituals, spiritual traditions, pilgrims, cultural experiences and Prayagraj"
           fill
           priority
           className="object-cover object-center will-change-transform"

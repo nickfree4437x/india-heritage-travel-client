@@ -33,7 +33,7 @@ import ExploreMoreSection from "./content/ExploreMoreSection";
 // ============================================
 // PAGE COMPONENT
 // ============================================
-export default function HoliDetails() {
+export default function HoliFestivalTour() {
   const holiSeo = festivalSeoData.holi;
 
   return (
@@ -50,7 +50,7 @@ export default function HoliDetails() {
             url: "https://indiaheritagetravel.com/festivals",
           },
           {
-            name: "Holi Festival",
+            name: "Holi Festival Tour",
             url: "https://indiaheritagetravel.com/festivals/holi",
           },
         ]}
@@ -58,7 +58,7 @@ export default function HoliDetails() {
 
       {/* Event Schema - SEO */}
       <EventSchema
-        name="Holi Festival"
+        name="Holi Festival Tour"
         description={holiSeo.description}
         url="https://indiaheritagetravel.com/festivals/holi"
         image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547592/holi_cx2jwa.jpg"
@@ -70,7 +70,7 @@ export default function HoliDetails() {
       <StickyNav />
 
       {/* Festival Breadcrumb */}
-      <FestivalBreadcrumb title="Holi Festival" />
+      <FestivalBreadcrumb title="Holi Festival Tour" />
 
       <DesignedFor />
       <TourDetailsContent />

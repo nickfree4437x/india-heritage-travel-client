@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547592/holi_cx2jwa.jpg"
-          alt="Holi Festival Tour India with vibrant color celebrations, traditional festivities, and cultural experiences in Mathura and Vrindavan"
+          alt="Holi Festival Tour India featuring vibrant colours, traditional celebrations, cultural experiences, Mathura and Vrindavan"
           fill
           priority
           className="object-cover object-center will-change-transform"

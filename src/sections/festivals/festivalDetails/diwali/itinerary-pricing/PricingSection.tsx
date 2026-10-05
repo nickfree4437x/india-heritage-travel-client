@@ -52,7 +52,7 @@ export default function PricingSection() {
             tracking-wide
             mb-4 sm:mb-6
           ">
-            Plan Freely with All-Inclusive Pricing
+            Diwali Festival Tour Pricing
           </h2>
         </div>
 

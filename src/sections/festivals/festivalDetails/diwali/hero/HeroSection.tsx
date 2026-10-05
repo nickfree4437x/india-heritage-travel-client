@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547715/diwali_yi6jku.jpg"
-          alt="Diwali Festival Tour India with illuminated temples, traditional lamps, and cultural celebrations in Jaipur and Varanasi"
+          alt="Diwali Festival Tour India featuring traditional lamps, festive celebrations, cultural experiences and heritage destinations"
           fill
           priority
           className="object-cover object-center will-change-transform"

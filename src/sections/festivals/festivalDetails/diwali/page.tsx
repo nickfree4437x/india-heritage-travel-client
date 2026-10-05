@@ -54,7 +54,7 @@ export default function DiwaliDetails() {
             url: "https://indiaheritagetravel.com/festivals",
           },
           {
-            name: "Diwali Festival",
+            name: "Diwali Festival Tour",
             url: "https://indiaheritagetravel.com/festivals/diwali",
           },
         ]}
@@ -62,7 +62,7 @@ export default function DiwaliDetails() {
 
       {/* Event Schema - SEO */}
       <EventSchema
-        name="Diwali Festival"
+        name="Diwali Festival Tour"
         description={diwaliSeo.description}
         url="https://indiaheritagetravel.com/festivals/diwali"
         image="https://res.cloudinary.com/dja5yspwr/image/upload/v1782138779/suchandra-roy-chowdhury-cM8X2DDvnGE-unsplash_qnzre5.jpg"
@@ -74,7 +74,7 @@ export default function DiwaliDetails() {
       <StickyNav />
 
       {/* Festival Breadcrumb */}
-      <FestivalBreadcrumb title="Diwali Festival" />
+      <FestivalBreadcrumb title="Diwali Festival Tour" />
 
       <DesignedFor />
       <AboutSection />

@@ -37,7 +37,7 @@ import ExploreMoreSection from "./content/ExploreMoreSection";
 // ============================================
 // PAGE COMPONENT
 // ============================================
-export default function PushkarDetails() {
+export default function PushkarCamelFairTour() {
   const pushkarSeo = festivalSeoData.pushkar;
 
   return (
@@ -54,7 +54,7 @@ export default function PushkarDetails() {
             url: "https://indiaheritagetravel.com/festivals",
           },
           {
-            name: "Pushkar Camel Fair",
+            name: "Pushkar Camel Fair Tour",
             url: "https://indiaheritagetravel.com/festivals/pushkar",
           },
         ]}
@@ -62,7 +62,7 @@ export default function PushkarDetails() {
 
       {/* Event Schema - SEO */}
       <EventSchema
-        name="Pushkar Camel Fair"
+        name="Pushkar Camel Fair Tour"
         description={pushkarSeo.description}
         url="https://indiaheritagetravel.com/festivals/pushkar"
         image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547787/Pushkar_k4ugcf.png"
@@ -74,7 +74,7 @@ export default function PushkarDetails() {
       <StickyNav />
 
       {/* Festival Breadcrumb */}
-      <FestivalBreadcrumb title="Pushkar Camel Fair" />
+      <FestivalBreadcrumb title="Pushkar Camel Fair Tour" />
 
       <DesignedFor />
       <AboutSection />

@@ -7,7 +7,7 @@ const data = [
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550070/pushkar1_gjqiea.jpg",
     title: "The Spirit of Pushkar",
-    desc: "Witness Rajasthan’s most vibrant desert gathering — with camels, colors, and cultural traditions.",
+    desc: "Witness Rajasthan’s most vibrant desert gathering with camels, colors, and cultural traditions.",
   },
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550114/pushkar2_guzkh2.jpg",
@@ -42,7 +42,7 @@ const data = [
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779548565/taj_lprg3e.jpg",
     title: "Timeless Beauty of the Taj",
-    desc: "Visit the Taj Mahal — a white marble wonder and symbol of eternal love, glowing at sunrise.",
+    desc: "Visit the Taj Mahal a white marble wonder and symbol of eternal love, glowing at sunrise.",
   },
 ];
 

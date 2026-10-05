@@ -36,7 +36,7 @@ import ExploreSection from "./content/ExploreSection";
 // ============================================
 // PAGE COMPONENT
 // ============================================
-export default function KumbhDetails() {
+export default function KumbhMelaTour() {
   const kumbhSeo = festivalSeoData.kumbh;
 
   return (
@@ -53,7 +53,7 @@ export default function KumbhDetails() {
             url: "https://indiaheritagetravel.com/festivals",
           },
           {
-            name: "Kumbh Mela",
+            name: "Kumbh Mela Tour",
             url: "https://indiaheritagetravel.com/festivals/kumbh",
           },
         ]}
@@ -61,7 +61,7 @@ export default function KumbhDetails() {
 
       {/* Event Schema - SEO */}
       <EventSchema
-        name="Kumbh Mela"
+        name="Kumbh Mela Tour"
         description={kumbhSeo.description}
         url="https://indiaheritagetravel.com/festivals/kumbh"
         image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547846/kumbh_arulyq.jpg"
@@ -73,7 +73,7 @@ export default function KumbhDetails() {
       <StickyNav />
 
       {/* Festival Breadcrumb */}
-      <FestivalBreadcrumb title="Kumbh Mela" />
+      <FestivalBreadcrumb title="Kumbh Mela Tour" />
 
       <DesignedFor />
       <AboutSection />

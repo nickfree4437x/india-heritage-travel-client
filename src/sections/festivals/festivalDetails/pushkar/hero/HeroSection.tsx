@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547787/Pushkar_k4ugcf.png"
-          alt="Pushkar Camel Fair Tour India with camel traders, cultural performances, folk traditions, and Rajasthan heritage experiences"
+          alt="Pushkar Camel Fair Tour India featuring camel trading, cultural celebrations, folk traditions, and Rajasthan heritage"
           fill
           priority
           className="object-cover object-center will-change-transform"
@@ -42,7 +42,7 @@ export default function HeroSection() {
             animate-[fadeUp_1.2s_ease-out_0.3s_forwards]
           "
         >
-          Pushkar Camel Fair Tour India, Rajasthan's Most Iconic Cultural Festival
+          Pushkar Camel Fair<br/> Tour India
         </h1>
       </div>
     </section>
