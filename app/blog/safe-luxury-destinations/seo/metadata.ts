@@ -13,26 +13,20 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Safe Luxury Destinations in India | Premium Travel Experiences & Hidden Gems | India Heritage Travel",
+    "Safe Luxury Destinations in India for Solo Female Travellers",
   description:
-    "Discover safe luxury destinations in India featuring heritage hotels, royal palaces, cultural experiences, scenic landscapes, private journeys, premium hospitality, and exclusive travel experiences.",
+    "Discover safe luxury destinations in India for solo female travellers, from Rajasthan and Kerala to Goa and the Himalayas, with heritage stays and memorable experiences.",
   keywords: [
     "Safe Luxury Destinations in India",
+    "Luxury Destinations in India",
+    "Safe Places in India for Solo Female Travellers",
+    "Solo Female Travel India",
     "Luxury Travel India",
-    "Luxury India Tours",
-    "Safe Places to Visit in India",
-    "Luxury Holidays India",
-    "India Heritage Travel",
+    "Luxury Holidays in India",
+    "Safe Travel in India",
     "Luxury Heritage Hotels India",
-    "Royal Rajasthan Tours",
-    "Luxury Cultural Tours India",
-    "Luxury Travel Experiences",
-    "Premium India Travel",
-    "Exclusive India Tours",
-    "Luxury Destinations India",
-    "Luxury Travel Guide India",
-    "Safe Travel India",
-    "High End Travel India",
+    "Best Destinations for Solo Female Travellers in India",
+    "Luxury India Travel Guide",
   ],
   authors: [
     {
@@ -63,7 +57,7 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/safe-luxury-destinations",
     siteName: "India Heritage Travel",
     title:
-      "Safe Luxury Destinations in India | Premium Travel Experiences & Hidden Gems",
+      "Safe Luxury Destinations in India for Solo Female Travellers",
     description:
       "Explore India's safest luxury destinations featuring heritage stays, curated cultural experiences, premium hospitality, scenic landscapes, and exclusive travel experiences.",
     images: [
@@ -78,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Safe Luxury Destinations in India | Premium Travel Experiences & Hidden Gems",
+      "Safe Luxury Destinations in India for Solo Female Travellers",
     description:
       "Discover India's safest luxury destinations with heritage stays, exclusive experiences, and premium hospitality.",
     images: [

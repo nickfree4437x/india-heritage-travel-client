@@ -50,9 +50,9 @@ export const articleSchema = {
     "@id": BLOG_URL,
   },
   headline:
-    "Indian Food Guide | What to Eat, What to Avoid & Travel Tips",
+    "India Food Guide: What to Eat, What to Avoid & Travel Tips",
   alternativeHeadline:
-    "Complete Indian Food Guide for International Travelers",
+    "Complete India Food Guide for International Travelers",
   description:
     "Discover India's diverse cuisine with authentic food recommendations, regional specialties, street food tips, dining etiquette, and practical advice on what to eat and avoid during your journey.",
   image: {
@@ -74,13 +74,12 @@ export const articleSchema = {
   inLanguage: "en",
   articleSection: "Travel Guide",
   keywords: [
-    "Indian Food Guide",
     "India Food Guide",
     "Indian Cuisine",
-    "Street Food India",
-    "Travel Food Tips",
-    "India Travel",
-    "India Heritage Travel",
+    "Indian Food",
+    "Indian Street Food",
+    "Regional Food in India",
+    "India Travel Food Tips",
   ],
   isAccessibleForFree: true,
 };
@@ -104,7 +103,7 @@ export const webPageSchema = {
   "@type": "WebPage",
   url: BLOG_URL,
   name:
-    "Indian Food Guide | What to Eat, What to Avoid & Travel Tips",
+    "India Food Guide: What to Eat, What to Avoid & Travel Tips",
   description:
     "Discover India's diverse cuisine with authentic food recommendations and expert travel tips.",
   isPartOf: {

@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background Image with Zoom Animation */}
       <div className="absolute inset-0 scale-[1.08] animate-[zoomHero_20s_ease-out_forwards]">
         <Image
-          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547715/diwali_yi6jku.jpg"
+          src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1791355573/diwali_yi6jku.jpg"
           alt="Diwali Festival Tour India featuring traditional lamps, festive celebrations, cultural experiences and heritage destinations"
           fill
           priority

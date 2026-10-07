@@ -16,17 +16,16 @@ export default function DishesSection() {
           font-semibold
           mb-4
         ">
-          The Dishes You Actually Need to Try
+          Popular Indian Dishes to Try
         </h2>
 
         {/* Content */}
         <div className="max-w-6xl">
           <div className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             <p>
-              Butter chicken feels cliché since it's everywhere,
-              but the creamy tomato sauce isn't spicy enough to
-              set your mouth on fire. Ideal for those first few
-              days as your tummy gets used to things.
+              Butter chicken is one of India's best-known dishes, featuring chicken in a rich,
+              creamy tomato-based sauce. It is generally milder than many other Indian dishes, 
+              making it a familiar option for travellers who prefer less heat.
             </p>
 
             <p className="mt-4">
@@ -52,14 +51,9 @@ export default function DishesSection() {
             </p>
 
             <p className="mt-4">
-              <span className="font-semibold">Chole bhature</span>{" "}
-              is spicy chickpea curry with huge puffy fried bread,
-              chole bhature from Punjab. Heavy but satisfying.
-              A lot of{" "}
-              <span className="font-semibold">
-                India travel companies
-              </span>{" "}
-              incorporate this into food tours, as it's a classic.
+              Chole bhature combines spicy chickpea curry with deep-fried, puffed bread. It is 
+              especially popular in North India and is a hearty choice for travellers looking to 
+              experience classic regional cuisine.
             </p>
 
             <p className="mt-4">
@@ -81,7 +75,7 @@ export default function DishesSection() {
         ">
           <Image
             src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779636756/bhature_ihez4y.jpg"
-            alt="Authentic Chole Bhature a popular North Indian food dish"
+            alt="Chole bhature, a popular North Indian dish of chickpea curry and fried bread"
             fill
             sizes="100vw"
             className="object-cover"

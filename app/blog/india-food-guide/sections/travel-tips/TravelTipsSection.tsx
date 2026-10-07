@@ -17,7 +17,7 @@ export default function TravelTipsSection() {
             font-semibold
             mb-4
           ">
-            Travel Tips in India
+            Food Safety Tips for Travelers in India
           </h2>
 
           <div className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
@@ -69,7 +69,7 @@ export default function TravelTipsSection() {
             font-semibold
             mb-4
           ">
-            What to Definitely Avoid
+            What to Avoid When Eating in India
           </h2>
 
           <div className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
@@ -111,7 +111,7 @@ export default function TravelTipsSection() {
             font-semibold
             mb-4
           ">
-            For Vegetarians and Vegans
+            Vegetarian and Vegan Food in India
           </h2>
 
           <div className="max-w-6xl">
@@ -152,7 +152,7 @@ export default function TravelTipsSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779636762/south-india_mwajvf.jpg"
-              alt="Traditional South Indian meal representing India's diverse food culture"
+              alt="Traditional South Indian meal with dosa, rice and regional dishes"
               fill
               sizes="100vw"
               className="object-cover"

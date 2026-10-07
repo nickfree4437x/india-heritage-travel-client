@@ -18,7 +18,7 @@ export default function MoreDestinationsSection() {
             font-semibold
             mb-2
           ">
-            Rishikesh, Uttarakhand
+            Rishikesh, Uttarakhand : A Peaceful Luxury Escape
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -47,7 +47,7 @@ export default function MoreDestinationsSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782537034/pexels-yogeshsharma-35185649_aoliso.jpg"
-              alt="Sacred ghats, Ganga river, and forested Himalayan foothills of Rishikesh Uttarakhand India"
+              alt="Ganga river, ghats and Himalayan foothills in Rishikesh, Uttarakhand"
               fill
               sizes="100vw"
               className="object-cover"
@@ -59,7 +59,7 @@ export default function MoreDestinationsSection() {
         </div>
 
         {/* Pondicherry */}
-        <div className="max-w-5xl mt-6 sm:mt-8">
+        <div className="max-w-5xl mt-4 sm:mt-6">
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
@@ -67,7 +67,7 @@ export default function MoreDestinationsSection() {
             font-semibold
             mb-2
           ">
-            Pondicherry
+            Pondicherry : A Relaxed Coastal Luxury Destination
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -97,7 +97,7 @@ export default function MoreDestinationsSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782537290/pexels-prasang-yadav-2151662075-37266540_d00kua.jpg"
-              alt="Charming yellow and white French quarter with bougainvillea-laden streets of Pondicherry"
+              alt="French colonial architecture and bougainvillea-lined streets in Pondicherry"
               fill
               sizes="100vw"
               className="object-cover"
@@ -109,7 +109,7 @@ export default function MoreDestinationsSection() {
         </div>
 
         {/* Varanasi */}
-        <div className="max-w-5xl mt-6 sm:mt-8">
+        <div className="max-w-5xl mt-4 sm:mt-6">
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
@@ -117,7 +117,7 @@ export default function MoreDestinationsSection() {
             font-semibold
             mb-2
           ">
-            Varanasi with Guided Support
+            Varanasi : A Cultural Experience with Guided Support
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -152,7 +152,7 @@ export default function MoreDestinationsSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782537400/pexels-chandi-saha-706198694-18728098_telcyf.jpg"
-              alt="Panoramic view of countless ghats steps stretching along the Ganges riverfront in Varanasi"
+              alt="Historic ghats along the Ganges River in Varanasi, India"
               fill
               sizes="100vw"
               className="object-cover"
@@ -164,7 +164,7 @@ export default function MoreDestinationsSection() {
         </div>
 
         {/* Kerala */}
-        <div className="mt-6 sm:mt-8">
+        <div className="mt-4 sm:mt-6">
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
@@ -172,7 +172,7 @@ export default function MoreDestinationsSection() {
             font-semibold
             mb-2
           ">
-            Kerala, including Kochi, Alleppey, and Munnar
+            Kerala : Kochi, Alleppey and Munnar
           </h2>
 
           <div className="max-w-5xl">
@@ -217,7 +217,7 @@ export default function MoreDestinationsSection() {
         </div>
 
         {/* South Goa */}
-        <div className="max-w-5xl mt-6 sm:mt-8">
+        <div className="max-w-5xl mt-4 sm:mt-6">
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
@@ -225,7 +225,7 @@ export default function MoreDestinationsSection() {
             font-semibold
             mb-2
           ">
-            South Goa Resorts
+            South Goa : Luxury Beach Resorts
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -249,7 +249,7 @@ export default function MoreDestinationsSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782538068/pexels-j-singh-166004985-10898926_ss3e8z.jpg"
-              alt="Luxurious beachfront resort with swaying coconut palms and pristine sandy shores of South Goa India"
+              alt="Luxury beachfront resort and palm-lined beach in South Goa, India"
               fill
               sizes="100vw"
               className="object-cover"
@@ -261,7 +261,7 @@ export default function MoreDestinationsSection() {
         </div>
 
         {/* Practical Tips */}
-        <div className="max-w-5xl mt-6 sm:mt-8">
+        <div className="max-w-5xl mt-4 sm:mt-6">
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
@@ -269,7 +269,7 @@ export default function MoreDestinationsSection() {
             font-semibold
             mb-2
           ">
-            Practical Safety Tips for Solo Women
+            Practical Safety Tips for Solo Female Travellers in India
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -285,15 +285,6 @@ export default function MoreDestinationsSection() {
             with someone you trust. Ask hotel staff for local advice.
             Trust instinct over politeness. Leaving a situation early
             is always acceptable.
-          </p>
-
-          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-            For travellers who value calm planning, cultural awareness,
-            and steady pacing, working with experienced India travel
-            companies often removes unnecessary stress. One such name
-            is indiaheritagetravel, which focuses on thoughtfully
-            designed journeys that respect local culture while keeping
-            comfort and safety at the centre.
           </p>
         </div>
         <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
@@ -325,7 +316,7 @@ export default function MoreDestinationsSection() {
               hover:bg-[#9d8157]
             "
           >
-            Plan Your India Journey
+            Planning a Luxury Solo Trip to India?
           </Link>
 
         </div>

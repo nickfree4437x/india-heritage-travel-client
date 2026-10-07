@@ -51,7 +51,7 @@ export default function SafetyIntroSection() {
             font-semibold
             mb-2
           ">
-            What Makes a Place Feel Safe for Solo Women
+            What Makes a Destination Suitable for Solo Female Travellers
           </h2>
 
           {/* Content */}
@@ -116,7 +116,7 @@ export default function SafetyIntroSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782731573/pexels-miriamespacio-18275080_vjubws.jpg"
-              alt="Solo female traveler exploring cultural destinations across India"
+              alt="Solo female traveller exploring a cultural destination in India"
               fill
               sizes="100vw"
               className="object-cover"

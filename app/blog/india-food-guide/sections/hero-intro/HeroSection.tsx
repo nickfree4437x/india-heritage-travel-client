@@ -20,7 +20,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579634924/hero-1_xs9azf.jpg"
-          alt="Traditional Indian food showcasing the rich flavors of Indian cuisine"
+          alt="India Food Guide featuring traditional Indian dishes, regional cuisine and popular street food"
           fill
           priority
           sizes="100vw"
@@ -32,7 +32,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="A Guide to Indian Food" />
+      <BlogBreadcrumb title="India Food Guide" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -46,9 +46,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            A Guide to Indian Food:
+            India Food Guide:
             <br />
-            What to Try & What to Avoid
+            What to Eat & What to Avoid
           </h1>
 
           {/* Description */}
@@ -61,9 +61,9 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Discover the flavors of India through authentic dishes,
-            regional specialties, vibrant street food experiences,
-            and essential tips for travelers exploring Indian cuisine.
+            Explore India's diverse cuisine through regional specialties,
+            popular dishes, street food experiences, dining tips,
+            and practical advice for travelers.
           </p>
 
           {/* Divider Line */}

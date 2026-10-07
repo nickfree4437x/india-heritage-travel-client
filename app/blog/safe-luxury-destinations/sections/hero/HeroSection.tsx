@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dja5yspwr/image/upload/v1582539739/blog-2_ma62qv_msocje.jpg"
-          alt="Safe luxury travel destinations in India for women travelers"
+          alt="Luxury destinations in India for solo female travellers featuring heritage stays and cultural experiences"
           fill
           priority
           sizes="100vw"
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="Safe Luxury Destinations in India" />
+      <BlogBreadcrumb title="Safe Luxury Destinations in India for Solo Female Travellers" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -47,7 +47,7 @@ export default function HeroSection() {
           ">
             Safe Luxury Destinations in India
             <br />
-            for Solo Women Travellers
+            for Solo Female Travellers
           </h1>
 
           {/* Description */}
@@ -60,10 +60,9 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Discover safe luxury destinations in India,
-            from heritage hotels and cultural experiences
-            to peaceful retreats and premium travel experiences
-            designed for solo women travellers.
+            Discover luxury destinations in India for solo female
+            travellers, from heritage stays and cultural experiences
+            to peaceful retreats and premium travel experiences.
           </p>
 
           {/* Divider Line */}

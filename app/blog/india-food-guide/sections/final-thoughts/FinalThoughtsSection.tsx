@@ -17,7 +17,7 @@ export default function FinalThoughtsSection() {
             font-semibold
             mb-4
           ">
-            The Reality for Solo Female Travellers
+            Food Tips for Solo Travelers in India
           </h2>
 
           <div className="text-gray-700 mb-6 leading-relaxed text-[13px] md:text-[14.5px] font-[300] text-justify">
@@ -97,7 +97,7 @@ export default function FinalThoughtsSection() {
           <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
             <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
-              Planning a Culinary Journey Through India?
+              Planning Your India Food Experience?
             </h3>
 
             <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light mb-4">

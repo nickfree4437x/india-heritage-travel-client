@@ -13,17 +13,14 @@ export default function FoodIntroSection() {
         <div className="max-w-6xl">
           <div className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             <p>
-              Indian food terrifies some travellers. I get it.
-              Just the spices could bring tears to your eyes
-              from across the room.
+              Indian food can seem intimidating to first-time visitors. The spices, unfamiliar dishes, 
+              and wide variety of regional cuisines can make it difficult to know what to order.
             </p>
 
             <p className="mt-3">
-              But here's what no one tells you. Most visitors
-              to India who get sick don't actually do so because
-              of the food. It's usually the water. Or ice cubes.
-              Or maybe that seemingly harmless salad you thought
-              was so fresh and healthy.
+              But here's what many travellers don't realise. Food safety in India is often about more 
+              than the food itself. Drinking water, ice, raw salads, and food handling can all matter 
+              when choosing what to eat.
             </p>
 
             <p className="mt-3">
@@ -53,7 +50,7 @@ export default function FoodIntroSection() {
             font-semibold
             mb-2
           ">
-            What Makes Indian Food Different
+            What Makes Indian Cuisine Unique
           </h2>
 
           {/* Description */}
@@ -85,7 +82,7 @@ export default function FoodIntroSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779636761/food-intro_vrtj2i.webp"
-              alt="Traditional Indian food showcasing the rich flavors of Indian cuisine"
+              alt="Traditional Indian dishes representing the diverse regional cuisine of India"
               fill
               sizes="100vw"
               className="object-cover"

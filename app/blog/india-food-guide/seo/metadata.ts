@@ -15,26 +15,19 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Indian Food Guide | What to Eat, What to Avoid & Travel Tips | India Heritage Travel",
+    "India Food Guide: What to Eat, What to Avoid & Travel Tips",
   description:
-    "Discover India's diverse cuisine with authentic food recommendations, regional specialties, street food tips, dining etiquette, and practical advice on what to eat and avoid during your journey with India Heritage Travel.",
+    "Explore India's diverse cuisine with regional specialties, popular dishes, street food tips, dining etiquette, and practical advice on what to eat and avoid while traveling in India.",
   keywords: [
-    "Indian Food Guide",
     "India Food Guide",
+    "Indian Food",
+    "Indian Cuisine",
     "What to Eat in India",
     "Indian Street Food",
     "Best Food in India",
-    "Indian Cuisine",
-    "Regional Food India",
-    "Food Travel India",
-    "Indian Travel Food Tips",
-    "Safe Food in India",
-    "India Travel Guide",
-    "India Heritage Travel",
-    "Indian Local Food",
+    "Regional Food in India",
     "Traditional Indian Food",
-    "Indian Dishes",
-    "Travel Tips India",
+    "Indian Food Travel Tips",
   ],
   authors: [
     {
@@ -65,7 +58,7 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/india-food-guide",
     siteName: "India Heritage Travel",
     title:
-      "Indian Food Guide | What to Eat, What to Avoid & Travel Tips | India Heritage Travel",
+      "India Food Guide: What to Eat, What to Avoid & Travel Tips",
     description:
       "Explore authentic Indian cuisine, regional specialties, food safety tips, and expert travel advice to enjoy India's incredible culinary journey.",
     images: [

@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Safe Luxury Destinations in India",
+      name: "Safe Luxury Destinations in India for Solo Female Travellers",
       item: BLOG_URL,
     },
   ],
@@ -49,11 +49,11 @@ export const articleSchema = {
     "@id": BLOG_URL,
   },
   headline:
-    "Safe Luxury Destinations in India | Premium Travel Experiences & Hidden Gems",
+    "Safe Luxury Destinations in India for Solo Female Travellers",
   alternativeHeadline:
-    "Discover India's Safest Luxury Travel Experiences",
+   "Luxury Travel in India for Solo Female Travellers",
   description:
-    "Explore safe luxury destinations across India featuring heritage stays, cultural experiences, scenic landscapes, personalized journeys, and premium hospitality.",
+   "Explore luxury destinations in India for solo female travellers, with heritage stays, cultural experiences, scenic landscapes, and practical travel considerations.",
   image: {
     "@type": "ImageObject",
     url: IMAGE_URL,
@@ -74,12 +74,12 @@ export const articleSchema = {
   articleSection: "Luxury Travel",
   keywords: [
     "Safe Luxury Destinations in India",
+    "Luxury Destinations in India",
+    "Solo Female Travel India",
+    "Safe Places in India for Solo Female Travellers",
     "Luxury Travel India",
-    "Luxury India Tours",
-    "Heritage Hotels India",
-    "Luxury Holidays India",
-    "India Heritage Travel",
-    "Premium Travel Experiences",
+    "Luxury Heritage Hotels India",
+    "Best Destinations for Solo Female Travellers in India",
   ],
   isAccessibleForFree: true,
 };
@@ -103,9 +103,9 @@ export const webPageSchema = {
   "@type": "WebPage",
   url: BLOG_URL,
   name:
-    "Safe Luxury Destinations in India | Premium Travel Experiences & Hidden Gems",
+    "Safe Luxury Destinations in India for Solo Female Travellers",
   description:
-    "Explore India's safest luxury destinations featuring heritage stays, cultural experiences, premium hospitality, and exclusive travel experiences.",
+    "Explore luxury destinations in India for solo female travellers, featuring heritage stays, cultural experiences, scenic landscapes, and premium hospitality.",
   isPartOf: {
     "@type": "WebSite",
     url: BASE_URL,

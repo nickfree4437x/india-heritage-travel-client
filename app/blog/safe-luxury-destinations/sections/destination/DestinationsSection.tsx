@@ -17,7 +17,7 @@ export default function DestinationsSection() {
             font-semibold
             mb-2
           ">
-            Udaipur, Rajasthan
+            Udaipur, Rajasthan : A Luxury Choice for Solo Female Travellers
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -48,7 +48,7 @@ export default function DestinationsSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782536311/pexels-tonyzebastian-21382502_vtcxe2.jpg"
-              alt="Serene lakeside palaces and lush green hills of Udaipur Rajasthan India"
+              alt="Lake Pichola and historic palaces in Udaipur, Rajasthan, India"
               fill
               sizes="100vw"
               className="object-cover"
@@ -68,7 +68,7 @@ export default function DestinationsSection() {
             font-semibold
             mb-2
           ">
-            Jaipur, Rajasthan
+            Jaipur, Rajasthan : Luxury, Culture and Heritage
           </h2>
 
           <div className="max-w-5xl">
@@ -101,7 +101,7 @@ export default function DestinationsSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782536818/pexels-altaf-mughal-2152120831-32033554_bry9pw.jpg"
-              alt="Historic landmarks and vibrant cityscape of Jaipur Rajasthan India"
+              alt="Historic Amber Fort and heritage architecture in Jaipur, Rajasthan, India"
               fill
               sizes="100vw"
               className="object-cover"
