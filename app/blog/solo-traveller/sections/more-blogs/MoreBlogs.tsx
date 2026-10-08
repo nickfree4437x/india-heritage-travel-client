@@ -31,12 +31,8 @@ const blogs = [
 
 export default function MoreFoodSection() {
   return (
-    <section className="w-full bg-white pb-14 border-t border-[#ddd4ca]">
+    <section className="w-full bg-white pb-12 md:pb-14 pt-12 md:pt-14f border-t border-[#ddd4ca]">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
-        {/* Related Posts Title */}
-        <div className="mb-12 sm:mb-14">
-        </div>
-
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-14">
           {blogs.map((blog, index) => (

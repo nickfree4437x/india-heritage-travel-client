@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/solo-traveler";
-  const shareTitle = "India for Solo Travelers: Cultural, Wellness and Offbeat Experiences";
+  const shareTitle = "Solo Female Travel in India: Safety, Wellness & Travel Tips";
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579641987/blog-4_rarjqw.jpg"
-          alt="Solo travel in India exploring heritage sites cultural experiences and local traditions"
+          alt="Solo female travel in India featuring cultural experiences, wellness retreats and heritage destinations"
           fill
           sizes="100vw"
           priority
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="India for Solo Travelers" />
+      <BlogBreadcrumb title="Solo Female Travel in India: Safety, Wellness & Travel Tips" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,9 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            India for Solo Travelers: Cultural, Wellness
+            Solo Female Travel in India:
             <br />
-            and Offbeat Experiences
+            Safety, Wellness & Travel Tips
           </h1>
 
           {/* Description */}
@@ -60,11 +60,10 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Discover a gentler side of India through
-            meaningful cultural encounters, peaceful
-            wellness escapes, hidden villages, spiritual
-            retreats, and immersive slow travel experiences
-            designed for mindful explorers.
+            Explore solo female travel in India through cultural
+            experiences, wellness retreats, heritage destinations,
+            hidden places, and practical travel tips for planning
+            a comfortable and meaningful journey.
           </p>
 
           {/* Divider Line */}

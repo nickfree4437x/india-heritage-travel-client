@@ -16,7 +16,7 @@ export default function WellnessSection() {
           font-semibold
           mb-2
         ">
-          Wellness Without the Noise
+          Wellness and Yoga Retreats in India for Solo Female Travellers
         </h2>
 
         {/* Content */}
@@ -64,7 +64,7 @@ export default function WellnessSection() {
         ">
           <Image
             src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641968/yoga_ipnvsv.jpg"
-            alt="Yoga and wellness retreat in India focused on mindfulness relaxation and holistic healing"
+            alt="Yoga and wellness retreat in India for solo female travellers"
             fill
             sizes="100vw"
             className="object-cover"

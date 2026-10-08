@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782540276/pexels-soubhagya23-17685500_tihzeu.jpg"
-          alt="First time traveller discovering iconic destinations across India"
+          alt="First-Time Travel Guide to India featuring iconic destinations, cultural experiences and travel essentials"
           fill
           priority
           sizes="100vw"
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="First-Time Travel Guide to India" />
+      <BlogBreadcrumb title="First-Time Travel Guide to India: Essential Tips & Travel Advice" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,9 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            The Ultimate First-Time Traveler's
+            First-Time Travel Guide to India:
             <br />
-            Guide to India
+            Essential Tips & Travel Advice
           </h1>
 
           {/* Description */}
@@ -60,10 +60,9 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Discover everything first-time travellers need
-            to know before exploring India - from culture
-            and transportation to food, safety, local
-            etiquette, and unforgettable experiences.
+            Discover essential travel tips for your first trip to India,
+            from culture and transportation to food, safety, local
+            etiquette, and practical travel advice.
           </p>
 
           {/* Divider Line */}

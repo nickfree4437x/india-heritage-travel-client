@@ -17,7 +17,7 @@ export default function PlanningSection() {
           font-semibold
           mb-2
         ">
-          How to Plan a Solo Trip
+          How to Plan a Solo Female Trip in India
         </h2>
 
         {/* Content */}
@@ -77,7 +77,7 @@ export default function PlanningSection() {
         ">
           <Image
             src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641960/map_jzsihw.webp"
-            alt="India travel map for planning a slow and immersive journey across India"
+            alt="India travel map for planning a solo female journey across India"
             fill
             sizes="100vw"
             className="object-cover"
@@ -96,7 +96,7 @@ export default function PlanningSection() {
             font-semibold
             mb-2
           ">
-            The Part That Stays With You
+            Making the Most of Solo Travel in India
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -116,24 +116,12 @@ export default function PlanningSection() {
             the memory you miss.
           </p>
 
-          <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-            Working with thoughtful operators like{" "}
-            <Link
-              href="https://www.indiaheritagetravel.com"
-              className="font-[400] hover:underline text-[#8b6a3d]"
-            >
-              India Heritage Travel
-            </Link>{" "}
-            keeps the practical bits easy so you can
-            give your time and attention to the country
-            itself, not the logistics.
-          </p>
         </div>
 
         <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
           <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
-            Traveling Solo in India?
+            Planning Your Solo Trip to India?
           </h3>
 
           <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">

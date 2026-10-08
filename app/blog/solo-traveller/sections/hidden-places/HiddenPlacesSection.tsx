@@ -15,7 +15,7 @@ export default function HiddenPlacesSection() {
             font-semibold
             mb-2
           ">
-            Places People Rarely Talk About
+            Offbeat Destinations in India for Solo Female Travellers
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">

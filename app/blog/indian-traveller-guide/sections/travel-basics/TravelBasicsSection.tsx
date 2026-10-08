@@ -15,9 +15,9 @@ export default function TravelBasicsSection() {
             text-[13px] sm:text-[14px] md:text-[14.5px]
             font-[300] text-justify
           ">
-            The second you step outside of the airport in India,
-            everything just hits you. The noise. The colours.
-            The crowds.
+            Your first arrival in India can feel overwhelming at first.
+            The sounds, colours, crowds, and pace of everyday life are
+            very different from what many first-time visitors are used to.
           </p>
 
           <p className="
@@ -25,10 +25,10 @@ export default function TravelBasicsSection() {
             text-[13px] sm:text-[14px] md:text-[14.5px]
             font-[300] text-justify
           ">
-            It's a lot to take in at first, but when you settle in,
-            the place starts making sense. This straightforward
-            guide leaves no room for confusion and tells you what
-            actually matters on your first trip.
+            Once you settle in, the experience becomes much easier to
+            navigate. This first-time India travel guide covers the
+            practical information that matters most, from visas and
+            weather to transport, money, food, safety, and local customs.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function TravelBasicsSection() {
             font-semibold
             mb-2
           ">
-            Getting Your Visa Sorted
+            India Visa Requirements for First-Time Travelers
           </h2>
 
           <div className="max-w-5xl">
@@ -63,12 +63,6 @@ export default function TravelBasicsSection() {
               Ensure that your passport has at least six months
               of remaining validity.
             </p>
-
-            <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-              There are many India travel agencies that will
-              help with visa paperwork if you book India tour
-              packages through them.
-            </p>
           </div>
 
           {/* Image */}
@@ -82,7 +76,7 @@ export default function TravelBasicsSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779639402/visa_f67fov.png"
-              alt="Passport and visa documents required for travel to India"
+              alt="Indian visa and passport documents for first-time travelers to India"
               fill
               sizes="100vw"
               className="object-cover"
@@ -139,7 +133,7 @@ export default function TravelBasicsSection() {
             font-semibold
             mb-2
           ">
-            When Should You Actually Go?
+            Best Time to Visit India for First-Time Travelers
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">

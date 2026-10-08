@@ -115,7 +115,7 @@ export default function TeamSection() {
 
                 {/* Member Info */}
                 <div className="mt-5 space-y-1">
-                  <h3 className="font-serif text-[#8b6a3d] text-[14px] sm:text-[16px] tracking-wide transition-colors">
+                  <h3 className="text-[#8b6a3d] text-[14px] sm:text-[16px] tracking-wide transition-colors">
                     {member.name}
                   </h3>
                   

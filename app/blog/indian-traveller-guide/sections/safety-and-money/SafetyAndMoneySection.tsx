@@ -17,7 +17,7 @@ export default function SafetyAndMoneySection() {
             font-semibold
             mb-2
           ">
-            Cultural Stuff Worth Knowing
+            Cultural Etiquette in India for First-Time Travelers
           </h2>
 
           <div className="space-y-4">
@@ -58,7 +58,7 @@ export default function SafetyAndMoneySection() {
             font-semibold
             mb-2
           ">
-            Staying Safe (Especially for Solo Women)
+            India Travel Safety Tips for First-Time Visitors
           </h2>
 
           <div className="max-w-6xl">
@@ -122,7 +122,7 @@ export default function SafetyAndMoneySection() {
           ">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779639407/solo-safe_xxh85k.png"
-              alt="Solo Female Traveller Safety"
+              alt="Solo female traveler exploring India while following practical travel safety tips"
               fill
               sizes="100vw"
               className="object-cover"
@@ -139,7 +139,7 @@ export default function SafetyAndMoneySection() {
             font-semibold
             mb-2
           ">
-            Money Matters
+            Money and Payments in India
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -182,7 +182,7 @@ export default function SafetyAndMoneySection() {
             font-semibold
             mb-2
           ">
-            Getting a SIM Card
+            Getting a SIM Card in India
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">

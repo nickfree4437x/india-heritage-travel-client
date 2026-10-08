@@ -8,7 +8,7 @@ export default function FinalTravelTipsSection() {
   return (
     <section className="w-full bg-white pb-10 sm:pb-12">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
-        {/* Quick Do's and Don'ts */}
+        {/* India Travel Tips: Essential Do's and Don'ts */}
         <div>
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
@@ -17,7 +17,7 @@ export default function FinalTravelTipsSection() {
             font-semibold
             mb-2
           ">
-            Quick Do's and Don'ts
+            India Travel Tips: Essential Do's and Don'ts
           </h2>
 
           {/* Grid */}
@@ -36,11 +36,11 @@ export default function FinalTravelTipsSection() {
 
               <div className="space-y-2 md:space-y-2">
                 <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-                  • Eat street food from busy stalls
+                  • Choose busy street-food stalls where food is prepared fresh
                 </p>
 
                 <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-                  • Drink bottled water
+                  • Choose sealed bottled water or another trusted water source
                 </p>
 
                 <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -71,23 +71,23 @@ export default function FinalTravelTipsSection() {
 
               <div className="space-y-2 md:space-y-2">
                 <p className="text-gray-700 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-                  • Accept food from strangers
+                  • Accept food or drinks when you are unsure of their source
                 </p>
 
                 <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-                  • Wear heavy jewellery
+                  • Carry or display expensive jewellery unnecessarily
                 </p>
 
                 <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-                  • Point your feet at someone
+                  • Point your feet toward people or religious objects
                 </p>
 
                 <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-                  • Touch anyone's head
+                  • Touch someone's head without permission
                 </p>
 
                 <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
-                  • Skip travel insurance
+                  • Travel without considering appropriate travel insurance
                 </p>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function FinalTravelTipsSection() {
             font-semibold
             mb-2
           ">
-            The Real Talk
+            What to Expect on Your First Trip to India
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">

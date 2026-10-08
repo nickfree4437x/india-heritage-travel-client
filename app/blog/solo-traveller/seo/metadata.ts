@@ -13,26 +13,22 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Solo Women Travel India | Safe, Meaningful & Empowering Travel Experiences | India Heritage Travel",
+    "Solo Female Travel in India: Safety, Wellness & Travel Tips",
   description:
-    "Explore safe and meaningful solo travel experiences across India. Discover wellness retreats, cultural journeys, hidden destinations, travel planning tips, and empowering adventures designed for solo women travelers.",
+    "Explore solo female travel in India with practical safety tips, wellness retreats, cultural experiences, hidden destinations, and useful advice for planning your journey.",
   keywords: [
+    "Solo Female Travel India",
     "Solo Women Travel India",
     "Solo Travel India",
-    "Women Solo Travel India",
+    "Women Traveling Alone in India",
     "Safe Travel for Women in India",
     "India Solo Travel Guide",
-    "Solo Female Travel India",
-    "India Heritage Travel",
+    "Solo Female Travel Safety India",
     "Wellness Travel India",
-    "Hidden Places in India",
     "Cultural Travel India",
-    "Empowering Travel Experiences",
-    "India Travel Planning",
-    "Meaningful Travel India",
     "Offbeat India Destinations",
-    "Women Travel Experiences",
-    "India Travel Guide",
+    "India Travel Planning",
+    "India Travel Tips for Women",
   ],
   authors: [
     {
@@ -63,7 +59,7 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/solo-traveler",
     siteName: "India Heritage Travel",
     title:
-      "Solo Women Travel India | Safe, Meaningful & Empowering Travel Experiences",
+      "Solo Female Travel in India: Safety, Wellness & Travel Tips",
     description:
       "Discover cultural journeys, wellness retreats, hidden destinations, and empowering solo travel experiences across India.",
     images: [
@@ -78,7 +74,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Solo Women Travel India | Safe, Meaningful & Empowering Travel Experiences",
+      "Solo Female Travel in India: Safety, Wellness & Travel Tips",
     description:
       "Explore inspiring solo travel experiences, wellness journeys, cultural adventures, and hidden destinations across India.",
     images: [

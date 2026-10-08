@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "First-Time Travel Guide to India",
+      name: "First-Time Travel Guide to India: Essential Tips & Travel Advice",
       item: BLOG_URL,
     },
   ],
@@ -49,11 +49,11 @@ export const articleSchema = {
     "@id": BLOG_URL,
   },
   headline:
-    "First-Time Travel Guide to India | Essential Tips, Culture & Travel Advice",
+    "First-Time Travel Guide to India: Essential Tips & Travel Advice",
   alternativeHeadline:
-    "Essential India Travel Advice for First-Time Visitors",
+    "Essential India Travel Tips for First-Time Visitors",
   description:
-    "Plan your India journey with practical travel tips, cultural insights, destination recommendations, safety advice, and essential information for first-time visitors.",
+    "Plan your first trip to India with practical travel tips, cultural insights, safety advice, money tips, and essential information for first-time visitors.",
   image: {
     "@type": "ImageObject",
     url: IMAGE_URL,
@@ -76,10 +76,11 @@ export const articleSchema = {
     "First-Time Travel Guide to India",
     "India Travel Guide",
     "India Travel Tips",
+    "Traveling to India for the First Time",
     "India Travel Advice",
-    "Traveling to India",
-    "India Tourism Guide",
-    "India Heritage Travel",
+    "India Travel Essentials",
+    "India Safety Tips",
+    "India Culture Guide",
   ],
   isAccessibleForFree: true,
 };
@@ -103,7 +104,7 @@ export const webPageSchema = {
   "@type": "WebPage",
   url: BLOG_URL,
   name:
-    "First-Time Travel Guide to India | Essential Tips, Culture & Travel Advice",
+    "First-Time Travel Guide to India: Essential Tips & Travel Advice",
   description:
     "Explore practical travel tips, cultural insights, safety advice, destination recommendations, and essential guidance for first-time visitors to India.",
   isPartOf: {

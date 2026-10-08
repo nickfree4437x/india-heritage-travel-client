@@ -45,8 +45,7 @@ export default function SlowTravelIntroSection() {
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
-            Why India Works So Well
-            for Slowing Down
+            Why India Is Well Suited to Solo Female Travel
           </h2>
 
           {/* CONTENT */}
@@ -89,7 +88,7 @@ export default function SlowTravelIntroSection() {
           >
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779641965/solo_znipyv.jpg"
-              alt="Solo traveler discovering authentic cultural experiences and hidden gems in India"
+              alt="Solo female traveller experiencing Indian culture, heritage and local traditions"
               fill
               sizes="100vw"
               className="object-cover"
@@ -108,7 +107,7 @@ export default function SlowTravelIntroSection() {
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
-            Cultural Moments That Feel Real
+            Cultural Experiences for Solo Female Travellers in India
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">

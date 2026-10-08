@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Solo Women Travel India",
+      name: "Solo Female Travel in India: Safety, Wellness & Travel Tips",
       item: BLOG_URL,
     },
   ],
@@ -49,11 +49,11 @@ export const articleSchema = {
     "@id": BLOG_URL,
   },
   headline:
-    "Solo Women Travel India | Safe, Meaningful & Empowering Travel Experiences",
+    "Solo Female Travel in India: Safety, Wellness & Travel Tips",
   alternativeHeadline:
-    "Empowering Solo Travel Experiences for Women Across India",
+    "A Practical Guide to Solo Female Travel in India",
   description:
-    "Explore safe and meaningful solo travel experiences across India. Discover wellness retreats, cultural journeys, hidden destinations, travel planning tips, and empowering adventures designed for solo women travelers.",
+    "Explore solo female travel in India with practical safety tips, wellness retreats, cultural experiences, hidden destinations, and useful advice for planning your journey.",
   image: {
     "@type": "ImageObject",
     url: IMAGE_URL,
@@ -73,15 +73,16 @@ export const articleSchema = {
   inLanguage: "en",
   articleSection: "Solo Travel",
   keywords: [
-    "Solo Women Travel India",
     "Solo Female Travel India",
-    "Women Solo Travel",
-    "Safe Travel India",
-    "India Travel Guide",
+    "Solo Women Travel India",
+    "Solo Travel India",
+    "Women Traveling Alone in India",
+    "Safe Travel for Women in India",
+    "India Solo Travel Guide",
+    "Solo Female Travel Safety India",
     "Wellness Travel India",
-    "Hidden Places India",
     "Cultural Travel India",
-    "India Heritage Travel",
+    "Offbeat India Destinations",
   ],
   isAccessibleForFree: true,
 };
@@ -105,7 +106,7 @@ export const webPageSchema = {
   "@type": "WebPage",
   url: BLOG_URL,
   name:
-    "Solo Women Travel India | Safe, Meaningful & Empowering Travel Experiences",
+    "Solo Female Travel in India: Safety, Wellness & Travel Tips",
   description:
     "Discover safe and meaningful solo travel experiences across India through wellness retreats, cultural journeys, hidden destinations, and inspiring adventures.",
   isPartOf: {
