@@ -58,7 +58,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> By Ferry: Frequent passenger ferries between the main jetty of Ernakulam and Fort Kochi & Mattancherry; a cheap and pleasant mode of transport.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> •	By Road: Good road connectivity to various parts of Kerala via bus and private cars.
+              <span className="font-light">•</span> By Road: Good road connectivity to various parts of Kerala Image via bus and private cars.
             </li>
           </ul>
         </div>

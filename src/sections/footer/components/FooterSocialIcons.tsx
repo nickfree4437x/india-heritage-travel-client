@@ -21,7 +21,7 @@ const SOCIAL_LINKS = [
     label: "Instagram",
     icon: Instagram,
     hoverClass:
-      "hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600",
+      "hover:bg-gradient-to-tr hover:from-yellow-400 hover:Image via-pink-500 hover:to-purple-600",
   },
   {
     href: "https://youtube.com/@indiaheritagetravel?si=vFEfLrYnv_1DWHqM",

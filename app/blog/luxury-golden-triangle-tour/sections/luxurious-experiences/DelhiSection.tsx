@@ -51,7 +51,7 @@ export default function DelhiLuxuryExperiences() {
           />
         </div>
         <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
-          via pexels
+          Image via pexels
         </p>
 
         {/* Experience Cards */}

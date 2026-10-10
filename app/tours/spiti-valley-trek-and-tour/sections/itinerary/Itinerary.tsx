@@ -174,7 +174,7 @@ export default function Itinerary() {
             </h3>
             <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p>
-               Visit ChandraTal via Atal Tunnel. On the way you’ll se some amazing waterfalls, snow peaks, sheeps & horses grazing in green fields. The view changes from green mountains to Rocky Mountains covered with snow which is mesmerizing.
+               Visit ChandraTal Image via Atal Tunnel. On the way you’ll se some amazing waterfalls, snow peaks, sheeps & horses grazing in green fields. The view changes from green mountains to Rocky Mountains covered with snow which is mesmerizing.
               </p>
               <p className="mt-2">
                 You’ll have your lunch at Batal which is a cold-chill place with clear blue sky.  Reaching Chandratal by evening you’ll explore walking by heavenly lake & camps & enjoy night view with an amazing night sky.

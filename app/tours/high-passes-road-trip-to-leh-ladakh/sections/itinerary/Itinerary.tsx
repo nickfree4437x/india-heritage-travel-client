@@ -167,7 +167,7 @@ export default function Itinerary() {
             </h3>
             <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p>
-               Visit Jispa via Atal Tunnel which is 9.02 km & the longest tunnel above 10,000ft in the world. On the way visit Solang valley which is famous for adventure activities & a popular ski resort.
+               Visit Jispa Image via Atal Tunnel which is 9.02 km & the longest tunnel above 10,000ft in the world. On the way visit Solang valley which is famous for adventure activities & a popular ski resort.
               </p>
             </div>
 
@@ -255,7 +255,7 @@ export default function Itinerary() {
 
             <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p className="mt-4">
-               Drive to Nubra valley via Khardung-La-Pass which is one of the world’s highest motorable roads. The valley offers serence peace & interaction with tribal community of Ladakh. The sasser pass & famous Kharakoram oass of the silk route which connect to Nubra with Xinjiang(China).
+               Drive to Nubra valley Image via Khardung-La-Pass which is one of the world’s highest motorable roads. The valley offers serence peace & interaction with tribal community of Ladakh. The sasser pass & famous Kharakoram oass of the silk route which connect to Nubra with Xinjiang(China).
               </p>
             </div>
             <div className="grid md:grid-cols-[350px_1fr] gap-4 items-start">

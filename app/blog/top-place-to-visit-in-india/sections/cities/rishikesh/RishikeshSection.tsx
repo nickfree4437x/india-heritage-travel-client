@@ -13,7 +13,7 @@ export default function RishikeshSection() {
         </h2>
 
         {/* IMAGE */}
-        <div className="mt-4 md:mt-6">
+        <div className="mt-2 md:mt-4">
 
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
@@ -26,13 +26,13 @@ export default function RishikeshSection() {
           </div>
 
           <p className="mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
-            via unsplash.com
+            Image via unsplash.com
           </p>
 
         </div>
 
         {/* CONTENT */}
-        <div className="mt-4 md:mt-6 max-w-6xl mx-auto">
+        <div className="mt-2 md:mt-4 max-w-6xl mx-auto">
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Rishikesh is famous for offering unique experiences with

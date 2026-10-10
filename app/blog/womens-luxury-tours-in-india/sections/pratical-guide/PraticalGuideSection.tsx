@@ -52,7 +52,7 @@ export default function IntroSection() {
         {/* Content */}
         <div className="space-y-4 text-gray-700">
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-3">
-            Most international travellers use the e-Tourist Visa, arranged online before departure via the 
+            Most international travellers use the e-Tourist Visa, arranged online before departure Image via the 
             official portal. Apply several days in advance, upload a passport-style photo, and carry a 
             printed approval. Passport needs six months' validity and two blank pages. Delhi serves the 
             north and Golden Triangle, Mumbai connects to western and southern circuits.

@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/chaos-your-journeys";
-  const shareTitle = "How the Right India Travel Agency Can Transform Your Journey";
+  const shareTitle = "How to Choose the Right India Travel Agency for Your Trip";
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782731045/pexels-daciana-cristina-visan-2149801141-31301782_xtgnau.jpg"
-          alt="Traveller enjoying a seamless India tour with professional travel guidance"
+          alt="Choosing the right India travel agency for personalized trip planning and local travel expertise"
           fill
           priority
           sizes="100vw"
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="How the Right India Travel Agency Can Transform Your Journey" />
+      <BlogBreadcrumb title="How to Choose the Right India Travel Agency for Your Trip" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,9 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            How the Right India Travel Agency
+            How to Choose the Right India Travel Agency
             <br />
-            Can Transform Your Journey
+            for Your Trip
           </h1>
 
           {/* Description */}
@@ -60,8 +60,7 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Discover how the right India travel agency can simplify planning, provide local expertise,
-            and create a seamless travel experience tailored to your interests.
+            Learn how to choose an India travel agency by comparing local expertise, personalized itineraries, transparent planning, and travel support for your trip.
           </p>
 
           {/* Divider Line */}

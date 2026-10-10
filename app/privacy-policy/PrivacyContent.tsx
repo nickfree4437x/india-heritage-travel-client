@@ -238,7 +238,7 @@ export default function PrivacyContent() {
             leading-relaxed
             mb-6 text-justify">
               India Heritage Travel may update this privacy policy at its discretion. 
-              Users will be notified of any changes via email. Users are encouraged 
+              Users will be notified of any changes Image via email. Users are encouraged 
               to check this page regularly to stay informed about how their personal 
               information is protected. Continued use of the Site after changes to this
               policy are deemed acceptance of those changes.

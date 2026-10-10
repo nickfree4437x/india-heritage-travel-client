@@ -38,7 +38,7 @@ export default function FoodSection() {
             />
           </div>
           <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
-            via encrypted-tbn0
+            Image via encrypted-tbn0
           </p>
         </div>
       </div>

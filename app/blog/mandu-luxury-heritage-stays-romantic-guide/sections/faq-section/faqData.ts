@@ -17,7 +17,7 @@ export const faqs = [
   {
     question: "How do I reach Mandu from Indore?",
     answer:
-      "Mandu is about 90–100 km from Indore, roughly a 2 to 2.5-hour drive via the Indore–Dhar road; private car is the most comfortable option.",
+      "Mandu is about 90–100 km from Indore, roughly a 2 to 2.5-hour drive Image via the Indore–Dhar road; private car is the most comfortable option.",
   },
   {
     question: "Is Mandu safe for solo female travelers?",

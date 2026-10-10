@@ -71,7 +71,7 @@ export default function CityBreakdown() {
                   />
                 ) : (
                   <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-                    via wikipedia
+                    Image via wikipedia
                   </p>
                 )}
 
@@ -86,7 +86,7 @@ export default function CityBreakdown() {
               {/* Content */}
               <div className="mt-2">
                 <p className="text-[10px] sm:text-[11px] text-gray-600 font-light">
-                  via wikipedia
+                  Image via wikipedia
                 </p>
 
                 {/* City Name (Desktop) */}

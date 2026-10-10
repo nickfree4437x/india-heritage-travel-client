@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "BOOKING AND PAYMENT WITH INDIA HERITAGE TRAVEL",
-    a: "To confirm a booking with us, we require an advance payment, typically a percentage of the total cost, to secure your reservation. The remaining balance can be paid according to the agreed-upon payment plan for your journey. In some cases, such as during peak or holiday seasons, full payment may be required to confirm your reservation. We accept payments via Visa, MasterCard, and American Express, with a small bank processing fee for credit card payments. Alternatively, you can make a direct payment through a wire transfer to our bank account, with no additional fees. We will provide you with our billing and bank details at the time of invoicing, which you will receive after confirming your bookings.",
+    a: "To confirm a booking with us, we require an advance payment, typically a percentage of the total cost, to secure your reservation. The remaining balance can be paid according to the agreed-upon payment plan for your journey. In some cases, such as during peak or holiday seasons, full payment may be required to confirm your reservation. We accept payments Image via Visa, MasterCard, and American Express, with a small bank processing fee for credit card payments. Alternatively, you can make a direct payment through a wire transfer to our bank account, with no additional fees. We will provide you with our billing and bank details at the time of invoicing, which you will receive after confirming your bookings.",
   },
   {
     q: "IS A VISA REQUIRED FOR TRAVELING TO INDIA?",

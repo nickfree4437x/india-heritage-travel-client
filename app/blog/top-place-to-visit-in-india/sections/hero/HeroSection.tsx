@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/top-place-to-visit-in-india";
-  const shareTitle = "Top 10 Places to Visit in India During Summer";
+  const shareTitle = "Top 10 Places to Visit in India During Summer: Best Summer Destinations";
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579652419/blog-7_kt857x.jpg"
-          alt="Scenic summer destinations in India including mountains, valleys and hill stations"
+          alt="Top summer destinations in India featuring hill stations, mountain valleys and scenic landscapes"
           fill
           priority
           sizes="100vw"
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="Top 10 Places to Visit in India During Summer" />
+      <BlogBreadcrumb title="Top 10 Places to Visit in India During Summer: Best Summer Destinations" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,9 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            Top 10 Places to Visit in
+            Top 10 Places to Visit in India
             <br />
-            India During Summer
+            During Summer: Best Summer Destinations
           </h1>
 
           {/* Description */}

@@ -57,7 +57,7 @@ export default function SummerPlacesContentSection() {
             </div>
 
             <p className="mt-2 text-[11px] md:text-[12px] text-gray-700">
-              via unsplash.com
+              Image via unsplash.com
             </p>
 
           </div>
@@ -85,7 +85,7 @@ export default function SummerPlacesContentSection() {
             <div className="mt-6 md:mt-6">
 
               <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
-                Top Locations to explore:
+                Best Places to Visit in Manali
               </h3>
 
               <div className="mt-4 space-y-2">

@@ -26,7 +26,7 @@ export default function IntroSection() {
 
           <ul className="space-y-2 pl-0">
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> When you can, book transport, guided tours and entry tickets via official websites or a trusted operator, instead of taking random offers from people hanging around transport hubs.
+              <span className="font-light">•</span> When you can, book transport, guided tours and entry tickets Image via official websites or a trusted operator, instead of taking random offers from people hanging around transport hubs.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> For taxis , settle the price up front, or insist on the meter, before you start moving. 

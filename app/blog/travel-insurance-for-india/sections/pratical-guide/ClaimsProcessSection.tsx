@@ -28,7 +28,7 @@ export default function IntroSection() {
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             For luggage troubles or flight delays, get a written report before leaving the airport - a 
             Property Irregularity Report for baggage or official delay confirmation from the airline. 
-            Submit the claim via the insurer's app or portal. Most comprehensive plans process ordinary 
+            Submit the claim Image via the insurer's app or portal. Most comprehensive plans process ordinary 
             claims in about two to four weeks, depending on the details.
           </p>
         </div>

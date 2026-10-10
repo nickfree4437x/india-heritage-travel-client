@@ -96,7 +96,7 @@ export default function IntroSection() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   {/* Overlay with gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 Image via-black/20 to-transparent" />
                   
                   {/* City Name Overlay */}
                   <div className="absolute bottom-4 left-4 right-4">

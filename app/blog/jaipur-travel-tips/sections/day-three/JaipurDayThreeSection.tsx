@@ -64,7 +64,7 @@ export default function JaipurDayThreeSection() {
               />
             </div>
             <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
-              via unsplash
+              Image via unsplash
             </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function JaipurDayThreeSection() {
               />
             </div>
             <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
-              via unsplash
+              Image via unsplash
             </p>
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function JaipurDayThreeSection() {
               />
             </div>
             <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
-              via istock
+              Image via istock
             </p>
           </div>
         </div>
@@ -230,7 +230,7 @@ export default function JaipurDayThreeSection() {
               />
             </div>
             <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
-              via unsplash
+              Image via unsplash
             </p>
           </div>
         </div>
@@ -283,7 +283,7 @@ export default function JaipurDayThreeSection() {
               />
             </div>
             <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
-              via thebagh
+              Image via thebagh
             </p>
           </div>
         </div>
@@ -340,7 +340,7 @@ export default function JaipurDayThreeSection() {
               />
             </div>
             <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
-              via unsplash
+              Image via unsplash
             </p>
           </div>
         </div>

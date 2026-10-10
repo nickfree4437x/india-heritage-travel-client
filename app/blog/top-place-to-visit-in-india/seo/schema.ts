@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Top 10 Places to Visit in India During Summer",
+      name: "Top 10 Places to Visit in India During Summer: Best Summer Destinations",
       item: BLOG_URL,
     },
   ],
@@ -45,9 +45,9 @@ export const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Top 10 Places to Visit in India During Summer",
+    "Top 10 Places to Visit in India During Summer: Best Summer Destinations",
   description:
-    "Discover the top 10 places to visit in India during summer, including hill stations, mountain escapes, beaches, adventure destinations, and cultural experiences perfect for a memorable vacation.",
+    "Discover the Top 10 Places to Visit in India During Summer: Best Summer Destinations, including hill stations, mountain escapes, beaches, adventure destinations, and cultural experiences perfect for a memorable vacation.",
   image: IMAGE_URL,
   author: BLOG_AUTHORS.isha,
   publisher: {
@@ -70,7 +70,7 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Top 10 Places to Visit in India During Summer",
+  name: "Top 10 Places to Visit in India During Summer: Best Summer Destinations",
   description:
     "Explore India's best summer destinations, from scenic hill stations and Himalayan adventures to beaches, cultural landmarks, and unforgettable travel experiences.",
   url: BLOG_URL,
@@ -93,7 +93,7 @@ export const organizationSchema = {
 export const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Top 10 Places to Visit in India During Summer",
+  name: "Top 10 Places to Visit in India During Summer: Best Summer Destinations",
   itemListElement: [
     {
       "@type": "ListItem",

@@ -28,7 +28,7 @@ const cityData = [
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783149516/pexels-bala-12009772_a9wgmg.jpg",
   },
   {
-    name: "Mathura and Vrindavan (70 km via Agra)",
+    name: "Mathura and Vrindavan (70 km Image via Agra)",
     description:
       "These sacred cities are closely tied to Lord Krishna, offering a calmer, more reflective experience a peaceful counterpoint to the grandeur of India's famous forts and palaces. The spiritual atmosphere, temple chants, and riverside rituals create a deeply soulful contrast.",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783149646/pexels-capture2805-12429847_sfseih.jpg",
@@ -66,7 +66,7 @@ export default function CityBreakdown() {
               {/* Content */}
               <div className="mt-2">
                 <p className="text-[10px] sm:text-[11px] text-gray-600 font-light">
-                  via pexels
+                  Image via pexels
                 </p>
 
                 {/* City Name */}

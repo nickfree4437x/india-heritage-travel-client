@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function CoorgSection() {
   return (
-    <section className="w-full bg-white py-6 md:py-8">
+    <section className="w-full bg-white py-4 md:py-6">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* TITLE */}
@@ -13,7 +13,7 @@ export default function CoorgSection() {
         </h2>
 
         {/* IMAGE */}
-        <div className="mt-4 md:mt-6">
+        <div className="mt-2 md:mt-4">
 
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
@@ -26,7 +26,7 @@ export default function CoorgSection() {
           </div>
 
           <p className="mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
-            via unsplash.com
+            Image via unsplash.com
           </p>
 
         </div>

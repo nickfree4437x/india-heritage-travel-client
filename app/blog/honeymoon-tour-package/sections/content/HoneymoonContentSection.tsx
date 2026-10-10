@@ -33,7 +33,7 @@ export default function HoneymoonContentSection() {
         </div>
 
         {/* Why Section */}
-        <div className="mt-6 sm:mt-8">
+        <div className="mt-2 sm:mt-4">
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
@@ -41,7 +41,7 @@ export default function HoneymoonContentSection() {
             font-semibold
             mb-2
           ">
-            Why Our Honeymoon Tour Packages?
+            Why Consider a Honeymoon Tour Package in India?
           </h2>
 
           {/* Items */}
@@ -76,7 +76,7 @@ export default function HoneymoonContentSection() {
                 font-semibold
                 mb-2
               ">
-                Luxury Honeymoon Without Compromise
+                Luxury Honeymoon Stays in India
               </h3>
 
               <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -97,7 +97,7 @@ export default function HoneymoonContentSection() {
                 font-semibold
                 mb-2
               ">
-                Unforgettable India Honeymoon Experiences
+                Romantic Experiences for Couples in India
               </h3>
 
               <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -118,7 +118,7 @@ export default function HoneymoonContentSection() {
                 font-semibold
                 mb-2
               ">
-                Personalized Moments & Expert Planning
+                Planning a Personalized Honeymoon in India
               </h3>
 
               <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -142,7 +142,7 @@ export default function HoneymoonContentSection() {
                 font-semibold
                 mb-2
               ">
-                Featured Romantic Escapes
+                Popular Honeymoon Destinations in India
               </h3>
 
               <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">

@@ -40,15 +40,9 @@ const blogs = [
 
 export default function MoreFoodSection() {
   return (
-    <section className="w-full bg-white pb-14 border-t border-[#ddd4ca]">
+    <section className="w-full bg-white pb-12 ms:pb-14 pt-12 md:pt-14 border-t border-[#ddd4ca]">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
-        
-        {/* ============================================
-            TOP AREA (Heading)
-            ============================================ */}
-        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between mb-12 sm:mb-14">
-          {/* You can add a heading here if needed */}
-        </div>
+      
 
         {/* ============================================
             BLOG GRID

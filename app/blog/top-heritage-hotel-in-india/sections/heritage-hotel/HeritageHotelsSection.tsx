@@ -21,7 +21,7 @@ export default function HeritageHotelsSection() {
             If your dream is to live in a royal palace then these hotels
             offer a experience like no other. We’ll take you through
             exclusive heritage stays, be it Rajasthan’s regal charm or
-            unwinding in a lakeside palace via this India Travel Guide.
+            unwinding in a lakeside palace Image via this India Travel Guide.
           </p>
 
           <p className=" text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
@@ -82,7 +82,7 @@ export default function HeritageHotelsSection() {
             </div>
 
             <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
-              via unsplash.com
+              Image via unsplash.com
             </p>
 
           </div>
@@ -153,7 +153,7 @@ export default function HeritageHotelsSection() {
             </div>
 
             <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
-              via unsplash.com
+              Image via unsplash.com
             </p>
 
           </div>

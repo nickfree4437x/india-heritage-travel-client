@@ -29,7 +29,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> Pushkar hills sunset point - a short climb west of town, away from the Savitri ropeway throng, it’s favored by photographers chasing that golden hour look.   
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> The camel breeding villages on Pushkar’s desert edge - arranged via a private guide, these basically show you a more genuine scene of the Raika herding community that supports the annual camel fair.   
+              <span className="font-light">•</span> The camel breeding villages on Pushkar’s desert edge - arranged Image via a private guide, these basically show you a more genuine scene of the Raika herding community that supports the annual camel fair.   
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Man Mahal Palace - a modest 16th century royal guesthouse that became a heritage hotel, it sits above the lake, and honestly it’s worth your time even if you’re not sleeping there.  

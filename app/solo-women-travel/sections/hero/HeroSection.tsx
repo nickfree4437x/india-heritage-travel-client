@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
 
       {/* Gradient Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/30 to-black/65" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/55 Image via-black/30 to-black/65" />
 
       {/* Hero Content */}
       <div className="relative z-10 h-full flex items-end md:items-center">

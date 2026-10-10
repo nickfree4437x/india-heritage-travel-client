@@ -13,7 +13,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 // CONSTANTS
 // ============================================
 const SHARE_URL = "https://indiaheritagetravel.com/blog/luxury-ayurveda-retreat";
-const SHARE_TITLE = "Luxury Ayurveda & Wellness Retreats in India - Your Perfect Escape";
+const SHARE_TITLE = "Luxury Ayurveda Retreats in India: Wellness & Travel Guide";
 
 // ============================================
 // SHARE LINKS
@@ -55,7 +55,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579801053/blog-8_rtahzc.jpg"
-          alt="Luxury Ayurveda retreat in India offering holistic wellness and rejuvenation"
+          alt="Luxury Ayurveda retreats in India featuring wellness facilities and peaceful surroundings"
           fill
           priority
           sizes="100vw"
@@ -67,7 +67,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="Luxury Ayurveda Retreats in India" />
+      <BlogBreadcrumb title="Luxury Ayurveda Retreats in India: Wellness & Travel Guide" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -81,9 +81,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            Luxury Ayurveda & Wellness
+            Luxury Ayurveda Retreats in India:
             <br />
-            Retreats in India
+            Wellness & Travel Guide
           </h1>
 
           {/* Description */}
@@ -96,10 +96,9 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            If you're looking for a place where ancient healing meets modern
-            luxury, India is the place to be. Discover peaceful wellness
-            sanctuaries, Ayurvedic therapies, mindful retreats, and soul-soothing
-            experiences designed to restore your body and mind.
+            Explore luxury Ayurveda retreats in India, with traditional wellness practices, yoga 
+            experiences, peaceful settings, and accommodation options to help you plan a relaxing 
+            wellness getaway.
           </p>
 
           {/* Divider */}

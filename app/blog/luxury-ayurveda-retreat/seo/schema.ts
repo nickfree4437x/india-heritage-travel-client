@@ -10,7 +10,7 @@ export const articleSchema = {
   "@type": "Article",
 
   headline:
-    "Luxury Ayurveda Retreats in India | Wellness, Healing & Relaxation Guide",
+    "Luxury Ayurveda Retreats in India: Wellness & Travel Guide",
 
   description:
     "Explore India's finest luxury Ayurveda retreats offering holistic healing, wellness therapies, yoga experiences, relaxation programs, personalized treatments, and rejuvenating wellness escapes.",

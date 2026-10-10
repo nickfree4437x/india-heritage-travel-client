@@ -23,21 +23,21 @@ export default function LuxuryRetreatFinalSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="max-w-6xl space-y-4">
+          <div className="max-w-6xl space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               The Leela Kovalam is a five-star luxury with authentic
               Ayurvedic treatments. It is situated on a ridge
               overlooking the Arabian Sea.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you’re looking for personalized therapy programs
               focussing on stress relief, rejuvenation and pain
               management and then this is the best retreat.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               This resort’s Ayurveda spa provides holistic healing
               experiences that combines ancient techniques with modern
               wellness approaches.
@@ -69,25 +69,25 @@ export default function LuxuryRetreatFinalSection() {
           </div>
           {/* CREDIT */}
           <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
-            via unsplash.com
+            Image via unsplash.com
           </p>
 
           {/* EXTRA CONTENT */}
-          <div className="max-w-6xl mt-4 sm:mt-6 space-y-4">
+          <div className="max-w-6xl mt-2 sm:mt-4 space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Here you can also enjoy wide range of spa treatments,
               scenic sunset yoga sessions and guided meditation classes
               designed to balance the mind and body.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you are in search of mix of leisure and healing, The
               Leela Kovalam also offers fine dining, infinity pools,
               and direct access to a private beach.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               This is an amazing choice if you’re looking for a Best
               Ayurveda retreats in India with a touch of luxury.
             </p>
@@ -96,7 +96,7 @@ export default function LuxuryRetreatFinalSection() {
         </div>
 
         {/* SECTION 7 */}
-        <div className="mt-4 sm:mt-6">
+        <div className="mt-2 sm:mt-4">
 
           {/* HEADING */}
           <h2
@@ -108,22 +108,22 @@ export default function LuxuryRetreatFinalSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="max-w-6xl space-y-4">
+          <div className="max-w-6xl space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you’re budget is high then Carnoustie Ayurveda &
               Wellness Resort is a highly-rated luxury retreat famous
               for its Ayurvedic therapies, yoga programs and
               Naturopathy treatments.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               This retreat is often visited by celebrities and you
               get a wellness experience with top Ayurvedic
               practitioners and spa specialists.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               This resort focuses on complete mind-body detox and is
               located near the backwaters of Kerala.
             </p>
@@ -155,24 +155,24 @@ export default function LuxuryRetreatFinalSection() {
 
           {/* CREDIT */}
           <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
-            via carnoustieresorts.com
+            Image via carnoustieresorts.com
           </p>
 
           {/* EXTRA CONTENT */}
-          <div className="max-w-6xl mt-4 sm:mt-6 space-y-4">
+          <div className="max-w-6xl mt-2 sm:mt-4 space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Here you can also enjoy Ayurvedic healing, relaxation
               therapies and organic gourmet food in a peaceful
               environment.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               The resort also offers weight loss programs, anti-aging
               treatments, and holistic healing therapies.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               With luxurious villas, a private beach, and world-class
               wellness services, Carnoustie is a must-visit retreat for
               those seeking premium Best Ayurveda retreats in India.
@@ -183,7 +183,7 @@ export default function LuxuryRetreatFinalSection() {
         </div>
 
         {/* WHY CHOOSE */}
-        <div className="mt-4 sm:mt-6">
+        <div className="mt-2 sm:mt-4">
 
           {/* HEADING */}
           <h2
@@ -195,26 +195,26 @@ export default function LuxuryRetreatFinalSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="max-w-6xl space-y-4">
+          <div className="max-w-6xl space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               More than just spa treatments, an Ayurveda retreat is
               something about healing your mind and body. These retreats
               help with stress, detox, and overall wellness.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               They combine ancient wisdom with modern luxury, giving
               you a whole holistic approach.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Whether you’re looking for deep relaxation, a medical
               detox, or a complete lifestyle change, these retreats
               cater to every need.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you’re looking for the best places for Best Ayurveda
               retreats in India are a great option. Whether you’re
               planning a wellness-focused India tour package or a
@@ -227,7 +227,7 @@ export default function LuxuryRetreatFinalSection() {
         </div>
 
         {/* BOOK SECTION */}
-        <div className="mt-4 sm:mt-6">
+        <div className="mt-2 sm:mt-4">
 
           {/* HEADING */}
           <h2
@@ -239,14 +239,14 @@ export default function LuxuryRetreatFinalSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="max-w-6xl space-y-4">
+          <div className="max-w-6xl space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you want a refreshing wellness trip, book with India
               Heritage Travel, one of the best travel agencies in India.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               From customized travel packages to luxury retreats, we
               create experiences that will help you relax and heal.
             </p>
@@ -259,7 +259,7 @@ export default function LuxuryRetreatFinalSection() {
             Ready to Begin Your Wellness Journey in India?
           </h3>
 
-          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">
+          <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-2 md:mb-3">
             India is the birthplace of Ayurveda - and home to some of the world's most luxurious 
             wellness retreats. From Himalayan sanctuaries and Kerala's backwaters to Rajasthan's 
             royal spas, India Heritage Travel handpicks the finest Ayurveda escapes, combining 

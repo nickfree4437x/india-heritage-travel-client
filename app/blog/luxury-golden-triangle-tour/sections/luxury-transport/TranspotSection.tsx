@@ -49,7 +49,7 @@ export default function LuxuryTransportSection() {
             className="object-cover"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 Image via-transparent to-transparent" />
 
         </div>
 

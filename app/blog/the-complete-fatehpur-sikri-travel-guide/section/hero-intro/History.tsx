@@ -25,7 +25,7 @@ export default function HistorySection() {
             />
           </div>
           <p className="mt-2 text-gray-600 text-[12px] md:text-[13px] font-light">
-            via unsplash
+            Image via unsplash
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function HistorySection() {
             />
           </div>
           <p className="mt-2 text-gray-600 text-[12px] md:text-[13px] font-light">
-            via unsplash
+            Image via unsplash
           </p>
         </div>
 

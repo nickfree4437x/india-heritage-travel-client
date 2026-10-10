@@ -18,7 +18,7 @@ export default function HeroSection() {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/55" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 Image via-black/25 to-black/55" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 text-white h-full">

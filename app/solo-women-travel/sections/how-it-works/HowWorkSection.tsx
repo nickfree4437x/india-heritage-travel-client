@@ -144,7 +144,7 @@ export default function HowItWorksSection() {
                 fill
                 className="object-cover transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/5 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 Image via-black/5 to-transparent"></div>
             </div>
           </div>
 
@@ -194,7 +194,7 @@ export default function HowItWorksSection() {
                     fill
                     className="object-cover rounded-xl"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 Image via-transparent to-transparent rounded-xl"></div>
                 </div>
               </div>
             </div>

@@ -49,7 +49,7 @@ export default function IntroSection() {
           </div>
           {/* CREDIT */}
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-            via unsplash.com
+            Image via unsplash.com
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function IntroSection() {
             />
           </div>
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-            via unsplash.com
+            Image via unsplash.com
           </p>
         </div>
 
@@ -124,7 +124,7 @@ export default function IntroSection() {
 
           </div>
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-            via unsplash.com
+            Image via unsplash.com
           </p>
         </div>
 
@@ -164,7 +164,7 @@ export default function IntroSection() {
 
           </div>
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-            via unsplash.com
+            Image via unsplash.com
           </p>
         </div>
       </div>

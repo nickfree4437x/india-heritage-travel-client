@@ -29,7 +29,7 @@ export default function Hero() {
       {/* ====================================================================
           GRADIENT OVERLAY
       ==================================================================== */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/55" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 Image via-black/25 to-black/55" />
 
       {/* ====================================================================
           CONTENT SECTION WITH FADE UP ANIMATION

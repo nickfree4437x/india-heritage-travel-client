@@ -54,7 +54,7 @@ export default function IntroSection() {
             The nearest airports are Udaipur (2.5–3 hours) and Jodhpur (2–2.5 hours). By train, Sumerpur 
             Jawai Bandh is the closest halt on the Jaipur–Ahmedabad line, while Falna and Marwar Junction 
             are convenient alternatives. By road, Jawai sits roughly midway between Udaipur and Jodhpur - 
-            easily reached via private chauffeur transfer.
+            easily reached Image via private chauffeur transfer.
           </p>
         </div>
       </div>

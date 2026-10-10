@@ -45,7 +45,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> Finish KYC using your passport along with your Indian visa , (usually the e-visa approval or an entry stamp is enough).      
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Add funds to the wallet via an international debit  credit card , or simply trade cash at the counter.     
+              <span className="font-light">•</span> Add funds to the wallet Image via an international debit  credit card , or simply trade cash at the counter.     
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Scan any UPI QR code - at a shop, hotel , taxi stand or market stall - and settle it right away in rupees .    
@@ -69,7 +69,7 @@ export default function IntroSection() {
             />
             </div>
             <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
-            via pexels
+            Image via pexels
             </p>
         </div>
         <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">

@@ -10,8 +10,8 @@ import { FaWhatsapp, FaPinterestP } from "react-icons/fa";
 import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
-  const shareUrl = "https://indiaheritagetravel.com/blogs/honeymoon-tour-package";
-  const shareTitle = "Find the Ideal Honeymoon Tour Packages";
+  const shareUrl = "https://indiaheritagetravel.com/blog/honeymoon-tour-package";
+  const shareTitle = "Best Honeymoon Destinations in India: Romantic Getaways for Couples";
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579635049/hero-3_wj3zaa.jpg"
-          alt="Personalized honeymoon tour packages by India Heritage Travel"
+          alt="Romantic honeymoon destinations in India featuring scenic stays and couple experiences"
           fill
           priority
           sizes="100vw"
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="Honeymoon Tour Packages" />
+      <BlogBreadcrumb title="Best Honeymoon Destinations in India: Romantic Getaways for Couples" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,9 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            Honeymoon Tour Packages with
+            Best Honeymoon Destinations in India
             <br />
-            India Heritage Travel
+            Romantic Getaways for Couples
           </h1>
 
           {/* Description */}

@@ -185,7 +185,7 @@ export default function BestTimeSection() {
               {
                 days: "Days 8-9",
                 city: "Udaipur",
-                desc: "Travel via Ranakpur, enjoy Lake Pichola, City Palace and heritage dining experiences.",
+                desc: "Travel Image via Ranakpur, enjoy Lake Pichola, City Palace and heritage dining experiences.",
               },
               {
                 days: "Days 10–11",

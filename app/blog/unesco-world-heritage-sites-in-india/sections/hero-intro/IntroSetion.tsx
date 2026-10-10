@@ -45,7 +45,7 @@ export default function IntroSection() {
           </div>
 
           <p className="mt-2 text-[11px] sm:text-[12px] text-gray-700 font-light leading-relaxed">
-            via pexels
+            Image via pexels
           </p>
 
         </div>

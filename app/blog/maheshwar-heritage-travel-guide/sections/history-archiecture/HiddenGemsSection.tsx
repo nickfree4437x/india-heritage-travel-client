@@ -20,7 +20,7 @@ export default function NearbyAttractions() {
         <div className="space-y-2 text-gray-700">
           <ul className="space-y-2 pl-0">
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Baneshwar Temple which can be visited only via a boat ride, and located on the banks of the Narmada river and is most photogenic during sunset.
+              <span className="font-light">•</span> Baneshwar Temple which can be visited only Image via a boat ride, and located on the banks of the Narmada river and is most photogenic during sunset.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> The village of the weavers, away from the market place where the looms are set up in people’s homes.

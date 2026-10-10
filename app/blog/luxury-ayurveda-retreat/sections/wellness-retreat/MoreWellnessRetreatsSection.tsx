@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function MoreWellnessRetreatsSection() {
   return (
-    <section className="w-full bg-white py-6 md:py-8">
+    <section className="w-full bg-white py-2 md:py-4">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -22,16 +22,16 @@ export default function MoreWellnessRetreatsSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="max-w-6xl space-y-4">
+          <div className="max-w-6xl space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you are a nature lover & love to be surrounded by
               green forests then Vana Retreat is a peaceful place to
               be. It focuses on Ayurveda, Tibetan healing, and a
               simple way of living.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               It strictly focuses on holistic healing & a great
               wellness destination. These retreat’s therapies include
               Ayurveda, Sowa Rigpa (Tibetan healing), yoga, and
@@ -71,13 +71,13 @@ export default function MoreWellnessRetreatsSection() {
 
           {/* CREDIT */}
           <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
-            via unsplash.com
+            Image via unsplash.com
           </p>
 
           {/* EXTRA TEXT */}
-          <div className="max-w-6xl mt-4 sm:mt-6">
+          <div className="max-w-6xl mt-2 sm:mt-4">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               It also offers mindfulness workshops, fitness training,
               and nature immersion activities like guided forest walks
               and organic farming experiences in addition to traditional
@@ -89,7 +89,7 @@ export default function MoreWellnessRetreatsSection() {
         </div>
 
         {/* SECTION 4 */}
-        <div className="mt-4 sm:mt-6">
+        <div className="mt-2 sm:mt-4">
 
           {/* HEADING */}
           <h2
@@ -101,9 +101,9 @@ export default function MoreWellnessRetreatsSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="max-w-6xl space-y-4">
+          <div className="max-w-6xl space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               One of the best experiences in{" "}
               <span className="font-semibold text-[#222222]">
                 Kerala
@@ -111,7 +111,7 @@ export default function MoreWellnessRetreatsSection() {
               for Ayurveda is the Somatheeram Ayurveda Village.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Somatheeram is knows as the world’s first Ayurveda
               resort and continues to be a leading destination for
               holistic healing. It offers treatments like Panchakarma
@@ -119,7 +119,7 @@ export default function MoreWellnessRetreatsSection() {
               herbal massages following strict Ayurvedic principles.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Here the visitors can also participate in daily yoga and
               meditation sessions to enhance the healing process.
             </p>
@@ -154,13 +154,13 @@ export default function MoreWellnessRetreatsSection() {
 
           {/* CREDIT */}
           <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
-            via somatheeram.net
+            Image via somatheeram.net
           </p>
 
           {/* EXTRA TEXT */}
-          <div className="max-w-6xl mt-4 space-y-4">
+          <div className="max-w-6xl mt-4 space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               In Somatheeram visitors can enjoy ocean breezes and
               stunning sunsets while undergoing therapy since it is
               located along the serene Malabar Coast. It remains one of
@@ -168,12 +168,12 @@ export default function MoreWellnessRetreatsSection() {
               with a history of over 30 years in Ayurveda.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Imagine yourself enjoying a relaxing massage while
               listening to the ocean waves.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you’re looking for a healing Best Ayurveda retreats in
               India, this is a must-visit place.
             </p>
@@ -183,7 +183,7 @@ export default function MoreWellnessRetreatsSection() {
         </div>
 
         {/* SECTION 5 */}
-        <div className="mt-4 sm:mt-6">
+        <div className="mt-2 sm:mt-4">
 
           {/* HEADING */}
           <h2
@@ -195,9 +195,9 @@ export default function MoreWellnessRetreatsSection() {
           </h2>
 
           {/* CONTENT */}
-          <div className="max-w-6xl space-y-4">
+          <div className="max-w-6xl space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Looking for a mix of Ayurveda and luxury? Then
               Kumarakom Lake Resort is perfect place to be. This
               resort offers healing treatments and beautiful private
@@ -205,12 +205,12 @@ export default function MoreWellnessRetreatsSection() {
               backwaters.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               This resort is famous for its traditional Kerala-style
               architecture and top-tier Ayurvedic spa.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Here you can experience therapies designed for deep
               relaxation, stress relief and detoxification. The serene
               backwaters offer the perfect setting for yoga and
@@ -246,13 +246,13 @@ export default function MoreWellnessRetreatsSection() {
 
           {/* CREDIT */}
           <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
-            via kumarakomlakeresort.in
+            Image via kumarakomlakeresort.in
           </p>
 
           {/* EXTRA CONTENT */}
-          <div className="max-w-6xl mt-4 space-y-4">
+          <div className="max-w-6xl mt-4 space-y-2">
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               The Kumarakom Lake Resort also offers houseboat
               experiences, cultural performances, and water activities
               apart from wellness programs. This makes it an excellent
@@ -261,7 +261,7 @@ export default function MoreWellnessRetreatsSection() {
               in India for a luxurious wellness retreat.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+            <p className="text-gray-700 mb-2 md:mb-3 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Enjoy your spa treatments and yoga by the water among
               peaceful surroundings. If you want a luxury Best Ayurveda
               retreats in India, this is a great choice.

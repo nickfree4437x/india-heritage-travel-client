@@ -87,7 +87,7 @@ export default function BookNowForm({
         message: formData.message,
       };
 
-      // Send email via EmailJS
+      // Send email Image via EmailJS
       await emailjs.send(
         "service_wknck3i",
         "template_0t712xa",

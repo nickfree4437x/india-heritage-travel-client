@@ -45,7 +45,7 @@ export default function TourDetails() {
     {
       id: "nubra",
       title: "Nubra Valley – High-Altitude Cold Desert",
-      desc: "Nubra Valley is famous for its sand dunes, monasteries, scenic landscapes, and traditional villages. Accessible via the Khardung La region, the valley is known for its double-humped Bactrian camels and the dramatic landscapes around the Shyok and Nubra rivers.",
+      desc: "Nubra Valley is famous for its sand dunes, monasteries, scenic landscapes, and traditional villages. Accessible Image via the Khardung La region, the valley is known for its double-humped Bactrian camels and the dramatic landscapes around the Shyok and Nubra rivers.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779541110/nubra_pwgdy3.jpg",
       alt: "Nubra Valley Ladakh with sand dunes double-humped camels and mountain views"
     },

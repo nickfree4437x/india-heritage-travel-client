@@ -59,7 +59,7 @@ export default function DestinationCard({
         ==================================================================== */}
         
         {/* Default gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 Image via-black/20 to-transparent" />
 
         {/* Hover overlay (desktop only) */}
         <div

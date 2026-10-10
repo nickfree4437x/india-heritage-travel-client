@@ -56,7 +56,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> By Rail: Indore Junction is the main stop, followed by a 2-hour road journey to Mandu.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> By Road (Private Car): The most comfortable option - about 2 hours via Dhar. Private transfers can be arranged from Indore.
+              <span className="font-light">•</span> By Road (Private Car): The most comfortable option - about 2 hours Image via Dhar. Private transfers can be arranged from Indore.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> By Bus: Available from Gangwal and Sarwate stands, but timings are limited and require planning.

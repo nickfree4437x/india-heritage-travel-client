@@ -31,7 +31,7 @@ export default function BlogContentSection() {
             font-semibold
             mb-2
           ">
-            When You Try It Alone
+            Planning a Trip to India Without Expert Guidance
           </h2>
 
           <div className="max-w-6xl">
@@ -73,7 +73,7 @@ export default function BlogContentSection() {
 
           {/* Image Credit */}
           <p className="mt-2 text-[11px] sm:text-[12px] font-light text-gray-600">
-            Via: unsplash.com
+            Image via: unsplash.com
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function BlogContentSection() {
             font-semibold
             mb-2
           ">
-            What a Good Agency Brings to the Table
+            Benefits of Choosing the Right India Travel Agency
           </h2>
 
           <div>

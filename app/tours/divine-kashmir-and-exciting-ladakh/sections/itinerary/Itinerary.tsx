@@ -291,7 +291,7 @@ export default function Itinerary() {
 
             <div className="text-gray-700 text-[12px] md:text-[13px] font-[300] leading-relaxed text-justify">
               <p className="mt-2">
-               Drive to Nubra valley via Khardung-La-Pass which is one of the world’s highest motorable roads. The valley offers serence peace & interaction with tribal community of Ladakh. The sasser pass & famous Kharakoram oass of the silk route which connect to Nubra with Xinjiang(China).
+               Drive to Nubra valley Image via Khardung-La-Pass which is one of the world’s highest motorable roads. The valley offers serence peace & interaction with tribal community of Ladakh. The sasser pass & famous Kharakoram oass of the silk route which connect to Nubra with Xinjiang(China).
               </p>
               <p className="mt-2">
                 Visit Diskit monastery which is the largest & oldest monastery in Nubra valley. It has 11 ft high Maitreya Buddha statue. Next visit Hunder dunes which is silver dunes located at 4,000 meters. Then visit Panamic hot springs which contain high amount of sulphur & believed to possess many medicinal properties.

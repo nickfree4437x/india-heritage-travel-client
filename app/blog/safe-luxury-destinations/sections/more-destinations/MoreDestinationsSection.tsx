@@ -54,7 +54,7 @@ export default function MoreDestinationsSection() {
             />
           </div>
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-            via pexels
+            Image via pexels
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function MoreDestinationsSection() {
             />
           </div>
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-            via pexels
+            Image via pexels
           </p>
         </div>
 
@@ -159,7 +159,7 @@ export default function MoreDestinationsSection() {
             />
           </div>
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-            via pexels
+            Image via pexels
           </p>
         </div>
 
@@ -212,7 +212,7 @@ export default function MoreDestinationsSection() {
             />
           </div>
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-            via pexels
+            Image via pexels
           </p>
         </div>
 
@@ -256,7 +256,7 @@ export default function MoreDestinationsSection() {
             />
           </div>
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-            via pexels
+            Image via pexels
           </p>
         </div>
 

@@ -39,7 +39,7 @@ export default function BudgetAndSeasonSection() {
               March
             </h3>
             <p className="text-[13px] sm:text-[14px] text-gray-700 leading-relaxed font-light">
-              Heat beginning to build; still comfortable; last viable month
+              Heat beginning to build; still comfortable; last Image viable month
             </p>
           </div>
 

@@ -72,7 +72,7 @@ export default function LocationSection() {
             </h3>
 
             <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light">
-              Rawla Narlai can be conveniently accessed via both{" "}
+              Rawla Narlai can be conveniently accessed Image via both{" "}
               <strong>Jodhpur International Airport</strong> and{" "}
               <strong>Maharana Pratap Airport, Udaipur</strong>.
               Both airports offer excellent connectivity with major

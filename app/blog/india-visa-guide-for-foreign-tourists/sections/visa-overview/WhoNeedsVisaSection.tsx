@@ -28,7 +28,7 @@ export default function HistorySection() {
             There are also a few categories that simply won’t work through the e-Visa system no matter what 
             passport you hold. This includes diplomatic or official passport holders, people of Pakistani 
             origin or nationality, and those with laissez-passer or UN travel documents. If any of that 
-            applies to you then you’re going to need to request a regular visa via your nearest Indian 
+            applies to you then you’re going to need to request a regular visa Image via your nearest Indian 
             embassy or consulate instead.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function HistorySection() {
             />
           </div>
           <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
-            via unsplash
+            Image via unsplash
           </p>
         </div>
       </div>

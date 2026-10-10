@@ -42,7 +42,7 @@ export default function HistorySection() {
             />
            </div>
             <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
-             via unsplash
+             Image via unsplash
             </p>
         </div>
       </div>
@@ -78,7 +78,7 @@ export default function HistorySection() {
             />
            </div>
             <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
-             via pexels
+             Image via pexels
             </p>
         </div>
       </div>
@@ -132,7 +132,7 @@ export default function HistorySection() {
             />
            </div>
             <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
-             via unsplash
+             Image via unsplash
             </p>
         </div>
       </div>
@@ -186,7 +186,7 @@ export default function HistorySection() {
             />
            </div>
             <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
-             via pexels
+             Image via pexels
             </p>
         </div>
       </div>

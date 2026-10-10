@@ -55,7 +55,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> By Air: Nearest airport is Devi Ahilyabai Holkar Airport, Indore (~90 km away).
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> By Rail: Closest station is Barwaha (~39 km). Many travellers also arrive via Indore station.
+              <span className="font-light">•</span> By Rail: Closest station is Barwaha (~39 km). Many travellers also arrive Image via Indore station.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> By Road (from Indore): Approximately 2 hours by car.

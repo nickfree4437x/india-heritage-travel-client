@@ -36,7 +36,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> Do the visa fee payment online; expect a card-processing extra of about 2.5–3% above the base amount.    
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Save the application ID, then check your status on the site, or keep an eye out for the Electronic Travel Authorization, ETA, via email.   
+              <span className="font-light">•</span> Save the application ID, then check your status on the site, or keep an eye out for the Electronic Travel Authorization, ETA, Image via email.   
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Print the ETA, and when you travel carry both a digital copy and a paper copy, just in case.   

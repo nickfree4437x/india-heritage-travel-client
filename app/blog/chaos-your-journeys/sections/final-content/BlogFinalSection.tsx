@@ -16,7 +16,7 @@ export default function BlogFinalSection() {
             font-semibold
             mb-2
           ">
-            What to Look for in a Travel Partner
+            Questions to Ask Before Choosing an India Travel Agency
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[13px] sm:text-[14px] md:text-[14.5px] font-[300] text-justify">
@@ -79,7 +79,7 @@ export default function BlogFinalSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779649909/pexels-chirag-purohit-44055792-15999311-scaled-e1766059375730_whku6m.webp"
-              alt="Historic heritage architecture showcasing the beauty of India"
+              alt="Historic Indian architecture representing heritage experiences on a customized India tour"
               fill
               sizes="100vw"
               className="object-cover"
@@ -96,7 +96,7 @@ export default function BlogFinalSection() {
             font-semibold
             mb-2
           ">
-            Imagine This Trip
+            What a Well-Planned India Journey Can Look Like
           </h2>
 
           <div className="space-y-4">
@@ -130,7 +130,7 @@ export default function BlogFinalSection() {
             font-semibold
             mb-2
           ">
-            Final Thought
+            Final Tips for Choosing the Right India Travel Agency
           </h2>
 
           <div className="max-w-6xl space-y-4">
@@ -166,7 +166,7 @@ export default function BlogFinalSection() {
         <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
           <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
-            How the Right India Travel Agency Can Transform Your Journey
+            Plan Your India Journey with Confidence
           </h3>
 
           <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">

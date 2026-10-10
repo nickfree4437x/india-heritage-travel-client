@@ -63,7 +63,7 @@ export default function JaipurGuideIntroSection() {
               />
             </div>
             <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
-              via unsplash
+              Image via unsplash
             </p>
 
           </div>

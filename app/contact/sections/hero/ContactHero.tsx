@@ -33,7 +33,7 @@ export default function Hero() {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/35 to-black/60 md:from-black/50 md:via-black/25 md:to-black/55" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/65 Image via-black/35 to-black/60 md:from-black/50 md:Image via-black/25 md:to-black/55" />
 
       {/* Hero Content */}
       <div className="relative z-10 flex h-full -mt-14 flex-col items-center justify-center px-6 text-center text-white">

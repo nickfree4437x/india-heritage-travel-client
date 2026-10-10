@@ -49,7 +49,7 @@ export default function TourDetails() {
     {
       id: "nubra",
       title: "Nubra Valley – High-Altitude Desert & Himalayan Landscapes",
-      desc: "Nubra valley is famous for its sand dunes, vibrant monasteries & stunning landscapes. It is located 10,000ft above sea level & is accessible via the Khardung La Pass which is one of the highest motorable roads in the world. This valley is famous for its double-humped Bacrian camels, confluence of the Shyok & picturesque village & Nubra rivers.",
+      desc: "Nubra valley is famous for its sand dunes, vibrant monasteries & stunning landscapes. It is located 10,000ft above sea level & is accessible Image via the Khardung La Pass which is one of the highest motorable roads in the world. This valley is famous for its double-humped Bacrian camels, confluence of the Shyok & picturesque village & Nubra rivers.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779611771/nubra-valley-3_xfhho2.jpg",
       alt: "Nubra Valley Ladakh featuring sand dunes double humped camels and high altitude landscapes",
     },

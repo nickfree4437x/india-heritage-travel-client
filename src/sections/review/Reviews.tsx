@@ -83,7 +83,7 @@ export default function ReviewsSection() {
     reviews.reduce((acc, review) => acc + review.rating, 0) / reviews.length;
 
   return (
-    <section className="relative py-10 sm:py-10 lg:py-10 px-4 sm:px-6 bg-gradient-to-br from-[#faf8f4] via-[#f8f6f2] to-[#f5f1ea] overflow-hidden">
+    <section className="relative py-10 sm:py-10 lg:py-10 px-4 sm:px-6 bg-gradient-to-br from-[#faf8f4] Image via-[#f8f6f2] to-[#f5f1ea] overflow-hidden">
       {/* Background Decor */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#c9a45c]/5 rounded-full blur-3xl" />

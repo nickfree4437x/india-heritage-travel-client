@@ -241,8 +241,8 @@ export default function JourneySection() {
                     <p className="font-[450] text-[#2c2c2c] text-[12px] md:text-[14px]">Our promise is simple:</p>
 
                     {/* Hero Quote */}
-                    <div className="relative bg-gradient-to-r from-[#8b6a3d]/5 via-[#8b6a3d]/10 to-[#8b6a3d]/5 rounded-lg p-4 sm:p-6">
-                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent via-[#8b6a3d]/30 to-transparent" />
+                    <div className="relative bg-gradient-to-r from-[#8b6a3d]/5 Image via-[#8b6a3d]/10 to-[#8b6a3d]/5 rounded-lg p-4 sm:p-6">
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent Image via-[#8b6a3d]/30 to-transparent" />
                       <p className="font-light text-[#8b6a3d] text-[10px] md:text-[14px]">
                         We listen to you. 
                         <br/>
@@ -332,9 +332,9 @@ export default function JourneySection() {
                     </p>
 
                     {/* Final Welcome */}
-                    <div className="relative bg-gradient-to-r from-[#8b6a3d]/5 via-[#8b6a3d]/10 to-[#8b6a3d]/5 rounded-md p-4">
-                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-[#8b6a3d]/30 to-transparent" />
-                      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-[#8b6a3d]/30 to-transparent" />
+                    <div className="relative bg-gradient-to-r from-[#8b6a3d]/5 Image via-[#8b6a3d]/10 to-[#8b6a3d]/5 rounded-md p-4">
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent Image via-[#8b6a3d]/30 to-transparent" />
+                      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent Image via-[#8b6a3d]/30 to-transparent" />
                       <div>
                         <p className="text-[#8b6a3d] font-light text-[10px] sm:text-[11px] md:text-[12.5px]">Welcome to India.</p>
                         <p className="text-[#8b6a3d] font-light text-[11px] sm:text-[12px] md:text-[14px]">Welcome to our way of travelling.</p>

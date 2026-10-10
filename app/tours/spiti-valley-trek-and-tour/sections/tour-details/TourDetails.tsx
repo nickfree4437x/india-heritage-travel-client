@@ -42,7 +42,7 @@ export default function TourDetails() {
     {
       id: "tobo",
       title: "Tabo- Ajanta of Himalayas",
-      desc: "Nubra valley is famous for its sand dunes, vibrant monasteries & stunning landscapes. It is located 10,000ft above sea level & is accessible via the Khardung La Pass which is one of the highest motorable roads in the world. This valley is famous for its double-humped Bacrian camels, confluence of the Shyok & picturesque village & Nubra rivers.",
+      desc: "Nubra valley is famous for its sand dunes, vibrant monasteries & stunning landscapes. It is located 10,000ft above sea level & is accessible Image via the Khardung La Pass which is one of the highest motorable roads in the world. This valley is famous for its double-humped Bacrian camels, confluence of the Shyok & picturesque village & Nubra rivers.",
       img: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779542416/tabo_f01iq9.jpg",
     },
     {

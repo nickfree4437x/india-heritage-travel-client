@@ -13,26 +13,22 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Best Honeymoon Tour Packages in India | Romantic & Luxury Getaways | India Heritage Travel",
+    "Best Honeymoon Destinations in India: Romantic Getaways for Couples",
   description:
     "Discover the best honeymoon tour packages in India featuring luxury resorts, heritage hotels, romantic escapes, cultural experiences, scenic destinations, and personalized itineraries for unforgettable memories.",
   keywords: [
-    "Best Honeymoon Tour Packages in India",
+    "Best Honeymoon Destinations in India",
+    "Honeymoon Tour Packages in India",
     "India Honeymoon Packages",
-    "Romantic Getaways India",
+    "Romantic Getaways in India",
+    "Honeymoon Places in India for Couples",
     "Luxury Honeymoon India",
-    "Honeymoon Destinations India",
-    "Couple Tours India",
-    "India Heritage Travel",
-    "Romantic Holidays India",
-    "Luxury Resorts India",
-    "Honeymoon Travel India",
-    "Rajasthan Honeymoon",
-    "Kerala Honeymoon",
+    "Romantic Holidays in India",
+    "Kerala Honeymoon Destinations",
     "Goa Honeymoon Packages",
-    "India Tour Packages",
-    "Romantic Travel India",
-    "Luxury India Travel",
+    "Rajasthan Honeymoon Destinations",
+    "Couple Travel India",
+    "Honeymoon Planning Tips India",
   ],
   authors: [
     {
@@ -63,7 +59,7 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/honeymoon-tour-package",
     siteName: "India Heritage Travel",
     title:
-      "Best Honeymoon Tour Packages in India | Romantic & Luxury Getaways",
+      "Best Honeymoon Destinations in India: Romantic Getaways for Couples",
     description:
       "Explore romantic honeymoon destinations across India with luxury stays, cultural experiences, personalized itineraries, scenic landscapes, and unforgettable travel moments.",
     images: [
@@ -78,7 +74,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Best Honeymoon Tour Packages in India | Romantic & Luxury Getaways",
+      "Best Honeymoon Destinations in India: Romantic Getaways for Couples",
     description:
       "Discover luxury honeymoon experiences, romantic destinations, and personalized couple tours across India.",
     images: [

@@ -24,7 +24,7 @@ export const faqs = [
     question:
       "What is the best way to travel from Delhi to the Taj Mahal?",
     answer:
-      "For most travellers, the Gatimaan Express is the fastest and most convenient option, taking approximately two hours to reach Agra from Delhi. Travelling by road via the Yamuna Expressway usually takes between three and four hours depending on traffic conditions.",
+      "For most travellers, the Gatimaan Express is the fastest and most convenient option, taking approximately two hours to reach Agra from Delhi. Travelling by road Image via the Yamuna Expressway usually takes between three and four hours depending on traffic conditions.",
   },
 
   {

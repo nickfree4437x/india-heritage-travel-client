@@ -50,7 +50,7 @@ export default function JaipurDayTwoExtraSection() {
               />
             </div>
             <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
-              via unsplash
+              Image via unsplash
             </p>
           </div>
 
@@ -107,7 +107,7 @@ export default function JaipurDayTwoExtraSection() {
               />
             </div>
             <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
-              via istock
+              Image via istock
             </p>
           </div>
 
@@ -156,7 +156,7 @@ export default function JaipurDayTwoExtraSection() {
               />
             </div>
             <p className="mt-2 text-[11px] md:text-[12px] font-light text-gray-700">
-              via unsplash
+              Image via unsplash
             </p>
           </div>
 

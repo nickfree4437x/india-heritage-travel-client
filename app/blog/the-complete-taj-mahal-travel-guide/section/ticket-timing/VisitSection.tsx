@@ -42,7 +42,7 @@ export default function BestTimeSection() {
             />
           </div>
           <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-            via unsplash
+            Image via unsplash
           </p>
         </div>
       </div>

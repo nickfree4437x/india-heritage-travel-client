@@ -89,7 +89,7 @@ export default function ReviewModal({ review, onClose }: ReviewModalProps) {
           />
 
           {/* Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 Image via-black/20 to-transparent" />
 
           {/* User Info Overlay */}
           <div className="absolute bottom-4 sm:bottom-5 left-4 sm:left-5 flex items-center gap-3">

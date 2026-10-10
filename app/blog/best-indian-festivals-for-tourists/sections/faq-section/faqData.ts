@@ -7,7 +7,7 @@ export const faqs = [
   {
     question: "Is UPI available to foreign tourists in 2026?",
     answer:
-      "Yes. Through the UPI One World framework, foreign tourists can set up a prepaid wallet using their passport and visa and pay via UPI QR codes without an Indian bank account.",
+      "Yes. Through the UPI One World framework, foreign tourists can set up a prepaid wallet using their passport and visa and pay Image via UPI QR codes without an Indian bank account.",
   },
   {
     question: "Are international credit and debit cards widely accepted in India?",

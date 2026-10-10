@@ -36,7 +36,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "How the Right India Travel Agency Can Transform Your Journey",
+      name: "How to Choose the Right India Travel Agency for Your Trip",
       item: BLOG_URL,
     },
   ],
@@ -55,7 +55,7 @@ export const articleSchema = {
   },
 
   headline:
-    "How the Right India Travel Agency Can Transform Your Journey",
+    "How to Choose the Right India Travel Agency for Your Trip",
 
   alternativeHeadline:
     "Why Choosing the Right India Travel Agency Matters",
@@ -93,18 +93,16 @@ export const articleSchema = {
   articleSection: "Travel Planning",
 
   keywords: [
+    "How to Choose an India Travel Agency",
     "India Travel Agency",
-    "India Travel Companies",
-    "India Tour Packages",
-    "Travel Agency India",
-    "India Travel Planning",
-    "India Heritage Travel",
-    "Custom India Tours",
-    "Luxury India Travel",
-    "India Vacation Planning",
-    "India Holiday Packages",
-    "Private Tours India",
     "Best India Travel Agency",
+    "India Tour Operator",
+    "Local Travel Agency India",
+    "Personalized India Tours",
+    "Custom India Tour Packages",
+    "Private Tours India",
+    "India Travel Planning",
+    "Choosing a Tour Operator in India",
   ],
 
   isAccessibleForFree: true,
@@ -132,7 +130,7 @@ export const webPageSchema = {
   url: BLOG_URL,
 
   name:
-    "How the Right India Travel Agency Can Transform Your Journey",
+    "How to Choose the Right India Travel Agency for Your Trip",
 
   description:
     "Learn how expert travel planning, local knowledge, personalized itineraries, and trusted guidance can transform your India journey into a smooth and memorable experience.",

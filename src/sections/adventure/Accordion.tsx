@@ -63,7 +63,7 @@ export default function Accordion({ items, open, toggle, section }: any) {
                         />
 
                         {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 Image via-black/20 to-transparent" />
 
                         {/* Days Label */}
                         <div className="absolute inset-0 flex items-center justify-center text-white font-semibold text-sm">
@@ -88,7 +88,7 @@ export default function Accordion({ items, open, toggle, section }: any) {
                                    group-hover:scale-105"
                       />
 
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 Image via-black/20 to-transparent" />
                       <div className="absolute inset-0 flex items-center justify-center text-white font-semibold text-sm">
                         {item.days}
                       </div>

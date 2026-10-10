@@ -36,7 +36,7 @@ export default function ArchitectureSection() {
             />
           </div>
           <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
-            via t4.ftcdn.net
+            Image via t4.ftcdn.net
           </p>
         </div>
 

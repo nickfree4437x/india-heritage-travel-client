@@ -76,7 +76,7 @@ export default function IntroSection() {
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2 md:mb-3">
             Rohet Garh is privately owned, family-run, and it’s not a government-ticketed monument. So 
             there isn’t some separate public entry fee. Village visits plus safaris are set up straight 
-            via the heritage hotel, or through a tour operator like India Heritage Travel, and in many 
+            Image via the heritage hotel, or through a tour operator like India Heritage Travel, and in many 
             cases they’re included with your stay or added on as an extra experience.
           </p>
         </div>

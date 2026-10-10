@@ -94,7 +94,7 @@ export default function HeroContent({
               inset-0
               bg-gradient-to-r
               from-[#CBB299]/0
-              via-[#CBB299]/15
+              Image via-[#CBB299]/15
               to-[#CBB299]/0
               translate-x-[-100%]
               group-hover:translate-x-[100%]

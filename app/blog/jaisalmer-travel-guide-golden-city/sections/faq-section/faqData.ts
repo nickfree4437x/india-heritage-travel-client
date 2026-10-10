@@ -17,7 +17,7 @@ export const faqs = [
   {
     question: "How do I reach Jaisalmer from Delhi or Jaipur",
     answer:
-      "By overnight train direct to Jaisalmer, by seasonal flight (or via Jodhpur Airport), or by private chauffeur-driven road transfer, which is the most comfortable option for luxury travelers.",
+      "By overnight train direct to Jaisalmer, by seasonal flight (or Image via Jodhpur Airport), or by private chauffeur-driven road transfer, which is the most comfortable option for luxury travelers.",
   },
   {
     question: "Is Jaisalmer safe for solo female travelers? ",

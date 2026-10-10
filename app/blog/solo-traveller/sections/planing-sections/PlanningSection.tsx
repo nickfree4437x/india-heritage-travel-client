@@ -84,7 +84,7 @@ export default function PlanningSection() {
           />
         </div>
         <p className="mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
-          via unsplash
+          Image via unsplash
         </p>
 
         {/* Bottom Content */}

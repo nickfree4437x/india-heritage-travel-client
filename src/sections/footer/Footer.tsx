@@ -9,7 +9,7 @@ import FooterCopyright from "./components/FooterCopyright";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-[#0f0f0f] via-[#121212] to-[#1a1a1a] text-gray-300 px-4 sm:px-6 md:px-10 lg:px-20 pt-14 pb-6">
+    <footer className="bg-gradient-to-br from-[#0f0f0f] Image via-[#121212] to-[#1a1a1a] text-gray-300 px-4 sm:px-6 md:px-10 lg:px-20 pt-14 pb-6">
       {/* TOP GRID - FULLY RESPONSIVE */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
         {/* Logo + Social */}

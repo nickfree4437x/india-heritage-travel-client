@@ -60,7 +60,7 @@ export default function FinalHeritageHotelsSection() {
 
           {/* CREDIT */}
           <p className="mt-2 text-[11px] sm:text-[12px] The Oberoi Grand">
-            via taj hotels
+            Image via taj hotels
           </p>
 
           {/* EXTRA TEXT */}
@@ -133,7 +133,7 @@ export default function FinalHeritageHotelsSection() {
 
           {/* CREDIT */}
           <p className="mt-2 text-[11px] sm:text-[12px] The Oberoi Grand">
-            via unsplash.com
+            Image via unsplash.com
           </p>
 
           {/* EXTRA TEXT */}
@@ -202,7 +202,7 @@ export default function FinalHeritageHotelsSection() {
 
           {/* CREDIT */}
           <p className="mt-2 text-[11px] sm:text-[12px] The Oberoi Grand">
-            via glenburnteaestate.com
+            Image via glenburnteaestate.com
           </p>
 
           {/* EXTRA TEXT */}

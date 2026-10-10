@@ -20,7 +20,7 @@ export default function IntroSection() {
         <div className="space-y-2 text-gray-700">
           <ul className="space-y-2 pl-0">
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Jodhpur, known as the Blue City, takes an hour-and-a-half to two hours to reach via road. One can visit places like Mehrangarh Fort and Umaid Bhawan Palace in Jodhpur.  
+              <span className="font-light">•</span> Jodhpur, known as the Blue City, takes an hour-and-a-half to two hours to reach Image via road. One can visit places like Mehrangarh Fort and Umaid Bhawan Palace in Jodhpur.  
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Next is Osian, a small desert settlement. It has old Jain and Hindu temples. Many people add camel safaris when they visit.  

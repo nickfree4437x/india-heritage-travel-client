@@ -28,7 +28,7 @@ export default function ArchitectureSection() {
            motifs that were eventually adapted on Maheshwari saris – wave motifs signifying the river, 
            diamond motifs, and stylized motifs of cotton flowers. The chhatris or memorial towers within 
            the fort have been erected in memory of Ahilya Bai Holkar and other members of the Holkar family. 
-           The steps within the fort take one down directly to the river Narmada via the Paani Darwaza or 
+           The steps within the fort take one down directly to the river Narmada Image via the Paani Darwaza or 
            the water gate.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function ArchitectureSection() {
             />
           </div>
           <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light leading-relaxed">
-            via pexels
+            Image via pexels
           </p>
         </div>
 

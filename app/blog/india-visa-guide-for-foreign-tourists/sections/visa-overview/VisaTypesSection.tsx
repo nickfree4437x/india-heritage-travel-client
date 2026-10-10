@@ -93,7 +93,7 @@ export default function IntroSection() {
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             This is still needed for travellers who can’t use the e-Visa, or if you need a validity, or an 
             entry setup that the e-Visa simply doesn’t provide. It can also apply if you’re using a passport 
-            type not accepted online. In that case, the process is in person or via courier, through an embassy 
+            type not accepted online. In that case, the process is in person or Image via courier, through an embassy 
             , a consulate , or a handled visa centre like VFS Global, or BLS International.
           </p>
         </div>

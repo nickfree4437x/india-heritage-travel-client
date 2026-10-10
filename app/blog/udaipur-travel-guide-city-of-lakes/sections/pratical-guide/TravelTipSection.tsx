@@ -18,7 +18,7 @@ const cityData = [
   {
     name: "Solo Female Traveler Tips",
     description:
-      `Udaipur is solo-female-friendly, especially around the lake. Dress modestly, use app-based cabs, avoid dark ghats at night, and share your plans. Women-only tours or trusted guides via India Heritage Travel offer extra comfort for heritage visits and cultural evenings.`,
+      `Udaipur is solo-female-friendly, especially around the lake. Dress modestly, use app-based cabs, avoid dark ghats at night, and share your plans. Women-only tours or trusted guides Image via India Heritage Travel offer extra comfort for heritage visits and cultural evenings.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786170691/pexels-silverkblack-23225185_jgt9d1.jpg",
   },
 ];
@@ -47,7 +47,7 @@ export default function CityBreakdown() {
                   />
                 ) : (
                   <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-                    via pexels
+                    Image via pexels
                   </p>
                 )}
 
@@ -62,7 +62,7 @@ export default function CityBreakdown() {
               {/* Content */}
               <div className="mt-2">
                 <p className="text-[10px] sm:text-[11px] text-gray-600 font-light">
-                    via pexels
+                    Image via pexels
                   </p>
                 {/* City Name (Desktop) */}
                 <h3 className="hidden mt-3 md:flex text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 items-center gap-2">

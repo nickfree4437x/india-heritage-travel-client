@@ -92,7 +92,7 @@ export default function IntroSection() {
         <div className="space-y-2 text-gray-700">
           <ul className="space-y-2 pl-0">
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Day 1: Drive from Udaipur via Rajsamand Lake, check into a heritage or boutique resort by early afternoon, explore the fort in the golden late-afternoon light, and attend the evening light-and-sound show.
+              <span className="font-light">•</span> Day 1: Drive from Udaipur Image via Rajsamand Lake, check into a heritage or boutique resort by early afternoon, explore the fort in the golden late-afternoon light, and attend the evening light-and-sound show.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Day 2: Sunrise safari in Kumbhalgarh Wildlife Sanctuary, breakfast at resort, another exploration of the fort with the less visited temple cluster inside the fort, detour to Ranakpur Jain Temple and further journey to Udaipur/Jodhpur.

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
   // ----- BASIC SEO -----
   title:
-    "Luxury Ayurveda Retreats in India | Wellness, Healing & Relaxation Guide | India Heritage Travel",
+    "Luxury Ayurveda Retreats in India: Wellness & Travel Guide",
 
   description:
     "Explore India's finest luxury Ayurveda retreats offering holistic healing, wellness therapies, yoga experiences, relaxation programs, personalized treatments, and rejuvenating wellness escapes.",
@@ -27,19 +27,16 @@ export const metadata: Metadata = {
   keywords: [
     "Luxury Ayurveda Retreats in India",
     "Ayurveda Retreat India",
+    "Best Ayurveda Retreats in India",
     "Luxury Wellness Retreats India",
-    "Ayurvedic Healing India",
-    "Wellness Tourism India",
-    "Yoga Retreat India",
-    "Holistic Healing Retreats",
-    "Luxury Spa Retreat India",
-    "Ayurveda Wellness Programs",
-    "India Heritage Travel",
-    "Luxury Travel India",
-    "Wellness Travel India",
-    "Relaxation Retreats India",
-    "Ayurvedic Treatments India",
-    "Healing Holidays India",
+    "Ayurveda Wellness Retreat Kerala",
+    "Yoga and Ayurveda Retreat India",
+    "Ayurveda Holiday India",
+    "Wellness Retreats in India",
+    "Ayurveda Travel Guide",
+    "Luxury Wellness Travel India",
+    "Ayurveda Resorts in India",
+    "India Wellness Tourism",
   ],
 
   // ----- AUTHOR & PUBLISHER -----

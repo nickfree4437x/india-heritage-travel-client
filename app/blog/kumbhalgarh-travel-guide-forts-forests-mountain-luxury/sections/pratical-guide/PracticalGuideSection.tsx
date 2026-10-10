@@ -53,7 +53,7 @@ export default function IntroSection() {
         {/* Content */}
         <div className="space-y-4 text-gray-700">
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2 md:mb-3">
-            Kumbhalgarh doesn't have its own airport, railway, or bus depot - you reach it via Udaipur. 
+            Kumbhalgarh doesn't have its own airport, railway, or bus depot - you reach it Image via Udaipur. 
             The nearest airport and railway station are both in Udaipur (~85 km), about two hours away by 
             private transfer. Driving is the best option; a private chauffeur-driven car offers the most 
             comfortable way to cover the scenic 2–2.5 hour route.

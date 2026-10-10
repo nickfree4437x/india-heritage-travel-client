@@ -14,7 +14,7 @@ export default function ShillongSection() {
         </h2>
 
         {/* IMAGE */}
-        <div className="mt-4 md:mt-6">
+        <div className="mt-2 md:mt-4">
 
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
@@ -27,7 +27,7 @@ export default function ShillongSection() {
           </div>
 
           <p className="mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
-            via unsplash.com
+            Image via unsplash.com
           </p>
 
         </div>
@@ -118,7 +118,7 @@ export default function ShillongSection() {
 
         </div>
 
-        <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
+        <div className="mt-2 md:mt-4 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
           <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
             Planning Your Summer Escape to India?

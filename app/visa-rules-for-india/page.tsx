@@ -124,7 +124,7 @@ export default function VisaRulesPage() {
           The visa application process is more efficient when done through the
           Indian embassy in your home country. You'll need to complete an
           application form and provide your current passport, along with at least
-          two passport-sized photographs. Visa applications can be sent via mail
+          two passport-sized photographs. Visa applications can be sent Image via mail
           with payment in the form of money orders. Cash or checks are typically
           not accepted. When applying in person, consulates and embassies often
           accept cash, but money orders are the preferred option. The visa

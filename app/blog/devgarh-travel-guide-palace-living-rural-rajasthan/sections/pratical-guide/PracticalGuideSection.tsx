@@ -55,7 +55,7 @@ export default function IntroSection() {
             Getting to Devgarh is probably best done by private car from Udaipur, and yes it’s a sort of 
             direct run about 2.5–3 hours, roughly 120 km, through pretty Aravalli scenery. If you’re coming 
             by air, the closest major airport is Udaipur’s Maharana Pratap Airport at Dabok, with the usual 
-            domestic routes and connections. Devgarh also has a rail station on the line via Mavli Junction, 
+            domestic routes and connections. Devgarh also has a rail station on the line Image via Mavli Junction, 
             and there are state-run buses that link it to Udaipur, but honestly a chauffeur driven car still 
             feels the coziest, and also the most adaptable, especially if you want to blend Devgarh with 
             Kumbhalgarh and Ranakpur along the route.

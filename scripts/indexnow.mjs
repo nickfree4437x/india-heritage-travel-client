@@ -526,7 +526,7 @@ async function main() {
 
   let urlsToSubmit = [];
 
-  // Mode 1: Specific URLs passed via CLI
+  // Mode 1: Specific URLs passed Image via CLI
   if (urlsArg) {
     const rawList = urlsArg.replace("--urls=", "").split(",");
     urlsToSubmit = deduplicateUrls(rawList);

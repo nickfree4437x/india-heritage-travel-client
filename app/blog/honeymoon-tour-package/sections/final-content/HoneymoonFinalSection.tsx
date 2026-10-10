@@ -15,7 +15,7 @@ export default function HoneymoonFinalSection() {
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
-            Desert Dream in Rajasthan
+            Rajasthan Desert Honeymoon: Romantic Experiences
           </h2>
 
           {/* CONTENT */}
@@ -40,17 +40,17 @@ export default function HoneymoonFinalSection() {
 
           {/* CREDIT */}
           <p className="mt-1.5 sm:mt-2 text-[10px] sm:text-[11px] md:text-[12px] font-light text-gray-500">
-            via unsplash.com
+            Image via unsplash.com
           </p>
 
         </div>
 
         {/* ===== STAND OUT SECTION ===== */}
-        <div className="mt-6 sm:mt-8">
+        <div className="mt-2 sm:mt-4">
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
-            What Makes Our India Heritage Honeymoon Tour Packages Stand Out?
+            What to Consider When Planning Your India Honeymoon
           </h2>
 
           {/* ITEMS */}
@@ -113,11 +113,11 @@ export default function HoneymoonFinalSection() {
         </div>
 
         {/* ===== READY SECTION ===== */}
-        <div className="mt-4 sm:mt-6">
+        <div className="mt-2 sm:mt-4">
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c] mb-2">
-            Ready to Begin Your Forever Together?
+            Plan Your Honeymoon in India
           </h2>
 
           {/* CONTENT */}
@@ -146,7 +146,7 @@ export default function HoneymoonFinalSection() {
           <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
             <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
-              Looking for the Perfect Honeymoon in India?
+              Explore Honeymoon Tour Packages in India
             </h3>
 
             <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">

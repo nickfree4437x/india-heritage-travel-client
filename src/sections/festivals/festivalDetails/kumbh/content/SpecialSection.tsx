@@ -96,7 +96,7 @@ export default function SpecialSection() {
                   absolute inset-0
                   transition-all duration-700 ease-out
                   ${mobileActive === i
-                    ? "bg-gradient-to-t from-black/85 via-black/50 to-black/20"
+                    ? "bg-gradient-to-t from-black/85 Image via-black/50 to-black/20"
                     : "bg-black/40"
                   }
                 `}
@@ -166,7 +166,7 @@ export default function SpecialSection() {
                   absolute inset-0
                   transition-all duration-800 ease-out
                   ${active === i
-                    ? "bg-gradient-to-t from-black/80 via-black/40 to-black/10"
+                    ? "bg-gradient-to-t from-black/80 Image via-black/40 to-black/10"
                     : "bg-black/20 group-hover:bg-black/30"
                   }
                 `}

@@ -85,7 +85,7 @@ export default function BookingForm() {
     try {
       setLoading(true);
 
-      // Send email via EmailJS
+      // Send email Image via EmailJS
       await emailjs.send(
         "service_wknck3i",
         "template_tcj7wc3",

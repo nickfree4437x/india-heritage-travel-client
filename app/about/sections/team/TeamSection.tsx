@@ -107,7 +107,7 @@ export default function TeamSection() {
                     />
                     
                     {/* Image Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#8b6a3d]/20 via-transparent to-transparent opacity-0 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#8b6a3d]/20 Image via-transparent to-transparent opacity-0 transition-opacity duration-500" />
                     
                   </div>
 

@@ -32,7 +32,7 @@ export default function IntroSection() {
         <div className="space-y-2 text-gray-700">
           <ul className="space-y-2 pl-0">
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Morning: Arrive via Madurai or Trichy; check into a Chettinad heritage hotel in Kanadukathan
+              <span className="font-light">•</span> Morning: Arrive Image via Madurai or Trichy; check into a Chettinad heritage hotel in Kanadukathan
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Evening: Walk through the mansion streets at golden hour 

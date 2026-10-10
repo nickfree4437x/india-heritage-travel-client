@@ -631,4 +631,13 @@ export const blogs = [
     excerpt:
       "Discover Fort Kochi's colonial history, heritage architecture, boutique hotels, cultural....",
   },
+  {
+    id: 71,
+    slug: "neemrana-fort-palace-stay",
+    title: "Neemrana Fort Palace Stay: The Art of Staying in a Historic Fort",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1791613344/pexels-pramodtiwari-33797765_qphwvf.jpg",
+    date: "10 September",
+    excerpt:
+      "Plan your Neemrana Fort Palace stay with our complete guide to its Rajput history, eleven....",
+  },
 ];

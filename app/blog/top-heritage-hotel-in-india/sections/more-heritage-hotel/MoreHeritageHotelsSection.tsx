@@ -64,7 +64,7 @@ export default function MoreHeritageHotelsSection() {
             </div>
 
             <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
-              via Tripadvisor
+              Image via Tripadvisor
             </p>
 
           </div>
@@ -123,7 +123,7 @@ export default function MoreHeritageHotelsSection() {
             </div>
 
             <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
-              via Tripadvisor
+              Image via Tripadvisor
             </p>
 
           </div>
@@ -192,7 +192,7 @@ export default function MoreHeritageHotelsSection() {
             </div>
 
             <p className="mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
-              via taj hotels
+              Image via taj hotels
             </p>
 
           </div>

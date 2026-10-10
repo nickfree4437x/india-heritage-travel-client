@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Best Honeymoon Tour Packages in India",
+      name: "Best Honeymoon Destinations in India: Romantic Getaways for Couples",
       item: BLOG_URL,
     },
   ],
@@ -45,9 +45,9 @@ export const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Best Honeymoon Tour Packages in India | Romantic & Luxury Getaways",
+    "Best Honeymoon Destinations in India: Romantic Getaways for Couples | Romantic & Luxury Getaways",
   description:
-    "Discover the best honeymoon tour packages in India featuring luxury resorts, heritage hotels, romantic escapes, cultural experiences, scenic destinations, and personalized itineraries for unforgettable memories.",
+    "Discover the Best Honeymoon Destinations in India: Romantic Getaways for Couples featuring luxury resorts, heritage hotels, romantic escapes, cultural experiences, scenic destinations, and personalized itineraries for unforgettable memories.",
   image: IMAGE_URL,
   author: BLOG_AUTHORS.isha,
   publisher: {
@@ -70,7 +70,7 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Best Honeymoon Tour Packages in India",
+  name: "Best Honeymoon Destinations in India: Romantic Getaways for Couples",
   description:
     "Explore romantic honeymoon destinations across India with luxury stays, cultural experiences, personalized itineraries, scenic landscapes, and unforgettable travel moments.",
   url: BLOG_URL,

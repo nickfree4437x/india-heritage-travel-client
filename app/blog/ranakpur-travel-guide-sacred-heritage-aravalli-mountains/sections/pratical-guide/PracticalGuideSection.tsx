@@ -55,7 +55,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> By Air: The nearest airport is Udaipur (UDR), roughly 90 km away, with regular domestic connections from Delhi, Mumbai, and Jaipur.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> •	By Rail:  Falna Railway Station (~35-40km away) connects you via rail but majority of the travelers go by connecting railway stations in city of Udaipur for better train connectivity.
+              <span className="font-light">•</span> •	By Rail:  Falna Railway Station (~35-40km away) connects you Image via rail but majority of the travelers go by connecting railway stations in city of Udaipur for better train connectivity.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> •	By Road:  From Udaipur take private Car/ Taxi / Auto which will cover around 2 – 2.5 Hrs distance while covering beautiful Aravallis Route. State & Private Buses are available from City Of Udaipur ,Jodhpur ,Mount Abu To Our Town “Ranakpur” .
@@ -78,7 +78,7 @@ export default function IntroSection() {
         {/* Content */}
         <div className="space-y-4 text-gray-700">
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2 md:mb-3">
-           Entry into the Ranakpur Jain Temple complex itself is free of charge for all visitors. There’s also a small fee involved if you want to bring cameras/mobiles inside. Non-Jain visitors will usually be admitted between approx 12PM-5PM – though this may vary slightly according to festivals, and during which times the temple is normally open for Jain devotees since dawn. It’s best to confirm timings on arrival (or via your tour operator) before heading out.
+           Entry into the Ranakpur Jain Temple complex itself is free of charge for all visitors. There’s also a small fee involved if you want to bring cameras/mobiles inside. Non-Jain visitors will usually be admitted between approx 12PM-5PM – though this may vary slightly according to festivals, and during which times the temple is normally open for Jain devotees since dawn. It’s best to confirm timings on arrival (or Image via your tour operator) before heading out.
           </p>
         </div>
       </div>

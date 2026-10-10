@@ -15,7 +15,7 @@ export default function BlogExtraContentSection() {
             font-semibold
             mb-2
           ">
-            Packages That Fit You
+            Personalized India Tour Packages
           </h2>
 
           <div className="max-w-6xl">
@@ -51,14 +51,14 @@ export default function BlogExtraContentSection() {
           ">
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/f_auto,q_auto,w_1200/v1779649649/Jaipur-Where-the-past-paints-the-present_yefkwy.jpg"
-              alt="Jaipur heritage destination featured in a personalized India travel itinerary"
+              alt="Jaipur heritage architecture as part of a personalized India tour itinerary"
               fill
               sizes="(max-width: 768px) 100vw, 1200px"
               className="object-cover"
             />
           </div>
           <p className="mt-2 text-[11px] sm:text-[12px] font-light text-gray-600">
-            Via: unsplash.com
+            Image via: unsplash.com
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function BlogExtraContentSection() {
             font-semibold
             mb-2
           ">
-            Safety, Trust, Backup
+            How to Evaluate an India Travel Agency
           </h2>
 
           <div className="space-y-4">
@@ -100,7 +100,7 @@ export default function BlogExtraContentSection() {
             font-semibold
             mb-2
           ">
-            Smarter Use of Your Money
+            Comparing India Tour Costs and Value
           </h2>
 
           <div className="space-y-4">
@@ -133,7 +133,7 @@ export default function BlogExtraContentSection() {
             font-semibold
             mb-2
           ">
-            What Builds Real Confidence
+            What to Look for Before Booking
           </h2>
 
           <div className="space-y-4">

@@ -107,7 +107,7 @@ export default function CityBreakdown() {
                   />
                 ) : (
                   <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
-                    via pexels
+                    Image via pexels
                   </p>
                 )}
 
@@ -122,7 +122,7 @@ export default function CityBreakdown() {
               {/* Content */}
               <div className="mt-2">
                 <p className="text-[10px] sm:text-[11px] text-gray-600 font-light">
-                    via pexels
+                    Image via pexels
                   </p>
                 {/* City Name (Desktop) */}
                 <h3 className="hidden mt-3 md:flex text-[14px] md:text-[16px] font-bold text-[#2c2c2c] mb-2 items-center gap-2">

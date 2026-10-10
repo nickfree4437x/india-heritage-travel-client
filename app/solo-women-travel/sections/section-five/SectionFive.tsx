@@ -67,7 +67,7 @@ export default function WomensCircleSection() {
             inset-0
             bg-gradient-to-br
             from-[#efe4d5]
-            via-transparent
+            Image via-transparent
             to-[#eadfd2]
             opacity-40
             blur-xl
