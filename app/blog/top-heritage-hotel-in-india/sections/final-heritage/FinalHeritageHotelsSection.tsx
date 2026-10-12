@@ -18,7 +18,7 @@ export default function FinalHeritageHotelsSection() {
                text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
-            6. Taj Falaknuma Palace, Hyderabad – A Palace Among the Clouds
+            6. Taj Falaknuma Palace, Hyderabad — A Royal Heritage Stay
           </h2>
 
           {/* CONTENT */}
@@ -89,7 +89,7 @@ export default function FinalHeritageHotelsSection() {
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
-            7. Neemrana Fort Palace, Alwar: The Marvel History
+            7. Neemrana Fort Palace, Rajasthan — A Historic Fort Stay
           </h2>
 
           {/* CONTENT */}
@@ -123,7 +123,7 @@ export default function FinalHeritageHotelsSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779816294/ajay-sharda-9C_H_vJk6Cc-unsplash_hmkdhi.jpg"
-              alt="Neemrana Fort Palace"
+              alt="Neemrana Fort Palace in Rajasthan featuring historic fort architecture"
               fill
               sizes="100vw"
               className="object-cover"
@@ -157,7 +157,7 @@ export default function FinalHeritageHotelsSection() {
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
-            8. Glenburn Tea Estate, Darjeeling – A Heritage Retreat in the Hills
+            8. Glenburn Tea Estate, Darjeeling — A Heritage Stay Among Tea Gardens
           </h2>
 
           {/* CONTENT */}
@@ -192,7 +192,7 @@ export default function FinalHeritageHotelsSection() {
 
             <Image
               src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779816591/26.05.2026_22.59.02_REC_jh6vrs.png"
-              alt="Glenburn Tea Estate"
+              alt="Glenburn Tea Estate near Darjeeling surrounded by tea plantations and Himalayan scenery"
               fill
               sizes="100vw"
               className="object-cover"

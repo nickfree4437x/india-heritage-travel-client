@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Best Heritage Hotels in India",
+      name: "Best Heritage Hotels in India: Royal Palace Stays",
       item: BLOG_URL,
     },
   ],
@@ -70,7 +70,7 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Best Heritage Hotels in India",
+  name: "Best Heritage Hotels in India: Royal Palace Stays",
   description:
     "Explore India's finest heritage hotels, royal palaces, luxury stays, cultural experiences, and historic hospitality experiences.",
   url: BLOG_URL,

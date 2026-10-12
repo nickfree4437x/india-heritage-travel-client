@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function LuxuryIndiaTourSection() {
   return (
-    <section className="w-full bg-white py-2">
+    <section className="w-full bg-white py-0">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* INTRO */}
@@ -37,10 +37,10 @@ export default function LuxuryIndiaTourSection() {
         </div>
 
         {/* DAY 1-2 */}
-        <div className="mt-6 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
-            Day 1-2: Arrive to Delhi – Where Tradition Meets Luxury
+            Days 1–2: Delhi - Heritage, History and Luxury
           </h2>
 
           {/* CONTENT */}
@@ -85,7 +85,7 @@ export default function LuxuryIndiaTourSection() {
           </div>
 
           {/* EXTRA CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-3 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Learn about the history of India and Delhi, the
@@ -120,10 +120,10 @@ export default function LuxuryIndiaTourSection() {
         </div>
 
         {/* DAY 3-4 */}
-        <div className="mt-6 md:mt-8">
+        <div className="mt-4 md:mt-6">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
-            Day 3-4: Agra – The Timeless Beauty of the Taj Mahal
+            Days 3–4: Agra - The Taj Mahal and Mughal Heritage
           </h2>
 
           {/* CONTENT */}
@@ -153,7 +153,7 @@ export default function LuxuryIndiaTourSection() {
             <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779821261/jovyn-chamb-iWMfiInivp4-unsplash_atjf9m.jpg"
-                alt="Taj Mahal"
+                alt="Taj Mahal in Agra, India, known for its white-marble Mughal architecture"
                 fill
                 sizes="100vw"
                 className="object-cover"
@@ -167,7 +167,7 @@ export default function LuxuryIndiaTourSection() {
           </div>
 
           {/* EXTRA CONTENT */}
-          <div className="mt-6 space-y-2 max-w-6xl">
+          <div className="mt-3 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               Built entirely of white marble it has no peers; visit

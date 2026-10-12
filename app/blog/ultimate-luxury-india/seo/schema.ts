@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Ultimate 10-Day Luxury India Tour Itinerary",
+      name: "Luxury India Tour Itinerary: 10-Day Premium Travel Guide",
       item: BLOG_URL,
     },
   ],

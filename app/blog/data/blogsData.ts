@@ -572,7 +572,7 @@ export const blogs = [
     id: 64,
     slug: "mandawa-heritage-haveli-stay-painted-havelis-guide",
     title: "Mandawa Heritage Haveli Stay: A Luxury Guide to Rajasthan's Painted Havelis",
-    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1788952338/vikram-chouhan-udaipur-web-designer-I8Zlcv5Sbno-unsplash_kpapkm.jpg",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1788954498/vikram-chouhan-udaipur-web-designer-N-3yaHfspfo-unsplash_kq76qe.jpg",
     date: "09 September",
     excerpt:
       "Discover the perfect Mandawa Heritage Haveli Stay frescoed forts, hidden havelis, and luxury Shekha....",
@@ -636,8 +636,17 @@ export const blogs = [
     slug: "neemrana-fort-palace-stay",
     title: "Neemrana Fort Palace Stay: The Art of Staying in a Historic Fort",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1791613344/pexels-pramodtiwari-33797765_qphwvf.jpg",
-    date: "10 September",
+    date: "10 October",
     excerpt:
       "Plan your Neemrana Fort Palace stay with our complete guide to its Rajput history, eleven....",
+  },
+  {
+    id: 72,
+    slug: "alwar-luxury-heritage-retreats",
+    title: "Alwar Luxury Heritage Retreats: Forgotten Palaces, Wild Aravallis and Royal Stays",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1791786064/pexels-jatin-chaudhary-820545799-34548994_bizxlx.jpg",
+    date: "12 October",
+    excerpt:
+      "Discover Alwar's luxury heritage retreats, royal palaces, Siliserh Lake Palace, Hill Fort ....",
   },
 ];

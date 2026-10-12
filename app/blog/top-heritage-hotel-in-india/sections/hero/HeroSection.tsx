@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/top-heritage-hotel-in-india";
-  const shareTitle = "Top Heritage Hotels in India for an Exclusive Stay";
+  const shareTitle = "Best Heritage Hotels in India: Royal Palace Stays";
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579638015/blog-9_h4aqqf.jpg"
-          alt="Top Heritage Hotels in India for an exclusive luxury stay"
+          alt="Best heritage hotels in India featuring royal palace architecture and historic stays"
           fill
           priority
           sizes="100vw"
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="Top Heritage Hotels in India" />
+      <BlogBreadcrumb title="Best Heritage Hotels in India: Royal Palace Stays" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,9 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            Top Heritage Hotels in India
+            Best Heritage Hotels in India:
             <br />
-            for an Exclusive Stay
+            Royal Palace Stays
           </h1>
 
           {/* Description */}
@@ -60,10 +60,7 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            India is a land where ancient palaces and royal residences
-            have been transformed into luxurious heritage hotels,
-            offering travelers a royal experience filled with history,
-            elegance, and timeless charm.
+            Discover heritage hotels across India, from Rajasthan's royal palace hotels to historic forts and traditional havelis. Explore distinctive architecture, cultural experiences, and accommodation options for your India trip.
           </p>
 
           {/* Divider Line */}

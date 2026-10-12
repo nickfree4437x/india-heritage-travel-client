@@ -20,7 +20,7 @@ export default function MoreHeritageHotelsSection() {
               font-semibold mb-2
             "
           >
-            3. Mandawa Kothi, Mandawa – The Hidden Gem of Shekhawati
+            3. Mandawa Kothi, Mandawa : A Heritage Stay in Shekhawati
           </h2>
 
           {/* CONTENT */}
@@ -82,7 +82,7 @@ export default function MoreHeritageHotelsSection() {
               font-semibold mb-2
             "
           >
-            4. The Oberoi Grand, Kolkata - Colonial Charm at Its Best
+            4. The Oberoi Grand, Kolkata Colonial-Era Elegance
           </h2>
 
           {/* CONTENT */}
@@ -151,7 +151,7 @@ export default function MoreHeritageHotelsSection() {
               font-semibold mb-2
             "
           >
-            5. Rambagh Palace, Jaipur – The Jewel of Rajasthan
+            5.Rambagh Palace, Jaipur : A Royal Heritage Hotel
           </h2>
 
           {/* CONTENT */}

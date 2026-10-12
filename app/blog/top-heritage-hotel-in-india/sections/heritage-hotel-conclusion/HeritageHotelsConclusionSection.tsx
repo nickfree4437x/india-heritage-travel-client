@@ -18,7 +18,7 @@ export default function HeritageHotelsConclusionSection() {
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
-            Why choose a heritage hotel in India?
+            Why Choose a Heritage Hotel in India?
           </h2>
 
           {/* CONTENT */}
@@ -54,7 +54,7 @@ export default function HeritageHotelsConclusionSection() {
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
-            Book Your Stay with the Best Travel Agency in India
+            Plan Your India Heritage Hotel Stay
           </h2>
 
           {/* CONTENT */}
@@ -79,7 +79,7 @@ export default function HeritageHotelsConclusionSection() {
         <div className="mt-4 md:mt-6 bg-[#faf8f5] rounded-md p-6 sm:p-8">
 
           <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
-            Ready for a Royal Stay at India's Finest Heritage Hotels?
+            Discover the Best Heritage Hotels in India
           </h3>
 
           <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify mb-4">

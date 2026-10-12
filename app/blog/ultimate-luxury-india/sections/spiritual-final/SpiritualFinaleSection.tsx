@@ -12,7 +12,7 @@ export default function SpiritualFinaleSection() {
         <div className="py-8">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
-            Day 9-10: Varanasi – A Spiritual Grand Finale
+            Days 9–10: Varanasi - Spiritual Heritage and the Ganges
           </h2>
 
           {/* CONTENT */}

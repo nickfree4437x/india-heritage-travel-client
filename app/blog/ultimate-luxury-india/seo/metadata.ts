@@ -13,25 +13,24 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Luxury India Tour Itinerary | Ultimate 10-Day Premium Travel Experience | India Heritage Travel",
+    "Luxury India Tour Itinerary: 10-Day Premium Travel Guide",
   description:
-    "Discover the ultimate luxury India itinerary featuring royal palaces, heritage hotels, cultural landmarks, premium experiences, private journeys, and unforgettable travel across India's most iconic destinations.",
+    "Explore a luxury India tour itinerary featuring royal palaces, heritage hotels, cultural landmarks, and premium experiences. Discover destination ideas for planning a memorable 10-day journey across India.",
   keywords: [
+    "Luxury India Tour Itinerary",
     "Luxury India Tour",
-    "Luxury India Itinerary",
-    "10 Day India Tour",
+    "10 Day Luxury India Tour",
     "Luxury India Travel",
-    "India Luxury Holidays",
-    "Luxury Rajasthan Tour",
+    "Luxury Holidays in India",
+    "Luxury India Travel Itinerary",
     "Golden Triangle Luxury Tour",
-    "Heritage Hotels India",
-    "Royal Palace Stays India",
-    "Luxury Travel India",
-    "Premium India Tour Packages",
-    "India Heritage Travel",
-    "Private India Tours",
+    "Luxury Rajasthan Tour",
+    "Heritage Hotels in India",
+    "Royal Palace Stays in India",
+    "Private Luxury Tours India",
     "Luxury Cultural Tours India",
-    "India Luxury Experiences",
+    "Premium India Tour Packages",
+    "Luxury Travel Guide India",
   ],
   authors: [
     {
@@ -62,9 +61,9 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/ultimate-luxury-india",
     siteName: "India Heritage Travel",
     title:
-      "Luxury India Tour Itinerary | Ultimate 10-Day Premium Travel Experience",
+      "Luxury India Tour Itinerary: 10-Day Premium Travel Guide",
     description:
-      "Explore India's finest luxury travel experiences featuring royal palaces, heritage hotels, cultural landmarks, and premium curated journeys.",
+      "Explore a luxury India itinerary with royal palaces, heritage hotels, cultural landmarks, and premium travel experiences across India.",
     images: [
       {
         url: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779819835/blog-10_ex9fic.webp",
@@ -77,7 +76,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Luxury India Tour Itinerary | Premium Travel Experience",
+      "Luxury India Tour Itinerary: 10-Day Premium Travel Guide",
     description:
       "Discover royal palaces, heritage hotels, luxury stays, and unforgettable journeys across India.",
     images: [

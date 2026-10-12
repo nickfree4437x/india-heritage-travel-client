@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/ultimate-luxury-india";
-  const shareTitle = "Ultimate 10-Day Luxury India Tour Itinerary";
+  const shareTitle = "Luxury India Tour Itinerary: 10-Day Premium Travel Guide";
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579819835/blog-10_ex9fic.webp"
-          alt="Ultimate luxury India tour featuring heritage palaces exclusive experiences and iconic destinations"
+          alt="Luxury India tour itinerary featuring royal palaces, heritage hotels and cultural experiences"
           fill
           priority
           sizes="100vw"
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="Ultimate 10-Day Luxury India Tour Itinerary" />
+      <BlogBreadcrumb title="Luxury India Tour Itinerary: 10-Day Premium Travel Guide" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,7 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            Ultimate 10-Day Luxury India Tour Itinerary
+            Luxury India Tour Itinerary:
+            <br/>
+             10-Day Premium Travel Guide
           </h1>
 
           {/* Description */}
