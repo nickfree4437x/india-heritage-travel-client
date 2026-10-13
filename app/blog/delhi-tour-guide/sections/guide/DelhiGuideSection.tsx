@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function DelhiGuideSection() {
   return (
-    <section className="w-full bg-white py-2">
+    <section className="w-full bg-white py-0">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
@@ -33,9 +33,7 @@ export default function DelhiGuideSection() {
 
           {/* HEADING */}
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
-            Begin with Research:
-            First-timer’s guide
-            to New Delhi
+            Begin with Research Before Your Delhi Trip
           </h2>
 
           {/* CONTENT */}

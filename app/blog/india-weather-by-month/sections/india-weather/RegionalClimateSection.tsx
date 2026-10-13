@@ -34,31 +34,31 @@ const cityData = [
   {
     name: "North India Weather",
     description:
-      `Delhi and the Gangetic plains experience four distinct seasons — cold winters (Nov–Feb), hot summers (Mar–June), a monsoon (Jun–Sept), and mild autumn (Oct–Nov). Winter fog in December–January can delay early flights — keep some buffer in your schedule.`,
+      `Delhi and the Gangetic plains experience four distinct seasons - cold winters (Nov–Feb), hot summers (Mar–June), a monsoon (Jun–Sept), and mild autumn (Oct–Nov). Winter fog in December–January can delay early flights - keep some buffer in your schedule.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786252610/pexels-rajesh-s-balouria-1289088-14314791_ikwi12.jpg",
   },
   {
     name: "South India Weather",
     description: 
-      `Kerala and Tamil Nadu remain warmer and more humid year-round than the north, with far less seasonal temperature contrast. Two monsoons — the southwest (Jun–Sept) and northeast (Oct–Dec) — bring rain across a longer season than northern India.`,
+      `Kerala and Tamil Nadu remain warmer and more humid year-round than the north, with far less seasonal temperature contrast. Two monsoons - the southwest (Jun–Sept) and northeast (Oct–Dec) - bring rain across a longer season than northern India.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786256438/pexels-nandhukumar-14844302_k1bss5.jpg",
   },
   {
     name: "Rajasthan Weather",
     description:
-      `Rajasthan has a desert climate — low humidity, dramatic day-to-night temperature swings, and some of India's coldest winter nights and hottest summer days. November through February is the most comfortable window for Jaipur, Jodhpur, Udaipur, and Jaisalmer.`,
+      `Rajasthan has a desert climate - low humidity, dramatic day-to-night temperature swings, and some of India's coldest winter nights and hottest summer days. November through February is the most comfortable window for Jaipur, Jodhpur, Udaipur, and Jaisalmer.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786260087/pexels-shikhasingh-37239564_l4z3uj.jpg",
   },
   {
     name: "Kerala Weather",
     description:
-      `Kerala's tropical climate stays humid year-round, with a dramatic monsoon (June–September) that draws travellers for lush backwaters and waterfalls. December–February brings drier, comfortable conditions — ideal for beaches and houseboat cruises.`,
+      `Kerala's tropical climate stays humid year-round, with a dramatic monsoon (June–September) that draws travellers for lush backwaters and waterfalls. December–February brings drier, comfortable conditions - ideal for beaches and houseboat cruises.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786258917/pexels-nisanth-panicker-1703892518-28399265_bjj5qn.jpg",
   },
   {
     name: "Himalayan Weather",
     description:
-      `The Himalayas are snowbound and difficult to reach in winter, but glorious from May to September when high-altitude roads — like Ladakh's passes — open. Hill stations like Shimla and Darjeeling are milder and accessible for a longer window.`,
+      `The Himalayas are snowbound and difficult to reach in winter, but glorious from May to September when high-altitude roads - like Ladakh's passes - open. Hill stations like Shimla and Darjeeling are milder and accessible for a longer window.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786252521/pexels-vatsal-bhatt-25432027-7433008_goxd2i.jpg",
   },
 ];

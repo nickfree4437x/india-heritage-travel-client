@@ -21,7 +21,7 @@ export default function IntroSection() {
         
           <ul className="space-y-2 pl-0">
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Lightweight , breathable clothes that cover the shoulders and knees for temple and mosque visits—just to be safe, you know.          
+              <span className="font-light">•</span> Lightweight , breathable clothes that cover the shoulders and knees for temple and mosque visits-just to be safe, you know.          
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Also bring a warm layer for cool desert nights and the air conditioned interiors, because it can feel kinda chilly.            

@@ -30,7 +30,7 @@ export default function BudgetAndSeasonSection() {
               </h3>
 
               <p className="text-[13px] sm:text-[14px] text-gray-700 leading-relaxed font-light">
-                Perhaps the finest months — cool mornings, clear days, and a quality of afternoon 
+                Perhaps the finest months - cool mornings, clear days, and a quality of afternoon 
                 light on the minar's carved surface that is hard to match at other times of year
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function BudgetAndSeasonSection() {
               </h3>
 
               <p className="text-[13px] sm:text-[14px] text-gray-700 leading-relaxed font-light">
-                Summer heat reaches 40°C+ in Delhi — early morning (7:00–9:00 AM) visits are manageable; 
+                Summer heat reaches 40°C+ in Delhi - early morning (7:00–9:00 AM) visits are manageable; 
                 midday is brutal. Not recommended unless you have no choice
               </p>
             </div>

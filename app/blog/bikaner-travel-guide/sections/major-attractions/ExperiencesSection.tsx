@@ -19,7 +19,7 @@ export default function HistorySection() {
               <span className="font-light">•</span> Watch the sun sink behind Junagarh Forts ramparts from Sursagar Lake, just outside the walls. it kind of looks like everything calms down there, even the air.   
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Try timing your trip to the Bikaner Camel Festival, usually around the 2nd weekend of January, for camel races, folk music and a Mr. Bikana beauty pageant   — for the camels.   
+              <span className="font-light">•</span> Try timing your trip to the Bikaner Camel Festival, usually around the 2nd weekend of January, for camel races, folk music and a Mr. Bikana beauty pageant   - for the camels.   
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Book a dinner or even an overnight stay at Gajner Palace, for a truly royal desert lake type of experience.   

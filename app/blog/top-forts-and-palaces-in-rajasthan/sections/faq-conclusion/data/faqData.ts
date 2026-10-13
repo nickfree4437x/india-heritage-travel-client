@@ -14,7 +14,7 @@ export const faqs = [
   {
     question: "Are any forts in Rajasthan UNESCO World Heritage Sites?",
     answer:
-      "Yes. Six forts - Amber Fort, Chittorgarh Fort, Kumbhalgarh Fort, Jaisalmer Fort, Ranthambore Fort, and Gagron Fort—were collectively recognised as the 'Hill Forts of Rajasthan' and inscribed as UNESCO World Heritage Sites in 2013.",
+      "Yes. Six forts - Amber Fort, Chittorgarh Fort, Kumbhalgarh Fort, Jaisalmer Fort, Ranthambore Fort, and Gagron Fort-were collectively recognised as the 'Hill Forts of Rajasthan' and inscribed as UNESCO World Heritage Sites in 2013.",
   },
 
   {

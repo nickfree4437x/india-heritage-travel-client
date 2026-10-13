@@ -20,7 +20,7 @@ const escapes = [
   {
     title: "Himachal Pradesh Honeymoon: Mountain Escapes",
     description:
-      "Snuggled amidst the mountains of Himachal Pradesh, find a serene retreat amidst pine groves and fresh mountain air. Snuggle into quaint cottage accommodations, hike on scenic trails, and indulge in tranquil moments by a roaring fire—your own Himalayan retreat.",
+      "Snuggled amidst the mountains of Himachal Pradesh, find a serene retreat amidst pine groves and fresh mountain air. Snuggle into quaint cottage accommodations, hike on scenic trails, and indulge in tranquil moments by a roaring fire-your own Himalayan retreat.",
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779651158/sajal-das-vuS2cYllXB4-unsplash_bljuej.jpg",
   },
   {

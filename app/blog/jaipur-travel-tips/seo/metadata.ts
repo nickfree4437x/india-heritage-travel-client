@@ -13,25 +13,24 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Jaipur Travel Guide: Best Places to Visit, Travel Tips & 3-Day Itinerary | India Heritage Travel",
+    "Jaipur Travel Guide: Best Places to Visit & 3-Day Itinerary",
   description:
     "Plan your Jaipur trip with this complete travel guide covering Amber Fort, City Palace, local markets, cultural experiences, travel tips, food recommendations, and a detailed 3-day itinerary.",
   keywords: [
     "Jaipur Travel Guide",
-    "Jaipur Travel Tips",
-    "Jaipur Itinerary",
     "Jaipur 3 Day Itinerary",
-    "Jaipur Tourist Places",
     "Best Places to Visit in Jaipur",
-    "Pink City Travel Guide",
+    "Things to Do in Jaipur",
+    "Jaipur Travel Tips",
     "Jaipur Sightseeing",
-    "Jaipur Attractions",
+    "Jaipur Tourist Attractions",
+    "Pink City Jaipur",
     "Amber Fort Jaipur",
     "City Palace Jaipur",
+    "Hawa Mahal Jaipur",
+    "Jaipur Local Markets",
+    "Jaipur Food Guide",
     "Rajasthan Travel Guide",
-    "Jaipur Vacation Guide",
-    "Things to Do in Jaipur",
-    "India Heritage Travel",
   ],
   authors: [
     {

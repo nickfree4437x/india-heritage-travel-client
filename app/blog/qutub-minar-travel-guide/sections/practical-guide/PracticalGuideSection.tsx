@@ -17,11 +17,11 @@ export default function PracticalGuideSection() {
     },
     {
       category: "SAARC / BIMSTEC countries",
-      price: "Concessional rates — check ASI website for current pricing",
+      price: "Concessional rates - check ASI website for current pricing",
     },
     {
       category: "Sound and Light Show",
-      price: "Separate ticket — confirm pricing at counter on arrival",
+      price: "Separate ticket - confirm pricing at counter on arrival",
     },
     {
       category: "Tripod / Professional",

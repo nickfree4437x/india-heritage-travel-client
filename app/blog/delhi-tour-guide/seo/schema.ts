@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "New Delhi Travel Guide",
+      name: "New Delhi Travel Guide: Best Places to Visit & Travel Tips",
       item: BLOG_URL,
     },
   ],
@@ -45,7 +45,7 @@ export const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "New Delhi Travel Guide: Essential Tips, Attractions & Local Experiences",
+    "New Delhi Travel Guide: Best Places to Visit & Travel Tips: Essential Tips, Attractions & Local Experiences",
   description:
     "Plan your New Delhi trip with this complete travel guide covering iconic attractions, local experiences, cultural insights, food recommendations, safety tips, and practical advice for first-time visitors.",
   image: IMAGE_URL,
@@ -70,7 +70,7 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "New Delhi Travel Guide",
+  name: "New Delhi Travel Guide: Best Places to Visit & Travel Tips",
   description:
     "Explore New Delhi with practical travel tips, iconic attractions, local experiences, cultural insights, food recommendations, and essential advice for first-time visitors.",
   url: BLOG_URL,

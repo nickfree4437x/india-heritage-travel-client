@@ -32,10 +32,10 @@ export default function IntroSection() {
         <div className="space-y-2 text-gray-700">
           <ul className="space-y-2 pl-0">
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Morning: Head straight to Jaisalmer Fort — enter through its four gateways, take your time exploring the Jain temple complex and the old royal palace.
+              <span className="font-light">•</span> Morning: Head straight to Jaisalmer Fort - enter through its four gateways, take your time exploring the Jain temple complex and the old royal palace.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Late Afternoon: Catch sunset from a rooftop café overlooking the fort ramparts — the classic view.   
+              <span className="font-light">•</span> Late Afternoon: Catch sunset from a rooftop café overlooking the fort ramparts - the classic view.   
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Optional: If time permits, stop at Gadisar Lake on the way back for a few photos.

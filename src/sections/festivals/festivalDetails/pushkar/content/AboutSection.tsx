@@ -41,7 +41,7 @@ export default function AboutSection() {
               <p>
                 Pushkar during the camel fair feels like another world.
                 For five days, the quiet desert town fills up with camels,
-                traders, travellers, and locals — all coming together for
+                traders, travellers, and locals - all coming together for
                 something special.
               </p>
 
@@ -54,7 +54,7 @@ export default function AboutSection() {
 
               <p>
                 Some people come to trade. Others just come to watch.
-                But everyone leaves with something — a memory, a story,
+                But everyone leaves with something - a memory, a story,
                 or just the feeling of being part of something truly
                 Rajasthani.
               </p>

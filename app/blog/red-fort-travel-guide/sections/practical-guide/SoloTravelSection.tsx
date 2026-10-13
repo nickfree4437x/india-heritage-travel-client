@@ -35,7 +35,7 @@ export default function HistorySection() {
             The The Red Fort itself , with its steady flow of people and formal security checks, is a 
             pretty comfortable stop for solo travelers and well you know, those little procedures are 
             kind of predictable. The nearby Old Delhi lanes feel busier and more chaotic, so solo 
-            visitors—especially solo female travelers—often find it easier to wander Chandni Chowk 
+            visitors-especially solo female travelers-often find it easier to wander Chandni Chowk 
             and the food lanes with a pre-arranged guide, than trying to go around solo on a first 
             visit. Keeping it to daylight hours near the fort , and choosing a private vehicle instead 
             of street-hailed transport, are simple ways to move with more ease, more quietly too.

@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/delhi-tour-guide";
-  const shareTitle = "A first timer guide to New Delhi";
+  const shareTitle = "New Delhi Travel Guide: Best Places to Visit & Travel Tips";
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579828252/blog-12_dxeh3u.jpg"
-          alt="Discovering the historical and cultural beauty of New Delhi India"
+          alt="New Delhi Travel Guide featuring the city's historic landmarks and cultural attractions"
           fill
           priority
           sizes="100vw"
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="A first timer guide to New Delhi" />
+      <BlogBreadcrumb title="New Delhi Travel Guide: Best Places to Visit & Travel Tips" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,9 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            A first timer guide to
+            New Delhi Travel Guide:
             <br />
-            New Delhi
+            Best Places to Visit & Travel Tips
           </h1>
 
           {/* Description */}
@@ -60,10 +60,9 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Navigate the chaos, culture, food, traffic,
-            markets, monuments, and unforgettable energy
-            of India's vibrant capital with this practical
-            first-time traveler's guide to New Delhi.
+            Explore New Delhi's iconic attractions, historic Old Delhi,
+            local food, cultural experiences, and practical travel tips
+            to help plan your first visit to India's capital.
           </p>
 
           {/* Divider Line */}

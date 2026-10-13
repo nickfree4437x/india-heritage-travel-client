@@ -13,25 +13,24 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "New Delhi Travel Guide: Essential Tips, Attractions & Local Experiences | India Heritage Travel",
+    "New Delhi Travel Guide: Best Places to Visit & Travel Tips | India Heritage Travel",
   description:
-    "Plan your New Delhi trip with this complete travel guide covering iconic attractions, local experiences, cultural insights, food recommendations, safety tips, and practical advice for first-time visitors.",
+    "Plan your New Delhi trip with this travel guide to iconic attractions, Old Delhi, local food, cultural experiences, practical travel tips, and advice for first-time visitors.",
   keywords: [
     "New Delhi Travel Guide",
     "Delhi Travel Guide",
+    "Best Places to Visit in Delhi",
     "Delhi Travel Tips",
-    "Delhi Tourist Attractions",
     "Things to Do in Delhi",
-    "Delhi Itinerary",
-    "First Time Delhi Visitor Guide",
-    "Delhi Sightseeing",
+    "Delhi Tourist Attractions",
     "Old Delhi Travel Guide",
-    "New Delhi Tourist Places",
+    "New Delhi Sightseeing",
+    "Delhi Itinerary",
     "Delhi Food Guide",
-    "Delhi Local Experiences",
+    "Delhi Cultural Experiences",
+    "Delhi Local Markets",
+    "First-Time Visitor Guide to Delhi",
     "India Travel Guide",
-    "Delhi Vacation Guide",
-    "India Heritage Travel",
   ],
   authors: [
     {
@@ -62,7 +61,7 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/delhi-tour-guide",
     siteName: "India Heritage Travel",
     title:
-      "New Delhi Travel Guide: Essential Tips, Attractions & Local Experiences",
+      "New Delhi Travel Guide: Best Places to Visit & Travel Tips",
     description:
       "Explore New Delhi with practical travel tips, iconic attractions, local experiences, cultural insights, food recommendations, and essential advice for first-time visitors.",
     images: [
@@ -77,7 +76,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "New Delhi Travel Guide | Tips, Attractions & Local Experiences",
+      "New Delhi Travel Guide: Best Places to Visit & Travel Tips",
     description:
       "Discover the best of New Delhi with travel tips, must-visit attractions, local experiences, and practical advice for first-time visitors.",
     images: [

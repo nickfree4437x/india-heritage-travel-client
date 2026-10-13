@@ -25,7 +25,7 @@ export default function HistorySection() {
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2 md:mb-3">
             For 2026, the Pushkar Camel Fair is approximately set for 17 to 24 November, and it sort of 
-            peaks on Kartik Purnima — the Kartik full moon — around 23 to 24 November. That’s when hundreds 
+            peaks on Kartik Purnima - the Kartik full moon - around 23 to 24 November. That’s when hundreds 
             of thousands of pilgrims bathe in Pushkar Lake at dawn, in what’s widely seen as one of the most 
             powerful group rituals in India. Since the exact dates follow the lunar calendar, it’s smart to 
             double check the latest schedule for this year near your travel dates, and to lock in accommodation 

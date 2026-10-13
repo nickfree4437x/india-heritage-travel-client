@@ -12,7 +12,7 @@ const BLOG_TITLE =
 const BLOG_DESCRIPTION =
   "The complete Ranakpur Travel Guide: explore the 15th-century Chaumukha Jain Temple, Aravalli wildlife, luxury stays, and expert itineraries with India Heritage Travel.";
 const BLOG_ALT =
-  "Ranakpur Travel Guide — carved white marble pillars of the Chaumukha Jain Temple glowing at sunrise in the Aravalli Mountains, Rajasthan.";
+  "Ranakpur Travel Guide - carved white marble pillars of the Chaumukha Jain Temple glowing at sunrise in the Aravalli Mountains, Rajasthan.";
 
 // ============================================
 // RANAKPUR TRAVEL GUIDE - SEO METADATA

@@ -50,7 +50,7 @@ const cityData = [
   {
     name: "Birbal's House - The Minister's Jewel",
     description:
-      `Birbal was Akbar's most celebrated courtier — the ninth and most famous of his 'Navaratnas' 
+      `Birbal was Akbar's most celebrated courtier - the ninth and most famous of his 'Navaratnas' 
       (Nine Gems), renowned for his wit, wisdom, and the famous stories that have been told about 
       him across India for four centuries. `,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1783148436/Birbal-House-Fatehpursikri1-768x512_jzmgdf.jpg",

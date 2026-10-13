@@ -19,7 +19,7 @@ export default function JaipurDayTwoExtraSection() {
           <div className="mt-4 space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-              This is one is one of my favourite places in Jaipur.
+              Patrika Gate is one of my favourite places to visit in Jaipur.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
@@ -43,7 +43,7 @@ export default function JaipurDayTwoExtraSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779825828/yash-parashar-_NsZ2xM6tOI-unsplash_ghxr5x.jpg"
-                alt="Panoramic sunset view from Nahargarh Fort Jaipur Rajasthan"
+                alt="Colourful Patrika Gate at Jawahar Circle in Jaipur, Rajasthan"
                 fill
                 sizes="100vw"
                 className="object-cover"

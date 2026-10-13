@@ -50,7 +50,7 @@ export default function JaipurDayTwoSection() {
             <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               After exploring & enjoying views of Hawa Mahal, we
               explored some of the shops and stalls nearby which will
-              be a good place to buy souvenir.
+              be a good place to buy souvenirs.
             </p>
 
           </div>
@@ -79,7 +79,7 @@ export default function JaipurDayTwoSection() {
         <div className="mt-4 md:mt-6">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
-            HAVE DINEER AT CAFE PALLADIO
+            DINE AT CAFÉ PALLADIO
           </h2>
 
           {/* CONTENT */}
@@ -139,7 +139,7 @@ export default function JaipurDayTwoSection() {
         <div className="mt-4 md:mt-4">
 
           <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4">
-            MORNING AT MAHARANIYO KI CHHATRI | First-Timer’s Guide to Jaipur
+            MORNING AT MAHARANIYO KI CHHATRI
           </h3>
 
           {/* CONTENT */}

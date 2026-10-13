@@ -71,7 +71,7 @@ export default function FAQSection() {
           </h3>
 
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 font-light text-justify mb-3 md:mb-4">
-            India Heritage Travel crafts private Rajasthan itineraries featuring Nawalgarh's painted havelis, fresco walks, and Shekhawati heritage — combined with Mandawa, Jaipur, and Bikaner.
+            India Heritage Travel crafts private Rajasthan itineraries featuring Nawalgarh's painted havelis, fresco walks, and Shekhawati heritage - combined with Mandawa, Jaipur, and Bikaner.
           </p>
 
           <Link

@@ -22,6 +22,6 @@ export const faqs = [
   {
     question: "Are women-only tours worth it in India?",
     answer:
-      "For many first-time visitors, yes — a women-only or small female-group tour with a local female guide removes most of the logistical uncertainty of a first trip.",
+      "For many first-time visitors, yes - a women-only or small female-group tour with a local female guide removes most of the logistical uncertainty of a first trip.",
   },
 ];

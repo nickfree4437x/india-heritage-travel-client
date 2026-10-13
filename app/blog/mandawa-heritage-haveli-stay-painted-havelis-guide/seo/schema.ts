@@ -10,7 +10,7 @@ const HERO_IMAGE = `${SITE_URL}https://res.cloudinary.com/dja5yspwr/image/upload
 const BLOG_TITLE =
   "Mandawa Heritage Haveli Stay: A Luxury Guide to Rajasthan's Painted Havelis";
 const BLOG_DESCRIPTION =
-  "Discover the perfect Mandawa Heritage Haveli Stay — frescoed forts, hidden havelis, and luxury Shekhawati experiences curated by India Heritage Travel.";
+  "Discover the perfect Mandawa Heritage Haveli Stay - frescoed forts, hidden havelis, and luxury Shekhawati experiences curated by India Heritage Travel.";
 
 // ============================================
 // ARTICLE SCHEMA

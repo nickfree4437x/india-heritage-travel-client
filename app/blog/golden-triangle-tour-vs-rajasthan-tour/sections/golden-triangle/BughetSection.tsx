@@ -55,7 +55,7 @@ export default function BudgetComparison() {
 
           <p className="text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light text-justify">
             Both the Golden Triangle Tour and Rajasthan Tour can be planned
-            across a wide range of budgets—from backpacking adventures to
+            across a wide range of budgets-from backpacking adventures to
             ultra-luxury palace holidays. The comparison below reflects the
             approximate pricing for a comfortable private journey designed by
             India Heritage Travel.

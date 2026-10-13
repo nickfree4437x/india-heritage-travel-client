@@ -21,7 +21,7 @@ export default function DayOneJaipurSection() {
         <div className="mt-2">
 
           <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold">
-            ENJOY SUNRISE AT AMER VIEWPOINT | First-Timer’s Guide to Jaipur
+            ENJOY SUNRISE AT AMER VIEWPOINT
           </h3>
 
           {/* CONTENT */}
@@ -75,7 +75,7 @@ export default function DayOneJaipurSection() {
         <div className="mt-4 md:mt-6">
 
           <h3 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-4 uppercase">
-            SPEND LATER MORNING AT CITY PALACE
+            EXPLORE JAIPUR CITY PALACE
           </h3>
 
           {/* CONTENT */}
@@ -149,8 +149,8 @@ export default function DayOneJaipurSection() {
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-              This First-Timer’s Guide to Jaipur will take care that you
-              keep all of these things in mind while coming to Jaipur.
+              Planning your Jaipur itinerary in advance can help you make
+              the most of your visit and enjoy the city's royal heritage.
             </p>
 
           </div>

@@ -20,7 +20,7 @@ export default function NearbyAttractions() {
         <div className="space-y-2 text-gray-700">
           <ul className="space-y-2 pl-0">
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Lakshmi Narayan Temple: a hybrid fort/temple complex near the main complex, decorated with ceiling paintings depicting scenes from Krishna Leela and the 1857 revolt, shown in one of the galleries — not very crowded and easily your private spot.
+              <span className="font-light">•</span> Lakshmi Narayan Temple: a hybrid fort/temple complex near the main complex, decorated with ceiling paintings depicting scenes from Krishna Leela and the 1857 revolt, shown in one of the galleries - not very crowded and easily your private spot.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Phool Bagh: a pleasure garden in imperial style, equipped with an air-conditioning system – a tower and tunnel bringing fresh underground water through it and providing relief from hot Orchha summers.

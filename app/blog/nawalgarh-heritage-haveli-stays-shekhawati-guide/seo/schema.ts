@@ -8,7 +8,7 @@ const HERO_IMAGE = `${SITE_URL}https://res.cloudinary.com/dja5yspwr/image/upload
 const BLOG_TITLE =
   "Nawalgarh Heritage Haveli Stays: The Complete Guide to Shekhawati's Painted Mansions";
 const BLOG_DESCRIPTION =
-  "Discover Nawalgarh Heritage Haveli Stays in Shekhawati — frescoed mansions, boutique havelis, forts and insider tips. Plan your luxury heritage escape with India Heritage Travel.";
+  "Discover Nawalgarh Heritage Haveli Stays in Shekhawati - frescoed mansions, boutique havelis, forts and insider tips. Plan your luxury heritage escape with India Heritage Travel.";
 
 // ============================================
 // ARTICLE SCHEMA

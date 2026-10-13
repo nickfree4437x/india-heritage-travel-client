@@ -44,7 +44,7 @@ const caveatBrush = Caveat_Brush({
 
 // ============================================
 // ORGANIZATION ENTITY SCHEMA
-// Point #1 — Brand Identity Foundation — DONE
+// Point #1 - Brand Identity Foundation - DONE
 // ============================================
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -116,7 +116,7 @@ const organizationSchema = {
 
 // ============================================
 // WEBSITE ENTITY SCHEMA
-// Point #2 — Website Entity Architecture
+// Point #2 - Website Entity Architecture
 // ============================================
 const websiteSchema = {
   "@context": "https://schema.org",
@@ -207,7 +207,7 @@ export default function RootLayout({
         {/* ============================================
             ORGANIZATION ENTITY SCHEMA
             Global Root-Level JSON-LD
-            Point #1 — DONE
+            Point #1 - DONE
         ============================================ */}
         <Script
           id="organization-schema"
@@ -220,7 +220,7 @@ export default function RootLayout({
         {/* ============================================
             WEBSITE ENTITY SCHEMA
             Global Root-Level JSON-LD
-            Point #2 — PARTIALLY IMPLEMENTED
+            Point #2 - PARTIALLY IMPLEMENTED
         ============================================ */}
         <Script
           id="website-schema"

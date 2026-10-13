@@ -124,7 +124,7 @@ export default function TravelTipsSection() {
         <div className="mt-10 border border-[#e7dfd4] bg-[#faf7f3] rounded-sm p-6">
 
           <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-8 text-gray-700 font-light text-justify">
-            Rajasthan's forts are far more than impressive monuments—they are
+            Rajasthan's forts are far more than impressive monuments-they are
             living pieces of history. Taking your time, arriving prepared, and
             understanding the stories behind these remarkable structures will
             transform a simple sightseeing trip into an unforgettable cultural

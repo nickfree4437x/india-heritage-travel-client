@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Rohet Travel Guide: Palace Life & Bishnoi Village Experiences | India Heritage Travel",
   description:
-    "This Rohet travel guide covers Rohet Garh Palace, Bishnoi village safaris, wildlife, food and a suggested itinerary — plan a luxury heritage escape near Jodhpur with India Heritage Travel.",
+    "This Rohet travel guide covers Rohet Garh Palace, Bishnoi village safaris, wildlife, food and a suggested itinerary - plan a luxury heritage escape near Jodhpur with India Heritage Travel.",
   keywords: [
     "Rohet Travel Guide",
     "Rohet Rajasthan",

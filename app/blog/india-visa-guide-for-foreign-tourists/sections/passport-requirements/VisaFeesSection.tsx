@@ -116,7 +116,7 @@ export default function HistorySection() {
             Comprehensive travel insurance isn’t always strictly required for the usual e-Tourist Visa, but 
             honestly it’s still one of the more valuable items you can bring along. India is huge, healthcare 
             standards can swing a lot between metropolitan hubs and rural stretches, and even small travel
-             hiccups—like a missed connection, a monsoon delay, or a stomach bug—feel much easier to handle if 
+             hiccups-like a missed connection, a monsoon delay, or a stomach bug-feel much easier to handle if 
              you already have solid medical support plus trip coverage. India Heritage Travel advises every 
              guest to carry a policy that covers emergency medical treatment, evacuation, and trip interruption 
              through the entire length of the stay.

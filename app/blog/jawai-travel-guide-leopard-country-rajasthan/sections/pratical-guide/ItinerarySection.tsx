@@ -56,7 +56,7 @@ export default function IntroSection() {
         <div className="space-y-2 text-gray-700">
           <ul className="space-y-2 pl-0">
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Early morning leopard safari, departing around sunrise—like, a little before it fully gets going.   
+              <span className="font-light">•</span> Early morning leopard safari, departing around sunrise-like, a little before it fully gets going.   
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Breakfast back at camp, then rest during the warmer midday hours, sort of a quieter pause.   

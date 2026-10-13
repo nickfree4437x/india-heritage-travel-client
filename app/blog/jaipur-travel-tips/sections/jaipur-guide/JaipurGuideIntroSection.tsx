@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function JaipurGuideIntroSection() {
   return (
-    <section className="w-full bg-white py-2">
+    <section className="w-full bg-white py-0">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* INTRO */}
@@ -14,8 +14,8 @@ export default function JaipurGuideIntroSection() {
           <div className="space-y-2 max-w-6xl">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
-              Welcome to Jaipur, the Pink City of India, where every
-              corner is full with royal charm, vibrant culture and
+             Welcome to Jaipur, the Pink City of India, where every
+              corner is filled with royal charm, vibrant culture, and
               timeless beauty.
             </p>
 
@@ -56,7 +56,7 @@ export default function JaipurGuideIntroSection() {
 
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779827246/prateek-katyal-To6i1FNfsOc-unsplash_di7qqj.jpg"
-                alt="Hawa Mahal Jaipur - Jaipur Travel Tips"
+                alt="Hawa Mahal, the iconic Palace of Winds in Jaipur, Rajasthan"
                 fill
                 sizes="100vw"
                 className="object-cover"
@@ -77,7 +77,7 @@ export default function JaipurGuideIntroSection() {
             How many days you need to explore Jaipur?
           </h2>
 
-          <div className="mt-6 space-y-2">
+          <div className="mt-0 space-y-2">
 
             <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
               If you want to explore Jaipur comfortably then I’d

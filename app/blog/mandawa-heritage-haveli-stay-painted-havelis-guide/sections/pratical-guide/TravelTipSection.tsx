@@ -18,7 +18,7 @@ const cityData = [
   {
     name: "Solo Female Traveler Tips",
     description:
-      `Book stays and guides through a reliable, women-friendly operator in advance. Dress conservatively, carry a light shawl for sun protection, and avoid crowded havelis in the morning — opt for guided quiet back streets instead. Always arrange private transport after sunset rather than relying on shared rides.`,
+      `Book stays and guides through a reliable, women-friendly operator in advance. Dress conservatively, carry a light shawl for sun protection, and avoid crowded havelis in the morning - opt for guided quiet back streets instead. Always arrange private transport after sunset rather than relying on shared rides.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786170691/pexels-silverkblack-23225185_jgt9d1.jpg",
   },
 ];

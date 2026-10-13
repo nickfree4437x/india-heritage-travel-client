@@ -60,7 +60,7 @@ export default function HistorySection() {
         <div className="max-w-6xl">
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             The four toranas (ceremonial gateways) of the Great Stupa were added during the Satavahana 
-            period (1st century BCE–1st century CE) — among the finest stone carvings of the era. Each 
+            period (1st century BCE–1st century CE) - among the finest stone carvings of the era. Each 
             stands about 10 metres high, with intricate details from Jataka tales, Buddha's life, and 
             Buddhist beliefs. More than ornament, they serve as visual storytelling bringing Buddhist 
             teachings into everyday sight.

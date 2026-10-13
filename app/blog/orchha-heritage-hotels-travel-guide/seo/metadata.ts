@@ -9,7 +9,7 @@ const BLOG_URL = `${SITE_URL}${BLOG_PATH}`;
 const BLOG_TITLE =
   "Orchha Heritage Hotels: A Forgotten Kingdom Travel Guide";
 const BLOG_DESCRIPTION =
-  "Discover Orchha Heritage Hotels and the untouched Bundela capital on the Betwa River — palaces, temples, luxury stays, and a complete travel guide.";
+  "Discover Orchha Heritage Hotels and the untouched Bundela capital on the Betwa River - palaces, temples, luxury stays, and a complete travel guide.";
 const HERO_IMAGE =
   "https://res.cloudinary.com/dja5yspwr/image/upload/v1789311345/pexels-thebioscopeguy-20000870_srtgjy.jpg";
 const HERO_IMAGE_ALT =

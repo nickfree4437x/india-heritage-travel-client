@@ -16,8 +16,7 @@ export default function DelhiExtraGuideSection() {
           <div className="max-w-6xl">
 
             <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
-              Plan for Day Trips
-              around Delhi
+              Best Day Trips from Delhi
             </h2>
 
             <div className="space-y-2">

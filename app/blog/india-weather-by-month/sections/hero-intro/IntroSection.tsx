@@ -27,7 +27,7 @@ export default function HistorySection() {
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2 md:mb-3">
             This guide breaks India weather down month by month and region by region, so you can line up 
-            your travel dates with the exact vibe you’re chasing—like dry desert evenings in Jodhpur, 
+            your travel dates with the exact vibe you’re chasing-like dry desert evenings in Jodhpur, 
             monsoon-dark backwaters in Kerala, or wildflower season creeping through the Himalayan foothills.
           </p>
         </div>

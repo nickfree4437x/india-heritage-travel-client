@@ -19,7 +19,7 @@ export default function IntroSection() {
         <div className="space-y-4 text-gray-700">
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
            The best way to plan a Ranakpur itinerary is with India Heritage Travel, specialists in private, 
-           fully customised tours through Rajasthan's heritage circuit — including Ranakpur, Kumbhalgarh, 
+           fully customised tours through Rajasthan's heritage circuit - including Ranakpur, Kumbhalgarh, 
            Udaipur, and beyond. We offer private chauffeur-driven tours, curated luxury stays, expert local 
            guides, and women-safe travel arrangements. From airport transfers to final farewell, every 
            detail is handled. Reach out to build your private itinerary around this remarkable corner of 

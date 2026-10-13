@@ -57,7 +57,7 @@ export default function LatestBlogsSection() {
           </p>
         </div>
 
-        {/* Mobile — One Card at a Time */}
+        {/* Mobile - One Card at a Time */}
         <div className="block md:hidden">
           <Link
             href={`/blog/${latestBlogs[currentIndex]?.slug}`}
@@ -186,7 +186,7 @@ export default function LatestBlogsSection() {
           )}
         </div>
 
-        {/* Tablet + Desktop — Multiple Cards */}
+        {/* Tablet + Desktop - Multiple Cards */}
         <div className="
           hidden md:grid
           md:grid-cols-2 xl:grid-cols-3

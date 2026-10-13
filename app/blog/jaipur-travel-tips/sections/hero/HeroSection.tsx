@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/jaipur-travel-tips";
-  const shareTitle = "A First-Timer's Guide to Jaipur | Ultimate 3 Day Guide";
+  const shareTitle = "Jaipur Travel Guide: Best Places to Visit & 3-Day Itinerary";
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579822612/blog-11_payr6l.jpg"
-          alt="Exploring the royal heritage and cultural attractions of Jaipur Rajasthan"
+          alt="Jaipur Travel Guide featuring the city's royal heritage and cultural attractions"
           fill
           priority
           sizes="100vw"
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="A First-Timer's Guide to Jaipur" />
+      <BlogBreadcrumb title="Jaipur Travel Guide: Best Places to Visit & 3-Day Itinerary" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,7 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            A First-Timer's Guide to Jaipur
+            Jaipur Travel Guide: Best 
+            <br/>
+            Places to Visit & 3-Day Itinerary
           </h1>
 
           {/* Description */}
@@ -58,10 +60,9 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Discover the royal charm of Jaipur with this ultimate
-            3-day guide covering majestic forts, colorful bazaars,
-            iconic palaces, local food, and unforgettable cultural
-            experiences in the Pink City of India.
+            Discover Jaipur's forts, palaces, historic markets, cultural
+            attractions, and local food with practical travel tips and a
+            detailed 3-day itinerary for exploring the Pink City.
           </p>
 
           {/* Divider Line */}

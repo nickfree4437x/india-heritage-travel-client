@@ -156,7 +156,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> Modest Clothing: Wear respectful, modest clothing for temple visits inside the fort.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Sun Protection: A good hat, sunglasses, and sunscreen are non-negotiable — the desert sun is intense.
+              <span className="font-light">•</span> Sun Protection: A good hat, sunglasses, and sunscreen are non-negotiable - the desert sun is intense.
             </li>
           </ul>
 

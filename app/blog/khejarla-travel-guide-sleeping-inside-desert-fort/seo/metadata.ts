@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Khejarla Travel Guide: Sleeping Inside a Desert Fort in Rajasthan",
   description:
-    "Our Khejarla travel guide covers the 400-year-old fort's history, safaris, food and best time to visit — plus how to sleep inside a real Rajasthan desert fort.",
+    "Our Khejarla travel guide covers the 400-year-old fort's history, safaris, food and best time to visit - plus how to sleep inside a real Rajasthan desert fort.",
   keywords: [
     "Khejarla Travel Guide",
     "Khejarla Fort",

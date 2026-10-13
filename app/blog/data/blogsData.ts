@@ -649,4 +649,13 @@ export const blogs = [
     excerpt:
       "Discover Alwar's luxury heritage retreats, royal palaces, Siliserh Lake Palace, Hill Fort ....",
   },
+  {
+    id: 73,
+    slug: "karauli-heritage-travel",
+    title: "Karauli Heritage Travel: A Hidden Kingdom of Palaces and Temples",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1791870799/images_at5yuw.jpg",
+    date: "13 October",
+    excerpt:
+      "Discover Alwar's luxury heritage retreats, royal palaces, Siliserh Lake Palace, Hill Fort....",
+  },
 ];

@@ -52,7 +52,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> By Road (from Delhi): Approximately 120 km via the Delhi–Jaipur highway - about 2.5–3 hours.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> By Road (from Jaipur): Approximately 155 km — about 3–3.5 hours.
+              <span className="font-light">•</span> By Road (from Jaipur): Approximately 155 km - about 3–3.5 hours.
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> By Rail: Nearest stations are Rewari and Alwar.

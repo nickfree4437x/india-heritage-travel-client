@@ -12,7 +12,7 @@ const cityData = [
   {
     name: "Family Travel Tips",
     description: 
-      `Wear sturdy shoes for the fort's uneven paths — especially for kids and seniors. Pick a resort with jeep safaris and nature walks, and carry water and snacks. The sound-and-light show works for kids 7+; bring a mat as seating isn't provided.`,
+      `Wear sturdy shoes for the fort's uneven paths - especially for kids and seniors. Pick a resort with jeep safaris and nature walks, and carry water and snacks. The sound-and-light show works for kids 7+; bring a mat as seating isn't provided.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786170800/pexels-aysegul-aytoren-46790226-38610320_br3ahy.jpg",
   },
   {

@@ -6,13 +6,13 @@ const cityData = [
   {
     name: "Luxury Travel Tips",
     description:
-      `For a luxury Nawalgarh experience, choose a private chauffeur-driven tour over public transport — you control how long you linger in each haveli. Stay in a boutique haveli rather than a highway hotel, so you experience these buildings rather than just seeing them. A private after-dark event adds the perfect final touch.`,
+      `For a luxury Nawalgarh experience, choose a private chauffeur-driven tour over public transport - you control how long you linger in each haveli. Stay in a boutique haveli rather than a highway hotel, so you experience these buildings rather than just seeing them. A private after-dark event adds the perfect final touch.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786768183/pexels-manishjangid-36470620_u9xwwx.jpg",
   },
   {
     name: "Family Travel Tips",
     description: 
-      `Nawalgarh works well for families with older kids — the hidden details in murals (trains, bicycles, Europeans) turn haveli tours into a treasure hunt. Choose a hotel with a courtyard or garden for downtime, and plan around shorter walking stretches, as the havelis aren't easy to navigate with little ones.`,
+      `Nawalgarh works well for families with older kids - the hidden details in murals (trains, bicycles, Europeans) turn haveli tours into a treasure hunt. Choose a hotel with a courtyard or garden for downtime, and plan around shorter walking stretches, as the havelis aren't easy to navigate with little ones.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786170800/pexels-aysegul-aytoren-46790226-38610320_br3ahy.jpg",
   },
   {

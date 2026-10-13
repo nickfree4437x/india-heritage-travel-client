@@ -10,7 +10,7 @@ export default function SoloTravelSection() {
       <div className="w-full px-6 md:px-20 lg:px-28 xl:px-36">
         {/*
           Mobile/Tablet: flex-col (stack karo)
-          Desktop (lg+): flex-row side by side — UNTOUCHED
+          Desktop (lg+): flex-row side by side - UNTOUCHED
         */}
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-20">
           {/* LEFT CONTENT */}
@@ -88,13 +88,13 @@ export default function SoloTravelSection() {
 
           {/* RIGHT COLLAGE */}
 
-          {/* MOBILE / TABLET collage — lg pe hide */}
+          {/* MOBILE / TABLET collage - lg pe hide */}
           <div className="block lg:hidden mt-10 w-full">
             {/* Rangoli background */}
             <div className="relative">
               {/* 2-col grid layout for mobile */}
               <div className="relative z-10 grid grid-cols-2 gap-3">
-                {/* TOP RIGHT — women wall (taller) */}
+                {/* TOP RIGHT - women wall (taller) */}
                 <div className="col-span-1 row-span-2">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531020/women-wall_ftanbo.jpg"
@@ -105,7 +105,7 @@ export default function SoloTravelSection() {
                   />
                 </div>
 
-                {/* BOTTOM LEFT — night lights */}
+                {/* BOTTOM LEFT - night lights */}
                 <div className="col-span-1">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531130/night-lights_ncz5ue.jpg"
@@ -116,7 +116,7 @@ export default function SoloTravelSection() {
                   />
                 </div>
 
-                {/* BOTTOM FULL WIDTH — taj mahal */}
+                {/* BOTTOM FULL WIDTH - taj mahal */}
                 <div className="col-span-2 -mt-3">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531181/taj-mahal_hln96e.jpg"
@@ -130,7 +130,7 @@ export default function SoloTravelSection() {
             </div>
           </div>
 
-          {/* DESKTOP collage — mobile pe hide, ORIGINAL CODE UNTOUCHED */}
+          {/* DESKTOP collage - mobile pe hide, ORIGINAL CODE UNTOUCHED */}
           <div className="hidden lg:block relative w-[560px] h-[560px] flex-shrink-0">
             {/* RANGOLI (PERFECT CENTER - BACKGROUND) */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">

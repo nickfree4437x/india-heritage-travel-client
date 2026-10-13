@@ -18,7 +18,7 @@ export default function FinalHeritageHotelsSection() {
                text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
-            6. Taj Falaknuma Palace, Hyderabad — A Royal Heritage Stay
+            6. Taj Falaknuma Palace, Hyderabad - A Royal Heritage Stay
           </h2>
 
           {/* CONTENT */}
@@ -89,7 +89,7 @@ export default function FinalHeritageHotelsSection() {
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
-            7. Neemrana Fort Palace, Rajasthan — A Historic Fort Stay
+            7. Neemrana Fort Palace, Rajasthan - A Historic Fort Stay
           </h2>
 
           {/* CONTENT */}
@@ -157,7 +157,7 @@ export default function FinalHeritageHotelsSection() {
               text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2
             "
           >
-            8. Glenburn Tea Estate, Darjeeling — A Heritage Stay Among Tea Gardens
+            8. Glenburn Tea Estate, Darjeeling - A Heritage Stay Among Tea Gardens
           </h2>
 
           {/* CONTENT */}

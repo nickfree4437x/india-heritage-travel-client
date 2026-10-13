@@ -25,7 +25,7 @@ export default function IntroSection() {
             Mehrauli, and honestly it gives visitors this strong feeling for what medieval Delhi’s 
             skyline must have looked like, back in 1193. This Qutub Minar travel guide talks about the 
             monument’s seven-century past, its remarkable mix of architectural styles, and the broader 
-            Qutub Complex too — including the Alai Minar, Alai Darwaza, tombs, madrasa ruins, and that 
+            Qutub Complex too - including the Alai Minar, Alai Darwaza, tombs, madrasa ruins, and that 
             well known 1,600-year-old Iron Pillar. So whether you only have 90 minutes or you can stay for several hours, the whole place rewards both a quick walkthrough and a deeper dig around. 
           </p>
         </div>

@@ -29,7 +29,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> Wear a saree, salwar kameez, or a long kurta with a dupatta; in certain South Indian temples they can be picky about traditional clothing rather than just “modest” Western clothes. 
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Take off your shoes before you go in to any temple, mosque, gurudwara, or dargah — using flip flops or slip-on sandals makes this bit much easier.  
+              <span className="font-light">•</span> Take off your shoes before you go in to any temple, mosque, gurudwara, or dargah - using flip flops or slip-on sandals makes this bit much easier.  
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Cover your head with a scarf when it’s asked for, especially at gurudwaras and many mosques. 

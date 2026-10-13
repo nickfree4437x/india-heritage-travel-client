@@ -23,7 +23,7 @@ export default function IntroSection() {
               <span className="font-light">•</span> Lodhruva: The old Bhati capital that predates Jaisalmer, featuring a beautifully carved Jain temple. 
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
-              <span className="font-light">•</span> Khaba Fort & Fossil Park: A ruined hilltop fort combined with a geological surprise — fossilised remains in the desert. 
+              <span className="font-light">•</span> Khaba Fort & Fossil Park: A ruined hilltop fort combined with a geological surprise - fossilised remains in the desert. 
             </li>
             <li className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify list-none">
               <span className="font-light">•</span> Desert National Park: One of India's largest protected areas, known for the endangered Great Indian Bustard and other desert wildlife. 

@@ -12,7 +12,7 @@ const cityData = [
   {
     name: "Family Travel Tips",
     description: 
-      `Udaipur works well for families — boat rides and palace courtyards keep kids engaged. Avoid midday heat with indoor breaks (1–4 p.m.), save outdoor activities for later, and ask heritage hotels for family suites and custom tours.`,
+      `Udaipur works well for families - boat rides and palace courtyards keep kids engaged. Avoid midday heat with indoor breaks (1–4 p.m.), save outdoor activities for later, and ask heritage hotels for family suites and custom tours.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786170800/pexels-aysegul-aytoren-46790226-38610320_br3ahy.jpg",
   },
   {

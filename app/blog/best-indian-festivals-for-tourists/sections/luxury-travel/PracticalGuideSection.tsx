@@ -73,8 +73,8 @@ export default function IntroSection() {
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-3">
             A lot of street-style celebrations, like Holi and Durga Puja pandal hopping , are totally free 
             to join. But the Hornbill Festival and Rann Utsav sometimes ask for a little entry fee, and 
-            then a few special zones—say premium viewing decks, curated Holi get-togethers, or Kumbh Mela 
-            VIP ghats— usually demand advance booking Image via a tour operator, not really a casual walk in. 
+            then a few special zones-say premium viewing decks, curated Holi get-togethers, or Kumbh Mela 
+            VIP ghats- usually demand advance booking Image via a tour operator, not really a casual walk in. 
           </p>
         </div>
       </div>

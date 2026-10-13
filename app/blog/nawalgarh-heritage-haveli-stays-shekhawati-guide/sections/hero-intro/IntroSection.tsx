@@ -23,7 +23,7 @@ export default function IntroSection() {
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2 md:mb-3">
             Nawalgarh Heritage Haveli Stays have become one of Rajasthan's most exciting revelations for 
-            travellers who want more than palace photographs — who want to stay where a dusty desert trade 
+            travellers who want more than palace photographs - who want to stay where a dusty desert trade 
             centre once dreamt of rivalling European capitals in artistic grandeur. This guide covers 
             Nawalgarh's history, architecture, best havelis, boutique hotels, and everything else you'll 
             need.

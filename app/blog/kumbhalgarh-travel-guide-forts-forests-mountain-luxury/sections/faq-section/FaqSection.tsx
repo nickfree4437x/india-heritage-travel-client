@@ -71,7 +71,7 @@ export default function FAQSection() {
           </h3>
 
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 font-light text-justify mb-3 md:mb-4">
-            India Heritage Travel crafts private Rajasthan itineraries featuring Kumbhalgarh Fort's 36 km walls, ancient temples, and wildlife safaris — combined with Udaipur, Ranakpur, and Jodhpur.
+            India Heritage Travel crafts private Rajasthan itineraries featuring Kumbhalgarh Fort's 36 km walls, ancient temples, and wildlife safaris - combined with Udaipur, Ranakpur, and Jodhpur.
           </p>
 
           <Link

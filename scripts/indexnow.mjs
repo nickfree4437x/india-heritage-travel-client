@@ -2,7 +2,7 @@
 
 /**
  * ==============================================================================
- * IndexNow Notification Engine — India Heritage Travel
+ * IndexNow Notification Engine - India Heritage Travel
  * Production Domain: https://indiaheritagetravel.com/
  * ==============================================================================
  *
@@ -510,7 +510,7 @@ async function main() {
   const toArg = args.find((a) => a.startsWith("--to="))?.split("=")[1];
 
   console.log("==================================================================");
-  console.log(" India Heritage Travel — IndexNow Automation");
+  console.log(" India Heritage Travel - IndexNow Automation");
   console.log("==================================================================");
 
   const apiKey = getApiKey();

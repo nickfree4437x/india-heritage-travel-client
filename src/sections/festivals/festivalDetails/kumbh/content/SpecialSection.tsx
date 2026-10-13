@@ -7,7 +7,7 @@ const data = [
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550685/kumbh1_jxiiun.jpg",
     title: "The Royal Bath",
-    desc: "Join the crowds at Shahi Snan — the Kumbh’s most sacred and powerful ritual.",
+    desc: "Join the crowds at Shahi Snan - the Kumbh’s most sacred and powerful ritual.",
   },
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547846/kumbh_arulyq.jpg",
@@ -17,7 +17,7 @@ const data = [
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550813/kumbh3_i2seiv.jpg",
     title: "Sunset Boat Ride",
-    desc: "Drift along the Ganges at sunset — a quiet break from the crowd.",
+    desc: "Drift along the Ganges at sunset - a quiet break from the crowd.",
   },
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550862/kumbh4_m8eozy.jpg",
@@ -27,12 +27,12 @@ const data = [
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549751/taj_hnq7kj.jpg",
     title: "Timeless Beauty of the Taj",
-    desc: "Visit the Taj Mahal — a white marble wonder and symbol of eternal love, glowing at sunrise.",
+    desc: "Visit the Taj Mahal - a white marble wonder and symbol of eternal love, glowing at sunrise.",
   },
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550923/delhi_iya9on.jpg",
     title: "Experience the Pulse of India",
-    desc: "Delhi is busy, bold, and full of stories — every corner has something to offer.",
+    desc: "Delhi is busy, bold, and full of stories - every corner has something to offer.",
   },
 ];
 

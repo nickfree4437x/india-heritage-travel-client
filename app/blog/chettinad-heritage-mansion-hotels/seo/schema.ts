@@ -9,7 +9,7 @@ const HERO_IMAGE =
 const BLOG_TITLE =
   "Chettinad Heritage Mansion Hotels: India's Forgotten Palaces of Luxury Travel";
 const BLOG_DESCRIPTION =
-  "Discover Chettinad heritage mansion hotels — the crumbling merchant palaces of Tamil Nadu reborn as India's most romantic luxury stays. Full travel guide inside.";
+  "Discover Chettinad heritage mansion hotels - the crumbling merchant palaces of Tamil Nadu reborn as India's most romantic luxury stays. Full travel guide inside.";
 
 // ============================================
 // ARTICLE SCHEMA

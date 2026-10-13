@@ -37,7 +37,7 @@ export default function MoreWellnessRetreatsSection() {
               Ayurveda, Sowa Rigpa (Tibetan healing), yoga, and
               personalized meditation techniques. One of the most
               special things here is it promotes no TVs or
-              distractions—just nature, relaxation, and healing a
+              distractions-just nature, relaxation, and healing a
               strict digital detox.
             </p>
 

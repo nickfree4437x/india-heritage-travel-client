@@ -17,7 +17,7 @@ const data = [
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550232/pushkar3_sefvly.jpg",
     title: "A Rajasthani Desert Spectacle",
-    desc: "Colorful turbans, dancing gypsies, and thousands of camels — Pushkar is pure magic.",
+    desc: "Colorful turbans, dancing gypsies, and thousands of camels - Pushkar is pure magic.",
   },
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779550273/pushkar4_rf0grg.jpg",

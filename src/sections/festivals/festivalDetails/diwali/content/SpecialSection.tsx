@@ -43,7 +43,7 @@ const data = [
   {
     image: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779549751/taj_hnq7kj.jpg",
     title: "Timeless Beauty of the Taj",
-    desc: "Visit the Taj Mahal — a white marble wonder and symbol of eternal love, glowing at sunrise.",
+    desc: "Visit the Taj Mahal - a white marble wonder and symbol of eternal love, glowing at sunrise.",
   },
 ];
 

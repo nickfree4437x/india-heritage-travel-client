@@ -18,7 +18,7 @@ const cityData = [
   {
     name: "Solo Female Traveler Tips",
     description:
-      `Kids will enjoy Chettinad's tile and antique workshops more than architectural tours — include them in your itinerary. Mansion hotels with courtyards or gardens give children space to explore safely. And avoid long travel days; Chettinad is best enjoyed at a leisurely pace.`,
+      `Kids will enjoy Chettinad's tile and antique workshops more than architectural tours - include them in your itinerary. Mansion hotels with courtyards or gardens give children space to explore safely. And avoid long travel days; Chettinad is best enjoyed at a leisurely pace.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1786170691/pexels-silverkblack-23225185_jgt9d1.jpg",
   },
 ];

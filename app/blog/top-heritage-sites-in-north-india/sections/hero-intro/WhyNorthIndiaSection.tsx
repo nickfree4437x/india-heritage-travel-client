@@ -21,7 +21,7 @@ export default function IntroSection() {
         <div className="space-y-4 text-gray-700">
           <p className="leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             North India’s heritage density kind of boils down to geography plus power. Delhi, Agra, and Jaipur 
-            were like at the middle of successive empires— the Delhi Sultanate, then the Mughal Empire, and 
+            were like at the middle of successive empires- the Delhi Sultanate, then the Mughal Empire, and 
             afterward the Rajput kingdoms, that sometimes pushed back while also joining in, depending on the 
             moment. Each one built in a way meant to outlast the last, so the timeline sort of stacks. So you 
             end up with a place where you can follow almost a thousand years of South Asian architecture, all 

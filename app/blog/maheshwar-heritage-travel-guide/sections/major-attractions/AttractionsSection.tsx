@@ -7,7 +7,7 @@ const cityData = [
   {
     name: "Ahilya Fort",
     description:
-      `Ahilya Fort is Maheshwar's defining landmark and, for many, the reason to visit. Parts now serve as heritage hotels, while the museum, Ahilyabai's gaadi darbaar, and fort walls remain open to daytime visitors — with the river view as its finest reward.`,
+      `Ahilya Fort is Maheshwar's defining landmark and, for many, the reason to visit. Parts now serve as heritage hotels, while the museum, Ahilyabai's gaadi darbaar, and fort walls remain open to daytime visitors - with the river view as its finest reward.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1789549419/minislider_fkgo1q.jpg",
   },
   {
@@ -25,7 +25,7 @@ const cityData = [
   {
     name: "Rai Praveen Mahal",
     description:
-      `Built in 1618 by Raja Indramani for Rai Praveen, a celebrated poet, singer and dancer of the court, this small one-storey structure sits in the Anand Mahal gardens. It remains one of Orchha's most poetic details — a palace built not for wars or gods, but for the arts.`,
+      `Built in 1618 by Raja Indramani for Rai Praveen, a celebrated poet, singer and dancer of the court, this small one-storey structure sits in the Anand Mahal gardens. It remains one of Orchha's most poetic details - a palace built not for wars or gods, but for the arts.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1789315404/Raj_Mahal_Jaipur_2019__1_hwozxm.jpg",
   },
   {

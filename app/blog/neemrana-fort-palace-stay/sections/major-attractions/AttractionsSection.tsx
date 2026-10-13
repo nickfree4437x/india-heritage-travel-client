@@ -13,7 +13,7 @@ const cityData = [
   {
     name: "Zip-lining across the Aravallis",
     description:
-      `The Neemrana Flying Fox, set up in 2009, spans five cables across the hills — a surprising thrill for active travellers. After a short climb, briefing, and practice run, you zip down with the palace behind you. The experience takes about two hours; check with the hotel for age and weight restrictions.`,
+      `The Neemrana Flying Fox, set up in 2009, spans five cables across the hills - a surprising thrill for active travellers. After a short climb, briefing, and practice run, you zip down with the palace behind you. The experience takes about two hours; check with the hotel for age and weight restrictions.`,
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1791615336/Facade_Premises_Neemrana_Fort_Palace_1_i9giwl_cfeg0l.avif",
   },
   {
