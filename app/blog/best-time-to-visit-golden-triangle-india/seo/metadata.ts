@@ -13,25 +13,24 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Best Time to Visit the Golden Triangle India: Weather, Seasons & Travel Tips | India Heritage Travel",
+    "Best Time to Visit the Golden Triangle: Weather & Seasons | India Heritage Travel",
   description:
-    "Discover the best time to visit the Golden Triangle India with detailed weather insights, seasonal travel advice, festivals, crowd levels, and expert tips for Delhi, Agra, and Jaipur.",
+    "Find the best time to visit the Golden Triangle in India. Compare weather, seasons, festivals, and travel conditions in Delhi, Agra, and Jaipur.",
   keywords: [
+    "Best Time to Visit the Golden Triangle",
     "Best Time to Visit Golden Triangle India",
     "Golden Triangle India Weather",
-    "Golden Triangle Travel Guide",
-    "Delhi Agra Jaipur Weather",
-    "Golden Triangle Seasons",
-    "Golden Triangle Travel Tips",
-    "Golden Triangle India Itinerary",
     "Best Month to Visit Golden Triangle",
-    "Golden Triangle Winter Travel",
-    "Golden Triangle Summer Travel",
-    "Golden Triangle Monsoon Travel",
-    "Delhi Agra Jaipur Tour",
+    "Delhi Agra Jaipur Weather",
+    "Golden Triangle Tour Seasons",
+    "Golden Triangle Tour in Winter",
+    "Golden Triangle Tour in Summer",
+    "Golden Triangle Tour During Monsoon",
     "Golden Triangle Festivals",
-    "India Heritage Travel",
-    "Golden Triangle India Guide",
+    "Delhi Agra Jaipur Best Time to Visit",
+    "Golden Triangle Travel Tips",
+    "Golden Triangle Tour India",
+    "India Travel Guide",
   ],
   authors: [
     {
@@ -62,9 +61,9 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/best-time-to-visit-golden-triangle-india",
     siteName: "India Heritage Travel",
     title:
-      "Best Time to Visit the Golden Triangle India: Weather, Seasons & Travel Tips",
+      "Best Time to Visit the Golden Triangle: Weather & Seasons",
     description:
-      "Plan your Golden Triangle journey with detailed weather insights, seasonal recommendations, festivals, crowd levels, and travel advice for Delhi, Agra, and Jaipur.",
+      "Compare seasons, weather, festivals, and sightseeing conditions in Delhi, Agra, and Jaipur to plan your Golden Triangle trip.",
     images: [
       {
         url: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782104429/nils-huenerfuerst-T8X8vgj0Ink-unsplash_ayktot.jpg",
@@ -77,7 +76,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Best Time to Visit the Golden Triangle India",
+      "Best Time to Visit the Golden Triangle",
     description:
       "Explore weather patterns, seasons, festivals, and expert travel tips to choose the perfect time for your Golden Triangle tour.",
     images: [

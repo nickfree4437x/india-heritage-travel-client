@@ -148,9 +148,9 @@ export default function IntroSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         
         {/* ===== ITINERARY SECTION ===== */}
-        <div className="mb-12">
+        <div className="mb-8">
           {/* Header with decorative line */}
-          <div className="flex items-center gap-4 mb-8">
+          <div className="flex items-center gap-4 mb-4">
             <div>
               <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-bold">
                 Suggested 6-Day Itinerary
@@ -173,8 +173,8 @@ export default function IntroSection() {
                     {/* Content card */}
                     <div className="flex-1 bg-white rounded-xl p-4 sm:p-5 transition-shadow duration-300 border border-gray-200/50 hover:border-[#c9a45c]/20">
                       <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                        <span className="text-[#c9a45c] font-semibold text-[13px] sm:text-[14px]">
-                          {item.day}
+                        <span className="text-[#2c2c2c] font-semibold text-[13px] sm:text-[14px]">
+                          {item.day} -
                         </span>
                         <h3 className="text-[14px] sm:text-[15px] font-medium text-[#2c2c2c]">
                           {item.title}

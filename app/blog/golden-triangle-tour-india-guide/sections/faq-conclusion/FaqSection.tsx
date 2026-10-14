@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import Link from "next/link";
 
 import { faqs } from "./data/faqData";
 
@@ -17,9 +16,9 @@ export default function FAQSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
 
-        <div className="mb-4 md:mb-6">
+        <div className="mb-2 md:mb-4">
 
-            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-bold mb-2">
+            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-bold mb-1">
             Frequently Asked Questions
             </h2>
 

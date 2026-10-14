@@ -3,28 +3,6 @@
 import {  Star, } from "lucide-react";
 
 export default function MonsoonSeason() {
-  const highlights = [
-    {
-      title: "Rainfall Patterns",
-      description:
-        "Monsoon showers are usually short, intense bursts rather than all-day rainfall. July and August see the highest precipitation, while conditions gradually improve throughout September.",
-    },
-    {
-      title: "Green Landscapes",
-      description:
-        "Rajasthan's normally dry terrain transforms dramatically. Fields become lush green, lakes around Jaipur fill with water, and the sandstone forts stand out beautifully against vibrant natural surroundings.",
-    },
-    {
-      title: "Fewer Tourists",
-      description:
-        "Visitor numbers remain relatively low compared to winter, allowing a more relaxed experience at major attractions including the Taj Mahal, Agra Fort, Amber Fort, and City Palace.",
-    },
-    {
-      title: "Photography Benefits",
-      description:
-        "Dramatic clouds, rain-soaked marble, reflective surfaces, and rich colors create photographs that look completely different from the classic winter images seen across most travel brochures.",
-    },
-  ];
 
   const pros = [
     "Unique photography opportunities",
@@ -45,10 +23,10 @@ export default function MonsoonSeason() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* ===== SECTION HEADER ===== */}
-        <div className="mb-8">
+        <div className="mb-4">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-bold mb-3">
-            Golden Triangle in Monsoon (July-September)
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold mb-1">
+            Best Time to Visit the Golden Triangle During Monsoon (July–September)
           </h2>
 
           <p className="text-gray-600 leading-relaxed text-[13px] sm:text-[14px] md:text-[15px] font-light">

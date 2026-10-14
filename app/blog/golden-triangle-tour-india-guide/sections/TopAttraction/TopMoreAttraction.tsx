@@ -35,7 +35,7 @@ export default function IntroSection() {
           {/* IMAGE */}
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm shadow-md overflow-hidden mt-6">
             <Image
-              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1781947326/amber_fort_jaipur_pt5ppg.jpg"
+              src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1791959138/amber_fort_jaipur_pt5ppg.jpg"
               alt="Amber Fort Jaipur Rajasthan – Majestic Hilltop Fort on the Golden Triangle Tour India"
               fill
               sizes="100vw"

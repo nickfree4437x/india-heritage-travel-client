@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Golden Triangle Tour India Guide",
+      name: "Golden Triangle Tour India: Itinerary, Best Places & Travel Tips",
       item: BLOG_URL,
     },
   ],
@@ -70,9 +70,9 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Golden Triangle Tour India Guide",
+  name: "Golden Triangle Tour India: Itinerary, Best Places & Travel Tips",
   description:
-    "Explore Delhi, Agra, and Jaipur with this complete Golden Triangle Tour India guide featuring itineraries, attractions, travel tips, costs, and the best time to visit.",
+    "Explore Delhi, Agra, and Jaipur with this complete Golden Triangle Tour India: Itinerary, Best Places & Travel Tips featuring itineraries, attractions, travel tips, costs, and the best time to visit.",
   url: BLOG_URL,
 };
 

@@ -80,7 +80,7 @@ export default function HeroSection() {
               </div>
 
               <span className="text-[12px] md:text-[13px] font-light">
-                12 Oct
+                13 Oct
               </span>
 
               <div className="flex items-center justify-center gap-1.5 xs:gap-2 text-xs xs:text-sm font-[350] text-gray-600">

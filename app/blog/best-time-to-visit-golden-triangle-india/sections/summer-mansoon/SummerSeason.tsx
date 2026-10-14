@@ -3,28 +3,6 @@
 import { CheckCircle, AlertCircle, Star } from "lucide-react";
 
 export default function SummerSeason() {
-  const highlights = [
-    {
-      title: "Heat Conditions",
-      description:
-        "Summer temperatures frequently rise above 40°C (104°F), especially in Agra and Jaipur during May and June. Midday sightseeing can become challenging, making early mornings and evenings the most comfortable times to explore.",
-    },
-    {
-      title: "Lower Travel Costs",
-      description:
-        "Flights, luxury hotels, private tours, and heritage palace stays often become 30–50% more affordable compared to peak winter pricing, making summer the most budget-friendly season.",
-    },
-    {
-      title: "Smaller Crowds",
-      description:
-        "Visitor numbers drop significantly. Early morning visits to the Taj Mahal, Agra Fort, and Amber Fort often feel more relaxed and less crowded than during the winter season.",
-    },
-    {
-      title: "Luxury Hotel Opportunities",
-      description:
-        "This is the season when many of India's most prestigious palace hotels and five-star resorts offer room upgrades, promotional packages, and exceptional value for luxury travelers.",
-    },
-  ];
 
   const pros = [
     "Lower hotel and tour prices",
@@ -45,10 +23,10 @@ export default function SummerSeason() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* ===== SECTION HEADER ===== */}
-        <div className="mb-8">
+        <div className="mb-2">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-bold mb-3">
-            Golden Triangle in Summer (April-June)
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold mb-1">
+            Best Time to Visit the Golden Triangle in Summer (April–June)
           </h2>
 
           <p className="text-gray-600 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
@@ -109,7 +87,7 @@ export default function SummerSeason() {
         <div className="grid md:grid-cols-2 gap-5 mb-10">
           {/* Pros */}
           <div className="border borer-gray-200 rounded-lg p-5 bg-white">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-2">
               <CheckCircle size={18} className="text-green-600" />
               <h3 className="text-[14px] font-semibold text-[#2c2c2c]">
                 Advantages
@@ -128,7 +106,7 @@ export default function SummerSeason() {
 
           {/* Cons */}
           <div className="border borer-gray-200 rounded-lg p-5 bg-white">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-2">
               <AlertCircle size={18} className="text-red-600" />
               <h3 className="text-[14px] font-semibold text-[#2c2c2c]">
                 Considerations

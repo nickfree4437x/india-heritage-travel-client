@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/best-time-to-visit-golden-triangle-india";
-  const shareTitle = "The Best Time to Visit the Golden Triangle India | Complete Travel Guide";
+  const shareTitle = "Best Time to Visit the Golden Triangle: Weather & Seasons";
 
   return (
     <section className="w-full bg-white">
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="The Best Time to Visit the Golden Triangle India" />
+      <BlogBreadcrumb title="Best Time to Visit the Golden Triangle: Weather & Seasons" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,9 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            The Best Time to Visit the
+            Best Time to Visit the
             <br />
-            Golden Triangle India
+            Golden Triangle: Weather & Seasons
           </h1>
 
           {/* Description */}
@@ -60,8 +60,7 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            The best time to visit the Golden Triangle India - discover month by month the
-            climate, crowd levels, festivals, and expert advice from India Heritage Travel.
+            Compare weather, seasonal conditions, festivals, and travel opportunities in Delhi, Agra, and Jaipur to plan the best time for your Golden Triangle tour.
           </p>
 
           {/* Divider Line */}

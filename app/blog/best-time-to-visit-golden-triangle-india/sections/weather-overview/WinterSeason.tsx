@@ -3,33 +3,33 @@
 import { CheckCircle, AlertCircle, Star } from "lucide-react";
 
 export default function WinterSeason() {
-  const highlights = [
-    {
-      title: "Comfortable Temperatures",
-      description:
-        "Daytime temperatures generally stay within the mid-teens to high twenties Celsius, making it comfortable to explore Amber Fort, Fatehpur Sikri, Humayun's Tomb, and the Taj Mahal without the fatigue caused by extreme heat.",
-    },
-    {
-      title: "Best Sightseeing Conditions",
-      description:
-        "Blue skies, lower humidity, and soft natural light provide the ideal conditions for monument visits, walking tours, and outdoor exploration throughout Delhi, Agra, and Jaipur.",
-    },
-    {
-      title: "Festival Season",
-      description:
-        "Winter coincides with some of India's most celebrated cultural events including Diwali, Pushkar Camel Fair, Jaipur Literature Festival, and Republic Day celebrations in Delhi.",
-    },
-    {
-      title: "Photography Opportunities",
-      description:
-        "Crisp air, warm golden sunlight, and reduced atmospheric haze create exceptional conditions for both professional and amateur photographers.",
-    },
-    {
-      title: "Luxury Travel Advantages",
-      description:
-        "Heritage hotels, palace properties, rooftop dining, garden breakfasts, and open-air cultural experiences are at their best during the winter season.",
-    },
-  ];
+  // const highlights = [
+  //   {
+  //     title: "Comfortable Temperatures",
+  //     description:
+  //       "Daytime temperatures generally stay within the mid-teens to high twenties Celsius, making it comfortable to explore Amber Fort, Fatehpur Sikri, Humayun's Tomb, and the Taj Mahal without the fatigue caused by extreme heat.",
+  //   },
+  //   {
+  //     title: "Best Sightseeing Conditions",
+  //     description:
+  //       "Blue skies, lower humidity, and soft natural light provide the ideal conditions for monument visits, walking tours, and outdoor exploration throughout Delhi, Agra, and Jaipur.",
+  //   },
+  //   {
+  //     title: "Festival Season",
+  //     description:
+  //       "Winter coincides with some of India's most celebrated cultural events including Diwali, Pushkar Camel Fair, Jaipur Literature Festival, and Republic Day celebrations in Delhi.",
+  //   },
+  //   {
+  //     title: "Photography Opportunities",
+  //     description:
+  //       "Crisp air, warm golden sunlight, and reduced atmospheric haze create exceptional conditions for both professional and amateur photographers.",
+  //   },
+  //   {
+  //     title: "Luxury Travel Advantages",
+  //     description:
+  //       "Heritage hotels, palace properties, rooftop dining, garden breakfasts, and open-air cultural experiences are at their best during the winter season.",
+  //   },
+  // ];
 
   const pros = [
     "Comfortable walking and sightseeing temperatures",
@@ -50,10 +50,10 @@ export default function WinterSeason() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* ===== SECTION HEADER ===== */}
-        <div className="mb-8">
+        <div className="mb-4">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-bold mb-2">
-            Golden Triangle in Winter (October-March)
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold mb-2">
+            Best Time to Visit the Golden Triangle in Winter (October–March)
           </h2>
 
           <p className="text-gray-600 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light">
@@ -108,7 +108,7 @@ export default function WinterSeason() {
         </div>
 
         {/* ===== PROS & CONS ===== */}
-        <div className="grid md:grid-cols-2 gap-5 mb-10">
+        <div className="grid md:grid-cols-2 gap-5 mb-4">
           {/* Pros */}
           <div className="border borer-gray-200 rounded-lg p-5 bg-white">
             <div className="flex items-center gap-2 mb-4">

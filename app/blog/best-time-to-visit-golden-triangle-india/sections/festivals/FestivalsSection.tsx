@@ -48,15 +48,15 @@ export default function FestivalsSection() {
     <section className="w-full bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Section Header */}
-        <div className="mb-8 sm:mb-10">
+        <div className="mb-2 sm:mb-4">
           <h2 className="
             text-[16px] sm:text-[20px] md:text-[22px]
             tracking-wide
             text-[#2c2c2c]
-            font-bold
-            mb-2
+            font-semibold
+            mb-1
           ">
-            Festivals That Make the Golden Triangle More Special
+            Best Festivals to Experience During the Golden Triangle Tour
           </h2>
 
           <p className="
@@ -88,12 +88,12 @@ export default function FestivalsSection() {
                 group
               ">
                 {/* Festival Image */}
-                <div className="relative h-[240px] sm:h-[280px] md:h-[260px] overflow-hidden">
+                <div className="relative h-[240px] rounded-sm sm:h-[280px] md:h-[260px] overflow-hidden">
                   <Image
                     src={festival.image}
                     alt={`${festival.title} Festival in India`}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform"
                   />
                   {/* Image Overlay */}
                   {isClickable && (

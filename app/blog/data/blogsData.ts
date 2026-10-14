@@ -658,4 +658,13 @@ export const blogs = [
     excerpt:
       "Discover Alwar's luxury heritage retreats, royal palaces, Siliserh Lake Palace, Hill Fort....",
   },
+  {
+    id: 74,
+    slug: "dholpur-royal-heritage",
+    title: "Dholpur Royal Heritage: Palaces, Red Sandstone and the Chambal River",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1791962978/images_p6ctdj.jpg",
+    date: "14 October",
+    excerpt:
+      "Explore Dholpur's royal heritage, Raj Niwas Palace, Babur's Lotus Garden, Machkund Temple....",
+  },
 ];

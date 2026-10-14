@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Golden Triangle Tour India: Ultimate 2026 Guide, Itinerary & Travel Tips | India Heritage Travel",
+    "Golden Triangle Tour India: Itinerary, Best Places & Travel Tips | India Heritage Travel",
   description:
-    "Plan your Golden Triangle Tour India with this complete 2026 guide covering Delhi, Agra, and Jaipur. Discover itineraries, travel tips, costs, attractions, and the best time to visit.",
+    "Plan your Golden Triangle Tour in India with this guide to Delhi, Agra, and Jaipur. Explore major attractions, itinerary ideas, travel tips, estimated costs, and the best time to visit.",
   keywords: [
     "Golden Triangle Tour India",
     "Golden Triangle India Itinerary",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/golden-triangle-tour-india-guide",
     siteName: "India Heritage Travel",
     title:
-      "Golden Triangle Tour India: Ultimate 2026 Guide, Itinerary & Travel Tips",
+      "Golden Triangle Tour India: Itinerary, Best Places & Travel Tips",
     description:
       "Discover everything you need to know about the Golden Triangle Tour India, including Delhi, Agra, Jaipur itineraries, travel tips, attractions, costs, and the best time to visit.",
     images: [
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Golden Triangle Tour India: Ultimate 2026 Guide",
+      "Golden Triangle Tour India: Itinerary, Best Places & Travel Tips",
     description:
       "Explore Delhi, Agra, and Jaipur with this complete Golden Triangle Tour India guide featuring itineraries, travel tips, attractions, and costs.",
     images: [

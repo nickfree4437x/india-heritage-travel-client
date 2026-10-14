@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles, Sun, Cloud, Moon } from "lucide-react";
+import { Sun, Cloud, Moon } from "lucide-react";
 
 const weatherData = [
   {
@@ -119,12 +119,12 @@ export default function WeatherOverview() {
     }
   };
 
-  const seasonCards = [
-    { label: "Best Overall", months: "Oc - Mar" },
-    { label: "Ideal Weather", months: "Nov - Feb" },
-    { label: "Budget Season", months: "Apr - Jun" },
-    { label: "Photography", months: "Jul - Sep" },
-  ];
+  // const seasonCards = [
+  //   { label: "Best Overall", months: "Oc - Mar" },
+  //   { label: "Ideal Weather", months: "Nov - Feb" },
+  //   { label: "Budget Season", months: "Apr - Jun" },
+  //   { label: "Photography", months: "Jul - Sep" },
+  // ];
 
   return (
     <section className="w-full bg-white">
@@ -132,8 +132,8 @@ export default function WeatherOverview() {
 
         {/* ===== WEATHER TABLE ===== */}
         <div className="mb-6">
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-bold mb-4">
-            Weather Overview
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] font-semibold mb-4">
+            Best Time to Visit the Golden Triangle: Monthly Weather Guide
           </h2>
 
           {/* Desktop Table */}
@@ -160,7 +160,7 @@ export default function WeatherOverview() {
               </thead>
               <tbody>
                 {weatherData.map((item, idx) => {
-                  const Icon = item.icon;
+                  // const Icon = item.icon;
                   return (
                     <tr
                       key={item.month}

@@ -31,13 +31,13 @@ export default function IntroSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-2">
+    <section className="w-full bg-white py-0">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* ===== INTRODUCTION ===== */}
-        <div className="mb-6 sm:mb-8">
+        <div className="mb-4 sm:mb-6">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-bold mb-2">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-1">
             Best Time to Visit the Golden Triangle
           </h2>
 
@@ -54,15 +54,15 @@ export default function IntroSection() {
         {/* ===== WHAT IS GOLDEN TRIANGLE ===== */}
         <div>
           {/* Section Header */}
-          <div className="flex items-center gap-3 mb-2">
+          <div className="flex items-center gap-3 mb-1">
             <div>
-              <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-bold">
+              <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold">
                 What Is the Golden Triangle Tour?
               </h2>
             </div>
           </div>
 
-          <p className="text-gray-600 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light mb-6">
+          <p className="text-gray-600 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light mb-6 text-justify">
             The Golden Triangle is India's most iconic travel circuit, connecting{' '}
             <Link href="/tours/the-royal-heritage-trail-tour" className="text-[#c9a45c] hover:text-[#a8843a] hover:underline transition-colors duration-200">
               Delhi
@@ -87,12 +87,12 @@ export default function IntroSection() {
                 className="group block overflow-hidden transition-all duration-300 hover:border-[#c9a45c]/30"
               >
                 {/* Image Container */}
-                <div className="relative h-72 w-full overflow-hidden bg-gray-100">
+                <div className="relative h-72 w-full rounded-sm overflow-hidden bg-gray-100">
                   <Image
                     src={city.image}
                     alt={`${city.name} - Golden Triangle destination`}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   {/* Overlay with gradient */}
@@ -100,7 +100,7 @@ export default function IntroSection() {
                   
                   {/* City Name Overlay */}
                   <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-[20px] font-bold text-white">
+                    <h3 className="text-[20px] font-semibold text-white">
                       {city.name}
                     </h3>
                   </div>
@@ -111,7 +111,7 @@ export default function IntroSection() {
                   <p className="text-gray-600 text-[12px] sm:text-[13px] leading-relaxed font-light text-justify">
                     {city.description}
                   </p>
-                  <div className="mt-3 flex items-center gap-1 text-[#c9a45c] text-[11px] group-hover:gap-2 transition-all duration-300">
+                  <div className="mt-3 flex items-center gap-1 text-[#c9a45c] hover:underline text-[11px] group-hover:gap-2 transition-all duration-300">
                     <span>Explore {city.name} Tour</span>
                     <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
                   </div>

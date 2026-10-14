@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/golden-triangle-tour-india-guide";
-  const shareTitle = "Golden Triangle Tour India: Your Ultimate 2026 Guide for First-Timers";
+  const shareTitle = "Golden Triangle Tour India: Itinerary, Best Places & Travel Tips";
 
   return (
     <section className="w-full bg-white">
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="Golden Triangle Tour India Guide" />
+      <BlogBreadcrumb title="Golden Triangle Tour India: Itinerary, Best Places & Travel Tips" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,9 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            Golden Triangle Tour India: Your
+            Golden Triangle Tour India:
             <br />
-           Ultimate 2026 Guide for First-Timers
+            Itinerary, Best Places & Travel Tips
           </h1>
 
           {/* Description */}
@@ -60,9 +60,8 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            A Golden Triangle tour is basically an itinerary that
-            involves visiting the three most iconic historical cities in India, i.e., Delhi, Agra,
-            and Jaipur.
+            Explore Delhi, Agra, and Jaipur with this Golden Triangle travel guide covering major 
+            attractions, itinerary ideas, travel tips, and practical advice for planning your trip.
           </p>
 
           {/* Divider Line */}

@@ -47,16 +47,16 @@ export default function IntroSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-2">
+    <section className="w-full bg-white py-0">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         
         {/* ===== HERO / INTRO SECTION ===== */}
         <div className="mb-6 sm:mb-8 lg:mb-8">
           {/* Header with badge */}
-          <div className="flex flex-col items-start gap-3 mb-4">
-            <h1 className="text-[16px] sm:text-[20px] md:text-[22px] font-bold tracking-wide text-[#2c2c2c] mb-2">
+          <div className="flex flex-col items-start gap-3 mb-2">
+            <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-bold tracking-wide text-[#2c2c2c] mb-2">
               Welcome to the Golden Triangle
-            </h1>
+            </h2>
           </div>
 
           {/* Stats Row */}
@@ -92,7 +92,7 @@ export default function IntroSection() {
         {/* Section Header - Simple */}
         <div className="mb-2">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] text-[#2c2c2c] tracking-wide font-bold">
-            What Is Golden Triangle Tour?
+            What Is the Golden Triangle Tour in India?
           </h2>
         </div>
 

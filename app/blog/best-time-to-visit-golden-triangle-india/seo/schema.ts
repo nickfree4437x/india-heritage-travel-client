@@ -36,7 +36,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Best Time to Visit the Golden Triangle India",
+      name: "Best Time to Visit the Golden Triangle: Weather & Seasons",
       item: BLOG_URL,
     },
   ],
@@ -50,10 +50,10 @@ export const articleSchema = {
   "@type": "Article",
 
   headline:
-    "Best Time to Visit the Golden Triangle India: Weather, Seasons & Travel Tips",
+    "Best Time to Visit the Golden Triangle: Weather & Seasons: Weather, Seasons & Travel Tips",
 
   description:
-    "Discover the best time to visit the Golden Triangle India with detailed weather insights, seasonal travel advice, festivals, crowd levels, and expert tips for Delhi, Agra, and Jaipur.",
+    "Discover the Best Time to Visit the Golden Triangle: Weather & Seasons with detailed weather insights, seasonal travel advice, festivals, crowd levels, and expert tips for Delhi, Agra, and Jaipur.",
 
   image: IMAGE_URL,
 
@@ -83,7 +83,7 @@ export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
 
-  name: "Best Time to Visit the Golden Triangle India",
+  name: "Best Time to Visit the Golden Triangle: Weather & Seasons",
 
   description:
     "Explore seasonal weather patterns, festivals, travel conditions, crowd levels, and expert recommendations for visiting Delhi, Agra, and Jaipur.",
