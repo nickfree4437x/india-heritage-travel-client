@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Luxury Golden Triangle Tour India",
+      name: "Luxury Golden Triangle Tour: Delhi, Agra & Jaipur",
       item: BLOG_URL,
     },
   ],
@@ -47,7 +47,7 @@ export const articleSchema = {
   headline:
     "Luxury Golden Triangle Tour India: Delhi, Agra & Jaipur Luxury Travel Guide",
   description:
-    "Experience a luxury Golden Triangle Tour across Delhi, Agra, and Jaipur with palace hotels, private chauffeurs, VIP experiences, expert guides, and customized itineraries.",
+    "Plan a luxury Golden Triangle Tour of Delhi, Agra, and Jaipur with heritage hotels, private transport, guided sightseeing, and a personalized itinerary",
   image: IMAGE_URL,
   author: BLOG_AUTHORS.isha,
   publisher: {
@@ -70,9 +70,9 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Luxury Golden Triangle Tour India",
+  name: "Luxury Golden Triangle Tour: Delhi, Agra & Jaipur",
   description:
-    "Explore a premium Golden Triangle journey through Delhi, Agra, and Jaipur with luxury accommodations, private transportation, expert guides, and exclusive experiences.",
+    "Explore Delhi, Agra, and Jaipur with a luxury Golden Triangle itinerary featuring heritage stays, private transport, and guided sightseeing.",
   url: BLOG_URL,
 };
 

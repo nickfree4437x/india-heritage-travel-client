@@ -667,4 +667,13 @@ export const blogs = [
     excerpt:
       "Explore Dholpur's royal heritage, Raj Niwas Palace, Babur's Lotus Garden, Machkund Temple....",
   },
+  {
+    id: 75,
+    slug: "ranthambore-luxury-heritage-wildlife",
+    title: "Ranthambore Luxury Heritage and Wildlife: Where Royal Rajasthan Meets the Tiger Forest",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1792403803/gaurav-sharma-G0hzu3bLew4-unsplash_wvsrxl.jpg",
+    date: "19 October",
+    excerpt:
+      "Explore Ranthambore's royal history, ancient fort, tiger safaris, wildlife conservation....",
+  },
 ];

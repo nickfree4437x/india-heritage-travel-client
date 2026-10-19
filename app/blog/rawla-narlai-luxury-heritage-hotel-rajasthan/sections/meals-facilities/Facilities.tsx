@@ -13,7 +13,7 @@ export default function AmenitiesSection() {
         <div className="mb-4 md:mb-6">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
-            Uniquely Special Experiences at Rawla Narlai
+            Experiences to Enjoy During Your Rawla Narlai Stay
           </h2>
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
@@ -31,7 +31,7 @@ export default function AmenitiesSection() {
         <div>
 
           <h3 className="text-[15px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-2">
-            Leopard Safari – Into the Jawai Wilds
+            Explore Leopard Safari Experiences Near Rawla Narlai
           </h3>
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify mb-4">
@@ -53,7 +53,7 @@ export default function AmenitiesSection() {
               className="object-cover"
           />
           </div>
-          <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+          <p className="mt-1 md:mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
             Image via Rawla Narlai
           </p>
 

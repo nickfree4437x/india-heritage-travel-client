@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/luxury-golden-triangle-tour";
-  const shareTitle = "Luxury Golden Triangle Tour | Premium India Travel";
+  const shareTitle = "Luxury Golden Triangle Tour: Delhi, Agra & Jaipur";
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dja5yspwr/image/upload/v1582279641/pexels-axp-photography-500641970-19195961_aqlgse.jpg"
-          alt="Luxury Golden Triangle Tour | Premium India Travel"
+          alt="Luxury Golden Triangle Tour across Delhi, Agra, and Jaipur"
           fill
           priority
           sizes="100vw"
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="Luxury Golden Triangle Tour" />
+      <BlogBreadcrumb title="Luxury Golden Triangle Tour: Delhi, Agra & Jaipur" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,7 +45,9 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            Luxury Golden Triangle Tour
+            Luxury Golden Triangle Tour:
+            <br/>
+            Delhi, Agra & Jaipur
           </h1>
 
           {/* Description */}
@@ -58,8 +60,9 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Elevate your journey through Delhi, Agra, and Jaipur with a bespoke luxury tour that includes
-            opulent hotel stays, private guided excursions, and a completely customized itinerary.
+            Plan a Luxury Golden Triangle Tour through Delhi, Agra, and Jaipur with a personalized 
+            itinerary, comfortable transport, heritage stays, and guided sightseeing tailored to your 
+            travel preferences.
           </p>
 
           {/* Divider Line */}

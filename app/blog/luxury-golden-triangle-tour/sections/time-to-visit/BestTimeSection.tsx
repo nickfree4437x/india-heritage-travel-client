@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function BestTimeLuxuryTourSection() {
   return (
-    <section className="w-full bg-white py-0 md:py-2">
+    <section className="w-full bg-white py-0 md:py-1">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 

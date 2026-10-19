@@ -26,7 +26,7 @@ export default function LuxuryTransportSection() {
         <div className="mb-4 md:mb-6">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
-            Luxury Modes of Transport
+            Luxury Transport Options for Your Golden Triangle Tour
           </h2>
 
           <p className="text-gray-700 text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed font-light text-justify">
@@ -63,7 +63,7 @@ export default function LuxuryTransportSection() {
               className="border border-gray-200 bg-white p-5 rounded-md"
             >
 
-              <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-3">
+              <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-1">
                 {option.title}
               </h3>
 

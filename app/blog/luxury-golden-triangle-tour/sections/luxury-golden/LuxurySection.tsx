@@ -31,11 +31,11 @@ const cities = [
 
 export default function WhatIsLuxuryTourSection() {
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="w-full bg-white py-4 sm:py-5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
-        <div className="mb-4 md:mb-6">
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
+        <div className="mb-2 md:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-0">
             What Is a Luxury Golden Triangle Tour?
           </h2>
 
@@ -47,7 +47,7 @@ export default function WhatIsLuxuryTourSection() {
         </div>
 
         {/* City Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-4 md:mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-2 md:mb-4">
           {cities.map((city) => (
             <div key={city.title} className="overflow-hidden">
               <div className="relative h-[250px]">

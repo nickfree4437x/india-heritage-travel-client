@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function IntroSection() {
   return (
-    <section className="w-full bg-white py-2">
+    <section className="w-full bg-white py-0">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Intro */}
-        <div className="max-w-6xl mb-4 md:mb-6">
+        <div className="max-w-6xl mb-2 md:mb-4">
           <p className="text-gray-700 mb-6 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Beneath the sands of Jodhpur and beyond the lakes of Udaipur lies a
             destination that feels less like a hotel and more like a journey
@@ -19,9 +19,9 @@ export default function IntroSection() {
         </div>
 
         {/* Signature Experience Card */}
-        <div className="bg-white border border-gray-200 rounded-md p-6 mb-6 md:mb-10">
+        <div className="bg-white border border-gray-200 rounded-md p-6 mb-4 md:mb-8">
           <h3 className="text-[15px] sm:text-[17px] font-semibold text-[#2c2c2c] mb-2">
-            What Makes Rawla Narlai So Special?
+            What Makes Rawla Narlai a Unique Heritage Stay?
           </h3>
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14px] font-light text-justify">
@@ -45,17 +45,17 @@ export default function IntroSection() {
             className="object-cover"
           />
         </div>
-        <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+        <p className="mt-1 md:mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
           Image via Rawla Narlai
         </p>
 
         {/* History Section */}
-        <div className="mt-4 md:mt-6">
+        <div className="mt-2 md:mt-4">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
-            A Royal Legacy: The History of Rawla Narlai
+            History and Heritage of Rawla Narlai, Rajasthan
           </h2>
 
-          <p className="text-gray-700 mb-5 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             The story of Rawla Narlai begins in the 17th century when the
             Jodhpur Royal Family established this magnificent property as a
             hunting lodge in the foothills of the Aravalli Range. For
@@ -64,7 +64,7 @@ export default function IntroSection() {
             landscapes and timeless village life.
           </p>
 
-          <p className="text-gray-700 mb-5 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
+          <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Over time, the property became an important part of the region's
             aristocratic heritage, serving as a place of leisure, celebration,
             and royal hospitality. Its architecture reflects the elegance and
@@ -82,7 +82,7 @@ export default function IntroSection() {
               className="object-cover"
             />
           </div>
-          <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+          <p className="mt-1 md:mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
             Image via Rawla Narlai
           </p>
         </div>

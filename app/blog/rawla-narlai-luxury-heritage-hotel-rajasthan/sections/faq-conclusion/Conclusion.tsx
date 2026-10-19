@@ -9,7 +9,7 @@ export default function ConclusionSection() {
         {/* CTA Box */}
         <div className="max-w-6xl mx-auto bg-gradient-to-r from-[#faf7f3] to-[#f5f0e9] rounded-md p-6 sm:p-8">
           <h3 className="text-[14px] sm:text-[16px] md:text-[16px] font-semibold text-[#2c2c2c] mb-2">
-            Ready to Experience Rawla Narlai?
+            Plan Your Stay at Rawla Narlai, Rajasthan
           </h3>
 
           <p className="text-[12px] sm:text-[13px] md:text-[13px] text-gray-700 leading-relaxed font-light text-justify max-w-6xl mx-auto mb-4">
@@ -24,7 +24,7 @@ export default function ConclusionSection() {
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-2 md:py-2.5 bg-[#AF956C] text-white text-[12px] sm:text-[13px] font-light rounded-md hover:bg-[#95764e] transition-colors"
             >
-              Plan Your Journey
+              Plan Your Rajasthan Trip
             </Link>
           </div>
         </div>

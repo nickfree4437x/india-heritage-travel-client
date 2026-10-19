@@ -32,29 +32,10 @@ const blogs = [
 
 export default function MoreFoodSection() {
   return (
-    <section className="w-full bg-white pb-14 border-t border-[#ddd4ca]">
+    <section className="w-full bg-white pb-12 md:pb-14 pt-12 md:pt-14 border-t border-[#ddd4ca]">
 
       {/* SAME WIDTH AS HERO */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
-
-        {/* TOP AREA */}
-        <div
-          className="
-            flex
-            flex-col
-            gap-5
-
-            sm:flex-row
-            sm:items-end
-            sm:justify-between
-
-            mb-12
-            sm:mb-14
-          "
-        >
-
-        </div>
-
         {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-14">
 
@@ -75,15 +56,11 @@ export default function MoreFoodSection() {
                   height={500}
                   className="
                     w-full
-
                     h-[260px]
                     sm:h-[300px]
-
                     object-cover
-
                     transition-transform
                     duration-700
-
                     group-hover:scale-[1.03]
                   "
                 />
@@ -93,10 +70,8 @@ export default function MoreFoodSection() {
                   className="
                     absolute
                     inset-0
-
                     bg-black/0
                     group-hover:bg-black/10
-
                     transition-all
                     duration-500
                   "
@@ -112,17 +87,12 @@ export default function MoreFoodSection() {
                     text-[18px]
                     md:text-[20px]
                     leading-[1.22]
-
                     font-normal
                     tracking-normal
-
                     text-[#111]
-
                     break-words
-
                     transition-colors
                     duration-300
-
                     group-hover:text-[#7C5C38]
                   "
                 >
@@ -135,9 +105,7 @@ export default function MoreFoodSection() {
                     flex
                     items-center
                     gap-5
-
                     mt-5
-
                     text-[#5f5f5f]
                     text-[14px]
                     font-light

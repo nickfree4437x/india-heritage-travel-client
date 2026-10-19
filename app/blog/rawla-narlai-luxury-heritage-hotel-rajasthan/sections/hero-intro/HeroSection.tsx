@@ -16,7 +16,7 @@ export default function HeroSection() {
   const shareUrl =
     "https://indiaheritagetravel.com/blog/rawla-narlai-luxury-heritage-hotel-rajasthan";
   const shareTitle =
-    "Rawla Narlai: Rajasthan's Most Enchanting Luxury Heritage Hotel";
+    "Rawla Narlai: Luxury Heritage Hotel in Rajasthan";
 
   return (
     <section className="w-full bg-white">
@@ -24,7 +24,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dja5yspwr/image/upload/v1582297620/23.06.2026_11.28.01_REC_xq38bb.jpg"
-          alt="Rawla Narlai: Rajasthan's Most Enchanting Luxury Heritage Hotel"
+          alt="Rawla Narlai heritage hotel in Rajasthan"
           fill
           priority
           sizes="100vw"
@@ -36,7 +36,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="Rawla Narlai Rajasthan" />
+      <BlogBreadcrumb title="Rawla Narlai: Luxury Heritage Hotel in Rajasthan" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -50,14 +50,14 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            Rawla Narlai Rajasthan: Luxury
+            Rawla Narlai: Luxury
             <br />
-            Heritage Hotel, Suites & Experiences
+            Heritage Hotel in Rajasthan
           </h1>
 
           {/* Description */}
           <p className="
-            mt-4
+            mt-2
             text-[#5f5f5f]
             text-[12px] leading-5
             sm:text-[13px]
@@ -65,9 +65,8 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Discover Rawla Narlai, one of Rajasthan's finest luxury heritage hotels. Explore royal suites,
-            stepwell dinners, leopard safaris, cultural experiences, and unforgettable stays in the Aravalli
-            Hills.
+            Discover Rawla Narlai, a heritage stay in Rajasthan known for its historic architecture, 
+            distinctive dining experiences, and Aravalli surroundings.
           </p>
 
           {/* Divider Line */}

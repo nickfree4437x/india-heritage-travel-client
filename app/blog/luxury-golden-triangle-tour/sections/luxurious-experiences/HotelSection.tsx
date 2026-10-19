@@ -71,13 +71,13 @@ const hotels = [
 
 export default function LuxuryHotelsSection() {
   return (
-    <section className="w-full bg-white py-2 sm:py-4">
+    <section className="w-full bg-white py-0 sm:py-1">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Header */}
 
-        <div className="mb-4 md:mb-6">
+        <div className="mb-2 md:mb-4">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             Best Luxury Hotels for a Golden Triangle Tour
@@ -98,12 +98,12 @@ export default function LuxuryHotelsSection() {
 
           <Image
             src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782284717/f9af2fcd5e08e8d50992b3d20e18d47f0e9ac822-3840x1840_cx3jtg.avif"
-            alt="Rambagh Palace Jaipur exterior at golden hour"
+            alt="Rambagh Palace in Jaipur, a luxury heritage hotel in Rajasthan"
             fill
             className="object-cover"
           />
         </div>
-        <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+        <p className="mt-1 md:mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
           Image via pexels
         </p>
 

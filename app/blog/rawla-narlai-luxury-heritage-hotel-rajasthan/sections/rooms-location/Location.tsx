@@ -30,7 +30,7 @@ export default function LocationSection() {
         {/* Header */}
         <div className="mb-6">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide text-[#2c2c2c] font-semibold mb-2">
-            Location & How to Reach Rawla Narlai
+            Location of Rawla Narlai, Rajasthan & How to Reach
           </h2>
 
           <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">

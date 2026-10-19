@@ -13,24 +13,24 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Luxury Golden Triangle Tour India: Delhi, Agra & Jaipur Luxury Travel Guide | India Heritage Travel",
+    "Luxury Golden Triangle Tour: Delhi, Agra & Jaipur | India Heritage Travel",
   description:
-    "Experience a luxury Golden Triangle Tour across Delhi, Agra, and Jaipur with palace hotels, private chauffeurs, VIP experiences, expert guides, and customized itineraries.",
+    "Plan a luxury Golden Triangle Tour of Delhi, Agra, and Jaipur with heritage hotels, private transport, guided sightseeing, and a personalized itinerary.",
   keywords: [
     "Luxury Golden Triangle Tour",
     "Luxury Golden Triangle Tour India",
-    "Golden Triangle Luxury Travel",
     "Luxury Delhi Agra Jaipur Tour",
-    "Golden Triangle Private Tour",
+    "Private Golden Triangle Tour",
+    "Golden Triangle Luxury Travel",
+    "Luxury Golden Triangle Itinerary",
     "Luxury India Tour Packages",
-    "Luxury Rajasthan Tour",
-    "Luxury India Holidays",
-    "Golden Triangle Travel Guide",
+    "Luxury Hotels in Delhi Agra Jaipur",
     "Luxury Heritage Hotels India",
-    "Palace Hotels India",
+    "Private Guided Tour India",
     "Luxury Jaipur Tour",
     "Luxury Agra Tour",
     "Luxury Delhi Tour",
+    "Golden Triangle Tour Packages",
     "India Heritage Travel",
   ],
   authors: [
@@ -62,9 +62,9 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/luxury-golden-triangle-tour",
     siteName: "India Heritage Travel",
     title:
-      "Luxury Golden Triangle Tour India: Delhi, Agra & Jaipur Luxury Travel Guide",
+      "Luxury Golden Triangle Tour: Delhi, Agra & Jaipur",
     description:
-      "Experience a luxury Golden Triangle Tour across Delhi, Agra, and Jaipur with palace hotels, private chauffeurs, VIP experiences, expert guides, and customized itineraries.",
+      "Explore Delhi, Agra, and Jaipur with a luxury Golden Triangle itinerary featuring heritage stays, private transport, and guided sightseeing.",
     images: [
       {
         url: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782279641/pexels-axp-photography-500641970-19195961_aqlgse.jpg",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title:
       "Luxury Golden Triangle Tour India",
     description:
-      "Discover Delhi, Agra, and Jaipur in ultimate comfort with luxury hotels, private guides, VIP experiences, and customized travel itineraries.",
+      "Discover Delhi, Agra, and Jaipur with a personalized luxury tour featuring heritage hotels, private transport, and guided sightseeing.",
     images: [
       "https://res.cloudinary.com/dja5yspwr/image/upload/v1782279641/pexels-axp-photography-500641970-19195961_aqlgse.jpg",
     ],

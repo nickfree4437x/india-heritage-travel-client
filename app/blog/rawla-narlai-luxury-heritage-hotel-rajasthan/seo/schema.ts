@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Rawla Narlai Rajasthan",
+      name: "Rawla Narlai: Luxury Heritage Hotel in Rajasthan",
       item: BLOG_URL,
     },
   ],
@@ -45,9 +45,9 @@ export const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Rawla Narlai Rajasthan: Luxury Heritage Hotel, Suites & Experiences",
+    "Rawla Narlai: Luxury Heritage Hotel in Rajasthan | India Heritage Travel",
   description:
-    "Discover Rawla Narlai, one of Rajasthan's finest luxury heritage hotels. Explore royal suites, stepwell dinners, leopard safaris, cultural experiences, and unforgettable stays in the Aravalli Hills.",
+    "Explore Rawla Narlai in Rajasthan, with heritage suites, stepwell dining, cultural experiences, and nearby Aravalli landscapes. Plan your heritage stay.",
   image: IMAGE_URL,
   author: BLOG_AUTHORS.isha,
   publisher: {
@@ -70,9 +70,9 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Rawla Narlai Rajasthan",
+  name: "Rawla Narlai: Luxury Heritage Hotel in Rajasthan",
   description:
-    "Explore Rawla Narlai, a luxury heritage hotel in Rajasthan offering royal suites, cultural experiences, stepwell dinners, leopard safaris, and authentic hospitality.",
+    "Discover Rawla Narlai in Rajasthan, including its heritage accommodation, dining experiences, cultural attractions, and Aravalli surroundings.",
   url: BLOG_URL,
 };
 

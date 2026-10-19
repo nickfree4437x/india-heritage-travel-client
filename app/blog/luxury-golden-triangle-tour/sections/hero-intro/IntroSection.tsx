@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function IntroSection() {
   return (
-    <section className="w-full bg-white py-2">
+    <section className="w-full bg-white py-0">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* INTRO CONTENT */}
 
-        <div className="max-w-6xl mb-4 mbs:mb-6">
+        <div className="max-w-6xl mb-4 mb:mb-6">
 
           <p className="text-gray-700 mb-4 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify">
             Imagine yourself waking up early, not because of an alarm clock,
@@ -29,13 +29,13 @@ export default function IntroSection() {
         <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
          <Image
             src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782281524/premium_photo-1723809635838-d4c02e969f37_hvtdnq.jpg"
-            alt="Luxury Golden Triangle Tour with sunrise view of the Taj Mahal from a luxury hotel suite"
+            alt="Luxury Golden Triangle Tour featuring a Taj Mahal visit in Agra"
             fill
             sizes="100vw"
             className="object-cover"
          />
         </div>
-        <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+        <p className="mt-1 md:mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
           Image via pexels
         </p>
 

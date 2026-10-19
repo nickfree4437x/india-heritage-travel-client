@@ -23,7 +23,7 @@ export default function JaipurLuxuryExperiences() {
 
         {/* Header */}
 
-        <div className="mb-4 md:mb-6">
+        <div className="mb-2 md:mb-4">
 
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             Luxurious Experiences in Jaipur
@@ -45,13 +45,13 @@ export default function JaipurLuxuryExperiences() {
 
           <Image
             src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782284238/image_5_Rambagh_Palace_Jaipur_pcpedl.jpg"
-            alt="Royal dining experience at Rambagh Palace Jaipur during a luxury Golden Triangle tour"
+            alt="Dining experience at Rambagh Palace in Jaipur"
             fill
             sizes="100vw"
             className="object-cover"
           />
         </div>
-        <p className="mt-2 text-[12px] md:text-[13px] text-gray-600 font-light">
+        <p className="mt-1 md:mt-2 text-[11px] md:text-[12px] text-gray-600 font-light">
           Image via pexels
         </p>
 

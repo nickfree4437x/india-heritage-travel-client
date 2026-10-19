@@ -13,24 +13,22 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Rawla Narlai Rajasthan: Luxury Heritage Hotel, Suites & Experiences | India Heritage Travel",
+    "Rawla Narlai: Luxury Heritage Hotel in Rajasthan | India Heritage Travel",
   description:
-    "Discover Rawla Narlai, one of Rajasthan's finest luxury heritage hotels. Explore royal suites, stepwell dinners, leopard safaris, cultural experiences, and unforgettable stays in the Aravalli Hills.",
+    "Explore Rawla Narlai in Rajasthan, with heritage suites, stepwell dining, cultural experiences, and nearby Aravalli landscapes. Plan your heritage stay.",
   keywords: [
     "Rawla Narlai",
     "Rawla Narlai Rajasthan",
-    "Luxury Heritage Hotel Rajasthan",
-    "Heritage Hotels in Rajasthan",
-    "Luxury Hotels in Rajasthan",
-    "Rawla Narlai Review",
-    "Rawla Narlai Stay",
-    "Rajasthan Luxury Travel",
-    "Heritage Palace Hotels India",
-    "Luxury Rajasthan Tour",
-    "Aravalli Hills Hotels",
-    "Stepwell Dinner Rajasthan",
-    "Leopard Safari Rajasthan",
-    "Royal Heritage Hotels India",
+    "Rawla Narlai Heritage Hotel",
+    "Rawla Narlai Luxury Stay",
+    "Rawla Narlai Hotel Review",
+    "Luxury Heritage Hotels in Rajasthan",
+    "Heritage Stay in Rajasthan",
+    "Narlai Rajasthan",
+    "Luxury Hotels Near Ranakpur",
+    "Stepwell Dining Rajasthan",
+    "Aravalli Hills Heritage Stay",
+    "Rajasthan Heritage Travel",
     "India Heritage Travel",
   ],
   authors: [
@@ -62,9 +60,9 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/rawla-narlai-luxury-heritage-hotel-rajasthan",
     siteName: "India Heritage Travel",
     title:
-      "Rawla Narlai Rajasthan: Luxury Heritage Hotel, Suites & Experiences",
+      "Rawla Narlai: Luxury Heritage Stay in Rajasthan",
     description:
-      "Discover Rawla Narlai, one of Rajasthan's finest luxury heritage hotels. Explore royal suites, stepwell dinners, leopard safaris, cultural experiences, and unforgettable stays in the Aravalli Hills.",
+      "Explore Rawla Narlai's heritage accommodation, dining experiences, and cultural charm in Rajasthan.",
     images: [
       {
         url: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782297620/23.06.2026_11.28.01_REC_xq38bb.jpg",
