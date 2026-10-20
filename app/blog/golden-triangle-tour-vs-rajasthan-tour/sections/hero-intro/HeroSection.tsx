@@ -16,7 +16,7 @@ export default function HeroSection() {
   const shareUrl =
     "https://indiaheritagetravel.com/blog/golden-triangle-tour-vs-rajasthan-tour";
   const shareTitle =
-    "Golden Triangle Tour vs Rajasthan Tour: Which India Itinerary Is Right for You?";
+    "Golden Triangle vs Rajasthan Tour: Which Should You Choose?";
 
   return (
     <section className="w-full bg-white">
@@ -24,7 +24,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dja5yspwr/image/upload/v1582365101/sylwia-bartyzel-eU4pipU_8HA-unsplash_mvujnj.jpg"
-          alt="Golden Triangle Tour vs Rajasthan Tour: Which India Itinerary Is Right for You?"
+          alt="Golden Triangle Tour vs Rajasthan Tour comparison"
           fill
           priority
           sizes="100vw"
@@ -69,8 +69,9 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Two routes. Two completely different Indias. One decision that will shape your entire trip.
-            Here is everything you need to make an informed choice.
+            Compare destinations, travel styles, trip duration, and budgets to
+            decide whether the Golden Triangle or a broader Rajasthan journey
+            is the right fit for your India trip.
           </p>
 
           {/* Divider Line */}

@@ -20,7 +20,7 @@ const experiences = [
 
 export default function RajasthanExperiences() {
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="w-full bg-white py-0 sm:py-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
         <div className="mb-2 md:mb-4">

@@ -13,10 +13,10 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full bg-white py-4 sm:py-6">
+    <section className="w-full bg-white py-2 sm:py-4">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="mb-6">
+        <div className="mb-2 md:md-4">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             Frequently Asked Questions
           </h2>

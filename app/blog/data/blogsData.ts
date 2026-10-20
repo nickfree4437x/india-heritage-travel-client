@@ -676,4 +676,13 @@ export const blogs = [
     excerpt:
       "Explore Ranthambore's royal history, ancient fort, tiger safaris, wildlife conservation....",
   },
+  {
+    id: 76,
+    slug: "osian-heritage-luxury-desert-travel",
+    title: "Osian Heritage & Luxury Desert Travel : Temples, Thar Sunsets & Stays",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1792492130/pexels-ethan-sarkar-2060961318-32851834_p9tcae.jpg",
+    date: "20 October",
+    excerpt:
+      "Discover Osian near Jodhpur, from ancient Jain and Hindu temples and Pratihara architec....",
+  },
 ];

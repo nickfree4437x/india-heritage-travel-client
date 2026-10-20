@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "15 Best Forts & Palaces in Rajasthan: Ultimate Heritage Travel Guide | India Heritage Travel",
+    "15 Best Forts and Palaces in Rajasthan | India Heritage Travel",
   description:
     "Explore the 15 best forts and palaces in Rajasthan, including Amber Fort, Mehrangarh Fort, City Palace Udaipur, Jaisalmer Fort, Chittorgarh, and Kumbhalgarh with expert travel tips.",
   keywords: [

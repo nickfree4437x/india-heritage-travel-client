@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Top Forts and Palaces in Rajasthan",
+      name: "15 Best Forts and Palaces in Rajasthan | India Heritage Travel",
       item: BLOG_URL,
     },
   ],
@@ -70,7 +70,7 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Top Forts and Palaces in Rajasthan",
+  name: "15 Best Forts and Palaces in Rajasthan",
   description:
     "A complete guide to Rajasthan's most iconic forts and palaces, including their history, architecture, travel tips, and visitor information.",
   url: BLOG_URL,

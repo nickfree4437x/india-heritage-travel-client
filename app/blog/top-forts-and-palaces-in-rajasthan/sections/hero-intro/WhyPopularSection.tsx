@@ -9,7 +9,7 @@ export default function WhyPopularSection() {
         {/* Heading */}
         <div className="max-w-6xl mb-4 md:mb-6">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight mb-2">
-            Why Rajasthan's Forts & Palaces Became World Famous
+            Why Rajasthan's Forts and Palaces Are So Remarkable
           </h2>
 
           <p className="text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light text-justify mb-6">

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Golden Triangle Tour vs Rajasthan Tour: Which India Itinerary Should You Choose? | India Heritage Travel",
+    "Golden Triangle vs Rajasthan Tour: Which Should You Choose? | India Heritage Travel",
   description:
     "Compare the Golden Triangle Tour and Rajasthan Tour to find the perfect India itinerary. Explore destinations, experiences, trip duration, costs, luxury options, and expert travel recommendations.",
   keywords: [
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/golden-triangle-tour-vs-rajasthan-tour",
     siteName: "India Heritage Travel",
     title:
-      "Golden Triangle Tour vs Rajasthan Tour: Which India Itinerary Should You Choose?",
+      "Golden Triangle vs Rajasthan Tour: Which Should You Choose?  ",
     description:
       "Compare the Golden Triangle Tour and Rajasthan Tour to find the perfect India itinerary. Explore destinations, experiences, trip duration, costs, luxury options, and expert travel recommendations.",
     images: [
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Golden Triangle Tour vs Rajasthan Tour",
+      "Golden Triangle vs Rajasthan Tour",
     description:
       "Compare destinations, travel styles, costs, luxury experiences, and trip durations to choose the ideal India itinerary.",
     images: [

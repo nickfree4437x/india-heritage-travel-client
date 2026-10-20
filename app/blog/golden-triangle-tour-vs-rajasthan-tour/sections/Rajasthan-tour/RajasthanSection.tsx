@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function RajasthanTourSection() {
   return (
-    <section className="w-full bg-white py-2 sm:py-4">
+    <section className="w-full bg-white -mt-2 md:mt-0">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
-        <div className="mb-2">
+        <div className="mb-1">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c]">
             What Is a Rajasthan Tour?
           </h2>
@@ -29,7 +29,7 @@ export default function RajasthanTourSection() {
         </div>
 
         {/* Image */}
-        <div className="mb-6">
+        <div className="mb-2 md:mb-4">
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782371790/pexels-himanshu817-16910734_isxid9.jpg"

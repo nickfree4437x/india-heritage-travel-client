@@ -4,15 +4,15 @@ import Image from "next/image";
 
 export default function IntroSection() {
   return (
-    <section className="w-full bg-white py-2">
+    <section className="w-full bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Content */}
         <div className="max-w-6xl">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight mb-2">
-            Rajasthan's Royal Legacy Lives Through Its Forts & Palaces
+            Rajasthan's Royal Legacy: 15 Forts and Palaces to Explore
           </h2>
 
-          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-6">
+          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-2 md:mb-4">
             I'll never forget standing at the foot of <strong>Mehrangarh Fort</strong> for the very first
             time. It wasn't because I had a plan or a checklist in mind. It was simply the overwhelming
             scale of a fortress built more than five centuries ago that made me stop in my tracks.

@@ -32,7 +32,7 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Golden Triangle Tour vs Rajasthan Tour",
+      name: "Golden Triangle vs Rajasthan Tour: Which Should You Choose? | India Heritage Travel",
       item: BLOG_URL,
     },
   ],
@@ -45,7 +45,7 @@ export const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Golden Triangle Tour vs Rajasthan Tour: Which India Itinerary Should You Choose?",
+    "Golden Triangle vs Rajasthan Tour: Which Should You Choose? | India Heritage Travel: Which India Itinerary Should You Choose?",
   description:
     "Compare the Golden Triangle Tour and Rajasthan Tour to find the perfect India itinerary. Explore destinations, experiences, trip duration, costs, luxury options, and expert travel recommendations.",
   image: IMAGE_URL,
@@ -70,7 +70,7 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Golden Triangle Tour vs Rajasthan Tour",
+  name: "Golden Triangle vs Rajasthan Tour: Which Should You Choose? | India Heritage Travel",
   description:
     "A detailed comparison of the Golden Triangle Tour and Rajasthan Tour covering destinations, travel experiences, trip duration, budgets, luxury options, and recommended itineraries.",
   url: BLOG_URL,

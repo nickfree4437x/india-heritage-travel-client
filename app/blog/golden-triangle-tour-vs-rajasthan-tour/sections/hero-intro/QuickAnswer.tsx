@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function QuickAnswer() {
   return (
-    <section className="w-full bg-white py-2">
+    <section className="w-full bg-white py-0">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Header */}
         <div className="mb-2">
@@ -19,19 +19,19 @@ export default function QuickAnswer() {
             Every week, this is one of the most common questions we receive at
             <strong>
               {" "}
-              <Link href="https://www.indiaheritagetravel.com" className="hover:underline text-[#8b6a3d]">
+              <Link href="https://www.indiaheritagetravel.com" className="hover:underline font-[500] text-[#8b6a3d]">
                 India Heritage Travel
               </Link>
             </strong>. 
             And it is a genuinely important one because the{" "}
             <strong>
-              <Link href="https://www.indiaheritagetravel.com/tours/majestic-golden-triangle-tour" className="hover:underline text-[#8b6a3d]">
+              <Link href="https://www.indiaheritagetravel.com/tours/majestic-golden-triangle-tour" className="hover:underline font-[500] text-[#8b6a3d]">
                 Golden Triangle Tour
               </Link>
             </strong>{" "}
             and a{" "}
             <strong>
-              <Link href="https://www.indiaheritagetravel.com/tours/rajasthani-heritage-retreat-tour" className="hover:underline text-[#8b6a3d]">
+              <Link href="https://www.indiaheritagetravel.com/tours/rajasthani-heritage-retreat-tour" className="hover:underline font-[500] text-[#8b6a3d]">
                 Rajasthan Tour
               </Link>
             </strong>{" "}
@@ -43,7 +43,7 @@ export default function QuickAnswer() {
         </div>
 
         {/* Decision Box */}
-        <div className="my-6 md:my-8 rounded-sm">
+        <div className="my-2 md:my-4 rounded-sm">
           <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
             Here's the fastest answer:
           </h3>

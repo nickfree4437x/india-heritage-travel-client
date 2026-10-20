@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function GoldenTriangleSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white py-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
-        <div className="mb-2">
+        <div className="mb-1">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c]">
             What Is a Golden Triangle Tour?
           </h2>
@@ -21,7 +21,7 @@ export default function GoldenTriangleSection() {
             <strong>
               <Link
                 href="https://www.indiaheritagetravel.com/tours/majestic-golden-triangle-tour"
-                className="hover:underline text-[#8b6a3d]"
+                className="hover:underline font-[500] text-[#8b6a3d]"
               >
                 Golden Triangle Tour
               </Link>
@@ -37,7 +37,7 @@ export default function GoldenTriangleSection() {
         </div>
 
         {/* Image */}
-        <div className="mb-6">
+        <div className="mb-4 md:mb-6">
           <div className="relative w-full h-[280px] sm:h-[420px] lg:h-[560px] rounded-sm overflow-hidden shadow-md">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782371132/pexels-ishan-17119283-18951083_cnu3hi.jpg"
@@ -52,7 +52,7 @@ export default function GoldenTriangleSection() {
         </div>
 
         {/* Destinations */}
-        <div className="mb-6">
+        <div className="mb-4 md:mb-6">
           <h3 className="text-[17px] sm:text-[18px] font-semibold text-[#2c2c2c] mb-3">
             What You'll Experience on the Golden Triangle
           </h3>

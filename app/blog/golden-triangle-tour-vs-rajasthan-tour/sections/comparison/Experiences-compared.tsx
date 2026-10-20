@@ -22,11 +22,11 @@ const experiences = [
 
 export default function ExperiencesCompared() {
   return (
-    <section className="w-full bg-white py-6 sm:py-8">
+    <section className="w-full bg-white py-4 sm:py-6">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
-        <div className="mb-4">
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
+        <div className="mb-2 md:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-1">
             What Each Tour Actually Feels Like
           </h2>
 

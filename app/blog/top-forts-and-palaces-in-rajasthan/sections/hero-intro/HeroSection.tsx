@@ -15,8 +15,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 export default function HeroSection() {
   const shareUrl =
     "https://indiaheritagetravel.com/blog/top-forts-and-palaces-in-rajasthan";
-  const shareTitle =
-    "15 Forts & Palaces to See in Rajasthan, India";
+  const shareTitle = "15 Best Forts and Palaces in Rajasthan";
 
   return (
     <section className="w-full bg-white">
@@ -24,7 +23,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dja5yspwr/image/upload/v1582461064/chirag-vashist-mnqLnEBHMp8-unsplash_fkxnnf.jpg"
-          alt="15 Forts & Palaces to See in Rajasthan, India"
+          alt="Historic forts and palaces in Rajasthan"
           fill
           priority
           sizes="100vw"
@@ -36,7 +35,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="15 Forts & Palaces to See in Rajasthan, India" />
+      <BlogBreadcrumb title="15 Best Forts and Palaces in Rajasthan" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -54,7 +53,7 @@ export default function HeroSection() {
             leading-tight
             sm:leading-snug
           ">
-            15 Forts & Palaces to See in
+            15 Best Forts and Palaces in
             <br />
             Rajasthan, India
           </h1>
@@ -69,8 +68,9 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Meta Description: On the verge of visiting Rajasthan, India? Get ready to know about the top 15
-            forts and palaces that one should visit in Rajasthan - along with some hidden facts!
+            Discover 15 of Rajasthan's most remarkable forts and palaces, with
+            highlights of their history, architecture, royal heritage, and
+            practical tips to help plan your visit.
           </p>
 
           {/* Divider Line */}

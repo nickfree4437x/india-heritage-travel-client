@@ -59,7 +59,7 @@ export default function TravelTipsSection() {
         <div className="max-w-4xl mb-10">
 
           <h2 className="text-[18px] sm:text-[22px] md:text-[24px] font-semibold text-[#2c2c2c] leading-tight mb-5">
-            Advice for Travelling to Rajasthan's Forts & Palaces
+           Practical Travel Tips for Rajasthan's Forts and Palaces
           </h2>
 
           <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-8 text-gray-700 font-light text-justify">

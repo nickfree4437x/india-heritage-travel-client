@@ -13,18 +13,16 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full bg-white py-4 sm:py-6 pb-10 md:pb-12">
+    <section className="w-full bg-white py-2 sm:py-4 pb-10 md:pb-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="mb-6">
+        <div className="mb-2 md:mb-4">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
             Frequently Asked Questions
           </h2>
 
           <p className="max-w-6xl mx-auto text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light text-justify">
-            Still deciding between the Golden Triangle Tour and a Rajasthan
-            Tour? Here are answers to some of the questions travellers ask us
-            most before planning their journey.
+            Still deciding between the Golden Triangle Tour and a Rajasthan Tour? Here are answers to the questions travellers ask us most.
           </p>
         </div>
 
