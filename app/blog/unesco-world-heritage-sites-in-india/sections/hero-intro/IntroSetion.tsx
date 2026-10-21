@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function IntroSection() {
   return (
-    <section className="w-full bg-white py-2 sm:py-2">
+    <section className="w-full bg-white">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -12,30 +12,29 @@ export default function IntroSection() {
 
         <div className="max-w-6xl">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-relaxed mb-2">
-            Discover India's Most Extraordinary UNESCO World Heritage Sites
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-relaxed mb-1">
+            Discover India's UNESCO World Heritage Sites
           </h2>
 
           <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-4">
-            India is home to some of the world's most remarkable cultural,
-            historical, and natural treasures. From magnificent Mughal
-            monuments and ancient cave temples to royal cities, mountain
-            railways, and breathtaking national parks, the country's UNESCO
-            World Heritage Sites represent thousands of years of human
-            achievement, artistic excellence, and living traditions.
+             India is home to an extraordinary range of cultural and natural heritage.
+              From the Taj Mahal and ancient cave temples to historic cities, mountain
+              railways, and protected natural landscapes, its UNESCO World Heritage Sites
+              showcase the country's rich history, architectural achievements, and
+              diverse ecosystems.
           </p>
 
         </div>
 
         {/* Featured Image */}
 
-        <div className="mb-6">
+        <div className="mb-2 md:mb-4">
 
           <div className="relative h-[280px] sm:h-[420px] md:h-[560px] overflow-hidden rounded-sm">
 
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782715320/pexels-roman-saienko-1867764487-37626173_zxdfkr.jpg"
-              alt="UNESCO World Heritage Sites in India"
+              alt="Historic architecture representing India's cultural heritage"
               fill
               priority
               sizes="100vw"
@@ -58,22 +57,20 @@ export default function IntroSection() {
             What You'll Discover in This Guide
           </h3>
 
-          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-4">
-            Planning a UNESCO-focused journey through India can feel
-            overwhelming because the country is home to dozens of UNESCO World
-            Heritage Sites spread across different regions. Some celebrate the
-            rise and fall of great empires, while others preserve unique
-            ecosystems, sacred traditions, or architectural masterpieces that
-            have survived for centuries.
+          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-2 md:mb-3">
+            India's UNESCO World Heritage Sites span different regions and historical
+            periods. They include places recognised for their cultural significance,
+            architectural achievements, and natural value. Understanding what makes
+            each site distinctive can help you choose destinations that match your
+            interests and available travel time.
           </p>
 
           <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify">
-            This guide highlights some of the most significant UNESCO World
-            Heritage Sites in India, explains why they are important, when to
-            visit them, and how they can be incorporated into a memorable
-            travel itinerary. Whether your interests lie in history,
-            architecture, photography, wildlife, or culture, these destinations
-            represent the very best of what India has to offer.
+            This guide introduces selected UNESCO World Heritage Sites in India,
+            explains their significance, and shares practical considerations for
+            planning a visit. Whether you're interested in history, architecture,
+            wildlife, photography, or cultural experiences, these destinations offer
+            meaningful ways to explore India's heritage.
           </p>
 
         </div>

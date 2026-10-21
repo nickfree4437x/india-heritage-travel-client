@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/unesco-world-heritage-sites-in-india";
-  const shareTitle = "India UNESCO World Heritage Sites: A Comprehensive Guide for Travelers";
+  const shareTitle = "UNESCO World Heritage Sites in India | Travel Guide";
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782714314/pexels-roman-saienko-1867764487-38198571_poijud.jpg"
-          alt="India UNESCO World Heritage Sites: A Comprehensive Guide for Travelers"
+          alt="Historic architecture representing India's cultural heritage"
           fill
           priority
           sizes="100vw"
@@ -45,9 +45,8 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            India UNESCO World Heritage Sites: A Comprehensive
+             UNESCO World Heritage Sites in India
             <br />
-             Guide for Travelers
           </h1>
 
           {/* Description */}
@@ -60,8 +59,8 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Discover India’s famous UNESCO World Heritage Sites - from the Taj Mahal to Hampi. 
-            Make your heritage tour a success with tips from experts.
+            Explore India's UNESCO World Heritage Sites, discover their cultural
+            and historical significance, and find practical tips to plan your visit.
           </p>
 
           {/* Divider Line */}

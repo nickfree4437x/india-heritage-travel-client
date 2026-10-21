@@ -94,7 +94,7 @@ export default function TicketSection() {
               className="object-cover"
             />
           </div>
-          <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+          <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
             Image via pexels
           </p>
         </div>

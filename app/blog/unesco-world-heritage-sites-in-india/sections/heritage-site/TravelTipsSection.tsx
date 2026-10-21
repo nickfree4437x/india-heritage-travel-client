@@ -56,9 +56,9 @@ export default function TravelTipsSection() {
 
         {/* Heading */}
 
-        <div className="mb-6">
+        <div className="mb-2 md:mb-4">
 
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight mb-2">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight mb-1">
             Practical Tips for Visiting UNESCO World Heritage Sites in India
           </h2>
 
@@ -94,11 +94,11 @@ export default function TravelTipsSection() {
 
                 </div>
 
-                <h3 className="text-[14px] md:text-[14px] font-semibold text-[#2c2c2c] mb-2">
+                <h3 className="text-[14px] md:text-[14px] font-semibold text-[#2c2c2c] mb-1">
                   {tip.title}
                 </h3>
 
-                <p className="text-[13px] sm:text-[14px] text-gray-700 leading-relaxed font-light">
+                <p className="text-[12px] sm:text-[13.5px] text-gray-700 leading-relaxed font-light">
                   {tip.description}
                 </p>
 

@@ -13,36 +13,28 @@ export default function BestTimeSection() {
         </h2>
 
         <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-4">
-          If there is one piece of advice that applies to almost every
-          heritage hotel in Rajasthan, it is this: plan your stay between
-          <strong> October and March</strong>. Rajasthan's summers can be
-          extremely demanding, with temperatures regularly climbing above
-          45°C in several regions. Historic stone palaces and forts respond
-          differently to heat than modern buildings, making the cooler months
-          far more comfortable for exploring courtyards, terraces, gardens,
-          and outdoor dining spaces.
+          The period from **October to March** is generally a popular time to explore Rajasthan's heritage hotels, as cooler weather can make sightseeing and outdoor activities more comfortable. Winter is especially suitable for exploring historic courtyards, palace gardens, and nearby monuments. If you plan to travel during peak season, book your preferred accommodation in advance and check local weather conditions before your trip.
         </p>
         {/* Image */}
         <div className="
-        relative
-        mt-4 sm:mt-6
-        w-full
-        h-[280px] sm:h-[420px] lg:h-[560px]
-        rounded-sm
-        overflow-hidden
-        ">
+          relative
+          mt-2 sm:mt-4
+          w-full
+          h-[280px] sm:h-[420px] lg:h-[560px]
+          rounded-sm
+          overflow-hidden
+          ">
         <Image
             src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782558475/pexels-navlakha-33810147_xxymnj.jpg"
-            alt="Ideal season for Rajasthan palace hotels - winter months from October to March"
+            alt="Heritage hotel architecture in Rajasthan"
             fill
             sizes="100vw"
             className="object-cover"
         />
         </div>
-        <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+        <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
          Image via pexels
         </p>
-
       </div>
 
     </section>

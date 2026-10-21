@@ -2,7 +2,7 @@
 
 export default function ChoosingHotelSection() {
   return (
-    <section className="w-full bg-white py-2 sm:py-4">
+    <section className="w-full bg-white py-0 sm:py-1">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -11,12 +11,13 @@ export default function ChoosingHotelSection() {
         </h2>
 
         <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify">
-          Most travellers begin by choosing a destination first. If the trip
-          includes Udaipur, they look for hotels in Udaipur. If the journey
-          takes them to Jaipur, they compare palace stays in Jaipur. While
-          this approach is perfectly logical, it often overlooks the more
-          important question: what kind of Rajasthan experience are you
-          hoping to have?
+          Choosing the right heritage hotel in Rajasthan depends on the experience
+          you want from your trip. Consider the property's historical character,
+          location, budget, available amenities, and proximity to the attractions
+          you plan to visit. A palace stay in Udaipur, a heritage property in Jaipur,
+          or a historic haveli in the countryside can offer very different
+          experiences. Comparing these factors before booking helps you find a
+          stay that suits your travel style and itinerary.
         </p>
 
       </div>

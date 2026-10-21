@@ -60,7 +60,7 @@ const cityData = [
   {
     name: "Sun Temple of Konark - Orissa",
     description:
-      "King Narasimhadeva I built this 13th-century temple in honour of Surya, designed as a grand chariot with 24 wheels, seven horses, and a towering structure that once stood 60 metres before collapsing.",
+      "King Narasimhadeva I built this 13th-century temple in honour of Surya, the Sun God, designing it as a monumental chariot- complete with 24 intricately carved wheels, seven galloping horses, and a towering shikhara that once rose 60 metres before its collapse. Every element was deliberate: the wheels served as sundials, the horses represented the days of the week, and the entire structure was conceived as a cosmic vehicle carrying the sun across the sky.",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782716817/pexels-ravi-mittal-107469583-29065084_pso9ij.jpg",
   },
   {
@@ -70,7 +70,7 @@ const cityData = [
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782716974/pexels-sasank-cherukupalli-2156002811-34452432_ynx2mm.jpg",
   },
   {
-    name: "Chhatrapati Shivaji Maharaj Terminus - Mumbai",
+    name: "CSMT Mumbai - Victorian Gothic Heritage",
     description:
       "F.W. Stevens' 1878 masterpiece blends Indian and Victorian Gothic architecture. UNESCO listed it in 2004. Unlike most heritage sites, it remains functional - serving millions daily.",
     image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1782717127/pexels-roman-saienko-1867764487-28867947_kdkooi.jpg",
@@ -106,7 +106,7 @@ export default function CityBreakdown() {
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 ) : (
-                  <p className="mt-2 text-[12px] sm:text-[13px] text-gray-600 font-light">
+                  <p className="mt-1 md:mt-2 text-[11px] sm:text-[12px] text-gray-600 font-light">
                     Image via pexels
                   </p>
                 )}

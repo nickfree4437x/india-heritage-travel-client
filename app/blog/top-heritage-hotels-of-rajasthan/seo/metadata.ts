@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     address: false,
   },
   title:
-    "Top Heritage Hotels of Rajasthan: Best Palace & Luxury Stays Guide | India Heritage Travel",
+    "Best Heritage Hotels in Rajasthan | Royal Palace Stays",
   description:
     "Discover the best heritage hotels in Rajasthan, including Rambagh Palace, Taj Lake Palace, Umaid Bhawan Palace, Samode Palace, and luxury royal stays across Jaipur, Udaipur, Jodhpur, and Jaisalmer.",
   keywords: [
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     url: "https://indiaheritagetravel.com/blog/top-heritage-hotels-of-rajasthan",
     siteName: "India Heritage Travel",
     title:
-      "Top Heritage Hotels of Rajasthan: Best Palace & Luxury Stays Guide",
+      "Best Heritage Hotels in Rajasthan | Royal Palace Stays",
     description:
       "Explore Rajasthan's finest heritage hotels, including Rambagh Palace, Taj Lake Palace, Umaid Bhawan Palace, Samode Palace, and other iconic royal stays.",
     images: [
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Top Heritage Hotels of Rajasthan",
+      "Best Heritage Hotels in Rajasthan",
     description:
       "Discover Rajasthan's most luxurious palace hotels and heritage stays across Jaipur, Udaipur, Jodhpur, and Jaisalmer.",
     images: [

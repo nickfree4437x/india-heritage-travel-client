@@ -685,4 +685,13 @@ export const blogs = [
     excerpt:
       "Discover Osian near Jodhpur, from ancient Jain and Hindu temples and Pratihara architec....",
   },
+  {
+    id: 77,
+    slug: "murshidabad-nawabi-heritage-silk",
+    title: "Murshidabad Heritage Travel Guide: Palaces & Silk",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1792578586/pexels-souvik-dutta-2153793012-36099871_qw9jar.jpg",
+    date: "21 October",
+    excerpt:
+      "Explore Murshidabad's Nawabi heritage, Hazarduari Palace, historic mosques, Kathgola gar....",
+  },
 ];

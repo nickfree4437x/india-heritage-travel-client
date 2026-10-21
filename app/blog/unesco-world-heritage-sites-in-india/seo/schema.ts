@@ -44,10 +44,9 @@ export const breadcrumbSchema = {
 export const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline:
-    "UNESCO World Heritage Sites in India: Complete Travel Guide 2026",
+  headline: "UNESCO World Heritage Sites in India | Travel Guide",
   description:
-    "Explore UNESCO World Heritage Sites in India, including the Taj Mahal, Hampi, Ajanta Caves, Ellora Caves, Jaipur, Red Fort, Qutub Minar, Konark Sun Temple, and other iconic landmarks.",
+   "Explore India's UNESCO World Heritage Sites, including the Taj Mahal, Hampi, Ajanta and Ellora Caves, Jaipur, and Konark Sun Temple, with tips for planning your visit.",
   image: IMAGE_URL,
   author: BLOG_AUTHORS.isha,
   publisher: {
@@ -71,8 +70,8 @@ export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "UNESCO World Heritage Sites in India",
-  description:
-    "A complete guide to India's UNESCO World Heritage Sites, covering history, architecture, travel planning, cultural significance, and visitor information.",
+description:
+  "Discover India's UNESCO-listed heritage, including historic monuments, cultural landmarks, and natural sites, with practical travel-planning tips.",
   url: BLOG_URL,
 };
 

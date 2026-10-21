@@ -16,15 +16,15 @@ export default function FAQSection() {
     <section className="w-full bg-white py-4 sm:py-6 pb-10 md:pb-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="mb-4 md:mb-6">
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-2">
+        <div className="mb-2 md:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] mb-1">
             Frequently Asked Questions
           </h2>
 
           <p className="max-w-6xl mx-auto text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light text-justify">
-            Planning a stay at one of Rajasthan's famous heritage hotels?
-            Here are answers to some of the questions travellers ask most
-            often before booking their royal stay.
+            Have questions about heritage hotels in Rajasthan? Explore answers about
+            the best time to visit, choosing a suitable property, booking a palace
+            stay, and planning your Rajasthan heritage trip.
           </p>
         </div>
 
@@ -82,18 +82,17 @@ export default function FAQSection() {
           </h3>
 
           <p className="text-[12px] sm:text-[13px] md:text-[14px] text-gray-700 leading-relaxed font-light text-justify mb-4">
-            Whether you're dreaming of a palace overlooking Lake Pichola,
-            a historic fort in the desert, or a royal residence filled with
-            centuries of history, our specialists can help you choose the
-            perfect heritage hotel and create a personalised Rajasthan
-            itinerary.
+            From palace hotels overlooking Lake Pichola to historic properties in
+            Jaipur and Jodhpur, Rajasthan offers a variety of heritage stays. Contact
+            India Heritage Travel to discuss your travel preferences and explore
+            suitable accommodation and itinerary options.
           </p>
 
           <a
             href="/contact"
             className="inline-flex items-center justify-center rounded-md bg-[#AF956C] px-6 py-2 md:py-2.5 text-[12px] sm:text-[13px] font-light text-white transition-colors duration-300 hover:bg-[#9d8157]"
           >
-            Plan My Heritage Hotel Journey
+            Plan My Rajasthan Heritage Stay
           </a>
         </div>
       </div>

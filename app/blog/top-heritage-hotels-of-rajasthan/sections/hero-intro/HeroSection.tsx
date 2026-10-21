@@ -11,8 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/top-heritage-hotels-of-rajasthan";
-  const shareTitle =
-    "Top Heritage Hotels of Rajasthan: Where Rich History Meets Luxury";
+  const shareTitle = "Best Heritage Hotels in Rajasthan | Royal Palace Stays";
 
   return (
     <section className="w-full bg-white">
@@ -20,7 +19,7 @@ export default function HeroSection() {
       <div className="relative h-[68vh] sm:h-[78vh] lg:h-[88vh] w-full overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dja5yspwr/image/upload/v1782554877/Rambagh_Palace_Jaipur_ny9xx7.jpg"
-          alt="Majestic fort-turned-heritage hotel with sandstone walls and ornate balconies in Rajasthan"
+          alt="Rambagh Palace, a heritage luxury hotel in Jaipur, Rajasthan"
           fill
           priority
           sizes="100vw"
@@ -46,7 +45,7 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            Top Heritage Hotels of Rajasthan
+            Best Heritage Hotels in Rajasthan
           </h1>
 
           {/* Description */}
@@ -59,8 +58,9 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Reviews of the top heritage hotels of Rajasthan, from palace hotels in Udaipur to fort hotels in 
-            Jaisalmer. Discover what heritage hotel will give you an experience worth having.
+            Explore Rajasthan's heritage hotels and royal palace stays across Jaipur,
+            Udaipur, Jodhpur, and beyond, with practical insights to help you plan
+            your heritage getaway.
           </p>
 
           {/* Divider Line */}
@@ -68,7 +68,7 @@ export default function HeroSection() {
 
           {/* Meta Info */}
           <div className="
-            mt-3
+            mt-2
             flex flex-col gap-5
             sm:flex-row sm:items-center sm:justify-between
           ">

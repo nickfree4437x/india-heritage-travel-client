@@ -45,7 +45,7 @@ export const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Top Heritage Hotels of Rajasthan: Best Palace & Luxury Stays Guide",
+    "Best Heritage Hotels in Rajasthan | Royal Palace Stays",
   description:
     "Discover the best heritage hotels in Rajasthan, including Rambagh Palace, Taj Lake Palace, Umaid Bhawan Palace, Samode Palace, and luxury royal stays across Jaipur, Udaipur, Jodhpur, and Jaisalmer.",
   image: IMAGE_URL,
@@ -70,7 +70,7 @@ export const articleSchema = {
 export const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Top Heritage Hotels of Rajasthan",
+  name: "Best Heritage Hotels in Rajasthan",
   description:
     "A complete guide to Rajasthan's finest heritage hotels, palace stays, luxury accommodations, booking tips, and travel recommendations.",
   url: BLOG_URL,
