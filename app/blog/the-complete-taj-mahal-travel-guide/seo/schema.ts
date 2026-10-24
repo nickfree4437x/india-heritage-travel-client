@@ -45,9 +45,9 @@ export const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Taj Mahal Travel Guide 2026: History, Tickets, Timings & Best Time to Visit",
+   "Taj Mahal Travel Guide: Tickets, Timings & Travel Tips",
   description:
-    "Explore the ultimate Taj Mahal Travel Guide with ticket prices, opening hours, history, architecture, photography tips, nearby attractions, Agra itinerary suggestions, and expert travel advice.",
+   "Plan your Taj Mahal visit with information about its history, architecture, entry tickets, visiting hours, nearby attractions, and Agra itinerary tips.",
   image: IMAGE_URL,
   author: BLOG_AUTHORS.isha,
   publisher: {
@@ -72,7 +72,7 @@ export const webPageSchema = {
   "@type": "WebPage",
   name: "Taj Mahal Travel Guide",
   description:
-    "A complete guide to visiting the Taj Mahal, including history, architecture, tickets, timings, photography tips, nearby attractions, and Agra travel planning.",
+   "Discover the Taj Mahal's history, architecture, ticket information, visiting hours, nearby attractions, and practical tips for planning your Agra trip.",
   url: BLOG_URL,
 };
 

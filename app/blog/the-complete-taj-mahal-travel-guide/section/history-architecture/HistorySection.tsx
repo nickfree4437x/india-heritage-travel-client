@@ -4,19 +4,19 @@ import Image from "next/image";
 
 export default function HistorySection() {
   return (
-    <section className="w-full bg-white py-2 sm:py-4">
+    <section className="w-full bg-white py-1 sm:py-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight mb-4">
           History and Architecture of the Taj Mahal
         </h2>
 
         {/* How Built */}
-        <div className="mb-4 md:mb-6">
-          <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-2">
+        <div className="mb-2 md:mb-4">
+          <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#2c2c2c] mb-1">
             How the Taj Mahal Was Built
           </h3>
 
-          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-4">
+          <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-2 md:mb-3">
             The story of the Taj Mahal begins in 1631 when Mumtaz Mahal,
             the beloved wife of Mughal Emperor Shah Jahan, died while
             giving birth to their fourteenth child. Deeply affected by her
@@ -31,7 +31,7 @@ export default function HistorySection() {
           <div className="relative h-[280px] sm:h-[420px] lg:h-[580px] overflow-hidden rounded-sm">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1783056885/pexels-vedant-gupta-2153341111-32673466_ni2fjq.jpg"
-              alt="Close-up of pietra dura marble inlay work with semi-precious stone flowers on the Taj Mahal walls"
+              alt="Decorative marble craftsmanship at the Taj Mahal"
               fill
               sizes="100vw"
               className="object-cover"

@@ -11,7 +11,7 @@ import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
   const shareUrl = "https://indiaheritagetravel.com/blog/the-complete-taj-mahal-travel-guide";
-  const shareTitle = "The Complete Taj Mahal Travel Guide: History, Tickets & Best Time to Visit";
+  const shareTitle = "Taj Mahal Travel Guide: Tickets, Timings & Travel Tips";
 
   return (
     <section className="w-full bg-white">
@@ -45,9 +45,7 @@ export default function HeroSection() {
             max-w-5xl
             mx-auto
           ">
-            The Complete Taj Mahal
-            <br />
-             Travel Guide
+            Taj Mahal Travel Guide
           </h1>
 
           {/* Description */}
@@ -60,8 +58,8 @@ export default function HeroSection() {
             mx-auto
             font-light
           ">
-            Everything you need for a Taj Mahal visit done right - history, ticket prices, how to 
-            reach Agra, sunrise vs. sunset, nearby sights, and a ready 2-day itinerary.
+            Plan your Taj Mahal visit with tips on its history, tickets, visiting
+            hours, how to reach Agra, nearby attractions, and a suggested 2-day itinerary.
           </p>
 
           {/* Divider Line */}

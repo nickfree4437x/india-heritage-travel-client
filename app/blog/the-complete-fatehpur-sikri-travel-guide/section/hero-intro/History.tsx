@@ -7,14 +7,14 @@ export default function HistorySection() {
     <section className="w-full bg-white py-4 sm:py-6">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="mb-4 md:mb-6">
+        <div className="mb-2 md:mb-4">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] tracking-wide">
             History & Origins - Akbar's Vision and a Sufi Saint's Prophecy
           </h2>
         </div>
 
         {/* Featured Image */}
-        <div className="mb-3 md:mb-4">
+        <div className="mb-2 md:mb-3">
           <div className="relative h-[280px] md:h-[420px] lg:h-[560px] overflow-hidden rounded-sm">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1783146340/brijender-dua-6FJHbHg-YDA-unsplash_zxqyvj.jpg"
@@ -31,7 +31,7 @@ export default function HistorySection() {
 
         {/* History Content */}
         <div className="max-w-6xl">
-          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-4">
+          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-2 md:mb-4">
             The story of Fatehpur Sikri starts, kind of in a roundabout way, not with some big emperor
             ambition first, but with a prayer. In 1569 Akbar at that moment one of the strongest monarchs
             on earth, ruler of a Mughal realm running from Kabul to Bengal - was without an heir. And he
@@ -40,7 +40,7 @@ export default function HistorySection() {
           </p>
 
           {/* Abandonment */}
-          <h3 className="text-[18px] sm:text-[22px] font-semibold text-[#2c2c2c] mb-2">
+          <h3 className="text-[18px] sm:text-[22px] font-semibold text-[#2c2c2c] mb-1">
             The Mysterious Abandonment
           </h3>
 
@@ -55,14 +55,14 @@ export default function HistorySection() {
       {/* Architecture Section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
         {/* Heading */}
-        <div className="mb-4 md:mb-6">
+        <div className="mb-2 md:mb-4">
           <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] tracking-wide">
             Architecture - A Masterpiece Written in Red Sandstone
           </h2>
         </div>
 
         {/* Featured Image */}
-        <div className="mb-3 md:mb-4">
+        <div className="mb-2 md:mb-3">
           <div className="relative h-[280px] md:h-[420px] lg:h-[560px] overflow-hidden rounded-sm">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1783146909/aditya-doliya-j6fGT6cfTkM-unsplash_m1br1i.jpg"

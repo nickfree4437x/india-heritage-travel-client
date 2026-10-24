@@ -13,8 +13,8 @@ export default function FAQSection() {
     <section className="w-full bg-white py-2 sm:py-4 pb-10 md:pb-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="mb-4 md:mb-6">
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c] mb-2">
+        <div className="mb-2 md:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c] mb-1">
             Frequently Asked Questions About Fatehpur Sikri
           </h2>
 

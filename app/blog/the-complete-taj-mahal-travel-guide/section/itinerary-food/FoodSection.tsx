@@ -11,7 +11,7 @@ export default function FoodSection() {
           Food and Local Experiences in Agra
         </h2>
 
-        <p className="text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light text-justify mb-6">
+        <p className="text-[12px] sm:text-[13px] md:text-[14.5px] text-gray-700 leading-relaxed font-light text-justify mb-2 md:mb-4">
           While the Taj Mahal dominates every Agra itinerary, the city also
           rewards visitors who take time to explore its food culture and
           traditional neighbourhoods. Agra's culinary identity extends
@@ -20,7 +20,7 @@ export default function FoodSection() {
         </p>
 
         {/* Image */}
-        <div className="mb-6">
+        <div className="mb-2 md:mb-4">
           <div className="relative h-[280px] sm:h-[420px] lg:h-[560px] overflow-hidden rounded-sm">
             <Image
               src="https://res.cloudinary.com/dja5yspwr/image/upload/v1783071312/pexels-aarti-krishnan-365176-984534_tq4qk8.jpg"
@@ -38,7 +38,7 @@ export default function FoodSection() {
         {/* Food Highlights */}
         <div className="space-y-4">
           <div>
-            <h3 className="text-[18px] sm:text-[22px] font-semibold text-[#2c2c2c] mb-2">
+            <h3 className="text-[18px] sm:text-[22px] font-semibold text-[#2c2c2c] mb-1">
               Petha
             </h3>
 
@@ -54,7 +54,7 @@ export default function FoodSection() {
           </div>
 
           <div>
-            <h3 className="text-[18px] sm:text-[22px] font-semibold text-[#2c2c2c] mb-2">
+            <h3 className="text-[18px] sm:text-[22px] font-semibold text-[#2c2c2c] mb-1">
               Bedai Breakfast
             </h3>
 

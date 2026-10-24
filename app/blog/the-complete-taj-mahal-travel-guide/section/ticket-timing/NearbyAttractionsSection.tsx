@@ -12,7 +12,7 @@ export default function NearbyAttractionsSection() {
           Nearby Attractions in Agra
         </h2>
 
-        <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-6">
+        <p className="text-[12px] sm:text-[13px] md:text-[14.5px] leading-relaxed text-gray-700 font-light text-justify mb-2 md:mb-4">
           It would be incorrect to focus exclusively on the Taj Mahal when preparing your itinerary for 
           Agra. Apart from the Taj Mahal, there is one more World Heritage Site located in Agra. It is 
           located 2.5 kilometers from the Taj Mahal and is known as Red Sandstone Fort. It used to be 
@@ -23,9 +23,9 @@ export default function NearbyAttractionsSection() {
 
         {/* Agra Fort */}
 
-        <div className="mb-4 md:mb-6">
+        <div className="mb-2 md:mb-4">
 
-          <h3 className="text-[16px] sm:text-[20px] font-semibold text-[#2c2c2c] mb-2">
+          <h3 className="text-[16px] sm:text-[20px] font-semibold text-[#2c2c2c] mb-1">
             Agra Fort
           </h3>
 

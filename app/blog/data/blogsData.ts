@@ -694,4 +694,13 @@ export const blogs = [
     excerpt:
       "Explore Murshidabad's Nawabi heritage, Hazarduari Palace, historic mosques, Kathgola gar....",
   },
+  {
+    id: 78,
+    slug: "bishnupur-terracotta-temples",
+    title: "Bishnupur Terracotta Temples: Malla Heritage & Bengal's Artistry",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1792825239/Jod_Bangla_Terracotta_Temple__Bishnupur__West_Bengal_i0zr5i.jpg",
+    date: "24 October",
+    excerpt:
+      "Explore Bishnupur's terracotta temples, Malla dynasty history, Baluchari silk, Bankura h....",
+  },
 ];

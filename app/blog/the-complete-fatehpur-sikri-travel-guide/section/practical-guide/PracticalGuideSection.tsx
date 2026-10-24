@@ -36,8 +36,8 @@ export default function PracticalGuideSection() {
     <section className="w-full bg-white py-0 md:py-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Header */}
-        <div className="mb-6 md:mb-8">
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide font-semibold text-[#2c2c2c] mb-2">
+        <div className="mb-2 md:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] tracking-wide font-semibold text-[#2c2c2c] mb-1">
             Practical Travel Guide - Everything You Need to Know
           </h2>
 
@@ -50,7 +50,7 @@ export default function PracticalGuideSection() {
         </div>
 
         {/* Ticket Prices Section */}
-        <div className="mb-6 md:mb-8">
+        <div className="mb-2 md:mb-4">
           <h3 className="text-[15px] sm:text-[18px] md:text-[20px] font-semibold text-[#2c2c2c] mb-3">
             Ticket Prices & Entry Fees
           </h3>

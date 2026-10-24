@@ -31,7 +31,7 @@ const itinerary = [
 
 export default function ItinerarySection() {
   return (
-    <section className="w-full bg-white py-2 sm:py-4">
+    <section className="w-full bg-white py-1 sm:py-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold text-[#2c2c2c] leading-tight mb-2">
           A Typical 2-Day Trip to Agra

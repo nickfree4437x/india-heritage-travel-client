@@ -5,8 +5,8 @@ export default function BudgetAndSeasonSection() {
     <section className="w-full bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Budget Estimates */}
-        <div className="mb-4 md:mb-6">
-          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c] mb-2">
+        <div className="mb-2 md:mb-4">
+          <h2 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold tracking-wide text-[#2c2c2c] mb-1">
             Budget Estimates
           </h2>
           <p className="max-w-6xl text-gray-700 leading-relaxed text-[12px] sm:text-[13px] md:text-[14.5px] font-light text-justify mb-4">
