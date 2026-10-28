@@ -703,4 +703,13 @@ export const blogs = [
     excerpt:
       "Explore Bishnupur's terracotta temples, Malla dynasty history, Baluchari silk, Bankura h....",
   },
+  {
+    id: 79,
+    slug: "ancient-indian-port-cities-maritime-trade",
+    title: "Ancient Indian Port Cities and Maritime Trade : India Heritage Travel",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1793181024/pexels-ibrahim-poonawala-53441506-11195186_x9zcfm.jpg",
+    date: "28 October",
+    excerpt:
+      "Explore ancient Indian port cities and maritime trade, from Lothal and Muziris to Arika....",
+  },
 ];
