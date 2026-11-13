@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "/tours/divine-kashmir-and-exciting-ladakh-tour",
+    canonical: "/tours/divine-kashmir-and-exciting-ladakh",
   },
 
   openGraph: {
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     description:
       "Discover Kashmir and Ladakh through scenic valleys, Pangong Lake, Nubra Valley, Himalayan monasteries, mountain landscapes, and unforgettable cultural experiences.",
     url:
-      "https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh-tour",
+      "https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh",
     siteName: "India Heritage Travel",
     type: "website",
   },
@@ -94,7 +94,7 @@ export default function RoyalRajasthanPage() {
           },
           {
             name: "Divine Kashmir & Exciting Ladakh Tour",
-            url: "https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh-tour",
+            url: "https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh",
           },
         ]}
       />
@@ -103,7 +103,7 @@ export default function RoyalRajasthanPage() {
       <TourSchema
         name="Divine Kashmir & Exciting Ladakh Tour"
         description="Explore the breathtaking beauty of Kashmir and Ladakh through scenic valleys, mountain landscapes, monasteries, lakes, cultural experiences, and unforgettable Himalayan journeys."
-        url="https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh-tour"
+        url="https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh"
       />
 
       {/* Hero Section */}
@@ -117,7 +117,7 @@ export default function RoyalRajasthanPage() {
         <DetailedItineraryIntro />
       </TourLayout>
       <TourSteps />
-      <CommonForm tourName="divine-kashmir-and-exciting-ladakh-tour" />
+      <CommonForm tourName="divine-kashmir-and-exciting-ladakh" />
       <RecommendedTours />
       <Footer />
     </div>
