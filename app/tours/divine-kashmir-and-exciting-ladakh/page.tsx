@@ -90,7 +90,7 @@ export default function RoyalRajasthanPage() {
           },
           {
             name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
+            url: "https://indiaheritagetravel.com",
           },
           {
             name: "Divine Kashmir & Exciting Ladakh Tour",
