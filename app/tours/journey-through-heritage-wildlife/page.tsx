@@ -91,10 +91,6 @@ export default function HeritageWildlifeTourPage() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "India Wildlife & Heritage Tour",
             url: "https://indiaheritagetravel.com/tours/journey-through-heritage-wildlife",
           },

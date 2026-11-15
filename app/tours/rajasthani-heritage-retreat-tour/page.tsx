@@ -87,10 +87,6 @@ export default function Page() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "Rajasthan Heritage Retreat Tour",
             url: "https://indiaheritagetravel.com/tours/rajasthani-heritage-retreat-tour",
           },

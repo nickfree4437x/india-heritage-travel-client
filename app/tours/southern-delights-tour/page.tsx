@@ -86,10 +86,6 @@ export default function SouthIndiaCulturalTourPage() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "South India Cultural Tour",
             url: "https://indiaheritagetravel.com/tours/southern-delights-tour",
           },

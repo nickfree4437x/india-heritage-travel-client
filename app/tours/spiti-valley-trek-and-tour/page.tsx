@@ -87,10 +87,6 @@ export default function SpitiValleyTourPackagePage() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "Spiti Valley Tour Package",
             url: "https://indiaheritagetravel.com/tours/spiti-valley-trek-and-tour",
           },

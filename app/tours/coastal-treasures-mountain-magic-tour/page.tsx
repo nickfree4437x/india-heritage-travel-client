@@ -86,10 +86,6 @@ export default function Page() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "Coastal Treasures & Mountain Magic Tour",
             url: "https://indiaheritagetravel.com/tours/coastal-treasures-mountain-magic-tour",
           },

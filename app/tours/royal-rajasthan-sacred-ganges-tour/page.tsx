@@ -91,10 +91,6 @@ export default function RoyalRajasthanPage() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "Rajasthan & Varanasi Tour Package",
             url: "https://indiaheritagetravel.com/tours/royal-rajasthan-sacred-ganges-tour",
           },

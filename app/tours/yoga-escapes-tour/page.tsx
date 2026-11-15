@@ -87,10 +87,6 @@ export default function YogaEscapesPage() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "Yoga Escapes Tour",
             url: "https://indiaheritagetravel.com/tours/yoga-escapes-tour",
           },

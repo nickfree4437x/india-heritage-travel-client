@@ -76,10 +76,6 @@ export default function HeavenlyKashmirTourPage() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "Kashmir Tour Package",
             url: "https://indiaheritagetravel.com/tours/heavenly-kashmir-tour",
           },

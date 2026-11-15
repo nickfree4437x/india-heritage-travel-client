@@ -87,10 +87,6 @@ export default function HighPassesLehLadakhPage() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "Leh Ladakh Tour Package",
             url: "https://indiaheritagetravel.com/tours/high-passes-road-trip-to-leh-ladakh",
           },

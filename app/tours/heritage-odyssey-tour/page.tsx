@@ -85,10 +85,6 @@ export default function HeritageOdysseyPage() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "Heritage Odyssey Tour",
             url: "https://indiaheritagetravel.com/tours/heritage-odyssey-tour",
           },

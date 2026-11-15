@@ -92,10 +92,6 @@ export default function Page() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "Mystical North India Discovery Tour",
             url: "https://indiaheritagetravel.com/tours/mystical-north-india-discovery-tour",
           },

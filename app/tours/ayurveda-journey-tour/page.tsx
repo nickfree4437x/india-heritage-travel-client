@@ -86,10 +86,6 @@ export default function AyurvedaJourneyPage() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Tours",
-            url: "https://indiaheritagetravel.com/tours",
-          },
-          {
             name: "Ayurveda Wellness Tour India",
             url: "https://indiaheritagetravel.com/tours/ayurveda-journey-tour",
           },
