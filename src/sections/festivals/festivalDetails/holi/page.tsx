@@ -46,10 +46,6 @@ export default function HoliFestivalTour() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Festivals",
-            url: "https://indiaheritagetravel.com/festivals",
-          },
-          {
             name: "Holi Festival Tour",
             url: "https://indiaheritagetravel.com/festivals/holi",
           },

@@ -42,7 +42,7 @@ export default function SoloTravelerPage() {
           },
           {
             name: "Solo Women Travel India",
-            url: "https://indiaheritagetravel.com/blog/solo-traveler",
+            url: "https://indiaheritagetravel.com/blog/solo-traveller",
           },
         ]}
       />

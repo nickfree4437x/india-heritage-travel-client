@@ -57,7 +57,7 @@ export default function HumayunsTombGuidePage() {
     },
     {
       name: "Humayun's Tomb Guide",
-      url: "https://indiaheritagetravel.com/blog/humayuns-tomb-guide",
+      url: "https://indiaheritagetravel.com/blog/humayun-tomb-guide",
     },
   ];
 

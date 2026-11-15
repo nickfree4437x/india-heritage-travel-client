@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 // Common components
@@ -11,13 +12,9 @@ import BlogsGrid from "./components/BlogsGrid";
 import { metadata as pageMetadata } from "./components/metadata";
 
 // ============================================
-// PAGE METADATA
-// ============================================
-export const metadata: Metadata = pageMetadata;
-
-// ============================================
 // PAGE PROPS
 // ============================================
+
 type BlogsPageProps = {
   searchParams?: Promise<{
     page?: string;
@@ -25,11 +22,51 @@ type BlogsPageProps = {
 };
 
 // ============================================
+// DYNAMIC SEO METADATA
+// ============================================
+
+export async function generateMetadata({
+  searchParams,
+}: BlogsPageProps): Promise<Metadata> {
+  const params = await searchParams;
+
+  const requestedPage = Number(params?.page || "1");
+
+  const currentPage =
+    Number.isInteger(requestedPage) && requestedPage > 0
+      ? requestedPage
+      : 1;
+
+  const canonicalUrl =
+    currentPage === 1
+      ? "/blog"
+      : `/blog?page=${currentPage}`;
+
+  return {
+    ...pageMetadata,
+
+    alternates: {
+      ...pageMetadata.alternates,
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+// ============================================
 // PAGE COMPONENT
 // ============================================
-export default async function BlogsPage({ searchParams }: BlogsPageProps) {
+
+export default async function BlogsPage({
+  searchParams,
+}: BlogsPageProps) {
   const params = await searchParams;
-  const currentPage = Math.max(Number(params?.page || "1"), 1);
+
+  const requestedPage = Number(params?.page || "1");
+
+  const currentPage =
+    Number.isInteger(requestedPage) && requestedPage > 0
+      ? requestedPage
+      : 1;
 
   return (
     <main className="w-full bg-white">
@@ -37,6 +74,7 @@ export default async function BlogsPage({ searchParams }: BlogsPageProps) {
 
       {/* Blogs Grid */}
       <BlogsGrid currentPage={currentPage} />
+
       <Footer />
     </main>
   );

@@ -49,10 +49,6 @@ export default function KumbhMelaTour() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Festivals",
-            url: "https://indiaheritagetravel.com/festivals",
-          },
-          {
             name: "Kumbh Mela Tour",
             url: "https://indiaheritagetravel.com/festivals/kumbh",
           },

@@ -50,10 +50,6 @@ export default function PushkarCamelFairTour() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Festivals",
-            url: "https://indiaheritagetravel.com/festivals",
-          },
-          {
             name: "Pushkar Camel Fair Tour",
             url: "https://indiaheritagetravel.com/festivals/pushkar",
           },

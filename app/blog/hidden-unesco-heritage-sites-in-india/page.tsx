@@ -59,7 +59,7 @@ export default function HiddenUNESCOHeritageSitesPage() {
     },
     {
       name: "Hidden UNESCO Heritage Sites in India",
-      url: "https://indiaheritagetravel.com/blog/hidden-unesco-heritage-sites-india",
+      url: "https://indiaheritagetravel.com/blog/hidden-unesco-heritage-sites-in-india",
     },
   ];
 

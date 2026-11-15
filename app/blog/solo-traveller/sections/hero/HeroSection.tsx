@@ -10,7 +10,7 @@ import { FaWhatsapp, FaPinterestP } from "react-icons/fa";
 import BlogBreadcrumb from "@/src/common/Breadcrumb/BlogBreadcrumb";
 
 export default function HeroSection() {
-  const shareUrl = "https://indiaheritagetravel.com/blog/solo-traveler";
+  const shareUrl = "https://indiaheritagetravel.com/blog/solo-traveller";
   const shareTitle = "Solo Female Travel in India: Safety, Wellness & Travel Tips";
 
   return (

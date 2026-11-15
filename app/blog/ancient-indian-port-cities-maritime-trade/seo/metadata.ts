@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_URL = "https://www.indiaheritagetravel.com";
+const SITE_URL = "https://indiaheritagetravel.com";
 const BLOG_PATH = "/blog/ancient-indian-port-cities-maritime-trade";
 const BLOG_URL = `${SITE_URL}${BLOG_PATH}`;
 

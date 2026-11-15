@@ -49,7 +49,7 @@ export { metadata };
 // ============================================
 // CONSTANTS
 // ============================================
-const SITE_URL = "https://www.indiaheritagetravel.com";
+const SITE_URL = "https://indiaheritagetravel.com";
 const BLOG_PATH = "/blog/ancient-indian-port-cities-maritime-trade";
 
 const breadcrumbItems = [

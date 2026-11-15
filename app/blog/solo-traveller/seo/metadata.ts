@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     locale: "en_US",
-    url: "https://indiaheritagetravel.com/blog/solo-traveler",
+    url: "https://indiaheritagetravel.com/blog/solo-traveller",
     siteName: "India Heritage Travel",
     title:
       "Solo Female Travel in India: Safety, Wellness & Travel Tips",

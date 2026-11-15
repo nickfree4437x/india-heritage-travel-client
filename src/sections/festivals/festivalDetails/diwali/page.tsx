@@ -50,10 +50,6 @@ export default function DiwaliDetails() {
             url: "https://indiaheritagetravel.com",
           },
           {
-            name: "Festivals",
-            url: "https://indiaheritagetravel.com/festivals",
-          },
-          {
             name: "Diwali Festival Tour",
             url: "https://indiaheritagetravel.com/festivals/diwali",
           },

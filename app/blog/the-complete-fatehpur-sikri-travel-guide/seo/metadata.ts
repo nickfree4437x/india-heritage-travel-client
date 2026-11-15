@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     locale: "en_US",
-    url: "https://indiaheritagetravel.com/blog/fatehpur-sikri-travel-guide",
+    url: "https://indiaheritagetravel.com/blog/the-complete-fatehpur-sikri-travel-guide",
     siteName: "India Heritage Travel",
     title:
       "Fatehpur Sikri Travel Guide 2026: History, Tickets, Timings & Top Attractions",

@@ -54,7 +54,7 @@ export default function FatehpurSikriTravelGuidePage() {
     },
     {
       name: "Fatehpur Sikri Travel Guide",
-      url: "https://indiaheritagetravel.com/blog/fatehpur-sikri-travel-guide",
+      url: "https://indiaheritagetravel.com/blog/the-complete-fatehpur-sikri-travel-guide",
     },
   ];
 

@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     locale: "en_US",
-    url: "https://indiaheritagetravel.com/blog/humayuns-tomb-guide",
+    url: "https://indiaheritagetravel.com/blog/humayun-tomb-guide",
     siteName: "India Heritage Travel",
     title:
       "Humayun's Tomb Guide (2026) | Delhi's First Great Mughal Garden Tomb",

@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     locale: "en_US",
-    url: "https://indiaheritagetravel.com/blog/hidden-unesco-heritage-sites-india",
+    url: "https://indiaheritagetravel.com/blog/hidden-unesco-heritage-sites-in-india",
     siteName: "India Heritage Travel",
     title:
       "Hidden UNESCO Heritage Sites in India (2026) | Offbeat UNESCO Travel Guide",
