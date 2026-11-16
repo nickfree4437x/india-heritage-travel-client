@@ -60,15 +60,15 @@ export { metadata };
 const breadcrumbItems = [
   {
     name: "Home",
-    url: "https://www.indiaheritagetravel.com",
+    url: "https://indiaheritagetravel.com",
   },
   {
     name: "Blog",
-    url: "https://www.indiaheritagetravel.com/blog",
+    url: "https://indiaheritagetravel.com/blog",
   },
   {
     name: "Bishnupur Terracotta Temples",
-    url: "https://www.indiaheritagetravel.com/blog/bishnupur-terracotta-temples",
+    url: "https://indiaheritagetravel.com/blog/bishnupur-terracotta-temples",
   },
 ];
 
