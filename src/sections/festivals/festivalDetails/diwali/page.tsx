@@ -3,7 +3,6 @@
 // SEO COMPONENTS
 // ============================================
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
-import EventSchema from "@/src/common/seo/EventSchema";
 
 // ============================================
 // SEO DATA
@@ -54,15 +53,6 @@ export default function DiwaliDetails() {
             url: "https://indiaheritagetravel.com/festivals/diwali",
           },
         ]}
-      />
-
-      {/* Event Schema - SEO */}
-      <EventSchema
-        name="Diwali Festival Tour"
-        description={diwaliSeo.description}
-        url="https://indiaheritagetravel.com/festivals/diwali"
-        image="https://res.cloudinary.com/dja5yspwr/image/upload/v1782138779/suchandra-roy-chowdhury-cM8X2DDvnGE-unsplash_qnzre5.jpg"
-        location="India"
       />
 
       {/* Page Section */}
