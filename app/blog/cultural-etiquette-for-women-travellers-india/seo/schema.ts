@@ -77,14 +77,3 @@ export const webPageSchema = {
     "A complete guide to cultural etiquette for women travelling in India covering dress codes, temple customs, greetings, dining etiquette, shopping tips, photography rules, and practical travel advice.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

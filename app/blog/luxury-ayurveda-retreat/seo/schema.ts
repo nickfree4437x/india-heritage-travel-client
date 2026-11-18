@@ -46,13 +46,3 @@ export const webPageSchema = {
 
   url: "https://indiaheritagetravel.com/blog/luxury-ayurveda-retreat",
 };
-
-// ----- ORGANIZATION SCHEMA -----
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-
-  name: "India Heritage Travel",
-  url: "https://indiaheritagetravel.com",
-  logo: "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png",
-};

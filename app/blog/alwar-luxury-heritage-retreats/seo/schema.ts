@@ -120,22 +120,3 @@ export const webPageSchema = {
     },
   },
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "TravelAgency",
-  "@id": `${SITE_URL}/#organization`,
-  name: "India Heritage Travel",
-  legalName: "India Heritage Travel Pvt. Ltd.",
-  url: SITE_URL,
-  logo: `${SITE_URL}/images/logo.png`,
-  image: FEATURED_IMAGE,
-  telephone: "+91-7062101914",
-  sameAs: [
-    "https://www.facebook.com/indiaheritagetravel",
-    "https://www.instagram.com/indiaheritagetravel/",
-  ],
-};

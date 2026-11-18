@@ -87,18 +87,3 @@ export const webPageSchema = {
   },
   inLanguage: "en",
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": `${SITE_URL}/#organization`,
-  name: "India Heritage Travel",
-  url: SITE_URL,
-  logo: {
-    "@type": "ImageObject",
-    url: `${SITE_URL}/logo.png`,
-  },
-};

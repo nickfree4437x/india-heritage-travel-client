@@ -74,14 +74,3 @@ description:
   "Discover India's UNESCO-listed heritage, including historic monuments, cultural landmarks, and natural sites, with practical travel-planning tips.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

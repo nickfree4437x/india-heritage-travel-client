@@ -18,7 +18,6 @@ import { metadata } from "./seo/metadata";
 import {
   articleSchema,
   webPageSchema,
-  organizationSchema,
 } from "./seo/schema";
 
 // ============================================
@@ -91,14 +90,6 @@ export default function OsianHeritageLuxuryDesertTravelPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(webPageSchema),
-        }}
-      />
-
-      <Script
-        id="osian-organization-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
         }}
       />
 

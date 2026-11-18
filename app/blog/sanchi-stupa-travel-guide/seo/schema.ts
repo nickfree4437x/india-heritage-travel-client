@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete guide to Sanchi Stupa covering Buddhist heritage, Emperor Ashoka, Great Stupa architecture, toranas, travel planning, and visitor information.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

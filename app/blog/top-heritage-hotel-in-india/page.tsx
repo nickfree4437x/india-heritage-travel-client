@@ -5,7 +5,6 @@ import { metadata as pageMetadata } from "./seo/metadata";
 import {
   articleSchema,
   webPageSchema,
-  organizationSchema,
 } from "./seo/schema";
 
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
@@ -65,15 +64,6 @@ export default function BlogDetailsPage() {
         }}
       />
 
-      {/* Organization Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            organizationSchema
-          ),
-        }}
-      />
       
       {/* Page Section */}
       <HeroSection />

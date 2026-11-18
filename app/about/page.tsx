@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 // Common components
@@ -12,7 +13,7 @@ import AboutLayout from "./components/AboutLayout";
 // ============================================
 export const metadata: Metadata = {
   title:
-    "About India Heritage Travel | India Tour Experts & Cultural Travel Specialists",
+    "About Us | India Tour Experts & Cultural Travel Specialists",
 
   description:
     "Learn about India Heritage Travel and meet the founders behind our personalized travel experiences. We specialize in heritage tours, cultural journeys, solo women travel, wellness retreats, and customized India tour packages.",

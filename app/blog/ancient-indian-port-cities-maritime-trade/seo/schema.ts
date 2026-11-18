@@ -95,19 +95,3 @@ export const webPageSchema = {
     ],
   },
 };
-
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": `${SITE_URL}/#organization`,
-  name: "India Heritage Travel",
-  url: SITE_URL,
-  logo: {
-    "@type": "ImageObject",
-    url: `${SITE_URL}/images/logo.png`,
-  },
-  sameAs: [
-    "https://www.facebook.com/indiaheritagetravel",
-    "https://www.instagram.com/indiaheritagetravel/",
-  ],
-};

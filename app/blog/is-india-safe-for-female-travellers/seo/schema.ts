@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete safety guide for female travellers visiting India, covering destinations, transport, accommodation, cultural etiquette, scams, emergency planning, and practical travel advice.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

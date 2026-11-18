@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete guide to Khajuraho Temples covering history, architecture, temple groups, sculptures, cultural festivals, travel tips, and nearby attractions.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

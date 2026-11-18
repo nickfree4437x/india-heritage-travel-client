@@ -75,14 +75,3 @@ export const webPageSchema = {
     "Explore Delhi, Agra, and Jaipur with a luxury Golden Triangle itinerary featuring heritage stays, private transport, and guided sightseeing.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

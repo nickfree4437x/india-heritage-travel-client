@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 // SEO Metadata
 import { metadata as pageMetadata } from "./seo/metadata";
-import { articleSchema, organizationSchema, webPageSchema } from "./seo/schema";
+import { articleSchema, webPageSchema } from "./seo/schema";
 
 // SEO Components
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
@@ -59,14 +59,6 @@ export default function BlogDetailsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(webPageSchema),
-        }}
-      />
-
-      {/* Organization Schema - JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
         }}
       />
 

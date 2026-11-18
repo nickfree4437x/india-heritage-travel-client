@@ -12,7 +12,6 @@ import {
   breadcrumbSchema,
   articleSchema,
   webPageSchema,
-  organizationSchema,
 } from "./seo/schema";
 
 // ============================================
@@ -88,13 +87,6 @@ export default function IndiaTravelCostGuidePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(webPageSchema),
-        }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
         }}
       />
 

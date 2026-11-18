@@ -18,7 +18,6 @@ import { metadata } from "./seo/metadata";
 import {
   articleSchema,
   webPageSchema,
-  organizationSchema,
 } from "./seo/schema";
 
 // ============================================
@@ -93,14 +92,6 @@ export default function DholpurRoyalHeritagePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(webPageSchema),
-        }}
-      />
-
-      <Script
-        id="dholpur-organization-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
         }}
       />
 

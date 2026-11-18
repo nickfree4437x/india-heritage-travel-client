@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete guide to Rajasthan's finest heritage hotels, palace stays, luxury accommodations, booking tips, and travel recommendations.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

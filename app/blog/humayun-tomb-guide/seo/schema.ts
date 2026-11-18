@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete guide to Humayun's Tomb covering Mughal history, Charbagh gardens, UNESCO heritage, architecture, travel planning, and visitor information.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

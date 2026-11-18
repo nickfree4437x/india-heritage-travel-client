@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete guide for international travellers covering the Indian Rupee, cash, cards, UPI, ATMs, forex cards, currency exchange, payment methods, tipping culture, banking, GST and money management in India.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

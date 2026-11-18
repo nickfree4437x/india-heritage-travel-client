@@ -75,14 +75,3 @@ export const webPageSchema = {
     "Explore India's finest luxury travel experiences featuring royal palaces, heritage hotels, cultural landmarks, and premium curated journeys.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

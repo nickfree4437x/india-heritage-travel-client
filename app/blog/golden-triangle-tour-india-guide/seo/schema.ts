@@ -75,14 +75,3 @@ export const webPageSchema = {
     "Explore Delhi, Agra, and Jaipur with this complete Golden Triangle Tour India: Itinerary, Best Places & Travel Tips featuring itineraries, attractions, travel tips, costs, and the best time to visit.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

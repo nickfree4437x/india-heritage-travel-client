@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete guide to women's luxury tours in India covering private chauffeur-driven travel, palace hotels, luxury destinations, solo female travel, packing tips and tailor-made itineraries.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

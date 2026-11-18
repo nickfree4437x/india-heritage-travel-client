@@ -7,7 +7,6 @@ import { metadata as pageMetadata } from "./seo/metadata";
 import {
   articleSchema,
   webPageSchema,
-  organizationSchema,
 } from "./seo/schema";
 
 // ============================================
@@ -81,13 +80,6 @@ export default function IndiaWildlifeSafariGuidePage() {
         }}
       />
 
-      {/* Organization Schema - JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
-        }}
-      />
 
       {/* FAQ Schema - JSON-LD */}
       <FAQSchema />

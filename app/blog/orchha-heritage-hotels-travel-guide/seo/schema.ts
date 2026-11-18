@@ -119,32 +119,3 @@ export const webPageSchema = {
     ],
   },
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "TravelAgency",
-  "@id": `${SITE_URL}/#organization`,
-  name: "India Heritage Travel",
-  legalName: "India Heritage Travel Pvt. Ltd.",
-  url: SITE_URL,
-  logo: {
-    "@type": "ImageObject",
-    url: `${SITE_URL}/images/logo.png`,
-  },
-  description:
-    "India Heritage Travel specializes in luxury private journeys, heritage tours, cultural experiences and bespoke travel across India.",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Jaipur",
-    addressRegion: "Rajasthan",
-    addressCountry: "IN",
-  },
-  telephone: "+91-7062101914",
-  sameAs: [
-    "https://www.facebook.com/indiaheritagetravel",
-    "https://www.instagram.com/indiaheritagetravel",
-  ],
-};

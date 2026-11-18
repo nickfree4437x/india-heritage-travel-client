@@ -6,7 +6,6 @@ import { metadata as pageMetadata } from "./seo/metadata";
 import {
   articleSchema,
   webPageSchema,
-  organizationSchema,
 } from "./seo/schema";
 
 // SEO
@@ -72,15 +71,6 @@ export default function UNESCOWorldHeritageSitesPage() {
         }}
       />
 
-      {/* Organization Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            organizationSchema
-          ),
-        }}
-      />
 
       {/* FAQ Schema */}
       <FAQSchema />

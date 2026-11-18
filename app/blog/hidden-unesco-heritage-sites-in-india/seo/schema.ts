@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete guide to India's lesser-known UNESCO World Heritage Sites including Champaner-Pavagadh, Rani ki Vav, Bhimbetka, the Hoysalas, and the Moidams with travel planning and visitor information.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

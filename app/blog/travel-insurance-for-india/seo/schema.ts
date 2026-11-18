@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete travel insurance guide for international travellers visiting India, covering medical coverage, emergency evacuation, trip cancellation, insurance costs, exclusions, claims and practical safety advice.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

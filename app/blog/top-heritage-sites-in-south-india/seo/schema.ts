@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete guide to South India's most iconic heritage destinations including Hampi, Mahabalipuram, Chola Temples, Kerala, Hyderabad, and more with travel planning and visitor information.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

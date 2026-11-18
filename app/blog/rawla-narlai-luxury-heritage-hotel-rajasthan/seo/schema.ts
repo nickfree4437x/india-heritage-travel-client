@@ -75,14 +75,3 @@ export const webPageSchema = {
     "Discover Rawla Narlai in Rajasthan, including its heritage accommodation, dining experiences, cultural attractions, and Aravalli surroundings.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

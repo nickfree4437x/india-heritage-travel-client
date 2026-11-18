@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete guide to Hampi covering Vijayanagara Empire history, UNESCO monuments, temples, cultural experiences, travel planning, and visitor information.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

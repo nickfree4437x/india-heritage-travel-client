@@ -77,17 +77,6 @@ export const webPageSchema = {
 };
 
 // ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};
-
-// ============================================
 // FAQ SCHEMA
 // ============================================
 export const faqSchema = {

@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A detailed comparison of the Golden Triangle Tour and Rajasthan Tour covering destinations, travel experiences, trip duration, budgets, luxury options, and recommended itineraries.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};

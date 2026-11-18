@@ -17,7 +17,6 @@ import FAQSchema from "./sections/faq-section/FaqSchema";
 import {
   articleSchema,
   webPageSchema,
-  organizationSchema,
 } from "./seo/schema";
 
 // ============================================
@@ -80,14 +79,6 @@ export default function BestTimeToVisitIndiaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(webPageSchema),
-        }}
-      />
-
-      {/* Organization Schema - JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
         }}
       />
 

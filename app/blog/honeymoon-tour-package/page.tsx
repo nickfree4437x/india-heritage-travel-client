@@ -5,7 +5,6 @@ import { metadata as pageMetadata } from "./seo/metadata";
 import {
   articleSchema,
   webPageSchema,
-  organizationSchema,
   faqSchema,
 } from "./seo/schema";
 
@@ -64,14 +63,6 @@ export default function BlogDetailsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(webPageSchema),
-        }}
-      />
-
-      {/* Organization Schema - JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
         }}
       />
 

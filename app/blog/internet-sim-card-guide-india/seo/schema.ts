@@ -75,14 +75,3 @@ export const webPageSchema = {
     "A complete guide for international travellers covering Airtel, Jio, Vi, eSIMs, Pocket Wi-Fi, airport SIM cards, KYC requirements, mobile data plans, pricing, coverage and connectivity tips in India.",
   url: BLOG_URL,
 };
-
-// ============================================
-// ORGANIZATION SCHEMA
-// ============================================
-export const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "India Heritage Travel",
-  url: BASE_URL,
-  logo: LOGO_URL,
-};
