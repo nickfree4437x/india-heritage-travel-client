@@ -1,4 +1,3 @@
-import Script from "next/script";
 
 interface BreadcrumbItem {
   name: string;
@@ -9,7 +8,9 @@ interface BreadcrumbSchemaProps {
   items: BreadcrumbItem[];
 }
 
-export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
+export default function BreadcrumbSchema({
+  items,
+}: BreadcrumbSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -22,11 +23,10 @@ export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
   };
 
   return (
-    <Script
-      id="breadcrumb-schema"
+    <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(schema),
+        __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
       }}
     />
   );

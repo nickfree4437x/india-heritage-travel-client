@@ -1,6 +1,3 @@
-"use client";
-
-import Script from "next/script";
 
 interface TourDestination {
   name: string;
@@ -26,36 +23,21 @@ export default function TourSchema({
   url,
   destinations = [],
 }: TourSchemaProps) {
-  // Keep the canonical site URL consistent across all schema entities
   const siteUrl = "https://indiaheritagetravel.com";
-
   const tourId = `${url}#tour`;
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
     "@id": tourId,
-
     name,
     description,
     url,
 
-    // Connect the tour to the global Organization entity
     provider: {
-      "@type": "TravelAgency",
       "@id": `${siteUrl}/#organization`,
-      name: "India Heritage Travel",
-      url: siteUrl,
     },
 
-    organizer: {
-      "@type": "TravelAgency",
-      "@id": `${siteUrl}/#organization`,
-      name: "India Heritage Travel",
-      url: siteUrl,
-    },
-
-    // Optional destination/itinerary data
     ...(destinations.length > 0 && {
       itinerary: destinations.map((destination) => ({
         "@type": "TouristAttraction",
@@ -80,14 +62,10 @@ export default function TourSchema({
   };
 
   return (
-    <Script
-      id={`tour-schema-${name
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-|-$/g, "")}`}
+    <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(schema),
+        __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
       }}
     />
   );

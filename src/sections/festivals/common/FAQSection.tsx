@@ -89,13 +89,12 @@ export default function FAQSection() {
 
   return (
     <>
-     <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
-        }}
-     />
+     <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+      }}
+    />
      <section className="py-8 md:py-6 bg-white scroll-mt-20 md:scroll-mt-28" id="faq">
       <div className="max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 

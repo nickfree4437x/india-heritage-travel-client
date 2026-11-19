@@ -4,10 +4,6 @@
 // ============================================
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 
-// ============================================
-// SEO DATA
-// ============================================
-// import { festivalSeoData } from "../../data/seoData";
 
 // ============================================
 // COMMON COMPONENTS
@@ -33,7 +29,6 @@ import ExploreMoreSection from "./content/ExploreMoreSection";
 // PAGE COMPONENT
 // ============================================
 export default function HoliFestivalTour() {
-  // const holiSeo = festivalSeoData.holi;
 
   return (
     <div className="w-full">

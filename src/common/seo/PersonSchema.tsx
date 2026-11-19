@@ -1,4 +1,3 @@
-import Script from "next/script";
 
 interface PersonSchemaProps {
   name: string;
@@ -18,18 +17,15 @@ export default function PersonSchema({
     jobTitle,
     image,
     worksFor: {
-      "@type": "Organization",
-      name: "India Heritage Travel",
-      url: "https://indiaheritagetravel.com",
+      "@id": "https://indiaheritagetravel.com/#organization",
     },
   };
 
   return (
-    <Script
-      id={`person-schema-${name.toLowerCase().replace(/\s+/g, "-")}`}
+    <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(schema),
+        __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
       }}
     />
   );
