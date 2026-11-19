@@ -29,14 +29,8 @@ export const articleSchema = {
   },
   author: BLOG_AUTHORS.isha,
   publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: SITE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: `${SITE_URL}/images/logo.png`,
-    },
-  },
+  "@id": "https://indiaheritagetravel.com/#organization",
+},
   articleSection: "Central India Travel",
   about: {
     "@type": "Place",

@@ -3,12 +3,6 @@
 // SEO COMPONENTS
 // ============================================
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
-import EventSchema from "@/src/common/seo/EventSchema";
-
-// ============================================
-// SEO DATA
-// ============================================
-import { festivalSeoData } from "../../data/seoData";
 
 // ============================================
 // COMMON COMPONENTS
@@ -38,7 +32,6 @@ import ExploreMoreSection from "./content/ExploreMoreSection";
 // PAGE COMPONENT
 // ============================================
 export default function PushkarCamelFairTour() {
-  const pushkarSeo = festivalSeoData.pushkar;
 
   return (
     <div className="w-full">
@@ -54,15 +47,6 @@ export default function PushkarCamelFairTour() {
             url: "https://indiaheritagetravel.com/festivals/pushkar",
           },
         ]}
-      />
-
-      {/* Event Schema - SEO */}
-      <EventSchema
-        name="Pushkar Camel Fair Tour"
-        description={pushkarSeo.description}
-        url="https://indiaheritagetravel.com/festivals/pushkar"
-        image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547787/Pushkar_k4ugcf.png"
-        location="Pushkar, Rajasthan, India"
       />
 
       {/* Page Section */}

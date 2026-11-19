@@ -33,14 +33,8 @@ export const articleSchema = {
   },
 
   publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: SITE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: `${SITE_URL}/images/logo.png`,
-    },
-  },
+  "@id": "https://indiaheritagetravel.com/#organization",
+},
 
   articleSection: "West Bengal Heritage Travel",
 

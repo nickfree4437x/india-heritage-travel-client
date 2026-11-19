@@ -3,12 +3,11 @@
 // SEO COMPONENTS
 // ============================================
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
-import EventSchema from "@/src/common/seo/EventSchema";
 
 // ============================================
 // SEO DATA
 // ============================================
-import { festivalSeoData } from "../../data/seoData";
+// import { festivalSeoData } from "../../data/seoData";
 
 // ============================================
 // COMMON COMPONENTS
@@ -34,7 +33,7 @@ import ExploreMoreSection from "./content/ExploreMoreSection";
 // PAGE COMPONENT
 // ============================================
 export default function HoliFestivalTour() {
-  const holiSeo = festivalSeoData.holi;
+  // const holiSeo = festivalSeoData.holi;
 
   return (
     <div className="w-full">
@@ -50,15 +49,6 @@ export default function HoliFestivalTour() {
             url: "https://indiaheritagetravel.com/festivals/holi",
           },
         ]}
-      />
-
-      {/* Event Schema - SEO */}
-      <EventSchema
-        name="Holi Festival Tour"
-        description={holiSeo.description}
-        url="https://indiaheritagetravel.com/festivals/holi"
-        image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547592/holi_cx2jwa.jpg"
-        location="Mathura, Vrindavan, India"
       />
 
       {/* Page Section */}

@@ -2,12 +2,7 @@
 // SEO COMPONENTS
 // ============================================
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
-import EventSchema from "@/src/common/seo/EventSchema";
 
-// ============================================
-// SEO DATA
-// ============================================
-import { festivalSeoData } from "../../data/seoData";
 
 // ============================================
 // COMMON COMPONENTS
@@ -37,7 +32,6 @@ import ExploreSection from "./content/ExploreSection";
 // PAGE COMPONENT
 // ============================================
 export default function KumbhMelaTour() {
-  const kumbhSeo = festivalSeoData.kumbh;
 
   return (
     <div className="w-full">
@@ -55,14 +49,6 @@ export default function KumbhMelaTour() {
         ]}
       />
 
-      {/* Event Schema - SEO */}
-      <EventSchema
-        name="Kumbh Mela Tour"
-        description={kumbhSeo.description}
-        url="https://indiaheritagetravel.com/festivals/kumbh"
-        image="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779547846/kumbh_arulyq.jpg"
-        location="Prayagraj, Uttar Pradesh, India"
-      />
 
       {/* Page Section */}
       <KumbhHero />

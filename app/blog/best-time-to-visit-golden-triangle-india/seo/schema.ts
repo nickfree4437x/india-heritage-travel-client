@@ -10,9 +10,6 @@ const BLOG_URL = `${BASE_URL}/blog/best-time-to-visit-golden-triangle-india`;
 const IMAGE_URL =
   "https://res.cloudinary.com/dja5yspwr/image/upload/v1782104429/nils-huenerfuerst-T8X8vgj0Ink-unsplash_ayktot.jpg";
 
-const LOGO_URL =
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
-
 // ============================================
 // BREADCRUMB SCHEMA
 // ============================================
@@ -59,16 +56,6 @@ export const articleSchema = {
 
   // Real person author
   author: BLOG_AUTHORS.isha,
-
-  // Publisher remains the organization
-  publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    logo: {
-      "@type": "ImageObject",
-      url: LOGO_URL,
-    },
-  },
 
   mainEntityOfPage: {
     "@type": "WebPage",

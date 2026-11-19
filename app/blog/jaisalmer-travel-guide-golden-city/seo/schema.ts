@@ -7,8 +7,6 @@ const BASE_URL = "https://indiaheritagetravel.com";
 const BLOG_URL = `${BASE_URL}/blog/jaisalmer-travel-guide-golden-city`;
 const IMAGE_URL =
   "https://res.cloudinary.com/dja5yspwr/image/upload/v1786850130/hotel-lal-garh-fort-and-palace-9hz-7Qpg5wc-unsplash_z3rlbe.jpg";
-const LOGO_URL =
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
 
 // ============================================
 // BREADCRUMB SCHEMA
@@ -51,14 +49,8 @@ export const articleSchema = {
   image: [IMAGE_URL],
   author: BLOG_AUTHORS.isha,
   publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: LOGO_URL,
-    },
-  },
+  "@id": "https://indiaheritagetravel.com/#organization",
+},
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": BLOG_URL,

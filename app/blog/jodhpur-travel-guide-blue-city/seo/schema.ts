@@ -7,8 +7,6 @@ const BASE_URL = "https://indiaheritagetravel.com";
 const BLOG_URL = `${BASE_URL}/blog/jodhpur-travel-guide-blue-city`;
 const IMAGE_URL =
   "https://indiaheritagetravel.comhttps://res.cloudinary.com/dja5yspwr/image/upload/v1786763699/makm-photography-u0irC_UnbOk-unsplash_m0rqt5.jpg";
-const LOGO_URL =
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
 
 // ============================================
 // BREADCRUMB SCHEMA
@@ -51,14 +49,8 @@ export const articleSchema = {
   image: [IMAGE_URL],
   author: BLOG_AUTHORS.isha,
   publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: LOGO_URL,
-    },
-  },
+  "@id": "https://indiaheritagetravel.com/#organization",
+},
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": BLOG_URL,

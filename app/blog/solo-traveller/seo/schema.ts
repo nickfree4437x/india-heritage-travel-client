@@ -7,8 +7,6 @@ const BASE_URL = "https://indiaheritagetravel.com";
 const BLOG_URL = `${BASE_URL}/blog/solo-traveler`;
 const IMAGE_URL =
   "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1579641987/blog-4_rarjqw.jpg";
-const LOGO_URL =
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
 
 // ============================================
 // BREADCRUMB SCHEMA
@@ -62,14 +60,8 @@ export const articleSchema = {
   },
   author: BLOG_AUTHORS.isha,
   publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: LOGO_URL,
-    },
-  },
+  "@id": "https://indiaheritagetravel.com/#organization",
+},
   inLanguage: "en",
   articleSection: "Solo Travel",
   keywords: [

@@ -13,8 +13,6 @@ const BLOG_URL =
 const IMAGE_URL =
   "https://res.cloudinary.com/dja5yspwr/image/upload/v1786161165/pexels-a-g-47132025-37168988_ju9gfy.jpg";
 
-const LOGO_URL =
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
 
 // ============================================
 // BREADCRUMB SCHEMA
@@ -67,14 +65,8 @@ export const articleSchema = {
   author: BLOG_AUTHORS.isha,
 
   publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-
-    logo: {
-      "@type": "ImageObject",
-      url: LOGO_URL,
-    },
-  },
+  "@id": "https://indiaheritagetravel.com/#organization",
+},
 
   mainEntityOfPage: {
     "@type": "WebPage",

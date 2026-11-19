@@ -51,14 +51,8 @@ export const articleSchema = {
   image: [IMAGE_URL],
   author: BLOG_AUTHORS.isha,
   publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: LOGO_URL,
-    },
-  },
+  "@id": "https://indiaheritagetravel.com/#organization",
+},
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": BLOG_URL,

@@ -31,14 +31,8 @@ export const articleSchema = {
     url: SITE_URL,
   },
   publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: SITE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: `${SITE_URL}/logo.png`,
-    },
-  },
+  "@id": "https://indiaheritagetravel.com/#organization",
+},
   isPartOf: {
     "@type": "Blog",
     "@id": `${SITE_URL}/blog#blog`,

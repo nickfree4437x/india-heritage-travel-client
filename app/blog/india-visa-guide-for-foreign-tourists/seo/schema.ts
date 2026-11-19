@@ -7,8 +7,6 @@ const BASE_URL = "https://indiaheritagetravel.com";
 const BLOG_URL = `${BASE_URL}/blog/india-visa-guide-for-foreign-tourists`;
 const IMAGE_URL =
   "https://res.cloudinary.com/dja5yspwr/image/upload/v1786508346/global-residence-index-LPdaW746WAw-unsplash_ou5fdg.jpg";
-const LOGO_URL =
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
 
 // ============================================
 // BREADCRUMB SCHEMA
@@ -51,13 +49,8 @@ export const articleSchema = {
   image: [IMAGE_URL],
   author: BLOG_AUTHORS.isha,
   publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    logo: {
-      "@type": "ImageObject",
-      url: LOGO_URL,
-    },
-  },
+  "@id": "https://indiaheritagetravel.com/#organization",
+},
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": BLOG_URL,

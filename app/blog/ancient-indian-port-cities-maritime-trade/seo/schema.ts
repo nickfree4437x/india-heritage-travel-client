@@ -30,14 +30,8 @@ export const articleSchema = {
     url: SITE_URL,
   },
   publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: SITE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: `${SITE_URL}/images/logo.png`,
-    },
-  },
+  "@id": "https://indiaheritagetravel.com/#organization",
+},
   articleSection: "Indian Heritage and History",
   keywords: [
     "ancient Indian port cities",

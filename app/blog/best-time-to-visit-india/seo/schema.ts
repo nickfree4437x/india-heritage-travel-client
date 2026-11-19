@@ -10,9 +10,6 @@ const BLOG_URL = `${BASE_URL}/blog/best-time-to-visit-india`;
 const IMAGE_URL =
   "https://res.cloudinary.com/dja5yspwr/image/upload/v1786331966/monthaye-b1Ywo-ZKtTs-unsplash_d5rlup.jpg";
 
-const LOGO_URL =
-  "https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779742948/logo2_yhlwmt.png";
-
 // ============================================
 // BREADCRUMB SCHEMA
 // ============================================
@@ -61,19 +58,6 @@ export const articleSchema = {
   // AUTHOR
   // ==========================================
   author: BLOG_AUTHORS.isha,
-
-  // ==========================================
-  // PUBLISHER
-  // ==========================================
-  publisher: {
-    "@type": "Organization",
-    name: "India Heritage Travel",
-    url: BASE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: LOGO_URL,
-    },
-  },
 
   mainEntityOfPage: {
     "@type": "WebPage",
