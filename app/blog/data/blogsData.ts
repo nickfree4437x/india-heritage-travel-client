@@ -712,4 +712,13 @@ export const blogs = [
     excerpt:
       "Explore ancient Indian port cities and maritime trade, from Lothal and Muziris to Arika....",
   },
+  {
+    id: 80,
+    slug: "historic-kingdoms-northeast-india",
+    title: "Historic Kingdoms of Northeast India: Ancient Capitals & Heritage",
+    image: "https://res.cloudinary.com/dja5yspwr/image/upload/v1795174079/images_rr6eyy.jpg",
+    date: "20 Nov",
+    excerpt:
+      "Explore the historic kingdoms of Northeast India, from Assam's Ahom dynasty and Tripura's....",
+  },
 ];
