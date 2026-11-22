@@ -1,3 +1,4 @@
+
 "use client";
 
 import Select from "react-select";
@@ -16,21 +17,28 @@ export default function CountrySelect({
 }: Props) {
   return (
     <div className="w-full">
-      <Select
+      <Select<CountryOption, false>
         options={countries}
         value={selectedCountry}
-        onChange={(value) => setSelectedCountry(value as CountryOption)}
+        onChange={(value) => {
+          if (value) {
+            setSelectedCountry(value);
+          }
+        }}
         placeholder="Select Country"
-        instanceId="country-select"
-        aria-label="Select Country"
-        aria-required="true"
+        instanceId="destination-country-select"
+        inputId="destination-country-select-input"
+        aria-label="Select country"
+        aria-required={true}
         styles={{
           control: (base, state) => ({
             ...base,
             width: "100%",
             minHeight: "40px",
             height: "41px",
-            border: state.isFocused ? "1px solid #9A7A58" : "1px solid #ddd2c2",
+            border: state.isFocused
+              ? "1px solid #9A7A58"
+              : "1px solid #ddd2c2",
             backgroundColor: "white",
             borderRadius: "8px",
             paddingLeft: "8px",

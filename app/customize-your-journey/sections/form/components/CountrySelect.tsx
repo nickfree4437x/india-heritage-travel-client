@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -50,9 +51,13 @@ export default function CountrySelect({
       <Select<CountryOption, false>
         options={countries}
         value={selectedCountry}
-        onChange={(value: SingleValue<CountryOption>) => setSelectedCountry(value)}
+        onChange={(value: SingleValue<CountryOption>) =>
+          setSelectedCountry(value)
+        }
         placeholder="Select Country *"
         instanceId="country-select"
+        inputId="country-select-input"
+        aria-label="Select country"
         formatOptionLabel={(country) => (
           <div className="flex items-center gap-3">
             <ReactCountryFlag
@@ -71,7 +76,9 @@ export default function CountrySelect({
             width: "100%",
             minHeight: "40px",
             height: "40px",
-            border: state.isFocused ? "1px solid #9A7A58" : "1px solid #ddd2c2",
+            border: state.isFocused
+              ? "1px solid #9A7A58"
+              : "1px solid #ddd2c2",
             backgroundColor: "#f9f7f3",
             borderRadius: "8px",
             paddingLeft: "8px",
