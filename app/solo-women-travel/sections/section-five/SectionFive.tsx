@@ -1,3 +1,4 @@
+
 "use client";
 
 export default function WomensCircleSection() {
@@ -16,36 +17,42 @@ export default function WomensCircleSection() {
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center">
-          <p className="
-            text-[11px]
-            tracking-[0.1em]
-            uppercase
-            text-[#8b7355]
-            text-center
-            mb-2
-          ">
+          <p
+            className="
+              text-[11px]
+              tracking-[0.1em]
+              uppercase
+              text-[#80613f]
+              text-center
+              mb-2
+            "
+          >
             Let's Connect
           </p>
 
-          <h2 className="
-            text-[20px] sm:text-[24px] md:text-[26px]
-            font-semibold
-            text-center
-            text-[#2c2c2c]
-            tracking-wide
-            mb-4 md:mb-4
-          ">
+          <h2
+            className="
+              text-[20px] sm:text-[24px] md:text-[26px]
+              font-semibold
+              text-center
+              text-[#2c2c2c]
+              tracking-wide
+              mb-4 md:mb-4
+            "
+          >
             You don't have to plan
             it all alone either
           </h2>
 
-          <div className="
-            space-y-5
-            text-[13px] md:text-[14px]
-            leading-[2]
-            text-[#5f5f5f]
-            font-[350]
-          ">
+          <div
+            className="
+              space-y-5
+              text-[13px] md:text-[14px]
+              leading-[2]
+              text-[#5f5f5f]
+              font-[350]
+            "
+          >
             <p className="text-gray-500 text-[12px] md:text-[13px] mb-4 font-light leading-[1.7]">
               I've started creating a calm little space for women who are
               thinking about traveling to India - whether it's this year,
@@ -62,58 +69,68 @@ export default function WomensCircleSection() {
         {/* Main Card */}
         <div className="mt-12 relative">
           {/* Soft Glow Background */}
-          <div className="
-            absolute
-            inset-0
-            bg-gradient-to-br
-            from-[#efe4d5]
-            Image via-transparent
-            to-[#eadfd2]
-            opacity-40
-            blur-xl
-          " />
+          <div
+            className="
+              absolute
+              inset-0
+              bg-gradient-to-br
+              from-[#efe4d5]
+              via-transparent
+              to-[#eadfd2]
+              opacity-40
+              blur-xl
+            "
+          />
 
-          <div className="
-            relative
-            max-w-4xl
-            mx-auto
-            border border-[#dbcdbb]
-            rounded-2xl
-            bg-white/75
-            backdrop-blur-md
-            px-7 md:px-14
-            py-10 md:py-14
-            shadow-sm
-          ">
+          <div
+            className="
+              relative
+              max-w-4xl
+              mx-auto
+              border border-[#dbcdbb]
+              rounded-2xl
+              bg-white/75
+              backdrop-blur-md
+              px-7 md:px-14
+              py-10 md:py-14
+              shadow-sm
+            "
+          >
             {/* Card Header */}
             <div className="text-center mb-4 -mt-8">
-              <p className="
-                text-[12px]
-                tracking-[0.01em]
-                uppercase
-                text-[#8b7355]
-                mb-3
-              ">
+              <p
+                className="
+                  text-[12px]
+                  tracking-[0.01em]
+                  uppercase
+                  text-[#80613f]
+                  mb-3
+                "
+              >
                 What It Is
               </p>
 
-              <h3 className="
-                text-[18px] md:text-[22px]
-                text-[#1f1f1f]
-                font-[500]
-              ">
+              <h3
+                className="
+                  text-[18px] md:text-[22px]
+                  text-[#1f1f1f]
+                  font-[500]
+                "
+              >
                 A private circle for women travelers
               </h3>
             </div>
 
             {/* Features Grid */}
-            <div className="
-              grid sm:grid-cols-2
-              gap-x-10 gap-y-3
-              max-w-2xl
-              mx-auto
-              font-light
-            ">
+            <div
+              className="
+                grid sm:grid-cols-2
+                gap-x-10 gap-y-3
+                max-w-2xl
+                mx-auto
+                font-light
+              "
+            >
               {features.map((item, index) => (
                 <div
                   key={index}
@@ -123,12 +140,14 @@ export default function WomensCircleSection() {
                     text-[#555555]
                   "
                 >
-                  <span className="
-                    w-[7px] h-[7px]
-                    rounded-full
-                    bg-[#b08b63]
-                    flex-shrink-0
-                  " />
+                  <span
+                    className="
+                      w-[7px] h-[7px]
+                      rounded-full
+                      bg-[#b08b63]
+                      flex-shrink-0
+                    "
+                  />
                   <p>{item}</p>
                 </div>
               ))}
@@ -144,24 +163,26 @@ export default function WomensCircleSection() {
                   inline-flex items-center justify-center
                   px-9 md:px-11 py-[14px]
                   rounded-full
-                  bg-[#AF956C] text-white
+                  bg-[#80613f] text-white
                   text-[10px] md:text-[12px]
                   tracking-[0.18em] uppercase
                   shadow-sm
-                  hover:bg-[#8f7654]
+                  hover:bg-[#6f5236]
                   transition-all duration-300
                 "
               >
                 Join The Women's Circle
               </a>
 
-              <p className="
-                mt-6
-                text-[12px] md:text-[13px]
-                leading-[1.9]
-                text-[#6d6d6d]
-                font-light
-              ">
+              <p
+                className="
+                  mt-6
+                  text-[12px] md:text-[13px]
+                  leading-[1.9]
+                  text-[#6d6d6d]
+                  font-light
+                "
+              >
                 No pressure. No overwhelming travel chats.
                 <br />
                 Just a thoughtful and supportive space for women.
@@ -172,52 +193,62 @@ export default function WomensCircleSection() {
 
         {/* Final Text - Personal Invitation */}
         <div className="mt-12 max-w-4xl mx-auto relative">
-          <div className="
-            relative
-            bg-[#efe7dc]/55
-            border border-[#e3d7c8]
-            rounded-2xl
-            px-8 md:px-16
-            py-14 md:py-14
-            overflow-hidden
-          ">
+          <div
+            className="
+              relative
+              bg-[#efe7dc]/55
+              border border-[#e3d7c8]
+              rounded-2xl
+              px-8 md:px-16
+              py-14 md:py-14
+              overflow-hidden
+            "
+          >
             {/* Decorative Circle */}
-            <div className="
-              absolute
-              -top-16 -right-16
-              w-[180px] h-[180px]
-              rounded-full
-              border border-[#d8c6b2]/50
-            " />
+            <div
+              className="
+                absolute
+                -top-16 -right-16
+                w-[180px] h-[180px]
+                rounded-full
+                border border-[#d8c6b2]/50
+              "
+            />
 
             {/* Small Label */}
-            <p className="
-              text-[10px]
-              tracking-[0.05em]
-              uppercase
-              text-[#9a7a58]
-              mb-2
-            ">
+            <p
+              className="
+                text-[10px]
+                tracking-[0.05em]
+                uppercase
+                text-[#765638]
+                mb-2
+              "
+            >
               A Personal Invitation
             </p>
 
             {/* Main Text */}
             <div className="max-w-2xl space-y-2">
-              <p className="
-                text-[12px] md:text-[13px]
-                leading-[2]
-                text-[#4f4f4f]
-                font-light
-              ">
+              <p
+                className="
+                  text-[12px] md:text-[13px]
+                  leading-[2]
+                  text-[#4f4f4f]
+                  font-light
+                "
+              >
                 Whenever you feel ready…
               </p>
 
-              <p className="
-                text-[12px] md:text-[13px]
-                leading-[2]
-                text-[#4f4f4f]
-                font-light
-              ">
+              <p
+                className="
+                  text-[12px] md:text-[13px]
+                  leading-[2]
+                  text-[#4f4f4f]
+                  font-light
+                "
+              >
                 I'd genuinely love to help you experience India in a way
                 that feels calm, meaningful, comfortable, and truly your own.
               </p>
@@ -225,25 +256,31 @@ export default function WomensCircleSection() {
 
             {/* Signature */}
             <div className="mt-4">
-              <p className="
-                text-[24px] md:text-[28px]
-                italic
-                text-[#1f1f1f]
-                leading-[1.3]
-              ">
+              <p
+                className="
+                  text-[24px] md:text-[28px]
+                  italic
+                  text-[#1f1f1f]
+                  leading-[1.3]
+                "
+              >
                 Come travel with me
               </p>
 
               <div className="mt-5 flex items-center gap-4">
                 <span className="w-12 h-[1px] bg-[#b08b63]" />
-                <p className="
-                  text-[7px] md:text-[11px]
-                  tracking-[0.24em]
-                  uppercase
-                  text-[#8b7355]
-                ">
+
+                <p
+                  className="
+                    text-[7px] md:text-[11px]
+                    tracking-[0.24em]
+                    uppercase
+                    text-[#80613f]
+                  "
+                >
                   India Heritage Travel
                 </p>
+
                 <span className="w-12 h-[1px] bg-[#b08b63]" />
               </div>
             </div>

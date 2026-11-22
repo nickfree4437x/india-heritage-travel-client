@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -8,11 +9,8 @@ export default function SoloTravelSection() {
     <section className="w-full bg-white py-14 relative overflow-hidden">
       {/* MAIN WRAPPER */}
       <div className="w-full px-6 md:px-20 lg:px-28 xl:px-36">
-        {/*
-          Mobile/Tablet: flex-col (stack karo)
-          Desktop (lg+): flex-row side by side - UNTOUCHED
-        */}
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-20">
+
           {/* LEFT CONTENT */}
           <div className="max-w-xl w-full">
             <h3 className="text-[16px] font-medium text-gray-800 mb-6 leading-relaxed">
@@ -79,22 +77,24 @@ export default function SoloTravelSection() {
               </p>
             </div>
 
-            <Link href="/solo-women-travel">
-              <button className="w-full sm:w-auto md:-ml-2 bg-transparent text-[#a67c52] text-xs px-7 py-3 rounded-full border border-[#a67c52] hover:bg-[#a67c52] hover:text-white transition-all duration-300">
+            <Link
+              href="/solo-women-travel"
+              className="inline-block"
+            >
+              <span className="inline-flex w-full sm:w-auto md:-ml-2 bg-transparent text-[#80613f] text-xs px-7 py-3 rounded-full border border-[#80613f] hover:bg-[#6f5236] hover:text-white transition-all duration-300">
                 Come travel with me
-              </button>
+              </span>
             </Link>
           </div>
 
           {/* RIGHT COLLAGE */}
 
-          {/* MOBILE / TABLET collage - lg pe hide */}
+          {/* MOBILE / TABLET COLLAGE */}
           <div className="block lg:hidden mt-10 w-full">
-            {/* Rangoli background */}
             <div className="relative">
-              {/* 2-col grid layout for mobile */}
               <div className="relative z-10 grid grid-cols-2 gap-3">
-                {/* TOP RIGHT - women wall (taller) */}
+
+                {/* TOP RIGHT - WOMEN WALL */}
                 <div className="col-span-1 row-span-2">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531020/women-wall_ftanbo.jpg"
@@ -105,7 +105,7 @@ export default function SoloTravelSection() {
                   />
                 </div>
 
-                {/* BOTTOM LEFT - night lights */}
+                {/* BOTTOM LEFT - NIGHT LIGHTS */}
                 <div className="col-span-1">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531130/night-lights_ncz5ue.jpg"
@@ -116,7 +116,7 @@ export default function SoloTravelSection() {
                   />
                 </div>
 
-                {/* BOTTOM FULL WIDTH - taj mahal */}
+                {/* BOTTOM FULL WIDTH - TAJ MAHAL */}
                 <div className="col-span-2 -mt-3">
                   <Image
                     src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531181/taj-mahal_hln96e.jpg"
@@ -130,9 +130,10 @@ export default function SoloTravelSection() {
             </div>
           </div>
 
-          {/* DESKTOP collage - mobile pe hide, ORIGINAL CODE UNTOUCHED */}
+          {/* DESKTOP COLLAGE */}
           <div className="hidden lg:block relative w-[560px] h-[560px] flex-shrink-0">
-            {/* RANGOLI (PERFECT CENTER - BACKGROUND) */}
+
+            {/* RANGOLI */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531215/rangoli_gkxrux.png"
@@ -154,7 +155,7 @@ export default function SoloTravelSection() {
               />
             </div>
 
-            {/* TOP RIGHT (TALL IMAGE) */}
+            {/* TOP RIGHT */}
             <div className="absolute top-0 right-5 w-[46%] z-10">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531020/women-wall_ftanbo.jpg"
@@ -165,7 +166,7 @@ export default function SoloTravelSection() {
               />
             </div>
 
-            {/* BOTTOM LEFT (SHIFT LEFT + OVERLAP) */}
+            {/* BOTTOM LEFT */}
             <div className="absolute bottom-5 left-[-60px] w-[46%] z-10">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531130/night-lights_ncz5ue.jpg"
@@ -176,7 +177,7 @@ export default function SoloTravelSection() {
               />
             </div>
 
-            {/* BOTTOM RIGHT (EXPAND LEFT) */}
+            {/* BOTTOM RIGHT */}
             <div className="absolute bottom-0 right-[18px] w-[58%] z-10">
               <Image
                 src="https://res.cloudinary.com/dhfsyt4x9/image/upload/v1779531181/taj-mahal_hln96e.jpg"

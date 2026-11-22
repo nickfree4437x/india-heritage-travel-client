@@ -1,4 +1,4 @@
-// app/blogs/india-food-guide/components/HeroSection.tsx
+
 "use client";
 
 import Image from "next/image";
@@ -30,7 +30,7 @@ export default function HeroSection() {
       </div>
 
       {/* Breadcrumb */}
-      <BlogBreadcrumb title="Historic Kingdoms of Northeast India: Ancient Capitals & Heritage"/>
+      <BlogBreadcrumb title="Historic Kingdoms of Northeast India: Ancient Capitals & Heritage" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -45,7 +45,7 @@ export default function HeroSection() {
             mx-auto
           ">
             Historic Kingdoms of Northeast
-            <br/>
+            <br />
             India: Ancient Capitals & Heritage
           </h1>
 
@@ -72,7 +72,7 @@ export default function HeroSection() {
             sm:flex-row sm:items-center sm:justify-between
           ">
             {/* Left Side - Author Info */}
-            <div className="flex items-center gap-5 text-[#6a6a6a] justify-center sm:justify-start">
+            <div className="flex items-center gap-5 text-[#595959] justify-center sm:justify-start">
               <div className="flex items-center gap-2">
                 <MessageCircle size={15} strokeWidth={1.7} />
                 <span className="text-[12px] md:text-[13px] font-light">0</span>
@@ -103,7 +103,7 @@ export default function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Share this article on Facebook"
-                  className="hover:text-[#7C5C38] transition-colors duration-300"
+                  className="hover:text-[#6f5236] transition-colors duration-300"
                 >
                   <Facebook size={15} strokeWidth={2} />
                 </Link>
@@ -114,7 +114,7 @@ export default function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Share this article on Twitter"
-                  className="hover:text-[#7C5C38] transition-colors duration-300"
+                  className="hover:text-[#6f5236] transition-colors duration-300"
                 >
                   <Twitter size={15} strokeWidth={2} />
                 </Link>
@@ -125,7 +125,7 @@ export default function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Share this article on WhatsApp"
-                  className="hover:text-[#7C5C38] transition-colors duration-300"
+                  className="hover:text-[#6f5236] transition-colors duration-300"
                 >
                   <FaWhatsapp size={15} />
                 </Link>
@@ -136,7 +136,7 @@ export default function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Share this article on Pinterest"
-                  className="hover:text-[#7C5C38] transition-colors duration-300"
+                  className="hover:text-[#6f5236] transition-colors duration-300"
                 >
                   <FaPinterestP size={15} />
                 </Link>
