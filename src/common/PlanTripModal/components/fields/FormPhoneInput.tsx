@@ -26,15 +26,20 @@ export default function FormPhoneInput({
           }
         `}
       >
-        <PhoneInput
-          international
-          defaultCountry="IN"
-          countryCallingCodeEditable={false}
-          value={value}
-          onChange={(value) => onChange(value || "")}
-          placeholder="Phone No."
-          className="custom-phone-input"
-        />
+        
+          <PhoneInput
+            international
+            defaultCountry="IN"
+            countryCallingCodeEditable={false}
+            value={value}
+            onChange={(value) => onChange(value || "")}
+            placeholder="Phone No."
+            className="custom-phone-input"
+            countrySelectProps={{
+              "aria-label": "Select country",
+            }}
+          />
+
       </div>
     </div>
   );

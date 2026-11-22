@@ -29,6 +29,7 @@ export default function PhoneField({
       focus-within:border-[#9A7A58]
       transition
     ">
+      
       <PhoneInput
         international
         countryCallingCodeEditable={false}
@@ -37,6 +38,9 @@ export default function PhoneField({
         onChange={(phone) => onPhoneChange?.(phone || "")}
         placeholder="Mobile Number"
         className="phone-input"
+        countrySelectProps={{
+          "aria-label": "Select country",
+        }}
       />
     </div>
   );
