@@ -142,8 +142,9 @@ export default function LatestBlogsSection() {
                   onClick={previousBlog}
                   aria-label="Previous blog"
                   className="
-                    w-9 h-9
+                    w-12 h-12
                     flex items-center justify-center
+                    shrink-0
                     rounded-full
                     border border-[#e8dfd3]
                     bg-white
@@ -157,7 +158,7 @@ export default function LatestBlogsSection() {
                 </button>
 
                 {/* Dots */}
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-2">
                   {latestBlogs.map((_, index) => (
                     <button
                       key={index}
@@ -170,6 +171,7 @@ export default function LatestBlogsSection() {
                       className="
                         w-12 h-12
                         flex items-center justify-center
+                        shrink-0
                         rounded-full
                         transition-colors duration-300
                         focus-visible:outline-2
@@ -198,8 +200,9 @@ export default function LatestBlogsSection() {
                   onClick={nextBlog}
                   aria-label="Next blog"
                   className="
-                    w-9 h-9
+                    w-12 h-12
                     flex items-center justify-center
+                    shrink-0
                     rounded-full
                     border border-[#e8dfd3]
                     bg-white
