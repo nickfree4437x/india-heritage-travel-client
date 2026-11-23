@@ -1,3 +1,4 @@
+
 "use client";
 
 // ============================================================
@@ -126,17 +127,14 @@ export default function ReviewsSection() {
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
-          {/* ============================================================
-              DESKTOP / TABLET LEFT ARROW
-              Hidden on mobile
-          ============================================================ */}
+          {/* DESKTOP / TABLET LEFT ARROW */}
           {maxIndex > 0 && (
             <button
+              type="button"
               onClick={prev}
               aria-label="Previous reviews"
               className="
                 hidden sm:flex
-
                 absolute
                 left-0
                 sm:-left-4
@@ -144,10 +142,8 @@ export default function ReviewsSection() {
                 top-1/2
                 -translate-y-1/2
                 z-10
-
                 w-10 h-10
                 md:w-12 md:h-12
-
                 items-center justify-center
                 rounded-full
                 bg-white/90
@@ -155,14 +151,11 @@ export default function ReviewsSection() {
                 shadow-sm
                 border border-gray-200/50
                 text-[#8b6a3d]
-
                 hover:bg-[#c9a45c]
                 hover:text-white
                 hover:border-[#c9a45c]
-
                 active:scale-95
                 transition-all duration-300
-
                 disabled:opacity-30
                 disabled:cursor-not-allowed
                 disabled:hover:bg-white/90
@@ -178,9 +171,7 @@ export default function ReviewsSection() {
             </button>
           )}
 
-          {/* ============================================================
-              REVIEW CARDS
-          ============================================================ */}
+          {/* REVIEW CARDS */}
           <div className="px-0 sm:px-8 md:px-12">
             <ReviewCard
               reviews={reviews}
@@ -189,17 +180,14 @@ export default function ReviewsSection() {
             />
           </div>
 
-          {/* ============================================================
-              DESKTOP / TABLET RIGHT ARROW
-              Hidden on mobile
-          ============================================================ */}
+          {/* DESKTOP / TABLET RIGHT ARROW */}
           {maxIndex > 0 && (
             <button
+              type="button"
               onClick={next}
               aria-label="Next reviews"
               className="
                 hidden sm:flex
-
                 absolute
                 right-0
                 sm:-right-4
@@ -207,10 +195,8 @@ export default function ReviewsSection() {
                 top-1/2
                 -translate-y-1/2
                 z-10
-
                 w-10 h-10
                 md:w-12 md:h-12
-
                 items-center justify-center
                 rounded-full
                 bg-white/90
@@ -218,14 +204,11 @@ export default function ReviewsSection() {
                 shadow-sm
                 border border-gray-200/50
                 text-[#8b6a3d]
-
                 hover:bg-[#c9a45c]
                 hover:text-white
                 hover:border-[#c9a45c]
-
                 active:scale-95
                 transition-all duration-300
-
                 disabled:opacity-30
                 disabled:cursor-not-allowed
                 disabled:hover:bg-white/90
@@ -241,14 +224,11 @@ export default function ReviewsSection() {
             </button>
           )}
 
-          {/* ============================================================
-              MOBILE ARROWS
-              Positioned directly below cards and centered
-          ============================================================ */}
+          {/* MOBILE ARROWS */}
           {maxIndex > 0 && (
             <div className="flex sm:hidden justify-center items-center gap-3 mt-3">
-              {/* Mobile Previous */}
               <button
+                type="button"
                 onClick={prev}
                 aria-label="Previous reviews"
                 className="
@@ -260,14 +240,11 @@ export default function ReviewsSection() {
                   shadow-sm
                   border border-gray-200/50
                   text-[#8b6a3d]
-
                   hover:bg-[#c9a45c]
                   hover:text-white
                   hover:border-[#c9a45c]
-
                   active:scale-95
                   transition-all duration-300
-
                   disabled:opacity-30
                   disabled:cursor-not-allowed
                   disabled:hover:bg-white/90
@@ -275,14 +252,11 @@ export default function ReviewsSection() {
                 "
                 disabled={maxIndex <= 0}
               >
-                <ChevronLeft
-                  size={16}
-                  strokeWidth={2}
-                />
+                <ChevronLeft size={16} strokeWidth={2} />
               </button>
 
-              {/* Mobile Next */}
               <button
+                type="button"
                 onClick={next}
                 aria-label="Next reviews"
                 className="
@@ -294,14 +268,11 @@ export default function ReviewsSection() {
                   shadow-sm
                   border border-gray-200/50
                   text-[#8b6a3d]
-
                   hover:bg-[#c9a45c]
                   hover:text-white
                   hover:border-[#c9a45c]
-
                   active:scale-95
                   transition-all duration-300
-
                   disabled:opacity-30
                   disabled:cursor-not-allowed
                   disabled:hover:bg-white/90
@@ -309,10 +280,7 @@ export default function ReviewsSection() {
                 "
                 disabled={maxIndex <= 0}
               >
-                <ChevronRight
-                  size={16}
-                  strokeWidth={2}
-                />
+                <ChevronRight size={16} strokeWidth={2} />
               </button>
             </div>
           )}
@@ -320,19 +288,33 @@ export default function ReviewsSection() {
 
         {/* ===== DOTS ===== */}
         {maxIndex > 0 && (
-          <div className="flex justify-center gap-2 mt-6 sm:mt-9 mb-0 md:mb-4">
+          <div className="flex justify-center items-center gap-2 mt-6 sm:mt-9 mb-0 md:mb-4">
             {Array.from({ length: maxIndex + 1 }, (_, i) => (
               <button
                 key={i}
+                type="button"
                 onClick={() => goToSlide(i)}
                 aria-label={`Go to review slide ${i + 1}`}
                 aria-current={i === index ? "true" : undefined}
-                className={`rounded-full transition-all duration-500 ${
-                  i === index
-                    ? "w-6 h-2 bg-[#c9a45c]"
-                    : "w-2 h-2 bg-gray-300 hover:bg-gray-400"
-                }`}
-              />
+                className="
+                  w-7 h-7
+                  flex items-center justify-center
+                  rounded-full
+                  transition-colors duration-300
+                  focus-visible:outline-2
+                  focus-visible:outline-offset-2
+                  focus-visible:outline-[#8b6a3d]
+                "
+              >
+                <span
+                  aria-hidden="true"
+                  className={`block rounded-full transition-all duration-500 ${
+                    i === index
+                      ? "w-6 h-2 bg-[#c9a45c]"
+                      : "w-2 h-2 bg-gray-400 hover:bg-gray-500"
+                  }`}
+                />
+              </button>
             ))}
           </div>
         )}
