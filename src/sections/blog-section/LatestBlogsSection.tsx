@@ -1,8 +1,14 @@
+
 "use client";
 
 import Link from "next/link";
 import Image from "next/image";
-import { MessageCircle, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  MessageCircle,
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import { useState } from "react";
 
 import { blogs } from "@/app/blog/data/blogsData";
@@ -30,27 +36,31 @@ export default function LatestBlogsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 xl:px-10">
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-12 lg:mb-14">
-          <h2 className="
-            text-[20px] sm:text-[24px] md:text-[28px]
-            font-semibold
-            tracking-wide
-            text-[#8b6a3d]
-            leading-snug
-            mb-2
-            md:whitespace-nowrap
-          ">
+          <h2
+            className="
+              text-[20px] sm:text-[24px] md:text-[28px]
+              font-semibold
+              tracking-wide
+              text-[#6b4b26]
+              leading-snug
+              mb-2
+              md:whitespace-nowrap
+            "
+          >
             Latest India Travel Blogs
           </h2>
 
-          <p className="
-            text-[12.5px] sm:text-[13.5px] md:text-[14px]
-            font-light
-            leading-relaxed
-            tracking-wide
-            max-w-[580px]
-            mx-auto
-            text-[#8b6a3d]
-          ">
+          <p
+            className="
+              text-[12.5px] sm:text-[13.5px] md:text-[14px]
+              font-normal
+              leading-relaxed
+              tracking-wide
+              max-w-[580px]
+              mx-auto
+              text-[#595959]
+            "
+          >
             Explore the latest India travel blogs for destination guides, cultural
             insights, food experiences, and inspiration for your journey
             across India.
@@ -82,35 +92,40 @@ export default function LatestBlogsSection() {
 
             {/* Content */}
             <div className="pt-5">
-              <h3 className="
-                text-[18px] sm:text-[20px]
-                leading-[1.22]
-                font-normal
-                tracking-normal
-                text-[#111]
-                break-words
-                transition-colors duration-300
-                group-hover:text-[#7C5C38]
-              ">
+              <h3
+                className="
+                  text-[18px] sm:text-[20px]
+                  leading-[1.22]
+                  font-normal
+                  tracking-normal
+                  text-[#111]
+                  break-words
+                  transition-colors duration-300
+                  group-hover:text-[#7C5C38]
+                "
+              >
                 {latestBlogs[currentIndex]?.title}
               </h3>
 
-              <p className="
-                mt-3
-                text-[14px]
-                leading-5
-                text-[#5f5f5f]
-                font-light
-              ">
+              <p
+                className="
+                  mt-3
+                  text-[14px]
+                  leading-5
+                  text-[#5f5f5f]
+                  font-normal
+                "
+              >
                 {latestBlogs[currentIndex]?.excerpt}
               </p>
 
-              <div className="flex items-center gap-5 mt-4 text-[#8a8a8a]">
+              <div className="flex items-center gap-5 mt-4 text-[#595959]">
                 <div className="flex items-center gap-2">
                   <MessageCircle size={16} strokeWidth={1.7} />
-                  <span className="text-[12px] font-light">0</span>
+                  <span className="text-[12px] font-normal">0</span>
                 </div>
-                <span className="text-[12px] font-light">
+
+                <span className="text-[12px] font-normal">
                   {latestBlogs[currentIndex]?.date}
                 </span>
               </div>
@@ -132,9 +147,9 @@ export default function LatestBlogsSection() {
                     rounded-full
                     border border-[#e8dfd3]
                     bg-white
-                    text-[#8b6a3d]
+                    text-[#6b4b26]
                     transition-all duration-300
-                    hover:bg-[#8b6a3d] hover:text-white
+                    hover:bg-[#6b4b26] hover:text-white
                     active:scale-95
                   "
                 >
@@ -149,13 +164,16 @@ export default function LatestBlogsSection() {
                       type="button"
                       onClick={() => setCurrentIndex(index)}
                       aria-label={`Go to blog ${index + 1}`}
-                      aria-current={index === currentIndex ? "true" : undefined}
+                      aria-current={
+                        index === currentIndex ? "true" : undefined
+                      }
                       className={`
                         rounded-full
                         transition-all duration-300
-                        ${index === currentIndex
-                          ? "w-6 h-2 bg-[#c9a45c]"
-                          : "w-2 h-2 bg-gray-300"
+                        ${
+                          index === currentIndex
+                            ? "w-6 h-2 bg-[#c9a45c]"
+                            : "w-2 h-2 bg-gray-300"
                         }
                       `}
                     />
@@ -173,9 +191,9 @@ export default function LatestBlogsSection() {
                     rounded-full
                     border border-[#e8dfd3]
                     bg-white
-                    text-[#8b6a3d]
+                    text-[#6b4b26]
                     transition-all duration-300
-                    hover:bg-[#8b6a3d] hover:text-white
+                    hover:bg-[#6b4b26] hover:text-white
                     active:scale-95
                   "
                 >
@@ -187,11 +205,13 @@ export default function LatestBlogsSection() {
         </div>
 
         {/* Tablet + Desktop - Multiple Cards */}
-        <div className="
-          hidden md:grid
-          md:grid-cols-2 xl:grid-cols-3
-          gap-x-8 gap-y-12
-        ">
+        <div
+          className="
+            hidden md:grid
+            md:grid-cols-2 xl:grid-cols-3
+            gap-x-8 gap-y-12
+          "
+        >
           {latestBlogs.map((blog) => (
             <Link
               key={blog.id}
@@ -217,35 +237,42 @@ export default function LatestBlogsSection() {
 
               {/* Content */}
               <div className="pt-6">
-                <h3 className="
-                  text-[18px] md:text-[20px]
-                  leading-[1.22]
-                  font-normal
-                  tracking-normal
-                  text-[#111]
-                  break-words
-                  transition-colors duration-300
-                  group-hover:text-[#7C5C38]
-                ">
+                <h3
+                  className="
+                    text-[18px] md:text-[20px]
+                    leading-[1.22]
+                    font-normal
+                    tracking-normal
+                    text-[#111]
+                    break-words
+                    transition-colors duration-300
+                    group-hover:text-[#7C5C38]
+                  "
+                >
                   {blog.title}
                 </h3>
 
-                <p className="
-                  mt-3
-                  text-[14px]
-                  leading-5
-                  text-[#5f5f5f]
-                  font-light
-                ">
+                <p
+                  className="
+                    mt-3
+                    text-[14px]
+                    leading-5
+                    text-[#5f5f5f]
+                    font-normal
+                  "
+                >
                   {blog.excerpt}
                 </p>
 
-                <div className="flex items-center gap-5 mt-4 text-[#8a8a8a]">
+                <div className="flex items-center gap-5 mt-4 text-[#595959]">
                   <div className="flex items-center gap-2">
                     <MessageCircle size={16} strokeWidth={1.7} />
-                    <span className="text-[12px] md:text-[13px] font-light">0</span>
+                    <span className="text-[12px] md:text-[13px] font-normal">
+                      0
+                    </span>
                   </div>
-                  <span className="text-[12px] md:text-[13px] font-light">
+
+                  <span className="text-[12px] md:text-[13px] font-normal">
                     {blog.date}
                   </span>
                 </div>
@@ -261,14 +288,14 @@ export default function LatestBlogsSection() {
             className="
               inline-flex items-center gap-2
               rounded-md
-              border border-[#8b6a3d]
+              border border-[#6b4b26]
               px-6 py-3
               text-[12px]
-              font-light
+              font-normal
               tracking-wide
-              text-[#8b6a3d]
+              text-[#6b4b26]
               transition-all duration-300
-              hover:bg-[#8b6a3d] hover:text-white
+              hover:bg-[#6b4b26] hover:text-white
             "
           >
             View All Blogs
