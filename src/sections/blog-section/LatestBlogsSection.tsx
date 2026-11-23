@@ -52,13 +52,7 @@ export default function LatestBlogsSection() {
 
           <p
             className="
-              text-[12.5px] sm:text-[13.5px] md:text-[14px]
-              font-normal
-              leading-relaxed
-              tracking-wide
-              max-w-[580px]
-              mx-auto
-              text-[#595959]
+              text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed tracking-wide max-w-[580px] mx-auto text-[#8b6a3d]
             "
           >
             Explore the latest India travel blogs for destination guides, cultural
