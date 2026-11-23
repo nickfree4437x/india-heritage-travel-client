@@ -157,7 +157,7 @@ export default function LatestBlogsSection() {
                 </button>
 
                 {/* Dots */}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
                   {latestBlogs.map((_, index) => (
                     <button
                       key={index}
@@ -167,16 +167,28 @@ export default function LatestBlogsSection() {
                       aria-current={
                         index === currentIndex ? "true" : undefined
                       }
-                      className={`
+                      className="
+                        w-12 h-12
+                        flex items-center justify-center
                         rounded-full
-                        transition-all duration-300
-                        ${
-                          index === currentIndex
-                            ? "w-6 h-2 bg-[#c9a45c]"
-                            : "w-2 h-2 bg-gray-300"
-                        }
-                      `}
-                    />
+                        transition-colors duration-300
+                        focus-visible:outline-2
+                        focus-visible:outline-offset-2
+                        focus-visible:outline-[#6b4b26]
+                      "
+                    >
+                      <span
+                        aria-hidden="true"
+                        className={`
+                          block rounded-full transition-all duration-300
+                          ${
+                            index === currentIndex
+                              ? "w-6 h-2 bg-[#c9a45c]"
+                              : "w-2 h-2 bg-gray-400"
+                          }
+                        `}
+                      />
+                    </button>
                   ))}
                 </div>
 
