@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 // ============================================
@@ -29,47 +30,47 @@ import ItinerarySection from "./sections/itinerary/ItinerarySection";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title: "Rajasthan Tour Package | Jaipur, Udaipur, Jodhpur & Jaisalmer",
+  title:
+    "Rajasthan Tour Package | Jaipur, Udaipur & Jaisalmer",
+
   description:
-    "Book the best Rajasthan Tour Package and explore Jaipur, Udaipur, Jodhpur, Jaisalmer, royal palaces, historic forts, desert landscapes, vibrant culture, and unforgettable heritage experiences.",
+    "Explore Rajasthan through Jaipur, Udaipur, Jodhpur and Jaisalmer, with royal palaces, historic forts, desert landscapes and rich cultural experiences.",
+
   keywords: [
     "Rajasthan Tour Package",
     "Rajasthan Tour",
-    "Rajasthan Holiday Package",
-    "Rajasthan Travel Package",
     "Rajasthan Heritage Tour",
     "Rajasthan Cultural Tour",
     "Jaipur Udaipur Jodhpur Tour",
-    "Rajasthan Sightseeing Tour",
     "Royal Rajasthan Tour",
-    "Rajasthan Vacation Package",
-    "Rajasthan Family Tour",
-    "Luxury Rajasthan Tour",
-    "Rajasthan Forts and Palaces Tour",
     "Rajasthan Desert Tour",
-    "Best Rajasthan Tour Package",
-    "Rajasthan Tourism",
-    "Jaipur Tour Package",
-    "Udaipur Tour Package",
-    "Jodhpur Tour Package",
-    "Jaisalmer Tour Package",
+    "Rajasthan Forts and Palaces Tour",
   ],
+
   alternates: {
     canonical: "/tours/rajasthani-heritage-retreat-tour",
   },
+
   openGraph: {
-    title: "Rajasthan Tour Package | Jaipur, Udaipur, Jodhpur & Jaisalmer",
+    title:
+      "Rajasthan Tour Package | Jaipur, Udaipur & Jaisalmer",
+
     description:
-      "Discover Rajasthan's royal heritage through magnificent forts, palaces, desert cities, cultural traditions, and unforgettable travel experiences.",
+      "Discover Rajasthan through Jaipur, Udaipur, Jodhpur and Jaisalmer, featuring royal palaces, historic forts, desert landscapes and cultural traditions.",
+
     url: "https://indiaheritagetravel.com/tours/rajasthani-heritage-retreat-tour",
     siteName: "India Heritage Travel",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Rajasthan Tour Package | Jaipur, Udaipur, Jodhpur & Jaisalmer",
+
+    title:
+      "Rajasthan Tour Package | Jaipur, Udaipur & Jaisalmer",
+
     description:
-      "Explore Rajasthan's forts, palaces, desert landscapes, vibrant culture, and iconic heritage destinations.",
+      "Explore Rajasthan's royal palaces, historic forts, desert landscapes and cultural heritage across its iconic cities.",
   },
 };
 

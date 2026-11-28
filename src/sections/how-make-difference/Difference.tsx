@@ -51,7 +51,7 @@ export default function Difference() {
         ==================================================================== */}
         <div className="text-center mb-8 sm:mb-10 md:mb-10">
           <h2 className="text-[20px] sm:text-[24px] md:text-[22px] font-[550] text-[#8b6b47] tracking-wide leading-snug">
-            How We Make a Difference
+            Why Choose India Heritage Travel?
           </h2>
         </div>
 

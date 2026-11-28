@@ -95,7 +95,7 @@ export default function ReviewsSection() {
         {/* ===== HEADER ===== */}
         <div className="text-center mb-12 sm:mb-16 px-2">
           <h2 className="text-[20px] sm:text-[24px] md:text-[28px] font-semibold tracking-wide mb-2 leading-snug md:whitespace-nowrap text-[#8b6a3d]">
-            Reviews from Travellers on India Heritage Tours
+            Our Travellers' Heritage Tour Experiences
           </h2>
 
           <p className="text-[12.5px] sm:text-[13.5px] md:text-[14px] font-light leading-relaxed tracking-wide max-w-[580px] mx-auto text-[#8b6a3d]">
@@ -286,9 +286,13 @@ export default function ReviewsSection() {
           )}
         </div>
 
-        {/* ===== DOTS ===== */}
+        {/* ===== DOTS ===== */}  
         {maxIndex > 0 && (
-          <div className="flex justify-center items-center gap-2 mt-6 sm:mt-9 mb-0 md:mb-4">
+          <div
+            className="flex justify-center items-center gap-2.5 mt-6 sm:mt-9 mb-0 md:mb-4"
+            role="group"
+            aria-label="Review carousel navigation"
+          >
             {Array.from({ length: maxIndex + 1 }, (_, i) => (
               <button
                 key={i}
@@ -297,10 +301,10 @@ export default function ReviewsSection() {
                 aria-label={`Go to review slide ${i + 1}`}
                 aria-current={i === index ? "true" : undefined}
                 className="
-                  w-7 h-7
+                  group
                   flex items-center justify-center
+                  w-8 h-8
                   rounded-full
-                  transition-colors duration-300
                   focus-visible:outline-2
                   focus-visible:outline-offset-2
                   focus-visible:outline-[#8b6a3d]
@@ -308,16 +312,21 @@ export default function ReviewsSection() {
               >
                 <span
                   aria-hidden="true"
-                  className={`block rounded-full transition-all duration-500 ${
-                    i === index
-                      ? "w-6 h-2 bg-[#c9a45c]"
-                      : "w-2 h-2 bg-gray-400 hover:bg-gray-500"
-                  }`}
+                  className={`
+                    block rounded-full
+                    transition-all duration-300 ease-in-out
+                    ${
+                      i === index
+                        ? "w-7 h-[7px] bg-[#c9a45c] shadow-[0_0_6px_rgba(201,164,92,0.35)]"
+                        : "w-[7px] h-[7px] bg-gray-300 group-hover:bg-[#8b6a3d] group-hover:scale-125"
+                    }
+                  `}
                 />
               </button>
             ))}
           </div>
         )}
+
       </div>
     </section>
   );

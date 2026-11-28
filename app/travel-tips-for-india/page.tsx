@@ -11,33 +11,20 @@ import TravelTipsContent from "./components/TravelTipsContent";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title:
-    "India Travel Tips | Essential Guide for First-Time Visitors",
+  title: "India Travel Tips | Plan Your India Trip",
 
   description:
-    "Discover essential India travel tips covering safety, culture, transportation, packing, money, local customs, food, and practical advice for a smooth and memorable journey across India.",
+    "Plan your India trip with practical tips on safety, culture, transport, food, packing and local customs for a smoother journey.",
 
   keywords: [
     "India Travel Tips",
+    "Travel Tips for India",
     "India Travel Guide",
-    "Travel Tips For India",
-    "First Time Travel To India",
-    "India Travel Advice",
-    "India Tourism Guide",
-    "India Travel Information",
-    "India Travel Planning",
+    "First Time Visiting India",
     "India Travel Safety",
-    "India Packing Tips",
-    "India Travel Essentials",
-    "India Travel Checklist",
-    "India Vacation Guide",
-    "India Travel Recommendations",
+    "India Travel Planning",
     "India Cultural Tips",
-    "India Transportation Guide",
-    "India Travel Resources",
-    "Visiting India Guide",
-    "India Tourist Tips",
-    "India Travel Preparation",
+    "India Packing Tips",
   ],
 
   alternates: {
@@ -45,10 +32,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "India Travel Tips | Essential Guide for First-Time Visitors",
+    title: "India Travel Tips | Plan Your India Trip",
     description:
-      "Learn everything you need to know before visiting India, including safety advice, cultural etiquette, transportation, packing tips, food recommendations, and travel planning guidance.",
+      "Plan your India trip with practical tips on safety, culture, transport, food, packing and local customs for a smoother journey.",
     url: "https://indiaheritagetravel.com/travel-tips-for-india",
     siteName: "India Heritage Travel",
     type: "article",
@@ -56,12 +42,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "India Travel Tips | Essential Guide for First-Time Visitors",
+    title: "India Travel Tips | Plan Your India Trip",
     description:
-      "Get practical India travel advice, safety tips, cultural insights, packing recommendations, and planning guidance for your trip.",
+      "Plan your India trip with practical tips on safety, culture, transport, food, packing and local customs for a smoother journey.",
   },
 };
+
 
 // ============================================
 // PAGE COMPONENT

@@ -39,7 +39,7 @@ const GallerySection = dynamic(
   () => import("@/src/sections/gallery/Gallery")
 );
 
-const CotactSection = dynamic(
+const ContactSection = dynamic(
   () => import("@/src/sections/contact/Contact")
 );
 
@@ -50,14 +50,16 @@ const Footer = dynamic(
 // ============================================
 // SEO METADATA
 // ============================================
+
 export const metadata: Metadata = {
-  title: "India Heritage Travel | Luxury Heritage Tours India | Tailor-Made India Tours",
+  title: "India Heritage Travel | Heritage Tours in India",
   description:
-    "Experience India's rich heritage with a trusted local guide. From Golden Triangle to Kerala backwaters - personalized tours for solo women, couples & families. Free itinerary consultation. Book now!",
+    "Explore India with personalized heritage and luxury tours. Discover the Golden Triangle, Rajasthan, Kerala and more with trusted local guides. Plan your trip today.",
   alternates: {
     canonical: "https://indiaheritagetravel.com",
   },
 };
+
 
 // ============================================
 // SCHEMA DATA (JSON-LD)
@@ -65,6 +67,7 @@ export const metadata: Metadata = {
 const reviewSchema = {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
+  "@id": "https://indiaheritagetravel.com/#organization",
   name: "India Heritage Travel",
   url: "https://indiaheritagetravel.com",
   aggregateRating: {
@@ -98,9 +101,9 @@ export default function Home() {
       <Adventure />
       <Festival />
       <ReviewsSection />
-      <LatestBlogsSection/>
+      <LatestBlogsSection />
       <GallerySection />
-      <CotactSection />
+      <ContactSection />
       <Footer />
     </>
   );

@@ -19,7 +19,7 @@ export default function WelcomeSection() {
 
           {/* Main heading */}
           <h2 className="text-[18px] sm:text-[24px] md:text-[22px] font-[600] text-[#8b6b47] tracking-wide leading-snug mb-3">
-            Welcome To India Heritage Travel
+            Discover India Through Our Heritage Tours
           </h2>
 
           {/* Introduction paragraph */}

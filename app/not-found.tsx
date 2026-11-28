@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Home, Compass } from "lucide-react";
+import { Home } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "404 - Page Not Found | India Heritage Travel",

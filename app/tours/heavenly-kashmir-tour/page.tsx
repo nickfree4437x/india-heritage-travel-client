@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 import HeroSection from "./sections/hero/HeroSection";
@@ -11,34 +12,25 @@ import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 import TourSchema from "@/src/common/seo/TourSchema";
 
+// ============================================
+// SEO METADATA
+// ============================================
 export const metadata: Metadata = {
   title:
-    "Kashmir Tour Package | Srinagar, Gulmarg, Pahalgam & Sonmarg",
+    "Kashmir Tour Package | Srinagar, Gulmarg & Pahalgam",
 
   description:
-    "Explore the best Kashmir Tour Package with Srinagar, Gulmarg, Pahalgam, Sonmarg, Dal Lake, scenic valleys, mountain landscapes, houseboat stays, and unforgettable travel experiences.",
+    "Explore Kashmir with Srinagar, Gulmarg, Pahalgam, Sonamarg, Dal Lake, scenic valleys, houseboat stays and breathtaking Himalayan landscapes.",
 
   keywords: [
     "Kashmir Tour Package",
     "Kashmir Holiday Package",
     "Kashmir Trip",
-    "Kashmir Travel Package",
-    "Best Kashmir Tour Package",
-    "Kashmir Family Tour",
-    "Kashmir Vacation Package",
     "Srinagar Tour Package",
     "Gulmarg Tour Package",
     "Pahalgam Tour Package",
-    "Sonmarg Tour Package",
+    "Sonamarg Tour Package",
     "Kashmir Sightseeing Tour",
-    "Kashmir Tourism",
-    "Dal Lake Tour",
-    "Kashmir Houseboat Tour",
-    "Kashmir Mountains Tour",
-    "Kashmir Nature Tour",
-    "Kashmir Travel India",
-    "Luxury Kashmir Tour",
-    "Kashmir Holiday",
   ],
 
   alternates: {
@@ -47,9 +39,11 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Kashmir Tour Package | Srinagar, Gulmarg, Pahalgam & Sonmarg",
+      "Kashmir Tour Package | Srinagar, Gulmarg & Pahalgam",
+
     description:
-      "Discover Kashmir's breathtaking beauty with Dal Lake, Gulmarg, Pahalgam, Sonmarg, scenic valleys, mountain landscapes, and unforgettable travel experiences.",
+      "Discover Kashmir's beauty with Srinagar, Gulmarg, Pahalgam, Sonamarg, Dal Lake, scenic valleys and memorable houseboat stays.",
+
     url: "https://indiaheritagetravel.com/tours/heavenly-kashmir-tour",
     siteName: "India Heritage Travel",
     type: "website",
@@ -57,17 +51,21 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title:
-      "Kashmir Tour Package | Srinagar, Gulmarg, Pahalgam & Sonmarg",
+      "Kashmir Tour Package | Srinagar, Gulmarg & Pahalgam",
+
     description:
-      "Explore Kashmir with beautiful valleys, Dal Lake, houseboats, snow-capped mountains, and unforgettable travel experiences.",
+      "Explore Kashmir's scenic valleys, Dal Lake, Gulmarg, Pahalgam, Sonamarg and beautiful Himalayan landscapes.",
   },
 };
 
+// ============================================
+// PAGE COMPONENT
+// ============================================
 export default function HeavenlyKashmirTourPage() {
   return (
     <div>
-
       {/* Breadcrumb Schema */}
       <BreadcrumbSchema
         items={[
@@ -82,9 +80,10 @@ export default function HeavenlyKashmirTourPage() {
         ]}
       />
 
+      {/* Tour Schema */}
       <TourSchema
         name="Kashmir Tour Package"
-        description="Explore Kashmir through Srinagar, Gulmarg, Pahalgam, Sonmarg, Dal Lake, scenic valleys, mountain landscapes, houseboat stays, and unforgettable cultural experiences."
+        description="Explore Kashmir through Srinagar, Gulmarg, Pahalgam, Sonamarg, Dal Lake, scenic valleys, mountain landscapes, houseboat stays, and unforgettable cultural experiences."
         url="https://indiaheritagetravel.com/tours/heavenly-kashmir-tour"
       />
 
@@ -95,10 +94,10 @@ export default function HeavenlyKashmirTourPage() {
         <TourDetails />
       </TourLayout>
 
-      <TourSteps/>
-      <CommonForm tourName="heavenly-kashmir-tour"/>
+      <TourSteps />
+      <CommonForm tourName="heavenly-kashmir-tour" />
       <RecommendedTours />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

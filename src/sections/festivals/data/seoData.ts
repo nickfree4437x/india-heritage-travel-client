@@ -1,56 +1,51 @@
+
 // src/components/sections/festivals/seoData.ts
 
 export const festivalSeoData = {
   holi: {
-    title: "Holi Festival Tour India | Celebrate the Festival of Colors",
+    title: "Holi Festival Tour India | Festival of Colors",
     description:
-      "Experience the Holi Festival Tour in India through vibrant color celebrations, cultural traditions, local festivities, music, dance, and unforgettable travel experiences in Mathura, Vrindavan, Jaipur, and beyond.",
+      "Celebrate Holi in India with vibrant colors, traditional festivities, music and cultural experiences in Mathura, Vrindavan and Jaipur.",
     keywords: [
       "Holi Festival Tour India",
       "Holi Tour India",
       "Festival of Colors India",
       "Holi Celebration Tour",
-      "India Festival Tours",
       "Holi Travel Package India",
       "Mathura Holi Tour",
       "Vrindavan Holi Festival",
-      "Best Holi Festival Tour India",
-      "Celebrate Holi in India",
-      "Cultural Festival Tours India",
-      "Luxury Holi Tour India",
+      "India Festival Tours",
       "Traditional Holi Experience",
-      "Holi Tour for International Travelers",
-      "India Cultural Travel Experience",
+      "Holi Cultural Tour",
+      "Rajasthan Holi Tour",
+      "Holi Holiday Package",
     ],
   },
 
   diwali: {
-    title: "Diwali Festival Tour India | Celebrate the Festival of Lights",
+    title: "Diwali Festival Tour India | Festival of Lights",
     description:
-      "Experience the Diwali Festival Tour in India with traditional celebrations, illuminated cities, temple ceremonies, cultural festivities, local traditions, and unforgettable travel experiences.",
+      "Experience Diwali in India with illuminated cities, traditional rituals, temple celebrations and vibrant cultural festivities.",
     keywords: [
       "Diwali Festival Tour India",
       "Diwali Tour India",
       "Festival of Lights India",
       "Diwali Travel Package",
       "Diwali Celebration Tour",
-      "India Festival Tours",
-      "Cultural Tours India",
-      "Luxury Diwali Tour India",
-      "Best Diwali Festival Tour",
       "Diwali Holiday Package India",
       "Celebrate Diwali in India",
-      "India Cultural Festival Tours",
-      "Diwali Tour for Foreign Travelers",
-      "Traditional Diwali Experience India",
-      "Diwali Festival Travel Experience"
-    ]
+      "India Festival Tours",
+      "Traditional Diwali Experience",
+      "Diwali Cultural Tour",
+      "Diwali Tour Package",
+      "Indian Festival Experience",
+    ],
   },
 
   pushkar: {
-    title: "Pushkar Camel Fair Tour India | Rajasthan Festival & Cultural Experience",
+    title: "Pushkar Camel Fair Tour | Rajasthan Festival",
     description:
-      "Experience the Pushkar Camel Fair Tour in Rajasthan through camel trading traditions, cultural performances, folk music, colorful markets, desert adventures, and authentic local experiences.",
+      "Explore the Pushkar Camel Fair with camel trading, folk performances, colorful markets, desert experiences and Rajasthan's rich traditions.",
     keywords: [
       "Pushkar Camel Fair Tour India",
       "Pushkar Camel Fair Rajasthan",
@@ -59,46 +54,30 @@ export const festivalSeoData = {
       "Rajasthan Festival Tour",
       "Pushkar Fair Tour Package",
       "Pushkar Camel Festival",
-      "Cultural Tours Rajasthan",
       "Pushkar Travel Experience",
-      "Best Pushkar Camel Fair Tour",
-      "Pushkar Fair India",
       "Rajasthan Cultural Festival",
+      "Pushkar Fair India",
       "Desert Festival Rajasthan",
-      "Pushkar Tour for International Travelers",
-      "Traditional Rajasthan Experience",
-      "India Festival Tours",
-      "Luxury Rajasthan Festival Tour",
-      "Pushkar Camel Market",
-      "Folk Culture Rajasthan",
-      "Pushkar Fair Travel Package"
-    ]
+      "Pushkar Camel Fair Package",
+    ],
   },
 
   kumbh: {
-    title: "Kumbh Mela Tour India | Spiritual Journey & Cultural Experience",
+    title: "Kumbh Mela Tour India | Spiritual Journey",
     description:
-      "Experience the Kumbh Mela Tour in India through sacred rituals, holy river ceremonies, spiritual traditions, cultural heritage, and unforgettable journeys to one of the world's largest religious gatherings.",
+      "Discover Kumbh Mela in India through sacred rituals, holy river ceremonies, spiritual traditions and cultural experiences in Prayagraj.",
     keywords: [
       "Kumbh Mela Tour India",
       "Kumbh Mela India",
       "Kumbh Mela Tour Package",
+      "Prayagraj Kumbh Mela",
       "Spiritual Tours India",
       "Religious Tours India",
-      "Kumbh Festival India",
-      "Prayagraj Kumbh Mela",
       "Kumbh Mela Pilgrimage Tour",
       "Sacred India Tour",
-      "India Cultural Tours",
       "Kumbh Mela Travel Experience",
-      "Best Kumbh Mela Tour India",
-      "Holy River Festival India",
       "Spiritual Journey India",
-      "Kumbh Mela for International Travelers",
       "Hindu Festival Tour India",
-      "Sacred Rituals India",
-      "Cultural Heritage Tours India",
-      "Luxury Kumbh Mela Tour",
       "Religious Travel India",
     ],
   },

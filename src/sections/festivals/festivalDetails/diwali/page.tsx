@@ -5,11 +5,6 @@
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 
 // ============================================
-// SEO DATA
-// ============================================
-import { festivalSeoData } from "../../data/seoData";
-
-// ============================================
 // COMMON COMPONENTS
 // ============================================
 import FestivalBreadcrumb from "@/src/common/Breadcrumb/FestivalBreadcrumb";
@@ -37,7 +32,6 @@ import ExploreMoreSection from "./content/ExploreMoreSection";
 // PAGE COMPONENT
 // ============================================
 export default function DiwaliDetails() {
-  const diwaliSeo = festivalSeoData.diwali;
 
   return (
     <div className="w-full">

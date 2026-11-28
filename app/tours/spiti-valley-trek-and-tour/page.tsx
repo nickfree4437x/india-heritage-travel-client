@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 // SEO Components
@@ -20,33 +21,24 @@ import RecommendedTours from "../divine-kashmir-and-exciting-ladakh/sections/rec
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title:
-    "Spiti Valley Tour Package | Monasteries, Villages & Himalayan Adventure",
+  title: "Spiti Valley Tour Package | Himalayan Adventure",
 
   description:
-    "Book the best Spiti Valley Tour Package and explore ancient monasteries, high-altitude villages, dramatic mountain landscapes, scenic treks, and unforgettable Himalayan adventures in Himachal Pradesh.",
+    "Explore Spiti Valley's ancient monasteries, remote villages and stunning Himalayan landscapes on an unforgettable adventure.",
 
   keywords: [
     "Spiti Valley Tour Package",
     "Spiti Valley Tour",
     "Spiti Valley Trip",
     "Spiti Valley Travel Package",
-    "Spiti Valley Trek",
     "Spiti Valley Adventure Tour",
+    "Spiti Valley Road Trip",
+    "Spiti Valley Trek",
+    "Spiti Valley Monastery Tour",
     "Spiti Valley Holiday Package",
     "Himachal Pradesh Tour Package",
-    "Spiti Valley Road Trip",
-    "Spiti Valley Monastery Tour",
     "Kaza Spiti Tour",
     "Spiti Valley Sightseeing Tour",
-    "Spiti Valley Travel",
-    "Best Spiti Valley Tour Package",
-    "Spiti Valley Family Tour",
-    "Spiti Valley Vacation Package",
-    "Himalayan Adventure Tour",
-    "Spiti Valley Itinerary",
-    "Spiti Valley Tourism",
-    "High Altitude Tour India",
   ],
 
   alternates: {
@@ -54,22 +46,19 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Spiti Valley Tour Package | Monasteries, Villages & Himalayan Adventure",
+    title: "Spiti Valley Tour Package | Himalayan Adventure",
     description:
-      "Discover Spiti Valley through ancient monasteries, mountain villages, rugged landscapes, scenic treks, and unforgettable Himalayan experiences.",
-    url:
-      "https://indiaheritagetravel.com/tours/spiti-valley-trek-and-tour",
+      "Discover Spiti Valley's ancient monasteries, remote villages and breathtaking Himalayan landscapes.",
+    url: "https://indiaheritagetravel.com/tours/spiti-valley-trek-and-tour",
     siteName: "India Heritage Travel",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Spiti Valley Tour Package | Monasteries, Villages & Himalayan Adventure",
+    title: "Spiti Valley Tour Package | Himalayan Adventure",
     description:
-      "Explore Spiti Valley's monasteries, villages, mountain landscapes, and breathtaking Himalayan adventures.",
+      "Explore Spiti Valley's monasteries, remote villages and stunning Himalayan landscapes.",
   },
 };
 

@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 // SEO Components
@@ -23,10 +24,10 @@ import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 // ============================================
 export const metadata: Metadata = {
   title:
-    "Kashmir & Ladakh Tour Package | Srinagar, Leh, Lakes & Himalayan Adventures",
+    "Kashmir & Ladakh Tour Package | Srinagar & Leh",
 
   description:
-    "Book a Kashmir & Ladakh Tour Package and explore Srinagar, Leh, Pangong Lake, Nubra Valley, Himalayan monasteries, scenic valleys, mountain landscapes, and unforgettable cultural adventures.",
+    "Explore Kashmir and Ladakh with Srinagar, Leh, Pangong Lake, Nubra Valley, Himalayan monasteries and scenic landscapes on a memorable journey.",
 
   keywords: [
     "Kashmir Tour Package",
@@ -34,21 +35,9 @@ export const metadata: Metadata = {
     "Kashmir and Ladakh Tour",
     "Kashmir Ladakh Trip",
     "Leh Ladakh Tour Package",
-    "Kashmir Holiday Package",
-    "Ladakh Holiday Package",
-    "Kashmir Travel Package",
-    "Ladakh Travel Package",
     "Srinagar Leh Tour",
     "Pangong Lake Tour",
     "Nubra Valley Tour",
-    "Himalayan Tour India",
-    "Kashmir Sightseeing Tour",
-    "Ladakh Adventure Tour",
-    "Best Kashmir Ladakh Tour Package",
-    "Kashmir Family Tour",
-    "Ladakh Road Trip",
-    "Kashmir Mountains Tour",
-    "India Himalayan Tour",
   ],
 
   alternates: {
@@ -57,28 +46,31 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Kashmir & Ladakh Tour Package | Srinagar, Leh, Lakes & Himalayan Adventures",
+      "Kashmir & Ladakh Tour Package | Srinagar & Leh",
+
     description:
-      "Discover Kashmir and Ladakh through scenic valleys, Pangong Lake, Nubra Valley, Himalayan monasteries, mountain landscapes, and unforgettable cultural experiences.",
-    url:
-      "https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh",
+      "Discover Kashmir and Ladakh through Srinagar, Leh, Pangong Lake, Nubra Valley, Himalayan monasteries and breathtaking mountain landscapes.",
+
+    url: "https://indiaheritagetravel.com/tours/divine-kashmir-and-exciting-ladakh",
     siteName: "India Heritage Travel",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
+
     title:
-      "Kashmir & Ladakh Tour Package | Srinagar, Leh, Lakes & Himalayan Adventures",
+      "Kashmir & Ladakh Tour Package | Srinagar & Leh",
+
     description:
-      "Explore Kashmir and Ladakh with stunning valleys, lakes, monasteries, Himalayan adventures, and breathtaking mountain landscapes.",
+      "Explore Kashmir and Ladakh with Pangong Lake, Nubra Valley, Himalayan monasteries and scenic mountain landscapes.",
   },
 };
 
 // ============================================
 // PAGE COMPONENT
 // ============================================
-export default function RoyalRajasthanPage() {
+export default function DivineKashmirLadakhPage() {
   return (
     <div>
       {/* Breadcrumb Schema - SEO */}
@@ -112,8 +104,12 @@ export default function RoyalRajasthanPage() {
         <ExcludedServices />
         <DetailedItineraryIntro />
       </TourLayout>
+
       <TourSteps />
+
+      {/* Booking Form */}
       <CommonForm tourName="divine-kashmir-and-exciting-ladakh" />
+
       <RecommendedTours />
       <Footer />
     </div>

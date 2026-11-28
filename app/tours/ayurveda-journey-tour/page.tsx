@@ -20,33 +20,20 @@ import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title:
-    "Ayurveda Tour India | Authentic Ayurveda Wellness Retreats & Healing Journeys",
+  title: "Ayurveda Tour India | Wellness Retreats",
 
   description:
-    "Experience an authentic Ayurveda Tour India with traditional Ayurvedic therapies, wellness retreats, yoga, meditation, Panchakarma treatments, and holistic healing experiences. Rejuvenate your body, mind, and spirit through India's ancient wellness traditions.",
+    "Experience an Ayurveda tour in India with traditional therapies, yoga, meditation and wellness retreats inspired by ancient healing traditions.",
 
   keywords: [
     "Ayurveda Tour India",
     "Ayurveda Wellness Tour India",
     "Ayurveda Retreat India",
-    "Wellness Tour India",
-    "Ayurvedic Healing Tour India",
-    "Ayurveda Holiday India",
-    "Yoga and Ayurveda Tour India",
-    "Holistic Wellness Tour India",
-    "Ayurveda Rejuvenation Tour",
-    "Ayurvedic Therapy Tour India",
-    "Panchakarma Retreat India",
-    "Traditional Ayurveda Treatments",
-    "Luxury Ayurveda Retreat India",
     "Wellness Retreat India",
-    "Healing Retreat India",
+    "Panchakarma Retreat India",
     "Kerala Ayurveda Tour",
-    "Ayurveda Detox Retreat",
-    "Yoga Meditation Retreat India",
-    "Ayurvedic Wellness Holidays",
-    "India Wellness Travel",
+    "Yoga and Ayurveda Tour India",
+    "Ayurvedic Healing India",
   ],
 
   alternates: {
@@ -54,10 +41,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Ayurveda Tour India | Authentic Ayurveda Wellness Retreats & Healing Journeys",
+    title: "Ayurveda Tour India | Wellness Retreats",
     description:
-      "Discover authentic Ayurveda wellness experiences in India with Ayurvedic therapies, yoga, meditation, Panchakarma treatments, and holistic healing retreats designed for complete rejuvenation.",
+      "Experience an Ayurveda tour in India with traditional therapies, yoga, meditation and wellness retreats inspired by ancient healing traditions.",
     url: "https://indiaheritagetravel.com/tours/ayurveda-journey-tour",
     siteName: "India Heritage Travel",
     type: "website",
@@ -65,10 +51,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Ayurveda Tour India | Authentic Ayurveda Wellness Retreats & Healing Journeys",
+    title: "Ayurveda Tour India | Wellness Retreats",
     description:
-      "Experience Ayurveda wellness retreats, yoga, meditation, Panchakarma therapies, and holistic healing journeys across India.",
+      "Experience traditional Ayurveda therapies, yoga, meditation and wellness retreats across India.",
   },
 };
 

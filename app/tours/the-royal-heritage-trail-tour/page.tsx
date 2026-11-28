@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 // SEO Components
@@ -25,33 +26,24 @@ import RecommendedTours from "./sections/recommended-tours/RecommendedToures";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title:
-    "Golden Triangle with Mandawa Tour | Delhi Agra Jaipur Heritage Journey",
+  title: "Golden Triangle with Mandawa Tour | India Heritage",
 
   description:
-    "Explore Delhi, Agra, Jaipur, and Mandawa on a Golden Triangle with Mandawa Tour featuring the Taj Mahal, Amber Fort, heritage havelis, cultural landmarks, and unforgettable North India experiences.",
+    "Explore Delhi, Agra, Jaipur and Mandawa, featuring the Taj Mahal, Amber Fort, royal havelis and India's rich cultural heritage.",
 
   keywords: [
     "Golden Triangle with Mandawa Tour",
     "Delhi Agra Jaipur Mandawa Tour",
-    "Golden Triangle Heritage Tour",
-    "Golden Triangle Tour with Mandawa",
     "Golden Triangle Tour India",
-    "North India Heritage Tour",
+    "Golden Triangle Tour with Mandawa",
     "Mandawa Heritage Tour",
-    "Delhi Agra Jaipur Tour",
-    "Golden Triangle Holiday Package",
-    "India Heritage Tour",
     "Mandawa Haveli Tour",
-    "Golden Triangle Cultural Tour",
-    "Best Golden Triangle Tour India",
-    "Golden Triangle Family Tour",
-    "Golden Triangle Sightseeing Tour",
-    "North India Cultural Tour",
+    "Delhi Agra Jaipur Tour",
+    "Golden Triangle Heritage Tour",
+    "North India Heritage Tour",
     "Rajasthan Heritage Tour",
-    "Delhi Jaipur Agra Trip",
-    "Golden Triangle Travel India",
-    "Heritage Tour India",
+    "Golden Triangle Cultural Tour",
+    "India Heritage Tour",
   ],
 
   alternates: {
@@ -59,22 +51,19 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Golden Triangle with Mandawa Tour | Delhi Agra Jaipur Heritage Journey",
+    title: "Golden Triangle with Mandawa Tour | India Heritage",
     description:
-      "Discover Delhi, Agra, Jaipur, and Mandawa through heritage landmarks, royal architecture, cultural traditions, and unforgettable North India journeys.",
-    url:
-      "https://indiaheritagetravel.com/tours/the-royal-heritage-trail-tour",
+      "Discover Delhi, Agra, Jaipur and Mandawa through the Taj Mahal, Amber Fort, royal havelis and historic landmarks.",
+    url: "https://indiaheritagetravel.com/tours/the-royal-heritage-trail-tour",
     siteName: "India Heritage Travel",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Golden Triangle with Mandawa Tour | Delhi Agra Jaipur Heritage Journey",
+    title: "Golden Triangle with Mandawa Tour | India Heritage",
     description:
-      "Explore the Taj Mahal, Amber Fort, Mandawa Havelis, and North India's rich cultural heritage.",
+      "Explore the Taj Mahal, Amber Fort, Mandawa Havelis and the cultural heritage of North India.",
   },
 };
 

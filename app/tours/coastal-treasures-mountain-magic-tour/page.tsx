@@ -19,33 +19,22 @@ import RecommendedTours from "./sections/recommended/RecommendedTours";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title:
-    "South India Tour Package | Beaches, Hill Stations & Cultural Heritage",
+  title: "South India Tour Package | Beaches & Hill Stations",
 
   description:
-    "Explore the best South India Tour Package featuring scenic beaches, misty hill stations, cultural heritage sites, local traditions, coastal landscapes, and unforgettable travel experiences across South India.",
+    "Explore South India on a tour featuring scenic beaches, misty hill stations, cultural heritage and local traditions across its diverse destinations.",
 
   keywords: [
-    "South India Tour",
     "South India Tour Package",
+    "South India Tour",
     "South India Travel",
     "South India Holiday Package",
-    "South India Cultural Tour",
     "South India Beaches Tour",
     "South India Hill Stations Tour",
-    "Kerala and Tamil Nadu Tour",
-    "South India Sightseeing Tour",
-    "South India Vacation Package",
-    "Coastal South India Tour",
+    "South India Cultural Tour",
     "South India Heritage Tour",
+    "Kerala and Tamil Nadu Tour",
     "South India Family Tour",
-    "Best South India Tour Package",
-    "South India Nature Tour",
-    "South India Mountains Tour",
-    "South India Beach Holiday",
-    "Kerala Tour Package",
-    "Tamil Nadu Tour Package",
-    "South India Tourism",
   ],
 
   alternates: {
@@ -53,22 +42,19 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "South India Tour Package | Beaches, Hill Stations & Cultural Heritage",
+    title: "South India Tour Package | Beaches & Hill Stations",
     description:
-      "Experience South India's stunning beaches, hill stations, cultural landmarks, heritage sites, and local traditions on an unforgettable journey through India's southern states.",
-    url:
-      "https://indiaheritagetravel.com/tours/coastal-treasures-mountain-magic-tour",
+      "Discover South India's scenic beaches, misty hill stations, cultural heritage and local traditions on a memorable journey.",
+    url: "https://indiaheritagetravel.com/tours/coastal-treasures-mountain-magic-tour",
     siteName: "India Heritage Travel",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "South India Tour Package | Beaches, Hill Stations & Cultural Heritage",
+    title: "South India Tour Package | Beaches & Hill Stations",
     description:
-      "Explore South India's beaches, hill stations, heritage sites, cultural experiences, and scenic landscapes with a carefully crafted travel experience.",
+      "Explore South India's beaches, hill stations, cultural heritage and scenic landscapes on a memorable journey.",
   },
 };
 

@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 // SEO Components
@@ -20,10 +21,10 @@ import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 // ============================================
 export const metadata: Metadata = {
   title:
-    "South India Cultural Tour | Temples, Heritage & Local Experiences",
+    "South India Cultural Tour | Temples, Heritage & Traditions",
 
   description:
-    "Discover South India's rich culture through historic temples, heritage sites, scenic landscapes, local traditions, authentic cuisine, and unforgettable travel experiences across iconic destinations.",
+    "Discover South India's historic temples, heritage sites, local traditions, authentic cuisine and scenic landscapes on a memorable cultural journey.",
 
   keywords: [
     "South India Cultural Tour",
@@ -32,20 +33,12 @@ export const metadata: Metadata = {
     "South India Heritage Tour",
     "South India Holiday Package",
     "South India Travel Package",
-    "South India Sightseeing Tour",
     "South India Spiritual Tour",
-    "South India Cultural Holiday",
-    "South India Tourism",
-    "Temple Tour India",
-    "South India Vacation Package",
-    "South India Family Tour",
-    "South India Heritage Travel",
-    "South India Cultural Experience",
-    "Best South India Tour Package",
-    "South India Traditional Tour",
     "South India Historical Tour",
+    "South India Cultural Experience",
+    "South India Sightseeing Tour",
     "South India Religious Tour",
-    "South India Travel",
+    "Temple Tour India",
   ],
 
   alternates: {
@@ -54,21 +47,24 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "South India Cultural Tour | Temples, Heritage & Local Experiences",
+      "South India Cultural Tour | Temples, Heritage & Traditions",
+
     description:
-      "Explore South India's temples, heritage sites, local traditions, authentic cuisine, and cultural experiences through an unforgettable journey.",
-    url:
-      "https://indiaheritagetravel.com/tours/southern-delights-tour",
+      "Explore South India's historic temples, heritage sites, authentic cuisine, local traditions and scenic landscapes through a memorable cultural journey.",
+
+    url: "https://indiaheritagetravel.com/tours/southern-delights-tour",
     siteName: "India Heritage Travel",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
+
     title:
-      "South India Cultural Tour | Temples, Heritage & Local Experiences",
+      "South India Cultural Tour | Temples, Heritage & Traditions",
+
     description:
-      "Discover South India's rich culture, historic temples, local traditions, scenic beauty, and authentic travel experiences.",
+      "Experience South India's historic temples, cultural heritage, local traditions, authentic cuisine and scenic beauty.",
   },
 };
 

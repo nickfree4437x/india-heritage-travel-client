@@ -15,33 +15,20 @@ import SectionFive from "./sections/section-five/SectionFive";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title:
-    "Solo Women Travel India | Safe & Personalized India Tours for Women",
+  title: "Solo Women Travel India | Personalized Tours for Women",
 
   description:
-    "Explore India with confidence through safe and personalized solo women travel experiences. Enjoy custom itineraries, trusted local support, women-friendly accommodations, 24/7 assistance, and authentic cultural journeys designed specifically for female travelers.",
+    "Discover personalized India tours for women with trusted local support, comfortable stays and authentic cultural experiences.",
 
   keywords: [
     "Solo Women Travel India",
     "Solo Female Travel India",
-    "Women Only Tours India",
-    "India Tours For Women",
-    "Safe India Tours For Women",
-    "Female Travel India",
-    "Solo Travel India Women",
-    "Women Travel India",
+    "Women Tours India",
+    "India Tours for Women",
+    "Safe India Tours for Women",
     "Women Friendly Tours India",
-    "Private India Tours For Women",
-    "India Travel For Women",
-    "Solo Female Traveler India",
-    "Women Group Tours India",
-    "Custom India Tours For Women",
-    "Women Travel Packages India",
-    "Safe Travel India For Women",
-    "India Holiday For Women",
-    "India Cultural Tours For Women",
-    "Women Adventure Tours India",
-    "India Travel Support For Women",
+    "Private India Tours for Women",
+    "Custom India Tours for Women",
   ],
 
   alternates: {
@@ -49,10 +36,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Solo Women Travel India | Safe & Personalized India Tours for Women",
+    title: "Solo Women Travel India | Personalized Tours for Women",
     description:
-      "Travel India confidently with women-focused tours, personalized itineraries, trusted local support, and authentic cultural experiences designed for solo female travelers.",
+      "Discover personalized India tours for women with trusted local support, comfortable stays and authentic cultural experiences.",
     url: "https://indiaheritagetravel.com/solo-women-travel",
     siteName: "India Heritage Travel",
     type: "website",
@@ -60,12 +46,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Solo Women Travel India | Safe & Personalized India Tours for Women",
+    title: "Solo Women Travel India | Personalized Tours for Women",
     description:
-      "Discover India safely with women-focused travel experiences, custom itineraries, local support, and personalized journeys.",
+      "Explore India with personalized tours for women, trusted local support and authentic cultural experiences.",
   },
 };
+
 
 // ============================================
 // PAGE COMPONENT

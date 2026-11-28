@@ -1,6 +1,5 @@
 "use client";
 
-import Script from "next/script";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
@@ -71,10 +70,8 @@ const faqSchema = {
     "@type": "Question",
 
     name: faq.q,
-
     acceptedAnswer: {
       "@type": "Answer",
-
       text: faq.a,
     },
   })),

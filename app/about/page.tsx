@@ -12,33 +12,20 @@ import AboutLayout from "./components/AboutLayout";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title:
-    "About Us | India Tour Experts & Cultural Travel Specialists",
+  title: "About Us | India Heritage Travel",
 
   description:
-    "Learn about India Heritage Travel and meet the founders behind our personalized travel experiences. We specialize in heritage tours, cultural journeys, solo women travel, wellness retreats, and customized India tour packages.",
+    "Discover India Heritage Travel, our team, and our passion for creating personalized heritage tours and cultural journeys across India.",
 
   keywords: [
-    "India Heritage Travel",
     "About India Heritage Travel",
+    "India Heritage Travel",
     "India Travel Experts",
     "India Tour Specialists",
     "Heritage Travel India",
     "Cultural Tours India",
-    "Custom India Tours",
-    "Private India Tours",
-    "India Travel Company",
-    "India Tour Operators",
-    "Solo Women Travel India",
-    "Luxury India Travel",
-    "India Heritage Tours",
-    "India Cultural Travel",
-    "Travel Experts India",
     "Personalized India Tours",
-    "India Travel Agency",
-    "India Holiday Experts",
-    "Trusted India Tour Company",
-    "India Travel Experiences",
+    "Custom India Tours",
   ],
 
   alternates: {
@@ -46,10 +33,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "About India Heritage Travel | India Tour Experts & Cultural Travel Specialists",
+    title: "About Us | India Heritage Travel",
     description:
-      "Meet the team behind India Heritage Travel and discover our passion for creating personalized cultural, heritage, wellness, and adventure journeys across India.",
+      "Discover India Heritage Travel, our team, and our passion for creating personalized heritage tours and cultural journeys across India.",
     url: "https://indiaheritagetravel.com/about",
     siteName: "India Heritage Travel",
     type: "website",
@@ -57,12 +43,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "About India Heritage Travel | India Tour Experts & Cultural Travel Specialists",
+    title: "About Us | India Heritage Travel",
     description:
-      "Learn about India Heritage Travel, our founders, and our commitment to authentic travel experiences across India.",
+      "Discover India Heritage Travel, our team, and our passion for creating personalized heritage tours and cultural journeys across India.",
   },
 };
+
 
 // ============================================
 // PAGE COMPONENT

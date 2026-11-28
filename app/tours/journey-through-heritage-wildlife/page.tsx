@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 // SEO Components
@@ -25,32 +26,20 @@ import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 // ============================================
 export const metadata: Metadata = {
   title:
-    "India Wildlife Tour | Tiger Safaris, Heritage Sites & Cultural Experiences",
+    "India Wildlife Tour | Tiger Safaris & Heritage Sites",
 
   description:
-    "Explore an India Wildlife Tour featuring thrilling tiger safaris, national parks, UNESCO heritage sites, cultural landmarks, natural landscapes, and unforgettable travel experiences across India.",
+    "Explore India through thrilling tiger safaris, national parks, historic landmarks, UNESCO heritage sites and rich cultural experiences.",
 
   keywords: [
     "India Wildlife Tour",
     "Wildlife Safari Tour India",
     "Tiger Safari Tour India",
     "India Heritage and Wildlife Tour",
-    "Wildlife Holiday India",
-    "India Nature Tour",
-    "India Safari Tour",
     "Ranthambore Safari Tour",
     "Bandhavgarh Safari Tour",
-    "India Tiger Tour",
-    "Wildlife Photography Tour India",
     "National Parks Tour India",
     "India Cultural and Wildlife Tour",
-    "Luxury Wildlife Tour India",
-    "India Adventure and Wildlife Tour",
-    "Best Wildlife Tour India",
-    "India Eco Tourism Tour",
-    "Heritage Tour India",
-    "India Travel Safari",
-    "Wildlife Vacation India",
   ],
 
   alternates: {
@@ -59,21 +48,24 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "India Wildlife Tour | Tiger Safaris, Heritage Sites & Cultural Experiences",
+      "India Wildlife Tour | Tiger Safaris & Heritage Sites",
+
     description:
-      "Experience India's wildlife and heritage through tiger safaris, national parks, UNESCO sites, cultural landmarks, and unforgettable nature adventures.",
-    url:
-      "https://indiaheritagetravel.com/tours/journey-through-heritage-wildlife",
+      "Discover India's wildlife and heritage through tiger safaris, national parks, historic landmarks, UNESCO sites and cultural experiences.",
+
+    url: "https://indiaheritagetravel.com/tours/journey-through-heritage-wildlife",
     siteName: "India Heritage Travel",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
+
     title:
-      "India Wildlife Tour | Tiger Safaris, Heritage Sites & Cultural Experiences",
+      "India Wildlife Tour | Tiger Safaris & Heritage Sites",
+
     description:
-      "Discover India's wildlife, tiger safaris, heritage sites, cultural experiences, and breathtaking natural landscapes.",
+      "Experience India's tiger safaris, national parks, historic landmarks, heritage sites and diverse cultural traditions.",
   },
 };
 
@@ -117,6 +109,7 @@ export default function HeritageWildlifeTourPage() {
           <DetailedItineraryIntro />
         </div>
       </TourLayout>
+
       <TourSteps />
 
       {/* Booking Form */}

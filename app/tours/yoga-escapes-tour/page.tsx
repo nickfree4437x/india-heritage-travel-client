@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 // SEO Components
@@ -20,11 +21,10 @@ import Recommended from "./sections/recommended-tours/Recommended";
 // SEO METADATA
 // ============================================
 export const metadata: Metadata = {
-  title:
-    "Yoga Retreat India | Yoga, Meditation & Wellness Experiences",
+  title: "Yoga Retreat India | Meditation & Wellness",
 
   description:
-    "Join a Yoga Retreat India experience featuring daily yoga sessions, meditation practices, spiritual wellness programs, mindful living, and rejuvenating journeys across India's most peaceful destinations.",
+    "Experience yoga, meditation and wellness retreats in India with peaceful settings, mindful practices and rejuvenating experiences.",
 
   keywords: [
     "Yoga Retreat India",
@@ -34,18 +34,10 @@ export const metadata: Metadata = {
     "Wellness Retreat India",
     "Spiritual Retreat India",
     "Yoga Holiday India",
-    "Yoga Vacation India",
     "Meditation Retreat India",
     "Yoga Wellness Tour",
-    "India Yoga Retreat",
-    "Luxury Yoga Retreat India",
-    "Yoga Travel India",
     "Yoga Retreat Package India",
     "Mindfulness Retreat India",
-    "Yoga and Wellness Retreat",
-    "Best Yoga Retreat India",
-    "Yoga Spiritual Journey India",
-    "Yoga Experience India",
     "Holistic Wellness Retreat India",
   ],
 
@@ -54,22 +46,19 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Yoga Retreat India | Yoga, Meditation & Wellness Experiences",
+    title: "Yoga Retreat India | Meditation & Wellness",
     description:
-      "Experience yoga, meditation, spiritual wellness, mindful living, and rejuvenating retreats across India's most peaceful destinations.",
-    url:
-      "https://indiaheritagetravel.com/tours/yoga-escapes-tour",
+      "Discover yoga, meditation and wellness retreats in India through peaceful settings and rejuvenating experiences.",
+    url: "https://indiaheritagetravel.com/tours/yoga-escapes-tour",
     siteName: "India Heritage Travel",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Yoga Retreat India | Yoga, Meditation & Wellness Experiences",
+    title: "Yoga Retreat India | Meditation & Wellness",
     description:
-      "Discover yoga retreats, meditation programs, wellness journeys, and spiritual experiences across India.",
+      "Explore yoga, meditation and wellness experiences across peaceful destinations in India.",
   },
 };
 

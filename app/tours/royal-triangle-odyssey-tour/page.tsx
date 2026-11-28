@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 // SEO Components
@@ -26,32 +27,20 @@ import RecommendedTours from "./sections/recommended-tours/RecommendedTours";
 // ============================================
 export const metadata: Metadata = {
   title:
-    "Golden Triangle with Varanasi Tour | Delhi Agra Jaipur & Varanasi",
+    "Golden Triangle with Varanasi Tour | Delhi, Agra & Jaipur",
 
   description:
-    "Explore Delhi, Agra, Jaipur, Mandawa, and Varanasi on a Golden Triangle with Varanasi Tour featuring the Taj Mahal, Amber Fort, heritage cities, sacred Ganges experiences, and unforgettable cultural journeys.",
+    "Explore Delhi, Agra, Jaipur, Mandawa and Varanasi with the Taj Mahal, historic forts, heritage sites and sacred Ganges experiences.",
 
   keywords: [
     "Golden Triangle with Varanasi Tour",
     "Golden Triangle and Varanasi Tour",
     "Delhi Agra Jaipur Varanasi Tour",
     "Golden Triangle Tour with Varanasi",
-    "North India Heritage Tour",
-    "Golden Triangle Cultural Tour",
     "Varanasi Tour Package",
-    "Golden Triangle Holiday Package",
-    "India Heritage Tour",
     "Delhi Agra Jaipur Tour",
     "Varanasi Ganga Aarti Tour",
-    "Golden Triangle Travel India",
-    "Golden Triangle Family Tour",
-    "Golden Triangle Spiritual Tour",
     "Mandawa Heritage Tour",
-    "North India Cultural Tour",
-    "Golden Triangle Sightseeing Tour",
-    "India Cultural Heritage Tour",
-    "Best Golden Triangle with Varanasi Tour",
-    "Golden Triangle Vacation Package",
   ],
 
   alternates: {
@@ -60,21 +49,24 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Golden Triangle with Varanasi Tour | Delhi Agra Jaipur & Varanasi",
+      "Golden Triangle with Varanasi Tour | Delhi, Agra & Jaipur",
+
     description:
-      "Experience Delhi, Agra, Jaipur, Mandawa, and Varanasi through heritage landmarks, cultural traditions, sacred Ganges rituals, and unforgettable journeys across North India.",
-    url:
-      "https://indiaheritagetravel.com/tours/royal-triangle-odyssey-tour",
+      "Discover Delhi, Agra, Jaipur, Mandawa and Varanasi through iconic heritage landmarks, the Taj Mahal, historic forts and sacred Ganges traditions.",
+
+    url: "https://indiaheritagetravel.com/tours/royal-triangle-odyssey-tour",
     siteName: "India Heritage Travel",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
+
     title:
-      "Golden Triangle with Varanasi Tour | Delhi Agra Jaipur & Varanasi",
+      "Golden Triangle with Varanasi Tour | Delhi, Agra & Jaipur",
+
     description:
-      "Discover the Taj Mahal, Amber Fort, Mandawa Havelis, and Varanasi's sacred Ganges traditions on an unforgettable North India journey.",
+      "Experience the Taj Mahal, historic forts, Mandawa Havelis and Varanasi's sacred Ganges traditions on a memorable North India journey.",
   },
 };
 

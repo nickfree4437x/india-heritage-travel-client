@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 import Hero from "./components/hero/Hero";
@@ -15,34 +16,25 @@ import TourSteps from "@/src/tours/book-now/sections/tour-steps/TourSteps";
 import BreadcrumbSchema from "@/src/common/seo/BreadcrumbSchema";
 import TourSchema from "@/src/common/seo/TourSchema";
 
+// ============================================
+// SEO METADATA
+// ============================================
 export const metadata: Metadata = {
   title:
-    "Golden Triangle Tour India | Delhi Agra Jaipur Tour Package",
+    "Golden Triangle Tour India | Delhi, Agra & Jaipur",
 
   description:
-    "Book the best Golden Triangle Tour India and explore Delhi, Agra, and Jaipur. Visit the Taj Mahal, Amber Fort, City Palace, and iconic heritage landmarks on an unforgettable cultural journey through India.",
+    "Explore Delhi, Agra and Jaipur on a Golden Triangle Tour featuring the Taj Mahal, Amber Fort, historic landmarks and India's rich cultural heritage.",
 
   keywords: [
     "Golden Triangle Tour India",
-    "Golden Triangle Tour",
-    "Delhi Agra Jaipur Tour",
     "Golden Triangle Tour Package",
-    "India Golden Triangle Tour",
-    "Golden Triangle Holiday Package",
+    "Delhi Agra Jaipur Tour",
     "Delhi Agra Jaipur Tour Package",
-    "Golden Triangle Travel India",
+    "India Golden Triangle Tour",
     "Private Golden Triangle Tour",
     "Luxury Golden Triangle Tour",
-    "Golden Triangle Sightseeing Tour",
-    "Taj Mahal Tour Package",
-    "North India Heritage Tour",
-    "Golden Triangle Family Tour",
-    "Golden Triangle Vacation Package",
-    "Best Golden Triangle Tour India",
     "Golden Triangle Cultural Tour",
-    "India Heritage Tour",
-    "Delhi Jaipur Agra Trip",
-    "Golden Triangle Tourism India",
   ],
 
   alternates: {
@@ -51,33 +43,31 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Golden Triangle Tour India | Delhi Agra Jaipur Tour Package",
+      "Golden Triangle Tour India | Delhi, Agra & Jaipur",
+
     description:
-      "Explore Delhi, Agra, and Jaipur on India's most popular Golden Triangle Tour featuring the Taj Mahal, Amber Fort, heritage sites, and cultural experiences.",
-    url:
-      "https://indiaheritagetravel.com/tours/majestic-golden-triangle-tour",
+      "Discover Delhi, Agra and Jaipur through the Taj Mahal, Amber Fort, historic landmarks and unforgettable cultural experiences.",
+
+    url: "https://indiaheritagetravel.com/tours/majestic-golden-triangle-tour",
     siteName: "India Heritage Travel",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
+
     title:
-      "Golden Triangle Tour India | Delhi Agra Jaipur Tour Package",
+      "Golden Triangle Tour India | Delhi, Agra & Jaipur",
+
     description:
-      "Discover Delhi, Agra, Jaipur, the Taj Mahal, Amber Fort, and India's rich cultural heritage on a memorable Golden Triangle journey.",
+      "Explore Delhi, Agra and Jaipur with the Taj Mahal, Amber Fort, historic sites and India's fascinating cultural heritage.",
   },
 };
 
-// ============================================================================
-// MAIN COMPONENT
-// ============================================================================
-
+// ============================================
+// PAGE COMPONENT
+// ============================================
 export default function Page() {
-  // ==========================================================================
-  // MAIN RENDER
-  // ==========================================================================
-
   return (
     <div className="bg-white min-h-screen">
 
@@ -95,23 +85,21 @@ export default function Page() {
         ]}
       />
 
+      {/* Tour Schema */}
       <TourSchema
         name="Golden Triangle Tour India"
         description="Explore Delhi, Agra, and Jaipur through a personalized Golden Triangle Tour featuring iconic landmarks, cultural experiences, heritage sites, and unforgettable journeys across India"
         url="https://indiaheritagetravel.com/tours/majestic-golden-triangle-tour"
       />
 
-      {/* ====================================================================
-          HERO & SUITABLE SECTION
-      ==================================================================== */}
+      {/* Hero & Suitable Section */}
       <Hero />
       <Suitable />
 
-      {/* ====================================================================
-          MAIN CONTENT GRID - LEFT (Tour Details) & RIGHT (Booking Card)
-      ==================================================================== */}
+      {/* Main Content Grid */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 md:grid-cols-[2.5fr_1fr] gap-6 md:gap-8">
-        {/* LEFT COLUMN - Tour Information */}
+
+        {/* Left Column - Tour Information */}
         <div className="space-y-6">
           <DelhiSection />
           <HightlightsInclusions />
@@ -120,7 +108,7 @@ export default function Page() {
           <DetailedItineraryIntro />
         </div>
 
-        {/* RIGHT COLUMN - Booking Widget */}
+        {/* Right Column - Booking Widget */}
         <div className="flex justify-center md:justify-end">
           <div className="w-full max-w-[280px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[350px]">
             <BookingCard />
@@ -128,13 +116,12 @@ export default function Page() {
         </div>
       </div>
 
-      {/* ====================================================================
-          ADDITIONAL SECTIONS
-      ==================================================================== */}
+      {/* Additional Sections */}
       {/* <FAQSection /> - Temporarily commented */}
       <TourSteps />
-      <CommonForm 
-        tourName="majestic-golden-triangle-tour"/>
+
+      <CommonForm tourName="majestic-golden-triangle-tour" />
+
       <RecommendedTours />
       <Footer />
     </div>

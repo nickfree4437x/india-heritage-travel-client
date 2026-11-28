@@ -1,34 +1,22 @@
 import type { Metadata } from "next";
 import Footer from "@/src/sections/footer/Footer";
 
+
 export const metadata: Metadata = {
-  title:
-    "India Visa Requirements | Tourist Visa & Entry Requirements Guide",
+  title: "India Visa Requirements | Tourist Visa Guide",
 
   description:
-    "Learn about India visa requirements, tourist visas, passport validity, entry rules, travel permits, e-Visa options, and essential travel information for planning your trip to India.",
+    "Explore India visa requirements, tourist visa options, e-Visas, passport rules and entry permits before planning your trip.",
 
   keywords: [
     "India Visa Requirements",
     "India Tourist Visa",
-    "India Visa Guide",
-    "India eVisa",
-    "India Travel Requirements",
+    "India e-Visa",
     "India Entry Requirements",
-    "Tourist Visa India",
+    "India Visa Guide",
     "India Travel Documents",
-    "India Visa Information",
-    "India Visa Application",
     "India Visa for Tourists",
-    "India Travel Permit",
-    "Passport Requirements India",
-    "India Tourist Entry Rules",
-    "India Visa Process",
-    "India Travel Guide",
-    "India Immigration Requirements",
-    "Visit India Visa",
-    "India Travel Planning",
-    "India Tourism Visa",
+    "India Protected Area Permit",
   ],
 
   alternates: {
@@ -36,10 +24,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "India Visa Requirements | Tourist Visa & Entry Requirements Guide",
+    title: "India Visa Requirements | Tourist Visa Guide",
     description:
-      "Find everything you need to know about India tourist visas, e-Visas, passport requirements, entry rules, and travel documentation before visiting India.",
+      "Explore India visa requirements, tourist visa options, e-Visas, passport rules and entry permits before planning your trip.",
     url: "https://indiaheritagetravel.com/visa-rules-for-india",
     siteName: "India Heritage Travel",
     type: "article",
@@ -47,12 +34,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "India Visa Requirements | Tourist Visa & Entry Requirements Guide",
+    title: "India Visa Requirements | Tourist Visa Guide",
     description:
-      "Understand India visa requirements, e-Visa options, passport validity rules, and essential travel documentation for your India trip.",
+      "Explore India visa requirements, tourist visa options, e-Visas, passport rules and entry permits before planning your trip.",
   },
 };
+
 
 export default function VisaRulesPage() {
   return (
@@ -76,11 +63,11 @@ export default function VisaRulesPage() {
       {/* Main Content - Visa Information */}
       <section className="max-w-6xl mx-auto px-6 py-16 text-center">
         <h2 className="text-3xl font-semibold text-[#9c7a45] mb-10">
-          Visa Rules for India
+          India Visa Rules and Requirements
         </h2>
 
         {/* Visa & Permits */}
-        <h3 className="font-semibold mb-3">Visa and Permits in India</h3>
+        <h3 className="font-semibold mb-3">India Visa and Entry Permits</h3>
         <p className="
           text-gray-700
           text-[12px] sm:text-[13px] md:text-[14.5px]
@@ -96,7 +83,7 @@ export default function VisaRulesPage() {
         </p>
 
         {/* Visa Durations */}
-        <h3 className="font-semibold mb-3">Visa Durations</h3>
+        <h3 className="font-semibold mb-3">India Tourist Visa Types and Validity</h3>
         <p className="
           text-gray-700
           text-[12px] sm:text-[13px] md:text-[14.5px]
@@ -113,7 +100,7 @@ export default function VisaRulesPage() {
         </p>
 
         {/* Obtaining a Visa */}
-        <h3 className="font-semibold mb-3">Obtaining a Visa</h3>
+        <h3 className="font-semibold mb-3">How to Apply for an India Visa</h3>
         <p className="
           text-gray-700
           text-[12px] sm:text-[13px] md:text-[14.5px]
@@ -133,7 +120,7 @@ export default function VisaRulesPage() {
         </p>
 
         {/* Special Permits */}
-        <h3 className="font-semibold mb-3">Special Permits</h3>
+        <h3 className="font-semibold mb-3">Protected and Restricted Area Permits</h3>
         <p className="
           text-gray-700
           text-[12px] sm:text-[13px] md:text-[14.5px]
@@ -151,7 +138,7 @@ export default function VisaRulesPage() {
       {/* Regions Requiring Special Permits */}
       <section className="max-w-6xl mx-auto px-6 pb-16">
         <h3 className="font-bold text-center mb-8">
-          These regions include:
+          H2: Regions Requiring Special Permits
         </h3>
 
         <div className="
